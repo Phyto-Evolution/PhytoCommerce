@@ -1,0 +1,8 @@
+{
+  "category": "bromeliads",
+  "name": "Bromeliads & Air Plants",
+  "description": "Bromeliaceae - air plants, tank bromeliads and epiphytes",
+  "packs": [
+    { "id": "bromeliaceae", "name": "Bromeliads & Air Plants", "file": "bromeliaceae.json", "genera": ["Tillandsia", "Neoregelia", "Vriesea", "Aechmea"], "difficulty_range": "beginner" }
+  ]
+}
