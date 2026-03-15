@@ -1,0 +1,16 @@
+{
+  "version": "1.1.0",
+  "last_updated": "2026-03-15",
+  "maintainer": "Phyto Evolution Private Limited",
+  "repository": "https://github.com/Phyto-Evolution/PhytoCommerce",
+  "base_url": "https://raw.githubusercontent.com/Phyto-Evolution/PhytoCommerce/main/taxonomy/",
+  "description": "PhytoCommerce Botanical Taxonomy Standard - modular plant family packs for ecommerce",
+  "categories": [
+    { "id": "carnivorous", "name": "Carnivorous Plants", "index": "carnivorous/index.json", "pack_count": 8 },
+    { "id": "aroids", "name": "Aroids", "index": "aroids/index.json", "pack_count": 1 },
+    { "id": "orchids", "name": "Orchids", "index": "orchids/index.json", "pack_count": 1 },
+    { "id": "succulents", "name": "Succulents & Cacti", "index": "succulents/index.json", "pack_count": 4 },
+    { "id": "bromeliads", "name": "Bromeliads & Air Plants", "index": "bromeliads/index.json", "pack_count": 1 }
+  ],
+  "summary": { "total_categories": 5, "total_packs": 15, "total_genera": 41, "total_species": 129, "total_cultivars": 72 }
+}
