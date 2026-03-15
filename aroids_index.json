@@ -1,0 +1,8 @@
+{
+  "category": "aroids",
+  "name": "Aroids",
+  "description": "Araceae and related tropical foliage plants",
+  "packs": [
+    { "id": "araceae", "name": "Aroids", "file": "araceae.json", "genera": ["Monstera", "Philodendron", "Anthurium", "Alocasia"], "difficulty_range": "beginner-expert" }
+  ]
+}

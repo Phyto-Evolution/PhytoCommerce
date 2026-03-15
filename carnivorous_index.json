@@ -1,0 +1,15 @@
+{
+  "category": "carnivorous",
+  "name": "Carnivorous Plants",
+  "description": "All carnivorous and protocarnivorous plant families",
+  "packs": [
+    { "id": "nepenthaceae", "name": "Tropical Pitcher Plants", "file": "nepenthaceae.json", "genera": ["Nepenthes"], "difficulty_range": "beginner-expert" },
+    { "id": "droseraceae", "name": "Sundews, Venus Flytrap & Waterwheel", "file": "droseraceae.json", "genera": ["Drosera", "Dionaea", "Aldrovanda"], "difficulty_range": "beginner-intermediate" },
+    { "id": "sarraceniaceae", "name": "North American Pitcher Plants", "file": "sarraceniaceae.json", "genera": ["Sarracenia", "Darlingtonia", "Heliamphora"], "difficulty_range": "beginner-expert" },
+    { "id": "cephalotaceae", "name": "Albany Pitcher Plant", "file": "cephalotaceae.json", "genera": ["Cephalotus"], "difficulty_range": "intermediate" },
+    { "id": "lentibulariaceae", "name": "Butterworts, Bladderworts & Corkscrew Plants", "file": "lentibulariaceae.json", "genera": ["Pinguicula", "Utricularia", "Genlisea"], "difficulty_range": "beginner-intermediate" },
+    { "id": "byblidaceae", "name": "Rainbow Plants", "file": "byblidaceae.json", "genera": ["Byblis"], "difficulty_range": "beginner-expert" },
+    { "id": "roridulaceae", "name": "Fly Bush (Protocarnivore)", "file": "roridulaceae.json", "genera": ["Roridula"], "difficulty_range": "expert" },
+    { "id": "dioncophyllaceae", "name": "Tropical Liana Carnivores", "file": "dioncophyllaceae.json", "genera": ["Triphyophyllum", "Habropetalum"], "difficulty_range": "expert" }
+  ]
+}
