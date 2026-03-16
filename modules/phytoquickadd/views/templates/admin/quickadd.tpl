@@ -98,6 +98,7 @@
     </div>
 </div>
 
+{literal}
 <script>
 function generateDescription() {
     var plantName = document.getElementById('plant_name_ai').value;
@@ -128,4 +129,5 @@ function generateDescription() {
     });
 }
 </script>
+{/literal}
 {/block}
