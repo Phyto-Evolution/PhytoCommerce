@@ -12,10 +12,12 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
     }
 
     public function init() {
+        ob_start();
         parent::init();
         if (Tools::isSubmit('phyto_ajax')) {
             header('Content-Type: application/json');
             $action = Tools::getValue('phyto_action');
+            ob_clean();
             switch ($action) {
                 case 'generate_description': $this->ajaxGenerateDescription(); break;
                 case 'search_categories':    $this->ajaxSearchCategories(); break;
