@@ -55,6 +55,7 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
         $tree = [];
         if (!isset($categories[$id_parent])) return $tree;
         foreach ($categories[$id_parent] as $cat) {
+            if (!is_array($cat) || !isset($cat['id_category'])) continue;
             $item = [
                 'id'       => $cat['id_category'],
                 'name'     => str_repeat('— ', $depth) . $cat['name'],
