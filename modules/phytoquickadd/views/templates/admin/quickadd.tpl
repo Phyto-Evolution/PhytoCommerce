@@ -135,35 +135,33 @@
     <div class="panel-body">
         <div class="row">
             <div class="col-md-5">
-                <form method="post" onsubmit="sessionStorage.setItem('phyto_tab','tab-category');">
-                    <input type="hidden" name="submitAddCategory" value="1">
-                    <div class="form-group">
-                        <label>Category Name <span class="text-danger">*</span></label>
-                        <input type="text" name="category_name" class="form-control" required
-                               placeholder="e.g. Nepenthes, Highland Species, Tissue Culture">
-                    </div>
-                    <div class="form-group">
-                        <label>Parent Category <span class="text-danger">*</span></label>
-                        <input type="text" id="parent_search" class="form-control"
-                               placeholder="Type to filter..."
-                               onkeyup="filterParents(this.value)"
-                               style="margin-bottom:5px;">
-                        <select name="parent_category" id="parent_select"
-                                class="form-control" required size="6">
-                            {if isset($flat_categories)}
-                                {foreach $flat_categories as $cat}
-                                    <option value="{$cat.id}"
-                                        data-name="{$cat.name|lower}"
-                                        {if $cat.id == 2}selected{/if}>{$cat.name}</option>
-                                {/foreach}
-                            {/if}
-                        </select>
-                        <small class="text-muted">Home = top level category</small>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-lg">
-                        <i class="icon-folder-open"></i> Add Category
-                    </button>
-                </form>
+                <div id="cat_success" class="alert alert-success" style="display:none;"></div>
+                <div id="cat_error" class="alert alert-danger" style="display:none;"></div>
+                <div class="form-group">
+                    <label>Category Name <span class="text-danger">*</span></label>
+                    <input type="text" id="new_category_name" class="form-control"
+                           placeholder="e.g. Nepenthes, Highland Species, Tissue Culture">
+                </div>
+                <div class="form-group">
+                    <label>Parent Category <span class="text-danger">*</span></label>
+                    <input type="text" id="parent_search" class="form-control"
+                           placeholder="Type to filter..."
+                           onkeyup="filterParents(this.value)"
+                           style="margin-bottom:5px;">
+                    <select id="parent_select" class="form-control" size="6">
+                        {if isset($flat_categories)}
+                            {foreach $flat_categories as $cat}
+                                <option value="{$cat.id}"
+                                    data-name="{$cat.name|lower}"
+                                    {if $cat.id == 2}selected{/if}>{$cat.name}</option>
+                            {/foreach}
+                        {/if}
+                    </select>
+                    <small class="text-muted">Home = top level category</small>
+                </div>
+                <button class="btn btn-primary btn-lg" onclick="addCategory()">
+                    <i class="icon-folder-open"></i> Add Category
+                </button>
             </div>
             <div class="col-md-7">
                 <div class="panel panel-default">
@@ -250,6 +248,69 @@
 {literal}
 <script>
 var AJAX_URL = '{/literal}{$ajax_url}{literal}';
+
+
+function addCategory() {
+    var name      = document.getElementById('new_category_name').value.trim();
+    var id_parent = document.getElementById('parent_select').value;
+    var success   = document.getElementById('cat_success');
+    var error     = document.getElementById('cat_error');
+
+    success.style.display = 'none';
+    error.style.display   = 'none';
+
+    if (!name)      { error.textContent = 'Category name is required.'; error.style.display = 'block'; return; }
+    if (!id_parent) { error.textContent = 'Please select a parent.';    error.style.display = 'block'; return; }
+
+    phytoAjax('add_category', { category_name: name, parent_category: id_parent })
+    .then(function(data) {
+        if (data.error) {
+            error.textContent   = data.error;
+            error.style.display = 'block';
+        } else {
+            success.textContent   = 'Category "' + name + '" added successfully!';
+            success.style.display = 'block';
+            document.getElementById('new_category_name').value = '';
+            reloadCategories();
+        }
+    })
+    .catch(function(e) {
+        error.textContent   = 'Failed: ' + e.message;
+        error.style.display = 'block';
+    });
+}
+
+function reloadCategories() {
+    phytoAjax('get_categories')
+    .then(function(data) {
+        if (!data || !data.length) return;
+        updateSelect('category_select', data);
+        updateSelect('parent_select',   data, 2);
+        updateCategoryTree(data);
+    });
+}
+
+function updateSelect(selectId, categories, selectedId) {
+    var sel = document.getElementById(selectId);
+    if (!sel) return;
+    sel.innerHTML = '';
+    categories.forEach(function(cat) {
+        var opt = document.createElement('option');
+        opt.value = cat.id;
+        opt.text  = cat.name;
+        opt.setAttribute('data-name', cat.name.toLowerCase());
+        if (selectedId && cat.id == selectedId) opt.selected = true;
+        sel.appendChild(opt);
+    });
+}
+
+function updateCategoryTree(categories) {
+    var tree = document.getElementById('category_tree_display');
+    if (!tree) return;
+    tree.innerHTML = categories.map(function(c) {
+        return '<div style="padding:2px 4px;">' + c.name + '</div>';
+    }).join('');
+}
 
 function toggleAI(enabled) {
     document.getElementById('ai_section').style.display = enabled ? 'block' : 'none';

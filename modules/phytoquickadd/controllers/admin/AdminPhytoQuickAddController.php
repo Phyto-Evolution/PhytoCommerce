@@ -25,6 +25,8 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
                 case 'import_pack':          $this->ajaxImportPack(); break;
                 case 'sync_pack':            $this->ajaxSyncPack(); break;
                 case 'get_subcategories':    $this->ajaxGetSubcategories(); break;
+                case 'get_categories':       $this->ajaxGetCategories(); break;
+                case 'add_category':         $this->ajaxAddCategory(); break;
                 default: echo json_encode(['error' => 'Unknown action']); exit;
             }
         }
@@ -63,35 +65,31 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
     private function getFlatCategories($id_lang) {
         $flat = [];
         $flat[] = ['id' => 2, 'name' => 'Home (Top Level)'];
-        $categories = Category::getCategories($id_lang, true, false);
-        $tree = $this->buildTree($categories);
-        $this->flattenTree($tree, $flat);
+        $result = Db::getInstance()->executeS(
+            'SELECT c.id_category, c.id_parent, cl.name
+              FROM ' . _DB_PREFIX_ . 'category c
+              JOIN ' . _DB_PREFIX_ . 'category_lang cl ON cl.id_category = c.id_category
+              WHERE cl.id_lang = ' . (int)$id_lang . '
+              AND c.active = 1
+              AND c.id_category != 1
+              AND c.id_category != 2
+              ORDER BY c.nleft ASC'
+        );
+        if (!$result) return $flat;
+        $map = [];
+        foreach ($result as $row) {
+            $map[$row['id_category']] = $row;
+        }
+        $this->buildFlatFromMap($map, 2, $flat, 0);
         return $flat;
     }
 
-    private function buildTree($categories, $id_parent = 2, $depth = 0) {
-        $tree = [];
-        if (!isset($categories[$id_parent])) return $tree;
-        foreach ($categories[$id_parent] as $cat) {
-            if (!is_array($cat) || !isset($cat['id_category'])) continue;
-            if ($cat['id_category'] == 1) continue;
-            $tree[] = [
-                'id'       => $cat['id_category'],
-                'name'     => $cat['name'],
-                'depth'    => $depth,
-                'children' => $this->buildTree($categories, $cat['id_category'], $depth + 1),
-            ];
-        }
-        return $tree;
-    }
-
-    private function flattenTree($tree, &$flat, $depth = 0) {
-        foreach ($tree as $item) {
+    private function buildFlatFromMap($map, $id_parent, &$flat, $depth) {
+        foreach ($map as $cat) {
+            if ((int)$cat['id_parent'] !== (int)$id_parent) continue;
             $prefix = $depth > 0 ? str_repeat('  ', $depth) . '└ ' : '';
-            $flat[] = ['id' => $item['id'], 'name' => $prefix . $item['name']];
-            if (!empty($item['children'])) {
-                $this->flattenTree($item['children'], $flat, $depth + 1);
-            }
+            $flat[] = ['id' => $cat['id_category'], 'name' => $prefix . $cat['name']];
+            $this->buildFlatFromMap($map, $cat['id_category'], $flat, $depth + 1);
         }
     }
 
@@ -245,6 +243,30 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
         $pack_file = Tools::getValue('pack_file');
         PhytoTaxonomy::clearCache($pack_file);
         echo json_encode(PhytoTaxonomy::importPack($pack_file, $this->context->language->id));
+        exit;
+    }
+
+    private function ajaxAddCategory() {
+        $name      = trim(Tools::getValue('category_name'));
+        $id_parent = (int)Tools::getValue('parent_category');
+        $id_lang   = $this->context->language->id;
+
+        if (empty($name))    { echo json_encode(['error' => 'Category name is required.']); exit; }
+        if ($id_parent <= 0) { echo json_encode(['error' => 'Please select a parent category.']); exit; }
+
+        $result = PhytoTaxonomy::ensureCategory($name, $name, $id_parent, $id_lang);
+        if ($result) {
+            echo json_encode(['success' => true, 'id' => $result, 'name' => $name]);
+        } else {
+            echo json_encode(['error' => 'Failed to add category. It may already exist.']);
+        }
+        exit;
+    }
+
+    private function ajaxGetCategories() {
+        $id_lang = $this->context->language->id;
+        $cats = $this->getFlatCategories($id_lang);
+        echo json_encode($cats ?: []);
         exit;
     }
 
