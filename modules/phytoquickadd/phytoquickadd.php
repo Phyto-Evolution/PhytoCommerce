@@ -22,6 +22,12 @@ class PhytoQuickAdd extends Module {
         return parent::uninstall() && $this->uninstallTab();
     }
 
+    public function getContent() {
+        Tools::redirectAdmin(
+            $this->context->link->getAdminLink('AdminPhytoQuickAdd')
+        );
+    }
+
     private function installTab() {
         $tab = new Tab();
         $tab->active = 1;
