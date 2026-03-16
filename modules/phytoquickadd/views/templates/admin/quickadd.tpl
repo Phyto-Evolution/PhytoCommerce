@@ -83,15 +83,16 @@
 </div>
 {literal}
 <script>
+var ajaxUrl = window.location.href;
 function generateDescription() {
     var plantName = document.getElementById('plant_name_ai').value;
     if (!plantName) { alert('Please enter a plant name'); return; }
     document.getElementById('ai_loading').style.display = 'block';
     document.getElementById('generateBtn').disabled = true;
-    fetch(window.location.href, {
+    fetch(ajaxUrl, {
         method: 'POST',
         headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-        body: 'generateDescription=1&plant_name=' + encodeURIComponent(plantName)
+        body: 'generateDescription=1body: 'generateDescription=1&plant_name='token={}body: 'generateDescription=1&plant_name='plant_name=' + encodeURIComponent(plantName)
     })
     .then(r => r.json())
     .then(data => {
