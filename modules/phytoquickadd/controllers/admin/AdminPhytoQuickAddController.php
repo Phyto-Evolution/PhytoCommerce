@@ -1,20 +1,29 @@
 <?php
 if (!defined('_PS_VERSION_')) exit;
 
+require_once _PS_MODULE_DIR_ . 'phytoquickadd/classes/PhytoTaxonomy.php';
+
 class AdminPhytoQuickAddController extends ModuleAdminController {
 
     public function __construct() {
         parent::__construct();
         $this->bootstrap = true;
-        $this->display = 'view';
+        $this->display   = 'view';
     }
 
     public function init() {
         parent::init();
         if (Tools::isSubmit('phyto_ajax')) {
+            header('Content-Type: application/json');
             $action = Tools::getValue('phyto_action');
-            if ($action === 'generate_description') {
-                $this->ajaxGenerateDescription();
+            switch ($action) {
+                case 'generate_description': $this->ajaxGenerateDescription(); break;
+                case 'search_categories':    $this->ajaxSearchCategories(); break;
+                case 'fetch_packs':          $this->ajaxFetchPacks(); break;
+                case 'import_pack':          $this->ajaxImportPack(); break;
+                case 'sync_pack':            $this->ajaxSyncPack(); break;
+                case 'get_subcategories':    $this->ajaxGetSubcategories(); break;
+                default: echo json_encode(['error' => 'Unknown action']); exit;
             }
         }
     }
@@ -22,7 +31,7 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
     public function postProcess() {
         if (Tools::isSubmit('saveSettings')) {
             Configuration::updateValue('PHYTO_OPENAI_KEY', Tools::getValue('openai_key'));
-            $this->confirmations[] = 'Settings saved.';
+            $this->confirmations[] = 'Settings saved successfully.';
         }
         if (Tools::isSubmit('submitAddCategory')) {
             $this->processAddCategory();
@@ -34,14 +43,12 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
 
     public function renderView() {
         $id_lang = $this->context->language->id;
-        $categories = Category::getCategories($id_lang, true, false);
-        $category_tree = $this->buildCategoryTree($categories);
-        $flat_categories = [];
-        $this->flattenCategories($category_tree, $flat_categories);
+        $flat_categories = $this->getFlatCategories($id_lang);
+        $imported_packs  = PhytoTaxonomy::getImportedPacks();
 
         $this->context->smarty->assign([
-            'category_tree'   => $category_tree,
             'flat_categories' => $flat_categories,
+            'imported_packs'  => $imported_packs,
             'openai_key'      => Configuration::get('PHYTO_OPENAI_KEY') ?: '',
             'ajax_url'        => $this->context->link->getAdminLink('AdminPhytoQuickAdd'),
         ]);
@@ -51,27 +58,37 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
         );
     }
 
-    private function buildCategoryTree($categories, $id_parent = 1, $depth = 0) {
+    private function getFlatCategories($id_lang) {
+        $flat = [];
+        $flat[] = ['id' => 2, 'name' => 'Home (Top Level)'];
+        $categories = Category::getCategories($id_lang, true, false);
+        $tree = $this->buildTree($categories);
+        $this->flattenTree($tree, $flat);
+        return $flat;
+    }
+
+    private function buildTree($categories, $id_parent = 2, $depth = 0) {
         $tree = [];
         if (!isset($categories[$id_parent])) return $tree;
         foreach ($categories[$id_parent] as $cat) {
             if (!is_array($cat) || !isset($cat['id_category'])) continue;
-            $item = [
+            if ($cat['id_category'] == 1) continue;
+            $tree[] = [
                 'id'       => $cat['id_category'],
-                'name'     => str_repeat('— ', $depth) . $cat['name'],
+                'name'     => $cat['name'],
                 'depth'    => $depth,
-                'children' => $this->buildCategoryTree($categories, $cat['id_category'], $depth + 1),
+                'children' => $this->buildTree($categories, $cat['id_category'], $depth + 1),
             ];
-            $tree[] = $item;
         }
         return $tree;
     }
 
-    private function flattenCategories($tree, &$flat) {
+    private function flattenTree($tree, &$flat, $depth = 0) {
         foreach ($tree as $item) {
-            $flat[] = ['id' => $item['id'], 'name' => $item['name']];
+            $prefix = $depth > 0 ? str_repeat('  ', $depth) . '└ ' : '';
+            $flat[] = ['id' => $item['id'], 'name' => $prefix . $item['name']];
             if (!empty($item['children'])) {
-                $this->flattenCategories($item['children'], $flat);
+                $this->flattenTree($item['children'], $flat, $depth + 1);
             }
         }
     }
@@ -79,21 +96,16 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
     private function processAddCategory() {
         $name      = trim(Tools::getValue('category_name'));
         $id_parent = (int)Tools::getValue('parent_category');
+        $id_lang   = $this->context->language->id;
 
-        if (empty($name)) { $this->errors[] = 'Category name is required.'; return; }
+        if (empty($name))    { $this->errors[] = 'Category name is required.'; return; }
         if ($id_parent <= 0) { $this->errors[] = 'Please select a parent category.'; return; }
 
-        $id_lang = $this->context->language->id;
-        $category = new Category();
-        $category->name         = [$id_lang => $name];
-        $category->link_rewrite = [$id_lang => Tools::link_rewrite($name)];
-        $category->id_parent    = $id_parent;
-        $category->active       = 1;
-
-        if ($category->add()) {
+        $result = PhytoTaxonomy::ensureCategory($name, $name, $id_parent, $id_lang);
+        if ($result) {
             $this->confirmations[] = 'Category "' . $name . '" added successfully!';
         } else {
-            $this->errors[] = 'Failed to add category.';
+            $this->errors[] = 'Failed to add category. It may already exist.';
         }
     }
 
@@ -123,15 +135,17 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
             StockAvailable::setQuantity($product->id, 0, $quantity);
             $product->addToCategories([$id_category]);
             if (isset($_FILES['product_image']) && $_FILES['product_image']['error'] === 0) {
-                $this->uploadProductImage($product->id, $_FILES['product_image']['tmp_name']);
+                $this->handleProductImage($product->id, $_FILES['product_image']['tmp_name']);
             }
-            $this->confirmations[] = 'Product "' . $name . '" added successfully!';
+            $this->confirmations[] = 'Product "' . $name . '" added! <a href="'
+                . $this->context->link->getAdminLink('AdminProducts')
+                . '&id_product=' . $product->id . '&updateproduct" target="_blank">Edit full details →</a>';
         } else {
             $this->errors[] = 'Failed to save product.';
         }
     }
 
-    protected function uploadProductImage($id_product, $tmp_file) {
+    protected function handleProductImage($id_product, $tmp_file) {
         $image = new Image();
         $image->id_product = $id_product;
         $image->position   = Image::getHighestPosition($id_product) + 1;
@@ -146,23 +160,16 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
     }
 
     private function ajaxGenerateDescription() {
-        header('Content-Type: application/json');
         $plant_name = Tools::getValue('plant_name');
         $openai_key = Configuration::get('PHYTO_OPENAI_KEY');
 
-        if (empty($openai_key)) {
-            echo json_encode(['error' => 'OpenAI API key not set. Go to Settings tab.']);
-            exit;
-        }
-        if (empty($plant_name)) {
-            echo json_encode(['error' => 'Plant name is required.']);
-            exit;
-        }
+        if (empty($openai_key)) { echo json_encode(['error' => 'OpenAI API key not set. Go to Settings tab.']); exit; }
+        if (empty($plant_name)) { echo json_encode(['error' => 'Plant name is required.']); exit; }
 
         $prompt = "Write a compelling ecommerce product description for a rare/exotic plant called '$plant_name'. "
                 . "Include what makes it special, care difficulty, size, ideal conditions, why someone should buy it. "
-                . "Under 200 words. Also a 2-sentence short description. "
-                . "Return ONLY valid JSON with keys: description, short_description";
+                . "Under 200 words. Also provide a 2-sentence short description. "
+                . "Return ONLY valid JSON: {\"description\": \"...\", \"short_description\": \"...\"}";
 
         $ch = curl_init('https://api.openai.com/v1/chat/completions');
         curl_setopt_array($ch, [
@@ -184,7 +191,7 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
         $err    = curl_error($ch);
         curl_close($ch);
 
-        if ($err) { echo json_encode(['error' => 'cURL error: ' . $err]); exit; }
+        if ($err) { echo json_encode(['error' => 'Connection error: ' . $err]); exit; }
 
         $data = json_decode($result, true);
         if (isset($data['choices'][0]['message']['content'])) {
@@ -194,8 +201,55 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
             $parsed  = json_decode($content, true);
             echo json_encode($parsed ?: ['description' => $content, 'short_description' => '']);
         } else {
-            echo json_encode(['error' => 'OpenAI returned no content. Check your API key and quota.']);
+            $msg = isset($data['error']['message']) ? $data['error']['message'] : 'Unknown error';
+            echo json_encode(['error' => 'OpenAI error: ' . $msg]);
         }
+        exit;
+    }
+
+    private function ajaxSearchCategories() {
+        $term    = Tools::getValue('term');
+        $id_lang = $this->context->language->id;
+        echo json_encode(PhytoTaxonomy::getSuggestions($term, $id_lang) ?: []);
+        exit;
+    }
+
+    private function ajaxFetchPacks() {
+        $index = PhytoTaxonomy::fetchIndex();
+        if (!$index) {
+            echo json_encode(['error' => 'Could not fetch taxonomy index from GitHub.']);
+            exit;
+        }
+        $imported = PhytoTaxonomy::getImportedPacks();
+        foreach ($index['packs'] as &$pack) {
+            $pack['imported'] = isset($imported[$pack['file']]);
+            if ($pack['imported']) {
+                $pack['imported_at'] = $imported[$pack['file']]['imported_at'];
+                $pack['count']       = $imported[$pack['file']]['count'];
+            }
+        }
+        echo json_encode($index);
+        exit;
+    }
+
+    private function ajaxImportPack() {
+        $pack_file = Tools::getValue('pack_file');
+        if (empty($pack_file)) { echo json_encode(['error' => 'No pack file specified.']); exit; }
+        echo json_encode(PhytoTaxonomy::importPack($pack_file, $this->context->language->id));
+        exit;
+    }
+
+    private function ajaxSyncPack() {
+        $pack_file = Tools::getValue('pack_file');
+        PhytoTaxonomy::clearCache($pack_file);
+        echo json_encode(PhytoTaxonomy::importPack($pack_file, $this->context->language->id));
+        exit;
+    }
+
+    private function ajaxGetSubcategories() {
+        $id_parent = (int)Tools::getValue('id_parent');
+        $id_lang   = $this->context->language->id;
+        echo json_encode(Category::getChildren($id_parent, $id_lang, true) ?: []);
         exit;
     }
 }
