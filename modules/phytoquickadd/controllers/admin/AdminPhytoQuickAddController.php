@@ -130,7 +130,7 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
         }
     }
 
-    private function uploadImage($id_product, $tmp_file) {
+    protected function uploadImage($id_product, $tmp_file) {
         $image = new Image();
         $image->id_product = $id_product;
         $image->position   = Image::getHighestPosition($id_product) + 1;
