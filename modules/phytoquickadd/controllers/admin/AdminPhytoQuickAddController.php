@@ -122,7 +122,7 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
             StockAvailable::setQuantity($product->id, 0, $quantity);
             $product->addToCategories([$id_category]);
             if (isset($_FILES['product_image']) && $_FILES['product_image']['error'] === 0) {
-                $this->uploadImage($product->id, $_FILES['product_image']['tmp_name']);
+                $this->uploadProductImage($product->id, $_FILES['product_image']['tmp_name']);
             }
             $this->confirmations[] = 'Product "' . $name . '" added successfully!';
         } else {
@@ -130,7 +130,7 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
         }
     }
 
-    protected function uploadImage($id_product, $tmp_file) {
+    protected function uploadProductImage($id_product, $tmp_file) {
         $image = new Image();
         $image->id_product = $id_product;
         $image->position   = Image::getHighestPosition($id_product) + 1;
