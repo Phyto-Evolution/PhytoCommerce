@@ -47,7 +47,7 @@
             <div id="ai_error" class="alert alert-danger" style="display:none;margin-top:10px;"></div>
         </div>
 
-        <form method="post" enctype="multipart/form-data" id="product_form">
+        <form method="post" enctype="multipart/form-data" id="product_form" onsubmit="sessionStorage.setItem('phyto_tab','tab-product');">
             <input type="hidden" name="submitQuickAdd" value="1">
             <div class="row">
                 <div class="col-md-6">
@@ -135,7 +135,7 @@
     <div class="panel-body">
         <div class="row">
             <div class="col-md-5">
-                <form method="post">
+                <form method="post" onsubmit="sessionStorage.setItem('phyto_tab','tab-category');">
                     <input type="hidden" name="submitAddCategory" value="1">
                     <div class="form-group">
                         <label>Category Name <span class="text-danger">*</span></label>
@@ -405,7 +405,8 @@ function importPack(packFile, packName) {
         } else {
             appendLog('Import complete! ' + data.imported + ' categories created.\n');
             if (data.log) data.log.forEach(function(l) { appendLog(l); });
-            appendLog('\nDone! Reload the page to see new categories in dropdowns.');
+            appendLog('\nDone! Reloading page to refresh category dropdowns...');
+        setTimeout(function() { sessionStorage.setItem('phyto_tab','tab-taxonomy'); window.location.reload(); }, 2000);
             loadPacks();
         }
     })
@@ -452,6 +453,16 @@ function phytoAjax(action, params) {
         body: body
     }).then(function(r) { return r.json(); });
 }
+
+// Restore active tab after page reload
+document.addEventListener('DOMContentLoaded', function() {
+    var savedTab = sessionStorage.getItem('phyto_tab');
+    if (savedTab) {
+        sessionStorage.removeItem('phyto_tab');
+        var tabLink = document.querySelector('a[href="#' + savedTab + '"]');
+        if (tabLink) tabLink.click();
+    }
+});
 
 document.addEventListener('DOMContentLoaded', function() {
     var taxTab = document.querySelector('a[href="#tab-taxonomy"]');
