@@ -1,17 +1,19 @@
 <?php
 if (!defined('_PS_VERSION_')) exit;
 
+require_once __DIR__ . '/classes/PhytoTaxonomy.php';
+
 class PhytoQuickAdd extends Module {
 
     public function __construct() {
-        $this->name = 'phytoquickadd';
-        $this->tab = 'administration';
-        $this->version = '2.0.0';
-        $this->author = 'Phyto Evolution';
+        $this->name        = 'phytoquickadd';
+        $this->tab         = 'administration';
+        $this->version     = '3.0.0';
+        $this->author      = 'Phyto Evolution';
         $this->need_instance = 0;
         parent::__construct();
         $this->displayName = 'Phyto Quick Add';
-        $this->description = 'Quickly add products and categories with optional AI descriptions';
+        $this->description = 'Quickly add products and categories with taxonomy intelligence';
     }
 
     public function install() {
@@ -30,14 +32,14 @@ class PhytoQuickAdd extends Module {
 
     private function installTab() {
         $tab = new Tab();
-        $tab->active = 1;
+        $tab->active     = 1;
         $tab->class_name = 'AdminPhytoQuickAdd';
-        $tab->name = [];
+        $tab->name       = [];
         foreach (Language::getLanguages(true) as $lang) {
             $tab->name[$lang['id_lang']] = 'Phyto Quick Add';
         }
         $tab->id_parent = (int)Tab::getIdFromClassName('AdminCatalog');
-        $tab->module = $this->name;
+        $tab->module    = $this->name;
         return $tab->add();
     }
 

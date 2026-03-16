@@ -3,8 +3,9 @@
 {block name="override_tpl"}
 
 <ul class="nav nav-tabs" style="margin-bottom:20px;">
-    <li class="active"><a href="#tab-product" data-toggle="tab"><i class="icon-leaf"></i> Add Product</a></li>
+    <li class="active"><a href="#tab-product"  data-toggle="tab"><i class="icon-leaf"></i> Add Product</a></li>
     <li><a href="#tab-category" data-toggle="tab"><i class="icon-folder-open"></i> Add Category</a></li>
+    <li><a href="#tab-taxonomy" data-toggle="tab"><i class="icon-sitemap"></i> Taxonomy Packs</a></li>
     <li><a href="#tab-settings" data-toggle="tab"><i class="icon-cog"></i> Settings</a></li>
 </ul>
 
@@ -15,15 +16,17 @@
     <div class="panel-heading"><i class="icon-leaf"></i> Quick Add Product</div>
     <div class="panel-body">
 
-        <div class="well" style="padding:12px 15px;margin-bottom:20px;">
-            <label class="checkbox-inline" style="font-size:14px;cursor:pointer;">
+        <div class="well" style="padding:12px 15px;margin-bottom:20px;background:#f8fff8;border-color:#c3e6cb;">
+            <label class="checkbox-inline" style="font-size:14px;cursor:pointer;margin:0;">
                 <input type="checkbox" id="enable_ai" onchange="toggleAI(this.checked)">
-                &nbsp;<i class="icon-magic"></i> <strong>Use AI to generate description</strong>
-                <small class="text-muted"> (requires OpenAI API key in Settings tab)</small>
+                &nbsp;<i class="icon-magic" style="color:#6f42c1;"></i>
+                <strong>Use AI to generate description</strong>
+                <small class="text-muted"> — requires OpenAI API key in Settings</small>
             </label>
         </div>
 
         <div id="ai_section" style="display:none;" class="well">
+            <h5><i class="icon-magic"></i> AI Description Generator</h5>
             <div class="row">
                 <div class="col-md-8">
                     <div class="input-group">
@@ -35,39 +38,46 @@
                             </button>
                         </span>
                     </div>
+                    <small class="text-muted">AI will fill name, short and full description below</small>
                 </div>
             </div>
-            <div id="ai_status" style="margin-top:8px;display:none;">
-                <i class="icon-spinner icon-spin"></i> Generating description...
+            <div id="ai_status" style="margin-top:10px;display:none;">
+                <i class="icon-spinner icon-spin"></i> Generating — please wait...
             </div>
-            <div id="ai_error" class="alert alert-danger" style="display:none;margin-top:8px;"></div>
+            <div id="ai_error" class="alert alert-danger" style="display:none;margin-top:10px;"></div>
         </div>
 
-        <form method="post" enctype="multipart/form-data">
+        <form method="post" enctype="multipart/form-data" id="product_form">
             <input type="hidden" name="submitQuickAdd" value="1">
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
                         <label>Product Name <span class="text-danger">*</span></label>
-                        <input type="text" name="product_name" id="product_name" class="form-control" required
-                               placeholder="e.g. Nepenthes rajah - Highland Pitcher Plant">
+                        <input type="text" name="product_name" id="product_name"
+                               class="form-control" required
+                               placeholder="e.g. Nepenthes rajah — Highland Pitcher Plant">
                     </div>
                     <div class="form-group">
                         <label>Short Description</label>
                         <textarea name="product_short_description" id="product_short_description"
-                                  class="form-control" rows="3"></textarea>
+                                  class="form-control" rows="3"
+                                  placeholder="2-3 sentence summary shown in listings"></textarea>
                     </div>
                     <div class="form-group">
                         <label>Full Description</label>
                         <textarea name="product_description" id="product_description"
-                                  class="form-control" rows="7"></textarea>
+                                  class="form-control" rows="8"
+                                  placeholder="Full description — care notes, origin, features"></textarea>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label>Price (₹) <span class="text-danger">*</span></label>
-                        <input type="number" name="product_price" class="form-control"
-                               step="0.01" min="0" required placeholder="999.00">
+                        <label>Price (Rs.) <span class="text-danger">*</span></label>
+                        <div class="input-group">
+                            <span class="input-group-addon">Rs.</span>
+                            <input type="number" name="product_price" class="form-control"
+                                   step="0.01" min="0" required placeholder="999.00">
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>Stock Quantity <span class="text-danger">*</span></label>
@@ -76,26 +86,42 @@
                     </div>
                     <div class="form-group">
                         <label>Category <span class="text-danger">*</span></label>
-                        <select name="product_category" class="form-control" required>
-                            <option value="">-- Select Category --</option>
+                        <input type="text" id="category_search" class="form-control"
+                               placeholder="Type to filter categories..."
+                               onkeyup="filterCategories(this.value)"
+                               style="margin-bottom:5px;">
+                        <select name="product_category" id="category_select"
+                                class="form-control" required size="6">
                             {if isset($flat_categories)}
                                 {foreach $flat_categories as $cat}
-                                    <option value="{$cat.id}">{$cat.name}</option>
+                                    <option value="{$cat.id}"
+                                        data-name="{$cat.name|lower}">{$cat.name}</option>
                                 {/foreach}
                             {/if}
                         </select>
                         <small class="text-muted">
-                            Need a new category? <a href="#tab-category" data-toggle="tab">Add it here →</a>
+                            <a href="#tab-category" data-toggle="tab">Add category →</a>
+                            &nbsp;|&nbsp;
+                            <a href="#tab-taxonomy" data-toggle="tab">Import taxonomy packs →</a>
                         </small>
                     </div>
                     <div class="form-group">
                         <label>Product Image</label>
-                        <input type="file" name="product_image" class="form-control" accept="image/*">
+                        <input type="file" name="product_image" class="form-control"
+                               accept="image/*" onchange="previewImage(this)">
+                        <div id="img_preview" style="margin-top:8px;display:none;">
+                            <img id="img_preview_src"
+                                 style="max-height:120px;border-radius:4px;border:1px solid #ddd;">
+                        </div>
                     </div>
                 </div>
             </div>
+            <hr>
             <button type="submit" class="btn btn-success btn-lg">
                 <i class="icon-plus"></i> Add Product
+            </button>
+            <button type="reset" class="btn btn-default btn-lg" style="margin-left:10px;">
+                <i class="icon-refresh"></i> Clear
             </button>
         </form>
 
@@ -107,10 +133,10 @@
 <div class="panel">
     <div class="panel-heading"><i class="icon-folder-open"></i> Add Category / Sub-category</div>
     <div class="panel-body">
-        <form method="post">
-            <input type="hidden" name="submitAddCategory" value="1">
-            <div class="row">
-                <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-5">
+                <form method="post">
+                    <input type="hidden" name="submitAddCategory" value="1">
                     <div class="form-group">
                         <label>Category Name <span class="text-danger">*</span></label>
                         <input type="text" name="category_name" class="form-control" required
@@ -118,33 +144,73 @@
                     </div>
                     <div class="form-group">
                         <label>Parent Category <span class="text-danger">*</span></label>
-                        <select name="parent_category" class="form-control" required>
-                            <option value="">-- Select Parent --</option>
+                        <input type="text" id="parent_search" class="form-control"
+                               placeholder="Type to filter..."
+                               onkeyup="filterParents(this.value)"
+                               style="margin-bottom:5px;">
+                        <select name="parent_category" id="parent_select"
+                                class="form-control" required size="6">
                             {if isset($flat_categories)}
                                 {foreach $flat_categories as $cat}
-                                    <option value="{$cat.id}">{$cat.name}</option>
+                                    <option value="{$cat.id}"
+                                        data-name="{$cat.name|lower}"
+                                        {if $cat.id == 2}selected{/if}>{$cat.name}</option>
                                 {/foreach}
                             {/if}
                         </select>
-                        <small class="text-muted">Select "Home" to create a top-level category</small>
+                        <small class="text-muted">Home = top level category</small>
                     </div>
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" class="btn btn-primary btn-lg">
                         <i class="icon-folder-open"></i> Add Category
                     </button>
-                </div>
-                <div class="col-md-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Current Category Tree</div>
-                        <div class="panel-body" style="max-height:400px;overflow-y:auto;">
-                            {if isset($category_tree)}
-                                {include file='module:phytoquickadd/views/templates/admin/category_tree.tpl'
-                                         categories=$category_tree}
-                            {/if}
-                        </div>
+                </form>
+            </div>
+            <div class="col-md-7">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><i class="icon-sitemap"></i> Current Category Tree</div>
+                    <div class="panel-body" style="max-height:450px;overflow-y:auto;font-size:13px;">
+                        {if isset($flat_categories)}
+                            {foreach $flat_categories as $cat}
+                                <div style="padding:2px 4px;">{$cat.name}</div>
+                            {/foreach}
+                        {/if}
                     </div>
                 </div>
             </div>
-        </form>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="tab-pane" id="tab-taxonomy">
+<div class="panel">
+    <div class="panel-heading">
+        <i class="icon-sitemap"></i> Taxonomy Packs
+        <small class="text-muted" style="margin-left:10px;">
+            Import botanical families as ready-to-use shop categories
+        </small>
+        <button class="btn btn-default btn-sm pull-right" onclick="loadPacks()">
+            <i class="icon-refresh"></i> Refresh from GitHub
+        </button>
+    </div>
+    <div class="panel-body">
+
+        <div id="packs_loading" style="text-align:center;padding:30px;">
+            <i class="icon-spinner icon-spin icon-2x"></i>
+            <p style="margin-top:10px;color:#888;">Loading taxonomy packs from GitHub...</p>
+        </div>
+
+        <div id="packs_error" class="alert alert-danger" style="display:none;"></div>
+        <div id="packs_container" style="display:none;"></div>
+
+        <div id="import_log" class="panel panel-default" style="display:none;margin-top:20px;">
+            <div class="panel-heading"><i class="icon-list"></i> Import Log</div>
+            <div class="panel-body">
+                <pre id="import_log_content"
+                     style="max-height:300px;overflow-y:auto;font-size:12px;"></pre>
+            </div>
+        </div>
+
     </div>
 </div>
 </div>
@@ -155,16 +221,22 @@
     <div class="panel-body">
         <form method="post">
             <input type="hidden" name="saveSettings" value="1">
-            <div class="form-group col-md-6">
-                <label>OpenAI API Key</label>
-                <input type="text" name="openai_key" class="form-control"
-                       value="{if isset($openai_key)}{$openai_key}{/if}"
-                       placeholder="sk-...">
-                <small class="text-muted">
-                    Get your key at <a href="https://platform.openai.com/api-keys" target="_blank">platform.openai.com</a>
-                </small>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label><i class="icon-magic"></i> OpenAI API Key</label>
+                        <input type="password" name="openai_key" class="form-control"
+                               value="{if isset($openai_key)}{$openai_key}{/if}"
+                               placeholder="sk-...">
+                        <small class="text-muted">
+                            Get your key at
+                            <a href="https://platform.openai.com/api-keys" target="_blank">
+                                platform.openai.com/api-keys
+                            </a>
+                        </small>
+                    </div>
+                </div>
             </div>
-            <div class="clearfix"></div><br>
             <button type="submit" class="btn btn-primary">
                 <i class="icon-save"></i> Save Settings
             </button>
@@ -191,35 +263,204 @@ function generateDescription() {
     var status = document.getElementById('ai_status');
     var errBox = document.getElementById('ai_error');
 
-    btn.disabled         = true;
+    btn.disabled = true;
     status.style.display = 'block';
     errBox.style.display = 'none';
 
-    fetch(AJAX_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: 'phyto_ajax=1&phyto_action=generate_description&plant_name=' + encodeURIComponent(plantName)
-    })
-    .then(function(r) { return r.json(); })
+    phytoAjax('generate_description', { plant_name: plantName })
     .then(function(data) {
         if (data.error) {
-            errBox.textContent   = data.error;
+            errBox.textContent = data.error;
             errBox.style.display = 'block';
         } else {
-            document.getElementById('product_name').value                = plantName;
-            document.getElementById('product_description').value         = data.description || '';
-            document.getElementById('product_short_description').value   = data.short_description || '';
+            document.getElementById('product_name').value              = plantName;
+            document.getElementById('product_description').value       = data.description || '';
+            document.getElementById('product_short_description').value = data.short_description || '';
         }
     })
     .catch(function(e) {
-        errBox.textContent   = 'Request failed: ' + e.message;
+        errBox.textContent = 'Request failed: ' + e.message;
         errBox.style.display = 'block';
     })
     .finally(function() {
-        btn.disabled         = false;
+        btn.disabled = false;
         status.style.display = 'none';
     });
 }
+
+function filterCategories(term) { filterSelect('category_select', term); }
+function filterParents(term)    { filterSelect('parent_select', term); }
+
+function filterSelect(selectId, term) {
+    var opts = document.getElementById(selectId).options;
+    term = term.toLowerCase();
+    for (var i = 0; i < opts.length; i++) {
+        var name = opts[i].getAttribute('data-name') || opts[i].text.toLowerCase();
+        opts[i].style.display = (!term || name.indexOf(term) > -1) ? '' : 'none';
+    }
+}
+
+function previewImage(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            document.getElementById('img_preview_src').src = e.target.result;
+            document.getElementById('img_preview').style.display = 'block';
+        };
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+function loadPacks() {
+    document.getElementById('packs_loading').style.display = 'block';
+    document.getElementById('packs_container').style.display = 'none';
+    document.getElementById('packs_error').style.display = 'none';
+
+    phytoAjax('fetch_packs')
+    .then(function(data) {
+        if (data.error) {
+            document.getElementById('packs_error').textContent = data.error;
+            document.getElementById('packs_error').style.display = 'block';
+        } else {
+            renderPacks(data);
+        }
+    })
+    .catch(function(e) {
+        document.getElementById('packs_error').textContent = 'Failed: ' + e.message;
+        document.getElementById('packs_error').style.display = 'block';
+    })
+    .finally(function() {
+        document.getElementById('packs_loading').style.display = 'none';
+    });
+}
+
+function renderPacks(data) {
+    var container = document.getElementById('packs_container');
+    var html = '';
+    var byCategory = {};
+    data.packs.forEach(function(pack) {
+        if (!byCategory[pack.category]) byCategory[pack.category] = [];
+        byCategory[pack.category].push(pack);
+    });
+    var catNames = {};
+    if (data.categories) {
+        data.categories.forEach(function(c) { catNames[c.id] = c.name; });
+    }
+    Object.keys(byCategory).forEach(function(catId) {
+        html += '<h4 style="margin-top:20px;border-bottom:2px solid #eee;padding-bottom:8px;">';
+        html += '<i class="icon-leaf"></i> ' + (catNames[catId] || catId) + '</h4>';
+        html += '<div class="row">';
+        byCategory[catId].forEach(function(pack) {
+            var isImported = pack.imported;
+            var badge = isImported
+                ? '<span class="label label-success"><i class="icon-check"></i> Imported</span>'
+                : '<span class="label label-default">Not imported</span>';
+            var importedInfo = isImported
+                ? '<br><small class="text-muted">Imported ' + pack.imported_at + ' &middot; ' + pack.count + ' categories</small>'
+                : '';
+            html += '<div class="col-md-4" style="margin-bottom:15px;">';
+            html += '<div class="panel panel-default">';
+            html += '<div class="panel-body">';
+            html += '<h5 style="margin-top:0;">' + pack.display_name + ' ' + badge + '</h5>';
+            html += '<p style="font-size:12px;color:#666;">' + pack.description + '</p>';
+            html += '<p style="font-size:11px;"><strong>Genera:</strong> ' + pack.genera.join(', ') + '</p>';
+            html += '<p style="font-size:11px;"><strong>Difficulty:</strong> ' + pack.difficulty_range + '</p>';
+            html += importedInfo;
+            html += '<div style="margin-top:10px;">';
+            if (!isImported) {
+                html += '<button class="btn btn-primary btn-sm" onclick="importPack(\'' + pack.file + '\',\'' + pack.display_name + '\')">';
+                html += '<i class="icon-download"></i> Import Categories</button>';
+            } else {
+                html += '<button class="btn btn-warning btn-sm" onclick="syncPack(\'' + pack.file + '\',\'' + pack.display_name + '\')">';
+                html += '<i class="icon-refresh"></i> Sync</button>';
+            }
+            html += '</div></div></div></div>';
+        });
+        html += '</div>';
+    });
+    if (data.coming_soon && data.coming_soon.length) {
+        html += '<h4 style="margin-top:20px;border-bottom:2px solid #eee;padding-bottom:8px;color:#aaa;">';
+        html += '<i class="icon-time"></i> Coming Soon</h4><div class="row">';
+        data.coming_soon.forEach(function(pack) {
+            html += '<div class="col-md-4" style="margin-bottom:15px;">';
+            html += '<div class="panel panel-default" style="opacity:0.5;">';
+            html += '<div class="panel-body">';
+            html += '<h5 style="margin-top:0;">' + pack.display_name + ' <span class="label label-warning">Planned</span></h5>';
+            html += '<p style="font-size:12px;color:#666;">' + (pack.description || '') + '</p>';
+            html += '</div></div></div>';
+        });
+        html += '</div>';
+    }
+    container.innerHTML = html;
+    container.style.display = 'block';
+}
+
+function importPack(packFile, packName) {
+    if (!confirm('Import "' + packName + '" as categories? This will create the full family/genus/species hierarchy.')) return;
+    showImportLog('Importing ' + packName + '...\n');
+    phytoAjax('import_pack', { pack_file: packFile })
+    .then(function(data) {
+        if (data.error) {
+            appendLog('ERROR: ' + data.error);
+        } else {
+            appendLog('Import complete! ' + data.imported + ' categories created.\n');
+            if (data.log) data.log.forEach(function(l) { appendLog(l); });
+            appendLog('\nDone! Reload the page to see new categories in dropdowns.');
+            loadPacks();
+        }
+    })
+    .catch(function(e) { appendLog('Failed: ' + e.message); });
+}
+
+function syncPack(packFile, packName) {
+    if (!confirm('Sync "' + packName + '"? This will add any new species/cultivars.')) return;
+    showImportLog('Syncing ' + packName + '...\n');
+    phytoAjax('sync_pack', { pack_file: packFile })
+    .then(function(data) {
+        if (data.error) {
+            appendLog('ERROR: ' + data.error);
+        } else {
+            appendLog('Sync complete! ' + data.imported + ' categories updated.\n');
+            if (data.log) data.log.forEach(function(l) { appendLog(l); });
+            loadPacks();
+        }
+    })
+    .catch(function(e) { appendLog('Failed: ' + e.message); });
+}
+
+function showImportLog(text) {
+    document.getElementById('import_log').style.display = 'block';
+    document.getElementById('import_log_content').textContent = text;
+}
+
+function appendLog(text) {
+    var el = document.getElementById('import_log_content');
+    el.textContent += text + '\n';
+    el.scrollTop = el.scrollHeight;
+}
+
+function phytoAjax(action, params) {
+    var body = 'phyto_ajax=1&phyto_action=' + encodeURIComponent(action);
+    if (params) {
+        Object.keys(params).forEach(function(k) {
+            body += '&' + encodeURIComponent(k) + '=' + encodeURIComponent(params[k]);
+        });
+    }
+    return fetch(AJAX_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: body
+    }).then(function(r) { return r.json(); });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    var taxTab = document.querySelector('a[href="#tab-taxonomy"]');
+    if (taxTab) {
+        taxTab.addEventListener('click', function() {
+            if (document.getElementById('packs_container').innerHTML === '') loadPacks();
+        });
+    }
+});
 </script>
 {/literal}
 
