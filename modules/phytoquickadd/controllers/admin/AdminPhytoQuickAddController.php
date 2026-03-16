@@ -20,9 +20,7 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
             $this->processQuickAdd();
         }
 
-        if (Tools::isSubmit('generateDescription')) {
-            $this->generateAIDescription();
-        }
+
 
         $categories = Category::getSimpleCategories($this->context->language->id);
         
