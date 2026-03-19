@@ -1,0 +1,167 @@
+/**
+ * PhytoCommerce — Phyto Source Badge — front.css
+ *
+ * Styles for badge pills on the front office:
+ *   - product listing cards  (.phyto-badge-mini)
+ *   - product price area     (.phyto-badge-pill)
+ *   - product extra-content  (.phyto-extra-content)
+ *
+ * Color palette
+ * ─────────────
+ *   green  #2e7d32
+ *   blue   #1565c0
+ *   amber  #e65100
+ *   red    #c62828
+ *   gray   #546e7a
+ */
+
+/* ================================================================
+   1. SHARED — base pill
+   ================================================================ */
+
+.phyto-badge-pill,
+.phyto-badge-mini {
+    display: inline-block;
+    border-radius: 20px;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    line-height: 1;
+    color: #ffffff;
+    white-space: nowrap;
+    vertical-align: middle;
+    transition: opacity 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* ── Colour variants ── */
+.phyto-badge-green  { background-color: #2e7d32; }
+.phyto-badge-blue   { background-color: #1565c0; }
+.phyto-badge-amber  { background-color: #e65100; }
+.phyto-badge-red    { background-color: #c62828; }
+.phyto-badge-gray   { background-color: #546e7a; }
+
+/* Subtle hover — helpful when pill has a title attribute (tooltip) */
+.phyto-badge-pill:hover,
+.phyto-badge-mini:hover {
+    opacity: 0.88;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    cursor: default;
+}
+
+/* ================================================================
+   2. PRODUCT PRICE AREA — standard pill
+   ================================================================ */
+
+.phyto-badge-price-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+.phyto-badge-price-row .phyto-badge-pill {
+    padding: 5px 13px;
+    font-size: 0.8rem;
+}
+
+/* ================================================================
+   3. PRODUCT LISTING CARDS — mini pill
+   ================================================================ */
+
+.phyto-badge-list-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 6px;
+}
+
+.phyto-badge-mini {
+    padding: 3px 9px;
+    font-size: 0.72rem;
+}
+
+/* ================================================================
+   4. PRODUCT EXTRA-CONTENT TAB (Source & Origin)
+   ================================================================ */
+
+.phyto-extra-content {
+    padding: 16px 0;
+}
+
+.phyto-origin-heading {
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.phyto-origin-intro {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.phyto-badge-detail-list {
+    margin: 0;
+    padding: 0;
+}
+
+.phyto-badge-detail-item {
+    padding: 14px 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.phyto-badge-detail-item:last-child {
+    border-bottom: none;
+}
+
+/* Pill size in the detail section */
+.phyto-badge-detail-item .phyto-badge-pill {
+    padding: 5px 14px;
+    font-size: 0.82rem;
+    margin-bottom: 8px;
+}
+
+.phyto-badge-desc {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+.phyto-badge-meta {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.phyto-badge-meta strong {
+    font-weight: 600;
+    margin-right: 4px;
+}
+
+.phyto-badge-permit,
+.phyto-badge-country {
+    font-style: italic;
+}
+
+/* ================================================================
+   5. RESPONSIVE — tighten gaps on narrow screens
+   ================================================================ */
+
+@media (max-width: 575px) {
+
+    .phyto-badge-price-row,
+    .phyto-badge-list-row {
+        gap: 4px;
+    }
+
+    .phyto-badge-price-row .phyto-badge-pill {
+        font-size: 0.75rem;
+        padding: 4px 10px;
+    }
+
+    .phyto-badge-mini {
+        font-size: 0.68rem;
+        padding: 2px 7px;
+    }
+}
