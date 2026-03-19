@@ -1,0 +1,202 @@
+/**
+ * Phyto Dispatch Logger — front-office styles
+ *
+ * BEM-ish namespaced with `.phyto-dispatch-` to avoid collisions with the
+ * active theme. All measurements use rem so they scale with the user's
+ * browser font preference.
+ *
+ * @author    PhytoCommerce
+ * @copyright 2024 PhytoCommerce
+ */
+
+/* ============================================================
+   Card container
+   ============================================================ */
+
+.phyto-dispatch-card {
+    border: 1px solid #d9e4ce;       /* soft sage green border */
+    border-radius: 6px;
+    background-color: #f8fdf5;       /* very light green tint */
+    margin: 1.5rem 0;
+    overflow: hidden;
+    font-size: 0.9375rem;            /* ~15 px at default scale */
+    line-height: 1.5;
+    color: #333;
+}
+
+/* ============================================================
+   Header
+   ============================================================ */
+
+.phyto-dispatch-header {
+    background-color: #4a7c3f;       /* forest green */
+    padding: 0.625rem 1rem;
+}
+
+.phyto-dispatch-title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+}
+
+/* ============================================================
+   Body
+   ============================================================ */
+
+.phyto-dispatch-body {
+    padding: 1rem;
+}
+
+/* ============================================================
+   Info table
+   ============================================================ */
+
+.phyto-dispatch-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.phyto-dispatch-row {
+    border-bottom: 1px solid #e4ede0;
+}
+
+.phyto-dispatch-row:last-child {
+    border-bottom: none;
+}
+
+.phyto-dispatch-label {
+    width: 42%;
+    padding: 0.45rem 0.5rem 0.45rem 0;
+    font-weight: 600;
+    color: #4a7c3f;
+    vertical-align: top;
+    text-align: left;
+}
+
+.phyto-dispatch-value {
+    padding: 0.45rem 0;
+    color: #333;
+    vertical-align: top;
+}
+
+/* ============================================================
+   Gel / heat pack badges
+   ============================================================ */
+
+.phyto-dispatch-badge {
+    display: inline-block;
+    padding: 0.2em 0.55em;
+    border-radius: 3px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-right: 0.3em;
+    vertical-align: middle;
+}
+
+.phyto-dispatch-badge--cool {
+    background-color: #dbeeff;
+    color: #1a5fa8;
+    border: 1px solid #b3d4f5;
+}
+
+.phyto-dispatch-badge--warm {
+    background-color: #fff2db;
+    color: #8a4f00;
+    border: 1px solid #f5d9a0;
+}
+
+/* ============================================================
+   Photo
+   ============================================================ */
+
+.phyto-dispatch-photo {
+    margin: 0 0 1rem;
+    display: inline-block;
+}
+
+.phyto-dispatch-photo__img {
+    display: block;
+    max-width: 240px;
+    max-height: 240px;
+    width: auto;
+    height: auto;
+    border: 1px solid #d9e4ce;
+    border-radius: 4px;
+    padding: 3px;
+    background-color: #fff;
+    transition: box-shadow 0.15s ease;
+}
+
+.phyto-dispatch-photo__img:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.phyto-dispatch-photo__caption {
+    margin-top: 0.3rem;
+    font-size: 0.8125rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* ============================================================
+   LAG notice
+   ============================================================ */
+
+.phyto-dispatch-lag-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.4rem;
+    margin: 0;
+    padding: 0.6rem 0.75rem;
+    background-color: #eaf4e6;
+    border-left: 3px solid #4a7c3f;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.875rem;
+    color: #3a6030;
+    line-height: 1.45;
+}
+
+.phyto-dispatch-lag-icon {
+    flex-shrink: 0;
+    margin-top: 0.1em;
+    fill: #4a7c3f;
+}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+
+@media (max-width: 575px) {
+
+    .phyto-dispatch-table,
+    .phyto-dispatch-table tbody,
+    .phyto-dispatch-table tr,
+    .phyto-dispatch-table th,
+    .phyto-dispatch-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .phyto-dispatch-label {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .phyto-dispatch-value {
+        padding-top: 0.1rem;
+        padding-bottom: 0.55rem;
+    }
+
+    .phyto-dispatch-row {
+        border-bottom: 1px solid #e4ede0;
+        padding: 0.3rem 0;
+    }
+
+    .phyto-dispatch-photo__img {
+        max-width: 100%;
+    }
+}
