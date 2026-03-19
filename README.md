@@ -76,7 +76,7 @@ Admin → Advanced Parameters → ERP Connector *(installed under AdminTools)*
 ### ERPNext setup
 1. In ERPNext, go to **Settings → Users & Permissions → User**, select your API user, click **Generate Keys**
 2. In PrestaShop admin, go to ERP Connector → Settings
-3. Enter: `https://erp.phytolabs.in`, API Key, API Secret
+3. Enter: `your ERPNext portal`, API Key, API Secret
 4. Click **Test Connection** on the Dashboard tab
 
 ### Required custom ERPNext fields
