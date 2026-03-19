@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>phyto_live_arrival</name>
+    <displayName><![CDATA[Phyto Live Arrival Guarantee]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Live Arrival Guarantee opt-in at checkout. Controls shipping window, adds fee or free LAG threshold, and generates LAG claim forms.]]></description>
+    <author><![CDATA[PhytoCommerce]]></author>
+    <tab><![CDATA[shipping_logistics]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+    <limited_countries></limited_countries>
+</module>

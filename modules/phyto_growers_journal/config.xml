@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>phyto_growers_journal</name>
+    <displayName><![CDATA[Grower's Journal]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Living grow-log attached to each product. Store posts updates with photos; buyers can also post updates on purchased products. Acts as social proof.]]></description>
+    <author><![CDATA[PhytoCommerce]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+    <limited_countries></limited_countries>
+</module>

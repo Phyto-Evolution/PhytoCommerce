@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>phyto_wholesale_portal</name>
+    <displayName><![CDATA[Phyto Wholesale Portal]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[B2B wholesale tier with MOQ, tiered pricing and invoice payment]]></description>
+    <author><![CDATA[PhytoCommerce]]></author>
+    <tab><![CDATA[AdminCustomers]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+    <limited_countries></limited_countries>
+</module>

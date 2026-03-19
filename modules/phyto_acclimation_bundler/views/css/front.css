@@ -1,0 +1,102 @@
+/* Phyto Acclimation Bundler — Front CSS */
+
+.phyto-acclim-widget {
+    border: 1px solid #dce3ea;
+    border-radius: 6px;
+    padding: 16px;
+    margin-top: 20px;
+    background: #f9fef9;
+}
+
+.phyto-acclim-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.phyto-acclim-icon {
+    font-size: 1.4rem;
+}
+
+.phyto-acclim-headline {
+    flex: 1;
+    font-size: 1rem;
+    color: #2e5a27;
+}
+
+.phyto-acclim-dismiss {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #888;
+    line-height: 1;
+    padding: 0 4px;
+}
+
+.phyto-acclim-dismiss:hover {
+    color: #333;
+}
+
+.phyto-acclim-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.phyto-acclim-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #e8eef2;
+    border-radius: 4px;
+}
+
+.phyto-acclim-item-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+
+.phyto-acclim-item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.phyto-acclim-item-name {
+    font-size: 0.9rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.phyto-acclim-item-name:hover {
+    text-decoration: underline;
+}
+
+.phyto-acclim-item-price {
+    font-weight: 600;
+    color: #2e5a27;
+    font-size: 0.9rem;
+}
+
+.phyto-acclim-footer {
+    margin-top: 14px;
+}
+
+.phyto-acclim-add-all {
+    width: 100%;
+    background-color: #2e5a27;
+    border-color: #2e5a27;
+}
+
+.phyto-acclim-add-all:hover {
+    background-color: #1e3d1a;
+    border-color: #1e3d1a;
+}

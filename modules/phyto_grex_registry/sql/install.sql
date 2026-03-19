@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS `PREFIX_phyto_grex_registry` (
+    `id_grex` INT AUTO_INCREMENT PRIMARY KEY,
+    `id_product` INT NOT NULL,
+    `genus` VARCHAR(100) DEFAULT NULL,
+    `species` VARCHAR(100) DEFAULT NULL,
+    `subspecies` VARCHAR(100) DEFAULT NULL,
+    `cultivar` VARCHAR(150) DEFAULT NULL,
+    `grex_name` VARCHAR(150) DEFAULT NULL,
+    `hybrid_formula` VARCHAR(255) DEFAULT NULL,
+    `mother` VARCHAR(150) DEFAULT NULL,
+    `father` VARCHAR(150) DEFAULT NULL,
+    `icps_registered` TINYINT(1) DEFAULT 0,
+    `icps_number` VARCHAR(50) DEFAULT NULL,
+    `habitat` TEXT DEFAULT NULL,
+    `endemic_region` VARCHAR(200) DEFAULT NULL,
+    `conservation_status` VARCHAR(20) DEFAULT NULL,
+    `notes` TEXT DEFAULT NULL,
+    `date_add` DATETIME NOT NULL,
+    `date_upd` DATETIME NOT NULL,
+    UNIQUE KEY `idx_product` (`id_product`)
+) ENGINE=ENGINE_TYPE DEFAULT CHARSET=utf8mb4;
