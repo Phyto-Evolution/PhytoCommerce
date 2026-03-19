@@ -166,7 +166,7 @@
             <div class="col-md-7">
                 <div class="panel panel-default">
                     <div class="panel-heading"><i class="icon-sitemap"></i> Current Category Tree</div>
-                    <div class="panel-body" style="max-height:450px;overflow-y:auto;font-size:13px;">
+                    <div id="category_tree_display" class="panel-body" style="max-height:450px;overflow-y:auto;font-size:13px;">
                         {if isset($flat_categories)}
                             {foreach $flat_categories as $cat}
                                 <div style="padding:2px 4px;">{$cat.name}</div>
@@ -222,15 +222,16 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label><i class="icon-magic"></i> OpenAI API Key</label>
-                        <input type="password" name="openai_key" class="form-control"
-                               value="{if isset($openai_key)}{$openai_key}{/if}"
-                               placeholder="sk-...">
+                        <label><i class="icon-magic"></i> Claude AI API Key</label>
+                        <input type="password" name="ai_key" class="form-control"
+                               value="{if isset($ai_key)}{$ai_key}{/if}"
+                               placeholder="sk-ant-...">
                         <small class="text-muted">
                             Get your key at
-                            <a href="https://platform.openai.com/api-keys" target="_blank">
-                                platform.openai.com/api-keys
+                            <a href="https://console.anthropic.com/settings/keys" target="_blank">
+                                console.anthropic.com
                             </a>
+                            — stored as PHYTO_AI_KEY
                         </small>
                     </div>
                 </div>

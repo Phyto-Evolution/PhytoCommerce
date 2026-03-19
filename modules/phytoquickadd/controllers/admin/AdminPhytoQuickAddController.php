@@ -34,7 +34,7 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
 
     public function postProcess() {
         if (Tools::isSubmit('saveSettings')) {
-            Configuration::updateValue('PHYTO_OPENAI_KEY', Tools::getValue('openai_key'));
+            Configuration::updateValue('PHYTO_AI_KEY', Tools::getValue('ai_key'));
             $this->confirmations[] = 'Settings saved successfully.';
         }
         if (Tools::isSubmit('submitAddCategory')) {
@@ -53,7 +53,7 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
         $this->context->smarty->assign([
             'flat_categories' => $flat_categories,
             'imported_packs'  => $imported_packs,
-            'openai_key'      => Configuration::get('PHYTO_OPENAI_KEY') ?: '',
+            'ai_key'          => Configuration::get('PHYTO_AI_KEY') ?: '',
             'ajax_url'        => $this->context->link->getAdminLink('AdminPhytoQuickAdd'),
         ]);
 
@@ -161,9 +161,9 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
 
     private function ajaxGenerateDescription() {
         $plant_name = Tools::getValue('plant_name');
-        $openai_key = Configuration::get('PHYTO_OPENAI_KEY');
+        $ai_key     = Configuration::get('PHYTO_AI_KEY');
 
-        if (empty($openai_key)) { echo json_encode(['error' => 'OpenAI API key not set. Go to Settings tab.']); exit; }
+        if (empty($ai_key))     { echo json_encode(['error' => 'Claude AI key not set. Go to Settings tab.']); exit; }
         if (empty($plant_name)) { echo json_encode(['error' => 'Plant name is required.']); exit; }
 
         $prompt = "Write a compelling ecommerce product description for a rare/exotic plant called '$plant_name'. "
@@ -171,19 +171,20 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
                 . "Under 200 words. Also provide a 2-sentence short description. "
                 . "Return ONLY valid JSON: {\"description\": \"...\", \"short_description\": \"...\"}";
 
-        $ch = curl_init('https://api.openai.com/v1/chat/completions');
+        $ch = curl_init('https://api.anthropic.com/v1/messages');
         curl_setopt_array($ch, [
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_POST           => true,
             CURLOPT_TIMEOUT        => 30,
             CURLOPT_HTTPHEADER     => [
                 'Content-Type: application/json',
-                'Authorization: Bearer ' . $openai_key,
+                'x-api-key: ' . $ai_key,
+                'anthropic-version: 2023-06-01',
             ],
             CURLOPT_POSTFIELDS => json_encode([
-                'model'      => 'gpt-3.5-turbo',
-                'messages'   => [['role' => 'user', 'content' => $prompt]],
+                'model'      => 'claude-haiku-4-5-20251001',
                 'max_tokens' => 500,
+                'messages'   => [['role' => 'user', 'content' => $prompt]],
             ]),
         ]);
 
@@ -194,15 +195,15 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
         if ($err) { echo json_encode(['error' => 'Connection error: ' . $err]); exit; }
 
         $data = json_decode($result, true);
-        if (isset($data['choices'][0]['message']['content'])) {
-            $content = trim($data['choices'][0]['message']['content']);
+        if (isset($data['content'][0]['text'])) {
+            $content = trim($data['content'][0]['text']);
             $content = preg_replace('/^```json\s*/i', '', $content);
-            $content = preg_replace('/\s*```$/', '', $content);
+            $content = preg_replace('/\s*```$/',       '', $content);
             $parsed  = json_decode($content, true);
             echo json_encode($parsed ?: ['description' => $content, 'short_description' => '']);
         } else {
             $msg = isset($data['error']['message']) ? $data['error']['message'] : 'Unknown error';
-            echo json_encode(['error' => 'OpenAI error: ' . $msg]);
+            echo json_encode(['error' => 'Claude API error: ' . $msg]);
         }
         exit;
     }
