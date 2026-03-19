@@ -1,0 +1,4 @@
+-- phyto_acclimation_bundler install SQL
+-- No custom tables: this module uses PrestaShop Configuration keys only.
+-- PHYTO_ACCLIM_PRODUCTS, PHYTO_ACCLIM_STAGES, PHYTO_ACCLIM_TAGS,
+-- PHYTO_ACCLIM_DISCOUNT, PHYTO_ACCLIM_HEADLINE, PHYTO_ACCLIM_MAX_SHOW

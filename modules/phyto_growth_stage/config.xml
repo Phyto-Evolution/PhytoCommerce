@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>phyto_growth_stage</name>
+    <displayName><![CDATA[Phyto Growth Stages]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Replace or augment combination size labels with named growth stages, each carrying care-difficulty and time-to-maturity metadata.]]></description>
+    <author><![CDATA[PhytoCommerce]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>0</is_configurable>
+    <need_instance>0</need_instance>
+    <limited_countries></limited_countries>
+</module>
