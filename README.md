@@ -55,7 +55,7 @@ Activate from Admin → Modules.
 
 ## Module 3 — phytoerpconnector
 
-Connects PrestaShop stores to [ERPNext v15](https://erp.phytolabs.in) via the ERPNext REST API.
+Connects PrestaShop stores to [ERPNext v15](Your ERPNext Portal) via the ERPNext REST API.
 
 ### Sync directions
 | Type | Direction | Trigger |
@@ -228,26 +228,6 @@ cp -r PhytoCommerce/modules/phytoquickadd /path/to/prestashop/modules/
 # Activate in PrestaShop admin
 # Admin → Modules → search "Phyto" → Install
 ```
-
----
-
-## Deployment to All 3 Shops (OVH VPS)
-
-```bash
-for shop_path in \
-  "/home/nymph/web/nymphofnature.in/public_html" \
-  "/home/cpindia_user/web/carnivorousplants.in/public_html" \
-  "/home/debjit/web/thesapliing.in/public_html"
-do
-  cp -r /root/PhytoCommerce/modules/[modulename] "$shop_path/modules/"
-  rm -rf "$shop_path/var/cache/dev/smarty/compile/"*
-done
-
-chown -R nymph:nymph /home/nymph/web/nymphofnature.in/public_html/modules/[modulename]
-chown -R cpindia_user:cpindia_user /home/cpindia_user/web/carnivorousplants.in/public_html/modules/[modulename]
-chown -R debjit:debjit /home/debjit/web/thesapliing.in/public_html/modules/[modulename]
-```
-
 ---
 
 ## Coding Standards
