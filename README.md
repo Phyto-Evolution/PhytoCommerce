@@ -4,6 +4,54 @@ A PrestaShop 8 module suite for specialty plant e-commerce — designed around t
 
 ---
 
+## Module Suite Overview
+
+```
+PhytoCommerce/
+├── modules/
+│   │
+│   ├── [FOUNDATION]
+│   ├── phytocommercefooter/          ✅ Built
+│   ├── phytoquickadd/                ✅ Built
+│   ├── phytoerpconnector/            ✅ Built
+│   ├── phytoseobooster/              ✅ Built
+│   │
+│   ├── [SPECIALTY — PLANT SCIENCE]
+│   ├── phyto_grex_registry/          🚧 Under Construction
+│   ├── phyto_tc_batch_tracker/       ✅ Built
+│   ├── phyto_growth_stage/           🚧 Under Construction
+│   ├── phyto_seasonal_availability/  🚧 Under Construction
+│   ├── phyto_care_card/              🚧 Under Construction
+│   ├── phyto_climate_zone/           🚧 Under Construction
+│   ├── phyto_acclimation_bundler/    ✅ Built
+│   ├── phyto_live_arrival/           🚧 Under Construction
+│   │
+│   ├── [SPECIALTY — CUSTOMER & COMMUNITY]
+│   ├── phyto_growers_journal/        ✅ Built
+│   ├── phyto_collection_widget/      ✅ Built
+│   ├── phyto_source_badge/           ✅ Built
+│   │
+│   ├── [SPECIALTY — OPERATIONS & COMPLIANCE]
+│   ├── phyto_dispatch_logger/        ✅ Built
+│   ├── phyto_phytosanitary/          ✅ Built
+│   ├── phyto_tc_cost_calculator/     ✅ Built
+│   │
+│   └── [SPECIALTY — COMMERCE]
+│       ├── phyto_wholesale_portal/   ✅ Built
+│       └── phyto_subscription/       ✅ Built
+│
+└── taxonomy/                         ✅ Built
+    ├── carnivorous/   (8 packs)
+    ├── succulents/    (4 packs)
+    ├── aroids/        (1 pack)
+    ├── orchids/       (1 pack)
+    └── bromeliads/    (1 pack)
+```
+
+> **16 built · 6 under construction · 15 taxonomy packs**
+
+---
+
 ## Module Index
 
 ### Foundation modules
