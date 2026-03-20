@@ -1,0 +1,16 @@
+/* phyto_wholesale_portal — front-office styles */
+
+/* Application form */
+.phyto-ws-apply .form-group { margin-bottom: 1.25rem; }
+.phyto-ws-apply label { font-weight: 600; }
+.phyto-ws-apply textarea { min-height: 120px; }
+
+/* Tiered pricing block (product page) */
+.phyto-ws-tiers { border-left: 4px solid #3490dc; border-radius: 4px; }
+.phyto-ws-tiers table { font-size: .875rem; }
+.phyto-ws-tiers thead th { background: rgba(0,0,0,.04); }
+
+/* Success page */
+.phyto-ws-success { max-width: 640px; margin: 2rem auto; }
+.phyto-ws-success .alert { padding: 1.5rem; }
+.phyto-ws-success .alert h4 { margin-top: 0; }
