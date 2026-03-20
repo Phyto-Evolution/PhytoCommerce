@@ -50,6 +50,26 @@
     {/if}
   </ol>
 
+  {* Mother-batch lineage chain *}
+  {if $phyto_tc_lineage && $phyto_tc_lineage|count > 1}
+  <div class="phyto-tc-prov-lineage">
+    <span class="phyto-tc-prov-lineage-title">
+      {l s='Propagation Lineage' mod='phyto_tc_batch_tracker'}
+    </span>
+    <ol class="phyto-tc-lineage-chain">
+      {foreach from=$phyto_tc_lineage item='node' key='idx'}
+      <li class="phyto-tc-lineage-node {if $node.id_batch == $phyto_tc_batch.id_batch}phyto-tc-lineage-current{/if}">
+        <span class="phyto-tc-lineage-code">{$node.batch_code|escape:'html'}</span>
+        <span class="phyto-tc-lineage-gen">{$node.generation|escape:'html'}</span>
+        {if !$smarty.foreach.lineage.last}
+        <span class="phyto-tc-lineage-arrow" aria-hidden="true">›</span>
+        {/if}
+      </li>
+      {/foreach}
+    </ol>
+  </div>
+  {/if}
+
   {* Sterility protocol *}
   {if $phyto_tc_batch.sterility_protocol}
   <details class="phyto-tc-prov-protocol">
