@@ -1,0 +1,131 @@
+/* phyto_tc_batch_tracker — front-office provenance styles */
+
+.phyto-tc-provenance {
+    font-size: .9rem;
+    padding: .25rem 0;
+}
+
+.phyto-tc-prov-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: .75rem;
+}
+
+.phyto-tc-prov-title {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 700;
+    color: #2e5a27;
+}
+
+.phyto-tc-prov-code {
+    font-family: monospace;
+    font-size: .8rem;
+    background: #eef6eb;
+    border: 1px solid #b7d9af;
+    border-radius: 3px;
+    padding: 1px 7px;
+    color: #3a6e31;
+}
+
+/* Generation badge */
+.phyto-tc-prov-gen-badge {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: .8rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    background: #c8e6c9;
+    color: #2e7d32;
+}
+.phyto-tc-prov-gen-badge.phyto-tc-gen-g0    { background: #fce4ec; color: #880e4f; }
+.phyto-tc-prov-gen-badge.phyto-tc-gen-g1    { background: #e3f2fd; color: #0d47a1; }
+.phyto-tc-prov-gen-badge.phyto-tc-gen-g2    { background: #e8f5e9; color: #1b5e20; }
+.phyto-tc-prov-gen-badge.phyto-tc-gen-g3-   { background: #e8f5e9; color: #1b5e20; }
+.phyto-tc-prov-gen-badge.phyto-tc-gen-acclimated { background: #fff9c4; color: #f57f17; }
+.phyto-tc-prov-gen-badge.phyto-tc-gen-hardened    { background: #efebe9; color: #4e342e; }
+
+.phyto-tc-prov-species {
+    color: #555;
+    margin-bottom: .75rem;
+}
+
+/* Timeline */
+.phyto-tc-timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+    position: relative;
+}
+.phyto-tc-timeline::before {
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: #b7d9af;
+}
+.phyto-tc-tl-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 4px 0;
+    position: relative;
+}
+.phyto-tc-tl-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4caf50;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #4caf50;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+.phyto-tc-tl-body {
+    display: flex;
+    flex-direction: column;
+}
+.phyto-tc-tl-body strong { font-size: .85rem; color: #333; }
+.phyto-tc-tl-body time  { font-size: .78rem; color: #777; }
+
+/* Protocol */
+.phyto-tc-prov-protocol {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-bottom: .75rem;
+    font-size: .85rem;
+}
+.phyto-tc-prov-protocol summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #2e5a27;
+}
+.phyto-tc-prov-protocol-body { margin-top: 8px; color: #444; }
+
+/* Footer */
+.phyto-tc-prov-footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.phyto-tc-status {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 3px;
+    font-size: .78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+}
+.phyto-tc-status.phyto-tc-status-active      { background: #e8f5e9; color: #2e7d32; }
+.phyto-tc-status.phyto-tc-status-depleted    { background: #eeeeee; color: #616161; }
+.phyto-tc-status.phyto-tc-status-quarantined { background: #ffebee; color: #b71c1c; }
+.phyto-tc-status.phyto-tc-status-archived    { background: #fff8e1; color: #e65100; }
+.phyto-tc-units { font-size: .82rem; color: #666; }
