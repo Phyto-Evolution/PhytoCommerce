@@ -1,4 +1,4 @@
-/* phyto_tc_batch_tracker — front-office provenance styles */
+/* phyto_tc_batch_tracker — front-office provenance styles (v1.1: lineage chain) */
 
 .phyto-tc-provenance {
     font-size: .9rem;
@@ -129,3 +129,57 @@
 .phyto-tc-status.phyto-tc-status-quarantined { background: #ffebee; color: #b71c1c; }
 .phyto-tc-status.phyto-tc-status-archived    { background: #fff8e1; color: #e65100; }
 .phyto-tc-units { font-size: .82rem; color: #666; }
+
+/* Lineage chain */
+.phyto-tc-prov-lineage {
+    margin: .75rem 0;
+    padding: 8px 12px;
+    background: #f4f9f4;
+    border: 1px solid #c8e6c9;
+    border-radius: 4px;
+    font-size: .82rem;
+}
+.phyto-tc-prov-lineage-title {
+    display: block;
+    font-weight: 700;
+    color: #2e7d32;
+    margin-bottom: 5px;
+    font-size: .78rem;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+}
+.phyto-tc-lineage-chain {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+.phyto-tc-lineage-node {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.phyto-tc-lineage-code {
+    font-family: monospace;
+    font-size: .78rem;
+    background: #e8f5e9;
+    border: 1px solid #a5d6a7;
+    border-radius: 3px;
+    padding: 1px 7px;
+    color: #1b5e20;
+}
+.phyto-tc-lineage-current .phyto-tc-lineage-code {
+    background: #2e7d32;
+    color: #fff;
+    border-color: #1b5e20;
+    font-weight: 700;
+}
+.phyto-tc-lineage-gen {
+    font-size: .72rem;
+    color: #888;
+}
+.phyto-tc-lineage-current .phyto-tc-lineage-gen { color: #a5d6a7; }
+.phyto-tc-lineage-arrow { color: #81c784; font-size: .9rem; }

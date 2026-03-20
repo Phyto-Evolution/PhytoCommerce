@@ -1,0 +1,12 @@
+TC BATCH LOW STOCK ALERT — {shop_name}
+
+Batch Code:      {batch_code}
+Species / Clone: {species_name}
+Generation:      {generation}
+Units Remaining: {units_remaining}
+Alert Threshold: {threshold} units
+Batch Status:    {batch_status}
+
+Please review this batch and initiate a new propagation cycle if needed.
+
+This alert will not repeat until stock is replenished above the threshold.
