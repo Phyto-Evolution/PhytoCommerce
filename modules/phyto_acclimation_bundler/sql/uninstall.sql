@@ -1,0 +1,2 @@
+-- phyto_acclimation_bundler uninstall SQL
+-- No custom tables to drop; Configuration keys are deleted in uninstall().

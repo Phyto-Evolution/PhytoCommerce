@@ -1,0 +1,240 @@
+/**
+ * front.css – Phyto Phytosanitary module front-office styles
+ *
+ * All selectors are prefixed with .phyto-phyto- to avoid conflicts with the
+ * active theme.
+ *
+ * @author  PhytoCommerce
+ * @version 1.0.0
+ */
+
+/* =============================================================================
+   Wrapper
+   ============================================================================= */
+
+.phyto-phyto-wrapper {
+    margin: 1rem 0;
+    overflow-x: auto;               /* graceful horizontal scroll on small screens */
+    -webkit-overflow-scrolling: touch;
+}
+
+/* =============================================================================
+   Table
+   ============================================================================= */
+
+.phyto-phyto-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 0.875rem;            /* 14px */
+    line-height: 1.5;
+    background-color: #ffffff;
+}
+
+.phyto-phyto-table caption {
+    caption-side: top;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    color: #333;
+    text-align: left;
+}
+
+/* Head */
+
+.phyto-phyto-th {
+    padding: 0.65rem 0.9rem;
+    background-color: #f4f6f8;
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+    color: #495057;
+    text-align: left;
+    white-space: nowrap;
+}
+
+/* Body cells */
+
+.phyto-phyto-td {
+    padding: 0.55rem 0.9rem;
+    border-bottom: 1px solid #e9ecef;
+    vertical-align: middle;
+    color: #333;
+}
+
+/* Row hover */
+
+.phyto-phyto-row:hover .phyto-phyto-td {
+    background-color: #f8f9fa;
+}
+
+/* Last row – remove bottom border */
+
+.phyto-phyto-row:last-child .phyto-phyto-td {
+    border-bottom: 0;
+}
+
+/* Empty / placeholder text */
+
+.phyto-phyto-empty {
+    color: #adb5bd;
+}
+
+/* =============================================================================
+   Document type cell
+   ============================================================================= */
+
+.phyto-phyto-doc-type {
+    font-weight: 500;
+}
+
+/* =============================================================================
+   Date cell
+   ============================================================================= */
+
+.phyto-phyto-date {
+    white-space: nowrap;
+}
+
+/* =============================================================================
+   Expiry status – row-level colouring
+   ============================================================================= */
+
+/* Expiring soon (within 30 days) – orange tint */
+
+.phyto-phyto-row.phyto-phyto-expiring-soon .phyto-phyto-td {
+    background-color: #fff8e6;
+}
+
+.phyto-phyto-row.phyto-phyto-expiring-soon:hover .phyto-phyto-td {
+    background-color: #fff3d0;
+}
+
+/* Expired – red tint */
+
+.phyto-phyto-row.phyto-phyto-expired .phyto-phyto-td {
+    background-color: #fff0f0;
+    color: #6c757d;
+}
+
+.phyto-phyto-row.phyto-phyto-expired:hover .phyto-phyto-td {
+    background-color: #ffe4e4;
+}
+
+/* =============================================================================
+   Expiry badges (inline next to the date)
+   ============================================================================= */
+
+.phyto-phyto-badge {
+    display: inline-block;
+    margin-left: 0.35rem;
+    padding: 0.15em 0.55em;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;             /* 12px */
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+/* Expiring-soon badge – orange */
+
+.phyto-phyto-badge.phyto-phyto-expiring-soon {
+    background-color: #ff9800;
+    color: #ffffff;
+}
+
+/* Expired badge – red */
+
+.phyto-phyto-badge.phyto-phyto-expired {
+    background-color: #e53935;
+    color: #ffffff;
+}
+
+/* =============================================================================
+   Download link
+   ============================================================================= */
+
+.phyto-phyto-download {
+    white-space: nowrap;
+}
+
+.phyto-phyto-download-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid #228b22;
+    border-radius: 0.25rem;
+    background-color: #f0fff0;
+    color: #228b22;
+    font-size: 0.8125rem;           /* 13px */
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.phyto-phyto-download-link:hover,
+.phyto-phyto-download-link:focus {
+    background-color: #228b22;
+    color: #ffffff;
+    text-decoration: none;
+    outline: 2px solid #1a6e1a;
+    outline-offset: 2px;
+}
+
+.phyto-phyto-icon {
+    flex-shrink: 0;
+}
+
+/* Restricted / not publicly available */
+
+.phyto-phyto-restricted {
+    font-style: italic;
+    color: #868e96;
+    font-size: 0.8125rem;
+}
+
+/* =============================================================================
+   Legend (shown below the table)
+   ============================================================================= */
+
+.phyto-phyto-legend {
+    margin-top: 0.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.phyto-phyto-legend::before {
+    content: 'Key: ';
+    font-weight: 600;
+}
+
+/* =============================================================================
+   Responsive adjustments
+   ============================================================================= */
+
+@media (max-width: 767px) {
+    .phyto-phyto-th,
+    .phyto-phyto-td {
+        padding: 0.45rem 0.6rem;
+        font-size: 0.8125rem;
+    }
+
+    /* Hide authority column on very small screens to save horizontal space */
+    .phyto-phyto-authority {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    /* On the narrowest screens also hide issue date */
+    .phyto-phyto-table th:nth-child(4),
+    .phyto-phyto-table td:nth-child(4) {
+        display: none;
+    }
+}
