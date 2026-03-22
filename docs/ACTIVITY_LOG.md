@@ -135,27 +135,36 @@
 
 ## VPS / Deployment
 
-Server access details are kept **outside** this repo (use a password manager or SSH config file).
+**VPS:** `ubuntu@51.83.192.49`
+**Claude Code:** installed on the VPS — recommended to run sessions directly there
+**SSH key (ed25519):** generated 2026-03-22, public key added to VPS via `docs/vps-setup.sh`
 
-To deploy all specialty modules:
-
-```bash
-# From your VPS, once repo is cloned
-for module in /path/to/PhytoCommerce/modules/phyto_*; do
-    cp -r "$module" /var/www/prestashop/modules/
-done
-rm -rf /var/www/prestashop/var/cache/*/smarty/compile/*
-# Then: Admin > Modules > search + install each module
-```
-
-Recommended SSH config (`~/.ssh/config` on your local machine):
+SSH config (add to `~/.ssh/config` on any machine you use):
 ```
 Host phytocommerce-vps
     HostName 51.83.192.49
     User ubuntu
-    IdentityFile ~/.ssh/phytocommerce_rsa
+    IdentityFile ~/.ssh/phytocommerce_vps
 ```
-*(Use key-based auth — never store passwords in files.)*
+
+**First-time VPS setup** (run from a machine that has SSH access):
+```bash
+sshpass -p 'PASSWORD' ssh ubuntu@51.83.192.49 'bash -s' < docs/vps-setup.sh
+```
+This installs the ed25519 key, clones the repo, and verifies Claude Code.
+
+**Deploy all specialty modules to PrestaShop:**
+```bash
+# On the VPS, after pulling latest
+for module in ~/PhytoCommerce/modules/phyto_*; do
+    cp -r "$module" /var/www/prestashop/modules/
+done
+rm -rf /var/www/prestashop/var/cache/*/smarty/compile/*
+# Admin → Modules → search + install each
+```
+
+**Network note:** The Claude Code web sandbox cannot reach the VPS directly.
+Work requiring VPS execution should be done in a session launched on the VPS itself.
 
 ---
 

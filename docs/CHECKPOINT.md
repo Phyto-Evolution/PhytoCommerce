@@ -103,4 +103,28 @@ If coming back to this project:
 
 ---
 
+## VPS Access
+
+**Host:** `ubuntu@51.83.192.49`
+**SSH key:** `~/.ssh/phytocommerce_vps` (ed25519, set up 2026-03-22)
+**Claude Code:** installed on VPS — best to run Claude sessions directly there
+
+Add to `~/.ssh/config`:
+```
+Host phytocommerce-vps
+    HostName 51.83.192.49
+    User ubuntu
+    IdentityFile ~/.ssh/phytocommerce_vps
+```
+
+First-time setup (installs SSH key + clones repo on VPS):
+```bash
+sshpass -p 'PASSWORD' ssh ubuntu@51.83.192.49 'bash -s' < docs/vps-setup.sh
+```
+
+**Note:** Claude Code web sandbox cannot reach the VPS over the network.
+VPS work must run in a Claude Code session launched directly on the VPS.
+
+---
+
 *Auto-updated by Claude Code at session end. Do not edit manually.*
