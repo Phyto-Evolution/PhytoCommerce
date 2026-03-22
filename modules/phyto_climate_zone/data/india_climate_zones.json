@@ -1,0 +1,731 @@
+{
+  "version": "1.0.0",
+  "generated": "2026-03-22",
+  "description": "PhytoCommerce Climate Code India (PCC-IN) — 15 granular zones",
+  "months": [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec"
+  ],
+  "zones": {
+    "PCC-IN-01": {
+      "label": "Humid Tropical Coast — South",
+      "description": "Coastal Tamil Nadu, Andhra Pradesh, Kerala south. High humidity year-round, no frost.",
+      "monthly_temp": [
+        24,
+        25,
+        27,
+        29,
+        30,
+        28,
+        27,
+        27,
+        27,
+        27,
+        25,
+        24
+      ],
+      "monthly_humidity": [
+        75,
+        72,
+        70,
+        72,
+        76,
+        85,
+        88,
+        88,
+        86,
+        85,
+        80,
+        76
+      ],
+      "annual_min_temp": 18,
+      "annual_max_temp": 38,
+      "frost_risk": false,
+      "monsoon_months": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "example_cities": [
+        "Chennai",
+        "Thiruvananthapuram",
+        "Visakhapatnam"
+      ]
+    },
+    "PCC-IN-02": {
+      "label": "Humid Tropical — Kerala & Konkan",
+      "description": "Kerala, coastal Karnataka, Konkan coast. Very high monsoon rainfall, humid through winter.",
+      "monthly_temp": [
+        26,
+        27,
+        29,
+        30,
+        30,
+        27,
+        26,
+        26,
+        27,
+        27,
+        26,
+        25
+      ],
+      "monthly_humidity": [
+        78,
+        76,
+        74,
+        76,
+        80,
+        92,
+        94,
+        93,
+        90,
+        88,
+        84,
+        80
+      ],
+      "annual_min_temp": 19,
+      "annual_max_temp": 36,
+      "frost_risk": false,
+      "monsoon_months": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "example_cities": [
+        "Kochi",
+        "Mangalore",
+        "Goa",
+        "Mumbai"
+      ]
+    },
+    "PCC-IN-03": {
+      "label": "Tropical Wet-Dry — Deccan Plateau North",
+      "description": "Interior Maharashtra, Karnataka plateau. Distinct dry winter, moderate monsoon.",
+      "monthly_temp": [
+        22,
+        25,
+        29,
+        33,
+        35,
+        31,
+        28,
+        27,
+        28,
+        28,
+        25,
+        22
+      ],
+      "monthly_humidity": [
+        50,
+        45,
+        42,
+        40,
+        46,
+        68,
+        78,
+        80,
+        74,
+        62,
+        54,
+        50
+      ],
+      "annual_min_temp": 12,
+      "annual_max_temp": 42,
+      "frost_risk": false,
+      "monsoon_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "example_cities": [
+        "Pune",
+        "Nashik",
+        "Solapur",
+        "Bijapur"
+      ]
+    },
+    "PCC-IN-04": {
+      "label": "Tropical Dry — Telangana & Rayalaseema",
+      "description": "Interior AP, Telangana. Very hot summers, low humidity, moderate monsoon.",
+      "monthly_temp": [
+        22,
+        25,
+        29,
+        33,
+        36,
+        32,
+        29,
+        28,
+        29,
+        28,
+        24,
+        22
+      ],
+      "monthly_humidity": [
+        52,
+        48,
+        44,
+        42,
+        46,
+        65,
+        75,
+        78,
+        72,
+        64,
+        56,
+        53
+      ],
+      "annual_min_temp": 14,
+      "annual_max_temp": 44,
+      "frost_risk": false,
+      "monsoon_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "example_cities": [
+        "Hyderabad",
+        "Vijayawada",
+        "Tirupati",
+        "Kurnool"
+      ]
+    },
+    "PCC-IN-05": {
+      "label": "Subtropical — Indo-Gangetic Plains West",
+      "description": "Delhi, western UP, Haryana, Punjab. Hot dry summer, cool winter with mild frost risk.",
+      "monthly_temp": [
+        14,
+        17,
+        23,
+        30,
+        36,
+        38,
+        34,
+        33,
+        32,
+        28,
+        21,
+        15
+      ],
+      "monthly_humidity": [
+        68,
+        60,
+        46,
+        32,
+        28,
+        44,
+        68,
+        74,
+        60,
+        44,
+        50,
+        64
+      ],
+      "annual_min_temp": 2,
+      "annual_max_temp": 46,
+      "frost_risk": true,
+      "monsoon_months": [
+        7,
+        8,
+        9
+      ],
+      "example_cities": [
+        "Delhi",
+        "Lucknow",
+        "Agra",
+        "Chandigarh",
+        "Jaipur"
+      ]
+    },
+    "PCC-IN-06": {
+      "label": "Subtropical — Indo-Gangetic Plains East",
+      "description": "Eastern UP, Bihar, Jharkhand. High humidity monsoon, cool foggy winter.",
+      "monthly_temp": [
+        15,
+        18,
+        24,
+        30,
+        34,
+        34,
+        30,
+        29,
+        30,
+        28,
+        22,
+        16
+      ],
+      "monthly_humidity": [
+        72,
+        66,
+        56,
+        46,
+        50,
+        70,
+        82,
+        84,
+        76,
+        66,
+        62,
+        68
+      ],
+      "annual_min_temp": 5,
+      "annual_max_temp": 44,
+      "frost_risk": true,
+      "monsoon_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "example_cities": [
+        "Varanasi",
+        "Patna",
+        "Ranchi",
+        "Allahabad"
+      ]
+    },
+    "PCC-IN-07": {
+      "label": "Hot Arid — Rajasthan Desert",
+      "description": "Western Rajasthan, Kutch. Extreme heat, very low humidity, minimal rain, cold winter nights.",
+      "monthly_temp": [
+        14,
+        18,
+        24,
+        31,
+        37,
+        38,
+        34,
+        32,
+        32,
+        28,
+        21,
+        15
+      ],
+      "monthly_humidity": [
+        48,
+        40,
+        32,
+        26,
+        22,
+        34,
+        52,
+        58,
+        44,
+        32,
+        36,
+        46
+      ],
+      "annual_min_temp": 2,
+      "annual_max_temp": 48,
+      "frost_risk": true,
+      "monsoon_months": [
+        7,
+        8
+      ],
+      "example_cities": [
+        "Jodhpur",
+        "Jaisalmer",
+        "Bikaner",
+        "Barmer",
+        "Bhuj"
+      ]
+    },
+    "PCC-IN-08": {
+      "label": "Tropical Monsoon — Central India",
+      "description": "MP, Chhattisgarh. Heavy monsoon, hot summer, mild dry winter.",
+      "monthly_temp": [
+        18,
+        21,
+        27,
+        33,
+        37,
+        35,
+        29,
+        28,
+        29,
+        28,
+        23,
+        19
+      ],
+      "monthly_humidity": [
+        58,
+        50,
+        42,
+        38,
+        42,
+        68,
+        82,
+        84,
+        74,
+        60,
+        52,
+        55
+      ],
+      "annual_min_temp": 8,
+      "annual_max_temp": 44,
+      "frost_risk": false,
+      "monsoon_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "example_cities": [
+        "Bhopal",
+        "Indore",
+        "Raipur",
+        "Jabalpur",
+        "Nagpur"
+      ]
+    },
+    "PCC-IN-09": {
+      "label": "Humid Subtropical — West Bengal & Odisha",
+      "description": "West Bengal, Odisha. High humidity, heavy monsoon, warm winter.",
+      "monthly_temp": [
+        19,
+        22,
+        28,
+        32,
+        34,
+        33,
+        30,
+        30,
+        30,
+        29,
+        24,
+        19
+      ],
+      "monthly_humidity": [
+        70,
+        64,
+        60,
+        64,
+        72,
+        82,
+        88,
+        88,
+        84,
+        78,
+        72,
+        68
+      ],
+      "annual_min_temp": 10,
+      "annual_max_temp": 42,
+      "frost_risk": false,
+      "monsoon_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "example_cities": [
+        "Kolkata",
+        "Bhubaneswar",
+        "Cuttack",
+        "Durgapur"
+      ]
+    },
+    "PCC-IN-10": {
+      "label": "Humid Subtropical — Northeast India",
+      "description": "Assam, Meghalaya, Tripura. Very high rainfall, warm humid year-round.",
+      "monthly_temp": [
+        16,
+        18,
+        23,
+        27,
+        28,
+        29,
+        29,
+        29,
+        28,
+        26,
+        21,
+        16
+      ],
+      "monthly_humidity": [
+        78,
+        76,
+        78,
+        80,
+        84,
+        88,
+        90,
+        90,
+        86,
+        82,
+        78,
+        76
+      ],
+      "annual_min_temp": 8,
+      "annual_max_temp": 36,
+      "frost_risk": false,
+      "monsoon_months": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "example_cities": [
+        "Guwahati",
+        "Shillong",
+        "Agartala",
+        "Silchar"
+      ]
+    },
+    "PCC-IN-11": {
+      "label": "Highland Subtropical — Western Ghats",
+      "description": "Nilgiris, Coorg, Palani hills (600–1500 m). Cool year-round, heavy orographic rain.",
+      "monthly_temp": [
+        14,
+        15,
+        18,
+        20,
+        20,
+        18,
+        17,
+        17,
+        17,
+        17,
+        15,
+        13
+      ],
+      "monthly_humidity": [
+        76,
+        72,
+        70,
+        76,
+        82,
+        90,
+        92,
+        92,
+        88,
+        86,
+        82,
+        78
+      ],
+      "annual_min_temp": 5,
+      "annual_max_temp": 28,
+      "frost_risk": false,
+      "monsoon_months": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "example_cities": [
+        "Ooty",
+        "Munnar",
+        "Coorg",
+        "Kodaikanal"
+      ]
+    },
+    "PCC-IN-12": {
+      "label": "Highland Temperate — Lower Himalayas",
+      "description": "Uttarakhand, HP foothills, Darjeeling (800–2000 m). Cool summer, cold winter, frost possible.",
+      "monthly_temp": [
+        8,
+        10,
+        15,
+        20,
+        24,
+        24,
+        22,
+        22,
+        20,
+        16,
+        11,
+        8
+      ],
+      "monthly_humidity": [
+        72,
+        68,
+        62,
+        56,
+        62,
+        80,
+        88,
+        86,
+        80,
+        72,
+        68,
+        70
+      ],
+      "annual_min_temp": -2,
+      "annual_max_temp": 32,
+      "frost_risk": true,
+      "monsoon_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "example_cities": [
+        "Dehradun",
+        "Shimla",
+        "Mussoorie",
+        "Darjeeling",
+        "Nainital"
+      ]
+    },
+    "PCC-IN-13": {
+      "label": "Alpine — Upper Himalayas",
+      "description": "High Himalaya, Ladakh, Kashmir valley (>2000 m). Short cool summer, harsh winter.",
+      "monthly_temp": [
+        -2,
+        0,
+        5,
+        12,
+        17,
+        21,
+        24,
+        23,
+        18,
+        10,
+        4,
+        -1
+      ],
+      "monthly_humidity": [
+        58,
+        54,
+        48,
+        42,
+        46,
+        58,
+        70,
+        72,
+        64,
+        52,
+        50,
+        56
+      ],
+      "annual_min_temp": -15,
+      "annual_max_temp": 30,
+      "frost_risk": true,
+      "monsoon_months": [
+        7,
+        8
+      ],
+      "example_cities": [
+        "Srinagar",
+        "Leh",
+        "Manali",
+        "Kargil"
+      ]
+    },
+    "PCC-IN-14": {
+      "label": "Island Tropical — Andaman & Nicobar",
+      "description": "Andaman & Nicobar Islands. Equatorial, very high humidity, year-round warmth.",
+      "monthly_temp": [
+        26,
+        27,
+        28,
+        29,
+        29,
+        28,
+        28,
+        28,
+        28,
+        28,
+        27,
+        26
+      ],
+      "monthly_humidity": [
+        80,
+        78,
+        78,
+        80,
+        84,
+        88,
+        90,
+        90,
+        88,
+        86,
+        84,
+        82
+      ],
+      "annual_min_temp": 22,
+      "annual_max_temp": 34,
+      "frost_risk": false,
+      "monsoon_months": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "example_cities": [
+        "Port Blair",
+        "Car Nicobar"
+      ]
+    },
+    "PCC-IN-15": {
+      "label": "Island Tropical — Lakshadweep",
+      "description": "Lakshadweep Islands. True maritime tropical, constant warmth and humidity.",
+      "monthly_temp": [
+        27,
+        27,
+        28,
+        29,
+        29,
+        28,
+        27,
+        27,
+        27,
+        27,
+        27,
+        27
+      ],
+      "monthly_humidity": [
+        78,
+        76,
+        76,
+        78,
+        82,
+        88,
+        90,
+        90,
+        87,
+        84,
+        82,
+        80
+      ],
+      "annual_min_temp": 23,
+      "annual_max_temp": 34,
+      "frost_risk": false,
+      "monsoon_months": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "example_cities": [
+        "Kavaratti",
+        "Minicoy"
+      ]
+    }
+  }
+}
