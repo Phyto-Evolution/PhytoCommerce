@@ -2,7 +2,7 @@
 
 A PrestaShop 8 module suite for specialty plant e-commerce — designed around the operational needs of tissue-culture and carnivorous plant businesses. Covers everything from TC batch provenance and phytosanitary compliance to wholesale portals, recurring subscriptions, and customer grow journals.
 
-> **Last updated:** 2026-03-22 12:10 UTC — All 22 modules complete.
+> **Last updated:** 2026-03-22 — All 22 modules complete. `phyto_climate_zone` upgraded to v2 (15 PCC-IN zones, 797 India PIN prefixes, monthly climate chart widget). Python data generator added.
 > Session logs: [`docs/CHECKPOINT.md`](docs/CHECKPOINT.md) · [`docs/ACTIVITY_LOG.md`](docs/ACTIVITY_LOG.md)
 
 ---
@@ -75,7 +75,7 @@ PhytoCommerce/
 | 3 | `phyto_growth_stage` | ⚠️ Views pending | Tag products with growth stage (Deflasked / Juvenile / Semi-mature / Mature / Specimen); front badge + price block |
 | 4 | `phyto_seasonal_availability` | ⚠️ Views pending | Mark products as seasonal; out-of-season message + email notify-me form |
 | 5 | `phyto_care_card` | ⚠️ Views pending | Printable / downloadable PDF care card per product |
-| 6 | `phyto_climate_zone` | ⚠️ Views pending | Map products to USDA / RHS hardiness zones; front compatibility checker |
+| 6 | `phyto_climate_zone` | ✅ Complete (v2) | 15 PCC-IN India climate zones; 797 PIN prefixes; monthly temp/humidity chart; frost/rain/humidity warnings; Python data generator |
 | 7 | `phyto_acclimation_bundler` | ✅ Complete | Cart widget: suggest acclimation kit accessories when TC/deflasked plants are in cart |
 | 8 | `phyto_live_arrival` | ⚠️ Views pending | Live Arrival Guarantee — customer opt-in, fee collection, claim form, order-detail disclosure |
 | 9 | `phyto_growers_journal` | ✅ Complete | Customer grow journal with photo uploads, timeline UI, and admin moderation |
@@ -288,6 +288,66 @@ Origin and certification badges.
 - Badge definitions: name, icon slug, colour, short description
 - Per-product badge assignment (many-to-one, multiple badges per product)
 - Shown on: product extra content tab, price block, product list cards, admin product tab
+
+---
+
+### phyto_climate_zone (v2)
+
+Offline India climate zone checker — customers enter a 6-digit pincode to check if a plant suits their local climate.
+
+**Architecture:**
+
+| Layer | File | Role |
+|-------|------|------|
+| Data generator | `data/generate_climate_data.py` | Python script — produces `india_climate_zones.json` (15 zones, monthly data) and `india_pin_prefix_zone_map.json` (797 prefixes) |
+| Zone data | `data/india_climate_zones.json` | 15 PCC-IN zones with monthly avg temp, humidity, frost risk, monsoon months, example cities |
+| PIN map | `data/india_pin_prefix_zone_map.json` | 3-digit prefix → PCC-IN code for all usable India PIN ranges |
+| Module class | `phyto_climate_zone.php` | Loads JSON at runtime via `loadZoneData()` / `getZones()`; serves admin + front hooks |
+| Front controller | `controllers/front/check.php` | POST pincode → returns zone code, full monthly data, suitability verdict, intolerance warnings |
+| Front widget | `views/templates/hook/product_extra_content.tpl` | Pincode input; reveals verdict banner + monthly bar chart on check |
+| JS | `views/js/climate_check.js` | Vanilla ES5; renders SVG-free bar chart inline; toggles temp ↔ humidity |
+| CSS | `views/css/front.css` | Fully scoped; green/red/amber verdict colours; responsive |
+
+**15 PCC-IN Zones:**
+
+| Code | Label | Key Areas |
+|------|-------|-----------|
+| PCC-IN-01 | Humid Tropical Coast — South | Chennai, Vizag, Thiruvananthapuram |
+| PCC-IN-02 | Humid Tropical — Kerala & Konkan | Kochi, Mangalore, Goa, Mumbai coast |
+| PCC-IN-03 | Tropical Wet-Dry — Deccan Plateau North | Pune, Nashik, Bangalore |
+| PCC-IN-04 | Tropical Dry — Telangana & Rayalaseema | Hyderabad, Vijayawada, Kurnool |
+| PCC-IN-05 | Subtropical — Indo-Gangetic Plains West | Delhi, Agra, Jaipur, Chandigarh |
+| PCC-IN-06 | Subtropical — Indo-Gangetic Plains East | Varanasi, Patna, Lucknow |
+| PCC-IN-07 | Hot Arid — Rajasthan Desert | Jodhpur, Jaisalmer, Bikaner |
+| PCC-IN-08 | Tropical Monsoon — Central India | Bhopal, Nagpur, Raipur |
+| PCC-IN-09 | Humid Subtropical — West Bengal & Odisha | Kolkata, Bhubaneswar |
+| PCC-IN-10 | Humid Subtropical — Northeast India | Guwahati, Shillong, Agartala |
+| PCC-IN-11 | Highland Subtropical — Western Ghats | Ooty, Munnar, Coorg, Kodaikanal |
+| PCC-IN-12 | Highland Temperate — Lower Himalayas | Shimla, Dehradun, Darjeeling |
+| PCC-IN-13 | Alpine — Upper Himalayas | Srinagar, Leh, Manali |
+| PCC-IN-14 | Island Tropical — Andaman & Nicobar | Port Blair |
+| PCC-IN-15 | Island Tropical — Lakshadweep | Kavaratti |
+
+**Regenerating the data files:**
+
+```bash
+cd modules/phyto_climate_zone/data
+python3 generate_climate_data.py
+# Overwrites india_climate_zones.json and india_pin_prefix_zone_map.json
+# Re-run after editing zone definitions or PIN assignments in the script
+```
+
+**Admin configuration:** Modules → Configure → Phyto Climate Zone → paste updated JSON or download current mapping. Valid zone codes are `PCC-IN-01` through `PCC-IN-15`.
+
+**Testing checklist:**
+```
+[ ] Edit product → "Climate" tab; select zones + intolerances; save
+[ ] Front product page: enter pincode 600001 → PCC-IN-01, green verdict
+[ ] Enter pincode 190001 → PCC-IN-13 (alpine), check frost warning if plant has hard_frost intolerance
+[ ] Enter unknown pincode → amber "no data" state
+[ ] Toggle temp/humidity chart; verify bar heights change
+[ ] Mobile (<480px): verify stacked layout
+```
 
 ---
 
