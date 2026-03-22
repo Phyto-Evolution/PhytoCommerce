@@ -2,6 +2,9 @@
 
 A PrestaShop 8 module suite for specialty plant e-commerce — designed around the operational needs of tissue-culture and carnivorous plant businesses. Covers everything from TC batch provenance and phytosanitary compliance to wholesale portals, recurring subscriptions, and customer grow journals.
 
+> **Last updated:** 2026-03-22 12:10 UTC — All 22 modules complete.
+> Session logs: [`docs/CHECKPOINT.md`](docs/CHECKPOINT.md) · [`docs/ACTIVITY_LOG.md`](docs/ACTIVITY_LOG.md)
+
 ---
 
 ## Module Suite Overview
@@ -437,6 +440,7 @@ All times in IST (UTC +5:30).
 
 | Time (IST) | Commit | Change |
 |------------|--------|--------|
+| 17:40 | *(this commit)* | **Checkpoint system added.** Created `docs/ACTIVITY_LOG.md` (full timestamped session history, module completion matrix, deployment notes) and `docs/CHECKPOINT.md` (quick-reference snapshot: current state, last-done summary, next-steps checklist, config keys reference). README updated with last-updated timestamp and doc links. Enables any new session to orient instantly without re-reading the full codebase. |
 | 17:27 | `53f622f` | **phyto_care_card, phyto_climate_zone, phyto_live_arrival — complete.** care_card: admin product tab form (10 care fields, AJAX save, PDF preview link). climate_zone: admin AJAX controller, offline pincode→zone front controller, admin tab (zone + intolerance checkboxes, temp range), front product widget (pincode checker with AJAX suitability result), CSS + JS. live_arrival: checkout LAG toggle template (fee/free, next ship date, terms collapse), order detail LAG panel (claim button + status), claim front controller (photo uploads, ownership check), claim form template, CSS + JS. |
 | 17:10 | `298b187` | **phyto_grex_registry, phyto_growth_stage, phyto_seasonal_availability, phyto_care_card (controllers) — complete.** grex_registry: front.js toggle. growth_stage: admin product tab (per-combination stage assignment, AJAX), front product card (progress bar, difficulty badge), price block badge pill, CSS, JS. seasonal_availability: admin tab (month grids, block toggle, notify toggle, AJAX), out-of-season buttons template (email notify-me form), shipping calendar grid, notify confirm page, CSS, JS. care_card: admin + download front controllers. |
 | 15:57 | `11847af` | **phytoquickadd — Notes field + multi-category selection.** New Notes textarea (between Short Description and Full Description) with live `#hashtag` badge preview; hashtags saved as PS product tags on submit. Category selector upgraded to multi-select — Ctrl/⌘+click to pick multiple categories; first selected becomes the primary; selected categories shown as colour-coded badges below the list. |
