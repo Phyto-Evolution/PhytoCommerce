@@ -17,14 +17,14 @@ PhytoCommerce/
 │   ├── phytoseobooster/              ✅ Built
 │   │
 │   ├── [SPECIALTY — PLANT SCIENCE]
-│   ├── phyto_grex_registry/          🚧 Under Construction
+│   ├── phyto_grex_registry/          ✅ Built
 │   ├── phyto_tc_batch_tracker/       ✅ Built
-│   ├── phyto_growth_stage/           🚧 Under Construction
-│   ├── phyto_seasonal_availability/  🚧 Under Construction
-│   ├── phyto_care_card/              🚧 Under Construction
-│   ├── phyto_climate_zone/           🚧 Under Construction
+│   ├── phyto_growth_stage/           ✅ Built
+│   ├── phyto_seasonal_availability/  ✅ Built
+│   ├── phyto_care_card/              ✅ Built
+│   ├── phyto_climate_zone/           ✅ Built
 │   ├── phyto_acclimation_bundler/    ✅ Built
-│   ├── phyto_live_arrival/           🚧 Under Construction
+│   ├── phyto_live_arrival/           ✅ Built
 │   │
 │   ├── [SPECIALTY — CUSTOMER & COMMUNITY]
 │   ├── phyto_growers_journal/        ✅ Built
@@ -48,7 +48,7 @@ PhytoCommerce/
     └── bromeliads/    (1 pack)
 ```
 
-> **16 built · 6 under construction · 15 taxonomy packs**
+> **22 built · 0 under construction · 15 taxonomy packs**
 
 ---
 
@@ -350,6 +350,83 @@ Please keep module scope focused — each module should do one thing well.
 
 ---
 
+## Local Testing with Docker
+
+The fastest way to test any module without touching the live stores.
+
+### 1. Spin up a PrestaShop 8 instance
+
+```bash
+# Start PrestaShop 8 + MySQL in one command
+docker run -d --name ps-test \
+  -e PS_INSTALL_AUTO=1 \
+  -e PS_DOMAIN=localhost:8080 \
+  -e DB_SERVER=mysql \
+  -e DB_NAME=prestashop \
+  -e DB_USER=ps \
+  -e DB_PASSWD=ps \
+  -e PS_FOLDER_ADMIN=admin-test \
+  -p 8080:80 \
+  --link mysql-ps:mysql \
+  prestashop/prestashop:8
+
+# MySQL container (run first)
+docker run -d --name mysql-ps \
+  -e MYSQL_ROOT_PASSWORD=root \
+  -e MYSQL_DATABASE=prestashop \
+  -e MYSQL_USER=ps \
+  -e MYSQL_PASSWORD=ps \
+  mysql:8.0
+```
+
+Admin panel: `http://localhost:8080/admin-test` — default credentials printed in container logs.
+
+### 2. Copy a module into the container
+
+```bash
+# Copy module from repo into running container
+docker cp modules/phyto_grex_registry ps-test:/var/www/html/modules/
+
+# Then install from Admin → Modules → search "Phyto" → Install
+```
+
+Or mount the whole modules directory on container start:
+```bash
+-v /path/to/PhytoCommerce/modules:/var/www/html/modules/phyto
+```
+
+### 3. Module install/uninstall smoke test
+
+For each module, verify:
+1. **Install** succeeds — no SQL errors (check `Admin → Advanced Parameters → Logs`)
+2. **Product page** — open any product, confirm the module's tab appears in the back-office product editor
+3. **Front office** — the extra content tab appears on the product page front end
+4. **Uninstall** — module uninstalls cleanly; DB tables are dropped; hooks deregistered
+
+### Per-module quick checklist
+
+| Module | What to verify after install |
+|--------|------------------------------|
+| `phyto_grex_registry` | Edit any product → "Scientific Profile" tab visible; fill fields; save via AJAX; front product page shows taxonomy card |
+| `phyto_growth_stage` | Catalog → Growth Stages → add a stage definition; assign to product combination; front shows progress bar |
+| `phyto_seasonal_availability` | Edit product → "Seasonal" tab; check a few months; enable block; visit product page when month is unchecked — Add to Cart hidden, notify-me shown |
+| `phyto_care_card` | Edit product → "Care Card" tab; fill fields; click Preview PDF — opens PDF or HTML fallback |
+| `phyto_climate_zone` | Edit product → "Climate" tab; select zones; front product page shows pincode checker; enter a known pincode prefix (e.g. `600`) → result shows suitable/unsuitable |
+| `phyto_live_arrival` | Modules → Configure LAG; add product to cart; checkout page shows LAG toggle; complete order → order detail shows LAG panel |
+| `phyto_tc_batch_tracker` | Catalog → TC Batches → create batch; link to product; product front page shows "Batch Provenance" tab |
+| `phyto_phytosanitary` | Edit product → upload a PDF; set expiry; product page shows download link |
+| `phyto_wholesale_portal` | Customers → Wholesale → review application; approve; log in as wholesale customer → product shows tiered pricing |
+| `phyto_subscription` | Catalog → Subscription Plans → create a plan; visit `/module/phyto_subscription/plans`; go through subscribe flow (use Cashfree sandbox) |
+
+### 4. Multi-store testing
+
+The modules use `$this->context->shop->id` throughout. To test multi-shop:
+- Enable multi-shop in Admin → Advanced Parameters → Multistore
+- Add a second shop
+- Verify module settings and product data are scoped per shop
+
+---
+
 ## Changelog
 
 All times in IST (UTC +5:30).
@@ -360,6 +437,8 @@ All times in IST (UTC +5:30).
 
 | Time (IST) | Commit | Change |
 |------------|--------|--------|
+| 17:27 | `53f622f` | **phyto_care_card, phyto_climate_zone, phyto_live_arrival — complete.** care_card: admin product tab form (10 care fields, AJAX save, PDF preview link). climate_zone: admin AJAX controller, offline pincode→zone front controller, admin tab (zone + intolerance checkboxes, temp range), front product widget (pincode checker with AJAX suitability result), CSS + JS. live_arrival: checkout LAG toggle template (fee/free, next ship date, terms collapse), order detail LAG panel (claim button + status), claim front controller (photo uploads, ownership check), claim form template, CSS + JS. |
+| 17:10 | `298b187` | **phyto_grex_registry, phyto_growth_stage, phyto_seasonal_availability, phyto_care_card (controllers) — complete.** grex_registry: front.js toggle. growth_stage: admin product tab (per-combination stage assignment, AJAX), front product card (progress bar, difficulty badge), price block badge pill, CSS, JS. seasonal_availability: admin tab (month grids, block toggle, notify toggle, AJAX), out-of-season buttons template (email notify-me form), shipping calendar grid, notify confirm page, CSS, JS. care_card: admin + download front controllers. |
 | 15:57 | `11847af` | **phytoquickadd — Notes field + multi-category selection.** New Notes textarea (between Short Description and Full Description) with live `#hashtag` badge preview; hashtags saved as PS product tags on submit. Category selector upgraded to multi-select — Ctrl/⌘+click to pick multiple categories; first selected becomes the primary; selected categories shown as colour-coded badges below the list. |
 
 ---
