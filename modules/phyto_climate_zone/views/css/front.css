@@ -1,0 +1,305 @@
+/*
+ * Phyto Climate Zone — Front-Office Styles (v2)
+ *
+ * All rules scoped to .phyto-climate-widget to avoid theme conflicts.
+ * v2 adds: verdict banner, bar chart, warnings list, outdoor notes, zone meta.
+ */
+
+/* ── Widget container ────────────────────────────────────────────────────── */
+
+.phyto-climate-widget {
+    font-family: inherit;
+    padding: 16px 20px;
+    border: 1px solid #d0e8d4;
+    border-radius: 6px;
+    background-color: #f9fdf9;
+    margin-bottom: 20px;
+}
+
+.phyto-climate-intro {
+    margin: 0 0 12px;
+    color: #444;
+    font-size: 0.95em;
+}
+
+/* ── Input row ───────────────────────────────────────────────────────────── */
+
+.phyto-climate-input-row {
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.phyto-climate-pincode-input {
+    flex: 0 0 160px;
+    padding: 8px 12px;
+    font-size: 1em;
+    border: 1px solid #aacfad;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background: #fff;
+    color: #333;
+}
+
+.phyto-climate-pincode-input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.20);
+}
+
+.phyto-climate-check-btn {
+    padding: 8px 18px;
+    font-size: 0.95em;
+    font-weight: 600;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+    white-space: nowrap;
+}
+
+.phyto-climate-check-btn:hover {
+    background-color: #43a047;
+}
+
+.phyto-climate-check-btn:active {
+    background-color: #388e3c;
+}
+
+.phyto-climate-check-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ── Input validation error ──────────────────────────────────────────────── */
+
+.phyto-climate-input-error {
+    margin-top: 6px;
+    font-size: 0.88em;
+    color: #c62828;
+}
+
+/* ── Result area ─────────────────────────────────────────────────────────── */
+
+.phyto-climate-result {
+    margin-top: 14px;
+    padding: 12px 16px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: #f5f5f5;
+    font-size: 0.95em;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Suitable state — green tones */
+.phyto-climate-result.suitable {
+    background-color: #e8f5e9;
+    border-color: #a5d6a7;
+    color: #1b5e20;
+}
+
+/* Unsuitable state — red/orange tones */
+.phyto-climate-result.unsuitable {
+    background-color: #fbe9e7;
+    border-color: #ef9a9a;
+    color: #b71c1c;
+}
+
+/* Unknown zone state — neutral */
+.phyto-climate-result.unknown {
+    background-color: #fff8e1;
+    border-color: #ffe082;
+    color: #5d4037;
+}
+
+/* ── Verdict banner ─────────────────────────────────────────────────────── */
+
+.phyto-climate-verdict {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 1em;
+    flex-wrap: wrap;
+}
+
+.phyto-climate-zone-code {
+    font-family: monospace;
+    font-size: 0.85em;
+    padding: 2px 7px;
+    background: rgba(0,0,0,0.07);
+    border-radius: 3px;
+}
+
+.phyto-climate-zone-name {
+    flex: 1;
+}
+
+.phyto-climate-verdict-icon {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.phyto-climate-result.suitable .phyto-climate-verdict-icon { color: #2e7d32; }
+.phyto-climate-result.unsuitable .phyto-climate-verdict-icon { color: #c62828; }
+.phyto-climate-result.unknown .phyto-climate-verdict-icon { color: #f57c00; }
+
+/* ── Message ─────────────────────────────────────────────────────────────── */
+
+.phyto-climate-message {
+    font-size: 0.96em;
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+/* ── Warnings list ───────────────────────────────────────────────────────── */
+
+.phyto-climate-warnings {
+    margin: 8px 0 0;
+    padding: 8px 10px 8px 26px;
+    background: rgba(255, 152, 0, 0.10);
+    border-left: 3px solid #ff9800;
+    border-radius: 3px;
+    font-size: 0.88em;
+    list-style: disc;
+    color: #5d4037;
+}
+
+.phyto-climate-warnings li + li {
+    margin-top: 4px;
+}
+
+/* ── Outdoor notes ───────────────────────────────────────────────────────── */
+
+.phyto-climate-outdoor-notes {
+    margin-top: 8px;
+    font-size: 0.88em;
+    color: inherit;
+    opacity: 0.85;
+    font-style: italic;
+}
+
+/* ── Monthly chart ───────────────────────────────────────────────────────── */
+
+.phyto-climate-chart-wrap {
+    margin-top: 14px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.phyto-climate-chart-title {
+    font-size: 0.85em;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.phyto-climate-chart-toggle {
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+.phyto-climate-chart-toggle a {
+    color: inherit;
+    opacity: 0.6;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.phyto-climate-chart-toggle a.phyto-climate-active {
+    opacity: 1;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: default;
+}
+
+.phyto-climate-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    height: 80px;
+    padding-bottom: 4px;
+}
+
+.phyto-chart-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.phyto-chart-bar-wrap {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 4px;
+}
+
+.phyto-chart-bar {
+    width: 70%;
+    min-height: 4px;
+    border-radius: 2px 2px 0 0;
+    transition: height 0.3s ease;
+}
+
+.phyto-chart-label {
+    font-size: 0.65em;
+    color: inherit;
+    opacity: 0.75;
+    margin-top: 2px;
+}
+
+.phyto-chart-value {
+    font-size: 0.62em;
+    font-weight: 600;
+    color: inherit;
+}
+
+.phyto-climate-chart-legend {
+    font-size: 0.78em;
+    margin-top: 4px;
+    opacity: 0.75;
+}
+
+/* ── Zone meta (cities / frost / monsoon) ────────────────────────────────── */
+
+.phyto-climate-zone-meta {
+    margin-top: 8px;
+    font-size: 0.80em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    opacity: 0.85;
+}
+
+.phyto-meta-ok   { color: #2e7d32; }
+.phyto-meta-bad  { color: #c62828; }
+
+/* ── Responsive tweaks ───────────────────────────────────────────────────── */
+
+@media (max-width: 480px) {
+    .phyto-climate-input-row {
+        flex-direction: column;
+    }
+
+    .phyto-climate-pincode-input,
+    .phyto-climate-check-btn {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .phyto-climate-chart {
+        height: 60px;
+    }
+}

@@ -1,0 +1,176 @@
+/**
+ * Phyto Seasonal Availability — front-end styles.
+ * All selectors are scoped to module-specific class names.
+ */
+
+/* ── Shipping Season Calendar ─────────────────────────────────────────── */
+
+.phyto-seasonal-calendar {
+  margin: 16px 0 24px;
+}
+
+.phyto-seasonal-calendar__title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Legend */
+.phyto-seasonal-calendar__legend {
+  margin-bottom: 10px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.phyto-seasonal-calendar__legend li {
+  display: inline-block;
+  margin-right: 16px;
+  font-size: 0.85rem;
+  vertical-align: middle;
+  color: #555;
+}
+
+/* Shared swatch used inside the legend */
+.phyto-legend-swatch {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  margin-right: 4px;
+  vertical-align: middle;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* ── Month chip (base) ────────────────────────────────────────────────── */
+
+.phyto-seasonal-month {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 44px;
+  padding: 6px 4px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  border: 2px solid #d0d0d0;
+  background-color: #f0f0f0;
+  color: #888;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.phyto-seasonal-month__label {
+  display: block;
+}
+
+/* ── --is-ship: green ─────────────────────────────────────────────────── */
+
+.phyto-seasonal-month--ship {
+  background-color: #dff0d8;
+  border-color: #4cae4c;
+  color: #2d6a2d;
+  font-weight: 600;
+}
+
+/* ── --is-dorm: amber ─────────────────────────────────────────────────── */
+
+.phyto-seasonal-month--dorm {
+  background-color: #fcf8e3;
+  border-color: #d4a017;
+  color: #7a5800;
+  font-weight: 600;
+}
+
+/* ── --is-current: highlighted border + dot badge ─────────────────────── */
+
+.phyto-seasonal-month--is-current {
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.55);
+  border-color: #0074cc;
+}
+
+.phyto-seasonal-month--is-current .phyto-seasonal-month__label {
+  text-decoration: underline;
+}
+
+.phyto-seasonal-month__now-badge {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  font-size: 0.55rem;
+  color: #0074cc;
+  line-height: 1;
+}
+
+/* ── Out-of-season message widget ─────────────────────────────────────── */
+
+.phyto-out-of-season-msg {
+  margin: 12px 0 20px;
+}
+
+.phyto-out-of-season-msg .phyto-oos-alert {
+  font-size: 0.95rem;
+  border-radius: 4px;
+}
+
+.phyto-oos-icon {
+  margin-right: 6px;
+}
+
+/* Notify-me form wrapper */
+.phyto-notify-form-wrap {
+  margin-top: 14px;
+}
+
+.phyto-notify-intro {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.phyto-notify-form .phyto-notify-email {
+  min-width: 240px;
+  margin-right: 8px;
+}
+
+.phyto-notify-form .phyto-notify-submit {
+  margin-top: 0;
+}
+
+/* Error message below the form */
+.phyto-notify-error {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.85rem;
+}
+
+/* ── Notify-me confirmation page ─────────────────────────────────────── */
+
+.phyto-notify-confirm {
+  padding: 40px 0;
+}
+
+.phyto-notify-confirm__alert {
+  font-size: 1.05rem;
+  padding: 16px 20px;
+}
+
+.phyto-notify-confirm__icon {
+  display: inline-block;
+  font-size: 1.2em;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.phyto-notify-confirm__body {
+  margin: 16px 0 24px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.phyto-notify-confirm__back {
+  margin-top: 4px;
+}

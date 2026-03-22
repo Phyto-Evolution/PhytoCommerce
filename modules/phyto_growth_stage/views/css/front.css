@@ -1,0 +1,198 @@
+/**
+ * Phyto Growth Stage — Front-End Styles
+ *
+ * Green plant theme. All selectors scoped to module-specific classes.
+ * Designed for Bootstrap 3 / PrestaShop 8 default theme.
+ */
+
+/* -----------------------------------------------------------------------
+ * Stage card — main container
+ * --------------------------------------------------------------------- */
+
+.phyto-stage-card {
+    padding: 1.25rem 0;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: #2d3a2e;
+}
+
+/* -----------------------------------------------------------------------
+ * Card header: icon + title
+ * --------------------------------------------------------------------- */
+
+.phyto-stage-card__header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.65rem;
+}
+
+.phyto-stage-card__icon {
+    font-size: 1.6rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.phyto-stage-card__title {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1b4d1e;
+    line-height: 1.3;
+}
+
+/* -----------------------------------------------------------------------
+ * Meta row (difficulty badge)
+ * --------------------------------------------------------------------- */
+
+.phyto-stage-card__meta {
+    margin-bottom: 0.75rem;
+}
+
+/* Difficulty badge — colour applied inline via $difficulty_color */
+.phyto-stage-badge--difficulty {
+    display: inline-block;
+    padding: 0.2rem 0.65rem;
+    border: 1px solid currentColor;
+    border-radius: 3px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    background-color: transparent;
+}
+
+/* -----------------------------------------------------------------------
+ * Progress bar
+ * --------------------------------------------------------------------- */
+
+.phyto-stage-card__progress-wrap {
+    margin-bottom: 0.9rem;
+}
+
+.phyto-stage-card__progress-label {
+    font-size: 0.8125rem;
+    color: #4a6741;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+/* Bootstrap 3 .progress override — green plant theme */
+.phyto-stage-progress {
+    height: 10px;
+    border-radius: 5px;
+    background-color: #d4edda;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+.phyto-stage-progress__bar {
+    background-color: #3a8c3f;
+    border-radius: 5px;
+    box-shadow: none;
+    min-width: 10px;
+    transition: width 0.4s ease;
+}
+
+/* -----------------------------------------------------------------------
+ * Weeks to next stage
+ * --------------------------------------------------------------------- */
+
+.phyto-stage-card__weeks {
+    margin: 0 0 0.75rem;
+    font-size: 0.9rem;
+    color: #3d5c3e;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.phyto-stage-card__weeks-icon {
+    font-style: normal;
+    font-size: 1.05rem;
+    flex-shrink: 0;
+}
+
+.phyto-stage-card__weeks strong {
+    font-weight: 700;
+    color: #1b4d1e;
+}
+
+/* -----------------------------------------------------------------------
+ * Description body
+ * --------------------------------------------------------------------- */
+
+.phyto-stage-card__description {
+    font-size: 0.9375rem;
+    color: #333;
+    line-height: 1.65;
+    margin-top: 0.5rem;
+}
+
+.phyto-stage-card__description p:last-child {
+    margin-bottom: 0;
+}
+
+/* -----------------------------------------------------------------------
+ * Price-area badge (.phyto-stage-badge)
+ * --------------------------------------------------------------------- */
+
+.phyto-stage-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.2rem 0.6rem 0.2rem 0.5rem;
+    border-radius: 12px;
+    border: 1px solid #a5d6a7;
+    background-color: #e8f5e9;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #2e7d32;
+    line-height: 1.4;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-top: 0.35rem;
+}
+
+.phyto-stage-badge__icon {
+    font-size: 0.95rem;
+    line-height: 1;
+}
+
+.phyto-stage-badge__name {
+    font-weight: 600;
+}
+
+/* Difficulty colour applied inline — just ensure no extra margin */
+.phyto-stage-badge__difficulty {
+    font-weight: 500;
+    margin-left: 0.15rem;
+}
+
+.phyto-stage-badge__difficulty::before {
+    content: '\2022'; /* bullet separator */
+    margin-right: 0.25rem;
+    opacity: 0.5;
+    color: #2e7d32;
+}
+
+/* -----------------------------------------------------------------------
+ * Responsive adjustments
+ * --------------------------------------------------------------------- */
+
+@media (max-width: 575px) {
+    .phyto-stage-card__header {
+        gap: 0.4rem;
+    }
+
+    .phyto-stage-card__icon {
+        font-size: 1.3rem;
+    }
+
+    .phyto-stage-card__title {
+        font-size: 1rem;
+    }
+
+    .phyto-stage-badge {
+        font-size: 0.75rem;
+    }
+}
