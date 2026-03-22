@@ -350,6 +350,90 @@ Please keep module scope focused — each module should do one thing well.
 
 ---
 
+## Changelog
+
+All times in IST (UTC +5:30).
+
+---
+
+### 22 Mar 2026
+
+| Time (IST) | Commit | Change |
+|------------|--------|--------|
+| 15:57 | `11847af` | **phytoquickadd — Notes field + multi-category selection.** New Notes textarea (between Short Description and Full Description) with live `#hashtag` badge preview; hashtags saved as PS product tags on submit. Category selector upgraded to multi-select — Ctrl/⌘+click to pick multiple categories; first selected becomes the primary; selected categories shown as colour-coded badges below the list. |
+
+---
+
+### 20 Mar 2026
+
+| Time (IST) | Commit | Change |
+|------------|--------|--------|
+| 06:51 | `61ee636` | **README — module suite tree diagram.** Added ASCII tree under new *Module Suite Overview* section grouping all 20 modules by functional area with ✅ Built / 🚧 Under Construction status. Summary line: 16 built · 6 under construction · 15 taxonomy packs. |
+| 06:01 | `933b6ab` | **Merge** — feature branch `claude/phytocommerce-module-dev-HGpZM` merged into master. |
+| 06:01 | `be4e381` | **README — full rewrite.** Complete module index (4 foundation + 16 specialty), detailed sections per built module (DB tables, config keys, hook list, feature tables). Removed all server paths, usernames, domain names, ERP instance URLs, and host-specific deployment scripts. |
+| 05:53 | `9aab886` | **phyto_tc_batch_tracker v1.1 — 5 robustness features.** Mother batch lineage chain (`getLineageChain()`, root→leaf breadcrumb on front product tab); contamination incident log (type, affected units, resolved flag, inline panel with one-click resolve); inventory auto-decrement on order ship (configurable status, auto-transition to Depleted at zero); low-stock alert email (single alert per batch per cycle, configurable threshold); printable 88 mm QR label card streaming from admin list row action. Migration SQL provided for v1.0 installs. |
+| 05:38 | `eead0e0` | **phyto_tc_batch_tracker v1.0 — complete.** Full TC propagation batch CRUD with auto-suggested batch codes, generation tracking G0→Hardened, admin JS, CSS, Smarty views, and per-module README. |
+| 05:31 | `f5358cf` | **3 modules complete** — `phyto_wholesale_portal` (B2B application workflow, MOQ enforcement, tiered pricing JSON, invoice-on-delivery); `phyto_subscription` (Cashfree recurring — plan CRUD, subscribe flow, webhook handler); `phyto_tc_cost_calculator` (per-batch media/chemical/labour/overhead cost estimator, admin-only). |
+| 05:28 | `eb1febb` | **4 modules complete** — `phyto_growers_journal` (grow log with photo upload, purchase gate, admin moderation, timeline UI); `phyto_collection_widget` (order-auto-populated collection, AJAX notes, public share URL); `phyto_dispatch_logger` (per-order dispatch log, admin product tab, buyer order detail hook); `phyto_source_badge` (badge definitions, per-product assignment, product list + price block hooks). |
+
+---
+
+### 19 Mar 2026
+
+| Time (IST) | Commit | Change |
+|------------|--------|--------|
+| 25:33 | `6ec332b` | **Scrubbed private content from public push.** Removed ERP instance URL and server-specific references that Claude Code had included in the previous commit. |
+| 25:30 | `dd1b432` | **Replaced ERP URL with placeholder** in phytoerpconnector docs/config. |
+| 21:51 | `b429a70` | **phyto_phytosanitary — complete.** PDF upload with MIME validation, UUID filenames, `.htaccess`-protected upload dir, expiry colour-coded badges, `hookDisplayProductExtraContent` download links, `hookDisplayPDFInvoice` packing-slip append, cascade file delete. |
+| 21:49 | `bfc9b4a` | **PhytoCommerce 16-module suite scaffold (WIP).** Initial commit of all 16 specialty module directories with main PHP class, config.xml, SQL install/uninstall, admin/front controller stubs, and Smarty template stubs. |
+| 23:07 | `5854cf4` | **Module spec doc added** — `phytocommerce-modules-spec.md` added to repo as build reference for Claude Code. |
+| 16:22 | `66da793` | **phytoerpconnector + phytoseobooster — complete.** ERP connector: bidirectional sync (customers, orders, products, invoices) with ERPNext v15 REST API, sync log table, dashboard + log + settings tabs. SEO booster: Claude Haiku meta generation, bulk fill, SEO audit scanner, Product JSON-LD schema injection. |
+
+---
+
+### 16 Mar 2026
+
+| Time (IST) | Commit | Change |
+|------------|--------|--------|
+| 25:23 | `04874ad` | **phytoquickadd — live category reload fixed.** After adding a category via AJAX, both the product category select and parent select now reload without page refresh; tree view also updates live. |
+| 24:49 | `799979a` | Auto-refresh dropdowns after category add and taxonomy import. |
+| 24:33 | `2cf4733` | Fix AJAX JSON output buffering — `ob_start()` / `ob_clean()` guard prevents PHP warnings from corrupting JSON responses. |
+| 24:29 | `9587e92` | Add missing `classes/` folder with `PhytoTaxonomy` class. |
+| 24:17 | `85254ea` | **phytoquickadd v3** — taxonomy packs tab added; live GitHub fetch, category import, per-pack sync, import log panel. |
+| 15:11 | `ea66d7a` | Fix category tree array handling. |
+| 15:09 | `f29d4e0` | Rename `uploadImage` → `uploadProductImage` to avoid PrestaShop core method conflict. |
+| 15:05 | `b846000` | Fix `uploadImage` visibility to `protected`. |
+| 15:02 | `8fd3f89` | Add `getContent()` to trigger Configure button in module list. |
+| 14:54 | `bd025e4` | **phytoquickadd v2** — full tab rewrite: Add Product, Add Category, Settings; AJAX category add with live tree; AI description toggle. |
+| 13:56 | `ef5351d` | Add files via upload. |
+| 13:45 | `61a9f22` | Remove duplicate/broken `phytoquickadd.php` from root. |
+| 11:18 | `3e89d78` | Move AJAX handler to `init()` to intercept before page render. |
+| 11:08 | `b090050` | Fix template variable checks with `isset`. |
+| 11:02 | `fd84f91` | Fix controller variable assignment for quickadd module. |
+| 11:00 | `4474197` | Fix Smarty `{literal}` tags wrapping inline JS in quickadd template. |
+
+---
+
+### 15 Mar 2026
+
+| Time (IST) | Commit | Change |
+|------------|--------|--------|
+| 28:14 | `fe12487` | **phytoquickadd v1** — initial module: quick product add with Claude AI description generation (Haiku), basic category select, image upload. |
+| 28:12 | `ac83070` | Add PhytoTaxonomy helper methods. |
+| 28:12 | `4c98c85` | Restructure taxonomy data into clean folder hierarchy: `carnivorous/`, `aroids/`, `orchids/`, `succulents/`, `bromeliads/` with per-category index files. |
+| 28:09 | `883b9f5` | Remove loose index files from repo root — moved to taxonomy folders. |
+
+---
+
+### 7 Mar 2026
+
+| Time (IST) | Commit | Change |
+|------------|--------|--------|
+| 19:43 | `5c00072` | **phytocommercefooter** — first module: replaces default PS footer with Phyto Evolution branding. |
+| 19:27 | `8a2a953` | **Initial commit** — repository created. |
+
+---
+
 ## License
 
 MIT — see [LICENSE](LICENSE)
