@@ -64,6 +64,17 @@
                                   placeholder="2-3 sentence summary shown in listings"></textarea>
                     </div>
                     <div class="form-group">
+                        <label>
+                            Notes
+                            <small class="text-muted">— internal notes; <code>#hashtags</code> are saved as product tags</small>
+                        </label>
+                        <textarea name="product_notes" id="product_notes"
+                                  class="form-control" rows="3"
+                                  placeholder="e.g. #tissue-culture #highland received from lab Mar 2024, good root system"
+                                  oninput="previewHashtags(this.value)"></textarea>
+                        <div id="notes_tags_preview" style="margin-top:6px;min-height:22px;line-height:1.8;"></div>
+                    </div>
+                    <div class="form-group">
                         <label>Full Description</label>
                         <textarea name="product_description" id="product_description"
                                   class="form-control" rows="8"
@@ -85,13 +96,17 @@
                                min="0" required value="1">
                     </div>
                     <div class="form-group">
-                        <label>Category <span class="text-danger">*</span></label>
+                        <label>
+                            Categories <span class="text-danger">*</span>
+                            <small class="text-muted">— hold <kbd>Ctrl</kbd> / <kbd>⌘</kbd> to select multiple; first selected = primary</small>
+                        </label>
                         <input type="text" id="category_search" class="form-control"
                                placeholder="Type to filter categories..."
                                onkeyup="filterCategories(this.value)"
                                style="margin-bottom:5px;">
-                        <select name="product_category" id="category_select"
-                                class="form-control" required size="6">
+                        <select name="product_categories[]" id="category_select"
+                                class="form-control" multiple size="7"
+                                onchange="updateSelectedCats()">
                             {if isset($flat_categories)}
                                 {foreach $flat_categories as $cat}
                                     <option value="{$cat.id}"
@@ -99,7 +114,11 @@
                                 {/foreach}
                             {/if}
                         </select>
-                        <small class="text-muted">
+                        <div id="selected_cats_display"
+                             style="margin-top:6px;min-height:22px;line-height:1.8;">
+                            <span class="text-muted" style="font-size:12px;">No categories selected</span>
+                        </div>
+                        <small class="text-muted" style="margin-top:4px;display:block;">
                             <a href="#tab-category" data-toggle="tab">Add category →</a>
                             &nbsp;|&nbsp;
                             <a href="#tab-taxonomy" data-toggle="tab">Import taxonomy packs →</a>
@@ -285,13 +304,22 @@ function reloadCategories() {
     phytoAjax('get_categories')
     .then(function(data) {
         if (!data || !data.length) return;
-        updateSelect('category_select', data);
+        // Preserve currently selected values in the multi-select
+        var sel = document.getElementById('category_select');
+        var prevSelected = [];
+        if (sel) {
+            for (var i = 0; i < sel.options.length; i++) {
+                if (sel.options[i].selected) prevSelected.push(sel.options[i].value);
+            }
+        }
+        updateSelect('category_select', data, null, prevSelected);
         updateSelect('parent_select',   data, 2);
         updateCategoryTree(data);
+        updateSelectedCats();
     });
 }
 
-function updateSelect(selectId, categories, selectedId) {
+function updateSelect(selectId, categories, selectedId, selectedIds) {
     var sel = document.getElementById(selectId);
     if (!sel) return;
     sel.innerHTML = '';
@@ -301,6 +329,7 @@ function updateSelect(selectId, categories, selectedId) {
         opt.text  = cat.name;
         opt.setAttribute('data-name', cat.name.toLowerCase());
         if (selectedId && cat.id == selectedId) opt.selected = true;
+        if (selectedIds && selectedIds.indexOf(String(cat.id)) > -1) opt.selected = true;
         sel.appendChild(opt);
     });
 }
@@ -348,6 +377,45 @@ function generateDescription() {
         btn.disabled = false;
         status.style.display = 'none';
     });
+}
+
+function previewHashtags(text) {
+    var preview = document.getElementById('notes_tags_preview');
+    var tags = [];
+    var matches = text.match(/#([a-zA-Z0-9_\-]+)/g);
+    if (matches) {
+        matches.forEach(function(t) { tags.push(t.slice(1)); });
+    }
+    if (tags.length === 0) {
+        preview.innerHTML = '';
+        return;
+    }
+    preview.innerHTML = '<small class="text-muted" style="margin-right:4px;">Tags:</small>'
+        + tags.map(function(t) {
+            return '<span class="label label-info" style="margin-right:3px;font-size:11px;">#' + t + '</span>';
+        }).join('');
+}
+
+function updateSelectedCats() {
+    var sel     = document.getElementById('category_select');
+    var display = document.getElementById('selected_cats_display');
+    if (!sel || !display) return;
+    var selected = [];
+    for (var i = 0; i < sel.options.length; i++) {
+        if (sel.options[i].selected) selected.push({ id: sel.options[i].value, name: sel.options[i].text.trim() });
+    }
+    if (selected.length === 0) {
+        display.innerHTML = '<span class="text-muted" style="font-size:12px;">No categories selected</span>';
+        return;
+    }
+    display.innerHTML = selected.map(function(c, idx) {
+        var style = idx === 0
+            ? 'label label-success'   // primary
+            : 'label label-default';
+        var primary = idx === 0 ? ' <small>(primary)</small>' : '';
+        return '<span class="' + style + '" style="margin-right:4px;font-size:11px;">'
+            + c.name + primary + '</span>';
+    }).join('');
 }
 
 function filterCategories(term) { filterSelect('category_select', term); }

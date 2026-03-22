@@ -1,0 +1,454 @@
+/*
+ * Phyto Growers Journal — Front-office styles.
+ *
+ * All classes are prefixed with .phyto-journal- to avoid collisions.
+ * Compatible with Bootstrap 4 (PrestaShop 8.x default theme Hummingbird / Classic).
+ */
+
+/* ==========================================================================
+   Timeline wrapper
+   ========================================================================== */
+
+.phyto-journal-timeline {
+  margin: 2rem 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+/* ==========================================================================
+   Entry list — vertical timeline spine
+   ========================================================================== */
+
+.phyto-journal-entries {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* Vertical line */
+.phyto-journal-entries::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 6.5rem;
+  width: 2px;
+  background: #c8e6c9;
+  z-index: 0;
+}
+
+/* ==========================================================================
+   Individual entry
+   ========================================================================== */
+
+.phyto-journal-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.phyto-journal-entry--milestone .phyto-journal-entry__card {
+  border-left: 4px solid #f9a825;
+  background: #fffde7;
+}
+
+/* ==========================================================================
+   Date pill
+   ========================================================================== */
+
+.phyto-journal-entry__date-pill {
+  flex-shrink: 0;
+  width: 6rem;
+  text-align: center;
+  background: #2e7d32;
+  color: #fff;
+  border-radius: 2rem;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 0.5rem;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.phyto-journal-entry--milestone .phyto-journal-entry__date-pill {
+  background: #f9a825;
+  color: #333;
+}
+
+.phyto-journal-entry--customer .phyto-journal-entry__date-pill {
+  background: #0288d1;
+}
+
+/* ==========================================================================
+   Entry card
+   ========================================================================== */
+
+.phyto-journal-entry__card {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+/* ==========================================================================
+   Card header
+   ========================================================================== */
+
+.phyto-journal-entry__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.phyto-journal-entry__title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1b5e20;
+  flex: 1 1 auto;
+}
+
+.phyto-journal-entry--milestone .phyto-journal-entry__title {
+  color: #e65100;
+}
+
+.phyto-journal-entry__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.phyto-journal-entry__author {
+  font-size: 0.8rem;
+  color: #757575;
+}
+
+/* ==========================================================================
+   Badges (type labels)
+   ========================================================================== */
+
+.phyto-journal-badge {
+  display: inline-block;
+  padding: 0.15em 0.55em;
+  border-radius: 3px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.phyto-journal-badge--store {
+  background: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #a5d6a7;
+}
+
+.phyto-journal-badge--customer {
+  background: #e3f2fd;
+  color: #0277bd;
+  border: 1px solid #90caf9;
+}
+
+.phyto-journal-badge--milestone {
+  background: #fff8e1;
+  color: #e65100;
+  border: 1px solid #ffcc02;
+  font-size: 0.85rem;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+/* ==========================================================================
+   Entry body (HTML content)
+   ========================================================================== */
+
+.phyto-journal-entry__body {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: #424242;
+  margin-bottom: 0.75rem;
+}
+
+.phyto-journal-entry__body p:last-child {
+  margin-bottom: 0;
+}
+
+.phyto-journal-entry__body a {
+  color: #2e7d32;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Photo thumbnails
+   ========================================================================== */
+
+.phyto-journal-entry__photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.phyto-journal-photo-link {
+  display: block;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 2px solid #e0e0e0;
+  transition: border-color 0.15s ease;
+  flex-shrink: 0;
+}
+
+.phyto-journal-photo-link:hover,
+.phyto-journal-photo-link:focus {
+  border-color: #2e7d32;
+  outline: none;
+}
+
+.phyto-journal-photo-thumb {
+  display: block;
+  width: 160px;
+  height: 120px;
+  object-fit: cover;
+  transition: opacity 0.15s ease;
+}
+
+.phyto-journal-photo-link:hover .phyto-journal-photo-thumb,
+.phyto-journal-photo-link:focus .phyto-journal-photo-thumb {
+  opacity: 0.88;
+}
+
+/* ==========================================================================
+   Empty state
+   ========================================================================== */
+
+.phyto-journal-empty {
+  color: #757575;
+  font-style: italic;
+  padding: 1rem 0;
+}
+
+/* ==========================================================================
+   Call to action — submit button
+   ========================================================================== */
+
+.phyto-journal-cta {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.phyto-journal-submit-btn {
+  background: #2e7d32;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.55rem 1.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.phyto-journal-submit-btn:hover,
+.phyto-journal-submit-btn:focus {
+  background: #1b5e20;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+}
+
+/* ==========================================================================
+   Alert messages
+   ========================================================================== */
+
+.phyto-journal-alert {
+  border-radius: 4px;
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.9rem;
+}
+
+.phyto-journal-alert--success {
+  background: #e8f5e9;
+  border: 1px solid #a5d6a7;
+  color: #1b5e20;
+}
+
+.phyto-journal-alert--error {
+  background: #fce4ec;
+  border: 1px solid #ef9a9a;
+  color: #b71c1c;
+}
+
+.phyto-journal-error-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.phyto-journal-error-list li + li {
+  margin-top: 0.3rem;
+}
+
+/* ==========================================================================
+   Post form page
+   ========================================================================== */
+
+.phyto-journal-post-page {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 1rem 0 2rem;
+}
+
+.phyto-journal-post-product {
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+  color: #424242;
+}
+
+.phyto-journal-post-form .form-group {
+  margin-bottom: 1.25rem;
+}
+
+.phyto-journal-label {
+  font-weight: 600;
+  color: #212121;
+  margin-bottom: 0.35rem;
+  display: block;
+}
+
+.phyto-journal-label .required {
+  color: #c62828;
+  margin-left: 0.2rem;
+  font-style: normal;
+}
+
+.phyto-journal-input,
+.phyto-journal-textarea {
+  width: 100%;
+  border: 1px solid #bdbdbd;
+  border-radius: 4px;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.9rem;
+  color: #212121;
+  background: #fafafa;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.phyto-journal-input:focus,
+.phyto-journal-textarea:focus {
+  outline: none;
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.18);
+  background: #fff;
+}
+
+.phyto-journal-textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.phyto-journal-photos-group {
+  margin-bottom: 1.25rem;
+}
+
+.phyto-journal-photos-label {
+  font-size: 0.85rem;
+  color: #616161;
+  margin-bottom: 0.6rem;
+}
+
+.phyto-journal-photo-field {
+  margin-bottom: 0.75rem;
+}
+
+.phyto-journal-file-input {
+  display: block;
+  font-size: 0.875rem;
+}
+
+.phyto-journal-post-form__footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.phyto-journal-cancel-btn {
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+.phyto-journal-cancel-btn:hover {
+  color: #424242;
+}
+
+/* ==========================================================================
+   My account link
+   ========================================================================== */
+
+.phyto-journal-my-account-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.phyto-journal-my-account-link:hover {
+  text-decoration: underline;
+}
+
+.phyto-journal-my-account-icon {
+  font-size: 1rem;
+}
+
+/* ==========================================================================
+   Responsive adjustments
+   ========================================================================== */
+
+@media (max-width: 576px) {
+  .phyto-journal-entries::before {
+    left: 0;
+    display: none;
+  }
+
+  .phyto-journal-entry {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .phyto-journal-entry__date-pill {
+    width: auto;
+    align-self: flex-start;
+    margin-top: 0;
+  }
+
+  .phyto-journal-photo-thumb {
+    width: 120px;
+    height: 90px;
+  }
+
+  .phyto-journal-post-form__footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
