@@ -110,14 +110,18 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
     }
 
     private function processAddProduct() {
-        $name        = trim(Tools::getValue('product_name'));
-        $price       = (float)Tools::getValue('product_price');
-        $quantity    = (int)Tools::getValue('product_quantity');
-        $id_category = (int)Tools::getValue('product_category');
+        $name         = trim(Tools::getValue('product_name'));
+        $price        = (float)Tools::getValue('product_price');
+        $quantity     = (int)Tools::getValue('product_quantity');
+        $category_ids = Tools::getValue('product_categories', []);
+
+        if (!is_array($category_ids)) $category_ids = [$category_ids];
+        $category_ids = array_values(array_filter(array_map('intval', $category_ids)));
+        $id_category  = !empty($category_ids) ? $category_ids[0] : 0;
 
         if (empty($name))      { $this->errors[] = 'Product name is required.'; }
         if ($price <= 0)       { $this->errors[] = 'Price must be greater than 0.'; }
-        if ($id_category <= 0) { $this->errors[] = 'Please select a category.'; }
+        if (empty($category_ids)) { $this->errors[] = 'Please select at least one category.'; }
         if (!empty($this->errors)) return;
 
         $id_lang = $this->context->language->id;
@@ -133,11 +137,23 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
 
         if ($product->add()) {
             StockAvailable::setQuantity($product->id, 0, $quantity);
-            $product->addToCategories([$id_category]);
+            $product->addToCategories($category_ids);
+
+            // Extract #hashtags from notes and save as PS product tags
+            $notes = trim(Tools::getValue('product_notes', ''));
+            if (!empty($notes)) {
+                preg_match_all('/#([a-zA-Z0-9_\-]+)/', $notes, $matches);
+                if (!empty($matches[1])) {
+                    Tag::addTags($id_lang, $product->id, implode(',', $matches[1]));
+                }
+            }
+
             if (isset($_FILES['product_image']) && $_FILES['product_image']['error'] === 0) {
                 $this->handleProductImage($product->id, $_FILES['product_image']['tmp_name']);
             }
-            $this->confirmations[] = 'Product "' . $name . '" added! <a href="'
+            $cat_count = count($category_ids);
+            $this->confirmations[] = 'Product "' . $name . '" added to ' . $cat_count
+                . ' ' . ($cat_count === 1 ? 'category' : 'categories') . '! <a href="'
                 . $this->context->link->getAdminLink('AdminProducts')
                 . '&id_product=' . $product->id . '&updateproduct" target="_blank">Edit full details →</a>';
         } else {
