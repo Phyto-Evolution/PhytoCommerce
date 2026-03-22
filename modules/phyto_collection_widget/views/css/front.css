@@ -1,0 +1,350 @@
+/**
+ * Phyto Plant Collection Widget — Front-end Styles
+ *
+ * All selectors are prefixed with .phyto-coll- to avoid conflicts.
+ *
+ * @author  PhytoCommerce
+ */
+
+/* ============================================================
+   Page layout
+   ============================================================ */
+
+.phyto-coll-page {
+  padding: 1.5rem 0;
+}
+
+.phyto-coll-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.phyto-coll-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+  color: #2d4a22;
+}
+
+.phyto-coll-icon {
+  margin-right: 0.4rem;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.phyto-coll-subtitle {
+  margin: 0.25rem 0 0;
+  font-size: 0.95rem;
+}
+
+/* ============================================================
+   Share bar
+   ============================================================ */
+
+.phyto-coll-share-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.phyto-coll-share-label {
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.phyto-coll-share-input {
+  max-width: 320px;
+  font-size: 0.8rem;
+}
+
+/* ============================================================
+   Flash messages
+   ============================================================ */
+
+.phyto-coll-messages {
+  min-height: 0;
+  margin-bottom: 0.5rem;
+  transition: min-height 0.2s ease;
+}
+
+/* ============================================================
+   Empty state
+   ============================================================ */
+
+.phyto-coll-empty {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+}
+
+.phyto-coll-empty p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ============================================================
+   Collection grid
+   ============================================================ */
+
+.phyto-coll-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+/* ============================================================
+   Collection card
+   ============================================================ */
+
+.phyto-coll-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #dde5d0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(45, 74, 34, 0.07);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.phyto-coll-card:hover {
+  box-shadow: 0 5px 16px rgba(45, 74, 34, 0.14);
+  transform: translateY(-2px);
+}
+
+/* Image */
+.phyto-coll-card__img-link {
+  display: block;
+  overflow: hidden;
+  background: #f5f8f2;
+}
+
+.phyto-coll-card__img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.phyto-coll-card:hover .phyto-coll-card__img {
+  transform: scale(1.04);
+}
+
+/* Body */
+.phyto-coll-card__body {
+  padding: 0.875rem 1rem 0.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.phyto-coll-card__name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  line-height: 1.3;
+}
+
+.phyto-coll-card__name a {
+  color: #2d4a22;
+  text-decoration: none;
+}
+
+.phyto-coll-card__name a:hover {
+  text-decoration: underline;
+}
+
+.phyto-coll-card__date {
+  margin: 0 0 0.5rem;
+  color: #6c757d;
+  font-size: 0.8rem;
+}
+
+/* Note textarea */
+.phyto-coll-card__note-wrap {
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.phyto-coll-card__note-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #4a6b38;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.phyto-coll-card__note {
+  font-size: 0.8rem;
+  resize: vertical;
+  border-color: #c3d6b0;
+  border-radius: 4px;
+}
+
+.phyto-coll-card__note:focus {
+  border-color: #4a6b38;
+  box-shadow: 0 0 0 0.15rem rgba(74, 107, 56, 0.25);
+  outline: none;
+}
+
+/* Visibility toggle */
+.phyto-coll-card__visibility {
+  font-size: 0.8rem;
+}
+
+.phyto-coll-toggle-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.phyto-coll-toggle-label input[type="checkbox"] {
+  accent-color: #4a6b38;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+/* Footer */
+.phyto-coll-card__footer {
+  padding: 0.5rem 1rem 0.75rem;
+  text-align: right;
+  border-top: 1px solid #f0f4ec;
+}
+
+/* Shop button (public view) */
+.phyto-coll-card__shop-btn {
+  align-self: flex-start;
+  font-size: 0.8rem;
+}
+
+/* ============================================================
+   Public view specific overrides
+   ============================================================ */
+
+.phyto-coll-page--public .phyto-coll-card {
+  border-color: #c9ddb8;
+}
+
+.phyto-coll-count {
+  font-size: 0.875rem;
+  margin-top: 1.5rem;
+}
+
+/* ============================================================
+   "In your collection" badge (product page hook)
+   ============================================================ */
+
+.phyto-coll-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  background: #f0f7eb;
+  border: 1px solid #b5d49a;
+  border-radius: 6px;
+  flex-wrap: wrap;
+}
+
+.phyto-coll-badge__icon {
+  font-size: 1.75rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.phyto-coll-badge__text {
+  flex: 1;
+  min-width: 150px;
+}
+
+.phyto-coll-badge__headline {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #2d4a22;
+}
+
+.phyto-coll-badge__date {
+  font-size: 0.8rem;
+  color: #5a7a47;
+}
+
+.phyto-coll-badge__link {
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  border-color: #4a6b38;
+  color: #4a6b38;
+}
+
+.phyto-coll-badge__link:hover {
+  background: #4a6b38;
+  color: #fff;
+}
+
+/* ============================================================
+   My Account block link
+   ============================================================ */
+
+.phyto-coll-account-link {
+  margin: 0.25rem 0;
+}
+
+.phyto-coll-account-link__anchor {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: #4a6b38;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.phyto-coll-account-link__anchor:hover {
+  text-decoration: underline;
+  color: #2d4a22;
+}
+
+.phyto-coll-account-link__icon {
+  font-size: 1rem;
+}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+
+@media (max-width: 575px) {
+  .phyto-coll-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .phyto-coll-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .phyto-coll-share-input {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .phyto-coll-badge {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .phyto-coll-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

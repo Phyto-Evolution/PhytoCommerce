@@ -1,0 +1,41 @@
+/* phyto_tc_batch_tracker — back-office styles (v1.1: contamination panel, low-stock row) */
+
+/* Product tab panel */
+#phyto-tc-batch-panel .phyto-tc-info-card {
+    background: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+}
+#phyto-tc-batch-panel .phyto-tc-info-card label {
+    display: block;
+    font-size: .75rem;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 2px;
+}
+#phyto-tc-batch-panel .phyto-tc-info-card span {
+    font-size: .95rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* AJAX flash */
+#phyto-tc-ajax-msg .alert { margin-bottom: 0; }
+
+/* Batch list status badges */
+.badge-success    { background-color: #5cb85c; }
+.badge-secondary  { background-color: #999; }
+.badge-danger     { background-color: #d9534f; }
+.badge-warning    { background-color: #f0ad4e; color: #333; }
+.badge-info       { background-color: #5bc0de; }
+
+/* Contamination panel */
+#phyto-tc-contam-panel .phyto-tc-contam-open td {
+    background: #fff8f0;
+}
+#phyto-tc-contam-panel table { font-size: .85rem; }
+
+/* Low-stock row highlight in batch list */
+tr.phyto-tc-low-stock-row td { background: #fff3cd !important; }

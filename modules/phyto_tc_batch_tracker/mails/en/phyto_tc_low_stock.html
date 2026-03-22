@@ -1,0 +1,34 @@
+<html>
+<body style="font-family:Arial,sans-serif;color:#333;max-width:600px;margin:0 auto;padding:20px;">
+<h2 style="color:#c0392b;">&#9888; TC Batch Low Stock Alert</h2>
+<p>This is an automated alert from <strong>{shop_name}</strong>.</p>
+<table style="border-collapse:collapse;width:100%;margin:16px 0;">
+  <tr>
+    <td style="padding:8px 12px;background:#f5f5f5;font-weight:bold;border:1px solid #ddd;width:160px;">Batch Code</td>
+    <td style="padding:8px 12px;border:1px solid #ddd;font-family:monospace;">{batch_code}</td>
+  </tr>
+  <tr>
+    <td style="padding:8px 12px;background:#f5f5f5;font-weight:bold;border:1px solid #ddd;">Species / Clone</td>
+    <td style="padding:8px 12px;border:1px solid #ddd;">{species_name}</td>
+  </tr>
+  <tr>
+    <td style="padding:8px 12px;background:#f5f5f5;font-weight:bold;border:1px solid #ddd;">Generation</td>
+    <td style="padding:8px 12px;border:1px solid #ddd;">{generation}</td>
+  </tr>
+  <tr>
+    <td style="padding:8px 12px;background:#f5f5f5;font-weight:bold;border:1px solid #ddd;">Units Remaining</td>
+    <td style="padding:8px 12px;border:1px solid #ddd;color:#c0392b;font-weight:bold;">{units_remaining}</td>
+  </tr>
+  <tr>
+    <td style="padding:8px 12px;background:#f5f5f5;font-weight:bold;border:1px solid #ddd;">Alert Threshold</td>
+    <td style="padding:8px 12px;border:1px solid #ddd;">{threshold} units</td>
+  </tr>
+  <tr>
+    <td style="padding:8px 12px;background:#f5f5f5;font-weight:bold;border:1px solid #ddd;">Batch Status</td>
+    <td style="padding:8px 12px;border:1px solid #ddd;">{batch_status}</td>
+  </tr>
+</table>
+<p>Please review this batch and initiate a new propagation cycle if needed.</p>
+<p style="color:#999;font-size:12px;">This alert will not repeat until stock is replenished above the threshold.</p>
+</body>
+</html>
