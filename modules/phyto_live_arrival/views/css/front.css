@@ -1,0 +1,279 @@
+/*
+ * Phyto Live Arrival Guarantee — Front-Office Styles
+ *
+ * All rules are scoped under .phyto-lag-* to avoid theme conflicts.
+ * Compatible with Bootstrap 3 (PrestaShop 8 default themes).
+ */
+
+/* ── Panel ───────────────────────────────────────────────────────────────── */
+
+.phyto-lag-panel {
+    border: 1px solid #c8e6c9;
+    border-radius: 6px;
+    background-color: #f9fdf9;
+    margin-bottom: 20px;
+}
+
+.phyto-lag-panel .panel-heading {
+    background-color: #e8f5e9;
+    border-bottom: 1px solid #c8e6c9;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 15px;
+}
+
+.phyto-lag-panel .panel-body {
+    padding: 15px;
+}
+
+/* ── LAG Badge (heading) ─────────────────────────────────────────────────── */
+
+.phyto-lag-badge {
+    font-size: 1em;
+    font-weight: 700;
+    color: #2e7d32;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.phyto-lag-badge--active {
+    color: #1b5e20;
+}
+
+/* ── Ship date notice ────────────────────────────────────────────────────── */
+
+.phyto-lag-ship-notice {
+    font-size: 0.92em;
+    color: #388e3c;
+    margin-bottom: 12px;
+}
+
+.phyto-lag-ship-warning {
+    font-size: 0.92em;
+    margin-bottom: 12px;
+}
+
+/* ── Opt-in toggle row ───────────────────────────────────────────────────── */
+
+.phyto-lag-toggle-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.phyto-lag-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #333;
+    user-select: none;
+    margin: 0;
+}
+
+.phyto-lag-toggle input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #4caf50;
+    flex-shrink: 0;
+}
+
+.phyto-lag-toggle-label {
+    font-size: 0.98em;
+}
+
+/* ── Fee display ─────────────────────────────────────────────────────────── */
+
+.phyto-lag-fee-display {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.95em;
+}
+
+.phyto-lag-fee-amount {
+    font-weight: 700;
+    color: #c62828;
+}
+
+.phyto-lag-free-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 0.85em;
+    font-weight: 700;
+    background-color: #4caf50;
+    color: #fff;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.phyto-lag-free-note {
+    color: #666;
+    font-size: 0.85em;
+}
+
+/* ── Collapsible terms ───────────────────────────────────────────────────── */
+
+.phyto-lag-terms-section {
+    margin-top: 10px;
+    border-top: 1px solid #e0f2e1;
+    padding-top: 8px;
+}
+
+.phyto-lag-terms-toggle {
+    padding: 0;
+    color: #4caf50;
+    font-size: 0.9em;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.phyto-lag-terms-toggle:hover,
+.phyto-lag-terms-toggle:focus {
+    color: #2e7d32;
+    text-decoration: underline;
+    outline: none;
+}
+
+.phyto-lag-terms-caret {
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+.phyto-lag-terms-toggle[aria-expanded="true"] .phyto-lag-terms-caret {
+    transform: rotate(180deg);
+}
+
+.phyto-lag-terms {
+    margin-top: 8px;
+    padding: 10px 14px;
+    background-color: #f1f8e9;
+    border-left: 3px solid #aed581;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.88em;
+    color: #33691e;
+    line-height: 1.6;
+}
+
+.phyto-lag-terms p {
+    margin: 0;
+}
+
+/* ── Order detail — fee charged ──────────────────────────────────────────── */
+
+.phyto-lag-fee-charged {
+    font-size: 0.95em;
+    margin-bottom: 12px;
+    color: #444;
+}
+
+/* ── Claim status badges ─────────────────────────────────────────────────── */
+
+.phyto-lag-claim-status-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 0.95em;
+}
+
+.phyto-lag-status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-size: 0.88em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.phyto-lag-status-badge--pending {
+    background-color: #fff8e1;
+    color: #f57f17;
+    border: 1px solid #ffe082;
+}
+
+.phyto-lag-status-badge--approved {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+}
+
+.phyto-lag-status-badge--rejected {
+    background-color: #fbe9e7;
+    color: #b71c1c;
+    border: 1px solid #ef9a9a;
+}
+
+/* ── Claim action row ────────────────────────────────────────────────────── */
+
+.phyto-lag-claim-action {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.phyto-lag-claim-hint {
+    flex: 1 1 100%;
+    font-size: 0.9em;
+    color: #555;
+    margin: 0 0 6px;
+}
+
+.phyto-lag-claim-btn {
+    white-space: nowrap;
+}
+
+.phyto-lag-claim-window-note {
+    font-size: 0.82em;
+    color: #777;
+}
+
+/* ── Claim window expired ────────────────────────────────────────────────── */
+
+.phyto-lag-claim-expired {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.phyto-lag-expired-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-size: 0.88em;
+    font-weight: 600;
+    color: #9e9e9e;
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+}
+
+/* ── Responsive tweaks ───────────────────────────────────────────────────── */
+
+@media (max-width: 480px) {
+    .phyto-lag-toggle-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .phyto-lag-claim-action {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
