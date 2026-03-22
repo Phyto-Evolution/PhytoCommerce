@@ -2,12 +2,15 @@
 /**
  * Phyto Climate Zone Module
  *
- * Shows which plants are suitable for a buyer's climate zone
- * based on offline pincode-prefix lookup.
+ * Maps products to PCC-IN (PhytoCommerce Climate Code — India) zones.
+ * Customers enter their 6-digit pincode to check plant suitability offline.
+ * 15 granular India climate zones; 797 PIN prefixes pre-mapped.
+ * Zone + monthly climate data loaded from data/india_climate_zones.json.
  *
  * @author    PhytoCommerce
  * @copyright PhytoCommerce
  * @license   proprietary
+ * @version   2.0.0
  */
 
 if (!defined('_PS_VERSION_')) {
@@ -16,20 +19,73 @@ if (!defined('_PS_VERSION_')) {
 
 class Phyto_Climate_Zone extends Module
 {
-    /** @var array Climate zone definitions */
-    public static $zones = [
-        'tropical_humid'     => 'Tropical humid (India coastal / South India)',
-        'tropical_dry'       => 'Tropical dry (Deccan plateau)',
-        'subtropical'        => 'Subtropical (North India plains)',
-        'highland_temperate' => 'Highland temperate (Nilgiris / Himalayas)',
-        'any_indoor'         => 'Any indoor (controlled environment)',
-    ];
+    /**
+     * Return all 15 PCC-IN zone definitions loaded from JSON.
+     * Result is cached per request in a static variable.
+     *
+     * @return array  slug => label
+     */
+    public static function getZones()
+    {
+        static $zones = null;
+        if ($zones !== null) {
+            return $zones;
+        }
 
-    /** @var array Intolerance options */
+        $data = self::loadZoneData();
+        $zones = [];
+        foreach ($data as $slug => $zone) {
+            $zones[$slug] = $zone['label'];
+        }
+        return $zones;
+    }
+
+    /**
+     * Return full zone data array (all fields) from JSON.
+     * Cached per request.
+     *
+     * @return array  slug => zone_detail_array
+     */
+    public static function loadZoneData()
+    {
+        static $zoneData = null;
+        if ($zoneData !== null) {
+            return $zoneData;
+        }
+
+        $path = dirname(__FILE__) . '/data/india_climate_zones.json';
+        if (!file_exists($path)) {
+            $zoneData = [];
+            return $zoneData;
+        }
+
+        $raw = file_get_contents($path);
+        $decoded = json_decode($raw, true);
+        $zoneData = (is_array($decoded) && isset($decoded['zones'])) ? $decoded['zones'] : [];
+        return $zoneData;
+    }
+
+    /**
+     * Return the months array (Jan–Dec labels).
+     *
+     * @return string[]
+     */
+    public static function getMonthLabels()
+    {
+        $path = dirname(__FILE__) . '/data/india_climate_zones.json';
+        if (!file_exists($path)) {
+            return ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        }
+        $raw = file_get_contents($path);
+        $decoded = json_decode($raw, true);
+        return (isset($decoded['months'])) ? $decoded['months'] : ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    }
+
+    /** @var array Intolerance options (unchanged) */
     public static $intolerances = [
-        'hard_frost'    => 'Hard frost',
-        'direct_rain'   => 'Direct rain',
-        'low_humidity'  => 'Low humidity',
+        'hard_frost'     => 'Hard frost',
+        'direct_rain'    => 'Direct rain',
+        'low_humidity'   => 'Low humidity',
         'alkaline_water' => 'Alkaline water',
     ];
 
@@ -37,7 +93,7 @@ class Phyto_Climate_Zone extends Module
     {
         $this->name = 'phyto_climate_zone';
         $this->tab = 'front_office_features';
-        $this->version = '1.0.0';
+        $this->version = '2.0.0';
         $this->author = 'PhytoCommerce';
         $this->need_instance = 0;
         $this->bootstrap = true;
@@ -45,13 +101,10 @@ class Phyto_Climate_Zone extends Module
         parent::__construct();
 
         $this->displayName = $this->l('Phyto Climate Zone');
-        $this->description = $this->l('Shows which plants are suitable for a buyer\'s climate zone based on pincode lookup. Fully offline.');
+        $this->description = $this->l('Maps products to 15 PCC-IN climate zones via offline pincode lookup. Covers 797 India PIN prefixes.');
         $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => '8.99.99'];
     }
 
-    /**
-     * Module installation
-     */
     public function install()
     {
         return parent::install()
@@ -62,9 +115,6 @@ class Phyto_Climate_Zone extends Module
             && $this->installDefaultConfig();
     }
 
-    /**
-     * Module uninstallation
-     */
     public function uninstall()
     {
         return $this->executeSqlFile('uninstall')
@@ -74,9 +124,6 @@ class Phyto_Climate_Zone extends Module
 
     /**
      * Execute an SQL file from the sql/ directory.
-     *
-     * @param string $filename File name without .sql extension
-     * @return bool
      */
     private function executeSqlFile($filename)
     {
@@ -89,72 +136,52 @@ class Phyto_Climate_Zone extends Module
         $sql = str_replace('PREFIX_', _DB_PREFIX_, $sql);
         $sql = str_replace('ENGINE_TYPE', _MYSQL_ENGINE_, $sql);
 
-        $statements = preg_split('/;\s*[\r\n]+/', $sql);
-        foreach ($statements as $statement) {
+        foreach (preg_split('/;\s*[\r\n]+/', $sql) as $statement) {
             $statement = trim($statement);
-            if (!empty($statement)) {
-                if (!Db::getInstance()->execute($statement)) {
-                    return false;
-                }
+            if (!empty($statement) && !Db::getInstance()->execute($statement)) {
+                return false;
             }
         }
-
         return true;
     }
 
     /**
-     * Install the default pincode-to-climate-zone mapping.
-     *
-     * @return bool
+     * Load the generated PIN-prefix map from JSON and store in config.
+     * Falls back to a minimal inline map if the JSON file is absent.
      */
     private function installDefaultConfig()
     {
-        $defaultMap = json_encode([
-            '600' => 'tropical_humid',
-            '601' => 'tropical_humid',
-            '602' => 'tropical_humid',
-            '603' => 'tropical_humid',
-            '500' => 'tropical_humid',
-            '560' => 'tropical_humid',
-            '682' => 'tropical_humid',
-            '695' => 'tropical_humid',
-            '400' => 'tropical_humid',
-            '380' => 'tropical_dry',
-            '411' => 'tropical_dry',
-            '440' => 'tropical_dry',
-            '302' => 'subtropical',
-            '110' => 'subtropical',
-            '201' => 'subtropical',
-            '226' => 'subtropical',
-            '208' => 'subtropical',
-            '800' => 'subtropical',
-            '700' => 'subtropical',
-            '781' => 'subtropical',
-            '643' => 'highland_temperate',
-            '734' => 'highland_temperate',
-            '171' => 'highland_temperate',
-            '175' => 'highland_temperate',
-            '796' => 'highland_temperate',
-            '793' => 'highland_temperate',
-        ], JSON_PRETTY_PRINT);
+        $mapPath = dirname(__FILE__) . '/data/india_pin_prefix_zone_map.json';
+        if (file_exists($mapPath)) {
+            $raw     = file_get_contents($mapPath);
+            $decoded = json_decode($raw, true);
+            $map     = (isset($decoded['map']) && is_array($decoded['map'])) ? $decoded['map'] : [];
+        } else {
+            // Minimal fallback (26 prefixes, original v1 set) using new zone codes
+            $map = [
+                '600' => 'PCC-IN-01', '601' => 'PCC-IN-01', '602' => 'PCC-IN-01',
+                '603' => 'PCC-IN-01', '500' => 'PCC-IN-04', '560' => 'PCC-IN-03',
+                '682' => 'PCC-IN-02', '695' => 'PCC-IN-02', '400' => 'PCC-IN-02',
+                '380' => 'PCC-IN-03', '411' => 'PCC-IN-03', '440' => 'PCC-IN-08',
+                '302' => 'PCC-IN-05', '110' => 'PCC-IN-05', '201' => 'PCC-IN-05',
+                '226' => 'PCC-IN-06', '208' => 'PCC-IN-05', '800' => 'PCC-IN-06',
+                '700' => 'PCC-IN-09', '781' => 'PCC-IN-10', '643' => 'PCC-IN-11',
+                '734' => 'PCC-IN-12', '171' => 'PCC-IN-12', '175' => 'PCC-IN-12',
+                '796' => 'PCC-IN-10', '793' => 'PCC-IN-10',
+            ];
+        }
 
-        return Configuration::updateValue('PHYTO_CLIMATE_MAP', $defaultMap);
+        return Configuration::updateValue('PHYTO_CLIMATE_MAP', json_encode($map));
     }
 
     // -------------------------------------------------------------------------
     // Back-office configuration page
     // -------------------------------------------------------------------------
 
-    /**
-     * Module configuration page (Settings > Modules > Configure).
-     *
-     * @return string HTML output
-     */
     public function getContent()
     {
         $output = '';
 
-        // Handle form submission
         if (Tools::isSubmit('submitPhytoClimateConfig')) {
             $mapJson = Tools::getValue('PHYTO_CLIMATE_MAP');
             $decoded = json_decode($mapJson, true);
@@ -167,23 +194,21 @@ class Phyto_Climate_Zone extends Module
             }
         }
 
-        // Handle "download default mapping" action
         if (Tools::isSubmit('downloadDefaultMap')) {
             $this->downloadJsonMapping();
         }
 
         $output .= $this->renderConfigForm();
-
         return $output;
     }
 
-    /**
-     * Render the configuration form.
-     *
-     * @return string
-     */
     private function renderConfigForm()
     {
+        $zoneList = '';
+        foreach (self::getZones() as $slug => $label) {
+            $zoneList .= $slug . ' — ' . $label . "\n";
+        }
+
         $helper = new HelperForm();
         $helper->module = $this;
         $helper->name_controller = $this->name;
@@ -199,10 +224,10 @@ class Phyto_Climate_Zone extends Module
         $fields = [
             'form' => [
                 'legend' => [
-                    'title' => $this->l('Pincode-to-Climate-Zone Mapping'),
+                    'title' => $this->l('Pincode-to-Climate-Zone Mapping (v2 — 15 PCC-IN zones)'),
                     'icon'  => 'icon-map-marker',
                 ],
-                'description' => $this->l('Enter a JSON object mapping 3-digit pincode prefixes to climate zone slugs. Valid zones: tropical_humid, tropical_dry, subtropical, highland_temperate.'),
+                'description' => $this->l('JSON mapping 3-digit PIN prefixes to PCC-IN zone codes. Valid codes: PCC-IN-01 through PCC-IN-15. The default map covers 797 Indian PIN prefixes generated by the Python data generator.'),
                 'input' => [
                     [
                         'type'  => 'textarea',
@@ -210,12 +235,18 @@ class Phyto_Climate_Zone extends Module
                         'name'  => 'PHYTO_CLIMATE_MAP',
                         'cols'  => 80,
                         'rows'  => 20,
-                        'desc'  => $this->l('Format: { "600": "tropical_humid", "302": "subtropical", ... }'),
+                        'desc'  => $this->l('Format: { "600": "PCC-IN-01", "110": "PCC-IN-05", ... }'),
+                    ],
+                    [
+                        'type'  => 'free',
+                        'label' => $this->l('Available zone codes'),
+                        'name'  => 'zone_reference',
+                        'desc'  => nl2br(htmlspecialchars($zoneList, ENT_QUOTES, 'UTF-8')),
                     ],
                 ],
                 'buttons' => [
                     [
-                        'title' => $this->l('Download default mapping'),
+                        'title' => $this->l('Download current mapping'),
                         'icon'  => 'process-icon-download',
                         'name'  => 'downloadDefaultMap',
                         'type'  => 'submit',
@@ -231,15 +262,11 @@ class Phyto_Climate_Zone extends Module
         return $helper->generateForm([$fields]);
     }
 
-    /**
-     * Stream the current JSON mapping as a downloadable file.
-     */
     private function downloadJsonMapping()
     {
-        $json = Configuration::get('PHYTO_CLIMATE_MAP');
-        // Re-encode for pretty output
+        $json    = Configuration::get('PHYTO_CLIMATE_MAP');
         $decoded = json_decode($json, true);
-        $pretty = json_encode($decoded, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+        $pretty  = json_encode($decoded, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 
         header('Content-Type: application/json');
         header('Content-Disposition: attachment; filename="phyto_climate_map.json"');
@@ -252,18 +279,10 @@ class Phyto_Climate_Zone extends Module
     // Back-office product tab hook
     // -------------------------------------------------------------------------
 
-    /**
-     * Hook: displayAdminProductsExtra
-     * Renders the climate settings tab on the product edit page.
-     *
-     * @param array $params
-     * @return string
-     */
     public function hookDisplayAdminProductsExtra($params)
     {
         $idProduct = (int) $params['id_product'];
 
-        // Load existing data
         $data = Db::getInstance()->getRow(
             'SELECT * FROM `' . _DB_PREFIX_ . 'phyto_climate_product`
              WHERE `id_product` = ' . $idProduct
@@ -276,25 +295,25 @@ class Phyto_Climate_Zone extends Module
         $outdoorNotes = '';
 
         if ($data) {
-            $suitableZones = json_decode($data['suitable_zones'], true) ?: [];
+            $suitableZones  = json_decode($data['suitable_zones'], true) ?: [];
             $cannotTolerate = json_decode($data['cannot_tolerate'], true) ?: [];
-            $minTemp = $data['min_temp'];
-            $maxTemp = $data['max_temp'];
-            $outdoorNotes = $data['outdoor_notes'];
+            $minTemp        = $data['min_temp'];
+            $maxTemp        = $data['max_temp'];
+            $outdoorNotes   = $data['outdoor_notes'];
         }
 
         $ajaxUrl = $this->context->link->getAdminLink('AdminPhytoClimateZone');
 
         $this->context->smarty->assign([
-            'phyto_climate_zones'      => self::$zones,
-            'phyto_intolerances'       => self::$intolerances,
-            'phyto_selected_zones'     => $suitableZones,
-            'phyto_selected_intol'     => $cannotTolerate,
-            'phyto_min_temp'           => $minTemp,
-            'phyto_max_temp'           => $maxTemp,
-            'phyto_outdoor_notes'      => $outdoorNotes,
-            'phyto_id_product'         => $idProduct,
-            'phyto_climate_ajax_url'   => $ajaxUrl,
+            'phyto_climate_zones'    => self::getZones(),
+            'phyto_intolerances'     => self::$intolerances,
+            'phyto_selected_zones'   => $suitableZones,
+            'phyto_selected_intol'   => $cannotTolerate,
+            'phyto_min_temp'         => $minTemp,
+            'phyto_max_temp'         => $maxTemp,
+            'phyto_outdoor_notes'    => $outdoorNotes,
+            'phyto_id_product'       => $idProduct,
+            'phyto_climate_ajax_url' => $ajaxUrl,
         ]);
 
         return $this->display(__FILE__, 'views/templates/hook/admin_product_tab.tpl');
@@ -304,16 +323,9 @@ class Phyto_Climate_Zone extends Module
     // Front-office hooks
     // -------------------------------------------------------------------------
 
-    /**
-     * Hook: actionFrontControllerSetMedia
-     * Enqueue front-office CSS and JS on product pages.
-     *
-     * @param array $params
-     */
     public function hookActionFrontControllerSetMedia($params)
     {
-        $controller = Tools::getValue('controller');
-        if ($controller === 'product') {
+        if (Tools::getValue('controller') === 'product') {
             $this->context->controller->registerStylesheet(
                 'module-phyto-climate-zone-front',
                 'modules/' . $this->name . '/views/css/front.css',
@@ -327,20 +339,12 @@ class Phyto_Climate_Zone extends Module
         }
     }
 
-    /**
-     * Hook: displayProductExtraContent
-     * Shows the Climate Suitability widget on the product page.
-     *
-     * @param array $params
-     * @return array Array of PrestaShop\PrestaShop\Core\Product\ProductExtraContent
-     */
     public function hookDisplayProductExtraContent($params)
     {
         $idProduct = (int) $params['product']->getId();
 
-        // Check if product has climate data
         $data = Db::getInstance()->getRow(
-            'SELECT * FROM `' . _DB_PREFIX_ . 'phyto_climate_product`
+            'SELECT id_product FROM `' . _DB_PREFIX_ . 'phyto_climate_product`
              WHERE `id_product` = ' . $idProduct
         );
 
@@ -348,15 +352,10 @@ class Phyto_Climate_Zone extends Module
             return [];
         }
 
-        $checkUrl = $this->context->link->getModuleLink(
-            $this->name,
-            'check',
-            [],
-            true
-        );
+        $checkUrl = $this->context->link->getModuleLink($this->name, 'check', [], true);
 
         $this->context->smarty->assign([
-            'phyto_climate_check_url' => $checkUrl,
+            'phyto_climate_check_url'  => $checkUrl,
             'phyto_climate_id_product' => $idProduct,
         ]);
 
