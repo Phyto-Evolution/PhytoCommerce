@@ -1,10 +1,10 @@
 <?php
 /**
- * Phyto Climate Zone — Check Front Controller
+ * Phyto Climate Zone — Check Front Controller (v2)
  *
- * Accepts a POST request with id_product and pincode, looks up the pincode
- * prefix in the PHYTO_CLIMATE_MAP configuration, compares against the
- * product's suitable_zones, and returns a JSON result.
+ * POST: id_product + pincode (6 digits)
+ * Returns JSON with zone code, full zone detail (monthly temp/humidity,
+ * frost risk, monsoon months), and suitability verdict.
  *
  * @author    PhytoCommerce
  * @copyright PhytoCommerce
@@ -17,24 +17,14 @@ if (!defined('_PS_VERSION_')) {
 
 class Phyto_Climate_ZoneCheckModuleFrontController extends ModuleFrontController
 {
-    /** @var bool No layout rendering needed — JSON only. */
+    /** @var bool JSON-only — no layout */
     public $ajax = true;
 
-    /**
-     * Handle AJAX POST. All logic runs here so the response goes out
-     * before PrestaShop tries to render any page template.
-     */
     public function postProcess()
     {
-        // Ensure we only answer POST requests
-        if (!$_SERVER['REQUEST_METHOD'] === 'POST') {
-            $this->jsonError('Method not allowed.');
-        }
-
         $idProduct = (int) Tools::getValue('id_product');
         $pincode   = trim((string) Tools::getValue('pincode'));
 
-        // ── Validate inputs ───────────────────────────────────────────────────
         if (!$idProduct) {
             $this->jsonError('Invalid product.');
         }
@@ -43,77 +33,114 @@ class Phyto_Climate_ZoneCheckModuleFrontController extends ModuleFrontController
             $this->jsonError('Please enter a valid 6-digit pincode.');
         }
 
-        // ── Load climate map (JSON config) ────────────────────────────────────
-        $mapJson = Configuration::get('PHYTO_CLIMATE_MAP');
-        $climateMap = $mapJson ? json_decode($mapJson, true) : [];
+        // ── Load PIN-prefix map ──────────────────────────────────────────────
+        $mapJson    = Configuration::get('PHYTO_CLIMATE_MAP');
+        $climateMap = ($mapJson) ? json_decode($mapJson, true) : [];
         if (!is_array($climateMap)) {
             $climateMap = [];
         }
 
-        // ── Determine zone from first 3 digits of pincode ─────────────────────
         $prefix   = substr($pincode, 0, 3);
-        $zoneSlug = isset($climateMap[$prefix]) ? $climateMap[$prefix] : null;
+        $zoneCode = isset($climateMap[$prefix]) ? $climateMap[$prefix] : null;
 
-        if ($zoneSlug === null) {
+        if ($zoneCode === null) {
             $this->jsonResult([
-                'zone'       => null,
-                'zone_label' => null,
-                'suitable'   => false,
-                'message'    => 'We do not have climate data for your pincode area yet.',
+                'zone'      => null,
+                'zone_code' => null,
+                'zone_data' => null,
+                'suitable'  => false,
+                'message'   => 'We do not have climate data for your pincode area yet.',
             ]);
         }
 
-        // ── Look up zone label ────────────────────────────────────────────────
-        $allZones  = Phyto_Climate_Zone::$zones;
-        $zoneLabel = isset($allZones[$zoneSlug]) ? $allZones[$zoneSlug] : $zoneSlug;
+        // ── Load full zone data from JSON ────────────────────────────────────
+        $allZoneData = Phyto_Climate_Zone::loadZoneData();
+        $zoneDetail  = isset($allZoneData[$zoneCode]) ? $allZoneData[$zoneCode] : null;
+        $zoneLabel   = ($zoneDetail) ? $zoneDetail['label'] : $zoneCode;
 
-        // ── Fetch product climate record ──────────────────────────────────────
-        $climateRecord = Db::getInstance()->getRow(
-            'SELECT `suitable_zones` FROM `' . _DB_PREFIX_ . 'phyto_climate_product`
+        // ── Fetch product climate record ─────────────────────────────────────
+        $record = Db::getInstance()->getRow(
+            'SELECT `suitable_zones`, `cannot_tolerate`, `min_temp`, `max_temp`, `outdoor_notes`
+             FROM `' . _DB_PREFIX_ . 'phyto_climate_product`
              WHERE `id_product` = ' . $idProduct
         );
 
-        if (!$climateRecord) {
-            // No climate data configured for this product
+        // Build the climate summary to always send back
+        $climateSummary = null;
+        if ($zoneDetail) {
+            $climateSummary = [
+                'code'           => $zoneCode,
+                'label'          => $zoneDetail['label'],
+                'description'    => $zoneDetail['description'],
+                'monthly_temp'   => $zoneDetail['monthly_temp'],
+                'monthly_humidity' => $zoneDetail['monthly_humidity'],
+                'annual_min_temp' => $zoneDetail['annual_min_temp'],
+                'annual_max_temp' => $zoneDetail['annual_max_temp'],
+                'frost_risk'     => $zoneDetail['frost_risk'],
+                'monsoon_months' => $zoneDetail['monsoon_months'],
+                'example_cities' => $zoneDetail['example_cities'],
+                'months'         => Phyto_Climate_Zone::getMonthLabels(),
+            ];
+        }
+
+        if (!$record) {
+            // No restrictions configured for this product
             $this->jsonResult([
-                'zone'       => $zoneSlug,
-                'zone_label' => $zoneLabel,
-                'suitable'   => true,
-                'message'    => 'Your climate zone is ' . htmlspecialchars($zoneLabel, ENT_QUOTES, 'UTF-8') . '. No specific restrictions are noted for this plant.',
+                'zone'      => $zoneCode,
+                'zone_code' => $zoneCode,
+                'zone_data' => $climateSummary,
+                'suitable'  => true,
+                'message'   => 'Your area falls in the ' . htmlspecialchars($zoneLabel, ENT_QUOTES, 'UTF-8') . ' zone. No specific climate restrictions are noted for this plant.',
             ]);
         }
 
-        $suitableZones = json_decode($climateRecord['suitable_zones'], true);
-        if (!is_array($suitableZones)) {
-            $suitableZones = [];
+        $suitableZones  = json_decode($record['suitable_zones'], true);
+        $cannotTolerate = json_decode($record['cannot_tolerate'], true);
+        if (!is_array($suitableZones))  { $suitableZones  = []; }
+        if (!is_array($cannotTolerate)) { $cannotTolerate = []; }
+
+        // ── Intolerance warnings ─────────────────────────────────────────────
+        $warnings = [];
+        if ($zoneDetail) {
+            if ($zoneDetail['frost_risk'] && in_array('hard_frost', $cannotTolerate)) {
+                $warnings[] = 'This plant cannot tolerate frost, but your zone has frost risk.';
+            }
+            // High humidity zone (avg > 80%) + direct rain intolerance
+            $avgHumidity = array_sum($zoneDetail['monthly_humidity']) / 12;
+            if ($avgHumidity > 80 && in_array('direct_rain', $cannotTolerate)) {
+                $warnings[] = 'Your zone has high rainfall. This plant needs shelter from direct rain.';
+            }
+            // Low humidity zone (avg < 50%) + low humidity intolerance
+            if ($avgHumidity < 50 && in_array('low_humidity', $cannotTolerate)) {
+                $warnings[] = 'Your zone tends to be dry. Supplemental humidity may be needed.';
+            }
         }
 
-        // ── Determine suitability ─────────────────────────────────────────────
-        // If suitable_zones is empty, plant is assumed to grow anywhere.
+        // ── Suitability verdict ──────────────────────────────────────────────
         if (empty($suitableZones)) {
             $suitable = true;
-            $message  = 'Your climate zone is ' . htmlspecialchars($zoneLabel, ENT_QUOTES, 'UTF-8') . '. This plant can be grown in most climates.';
-        } elseif (in_array($zoneSlug, $suitableZones) || in_array('any_indoor', $suitableZones)) {
+            $message  = 'Your area is in the ' . htmlspecialchars($zoneLabel, ENT_QUOTES, 'UTF-8') . ' zone. This plant can be grown in most climates.';
+        } elseif (in_array($zoneCode, $suitableZones) || in_array('any_indoor', $suitableZones)) {
             $suitable = true;
-            $message  = 'Great news! This plant is suitable for your climate zone (' . htmlspecialchars($zoneLabel, ENT_QUOTES, 'UTF-8') . ').';
+            $message  = 'Great news! This plant is well-suited to the ' . htmlspecialchars($zoneLabel, ENT_QUOTES, 'UTF-8') . ' zone.';
         } else {
             $suitable = false;
-            $message  = 'This plant may not thrive in your climate zone (' . htmlspecialchars($zoneLabel, ENT_QUOTES, 'UTF-8') . '). Consider growing it indoors with controlled conditions.';
+            $message  = 'This plant may not thrive outdoors in the ' . htmlspecialchars($zoneLabel, ENT_QUOTES, 'UTF-8') . ' zone. Consider indoor or controlled growing.';
         }
 
         $this->jsonResult([
-            'zone'       => $zoneSlug,
-            'zone_label' => $zoneLabel,
-            'suitable'   => $suitable,
-            'message'    => $message,
+            'zone'           => $zoneCode,
+            'zone_code'      => $zoneCode,
+            'zone_data'      => $climateSummary,
+            'suitable'       => $suitable,
+            'message'        => $message,
+            'warnings'       => $warnings,
+            'outdoor_notes'  => $record['outdoor_notes'] ? htmlspecialchars($record['outdoor_notes'], ENT_QUOTES, 'UTF-8') : null,
+            'plant_min_temp' => $record['min_temp'],
+            'plant_max_temp' => $record['max_temp'],
         ]);
     }
 
-    /**
-     * Emit a JSON result payload and exit.
-     *
-     * @param array $data
-     */
     private function jsonResult(array $data)
     {
         ob_start();
@@ -123,11 +150,6 @@ class Phyto_Climate_ZoneCheckModuleFrontController extends ModuleFrontController
         exit;
     }
 
-    /**
-     * Emit a JSON error payload and exit.
-     *
-     * @param string $message
-     */
     private function jsonError($message)
     {
         ob_start();
@@ -137,11 +159,8 @@ class Phyto_Climate_ZoneCheckModuleFrontController extends ModuleFrontController
         exit;
     }
 
-    /**
-     * Nothing to render — all output is produced in postProcess().
-     */
     public function initContent()
     {
-        // Intentionally empty.
+        // Intentionally empty — all output from postProcess().
     }
 }
