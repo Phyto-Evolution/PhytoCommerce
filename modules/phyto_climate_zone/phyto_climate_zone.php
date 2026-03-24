@@ -219,6 +219,7 @@ class Phyto_Climate_Zone extends Module
 
         $helper->fields_value = [
             'PHYTO_CLIMATE_MAP' => Configuration::get('PHYTO_CLIMATE_MAP'),
+            'zone_reference'    => '',
         ];
 
         $fields = [
