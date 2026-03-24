@@ -1,0 +1,2 @@
+-- phytocommercefooter: no custom tables required
+-- All configuration stored via PrestaShop Configuration::get/set
