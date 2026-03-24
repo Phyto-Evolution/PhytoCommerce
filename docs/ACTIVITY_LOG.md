@@ -5,7 +5,36 @@
 
 ---
 
+## Permanent Architectural Decisions
+
+| Decision | Date | Rule |
+|---|---|---|
+| Payment gateway | 2026-03-24 | **PayU only — everywhere, always.** No Razorpay, no Stripe, no other gateway. All payment code uses PayU's SHA512 hash scheme. Never introduce an alternative gateway without explicit instruction. |
+
+---
+
 ## Session Log
+
+### 2026-03-24 — Session 5 (HGpZM — module building branch)
+
+**Branch split:** `claude/phytocommerce-fullstack-dev-HGpZM` created from current HEAD for full-stack development. This branch (`claude/phytocommerce-module-dev-HGpZM`) reserved for PrestaShop module building only.
+
+#### Phyto E-Commerce SaaS Platform — `6ea9362`
+- Replaced Express API with **Spin (WebAssembly)** for all public HTTP
+  - `webhook` component: PayU SHA512 via Web Crypto API → SQLite write → sidecar trigger
+  - `status` component: direct SQLite reads, no round-trip
+  - `provision` component: API-secret-gated, delegates Docker ops
+  - `health` component: lightweight liveness check
+- Added **Docker sidecar** (`docker-sidecar/`, Node.js, localhost:3001 only)
+  - Only process with Docker socket access (WASM cannot)
+  - Async provisioner: compose up → healthcheck poll → email → SQLite update
+  - Background jobs: pending poll (1min), grace expiry (hourly), deletion (6hr)
+- Shared SQLite via WAL mode; path configured in `spin/runtime-config.toml`
+
+#### Architectural log entry — `(this commit)`
+- **PayU-only** payment gateway decision recorded permanently
+
+---
 
 ### 2026-03-22 — Session 4 (HGpZM)
 
