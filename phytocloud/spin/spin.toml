@@ -1,0 +1,89 @@
+spin_manifest_version = 2
+
+[application]
+name = "phyto-ecommerce"
+version = "0.1.0"
+description = "Phyto E-Commerce SaaS provisioning platform"
+
+# ── Application Variables ─────────────────────────────────────────────────────
+# Set via runtime-config.toml for local dev, or env vars in production:
+#   SPIN_VARIABLE_PAYU_KEY=xxx spin up
+
+[application.variables]
+payu_key           = { required = true }
+payu_salt          = { required = true }
+payu_env           = { default = "test" }
+subdomain_base     = { default = "carnivorousplants.in" }
+docker_sidecar_url = { default = "http://127.0.0.1:3001" }
+api_secret         = { required = true }
+
+# ── HTTP Triggers ─────────────────────────────────────────────────────────────
+
+[[trigger.http]]
+route = "/webhook/payu"
+component = "webhook"
+
+[[trigger.http]]
+route = "/status/check/{slug}"
+component = "status"
+
+[[trigger.http]]
+route = "/status/{slug}"
+component = "status"
+
+[[trigger.http]]
+route = "/provision/..."
+component = "provision"
+
+[[trigger.http]]
+route = "/health"
+component = "health"
+
+# ── Components ────────────────────────────────────────────────────────────────
+
+[component.webhook]
+source = "webhook/target/webhook.wasm"
+sqlite_databases = ["default"]
+allowed_outbound_hosts = ["http://127.0.0.1:3001"]
+exclude_files = ["**/node_modules"]
+
+[component.webhook.build]
+command = "npm run build"
+workdir = "webhook"
+watch = ["src/**/*.ts", "package.json", "webpack.config.js"]
+
+# ─────────────────────────────────────────────────────────────────────────────
+
+[component.status]
+source = "status/target/status.wasm"
+sqlite_databases = ["default"]
+exclude_files = ["**/node_modules"]
+
+[component.status.build]
+command = "npm run build"
+workdir = "status"
+watch = ["src/**/*.ts", "package.json"]
+
+# ─────────────────────────────────────────────────────────────────────────────
+
+[component.provision]
+source = "provision/target/provision.wasm"
+sqlite_databases = ["default"]
+allowed_outbound_hosts = ["http://127.0.0.1:3001"]
+exclude_files = ["**/node_modules"]
+
+[component.provision.build]
+command = "npm run build"
+workdir = "provision"
+watch = ["src/**/*.ts", "package.json"]
+
+# ─────────────────────────────────────────────────────────────────────────────
+
+[component.health]
+source = "health/target/health.wasm"
+exclude_files = ["**/node_modules"]
+
+[component.health.build]
+command = "npm run build"
+workdir = "health"
+watch = ["src/**/*.ts", "package.json"]
