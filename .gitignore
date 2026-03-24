@@ -6,8 +6,18 @@ phytocloud/traefik/acme.json
 
 # ── Runtime data ──────────────────────────────────────────────────────────────
 phytocloud/api/data/
+phytocloud/data/
 /opt/phyto-tenants/
 /opt/phyto-backups/
+
+# ── Spin build artifacts ───────────────────────────────────────────────────────
+phytocloud/spin/*/dist.js
+phytocloud/spin/*/target/
+phytocloud/spin/runtime-config.toml
+phytocloud/spin/.spin/
+
+# ── Sidecar env ───────────────────────────────────────────────────────────────
+phytocloud/docker-sidecar/.env
 
 # ── Node.js ───────────────────────────────────────────────────────────────────
 node_modules/
