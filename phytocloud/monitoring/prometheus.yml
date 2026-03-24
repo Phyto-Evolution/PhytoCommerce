@@ -1,0 +1,30 @@
+global:
+  scrape_interval:     15s
+  evaluation_interval: 15s
+  external_labels:
+    platform: phyto-ecommerce
+
+scrape_configs:
+
+  # ── cAdvisor — per-container resource metrics ─────────────────────────────
+  - job_name: cadvisor
+    static_configs:
+      - targets: ['cadvisor:8080']
+    metric_relabel_configs:
+      # Keep only Phyto tenant containers (ps_*, mysql_*, redis_*)
+      - source_labels: [container_label_com_docker_compose_service]
+        regex: '(ps|mysql|redis)_.*'
+        action: keep
+
+  # ── Provisioning API ──────────────────────────────────────────────────────
+  - job_name: provisioning_api
+    static_configs:
+      - targets: ['host.docker.internal:3000']
+    metrics_path: /health
+
+  # ── Uptime Kuma ───────────────────────────────────────────────────────────
+  - job_name: uptime_kuma
+    honor_labels: true
+    static_configs:
+      - targets: ['uptime_kuma:3001']
+    metrics_path: /metrics

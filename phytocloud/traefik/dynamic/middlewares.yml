@@ -1,0 +1,27 @@
+http:
+  middlewares:
+    # Rate limiting for provisioning API
+    api-ratelimit:
+      rateLimit:
+        average: 5
+        burst: 10
+        period: 1m
+        sourceCriterion:
+          ipStrategy:
+            depth: 1
+
+    # Security headers for all tenant stores
+    secure-headers:
+      headers:
+        sslRedirect: true
+        forceSTSHeader: true
+        stsSeconds: 31536000
+        stsIncludeSubdomains: true
+        contentTypeNosniff: true
+        browserXssFilter: true
+        referrerPolicy: "strict-origin-when-cross-origin"
+        customFrameOptionsValue: "SAMEORIGIN"
+
+    # Compress responses
+    compress:
+      compress: {}
