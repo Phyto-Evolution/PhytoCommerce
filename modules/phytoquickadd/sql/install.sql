@@ -1,0 +1,2 @@
+-- phytoquickadd: no custom tables required
+-- Taxonomy data fetched from GitHub and cached via PrestaShop Configuration
