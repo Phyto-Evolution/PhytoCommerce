@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>phytoseobooster</name>
+    <displayName><![CDATA[Phyto SEO Booster]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[SEO automation for plant listings — JSON-LD schema markup, auto meta generation, alt text suggestions, and bulk audit.]]></description>
+    <author><![CDATA[Phyto Evolution]]></author>
+    <tab>seo</tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+    <limited_countries></limited_countries>
+</module>
