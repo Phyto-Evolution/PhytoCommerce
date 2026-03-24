@@ -31,7 +31,7 @@ Internet
 │  Tenant Containers (per customer)               │
 │  PrestaShop 8 + MySQL 8 + Redis                 │
 │  1.5 GB RAM / 2 vCPU limit                     │
-│  {slug}.carnivorousplants.in  OR  custom domain │
+│  {slug}.{your-domain}  OR  customer's own domain │
 └─────────────────────────────────────────────────┘
 ```
 
@@ -114,7 +114,7 @@ docker compose -f docker-compose.monitoring.yml up -d
 
 | Plan | Monthly | Transaction Fee | Domain |
 |---|---|---|---|
-| Subdomain | Rs 349 | +1% | `{slug}.carnivorousplants.in` |
+| Subdomain | Rs 349 | +1% | `{slug}.{your-domain}` |
 | Custom Domain | Rs 499 | +2% | Customer's own domain |
 
 ---
@@ -124,8 +124,8 @@ docker compose -f docker-compose.monitoring.yml up -d
 | Endpoint | Auth | Description |
 |---|---|---|
 | `POST /webhook/payu` | PayU hash | PayU payment webhook |
-| `GET /status/:slug` | None (public) | Store status |
-| `GET /status/check/:slug` | None (public) | Slug availability |
+| `GET /status/:slug` | None | Store status |
+| `GET /status/check/:slug` | None | Slug availability |
 | `POST /provision/domain` | `X-Api-Secret` | Set custom domain |
 | `POST /provision/suspend` | `X-Api-Secret` | Suspend store |
 | `POST /provision/resume` | `X-Api-Secret` | Resume store |
