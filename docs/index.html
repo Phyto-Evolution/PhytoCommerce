@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PhytoLabs — Your Online Plant Store, Built for Growers</title>
+  <meta name="description" content="PhytoLabs gives plant growers a fully-featured ecommerce store — tissue culture tracking, care cards, climate zones, live arrival guarantees and more. Launching soon." />
+  <meta property="og:title" content="PhytoLabs — Your Online Plant Store, Built for Growers" />
+  <meta property="og:description" content="Everything a plant shop needs. Nothing it doesn't. Launching April 2026." />
+  <meta property="og:type" content="website" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest:  '#1a3c2b',
+            sage:    '#7dab8a',
+            'sage-light': '#b8d4bf',
+            cream:   '#faf8f3',
+            amber:   '#e8a135',
+            'amber-light': '#f5c97a',
+            bark:    '#5c3d2e',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-cream text-forest font-sans antialiased">
+
+  <!-- ─── NAV ─────────────────────────────────────────────────────────────── -->
+  <nav class="sticky top-0 z-50 bg-cream/90 backdrop-blur border-b border-sage-light/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 text-forest font-semibold text-lg tracking-tight">
+        <span class="text-2xl leading-none">🌿</span>
+        <span>PhytoLabs</span>
+      </a>
+      <a href="#signup"
+         class="text-sm font-medium text-forest bg-sage-light/60 hover:bg-sage-light px-4 py-1.5 rounded-full transition-colors">
+        Get Early Access &darr;
+      </a>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ──────────────────────────────────────────────────────────────── -->
+  <section class="relative overflow-hidden bg-forest text-cream pt-20 pb-24 px-4">
+    <!-- decorative leaf blobs -->
+    <div class="leaf-blob leaf-blob--1" aria-hidden="true"></div>
+    <div class="leaf-blob leaf-blob--2" aria-hidden="true"></div>
+
+    <div class="relative max-w-3xl mx-auto text-center">
+      <span class="inline-block text-xs font-semibold tracking-widest uppercase text-amber mb-4 px-3 py-1 bg-amber/10 rounded-full border border-amber/30">
+        Launching April 5, 2026
+      </span>
+
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-light leading-tight mb-6">
+        Your Online Plant Store —<br class="hidden sm:block" />
+        <span class="font-semibold text-sage-light">Built by Growers,<br class="hidden sm:block" /> for Growers</span>
+      </h1>
+
+      <p class="text-lg sm:text-xl text-cream/75 max-w-2xl mx-auto mb-10 leading-relaxed">
+        PhytoLabs gives you a fully-featured plant ecommerce store — tissue culture tracking,
+        care cards, climate zones, live arrival guarantees and more — ready to go in 60&nbsp;seconds.
+        No hosting. No setup wizard. No IT person needed.
+      </p>
+
+      <!-- Countdown -->
+      <div class="mb-10">
+        <p class="text-sm text-cream/50 uppercase tracking-widest mb-3">Launching in</p>
+        <div id="countdown" class="flex items-center justify-center gap-3 sm:gap-5">
+          <div class="countdown-unit">
+            <span id="cd-days" class="countdown-num">00</span>
+            <span class="countdown-label">Days</span>
+          </div>
+          <span class="text-3xl text-cream/30 font-light pb-4">:</span>
+          <div class="countdown-unit">
+            <span id="cd-hours" class="countdown-num">00</span>
+            <span class="countdown-label">Hours</span>
+          </div>
+          <span class="text-3xl text-cream/30 font-light pb-4">:</span>
+          <div class="countdown-unit">
+            <span id="cd-mins" class="countdown-num">00</span>
+            <span class="countdown-label">Mins</span>
+          </div>
+          <span class="text-3xl text-cream/30 font-light pb-4">:</span>
+          <div class="countdown-unit">
+            <span id="cd-secs" class="countdown-num">00</span>
+            <span class="countdown-label">Secs</span>
+          </div>
+        </div>
+        <div id="countdown-live" class="hidden text-2xl font-semibold text-amber mt-2">🎉 We're Live!</div>
+      </div>
+
+      <a href="#signup"
+         class="inline-block bg-amber hover:bg-amber-light text-forest font-semibold px-8 py-3.5 rounded-full text-base transition-colors shadow-lg hover:shadow-xl">
+        Claim Your Early Bird Spot &rarr;
+      </a>
+      <p class="text-xs text-cream/40 mt-3">10% off your entire first year · No credit card needed now</p>
+    </div>
+  </section>
+
+  <!-- ─── FEATURE CARDS ──────────────────────────────────────────────────── -->
+  <section class="py-20 px-4 bg-cream" id="features">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl sm:text-4xl font-light mb-3">
+          Everything a plant shop needs —<br />
+          <span class="font-semibold">nothing it doesn't</span>
+        </h2>
+        <p class="text-forest/60 max-w-xl mx-auto text-base">
+          No plugins to install. No IT person needed. It's all built in and ready the moment your store goes live.
+        </p>
+      </div>
+
+      <!-- Category groups render here -->
+      <div id="features-grid" class="space-y-14">
+        <!-- Injected by main.js -->
+        <noscript>
+          <p class="text-center text-forest/50">Enable JavaScript to see all features.</p>
+        </noscript>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── HOW IT WORKS ──────────────────────────────────────────────────── -->
+  <section class="py-20 px-4 bg-forest text-cream" id="how">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-light mb-14">
+        From signup to selling —<br />
+        <span class="font-semibold text-sage-light">in under a minute</span>
+      </h2>
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h3 class="text-lg font-semibold mt-4 mb-2">Sign up &amp; choose your store name</h3>
+          <p class="text-cream/65 text-sm leading-relaxed">
+            Pick a name and your store instantly lives at
+            <code class="text-sage-light text-xs bg-white/10 px-1.5 py-0.5 rounded">yourstore.carnivorousplants.in</code>.
+            No domain purchase needed.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h3 class="text-lg font-semibold mt-4 mb-2">Your store is live in 60 seconds</h3>
+          <p class="text-cream/65 text-sm leading-relaxed">
+            We spin up a fully-configured PrestaShop store with all PhytoLabs modules pre-installed.
+            No setup wizard. No confusing admin panels to navigate.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h3 class="text-lg font-semibold mt-4 mb-2">Add your plants and start selling</h3>
+          <p class="text-cream/65 text-sm leading-relaxed">
+            Upload photos, set your price, add care notes — your store is ready for customers.
+            Everything from care cards to TC batch tracking works out of the box.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PRICING ────────────────────────────────────────────────────────── -->
+  <section class="py-20 px-4 bg-sage/10" id="pricing">
+    <div class="max-w-lg mx-auto text-center">
+      <h2 class="text-3xl font-light mb-10">Simple, honest pricing</h2>
+
+      <div class="bg-white rounded-2xl shadow-md border border-sage/30 p-8 relative">
+        <!-- Early bird ribbon -->
+        <div class="earlybird-badge">Early Bird — 10% off Year 1</div>
+
+        <p class="text-5xl font-semibold text-forest mt-6">
+          ₹499
+          <span class="text-base font-normal text-forest/50"> / month</span>
+        </p>
+
+        <ul class="mt-8 space-y-3 text-sm text-left max-w-xs mx-auto">
+          <li class="flex items-center gap-2">
+            <span class="text-sage text-lg">✓</span>
+            Unlimited products
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-sage text-lg">✓</span>
+            All 16+ plant-specific features included
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-sage text-lg">✓</span>
+            Free store address on <code class="text-xs bg-cream px-1 py-0.5 rounded">carnivorousplants.in</code>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-sage text-lg">✓</span>
+            Hosting &amp; SSL included — nothing to manage
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-amber text-lg">+</span>
+            2% per sale processed through your store
+          </li>
+        </ul>
+
+        <p class="text-xs text-forest/40 mt-6">No hidden fees. Cancel anytime.</p>
+
+        <a href="#signup"
+           class="mt-6 block bg-forest hover:bg-forest/90 text-cream font-semibold px-8 py-3 rounded-full transition-colors">
+          Reserve Your Early Bird Spot &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EARLY BIRD SIGNUP ─────────────────────────────────────────────── -->
+  <section class="py-20 px-4 bg-forest text-cream" id="signup">
+    <div class="max-w-lg mx-auto text-center">
+      <span class="inline-block text-xs font-semibold tracking-widest uppercase text-amber mb-4 px-3 py-1 bg-amber/10 rounded-full border border-amber/30">
+        Early Bird
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-light mb-4">
+        Be first. <span class="font-semibold">Pay less.</span>
+      </h2>
+      <p class="text-cream/65 mb-10 text-base leading-relaxed">
+        We launch in <span id="days-remaining" class="font-semibold text-amber">12</span> days.
+        Sign up now and lock in <strong class="text-amber">10% off your entire first year</strong> —
+        that's ~₹540 saved.
+        Your store will be at <code class="text-sage-light text-sm bg-white/10 px-1.5 py-0.5 rounded">yourname.carnivorousplants.in</code>.
+      </p>
+
+      <!-- Form -->
+      <div id="signup-wrap">
+        <form id="earlybird-form" class="space-y-4 text-left" novalidate>
+          <div>
+            <label class="block text-xs font-medium text-cream/60 mb-1" for="eb-name">Your Name</label>
+            <input id="eb-name" name="name" type="text" autocomplete="name" required
+                   placeholder="Priya Sharma"
+                   class="w-full bg-white/10 border border-white/20 text-cream placeholder-cream/30
+                          rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sage" />
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-cream/60 mb-1" for="eb-email">Email Address</label>
+            <input id="eb-email" name="email" type="email" autocomplete="email" required
+                   placeholder="you@example.com"
+                   class="w-full bg-white/10 border border-white/20 text-cream placeholder-cream/30
+                          rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sage" />
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-cream/60 mb-1" for="eb-grows">
+              What do you grow? <span class="text-cream/30">(optional)</span>
+            </label>
+            <input id="eb-grows" name="grows" type="text"
+                   placeholder="e.g. Nepenthes, Aroids, Carnivorous plants…"
+                   class="w-full bg-white/10 border border-white/20 text-cream placeholder-cream/30
+                          rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sage" />
+          </div>
+          <input type="hidden" name="source" value="phytolabs-earlybird" />
+
+          <div id="form-error" class="hidden text-red-300 text-sm text-center py-2"></div>
+
+          <button type="submit" id="eb-submit"
+                  class="w-full bg-amber hover:bg-amber-light text-forest font-semibold
+                         py-3.5 rounded-full transition-colors text-sm mt-2">
+            Reserve My Spot &rarr;
+          </button>
+          <p class="text-xs text-cream/35 text-center">
+            We'll send you a confirmation email. No spam, ever.
+          </p>
+        </form>
+      </div>
+
+      <!-- Success state (hidden by default) -->
+      <div id="signup-success" class="hidden py-8">
+        <div class="text-5xl mb-4">🎉</div>
+        <h3 class="text-xl font-semibold mb-2">You're on the list!</h3>
+        <p class="text-cream/65 text-sm" id="success-msg">
+          Check your inbox to confirm your spot. We'll email you the moment we launch with your early bird discount code.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FAQ ───────────────────────────────────────────────────────────── -->
+  <section class="py-20 px-4 bg-cream" id="faq">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-3xl font-light text-center mb-12">Questions</h2>
+
+      <div class="space-y-4">
+
+        <details class="faq-item">
+          <summary class="faq-summary">
+            Do I need technical knowledge to run my store?
+            <span class="faq-arrow">&#8250;</span>
+          </summary>
+          <div class="faq-body">
+            None at all. Your store comes fully configured — hosting, SSL certificate,
+            payment setup, and all 16+ plant-specific features are ready on day one.
+            If you can use Instagram, you can run a PhytoLabs store.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-summary">
+            What happens if I miss a payment?
+            <span class="faq-arrow">&#8250;</span>
+          </summary>
+          <div class="faq-body">
+            You get a 7-day grace period. Your store is paused — not deleted.
+            If payment is resolved within 7 days, everything resumes exactly as it was.
+            We hold your data for 30 days after cancellation before permanently removing it,
+            and we'll email you a data export link first.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-summary">
+            Do I need my own domain name?
+            <span class="faq-arrow">&#8250;</span>
+          </summary>
+          <div class="faq-body">
+            No. The moment you sign up, your store gets a free address like
+            <code class="text-xs bg-cream border border-sage/30 px-1.5 py-0.5 rounded">yourstore.carnivorousplants.in</code>
+            — no domain purchase needed, no DNS configuration, nothing.
+            If you already own a domain and want to use it (e.g.
+            <code class="text-xs bg-cream border border-sage/30 px-1.5 py-0.5 rounded">shop.yourdomain.com</code>),
+            custom domain mapping is on our roadmap and coming soon after launch.
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─────────────────────────────────────────────────────────── -->
+  <footer class="bg-forest text-cream/50 text-sm py-10 px-4">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="text-lg">🌿</span>
+        <span>&copy; 2026 PhytoLabs &mdash; Built with care by plant people</span>
+      </div>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-cream transition-colors">Privacy</a>
+        <a href="#" class="hover:text-cream transition-colors">Terms</a>
+        <a href="mailto:hello@phytolabs.in" class="hover:text-cream transition-colors">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/countdown.js"></script>
+  <script src="assets/js/signup.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
