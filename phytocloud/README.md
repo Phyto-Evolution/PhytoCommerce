@@ -4,37 +4,108 @@ Part of [PhytoLabs](https://phytolabs.in). Sign up at **yourshop.phytolabs.in**.
 
 ---
 
+## Architecture
+
+```
+Internet
+  │  HTTPS (Traefik → Let's Encrypt)
+  ▼
+┌─────────────────────────────────────────────────┐
+│           Spin (WebAssembly)                    │
+│  /webhook/payu  → webhook component (TS)        │ ← validates PayU SHA512
+│  /status/:slug  → status component (TS)         │ ← reads SQLite directly
+│  /provision/... → provision component (TS)      │ ← auth-gated admin
+│  /health        → health component (TS)         │
+└─────────────────────┬───────────────────────────┘
+                      │ outbound HTTP (localhost only)
+                      ▼
+┌─────────────────────────────────────────────────┐
+│    Docker Sidecar (Node.js · 127.0.0.1:3001)   │
+│  POST /payment-event  → provision / suspend     │
+│  POST /suspend|resume|cancel|destroy            │ ← Docker socket access
+│  Background jobs: pending poll, grace expiry    │ ← Mailgun emails
+└─────────────────────┬───────────────────────────┘
+                      │ docker compose
+                      ▼
+┌─────────────────────────────────────────────────┐
+│  Tenant Containers (per customer)               │
+│  PrestaShop 8 + MySQL 8 + Redis                 │
+│  1.5 GB RAM / 2 vCPU limit                     │
+│  {slug}.carnivorousplants.in  OR  custom domain │
+└─────────────────────────────────────────────────┘
+```
+
+**Why this split?**
+- Spin runs the entire public HTTP surface — ~10ms cold start, WASM sandboxed
+- Sidecar is the *only* Node.js process; it never touches the internet directly
+- PayU hash verification happens in Spin before the sidecar sees any request
+
+**Shared SQLite**: both Spin and the sidecar open the same file at `DB_PATH` (configured in `spin/runtime-config.toml` and `docker-sidecar/.env`). SQLite WAL mode handles concurrent access.
+
+---
+
 ## Quick Start (Server Setup)
 
-### 1. Start Traefik (reverse proxy + SSL)
+### Prerequisites
+```bash
+# Install Spin
+curl -fsSL https://developer.fermyon.com/downloads/install.sh | bash
+
+# Install js2wasm plugin (for TypeScript components)
+spin plugin install js2wasm --yes
+
+# Install Spin JS/TS templates
+spin templates install --git https://github.com/fermyon/spin-js-sdk
+```
+
+### 1. Start Traefik
 ```bash
 cd phytocloud/traefik
 cp /dev/null acme.json && chmod 600 acme.json
 ACME_EMAIL=admin@phytolabs.in docker compose -f docker-compose.traefik.yml up -d
 ```
 
-### 2. Start Provisioning API
+### 2. Build Spin Components
 ```bash
-cd phytocloud/api
+cd phytocloud/spin
+
+# Install deps for each component
+for dir in webhook status provision health; do
+  (cd "$dir" && npm install)
+done
+
+# Build all WASM components
+spin build
+```
+
+### 3. Configure and Run Spin
+```bash
+cd phytocloud/spin
+cp runtime-config.toml.example runtime-config.toml
+# Edit runtime-config.toml with real PayU keys + SQLite path
+
+spin up --runtime-config-file runtime-config.toml
+```
+
+### 4. Start Docker Sidecar
+```bash
+cd phytocloud/docker-sidecar
 cp .env.example .env
-# Edit .env with real PayU keys, Mailgun key, etc.
+# Edit .env — DB_PATH must match [sqlite_database.default].path in runtime-config.toml
 npm install
 npm start
 ```
 
-### 3. Start Monitoring Stack
+### 5. Start Monitoring
 ```bash
 cd phytocloud/monitoring
 docker compose -f docker-compose.monitoring.yml up -d
 ```
 
-### 4. Set up Cron Jobs
+### 6. Set Up Cron Jobs
 ```cron
-# Healthcheck every 5 minutes
-*/5 * * * * /opt/phyto-ecommerce-api/scripts/healthcheck.sh >> /var/log/phyto-healthcheck.log 2>&1
-
-# Daily backup at 2am
-0 2 * * * /opt/phyto-ecommerce-api/scripts/backup.sh >> /var/log/phyto-backup.log 2>&1
+*/5 * * * * /opt/phyto-ecommerce/phytocloud/api/scripts/healthcheck.sh >> /var/log/phyto-healthcheck.log 2>&1
+0 2 * * * /opt/phyto-ecommerce/phytocloud/api/scripts/backup.sh >> /var/log/phyto-backup.log 2>&1
 ```
 
 ---
@@ -48,31 +119,34 @@ docker compose -f docker-compose.monitoring.yml up -d
 
 ---
 
-## Key Endpoints
+## Spin API Endpoints
 
-| Endpoint | Description |
-|---|---|
-| `POST /webhook/payu` | PayU payment webhook |
-| `GET /status/:slug` | Public store status |
-| `GET /status/check/:slug` | Check slug availability |
-| `POST /provision/domain` | Set custom domain (post-signup) |
-| `POST /provision/cancel` | Cancel subscription (internal) |
-| `POST /provision/destroy` | Permanent deletion (internal) |
-
----
-
-## Environment Variables
-
-See `phytocloud/api/.env.example` for all required variables.
-
-Critical ones:
-- `PAYU_KEY`, `PAYU_SALT`, `PAYU_ENV` — PayU credentials
-- `MAILGUN_API_KEY`, `MAILGUN_DOMAIN` — Email for subdomain tenants
-- `API_SECRET` — Protects internal endpoints
-- `SUBDOMAIN_BASE` — Default: `carnivorousplants.in`
+| Endpoint | Auth | Description |
+|---|---|---|
+| `POST /webhook/payu` | PayU hash | PayU payment webhook |
+| `GET /status/:slug` | None (public) | Store status |
+| `GET /status/check/:slug` | None (public) | Slug availability |
+| `POST /provision/domain` | `X-Api-Secret` | Set custom domain |
+| `POST /provision/suspend` | `X-Api-Secret` | Suspend store |
+| `POST /provision/resume` | `X-Api-Secret` | Resume store |
+| `POST /provision/cancel` | `X-Api-Secret` | Cancel + schedule deletion |
+| `POST /provision/destroy` | `X-Api-Secret` | Permanent destruction |
+| `GET /provision/tenants` | `X-Api-Secret` | List active tenants |
+| `GET /health` | None | Platform health |
 
 ---
 
-## Architecture
+## Key Config
 
-See [docs/PHYTOCLOUD_SAAS_SPEC.md](../docs/PHYTOCLOUD_SAAS_SPEC.md) for the full spec.
+**`spin/runtime-config.toml`** (gitignored — copy from `.example`):
+- `[sqlite_database.default].path` — shared SQLite file path
+- `[variables]` — PayU keys, subdomain base, sidecar URL, API secret
+
+**`docker-sidecar/.env`** (gitignored — copy from `.example`):
+- `DB_PATH` — must match SQLite path above
+- `MAILGUN_API_KEY`, `MAILGUN_DOMAIN`
+- Docker compose paths
+
+---
+
+See [docs/PHYTOCLOUD_SAAS_SPEC.md](../docs/PHYTOCLOUD_SAAS_SPEC.md) for full spec.
