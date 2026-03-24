@@ -1,113 +1,141 @@
 [
   {
-    "id": "live_arrival",
-    "title": "Live Arrival Guarantee",
-    "description": "Let customers opt in to a live arrival promise at checkout. Handle claims in one place — no back-and-forth emails.",
-    "category": "Sell with Confidence",
-    "icon": "shield"
-  },
-  {
-    "id": "seasonal_availability",
-    "title": "Seasonal Shop Windows",
-    "description": "Open and close products by season automatically. Customers get notified the moment their plant is back in stock.",
-    "category": "Sell with Confidence",
-    "icon": "calendar"
-  },
-  {
-    "id": "wholesale_portal",
-    "title": "Wholesale Made Easy",
-    "description": "Run a B2B tier with minimum order quantities and tiered pricing — no spreadsheets, no separate system.",
-    "category": "Sell with Confidence",
-    "icon": "briefcase"
-  },
-  {
-    "id": "subscription",
-    "title": "Monthly Plant Boxes",
-    "description": "Offer recurring mystery boxes or replenishment subscriptions. Billing is handled automatically every month.",
-    "category": "Sell with Confidence",
+    "id": "phyto_acclimation_bundler",
+    "title": "Phyto Acclimation Bundler",
+    "description": "",
+    "category": "Show Your Plants Professionally",
     "icon": "box"
   },
   {
-    "id": "grex_registry",
-    "title": "Scientific Names & Grex",
-    "description": "Tag every listing with proper genus, species, grex and ICPS conservation status. Collectors and enthusiasts notice.",
-    "category": "Show Your Plants Professionally",
-    "icon": "dna"
-  },
-  {
-    "id": "growth_stage",
-    "title": "Growth Stage Labels",
-    "description": "Show buyers exactly what stage a plant is at — flask, deflask, established, or mature. No guessing.",
-    "category": "Show Your Plants Professionally",
-    "icon": "sprout"
-  },
-  {
-    "id": "source_badge",
-    "title": "Origin & Source Badges",
-    "description": "Proudly display where your plants come from — TC lab, in-house breeding, wild collected with permits.",
-    "category": "Show Your Plants Professionally",
-    "icon": "badge"
-  },
-  {
-    "id": "care_card",
-    "title": "Printable Care Cards",
-    "description": "Every order includes a professional care sheet for the plant. Buyers save it, share it, and come back.",
+    "id": "phyto_care_card",
+    "title": "Phyto Care Card",
+    "description": "Auto-generate printable PDF care sheets per product, attached to order confirmation emails.",
     "category": "Show Your Plants Professionally",
     "icon": "document"
   },
   {
-    "id": "growers_journal",
-    "title": "Grower's Journal",
-    "description": "Buyers post updates and photos of their plants growing over time. Real social proof, built right into your store.",
-    "category": "Build Trust & Community",
-    "icon": "camera"
-  },
-  {
-    "id": "collection_widget",
-    "title": "My Plant Collection",
-    "description": "Customers build a personal collection from everything they've bought from you — encouraging loyalty and repeat orders.",
-    "category": "Build Trust & Community",
-    "icon": "collection"
-  },
-  {
-    "id": "tc_batch_tracker",
-    "title": "TC Batch Traceability",
-    "description": "Show full propagation provenance for tissue-culture plants — lab batch, lineage, QR labels. Builds serious collector trust.",
-    "category": "Build Trust & Community",
-    "icon": "qr"
-  },
-  {
-    "id": "climate_zone",
-    "title": "Climate Zone Checker",
-    "description": "Shoppers enter their PIN code and your site instantly tells them if a plant suits their region's climate.",
+    "id": "phyto_climate_zone",
+    "title": "Phyto Climate Zone",
+    "description": "Maps products to 15 PCC-IN climate zones via offline pincode lookup. Covers 797 India PIN prefixes.",
     "category": "Build Trust & Community",
     "icon": "map"
   },
   {
-    "id": "erp_connector",
-    "title": "ERP Sync",
-    "description": "Sync orders, stock levels, and customers with ERPNext automatically. No double-entry, no reconciliation headaches.",
-    "category": "Run the Business",
-    "icon": "sync"
+    "id": "phyto_collection_widget",
+    "title": "Phyto Plant Collection Widget",
+    "description": "Allow customers to track and manage their plant collection from purchased orders.",
+    "category": "Build Trust & Community",
+    "icon": "collection"
   },
   {
-    "id": "dispatch_logger",
-    "title": "Dispatch Logger",
-    "description": "Record packing conditions, temperature, and carrier per shipment. Solid evidence if there's ever a delivery dispute.",
+    "id": "phyto_dispatch_logger",
+    "title": "Phyto Dispatch Logger",
+    "description": "",
     "category": "Run the Business",
     "icon": "truck"
   },
   {
-    "id": "phytosanitary",
-    "title": "Phytosanitary Docs",
-    "description": "Attach inspection certificates and import permits directly to products. Stay compliant without the paperwork pile.",
+    "id": "phyto_grex_registry",
+    "title": "Phyto Grex Registry",
+    "description": "Attach structured scientific and horticultural taxonomy metadata to any product.",
+    "category": "Show Your Plants Professionally",
+    "icon": "dna"
+  },
+  {
+    "id": "phyto_growers_journal",
+    "title": "Grower's Journal",
+    "description": "",
+    "category": "Build Trust & Community",
+    "icon": "camera"
+  },
+  {
+    "id": "phyto_growth_stage",
+    "title": "Phyto Growth Stages",
+    "description": "Replace or augment combination size labels with named growth stages, each carrying care-difficulty and time-to-maturity metadata.",
+    "category": "Show Your Plants Professionally",
+    "icon": "sprout"
+  },
+  {
+    "id": "phyto_live_arrival",
+    "title": "Phyto Live Arrival Guarantee",
+    "description": "Live Arrival Guarantee opt-in at checkout with configurable shipping windows, fee management, and claim forms.",
+    "category": "Sell with Confidence",
+    "icon": "shield"
+  },
+  {
+    "id": "phyto_phytosanitary",
+    "title": "Phyto Phytosanitary",
+    "description": "",
     "category": "Run the Business",
     "icon": "certificate"
   },
   {
-    "id": "seo_quickadd",
-    "title": "AI SEO + Quick Add",
-    "description": "AI writes your product meta descriptions and alt text. Add new plants in seconds with taxonomy intelligence built in.",
+    "id": "phyto_seasonal_availability",
+    "title": "Phyto Seasonal Availability",
+    "description": "Mark products with dormancy/shipping windows, block purchase during incompatible months, and show a notify-me form when out of season.",
+    "category": "Sell with Confidence",
+    "icon": "calendar"
+  },
+  {
+    "id": "phyto_source_badge",
+    "title": "Phyto Source Badge",
+    "description": "Display sourcing origin badges on product cards and pages.",
+    "category": "Show Your Plants Professionally",
+    "icon": "badge"
+  },
+  {
+    "id": "phyto_subscription",
+    "title": "Phyto Subscription",
+    "description": "Recurring mystery box and replenishment subscriptions via Cashfree.",
+    "category": "Sell with Confidence",
+    "icon": "box"
+  },
+  {
+    "id": "phyto_tc_batch_tracker",
+    "title": "TC Batch Tracker",
+    "description": "",
+    "category": "Build Trust & Community",
+    "icon": "qr"
+  },
+  {
+    "id": "phyto_tc_cost_calculator",
+    "title": "Phyto TC Cost Calculator",
+    "description": "",
+    "category": "Run the Business",
+    "icon": "briefcase"
+  },
+  {
+    "id": "phyto_wholesale_portal",
+    "title": "Phyto Wholesale Portal",
+    "description": "B2B wholesale tier with MOQ, tiered pricing and invoice payment.",
+    "category": "Sell with Confidence",
+    "icon": "briefcase"
+  },
+  {
+    "id": "phytocommerce_pack",
+    "title": "PhytoCommerce Pack",
+    "description": "1-click installer for the complete PhytoCommerce module suite — 20 modules for specialty plant e-commerce.",
+    "category": "Run the Business",
+    "icon": "badge"
+  },
+  {
+    "id": "phytoerpconnector",
+    "title": "Phyto ERP Connector",
+    "description": "Connects PrestaShop stores to ERPNext v15 — syncs orders, customers, products and invoices",
+    "category": "Run the Business",
+    "icon": "sync"
+  },
+  {
+    "id": "phytoquickadd",
+    "title": "Phyto Quick Add",
+    "description": "Quickly add products and categories with taxonomy intelligence",
+    "category": "Run the Business",
+    "icon": "ai"
+  },
+  {
+    "id": "phytoseobooster",
+    "title": "Phyto SEO Booster",
+    "description": "AI-powered SEO automation for plant listings — auto meta, schema markup, alt text, and bulk audit",
     "category": "Run the Business",
     "icon": "ai"
   }
