@@ -179,6 +179,7 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
         $plant_name = Tools::getValue('plant_name');
         $ai_key     = Configuration::get('PHYTO_AI_KEY');
 
+        ob_clean();
         if (empty($ai_key))     { echo json_encode(['error' => 'Claude AI key not set. Go to Settings tab.']); exit; }
         if (empty($plant_name)) { echo json_encode(['error' => 'Plant name is required.']); exit; }
 
@@ -227,31 +228,57 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
     private function ajaxSearchCategories() {
         $term    = Tools::getValue('term');
         $id_lang = $this->context->language->id;
+        ob_clean();
         echo json_encode(PhytoTaxonomy::getSuggestions($term, $id_lang) ?: []);
         exit;
     }
 
     private function ajaxFetchPacks() {
         $index = PhytoTaxonomy::fetchIndex();
-        if (!$index) {
+        if (!$index || empty($index['categories'])) {
+            ob_clean();
             echo json_encode(['error' => 'Could not fetch taxonomy index from GitHub.']);
             exit;
         }
-        $imported = PhytoTaxonomy::getImportedPacks();
-        foreach ($index['packs'] as &$pack) {
-            $pack['imported'] = isset($imported[$pack['file']]);
-            if ($pack['imported']) {
-                $pack['imported_at'] = $imported[$pack['file']]['imported_at'];
-                $pack['count']       = $imported[$pack['file']]['count'];
+
+        $imported  = PhytoTaxonomy::getImportedPacks();
+        $all_packs = [];
+
+        // Root index.json has 'categories', not 'packs'.
+        // Each category has its own index with a 'packs' array.
+        foreach ($index['categories'] as $category) {
+            $cat_index = PhytoTaxonomy::fetchCategoryIndex($category['id']);
+            if (!$cat_index || empty($cat_index['packs'])) continue;
+
+            foreach ($cat_index['packs'] as $pack) {
+                // Prefix bare filename with category path so importPack()
+                // builds the correct GitHub URL:
+                // "nepenthaceae.json" → "carnivorous/nepenthaceae.json"
+                $pack['file']        = $category['id'] . '/' . $pack['file'];
+                $pack['category_id'] = $category['id'];
+                $pack['category']    = $category['name'];
+                $pack['imported']    = isset($imported[$pack['file']]);
+                if ($pack['imported']) {
+                    $pack['imported_at'] = $imported[$pack['file']]['imported_at'];
+                    $pack['count']       = $imported[$pack['file']]['count'];
+                }
+                $all_packs[] = $pack;
             }
         }
-        echo json_encode($index);
+
+        ob_clean(); // Flush any PHP warnings before writing JSON
+        echo json_encode([
+            'categories' => $index['categories'],
+            'packs'      => $all_packs,
+            'summary'    => $index['summary'] ?? [],
+        ]);
         exit;
     }
 
     private function ajaxImportPack() {
         $pack_file = Tools::getValue('pack_file');
-        if (empty($pack_file)) { echo json_encode(['error' => 'No pack file specified.']); exit; }
+        if (empty($pack_file)) { ob_clean(); echo json_encode(['error' => 'No pack file specified.']); exit; }
+        ob_clean();
         echo json_encode(PhytoTaxonomy::importPack($pack_file, $this->context->language->id));
         exit;
     }
@@ -259,6 +286,7 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
     private function ajaxSyncPack() {
         $pack_file = Tools::getValue('pack_file');
         PhytoTaxonomy::clearCache($pack_file);
+        ob_clean();
         echo json_encode(PhytoTaxonomy::importPack($pack_file, $this->context->language->id));
         exit;
     }
@@ -268,28 +296,29 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
         $id_parent = (int)Tools::getValue('parent_category');
         $id_lang   = $this->context->language->id;
 
+        ob_clean();
         if (empty($name))    { echo json_encode(['error' => 'Category name is required.']); exit; }
         if ($id_parent <= 0) { echo json_encode(['error' => 'Please select a parent category.']); exit; }
 
         $result = PhytoTaxonomy::ensureCategory($name, $name, $id_parent, $id_lang);
-        if ($result) {
-            echo json_encode(['success' => true, 'id' => $result, 'name' => $name]);
-        } else {
-            echo json_encode(['error' => 'Failed to add category. It may already exist.']);
-        }
+        echo json_encode($result
+            ? ['success' => true, 'id' => $result, 'name' => $name]
+            : ['error' => 'Failed to add category. It may already exist.']
+        );
         exit;
     }
 
     private function ajaxGetCategories() {
         $id_lang = $this->context->language->id;
-        $cats = $this->getFlatCategories($id_lang);
-        echo json_encode($cats ?: []);
+        ob_clean();
+        echo json_encode($this->getFlatCategories($id_lang) ?: []);
         exit;
     }
 
     private function ajaxGetSubcategories() {
         $id_parent = (int)Tools::getValue('id_parent');
         $id_lang   = $this->context->language->id;
+        ob_clean();
         echo json_encode(Category::getChildren($id_parent, $id_lang, true) ?: []);
         exit;
     }
