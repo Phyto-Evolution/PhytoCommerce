@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>phytoquickadd</name>
+    <displayName><![CDATA[Phyto Quick Add]]></displayName>
+    <version><![CDATA[3.0.0]]></version>
+    <description><![CDATA[Quickly add products and categories to PrestaShop with carnivorous plant taxonomy intelligence.]]></description>
+    <author><![CDATA[Phyto Evolution]]></author>
+    <tab>administration</tab>
+    <is_configurable>0</is_configurable>
+    <need_instance>0</need_instance>
+    <limited_countries></limited_countries>
+</module>

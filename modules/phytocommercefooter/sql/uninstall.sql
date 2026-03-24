@@ -1,0 +1,1 @@
+-- phytocommercefooter: no custom tables to drop
