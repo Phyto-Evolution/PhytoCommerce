@@ -1,0 +1,40 @@
+# ── Secrets & credentials ─────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+phytocloud/traefik/acme.json
+
+# ── Runtime data ──────────────────────────────────────────────────────────────
+phytocloud/api/data/
+phytocloud/data/
+/opt/phyto-tenants/
+/opt/phyto-backups/
+
+# ── Spin build artifacts ───────────────────────────────────────────────────────
+phytocloud/spin/*/dist.js
+phytocloud/spin/*/target/
+phytocloud/spin/runtime-config.toml
+phytocloud/spin/.spin/
+
+# ── Sidecar env ───────────────────────────────────────────────────────────────
+phytocloud/docker-sidecar/.env
+
+# ── Node.js ───────────────────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo

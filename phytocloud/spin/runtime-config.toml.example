@@ -1,0 +1,21 @@
+# ── Spin Runtime Config — Local Dev ──────────────────────────────────────────
+# Copy to runtime-config.toml (gitignored) and edit.
+# Usage: spin up --runtime-config-file runtime-config.toml
+
+# ── SQLite — shared with Docker sidecar ──────────────────────────────────────
+# Both Spin and the Docker sidecar must point to the same file.
+# SQLite WAL mode handles concurrent access safely.
+
+[sqlite_database.default]
+type = "spin"
+path = "/opt/phyto-ecommerce/data/tenants.db"
+
+# ── Application variables ─────────────────────────────────────────────────────
+
+[variables]
+payu_key           = "gtKFFx"
+payu_salt          = "eCwWELxi"
+payu_env           = "test"
+subdomain_base     = "carnivorousplants.in"
+docker_sidecar_url = "http://127.0.0.1:3001"
+api_secret         = "change-me-to-a-long-random-string"
