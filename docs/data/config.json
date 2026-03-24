@@ -1,0 +1,6 @@
+{
+  "_note": "After deploying Listmonk, replace PLACEHOLDER_UUID with your Early Bird list UUID from the Listmonk admin UI.",
+  "listmonk_url": "https://mail.phytolabs.in",
+  "listmonk_list_uuid": "PLACEHOLDER_UUID",
+  "launch_date": "2026-04-05T00:00:00+05:30"
+}

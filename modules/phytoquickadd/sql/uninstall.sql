@@ -1,0 +1,2 @@
+-- phytoquickadd: no custom tables to drop
+-- Note: cached taxonomy Configuration keys are cleaned up in uninstall()
