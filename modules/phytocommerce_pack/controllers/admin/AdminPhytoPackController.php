@@ -26,7 +26,7 @@ class AdminPhytoPackController extends ModuleAdminController {
     }
 
     public function renderView() {
-        $statuses   = PhytocommercePack::getModuleStatus();
+        $statuses   = Phytocommerce_Pack::getModuleStatus();
         $installed  = count(array_filter($statuses, fn($s) => $s['installed']));
         $total      = count($statuses);
         $install_log = Db::getInstance()->executeS(
@@ -49,7 +49,7 @@ class AdminPhytoPackController extends ModuleAdminController {
 
     private function ajaxInstallModule() {
         $module_name = Tools::getValue('module_name');
-        if (!in_array($module_name, PhytocommercePack::getModuleList())) {
+        if (!in_array($module_name, Phytocommerce_Pack::getModuleList())) {
             echo json_encode(['error' => 'Unknown module']); exit;
         }
         $module = Module::getInstanceByName($module_name);
@@ -62,7 +62,7 @@ class AdminPhytoPackController extends ModuleAdminController {
 
     private function ajaxUninstallModule() {
         $module_name = Tools::getValue('module_name');
-        if (!in_array($module_name, PhytocommercePack::getModuleList())) {
+        if (!in_array($module_name, Phytocommerce_Pack::getModuleList())) {
             echo json_encode(['error' => 'Unknown module']); exit;
         }
         $module = Module::getInstanceByName($module_name);
@@ -75,7 +75,7 @@ class AdminPhytoPackController extends ModuleAdminController {
 
     private function ajaxInstallAll() {
         $results = [];
-        foreach (PhytocommercePack::getModuleList() as $module_name) {
+        foreach (Phytocommerce_Pack::getModuleList() as $module_name) {
             $module = Module::getInstanceByName($module_name);
             if (!$module) { $results[$module_name] = 'load_failed'; continue; }
             if ($module->isInstalled()) { $results[$module_name] = 'skipped'; continue; }
