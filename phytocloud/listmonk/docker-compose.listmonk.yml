@@ -1,0 +1,89 @@
+# PhytoLabs — Listmonk (open-source mailing list manager)
+# Serves at: https://mail.phytolabs.in
+# Used for: early bird signups, launch announcements, subscriber management
+#
+# Prerequisites:
+#   1. Traefik must be running (see phytocloud/traefik/docker-compose.traefik.yml)
+#   2. Create a .env file from .env.example in this directory
+#   3. First run: docker compose up -d db
+#      Wait ~15 seconds, then: docker compose up -d listmonk
+#      Then visit https://mail.phytolabs.in/install to initialise the DB
+#   4. After install, create an "Early Bird" subscriber list in the Listmonk UI
+#      and copy the list UUID into docs/data/config.json
+
+version: "3.8"
+
+services:
+
+  listmonk-db:
+    image: postgres:16-alpine
+    container_name: listmonk_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER:     ${DB_USER:-listmonk}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB:       ${DB_NAME:-listmonk}
+    volumes:
+      - listmonk_db_data:/var/lib/postgresql/data
+    networks:
+      - listmonk_internal
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-listmonk} -d ${DB_NAME:-listmonk}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  listmonk:
+    image: listmonk/listmonk:latest
+    container_name: listmonk
+    restart: unless-stopped
+    depends_on:
+      listmonk-db:
+        condition: service_healthy
+    environment:
+      # Database
+      LISTMONK_db__host:     listmonk-db
+      LISTMONK_db__port:     "5432"
+      LISTMONK_db__user:     ${DB_USER:-listmonk}
+      LISTMONK_db__password: ${DB_PASSWORD}
+      LISTMONK_db__database: ${DB_NAME:-listmonk}
+      # App
+      LISTMONK_app__address:    "0.0.0.0:9000"
+      LISTMONK_app__admin_username: ${LISTMONK_ADMIN_USER:-admin}
+      LISTMONK_app__admin_password: ${LISTMONK_ADMIN_PASS}
+    volumes:
+      - listmonk_uploads:/listmonk/uploads
+    networks:
+      - listmonk_internal
+      - traefik_public
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik_public"
+      # HTTPS router
+      - "traefik.http.routers.listmonk.rule=Host(`mail.${PLATFORM_DOMAIN:-phytolabs.in}`)"
+      - "traefik.http.routers.listmonk.entrypoints=websecure"
+      - "traefik.http.routers.listmonk.tls=true"
+      - "traefik.http.routers.listmonk.tls.certresolver=letsencrypt"
+      # HTTP → HTTPS redirect
+      - "traefik.http.routers.listmonk-http.rule=Host(`mail.${PLATFORM_DOMAIN:-phytolabs.in}`)"
+      - "traefik.http.routers.listmonk-http.entrypoints=web"
+      - "traefik.http.routers.listmonk-http.middlewares=redirect-https"
+      # Service
+      - "traefik.http.services.listmonk.loadbalancer.server.port=9000"
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:9000/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+volumes:
+  listmonk_db_data:
+  listmonk_uploads:
+
+networks:
+  listmonk_internal:
+    internal: true
+  traefik_public:
+    external: true
+    name: traefik_public

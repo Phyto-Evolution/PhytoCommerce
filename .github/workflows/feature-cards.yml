@@ -1,0 +1,153 @@
+# PhytoLabs — Auto-regenerate docs/data/features.json
+# Trigger: any push to main that touches the modules/ directory
+# Reads each module's main PHP file for display name + description,
+# then writes a structured JSON file consumed by the landing page.
+
+name: Regenerate Feature Cards
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'modules/**'
+      - '.github/workflows/feature-cards.yml'
+  workflow_dispatch:  # allow manual trigger from GitHub Actions UI
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate features.json from modules/
+        id: generate
+        run: |
+          python3 - <<'PYEOF'
+          import os, re, json
+
+          # Category mapping: module folder prefix → friendly category
+          CATEGORY_MAP = {
+              'phyto_live_arrival':        'Sell with Confidence',
+              'phyto_seasonal':            'Sell with Confidence',
+              'phyto_wholesale':           'Sell with Confidence',
+              'phyto_subscription':        'Sell with Confidence',
+              'phyto_grex':                'Show Your Plants Professionally',
+              'phyto_growth':              'Show Your Plants Professionally',
+              'phyto_source':              'Show Your Plants Professionally',
+              'phyto_care':                'Show Your Plants Professionally',
+              'phyto_acclimation':         'Show Your Plants Professionally',
+              'phyto_growers':             'Build Trust & Community',
+              'phyto_collection':          'Build Trust & Community',
+              'phyto_tc_batch':            'Build Trust & Community',
+              'phyto_climate':             'Build Trust & Community',
+              'phytoerp':                  'Run the Business',
+              'phyto_dispatch':            'Run the Business',
+              'phyto_phyto':               'Run the Business',
+              'phytoseo':                  'Run the Business',
+              'phytoquick':                'Run the Business',
+              'phyto_tc_cost':             'Run the Business',
+          }
+
+          ICON_MAP = {
+              'phyto_live_arrival':    'shield',
+              'phyto_seasonal':        'calendar',
+              'phyto_wholesale':       'briefcase',
+              'phyto_subscription':    'box',
+              'phyto_grex':            'dna',
+              'phyto_growth':          'sprout',
+              'phyto_source':          'badge',
+              'phyto_care':            'document',
+              'phyto_acclimation':     'box',
+              'phyto_growers':         'camera',
+              'phyto_collection':      'collection',
+              'phyto_tc_batch':        'qr',
+              'phyto_climate':         'map',
+              'phytoerp':              'sync',
+              'phyto_dispatch':        'truck',
+              'phyto_phyto':           'certificate',
+              'phytoseo':              'ai',
+              'phytoquick':            'ai',
+              'phyto_tc_cost':         'briefcase',
+          }
+
+          def get_category(folder):
+              for prefix, cat in CATEGORY_MAP.items():
+                  if folder.startswith(prefix):
+                      return cat
+              return 'Run the Business'
+
+          def get_icon(folder):
+              for prefix, icon in ICON_MAP.items():
+                  if folder.startswith(prefix):
+                      return icon
+              return 'badge'
+
+          def extract_field(php_content, field):
+              pattern = r"\$this->" + field + r"\s*=\s*['\"](.+?)['\"]"
+              m = re.search(pattern, php_content, re.MULTILINE)
+              if m:
+                  return m.group(1).strip()
+              # Try $this->field = $this->l('...')
+              pattern2 = r"\$this->" + field + r"\s*=\s*\$this->l\(['\"](.+?)['\"]\)"
+              m2 = re.search(pattern2, php_content, re.MULTILINE)
+              if m2:
+                  return m2.group(1).strip()
+              return None
+
+          modules_dir = 'modules'
+          features = []
+
+          for folder in sorted(os.listdir(modules_dir)):
+              folder_path = os.path.join(modules_dir, folder)
+              if not os.path.isdir(folder_path):
+                  continue
+              php_file = os.path.join(folder_path, folder + '.php')
+              if not os.path.isfile(php_file):
+                  continue
+              try:
+                  with open(php_file, 'r', encoding='utf-8', errors='ignore') as f:
+                      content = f.read()
+              except Exception:
+                  continue
+
+              display_name = extract_field(content, 'displayName') or \
+                             extract_field(content, 'name') or folder
+              description  = extract_field(content, 'description') or ''
+
+              # Skip footer branding module — internal only
+              if folder == 'phytocommercefooter':
+                  continue
+
+              features.append({
+                  'id':          folder,
+                  'title':       display_name,
+                  'description': description,
+                  'category':    get_category(folder),
+                  'icon':        get_icon(folder),
+              })
+
+          os.makedirs('docs/data', exist_ok=True)
+          with open('docs/data/features.json', 'w', encoding='utf-8') as out:
+              json.dump(features, out, indent=2, ensure_ascii=False)
+              out.write('\n')
+
+          print(f"Generated {len(features)} feature cards.")
+          PYEOF
+
+      - name: Commit updated features.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/features.json
+          if git diff --staged --quiet; then
+            echo "No changes to features.json — skipping commit."
+          else
+            git commit -m "chore(docs): auto-regenerate features.json from modules/"
+            git push origin HEAD
+          fi
