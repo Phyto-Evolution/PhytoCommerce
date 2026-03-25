@@ -12,7 +12,7 @@ if (!defined('_PS_VERSION_')) exit;
  * When deploying from a full repo checkout (all modules already in /modules/),
  * the pack detects them automatically — no bundling needed.
  */
-class PhytocommercePack extends Module {
+class Phytocommerce_Pack extends Module {
 
     // Install order matters for soft dependencies
     // (e.g. acclimation_bundler reads growth_stage data)
