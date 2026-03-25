@@ -1,0 +1,73 @@
+name: Validate PrestaShop Modules
+
+on:
+  pull_request:
+    paths:
+      - 'modules/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check PS class naming convention
+        run: |
+          FAILED=0
+          for dir in modules/*/; do
+            name=$(basename "$dir")
+            php_file="$dir$name.php"
+            [ -f "$php_file" ] || continue
+
+            class=$(grep -oP "^class \K\S+" "$php_file" | head -1)
+            [ -z "$class" ] && echo "ERROR: no class found in $php_file" && FAILED=1 && continue
+
+            expected="${name^}"   # ucfirst
+            lower_class=$(echo "$class"    | tr '[:upper:]' '[:lower:]')
+            lower_expected=$(echo "$expected" | tr '[:upper:]' '[:lower:]')
+
+            if [ "$lower_class" != "$lower_expected" ]; then
+              echo "FAIL [$name]: class '$class' does not match directory name '$name'"
+              echo "     Expected pattern: '$expected' (case-insensitive, underscore-preserved)"
+              FAILED=1
+            else
+              echo "OK   [$name]: $class"
+            fi
+          done
+          exit $FAILED
+
+      - name: Check all modules have logo.png
+        run: |
+          FAILED=0
+          for dir in modules/*/; do
+            name=$(basename "$dir")
+            logo="$dir/logo.png"
+            if [ ! -f "$logo" ]; then
+              echo "FAIL [$name]: missing logo.png"
+              FAILED=1
+              continue
+            fi
+            # Check valid PNG signature
+            sig=$(xxd -p -l 4 "$logo")
+            if [ "$sig" != "89504e47" ]; then
+              echo "FAIL [$name]: logo.png is not a valid PNG (sig=$sig)"
+              FAILED=1
+            else
+              echo "OK   [$name]: logo.png valid"
+            fi
+          done
+          exit $FAILED
+
+      - name: Check all modules have config.xml
+        run: |
+          FAILED=0
+          for dir in modules/*/; do
+            name=$(basename "$dir")
+            if [ ! -f "$dir/config.xml" ]; then
+              echo "FAIL [$name]: missing config.xml"
+              FAILED=1
+            else
+              echo "OK   [$name]: config.xml present"
+            fi
+          done
+          exit $FAILED
