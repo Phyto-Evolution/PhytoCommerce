@@ -1,0 +1,20 @@
+/* PhytoImageSec — admin styles */
+
+#phyto-batch-progress {
+    margin-top: 15px;
+}
+
+#phyto-batch-progress .progress {
+    height: 24px;
+    border-radius: 4px;
+}
+
+#phyto-batch-progress .progress-bar {
+    font-size: 13px;
+    line-height: 24px;
+}
+
+#phyto-batch-status {
+    margin-top: 8px;
+    font-size: 13px;
+}

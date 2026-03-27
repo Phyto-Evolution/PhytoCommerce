@@ -1,0 +1,30 @@
+/* PhytoImageSec — front-office protection styles */
+
+/* Prevent text/image selection on product images */
+.product-cover,
+.product-images,
+.images-container {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+/* Prevent native drag on all images */
+.product-cover img,
+.product-images img,
+.images-container img {
+    -webkit-user-drag: none;
+    user-drag: none;
+    pointer-events: auto; /* keep click events for lightbox */
+}
+
+/* Invisible overlay injected by front.js */
+.phyto-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    pointer-events: none; /* pass through clicks to lightbox/zoom */
+}

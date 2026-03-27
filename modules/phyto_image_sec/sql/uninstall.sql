@@ -1,0 +1,3 @@
+-- phyto_image_sec uninstall
+-- Configuration keys are removed via PHP (Configuration::deleteByName).
+-- No custom tables to drop.

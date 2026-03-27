@@ -1,0 +1,2 @@
+-- phyto_image_sec install
+-- No custom tables required: all state stored in ps_configuration.
