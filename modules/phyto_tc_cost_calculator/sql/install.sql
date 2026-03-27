@@ -6,4 +6,4 @@ CREATE TABLE IF NOT EXISTS `PREFIX_phyto_tc_cost_estimate` (
   `results_json` text,
   `date_add`    datetime DEFAULT NULL,
   PRIMARY KEY (`id_estimate`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=ENGINE_TYPE DEFAULT CHARSET=utf8mb4;

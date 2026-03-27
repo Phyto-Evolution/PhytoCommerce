@@ -2,8 +2,8 @@
 <module>
     <name>phyto_climate_zone</name>
     <displayName><![CDATA[Phyto Climate Zone]]></displayName>
-    <version><![CDATA[1.0.0]]></version>
-    <description><![CDATA[Shows which plants are suitable for a buyer's climate zone based on pincode lookup. Fully offline.]]></description>
+    <version><![CDATA[2.0.0]]></version>
+    <description><![CDATA[Maps products to 15 PCC-IN climate zones via offline pincode lookup. Covers 797 India PIN prefixes.]]></description>
     <author><![CDATA[PhytoCommerce]]></author>
     <tab><![CDATA[front_office_features]]></tab>
     <is_configurable>1</is_configurable>

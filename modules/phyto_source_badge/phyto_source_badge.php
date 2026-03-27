@@ -94,6 +94,7 @@ class Phyto_Source_Badge extends Module
 
         // Replace table-prefix placeholder
         $sql = str_replace('PREFIX_', _DB_PREFIX_, $sql);
+        $sql = str_replace('ENGINE_TYPE', _MYSQL_ENGINE_, $sql);
 
         // Split on statement boundaries (semicolons followed by optional whitespace / newlines)
         $statements = preg_split('/;\s*[\r\n]+/', $sql, -1, PREG_SPLIT_NO_EMPTY);
