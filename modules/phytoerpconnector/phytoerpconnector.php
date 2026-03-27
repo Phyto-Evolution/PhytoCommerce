@@ -11,6 +11,8 @@ class PhytoErpConnector extends Module {
         $this->version       = '1.0.0';
         $this->author        = 'Phyto Evolution';
         $this->need_instance = 0;
+        $this->bootstrap     = true;
+        $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => _PS_VERSION_];
         parent::__construct();
         $this->displayName = 'Phyto ERP Connector';
         $this->description = 'Connects PrestaShop stores to ERPNext v15 — syncs orders, customers, products and invoices';
@@ -27,7 +29,8 @@ class PhytoErpConnector extends Module {
     }
 
     public function uninstall() {
-        return parent::uninstall() && $this->uninstallTab();
+        Db::getInstance()->execute('DROP TABLE IF EXISTS `' . _DB_PREFIX_ . 'phyto_erp_sync_log`');
+        return $this->uninstallTab() && parent::uninstall();
     }
 
     public function getContent() {

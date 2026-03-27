@@ -1,0 +1,249 @@
+{
+  "pack_id": "droseraceae",
+  "schema_version": "1.1.0",
+  "family": "Droseraceae",
+  "common_name": "Sundews, Venus Flytrap and Waterwheel Plant",
+  "description": "The family Droseraceae contains three genera of active-trap carnivorous plants. <em>Drosera</em> (sundews) use sticky mucilage glands on leaf tentacles to trap and digest insects. <em>Dionaea</em> (Venus flytrap) snaps its lobed leaves shut when trigger hairs are touched. <em>Aldrovanda</em> (waterwheel plant) is an aquatic relative that snaps submerged traps to catch water invertebrates. Together they span tropical, temperate, and boreal habitats on every continent except Antarctica.",
+  "meta_title": "Droseraceae — Sundews, Venus Flytraps and Waterwheel Plants",
+  "meta_description": "Buy Drosera sundews, Dionaea Venus flytraps and Aldrovanda waterwheel plants. Wide range of species and cultivars, TC-grown with full provenance. Beginner-friendly carnivorous plants.",
+  "meta_keywords": "sundew, Drosera, Venus flytrap, Dionaea, Aldrovanda, carnivorous plants, buy sundew",
+  "genera": [
+    {
+      "genus": "Drosera",
+      "common_name": "Sundews",
+      "description": "<em>Drosera</em> is the largest genus of carnivorous plants with approximately 250 species on every continent except Antarctica. All produce leaves lined with gland-tipped tentacles secreting sticky mucilage to trap invertebrates. South-western Australia is the global hotspot of Drosera diversity. Most species are remarkably easy to grow.",
+      "meta_title": "Drosera — Sundews for Sale",
+      "meta_description": "Shop Drosera sundews — tropical, temperate, and pygmy species. Most are beginners plants requiring only bright light, pure water, and a tray of standing water.",
+      "meta_keywords": "Drosera sundew, buy sundew, Drosera capensis, tropical sundew, temperate sundew",
+      "native_range": "Cosmopolitan; greatest diversity in south-western Australia",
+      "care_level": "beginner",
+      "tc_suitability": "high",
+      "conservation_status": "varies_by_species",
+      "species": [
+        {
+          "full_name": "Drosera capensis",
+          "common_name": "Cape Sundew",
+          "description": "<em>Drosera capensis</em> is widely regarded as the best starter carnivorous plant. Native to the Cape region of South Africa, it produces strap-like leaves covered in red, glistening tentacles and is almost impossible to kill in suitable conditions. It self-seeds prolifically and flowers throughout the growing season.",
+          "meta_title": "Drosera capensis — Cape Sundew",
+          "meta_description": "The perfect beginners carnivorous plant. Drosera capensis is vigorous, easy, and flowers freely. Available in typical, red, and alba forms.",
+          "meta_keywords": "Drosera capensis, Cape sundew, easy sundew, beginner carnivorous plant",
+          "native_range": "South Africa — Western Cape (coastal fynbos)",
+          "conservation_status": "LC",
+          "notes": "Evergreen; does not require dormancy. Keep in tray of distilled or rainwater. Excellent for beginners.",
+          "cultivars": [
+            {
+              "cultivar": "Alba",
+              "description": "White-flowered, green-leaved form lacking red pigmentation in the tentacles."
+            },
+            {
+              "cultivar": "Red",
+              "description": "Entirely red-pigmented form with deeper colouration under high light; striking in contrast to typical form."
+            }
+          ]
+        },
+        {
+          "full_name": "Drosera binata",
+          "common_name": "Forked Sundew",
+          "description": "<em>Drosera binata</em> produces strap-like leaves that fork dichotomously — sometimes branching into T, Y, or multi-forked forms. Native to Australia and New Zealand. Very vigorous; forms large clumps and can reach 60 cm in some forms. One of the most productive insect-catchers in the genus.",
+          "meta_title": "Drosera binata — Forked Sundew",
+          "meta_description": "Vigorous forked sundew from Australia and New Zealand. Multiple branching leaf forms available. Very effective insect catcher, easy to grow.",
+          "meta_keywords": "Drosera binata, forked sundew, Australian sundew, large sundew",
+          "native_range": "Australia (New South Wales, Victoria, Tasmania), New Zealand",
+          "conservation_status": "LC",
+          "notes": "Dies back in winter in temperate zones; re-grows vigorously in spring. Tray watering with distilled water. Full sun preferred.",
+          "cultivars": [
+            {
+              "cultivar": "Marston Dragon",
+              "description": "Multi-forked form with up to 16 leaf segments; extremely vigorous; selected by Marston Exotics, UK."
+            },
+            {
+              "cultivar": "T-Form",
+              "description": "Classic T-shaped bifurcation; both segments of equal length. More compact than Marston Dragon."
+            }
+          ]
+        },
+        {
+          "full_name": "Drosera adelae",
+          "common_name": "Lance-leaved Sundew",
+          "description": "<em>Drosera adelae</em> is one of the Three Sisters from Queensland's tropical rainforest belt. It tolerates lower light than most sundews, making it ideal for growing alongside shade-loving plants. Produces long strap-like leaves with red glands and propagates readily from root cuttings.",
+          "meta_title": "Drosera adelae — Shade-tolerant Queensland Sundew",
+          "meta_description": "Shade-tolerant Drosera adelae from Queensland. One of the easiest tropical sundews; suitable for windowsill culture without supplemental lighting.",
+          "meta_keywords": "Drosera adelae, Queensland sundew, shade sundew, tropical sundew",
+          "native_range": "Australia — north Queensland (near Cairns, tropical rainforest margins)",
+          "conservation_status": "LC",
+          "notes": "Prefers filtered light; direct sun can bleach leaves. Tropical; no dormancy needed. Propagates by root cuttings.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera regia",
+          "common_name": "King Sundew",
+          "description": "<em>Drosera regia</em> is the largest sundew in the world, producing strap-like leaves that can exceed 70 cm in length. Endemic to a single valley in the Bainskloof mountains of South Africa's Western Cape. Vulnerable in the wild; all cultivated stock is TC-grown or propagated from existing cultivated plants.",
+          "meta_title": "Drosera regia — King Sundew, World's Largest",
+          "meta_description": "Drosera regia — the world's largest sundew. Up to 70 cm leaves. Vulnerable species from South Africa, available as TC-grown plants only.",
+          "meta_keywords": "Drosera regia, king sundew, largest sundew, rare sundew, South Africa sundew",
+          "native_range": "South Africa — Bainskloof mountains, Western Cape (single valley population)",
+          "conservation_status": "VU",
+          "notes": "Highland/temperate; cool winters with reduced watering. Extremely rare in the wild — TC propagation only. Rewarding for intermediate growers.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera rotundifolia",
+          "common_name": "Round-leaved Sundew",
+          "description": "<em>Drosera rotundifolia</em> is the archetypal sundew of the Northern Hemisphere, growing in sphagnum bogs and wet heathland across Europe, North America, and northern Asia. A small, flat-rosette plant with round, red-tentacled leaves. Requires a cold winter dormancy.",
+          "meta_title": "Drosera rotundifolia — Common Round-leaved Sundew",
+          "meta_description": "Classic Northern Hemisphere sundew from European bogs. Drosera rotundifolia requires cold dormancy; perfect for outdoor bog gardens in temperate climates.",
+          "meta_keywords": "Drosera rotundifolia, round leaved sundew, temperate sundew, bog garden sundew",
+          "native_range": "Europe, North America, northern Asia (boreal bogs and wet heathland)",
+          "conservation_status": "LC",
+          "notes": "Requires 3–4 month cold dormancy (2–7 °C). Small plant; up to 10 cm diameter rosette. Good for outdoor bog containers in temperate gardens.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera spatulata",
+          "common_name": "Spoon-leaved Sundew",
+          "description": "<em>Drosera spatulata</em> is one of the most widespread Drosera species, found across East Asia to Australia and New Zealand. A small, compact rosette with spatulate leaves; highly variable across its range. Very easy to grow and one of the most reliable self-seeders in cultivation.",
+          "meta_title": "Drosera spatulata — Spoon-leaved Sundew",
+          "meta_description": "Easy, compact Drosera spatulata. Cosmopolitan species from Asia and Australasia. Self-seeds freely; ideal windowsill sundew.",
+          "meta_keywords": "Drosera spatulata, spoon leaved sundew, Asian sundew, compact sundew",
+          "native_range": "East Asia, South-East Asia, Australia, New Zealand (lowland bogs and wet rocks)",
+          "conservation_status": "LC",
+          "notes": "Tropical to subtropical. No dormancy required in most forms. Self-seeds. Good companion plant in bog trays.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera schizandra",
+          "common_name": "Notch-leaved Sundew",
+          "description": "<em>Drosera schizandra</em> is a rare Queensland species from the Three Sisters group. It grows in deep shade in moss-covered rainforest gullies near Cairns. Its leaves have a distinctive notch at the apex. One of the most challenging sundews to cultivate due to its specific humidity and shade requirements.",
+          "meta_title": "Drosera schizandra — Notch-leaved Rainforest Sundew",
+          "meta_description": "Rare Drosera schizandra from Queensland rainforest. Shade-growing species for advanced collectors. Near-threatened in the wild.",
+          "meta_keywords": "Drosera schizandra, notch leaved sundew, Queensland rainforest sundew, rare sundew",
+          "native_range": "Australia — north Queensland (rainforest gullies near Cairns)",
+          "conservation_status": "VU",
+          "notes": "Deep shade and consistently high humidity essential. Does not tolerate direct sun. Advanced growers; sensitive to environmental changes.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera prolifera",
+          "common_name": "Proliferous Sundew",
+          "description": "<em>Drosera prolifera</em> is the third of the Queensland Three Sisters. It is unique among sundews in producing plantlets (offsets) on its flower scapes, which root on contact with the growing medium — a form of vegetative proliferation. Fast-growing and rewarding once conditions are dialled in.",
+          "meta_title": "Drosera prolifera — Runner-producing Queensland Sundew",
+          "meta_description": "Unique Drosera prolifera produces plantlets on flower scapes. Shade-tolerant Queensland species; fast-spreading once established.",
+          "meta_keywords": "Drosera prolifera, proliferous sundew, Queensland sundew, runner sundew",
+          "native_range": "Australia — north Queensland (wet rainforest margins)",
+          "conservation_status": "NT",
+          "notes": "Moderate shade; keep consistently moist. Unique vegetative proliferation via flower scape plantlets. Intermediate grower.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera slackii",
+          "common_name": "Slack's Sundew",
+          "description": "<em>Drosera slackii</em> is a large South African sundew from the fynbos and renosterveld biomes. It produces firm, erect leaves with robust red tentacles and is considerably larger than D. capensis. Named in honour of British carnivorous plant authority Adrian Slack.",
+          "meta_title": "Drosera slackii — Large South African Sundew",
+          "meta_description": "Large and robust Drosera slackii from South Africa. Erect, firm leaves; suitable for intermediate collectors wanting something beyond D. capensis.",
+          "meta_keywords": "Drosera slackii, South Africa sundew, large sundew, Slack's sundew",
+          "native_range": "South Africa — Western and Northern Cape (fynbos, renosterveld)",
+          "conservation_status": "LC",
+          "notes": "Mediterranean-type climate native; cool, wet winters; warm, dry summers. Semi-dormant in summer heat.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera nidiformis",
+          "common_name": "Nest-forming Sundew",
+          "description": "<em>Drosera nidiformis</em> produces compact flat rosettes of wide, spatulate leaves. Native to South Africa; one of the neater compact sundews for windowsill culture. Easy to grow and maintains a tidy form throughout the growing season.",
+          "meta_title": "Drosera nidiformis — Compact South African Sundew",
+          "meta_description": "Neat compact rosette sundew from South Africa. Easy windowsill plant; good for mixed carnivorous plant collections.",
+          "meta_keywords": "Drosera nidiformis, compact sundew, South Africa sundew, nest sundew",
+          "native_range": "South Africa — KwaZulu-Natal, Eastern Cape",
+          "conservation_status": "LC",
+          "notes": "Evergreen in warm conditions. Tray watering; full to partial sun. Very compact; ideal for small spaces.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Dionaea",
+      "common_name": "Venus Flytrap",
+      "description": "<em>Dionaea muscipula</em> is the world's most recognisable carnivorous plant. When an insect touches two trigger hairs in quick succession, the two lobes of the modified leaf snap shut in under 100 milliseconds — one of the fastest movements in the plant kingdom. Native to a small region of North and South Carolina, USA, it is Vulnerable in the wild but extremely common in cultivation.",
+      "meta_title": "Dionaea muscipula — Venus Flytrap Cultivars",
+      "meta_description": "Shop Venus flytrap cultivars — B52 giant, Red Dragon, Jaws, Dente and more. TC-grown plants with batch provenance. The world's most famous carnivorous plant.",
+      "meta_keywords": "Venus flytrap, Dionaea muscipula, buy Venus flytrap, B52 flytrap, Red Dragon flytrap, giant Venus flytrap",
+      "native_range": "USA — coastal plain of North and South Carolina (within 100 km radius of Wilmington, NC)",
+      "care_level": "beginner",
+      "tc_suitability": "high",
+      "conservation_status": "VU",
+      "species": [
+        {
+          "full_name": "Dionaea muscipula",
+          "common_name": "Venus Flytrap",
+          "description": "<em>Dionaea muscipula</em> is a monotypic species — the only member of its genus. It grows in nitrogen-poor, wet, open pine savannas. In cultivation it thrives in full sun with pure water and a cold winter dormancy of 3–4 months. Hundreds of cultivars have been selected for trap size, colour, shape, and dentition.",
+          "meta_title": "Dionaea muscipula — Venus Flytrap",
+          "meta_description": "Classic Venus flytrap available in dozens of cultivars. Full-sun, pure water, and winter dormancy. TC-grown plants with named cultivar documentation.",
+          "meta_keywords": "Dionaea muscipula, Venus flytrap, flytrap cultivar, carnivorous plant",
+          "native_range": "USA — North and South Carolina coastal plain",
+          "conservation_status": "VU",
+          "notes": "Requires 3–4 month cold dormancy (2–7 °C). Use distilled or rainwater only; never tap water. Full sun essential for trap colouration.",
+          "cultivars": [
+            {
+              "cultivar": "B52",
+              "description": "Giant-trap cultivar; traps can exceed 5.5 cm across when mature. Fastest and largest growing cultivar widely available."
+            },
+            {
+              "cultivar": "Jaws",
+              "description": "Long, interlocking teeth (cilia) up to 1.5 cm; creates a more dramatic trap closure appearance."
+            },
+            {
+              "cultivar": "Red Dragon",
+              "description": "Entirely deep crimson-red plant under strong light; both leaves and traps develop intense red pigmentation."
+            },
+            {
+              "cultivar": "Dente",
+              "description": "Shortened, tooth-like cilia create a serrated trap edge without the long interlocking style. Compact and vigorous."
+            },
+            {
+              "cultivar": "FTS Shogun Star",
+              "description": "Symmetrical, upright-growing traps; cilia modified into flat triangular 'fins' giving a star-like outline."
+            },
+            {
+              "cultivar": "Alien",
+              "description": "Fused or absent cilia on some traps producing an alien, toothless appearance. Unusual and sought-after."
+            },
+            {
+              "cultivar": "Dentate Traps",
+              "description": "All cilia replaced by short triangular teeth; uniform serrated trap edge. Compact grower."
+            },
+            {
+              "cultivar": "Justina Davis",
+              "description": "All-green cultivar even under strong light; entirely lacking red pigmentation. Contrast piece for collections."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Aldrovanda",
+      "common_name": "Waterwheel Plant",
+      "description": "<em>Aldrovanda vesiculosa</em> is the only species in its genus — a free-floating, rootless, aquatic carnivore. Whorls of modified leaves carry snap-traps functionally similar to those of Dionaea, snapping shut to capture water fleas, mosquito larvae, and other small aquatic invertebrates. Once nearly cosmopolitan, it has declined dramatically due to wetland drainage and eutrophication; it is now listed as Endangered globally.",
+      "meta_title": "Aldrovanda vesiculosa — Waterwheel Plant",
+      "meta_description": "Rare aquatic carnivorous plant. Aldrovanda vesiculosa — the Waterwheel Plant — captures aquatic invertebrates with snap-traps. Endangered species; propagated in clean water systems.",
+      "meta_keywords": "Aldrovanda vesiculosa, waterwheel plant, aquatic carnivorous plant, rare aquatic plant",
+      "native_range": "Historically cosmopolitan (Europe, Asia, Africa, Australia); now highly fragmented",
+      "care_level": "expert",
+      "tc_suitability": "medium",
+      "conservation_status": "EN",
+      "species": [
+        {
+          "full_name": "Aldrovanda vesiculosa",
+          "common_name": "Waterwheel Plant",
+          "description": "<em>Aldrovanda vesiculosa</em> requires warm, slightly acidic, oligotrophic water with abundant sunlight. It does not root and instead floats freely, growing a few centimetres daily at the apex while the older stem decays behind it. Extremely sensitive to water chemistry; thrives in purpose-built aquatic carnivorous plant setups.",
+          "meta_title": "Aldrovanda vesiculosa — Aquatic Snap-trap Plant",
+          "meta_description": "Aldrovanda vesiculosa, the aquatic waterwheel plant. Free-floating snap-trap carnivore. Endangered worldwide. For advanced aquatic carnivorous plant enthusiasts.",
+          "meta_keywords": "Aldrovanda vesiculosa, aquatic carnivore, waterwheel plant, endangered aquatic plant",
+          "native_range": "Historical range: Europe, Asia, Africa, Australia — now critically fragmented",
+          "conservation_status": "EN",
+          "notes": "Requires warm (22–30 °C), clean, slightly acid, very nutrient-poor water. High light essential. Best kept with other acid-water aquatics. Very advanced cultivation.",
+          "cultivars": []
+        }
+      ]
+    }
+  ]
+}

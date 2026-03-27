@@ -61,16 +61,34 @@ class PhytoTaxonomy {
         $skipped  = 0;
         $log      = [];
 
+        $family_meta = [
+            'meta_title'       => $pack['meta_title']       ?? '',
+            'meta_description' => $pack['meta_description'] ?? '',
+            'meta_keywords'    => $pack['meta_keywords']    ?? '',
+        ];
+
         foreach ($pack['genera'] as $genus_data) {
-            $family_id = self::ensureCategory($pack['family'], $pack['common_name'], 2, $id_lang);
+            $family_id = self::ensureCategory(
+                $pack['family'],
+                $pack['description'] ?? $pack['common_name'],
+                2,
+                $id_lang,
+                $family_meta
+            );
             if (!$family_id) { $skipped++; continue; }
             $log[] = 'Family: ' . $pack['family'];
 
+            $genus_meta = [
+                'meta_title'       => $genus_data['meta_title']       ?? '',
+                'meta_description' => $genus_data['meta_description'] ?? '',
+                'meta_keywords'    => $genus_data['meta_keywords']    ?? '',
+            ];
             $genus_id = self::ensureCategory(
                 $genus_data['genus'],
-                $genus_data['common_name'] ?? $genus_data['genus'],
+                $genus_data['description'] ?? $genus_data['common_name'] ?? $genus_data['genus'],
                 $family_id,
-                $id_lang
+                $id_lang,
+                $genus_meta
             );
             if (!$genus_id) { $skipped++; continue; }
             $log[] = '  Genus: ' . $genus_data['genus'];
@@ -78,11 +96,17 @@ class PhytoTaxonomy {
 
             if (!empty($genus_data['species'])) {
                 foreach ($genus_data['species'] as $species) {
+                    $species_meta = [
+                        'meta_title'       => $species['meta_title']       ?? '',
+                        'meta_description' => $species['meta_description'] ?? '',
+                        'meta_keywords'    => $species['meta_keywords']    ?? '',
+                    ];
                     $species_id = self::ensureCategory(
                         $species['full_name'],
-                        $species['full_name'],
+                        $species['description'] ?? $species['full_name'],
                         $genus_id,
-                        $id_lang
+                        $id_lang,
+                        $species_meta
                     );
                     if ($species_id) {
                         $log[] = '    Species: ' . $species['full_name'];
@@ -90,7 +114,16 @@ class PhytoTaxonomy {
                         if (!empty($species['cultivars'])) {
                             foreach ($species['cultivars'] as $cultivar) {
                                 $cultivar_name = $species['full_name'] . " '" . $cultivar['cultivar'] . "'";
-                                $cid = self::ensureCategory($cultivar_name, $cultivar_name, $species_id, $id_lang);
+                                $cultivar_meta = [
+                                    'meta_description' => $cultivar['description'] ?? '',
+                                ];
+                                $cid = self::ensureCategory(
+                                    $cultivar_name,
+                                    $cultivar['description'] ?? $cultivar_name,
+                                    $species_id,
+                                    $id_lang,
+                                    $cultivar_meta
+                                );
                                 if ($cid) { $log[] = '      Cultivar: ' . $cultivar_name; $imported++; }
                             }
                         }
@@ -109,7 +142,7 @@ class PhytoTaxonomy {
         return ['success' => true, 'imported' => $imported, 'skipped' => $skipped, 'log' => $log];
     }
 
-    public static function ensureCategory($name, $description, $id_parent, $id_lang) {
+    public static function ensureCategory($name, $description, $id_parent, $id_lang, $meta = []) {
         $existing = Db::getInstance()->getValue(
             'SELECT cl.id_category FROM ' . _DB_PREFIX_ . 'category_lang cl
              JOIN ' . _DB_PREFIX_ . 'category c ON c.id_category = cl.id_category
@@ -126,6 +159,9 @@ class PhytoTaxonomy {
         $category->id_parent        = $id_parent;
         $category->active           = 1;
         $category->is_root_category = false;
+        if (!empty($meta['meta_title']))       $category->meta_title       = [$id_lang => $meta['meta_title']];
+        if (!empty($meta['meta_description'])) $category->meta_description = [$id_lang => $meta['meta_description']];
+        if (!empty($meta['meta_keywords']))    $category->meta_keywords    = [$id_lang => $meta['meta_keywords']];
         return $category->add() ? (int)$category->id : false;
     }
 

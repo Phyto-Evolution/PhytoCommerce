@@ -1,0 +1,159 @@
+{
+  "pack_id": "crassulaceae",
+  "schema_version": "1.1",
+  "family": "Crassulaceae",
+  "common_name": "Stonecrop Family",
+  "description": "Crassulaceae is a family of succulent flowering plants comprising about 35 genera and over 1400 species. Native to diverse habitats from mountains to deserts worldwide, but particularly diverse in southern Africa and Mexico. The family includes some of the most popular succulent houseplants and garden subjects: Echeveria, Sedum, Crassula, Kalanchoë, Sempervivum, and Aeonium. All family members use CAM photosynthesis and typically have fleshy leaves.",
+  "meta_title": "Stonecrop Family — Crassulaceae | PhytoCommerce",
+  "meta_description": "Shop rare and classic Crassulaceae succulents — Echeveria, Haworthia, Sempervivum, Aeonium. TC-grown rosette succulents with cultivar provenance.",
+  "meta_keywords": "Crassulaceae, Echeveria, Haworthia, Sempervivum, Aeonium, succulent rosettes, buy succulents",
+  "genera": [
+    {
+      "genus": "Echeveria",
+      "common_name": "Echeveria",
+      "description": "<em>Echeveria</em> comprises about 150 species and hundreds of cultivars of rosette-forming succulents native primarily to Mexico and Central America. The genus is enormously popular for its architectural rosette form, waxy glaucous or colourful foliage, and attractive bell-shaped flowers on arching stems. Thousands of hybrids and selections exist, making Echeveria the most diverse and collectable succulent genus.",
+      "meta_title": "Echeveria — Mexican Rosette Succulents",
+      "meta_description": "Buy rare and classic Echeveria rosette succulents. Species, hybrids, and rare Japanese cultivars with full provenance. Waxy foliage and bell-shaped flowers.",
+      "meta_keywords": "Echeveria for sale, rare Echeveria, Echeveria subsessilis, Echeveria laui, rosette succulent",
+      "native_range": "Mexico, Central America, South America (Andes)",
+      "care_level": "Beginner",
+      "tc_suitability": "High",
+      "conservation_status": "varies by species",
+      "species": [
+        {
+          "full_name": "Echeveria laui",
+          "common_name": "Lau's Echeveria",
+          "description": "<em>Echeveria laui</em> is one of the most beautiful Echeveria species, forming compact rosettes of thick, fleshy, heavily glaucous blue-white leaves with a powdery coating (farina) that must not be touched. Native to Oaxaca, Mexico. Produces coral-pink flowers. Highly collectible and relatively slow-growing.",
+          "meta_title": "Echeveria laui — Powder Blue Rosette Succulent",
+          "meta_description": "Buy Echeveria laui, the powder blue Echeveria from Oaxaca. Extremely glaucous white-blue farina-covered leaves; coral-pink flowers. Do not touch leaves.",
+          "meta_keywords": "Echeveria laui, powder blue echeveria, glaucous succulent, Oaxaca echeveria, farina succulent",
+          "native_range": "Oaxaca, Mexico",
+          "conservation_status": "EN",
+          "notes": "Farina-covered; never touch leaves. Excellent drainage. Spectacular glaucous blue colouring.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Echeveria subsessilis",
+          "common_name": "Morning Beauty Echeveria",
+          "description": "<em>Echeveria subsessilis</em> forms large open rosettes of spoon-shaped blue-green leaves tipped with a pink-red blush in bright light. Produces pink flowers. One of the more vigorous and easier Echeveria to grow; offsets freely. Popular as both a garden and container subject.",
+          "meta_title": "Echeveria subsessilis — Morning Beauty",
+          "meta_description": "Buy Echeveria subsessilis, morning beauty. Blue-green rosette with pink-blushed leaf tips; vigorous offsetting succulent with pink flowers.",
+          "meta_keywords": "Echeveria subsessilis, morning beauty echeveria, blue-green rosette, easy Echeveria",
+          "native_range": "Mexico",
+          "conservation_status": "LC",
+          "notes": "Vigorous and easy. Offsets freely; blue-green leaves blush pink in high light.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Echeveria agavoides",
+          "common_name": "Moulded Wax Agave",
+          "description": "<em>Echeveria agavoides</em> forms tight, compact rosettes of triangular, hard-tipped leaves resembling a miniature agave. Leaf tips and margins blush deep red to pink in bright conditions. Orange-red flowers. Produces stunning colour in full sun and is very drought-tolerant.",
+          "meta_title": "Echeveria agavoides — Moulded Wax Agave Succulent",
+          "meta_description": "Buy Echeveria agavoides, the moulded wax agave. Compact triangular rosette with red-tipped leaves; deep colour in full sun with orange-red flowers.",
+          "meta_keywords": "Echeveria agavoides, moulded wax agave, compact echeveria, red-tipped succulent",
+          "native_range": "Mexico (San Luis Potosí, Tamaulipas, Hidalgo, Guanajuato)",
+          "conservation_status": "LC",
+          "notes": "Very drought-tolerant. Compact; leaves tip red in full sun. Popular and widely grown.",
+          "cultivars": [
+            { "cultivar": "Ebony", "description": "Dark red-black leaf tips and margins contrasting with pale green body; dramatic collector form." },
+            { "cultivar": "Romeo Rubin", "description": "Entire rosette blushes deep burgundy-red in high light; named Japanese selection." }
+          ]
+        },
+        {
+          "full_name": "Echeveria purpusorum",
+          "common_name": "Urbinia Echeveria",
+          "description": "<em>Echeveria purpusorum</em> forms a compact, slow-growing rosette of thick, dark olive-green leaves with reddish-brown spots and a red-tipped keel. One of the harder Echeveria species, prized by collectors for its distinctive colouration and texture. Produces reddish flowers.",
+          "meta_title": "Echeveria purpusorum — Spotted Olive Echeveria",
+          "meta_description": "Buy Echeveria purpusorum, the spotted dark echeveria. Compact slow-growing rosette; dark olive-green with reddish-brown spots and keel.",
+          "meta_keywords": "Echeveria purpusorum, spotted echeveria, dark echeveria, collector succulent",
+          "native_range": "Oaxaca, Puebla, Mexico",
+          "conservation_status": "NT",
+          "notes": "Compact and slow. Distinctive spotted dark green leaves. One of the more unusual Echeveria.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Sempervivum",
+      "common_name": "Houseleeks",
+      "description": "<em>Sempervivum</em> — houseleeks or hens-and-chicks — comprises about 50 species of monocarpic, clustering rosette succulents native to mountains across Europe, North Africa, and Western Asia. Extremely cold-hardy (to -30°C), they are the premier outdoor succulent for temperate gardens. The name means 'always alive', reflecting exceptional drought and cold tolerance. Hundreds of cultivars exist in a vast range of colours from silver to deep burgundy.",
+      "meta_title": "Sempervivum — Houseleeks and Hens-and-Chicks",
+      "meta_description": "Buy Sempervivum houseleeks — cold-hardy rosette succulents for temperate gardens and alpine troughs. Species and cultivars from silver to deep burgundy.",
+      "meta_keywords": "Sempervivum for sale, houseleek, hens and chicks, cold-hardy succulent, alpine succulent",
+      "native_range": "Europe, North Africa, Western Asia (mountains)",
+      "care_level": "Beginner",
+      "tc_suitability": "Moderate",
+      "conservation_status": "varies by species",
+      "species": [
+        {
+          "full_name": "Sempervivum tectorum",
+          "common_name": "Common Houseleek",
+          "description": "<em>Sempervivum tectorum</em> is the common houseleek, historically grown on rooftops across Europe for protection against lightning. It forms dense mats of blue-green rosettes flushed with red-purple at the tips. Clusters freely. Extremely cold-hardy and versatile. Many named varieties and natural subspecies.",
+          "meta_title": "Sempervivum tectorum — Common Houseleek",
+          "meta_description": "Buy Sempervivum tectorum, the common houseleek. Blue-green rosettes with red-purple tips; cold-hardy to -30°C, drought-proof, historic rooftop plant.",
+          "meta_keywords": "Sempervivum tectorum, common houseleek, cold-hardy rosette, hens and chicks, rooftop succulent",
+          "native_range": "Europe (Alps, Apennines, Carpathians, Pyrenees)",
+          "conservation_status": "LC",
+          "notes": "Very cold-hardy (-30°C). Roof tiles, walls, troughs — extremely versatile.",
+          "cultivars": [
+            { "cultivar": "Atropurpureum", "description": "Deep red-purple rosettes; the darkest commonly available tectorum form." },
+            { "cultivar": "Royanum", "description": "Classic green rosettes with a distinct red-tipped compact form; reliable and vigorous." }
+          ]
+        },
+        {
+          "full_name": "Sempervivum arachnoideum",
+          "common_name": "Cobweb Houseleek",
+          "description": "<em>Sempervivum arachnoideum</em> is distinguished by a cobweb of white filaments connecting leaf tips across the rosette centre, mimicking a spider's web. Small, compact rosettes in green to reddish tones. Alpine species from the Pyrenees, Alps, and Apennines. Extremely cold-hardy.",
+          "meta_title": "Sempervivum arachnoideum — Cobweb Houseleek",
+          "meta_description": "Buy Sempervivum arachnoideum, the cobweb houseleek. Unique white spider-web filaments across rosette tips; compact alpine houseleek in green to red.",
+          "meta_keywords": "Sempervivum arachnoideum, cobweb houseleek, spider web succulent, alpine houseleek",
+          "native_range": "Alps, Pyrenees, Apennines (1200–3000 m)",
+          "conservation_status": "LC",
+          "notes": "Distinctive cobweb of white hairs. Very cold-hardy alpine species. Smaller than S. tectorum.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Aeonium",
+      "common_name": "Tree Houseleeks",
+      "description": "<em>Aeonium</em> comprises about 35 species of succulent subshrubs native primarily to the Canary Islands with a few species in Madeira, Morocco, and East Africa. Unlike Sempervivum, most Aeonium are summer-dormant and winter-growing. They produce flat, plate-like rosettes at the tips of stems, ranging from compact to tree-like forms. Many cultivars exist with dramatically coloured black, red, green, or variegated foliage.",
+      "meta_title": "Aeonium — Canary Island Tree Houseleeks",
+      "meta_description": "Buy Aeonium tree houseleeks from the Canary Islands. Winter-growing plate rosettes in black, red, green, and variegated forms; summer dormancy.",
+      "meta_keywords": "Aeonium for sale, tree houseleek, Aeonium arboreum, black Aeonium, Canary Island succulent",
+      "native_range": "Canary Islands, Madeira, Morocco, East Africa",
+      "care_level": "Beginner–Intermediate",
+      "tc_suitability": "Moderate",
+      "conservation_status": "varies by species",
+      "species": [
+        {
+          "full_name": "Aeonium arboreum",
+          "common_name": "Tree Aeonium",
+          "description": "<em>Aeonium arboreum</em> is the classic shrubby tree aeonium, forming branched stems topped with large flat green rosettes up to 20 cm across. Produces pyramidal yellow flower heads in winter–spring. The species is the parent of many cultivated forms, including the famous black-leaved 'Atropurpureum'.",
+          "meta_title": "Aeonium arboreum — Tree Aeonium Succulent",
+          "meta_description": "Buy Aeonium arboreum tree aeonium. Branched succulent shrub with flat green rosettes and yellow winter flowers; parent of the black Aeonium forms.",
+          "meta_keywords": "Aeonium arboreum, tree aeonium, branching aeonium, Canary Island succulent",
+          "native_range": "Canary Islands (Tenerife)",
+          "conservation_status": "LC",
+          "notes": "Summer dormant. Grows vigorously in cooler months. Prune to encourage branching.",
+          "cultivars": [
+            { "cultivar": "Atropurpureum", "description": "Near-black foliage in full sun; one of the most dramatic succulent colour forms available." },
+            { "cultivar": "Variegata", "description": "Green and cream variegated rosettes; striking and uncommon variegated form." }
+          ]
+        },
+        {
+          "full_name": "Aeonium tabuliforme",
+          "common_name": "Flat-topped Aeonium",
+          "description": "<em>Aeonium tabuliforme</em> is a remarkable almost perfectly flat rosette species from Tenerife, forming a table-like disc of tightly packed leaves up to 50 cm across. Nearly stemless; grows on cliff faces in its native habitat. Monocarpic — flowers once then dies, leaving daughter rosettes.",
+          "meta_title": "Aeonium tabuliforme — Flat-topped Table Aeonium",
+          "meta_description": "Buy Aeonium tabuliforme, the flat-topped Aeonium from Tenerife. Nearly flat disc rosette to 50 cm; cliff-dwelling monocarpic succulent.",
+          "meta_keywords": "Aeonium tabuliforme, flat-topped aeonium, table aeonium, Tenerife succulent, cliff aeonium",
+          "native_range": "Tenerife, Canary Islands (cliff faces)",
+          "conservation_status": "VU",
+          "notes": "Monocarpic; dies after flowering. Nearly perfectly flat rosette. Drainage critical.",
+          "cultivars": []
+        }
+      ]
+    }
+  ]
+}
