@@ -2,8 +2,8 @@
 <module>
     <name>phyto_image_sec</name>
     <displayName><![CDATA[Phyto Image Sec — Image Protection]]></displayName>
-    <version><![CDATA[0.1.0]]></version>
-    <description><![CDATA[Watermarks all product images with your shop logo and prevents digital theft via right-click / drag / download blocking. v0.1 covers product images.]]></description>
+    <version><![CDATA[0.2.0]]></version>
+    <description><![CDATA[Watermarks product images with your shop logo, embeds IPTC copyright metadata, generates compressed WebP siblings, and blocks right-click / drag / download.]]></description>
     <author><![CDATA[PhytoCommerce]]></author>
     <tab><![CDATA[administration]]></tab>
     <is_configurable>1</is_configurable>

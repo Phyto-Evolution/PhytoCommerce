@@ -5,7 +5,7 @@
  * Watermarks all product images with the shop logo and blocks image theft
  * via JS-level right-click / drag / keyboard-shortcut protection.
  *
- * v0.1 — product images only. Video protection planned for v0.2.
+ * v0.2 — adds WebP sibling generation + IPTC copyright metadata embedding.
  *
  * @author    PhytoCommerce
  * @copyright 2024 PhytoCommerce
@@ -28,7 +28,7 @@ class Phyto_Image_Sec extends Module
     {
         $this->name            = 'phyto_image_sec';
         $this->tab             = 'administration';
-        $this->version         = '0.1.0';
+        $this->version         = '0.2.0';
         $this->author          = 'PhytoCommerce';
         $this->need_instance   = 0;
         $this->bootstrap       = true;
@@ -38,8 +38,8 @@ class Phyto_Image_Sec extends Module
 
         $this->displayName    = $this->l('Phyto Image Sec — Image Protection');
         $this->description    = $this->l(
-            'Watermarks all product images with your shop logo and prevents digital theft '
-            . 'via right-click / drag / download blocking. v0.1 covers product images.'
+            'Watermarks product images with your shop logo, embeds IPTC copyright metadata, '
+            . 'generates compressed WebP siblings, and blocks right-click / drag / download.'
         );
         $this->confirmUninstall = $this->l(
             'Uninstalling will NOT restore already-watermarked images. Continue?'
@@ -79,6 +79,7 @@ class Phyto_Image_Sec extends Module
             'PHYTO_IMGSEC_OPACITY'           => 60,
             'PHYTO_IMGSEC_SIZE_PCT'          => 25,
             'PHYTO_IMGSEC_PROTECT_ENABLED'   => 1,
+            'PHYTO_IMGSEC_WEBP_QUALITY'      => 82,
         ];
 
         foreach ($defaults as $key => $value) {
@@ -98,6 +99,7 @@ class Phyto_Image_Sec extends Module
             'PHYTO_IMGSEC_OPACITY',
             'PHYTO_IMGSEC_SIZE_PCT',
             'PHYTO_IMGSEC_PROTECT_ENABLED',
+            'PHYTO_IMGSEC_WEBP_QUALITY',
         ];
 
         foreach ($keys as $key) {
@@ -305,10 +307,11 @@ class Phyto_Image_Sec extends Module
 
     private function processConfigSave(): string
     {
-        $errors   = [];
-        $position = Tools::getValue('PHYTO_IMGSEC_POSITION');
-        $opacity  = (int) Tools::getValue('PHYTO_IMGSEC_OPACITY');
-        $size     = (int) Tools::getValue('PHYTO_IMGSEC_SIZE_PCT');
+        $errors      = [];
+        $position    = Tools::getValue('PHYTO_IMGSEC_POSITION');
+        $opacity     = (int) Tools::getValue('PHYTO_IMGSEC_OPACITY');
+        $size        = (int) Tools::getValue('PHYTO_IMGSEC_SIZE_PCT');
+        $webpQuality = (int) Tools::getValue('PHYTO_IMGSEC_WEBP_QUALITY');
 
         $validPositions = ['center', 'bottom-right', 'bottom-left', 'tiled'];
 
@@ -324,6 +327,10 @@ class Phyto_Image_Sec extends Module
             $errors[] = $this->l('Watermark size must be between 5% and 75% of image width.');
         }
 
+        if ($webpQuality < 1 || $webpQuality > 100) {
+            $errors[] = $this->l('WebP quality must be between 1 and 100.');
+        }
+
         if (!empty($errors)) {
             return implode('', array_map([$this, 'displayError'], $errors));
         }
@@ -335,6 +342,7 @@ class Phyto_Image_Sec extends Module
         Configuration::updateValue('PHYTO_IMGSEC_POSITION', $position);
         Configuration::updateValue('PHYTO_IMGSEC_OPACITY', $opacity);
         Configuration::updateValue('PHYTO_IMGSEC_SIZE_PCT', $size);
+        Configuration::updateValue('PHYTO_IMGSEC_WEBP_QUALITY', $webpQuality);
         Configuration::updateValue(
             'PHYTO_IMGSEC_PROTECT_ENABLED',
             (int) Tools::getValue('PHYTO_IMGSEC_PROTECT_ENABLED')
@@ -432,6 +440,17 @@ class Phyto_Image_Sec extends Module
                 'required' => true,
             ],
             [
+                'type'     => 'text',
+                'label'    => $this->l('WebP Quality'),
+                'name'     => 'PHYTO_IMGSEC_WEBP_QUALITY',
+                'class'    => 'fixed-width-sm',
+                'desc'     => $this->l(
+                    'Quality for the .webp sibling files generated alongside each image. '
+                    . '80–85 gives excellent quality at ~35% smaller file size than JPEG. Range: 1–100.'
+                ),
+                'required' => true,
+            ],
+            [
                 'type'    => 'switch',
                 'label'   => $this->l('Enable JS Image Protection'),
                 'name'    => 'PHYTO_IMGSEC_PROTECT_ENABLED',
@@ -465,6 +484,7 @@ class Phyto_Image_Sec extends Module
             'PHYTO_IMGSEC_POSITION'          => Configuration::get('PHYTO_IMGSEC_POSITION'),
             'PHYTO_IMGSEC_OPACITY'           => (int) Configuration::get('PHYTO_IMGSEC_OPACITY'),
             'PHYTO_IMGSEC_SIZE_PCT'          => (int) Configuration::get('PHYTO_IMGSEC_SIZE_PCT'),
+            'PHYTO_IMGSEC_WEBP_QUALITY'      => (int) Configuration::get('PHYTO_IMGSEC_WEBP_QUALITY'),
             'PHYTO_IMGSEC_PROTECT_ENABLED'   => (int) Configuration::get('PHYTO_IMGSEC_PROTECT_ENABLED'),
         ];
 
@@ -489,6 +509,7 @@ class Phyto_Image_Sec extends Module
 
     /**
      * Build a watermarker instance from current configuration.
+     * Shop name + URL are pulled from PS core config — no extra admin input needed.
      */
     public function buildWatermarker(string $logoPath): PhytoImageWatermarker
     {
@@ -496,7 +517,10 @@ class Phyto_Image_Sec extends Module
             $logoPath,
             Configuration::get('PHYTO_IMGSEC_POSITION') ?: 'bottom-right',
             (int) (Configuration::get('PHYTO_IMGSEC_OPACITY') ?: 60),
-            (int) (Configuration::get('PHYTO_IMGSEC_SIZE_PCT') ?: 25)
+            (int) (Configuration::get('PHYTO_IMGSEC_SIZE_PCT') ?: 25),
+            (string) (Configuration::get('PS_SHOP_NAME') ?: ''),
+            (string) Tools::getShopDomain(true, true),
+            (int) (Configuration::get('PHYTO_IMGSEC_WEBP_QUALITY') ?: 82)
         );
     }
 

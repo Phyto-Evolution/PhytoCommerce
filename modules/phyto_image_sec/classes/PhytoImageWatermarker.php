@@ -7,6 +7,13 @@
  * Supports: JPEG, PNG, GIF, WebP (WebP requires GD compiled with --with-webp).
  * Alpha channel transparency is handled correctly for PNG logos on JPEG targets.
  *
+ * Pipeline per image:
+ *   1. Load base image
+ *   2. Composite watermark logo (positioned, opacity-adjusted)
+ *   3. Save back to disk (in-place, same format)
+ *   4. Embed IPTC copyright metadata into JPEG (shop name + URL, pure PHP)
+ *   5. Generate a sibling .webp file alongside (e.g. 123-home_default.webp)
+ *
  * @author    PhytoCommerce
  * @copyright 2024 PhytoCommerce
  * @license   MIT
@@ -30,16 +37,31 @@ class PhytoImageWatermarker
     /** @var int watermark width as % of base image width (5–75) */
     private int $sizePct;
 
+    /** @var string Shop name embedded as IPTC copyright in JPEG files */
+    private string $shopName;
+
+    /** @var string Shop URL embedded as IPTC source in JPEG files */
+    private string $shopUrl;
+
+    /** @var int WebP output quality 1–100 (default 82) */
+    private int $webpQuality;
+
     public function __construct(
         string $logoPath,
         string $position,
         int    $opacityPct,
-        int    $sizePct
+        int    $sizePct,
+        string $shopName    = '',
+        string $shopUrl     = '',
+        int    $webpQuality = 82
     ) {
-        $this->logoPath   = $logoPath;
-        $this->position   = $position;
-        $this->opacityPct = max(0, min(100, $opacityPct));
-        $this->sizePct    = max(5, min(75, $sizePct));
+        $this->logoPath    = $logoPath;
+        $this->position    = $position;
+        $this->opacityPct  = max(0, min(100, $opacityPct));
+        $this->sizePct     = max(5, min(75, $sizePct));
+        $this->shopName    = $shopName;
+        $this->shopUrl     = $shopUrl;
+        $this->webpQuality = max(1, min(100, $webpQuality));
     }
 
     // ──────────────────────────────────────────────────────────────
@@ -115,7 +137,19 @@ class PhytoImageWatermarker
 
         imagedestroy($wm);
 
+        // 1. Save watermarked image back in its original format
         $result = $this->saveImage($base, $imagePath, $baseMime);
+
+        if ($result) {
+            // 2. Embed IPTC copyright metadata into JPEG (pure PHP, no ImageMagick)
+            if ($baseMime === 'image/jpeg') {
+                $this->embedIptc($imagePath);
+            }
+
+            // 3. Generate sibling .webp file (e.g. 123-home_default.jpg → 123-home_default.webp)
+            $this->generateWebp($base, $imagePath);
+        }
+
         imagedestroy($base);
 
         return $result;
@@ -285,5 +319,114 @@ class PhytoImageWatermarker
                 imagecopy($base, $wm, $x, $y, 0, 0, $wW, $wH);
             }
         }
+    }
+
+    // ──────────────────────────────────────────────────────────────
+    //  IPTC metadata embedding (JPEG only, pure PHP)
+    // ──────────────────────────────────────────────────────────────
+
+    /**
+     * Embed IPTC copyright + source metadata into a JPEG file.
+     *
+     * Uses PHP's built-in iptcembed() — no ImageMagick required.
+     * The metadata is invisible to viewers but readable by tools like
+     * Photoshop, Lightroom, ExifTool, and file browsers.
+     *
+     * IPTC record 2 datasets used:
+     *   2#080 (0x50) = By-line       — shop name
+     *   2#115 (0x73) = Source        — shop URL
+     *   2#116 (0x74) = Copyright     — © YEAR shopName — shopUrl
+     */
+    private function embedIptc(string $jpegPath): void
+    {
+        if (empty($this->shopName) && empty($this->shopUrl)) {
+            return;
+        }
+
+        $block = $this->buildIptcBlock();
+
+        if (empty($block)) {
+            return;
+        }
+
+        $data = @iptcembed($block, $jpegPath, 0);
+
+        if ($data !== false) {
+            file_put_contents($jpegPath, $data);
+        }
+    }
+
+    /**
+     * Build the raw IPTC binary block.
+     *
+     * Each record: 0x1C + record_num + dataset_num + length_hi + length_lo + value
+     */
+    private function buildIptcBlock(): string
+    {
+        $year      = (int) date('Y');
+        $copyright = '© ' . $year . ' ' . $this->shopName
+                   . (empty($this->shopUrl) ? '' : ' — ' . $this->shopUrl);
+
+        // [record, dataset, value]
+        $tags = [
+            [2, 0x50, $this->shopName],   // By-line
+            [2, 0x73, $this->shopUrl],    // Source
+            [2, 0x74, $copyright],        // Copyright Notice
+        ];
+
+        $block = '';
+
+        foreach ($tags as [$rec, $ds, $value]) {
+            $value = trim((string) $value);
+
+            if ($value === '') {
+                continue;
+            }
+
+            // IPTC fields have a practical max of 255 bytes
+            $value = substr($value, 0, 255);
+            $len   = strlen($value);
+
+            $block .= "\x1c" . chr($rec) . chr($ds)
+                    . chr($len >> 8) . chr($len & 0xff)
+                    . $value;
+        }
+
+        return $block;
+    }
+
+    // ──────────────────────────────────────────────────────────────
+    //  WebP generation
+    // ──────────────────────────────────────────────────────────────
+
+    /**
+     * Write a sibling .webp file from the already-watermarked GD resource.
+     *
+     * The source file path is used only to derive the output filename.
+     * We write from the in-memory resource so we don't re-read from disk.
+     *
+     * Skips silently if GD was not compiled with WebP support.
+     *
+     * @param resource|GdImage $base  The watermarked GD resource (not destroyed yet)
+     * @param string           $sourcePath  e.g. /…/123-home_default.jpg
+     */
+    private function generateWebp($base, string $sourcePath): void
+    {
+        if (!function_exists('imagewebp')) {
+            return;
+        }
+
+        // Derive sibling path: replace last extension with .webp
+        $webpPath = preg_replace('/\.(jpe?g|png|gif)$/i', '.webp', $sourcePath);
+
+        // If the source was already .webp, avoid overwriting with itself
+        if ($webpPath === $sourcePath) {
+            return;
+        }
+
+        // imagewebp() needs alpha blending on for PNG sources;
+        // for JPEG sources it's a no-op but harmless.
+        imagealphablending($base, true);
+        @imagewebp($base, $webpPath, $this->webpQuality);
     }
 }
