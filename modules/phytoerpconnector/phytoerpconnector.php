@@ -9,7 +9,7 @@ class PhytoErpConnector extends Module {
         $this->name          = 'phytoerpconnector';
         $this->tab           = 'administration';
         $this->version       = '1.0.0';
-        $this->author        = 'Phyto Evolution';
+        $this->author        = 'Phyto Commerce';
         $this->need_instance = 0;
         parent::__construct();
         $this->displayName = 'Phyto ERP Connector';
