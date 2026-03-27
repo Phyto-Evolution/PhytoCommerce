@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `PREFIX_phyto_wholesale_application` (
   `date_add` datetime DEFAULT NULL,
   `date_upd` datetime DEFAULT NULL,
   PRIMARY KEY (`id_app`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=ENGINE_TYPE DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE IF NOT EXISTS `PREFIX_phyto_wholesale_product` (
   `id_ws` int(11) NOT NULL AUTO_INCREMENT,
@@ -22,4 +22,4 @@ CREATE TABLE IF NOT EXISTS `PREFIX_phyto_wholesale_product` (
   `wholesale_only` tinyint(1) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id_ws`),
   UNIQUE KEY `id_product` (`id_product`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=ENGINE_TYPE DEFAULT CHARSET=utf8mb4;

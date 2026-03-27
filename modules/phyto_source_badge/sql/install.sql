@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `PREFIX_phyto_source_badge_def` (
   `sort_order`  int(11)      NOT NULL DEFAULT 0,
   PRIMARY KEY (`id_badge`),
   UNIQUE KEY `badge_slug` (`badge_slug`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=ENGINE_TYPE DEFAULT CHARSET=utf8mb4;
 
 -- ---------------------------------------------------------------
 -- Table: product ↔ badge assignments
@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS `PREFIX_phyto_source_badge_product` (
   PRIMARY KEY (`id_link`),
   KEY `idx_product` (`id_product`),
   KEY `idx_badge`   (`id_badge`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=ENGINE_TYPE DEFAULT CHARSET=utf8mb4;
 
 -- ---------------------------------------------------------------
 -- Default badge definitions (5 seeds)

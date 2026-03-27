@@ -86,8 +86,7 @@ class PhytoWholesaleApplication extends ObjectModel
         $idApp = (int) Db::getInstance()->getValue(
             'SELECT `id_app` FROM `' . _DB_PREFIX_ . 'phyto_wholesale_application`
              WHERE `id_customer` = ' . $idCustomer . '
-             ORDER BY `date_add` DESC
-             LIMIT 1'
+             ORDER BY `date_add` DESC'
         );
 
         if (!$idApp) {

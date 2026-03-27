@@ -11,6 +11,8 @@ class PhytoQuickAdd extends Module {
         $this->version     = '3.0.0';
         $this->author      = 'Phyto Evolution';
         $this->need_instance = 0;
+        $this->bootstrap     = true;
+        $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => _PS_VERSION_];
         parent::__construct();
         $this->displayName = 'Phyto Quick Add';
         $this->description = 'Quickly add products and categories with taxonomy intelligence';
