@@ -82,6 +82,7 @@ class Phyto_Tc_Cost_Calculator extends Module
 
         // Replace table prefix placeholder
         $sql = str_replace('PREFIX_', _DB_PREFIX_, $sql);
+        $sql = str_replace('ENGINE_TYPE', _MYSQL_ENGINE_, $sql);
 
         // Split on semicolons to allow multi-statement files
         $statements = array_filter(

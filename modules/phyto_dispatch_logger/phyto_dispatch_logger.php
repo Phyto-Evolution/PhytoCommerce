@@ -102,6 +102,7 @@ class Phyto_Dispatch_Logger extends Module
 
         // Replace _PREFIX_ placeholder with real DB prefix
         $sql = str_replace('PREFIX_', _DB_PREFIX_, $sql);
+        $sql = str_replace('ENGINE_TYPE', _MYSQL_ENGINE_, $sql);
         $sql = str_replace("\r\n", "\n", $sql);
 
         // Split on statement delimiter and execute each statement

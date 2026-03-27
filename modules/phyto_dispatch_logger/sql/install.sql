@@ -15,4 +15,4 @@ CREATE TABLE IF NOT EXISTS `PREFIX_phyto_dispatch_log` (
   `date_upd`       datetime         DEFAULT NULL,
   PRIMARY KEY (`id_log`),
   UNIQUE KEY `id_order` (`id_order`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=ENGINE_TYPE DEFAULT CHARSET=utf8mb4;

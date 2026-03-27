@@ -1,0 +1,240 @@
+{
+  "pack_id": "sarraceniaceae",
+  "schema_version": "1.1.0",
+  "family": "Sarraceniaceae",
+  "common_name": "North American Pitcher Plants",
+  "description": "Sarraceniaceae contains three genera of pitcher plants native to the Americas: <em>Sarracenia</em> (North American pitcher plants), <em>Darlingtonia</em> (cobra lily), and <em>Heliamphora</em> (sun pitchers of South America). All trap insects in hollow pitcher-shaped leaves. Most are beginner-friendly and hardy in temperate gardens.",
+  "meta_title": "Sarraceniaceae — North American Pitcher Plants",
+  "meta_description": "Shop Sarracenia, Darlingtonia, and Heliamphora. Hardy North and South American pitcher plants with striking colouration. Beginner to expert species available.",
+  "meta_keywords": "Sarracenia, Darlingtonia, Heliamphora, North American pitcher plant, carnivorous plant",
+  "genera": [
+    {
+      "genus": "Sarracenia",
+      "common_name": "North American Pitcher Plants",
+      "description": "<em>Sarracenia</em> comprises 8–11 species native to eastern North America, from Florida to Canada. Their upright tubular pitchers are among the most ornamental of all carnivorous plants. Hardy and beginner-friendly, most tolerate outdoor bog gardens in temperate climates and require a cold winter dormancy.",
+      "meta_title": "Sarracenia — North American Pitcher Plants",
+      "meta_description": "Buy Sarracenia pitcher plants. Hardy, colourful, and easy to grow in outdoor bog gardens. Species, hybrids, and named cultivars available as TC-grown plants.",
+      "meta_keywords": "Sarracenia, North American pitcher plant, bog garden plant, hardy carnivorous plant, Sarracenia flava, Sarracenia purpurea",
+      "native_range": "Eastern North America — from Florida panhandle north to Nova Scotia and west to Mississippi",
+      "care_level": "beginner",
+      "tc_suitability": "high",
+      "conservation_status": "varies_by_species",
+      "species": [
+        {
+          "full_name": "Sarracenia purpurea",
+          "common_name": "Purple Pitcher Plant",
+          "description": "<em>Sarracenia purpurea</em> is the most widespread Sarracenia, ranging from Florida to Labrador. Its squat, fat pitchers rely on rainwater and rely on bacteria rather than enzymes to digest prey. Two subspecies: ssp. <em>purpurea</em> (northern; green with red veining) and ssp. <em>venosa</em> (southern; more heavily veined). Extremely cold-hardy — survives frozen solid.",
+          "meta_title": "Sarracenia purpurea — Purple Pitcher Plant",
+          "meta_description": "Hardy Sarracenia purpurea — most cold-tolerant pitcher plant. Survives freezing. Ideal for UK and northern European bog gardens. Multiple cultivars.",
+          "meta_keywords": "Sarracenia purpurea, purple pitcher plant, hardy bog plant, cold hardy carnivorous plant",
+          "native_range": "Eastern North America — Florida to Labrador (bogs, fens, wet heathland)",
+          "conservation_status": "LC",
+          "notes": "Extremely cold hardy. Does not need overhead protection in UK winters. Divide clumps every 3-4 years.",
+          "cultivars": [
+            { "cultivar": "Chipola", "description": "Robust southern form with vivid red veining; selected from Chipola River population, Florida." },
+            { "cultivar": "Burkii", "description": "Compact form of ssp. venosa var. burkii; pitcher mouths heavily lidded; deep burgundy colouration." }
+          ]
+        },
+        {
+          "full_name": "Sarracenia flava",
+          "common_name": "Yellow Pitcher Plant",
+          "description": "<em>Sarracenia flava</em> produces tall, elegant yellow-green pitchers up to 90 cm. The lid holds the pitcher open. Native to the south-eastern USA, it is highly variable with numerous colour forms — from pure yellow-green to deep red. One of the most spectacular and widely grown Sarracenia.",
+          "meta_title": "Sarracenia flava — Yellow Pitcher Plant Cultivars",
+          "meta_description": "Tall, elegant Sarracenia flava in multiple colour forms. Copper Top, Maxima, Ornata — TC-grown cultivars for bog gardens and greenhouse collections.",
+          "meta_keywords": "Sarracenia flava, yellow pitcher plant, Sarracenia Copper Top, tall pitcher plant",
+          "native_range": "South-eastern USA — Virginia to Florida panhandle (wet pine savannas)",
+          "conservation_status": "LC",
+          "notes": "Requires winter dormancy. Tall pitchers need protection from strong wind. Full sun essential for best colouration.",
+          "cultivars": [
+            { "cultivar": "Maxima", "description": "All-green form with no red pigmentation; pure yellow-green pitchers and yellow flower." },
+            { "cultivar": "Copper Top", "description": "Red lid only, green tube — creates a striking copper-topped appearance in full sun." },
+            { "cultivar": "Ornata", "description": "Heavy red veining covering most of the pitcher surface; one of the most ornate colour forms." }
+          ]
+        },
+        {
+          "full_name": "Sarracenia leucophylla",
+          "common_name": "White-top Pitcher Plant",
+          "description": "<em>Sarracenia leucophylla</em> is arguably the most beautiful Sarracenia. The upper portion of the pitcher and lid are white with green and red venation, creating a stained-glass effect. Vulnerable due to habitat loss in Gulf Coast pine savannas. Autumn-flushing — produces its best pitchers in late summer and autumn.",
+          "meta_title": "Sarracenia leucophylla — White-top Pitcher Plant",
+          "meta_description": "Stunning Sarracenia leucophylla with white-top pitchers and intricate red veining. Vulnerable in the wild. TC-grown plants with provenance documentation.",
+          "meta_keywords": "Sarracenia leucophylla, white pitcher plant, Tarnok Sarracenia, hurricane creek white",
+          "native_range": "USA — Gulf Coast (Florida panhandle, Alabama, Georgia, Mississippi)",
+          "conservation_status": "VU",
+          "notes": "Autumn-flushing species — produces its most spectacular pitchers Aug-Oct. Cold-hardy despite southern origin.",
+          "cultivars": [
+            { "cultivar": "Tarnok", "description": "Famous double-flowered form; flowers are sterile rosettes; one of the most distinctive Sarracenia cultivars." },
+            { "cultivar": "Schnell's Ghost", "description": "Ghostly white form with minimal veining; almost entirely white pitchers — extremely striking." },
+            { "cultivar": "Hurricane Creek White", "description": "Pristine white-topped pitchers with very fine red veining; selected from Hurricane Creek, Alabama population." }
+          ]
+        },
+        {
+          "full_name": "Sarracenia rubra",
+          "common_name": "Sweet Pitcher Plant",
+          "description": "<em>Sarracenia rubra</em> is a complex of closely related forms producing narrow, dark-veined pitchers and fragrant dark red flowers with a sweet scent. Several subspecies are recognised across the south-eastern USA coastal plain. Near Threatened due to habitat fragmentation.",
+          "meta_title": "Sarracenia rubra — Sweet Pitcher Plant",
+          "meta_description": "Fragrant-flowered Sarracenia rubra with narrow, dark-veined pitchers. Multiple subspecies available. Near Threatened — TC provenance important.",
+          "meta_keywords": "Sarracenia rubra, sweet pitcher plant, fragrant Sarracenia",
+          "native_range": "South-eastern USA — North Carolina south to Georgia and Alabama (seepage bogs)",
+          "conservation_status": "NT",
+          "notes": "Compact growing; good for smaller bog containers. Dark red flowers are sweetly fragrant — unusual for Sarracenia.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sarracenia alata",
+          "common_name": "Pale Pitcher Plant",
+          "description": "<em>Sarracenia alata</em> produces tall, pale yellow-green pitchers with a hood held nearly erect. Native to the Gulf Coast region; closely related to S. flava but with narrower pitchers and distinct genetics. Highly variable — some populations show deep red colouration.",
+          "meta_title": "Sarracenia alata — Pale Pitcher Plant",
+          "meta_description": "Tall, elegant Sarracenia alata from Gulf Coast pine savannas. Yellow-green to red forms. Easy, cold-hardy bog garden pitcher plant.",
+          "meta_keywords": "Sarracenia alata, pale pitcher plant, Gulf Coast Sarracenia",
+          "native_range": "USA — Louisiana, Mississippi, Alabama, Texas (wet pine savannas)",
+          "conservation_status": "LC",
+          "notes": "Similar culture to S. flava. Some red-lidded forms very ornamental. Full sun, poor acidic soil.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sarracenia psittacina",
+          "common_name": "Parrot Pitcher Plant",
+          "description": "<em>Sarracenia psittacina</em> is unique among Sarracenia for its lobster-pot trap design — the hooded, curved pitchers trap insects (and occasionally small aquatic animals) that cannot back out. The plant grows prostrate, often in seasonally flooded habitats. Highly ornamental.",
+          "meta_title": "Sarracenia psittacina — Parrot Pitcher Plant",
+          "meta_description": "Unique prostrate Sarracenia psittacina with lobster-pot pitchers. Vivid red and white colouration. Tolerates flooding. Hardy carnivorous plant.",
+          "meta_keywords": "Sarracenia psittacina, parrot pitcher plant, prostrate Sarracenia",
+          "native_range": "USA — Florida, Georgia, Mississippi, Louisiana (seasonally flooded pine flatwoods)",
+          "conservation_status": "LC",
+          "notes": "Prostrate growth; tolerates seasonal flooding. Red and white patterned pitchers very ornamental. Full sun.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sarracenia minor",
+          "common_name": "Hooded Pitcher Plant",
+          "description": "<em>Sarracenia minor</em> has distinctive windows (areoles) — translucent patches near the top of the pitcher — that confuse trapped insects attempting to escape. The hood curves over the pitcher mouth. Native to the south-eastern USA.",
+          "meta_title": "Sarracenia minor — Hooded Pitcher Plant",
+          "meta_description": "Sarracenia minor with distinctive translucent window patches. Compact, easy, ornamental. Ideal for bog garden collections.",
+          "meta_keywords": "Sarracenia minor, hooded pitcher plant, window pitcher plant",
+          "native_range": "USA — North Carolina south through Florida (wet pine flatwoods)",
+          "conservation_status": "LC",
+          "notes": "Translucent areoles unique to this species. Compact growth. Full sun, standard Sarracenia care.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sarracenia oreophila",
+          "common_name": "Green Pitcher Plant",
+          "description": "<em>Sarracenia oreophila</em> is the rarest and most endangered Sarracenia, restricted to a handful of sites in north-eastern Alabama and adjacent Georgia. Produces tall green pitchers with a hooded lid in spring, switching to flat phyllodia in summer. Federally Endangered in the USA. All cultivated plants must have legitimate TC provenance.",
+          "meta_title": "Sarracenia oreophila — Endangered Green Pitcher Plant",
+          "meta_description": "Federally Endangered Sarracenia oreophila — Green Pitcher Plant. Rare Alabama endemic. TC-grown plants only with full conservation provenance.",
+          "meta_keywords": "Sarracenia oreophila, green pitcher plant, endangered Sarracenia, rare carnivorous plant",
+          "native_range": "USA — north-eastern Alabama and adjacent Georgia (montane seepage bogs, 200-600 m)",
+          "conservation_status": "EN",
+          "notes": "Federally Endangered (USA). TC provenance essential — wild collection is a federal crime. Produces non-carnivorous phyllodia in summer. Hardy.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Darlingtonia",
+      "common_name": "Cobra Lily",
+      "description": "<em>Darlingtonia californica</em> is the sole species in its genus — a striking pitcher plant from cold mountain seeps in Oregon and northern California. The hooded pitcher resembles a cobra ready to strike, complete with a forked tongue-like appendage beneath the hood. It requires cold, constantly moving water at its roots and is the most challenging commonly grown Sarraceniaceae.",
+      "meta_title": "Darlingtonia californica — Cobra Lily",
+      "meta_description": "Spectacular Darlingtonia californica — the Cobra Lily. Cold-water seep specialist from Oregon and California. Intermediate-expert carnivorous plant.",
+      "meta_keywords": "Darlingtonia californica, cobra lily, cobra plant, California pitcher plant",
+      "native_range": "USA — Klamath Mountains, Oregon and northern California (cold mountain seeps)",
+      "care_level": "intermediate",
+      "tc_suitability": "medium",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Darlingtonia californica",
+          "common_name": "Cobra Lily",
+          "description": "<em>Darlingtonia californica</em> grows in ice-cold, fast-moving, nutrient-free mountain seep water. In cultivation it requires cool root temperatures — most growers use flowing cold water or ice packs in summer. The twisted, hooded pitchers are among the most architecturally dramatic of all carnivorous plants.",
+          "meta_title": "Darlingtonia californica — Cobra Lily for Sale",
+          "meta_description": "Buy Darlingtonia californica cobra lily. Cold-root conditions required. TC-grown plants. One of the most dramatic-looking carnivorous plants available.",
+          "meta_keywords": "Darlingtonia californica, cobra lily, buy cobra plant, cold pitcher plant",
+          "native_range": "USA — Klamath Mountains (Oregon/California border), mountain seeps and streambanks",
+          "conservation_status": "LC",
+          "notes": "Roots must stay cold (below 15°C in summer). Use cool, flowing, mineral-free water. Full sun. Stolon offsets produced freely once established.",
+          "cultivars": [
+            { "cultivar": "Othello", "description": "Select form with deep red-purple pitchers; very ornamental in high light." },
+            { "cultivar": "Mitch's Mt Shasta", "description": "Vigorous clone from Mt Shasta provenance; large pitchers; reliable performer in cultivation." }
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Heliamphora",
+      "common_name": "Sun Pitchers",
+      "description": "<em>Heliamphora</em> comprises approximately 23 species from the ancient tepui table-mountains of Venezuela, Guyana, and Brazil. Their simple, tube-like pitchers have a small nectar spoon on the back rather than a proper lid. They grow at high altitude in cool, constantly moist cloud-forest conditions — making them challenging but extraordinarily rewarding to cultivate.",
+      "meta_title": "Heliamphora — Sun Pitchers from the Tepuis",
+      "meta_description": "Buy Heliamphora sun pitchers from Venezuela's tepui mountains. Cool highland conditions. TC-grown plants for advanced carnivorous plant collectors.",
+      "meta_keywords": "Heliamphora, sun pitcher, tepui pitcher plant, Venezuelan carnivorous plant",
+      "native_range": "Venezuela, Guyana, Brazil — Guiana Highlands tepui table-mountains (1,000-2,800 m)",
+      "care_level": "expert",
+      "tc_suitability": "medium",
+      "conservation_status": "varies_by_species",
+      "species": [
+        {
+          "full_name": "Heliamphora nutans",
+          "common_name": "Nodding Sun Pitcher",
+          "description": "<em>Heliamphora nutans</em> is the most widely cultivated Heliamphora, native to Roraima-tepui. Its narrow, elegant pitchers nod at the tip and it is more tolerant of cultivation conditions than most species. A good entry point to the genus.",
+          "meta_title": "Heliamphora nutans — Easiest Sun Pitcher",
+          "meta_description": "Most beginner-friendly Heliamphora. Heliamphora nutans from Roraima-tepui — elegant nodding pitchers. Cool conditions required.",
+          "meta_keywords": "Heliamphora nutans, sun pitcher, Roraima tepui plant",
+          "native_range": "Venezuela — Roraima-tepui, Kukenan-tepui (1,800-2,800 m)",
+          "conservation_status": "LC",
+          "notes": "Most tolerant Heliamphora for cultivation. Cool days (18-24°C), cool nights (8-15°C). High humidity. Pure water only.",
+          "cultivars": [
+            { "cultivar": "Akopan", "description": "Form from Akopan-tepui; larger pitchers with pronounced nectar spoon." }
+          ]
+        },
+        {
+          "full_name": "Heliamphora minor",
+          "common_name": "Small Sun Pitcher",
+          "description": "<em>Heliamphora minor</em> is a compact species from Auyan-tepui. Despite its small stature, it produces very attractive pitchers and is one of the more reliable Heliamphora in cultivation. Notable for producing orange-red flowers.",
+          "meta_title": "Heliamphora minor — Compact Sun Pitcher",
+          "meta_description": "Compact Heliamphora minor from Auyan-tepui. Orange-red flowers, manageable size. TC-grown plants for tepui plant collectors.",
+          "meta_keywords": "Heliamphora minor, small sun pitcher, Auyan-tepui plant",
+          "native_range": "Venezuela — Auyan-tepui (1,800-2,400 m)",
+          "conservation_status": "LC",
+          "notes": "Compact; suitable for smaller growing spaces than most Heliamphora. Orange-red flowers attractive.",
+          "cultivars": [
+            { "cultivar": "Big Orange", "description": "Select clone with especially vivid orange-red flower colouration and robust growth." }
+          ]
+        },
+        {
+          "full_name": "Heliamphora heterodoxa",
+          "common_name": "Heterodox Sun Pitcher",
+          "description": "<em>Heliamphora heterodoxa</em> grows on the Gran Sabana plateau and several tepuis in Venezuela. It produces robust, wide pitchers and is one of the more reliable species in cultivation. A good second Heliamphora after H. nutans.",
+          "meta_title": "Heliamphora heterodoxa — Gran Sabana Sun Pitcher",
+          "meta_description": "Robust Heliamphora heterodoxa from Venezuela's Gran Sabana. Wide pitchers, reliable in cultivation. Good intermediate Heliamphora.",
+          "meta_keywords": "Heliamphora heterodoxa, Gran Sabana pitcher, Venezuelan sun pitcher",
+          "native_range": "Venezuela — Gran Sabana, Ptari-tepui, Soro-muru-tepui (1,200-2,200 m)",
+          "conservation_status": "LC",
+          "notes": "One of the more robust species. Slightly warmer tolerances than ultra-highland species. Good for intermediate Heliamphora growers.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Heliamphora tatei",
+          "common_name": "Tate's Sun Pitcher",
+          "description": "<em>Heliamphora tatei</em> is one of the largest Heliamphora, producing massive pitchers from the remote Cerro de la Neblina on the Brazil-Venezuela border. It is among the most sought-after and challenging tepui plants in cultivation. Named after the botanist George Tate.",
+          "meta_title": "Heliamphora tatei — Giant Sun Pitcher",
+          "meta_description": "Massive Heliamphora tatei from Cerro de la Neblina. One of the largest and most sought-after sun pitchers. For advanced tepui plant collectors.",
+          "meta_keywords": "Heliamphora tatei, giant sun pitcher, Neblina tepui plant, large Heliamphora",
+          "native_range": "Brazil/Venezuela border — Cerro de la Neblina (1,800-3,000 m)",
+          "conservation_status": "VU",
+          "notes": "Large and spectacular but demanding. Very cool, humid conditions essential. Advanced growers only.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Heliamphora ionasii",
+          "common_name": "Ionas' Sun Pitcher",
+          "description": "<em>Heliamphora ionasii</em> produces some of the most ornate pitchers in the genus, with a large, elaborate nectar spoon and striking red colouration. Endemic to Ilu-tepui and Tramen-tepui in Venezuela. Endangered due to its extremely restricted range.",
+          "meta_title": "Heliamphora ionasii — Ornate Endangered Sun Pitcher",
+          "meta_description": "Spectacular Heliamphora ionasii with elaborate nectar spoon and red colouration. Endangered. TC-grown plants only. Expert care conditions.",
+          "meta_keywords": "Heliamphora ionasii, ornate sun pitcher, endangered Heliamphora, Ilu-tepui",
+          "native_range": "Venezuela — Ilu-tepui and Tramen-tepui (1,700-2,300 m)",
+          "conservation_status": "EN",
+          "notes": "Very restricted wild range. Elaborate nectar spoon distinguishes it from other species. Expert care; pure water and cool conditions non-negotiable.",
+          "cultivars": []
+        }
+      ]
+    }
+  ]
+}
