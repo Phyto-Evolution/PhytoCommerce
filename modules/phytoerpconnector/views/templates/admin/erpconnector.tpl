@@ -160,7 +160,7 @@
                         <label>ERPNext URL</label>
                         <input type="url" name="erp_url" class="form-control"
                                value="{$erp_url|escape:'html'}"
-                               placeholder="https://erp.phytolabs.in">
+                               placeholder="https://erp.phytocommerce.com">
                         <small class="text-muted">Base URL of your ERPNext instance (no trailing slash)</small>
                     </div>
                     <div class="form-group">

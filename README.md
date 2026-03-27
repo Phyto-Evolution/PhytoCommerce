@@ -54,7 +54,7 @@ PhytoCommerce/
     └── bromeliads/    (1 pack)
 ```
 
-> **21 modules built · 15 taxonomy packs**
+> **22 modules built · 15 taxonomy packs**
 
 ---
 
@@ -62,12 +62,12 @@ PhytoCommerce/
 
 ### Option A — 1-click pack (recommended)
 
-Upload `phytocommerce_pack` to PrestaShop and click **Install**. All 20 modules are installed automatically.
+Upload `phytocommerce_pack` to PrestaShop and click **Install**. All 21 modules are installed automatically.
 
 ```bash
 # Build the standalone zip (if not deploying from full repo checkout)
 cd modules
-cp -r phyto_* phytocommercefooter phytoquickadd phytoerpconnector phytoseobooster \
+cp -r phyto_* phytocommercefooter phytocommerce_branding phytoquickadd phytoerpconnector phytoseobooster \
       phytocommerce_pack/bundled/
 zip -r phytocommerce_pack.zip phytocommerce_pack/
 # Upload via Admin → Modules → Upload a module
@@ -91,13 +91,14 @@ rm -rf /path/to/prestashop/var/cache/*/smarty/compile/*
 
 | Module | Description |
 |--------|-------------|
-| `phytocommerce_pack` | 1-click installer — installs all 20 PhytoCommerce modules from a single back-office button. Dashboard shows live install status per module. |
+| `phytocommerce_pack` | 1-click installer — installs all 21 PhytoCommerce modules from a single back-office button. Dashboard shows live install status per module. |
 
 ### Foundation
 
 | Module | Description |
 |--------|-------------|
 | `phytocommercefooter` | Branded footer replacement |
+| `phytocommerce_branding` | Theme branding layer (colors, banner, and brand tokens) |
 | `phytoquickadd` | Admin quick-add for products and categories with AI descriptions and botanical taxonomy import |
 | `phytoerpconnector` | Bidirectional sync with ERPNext v15 (orders, customers, products, invoices) |
 | `phytoseobooster` | AI-powered SEO automation — meta generation, schema markup, bulk alt-text audit |

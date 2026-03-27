@@ -22,7 +22,7 @@ class Phyto_Tc_Batch_Tracker extends Module
     private $configDefaults = array(
         'PHYTO_TC_SHIPPED_STATUS'      => 4,
         'PHYTO_TC_LOW_STOCK_THRESHOLD' => 10,
-        'PHYTO_TC_ALERT_EMAIL'         => '',
+        'PHYTO_TC_ALERT_EMAIL'         => 'aphytoevolution@gmail.com',
         'PHYTO_TC_AUTO_DECREMENT'      => 1,
     );
 

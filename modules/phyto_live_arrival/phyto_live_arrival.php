@@ -27,7 +27,7 @@ class Phyto_Live_Arrival extends Module
         'PHYTO_LAG_CLAIM_WINDOW'    => '2',
         'PHYTO_LAG_TERMS'           => 'By opting in to the Live Arrival Guarantee, you agree that shipments are only dispatched on approved shipping days. If your live goods arrive deceased or in critical condition, you may file a claim within the specified window.',
         'PHYTO_LAG_CLAIM_INSTR'     => 'Please provide clear photos of the packaging and the specimens. Claims must be filed within the allowed claim window from the date of delivery.',
-        'PHYTO_LAG_NOTIFY_EMAIL'    => '',
+        'PHYTO_LAG_NOTIFY_EMAIL'    => 'aphytoevolution@gmail.com',
     ];
 
     public function __construct()
@@ -129,9 +129,10 @@ class Phyto_Live_Arrival extends Module
             }
         }
 
-        // Default notify email to shop email
+        // Default notify email to brand support email, fallback to shop email
         if (empty(Configuration::get('PHYTO_LAG_NOTIFY_EMAIL'))) {
-            Configuration::updateValue('PHYTO_LAG_NOTIFY_EMAIL', Configuration::get('PS_SHOP_EMAIL'));
+            $fallback = Configuration::get('PS_SHOP_EMAIL') ?: 'aphytoevolution@gmail.com';
+            Configuration::updateValue('PHYTO_LAG_NOTIFY_EMAIL', $fallback);
         }
 
         return true;

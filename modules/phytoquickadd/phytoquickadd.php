@@ -9,7 +9,7 @@ class PhytoQuickAdd extends Module {
         $this->name        = 'phytoquickadd';
         $this->tab         = 'administration';
         $this->version     = '3.0.0';
-        $this->author      = 'Phyto Evolution';
+        $this->author      = 'Phyto Commerce';
         $this->need_instance = 0;
         parent::__construct();
         $this->displayName = 'Phyto Quick Add';
