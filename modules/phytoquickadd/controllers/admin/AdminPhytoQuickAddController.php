@@ -172,6 +172,9 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
             foreach (ImageType::getImagesTypes('products') as $type) {
                 ImageManager::resize($tmp_file, $path . '-' . $type['name'] . '.jpg', $type['width'], $type['height']);
             }
+            // Fire the standard PS watermark hook so phyto_image_sec (and any
+            // other watermark module) processes these thumbnails automatically.
+            Hook::exec('actionWatermark', ['id_image' => $image->id, 'id_product' => $id_product]);
         }
     }
 
