@@ -1,8 +1,8 @@
 # PhytoCommerce
 
-A PrestaShop 8 module suite for specialty plant e-commerce — designed around the operational needs of tissue-culture producers, nurseries, and rare plant retailers. Covers TC batch provenance, phytosanitary compliance, wholesale portals, recurring subscriptions, scientific taxonomy, customer grow journals, and more.
+A PrestaShop 8 module suite for specialty plant e-commerce — designed around the operational needs of tissue-culture producers, nurseries, and rare plant retailers. Covers TC batch provenance, phytosanitary compliance, wholesale portals, recurring subscriptions, scientific taxonomy, customer grow journals, image protection, and more.
 
-> **Last updated:** 2026-03-24
+> **Last updated:** 2026-03-27
 > Session logs: [`docs/CHECKPOINT.md`](docs/CHECKPOINT.md) · [`docs/ACTIVITY_LOG.md`](docs/ACTIVITY_LOG.md)
 
 ---
@@ -42,9 +42,12 @@ PhytoCommerce/
 │   ├── phyto_phytosanitary/              ✅ Built
 │   ├── phyto_tc_cost_calculator/         ✅ Built
 │   │
-│   └── [COMMERCE]
-│       ├── phyto_wholesale_portal/       ✅ Built
-│       └── phyto_subscription/           ✅ Built
+│   ├── [COMMERCE]
+│   ├── phyto_wholesale_portal/           ✅ Built
+│   ├── phyto_subscription/               ✅ Built
+│   │
+│   └── [SECURITY]
+│       └── phyto_image_sec/              ✅ Built  (v0.1 — products; v0.2 video planned)
 │
 └── taxonomy/                             ✅ Built
     ├── carnivorous/   (8 packs)
@@ -54,7 +57,123 @@ PhytoCommerce/
     └── bromeliads/    (1 pack)
 ```
 
-> **21 modules built · 15 taxonomy packs**
+> **22 modules built · 15 taxonomy packs**
+
+---
+
+## What Each Module Does (Plain English)
+
+This section explains every module in simple terms — no technical jargon.
+
+---
+
+### phytocommerce_pack — The All-in-One Installer
+Think of this as the "install everything" button. Instead of uploading and installing each module one by one, you upload just this single pack and it installs all 21 PhytoCommerce modules automatically in the correct order. It also gives you a dashboard showing which modules are installed and which aren't. Perfect for setting up a brand new store quickly.
+
+---
+
+### phytocommercefooter — Branded Footer
+Replaces the default PrestaShop footer with a custom Phyto-branded one. Keeps your store looking consistent and professional without having to edit theme files. Simple to enable — just install and it takes over the footer automatically.
+
+---
+
+### phytoquickadd — Fast Product Entry
+Adds a "Quick Add" page under your Catalog menu so you can create products much faster than the default PrestaShop product form. Type a plant name, generate a description using AI with one click, set price and stock, upload an image, and save — all from a single streamlined form. Also lets you import entire botanical family trees (genus → species → cultivar) in one go from pre-built taxonomy packs.
+
+---
+
+### phytoerpconnector — ERP Sync (ERPNext)
+Keeps your PrestaShop store and your ERPNext accounting/inventory system in sync automatically. When a customer places an order on your store, it creates a matching Sales Order in ERPNext. New customer registrations create Customer records. Product changes push across. Invoices can be pulled back from ERPNext into PrestaShop. No more manually entering the same data in two places.
+
+---
+
+### phytoseobooster — SEO on Autopilot
+Handles the boring but important SEO work automatically. When you add a product and forget to fill in the meta title and description, this module writes them for you using AI. It also adds structured data (JSON-LD schema) to every product page so Google understands what you're selling. Includes a bulk audit tool that shows you which products are missing SEO data so you can fix everything in one go.
+
+---
+
+### phyto_grex_registry — Scientific Taxonomy Per Product
+Lets you attach proper scientific information to each product — genus, species, hybrid/grex name, the registration authority that named it, and its conservation status. This shows up as a neat "Scientific Profile" tab on the product page. Useful for rare plant buyers who want to know exactly what they're getting and where it sits in the botanical family tree.
+
+---
+
+### phyto_tc_batch_tracker — Tissue Culture Batch Provenance
+Tracks every batch of tissue-culture plants from flask to sale. Each batch gets a code, a generation label (G0, G1, G2, etc.), and can reference a parent batch — so you always know the full lineage of any plant. Logs contamination events with type and severity. Automatically reduces available units as orders are fulfilled. Sends a low-stock alert email when a batch is running low. Can print QR-code labels for physical batch tubes.
+
+---
+
+### phyto_growth_stage — Stage Labels on Products
+Lets you tag each product with its current growth stage — Deflasked, Juvenile, Semi-Mature, Mature, or Specimen. The stage shows as a coloured badge on the product listing and product page so buyers know exactly what size/age plant they're getting. Helps set realistic expectations and reduces "it's smaller than I thought" complaints.
+
+---
+
+### phyto_seasonal_availability — Seasonal Blocking
+Some plants shouldn't be sold in certain months — too hot to ship in summer, dormant in winter. This module lets you mark which months a product is unavailable. When a customer visits during a blocked month, the "Add to Cart" button is hidden and a message explains why, with an option to enter their email for a notification when the product comes back in season.
+
+---
+
+### phyto_care_card — Downloadable Care Guides
+Generates a printable PDF care card for each product covering everything a buyer needs to know: light requirements, watering frequency, humidity, temperature range, potting media, dormancy notes, and more. The care card is automatically attached to the order confirmation email so customers get it the moment they buy. Can also be downloaded directly from the product page.
+
+---
+
+### phyto_climate_zone — India Climate Suitability Checker
+Lets customers type in their PIN code to instantly find out if a plant will survive in their part of India. The module maps all Indian PIN prefixes to 15 climate zones and checks the plant's tagged zones against where the customer lives. Shows a monthly temperature and humidity chart, highlights frost risk, monsoon months, and gives a clear "Suitable / Not Recommended" verdict — all without needing an internet API call (data is stored locally).
+
+---
+
+### phyto_acclimation_bundler — Acclimation Kit Suggestions
+When a customer adds a tissue-culture or young plant to their cart, this module pops up a widget suggesting the acclimation accessories they'll need (humidity domes, rooting powder, speciality substrate, etc.). You configure which products make up the kit and which plant types trigger the suggestion. Can offer a small bundle discount if the customer adds all kit items at once.
+
+---
+
+### phyto_live_arrival — Live Arrival Guarantee
+Offers customers an opt-in "Live Arrival Guarantee" during checkout — for a small configurable fee, they're covered if their plant arrives dead or severely damaged. The module tracks which orders have LAG coverage and provides a claim form (with photo upload) that feeds directly into your admin panel. Configurable claim window, shipping carrier rules, and blackout dates for extreme weather.
+
+---
+
+### phyto_growers_journal — Customer Grow Diaries
+Lets customers who bought a plant write ongoing journal entries about how it's growing — with photos, notes, and milestone markers. Only buyers of that specific product can post (purchase-gated), which keeps it authentic. Entries go through admin approval before going public. Shows up as a "Growers Journal" tab on the product page so potential buyers can see real growth results from other customers.
+
+---
+
+### phyto_collection_widget — Personal Plant Collections
+Automatically builds each customer a personal "My Collection" page populated from their order history. Each plant in the collection can be toggled public or private, and customers can add personal care notes to each one. A shareable link lets them show off their collection to friends without exposing their account details. Think of it as a mini plant journal/portfolio tied to their purchases.
+
+---
+
+### phyto_source_badge — Origin & Certification Badges
+Lets you create and assign badges to products that tell buyers where the plant came from and how it was produced — examples: "Tissue Culture", "Wild Collected", "Nursery Grown", "Certified Organic", "Conservation Propagation". Badges appear on product listing cards and the product page. Helps buyers make informed choices and builds trust around your sourcing practices.
+
+---
+
+### phyto_dispatch_logger — Shipment Evidence Log
+Every time you dispatch an order, this module lets you log the shipping conditions: temperature at packing, humidity, packing method used, whether gel packs or heat packs were included, and optional photos of the packed box. This creates a tamper-proof timestamped record per shipment. Useful for resolving disputes — if a customer claims damage, you have documented proof of the condition the plants left in.
+
+---
+
+### phyto_phytosanitary — Regulatory Document Management
+Manages phytosanitary certificates, import permits, and other regulatory PDFs per product. You upload the document, set an expiry date, and the module tracks validity with colour-coded badges (green = valid, orange = expiring soon, red = expired). Documents can be made public so buyers can download them from the product page. References are also automatically appended to packing slips.
+
+---
+
+### phyto_tc_cost_calculator — Production Cost Tool
+A back-office calculator for working out the true cost of producing tissue-culture plants. Enter substrate cost, electricity, labour hours, contamination losses, overhead allocation, and desired margin — the module calculates your break-even price and suggested retail price. Helps you price TC products accurately instead of guessing. Admin-only, never visible to customers.
+
+---
+
+### phyto_wholesale_portal — B2B Wholesale Tier
+Adds a full wholesale layer to your store. Businesses can apply for a wholesale account by filling in a form with their business name, GST number, and website. You approve or reject applications. Approved customers get access to wholesale-only pricing, minimum order quantity (MOQ) rules are enforced in the cart, and tiered pricing tables show how the price drops with volume. Approved customers can also pay by invoice on delivery.
+
+---
+
+### phyto_subscription — Recurring Subscriptions
+Lets customers subscribe to regular deliveries — mystery plant boxes, monthly replenishment orders, or curated collections. You create subscription plans with name, price, frequency, and description. Customers browse the plans page, subscribe (requires login), and recurring payments are handled via Cashfree. Manage all subscribers and their status from a dedicated admin panel.
+
+---
+
+### phyto_image_sec — Image Protection (v0.1)
+Protects your product photography from being copied or stolen. When installed, it automatically stamps your shop logo as a watermark onto every product image — on upload and when thumbnails are regenerated. You control the watermark position (corner, centre, or tiled), opacity, and size. On the front end, right-clicking images is disabled, dragging images to the desktop is blocked, and Ctrl+S is intercepted — all without breaking the image zoom or lightbox. A batch processor lets you watermark your entire existing catalogue in one click. v0.2 will extend this protection to video assets.
 
 ---
 
@@ -62,7 +181,7 @@ PhytoCommerce/
 
 ### Option A — 1-click pack (recommended)
 
-Upload `phytocommerce_pack` to PrestaShop and click **Install**. All 20 modules are installed automatically.
+Upload `phytocommerce_pack` to PrestaShop and click **Install**. All 21 modules are installed automatically.
 
 ```bash
 # Build the standalone zip (if not deploying from full repo checkout)
@@ -91,7 +210,7 @@ rm -rf /path/to/prestashop/var/cache/*/smarty/compile/*
 
 | Module | Description |
 |--------|-------------|
-| `phytocommerce_pack` | 1-click installer — installs all 20 PhytoCommerce modules from a single back-office button. Dashboard shows live install status per module. |
+| `phytocommerce_pack` | 1-click installer — installs all 21 PhytoCommerce modules from a single back-office button. Dashboard shows live install status per module. |
 
 ### Foundation
 
@@ -138,12 +257,18 @@ rm -rf /path/to/prestashop/var/cache/*/smarty/compile/*
 | `phyto_wholesale_portal` | B2B wholesale tier — application workflow, MOQ enforcement, tiered pricing, invoice-on-delivery |
 | `phyto_subscription` | Recurring mystery-box and replenishment subscriptions |
 
+### Security
+
+| Module | Description |
+|--------|-------------|
+| `phyto_image_sec` | Watermarks all product images with your shop logo; JS blocks right-click, drag-to-save, and Ctrl+S on product/category pages. Batch processor for existing catalogue. v0.1 — product images. |
+
 ---
 
 ## Requirements
 
 - PrestaShop 8.0+
-- PHP 8.1+
+- PHP 8.1+ with GD extension (required by `phyto_image_sec`)
 - MySQL / MariaDB
 - cURL enabled (required by `phytoerpconnector`, `phytoseobooster`, `phytoquickadd`)
 
@@ -334,6 +459,28 @@ python3 generate_climate_data.py
 
 ---
 
+### phyto_image_sec (v0.1)
+
+**Config keys:**
+
+| Key | Default | Description |
+|-----|---------|-------------|
+| `PHYTO_IMGSEC_WATERMARK_ENABLED` | 1 | Enable/disable watermarking on image upload |
+| `PHYTO_IMGSEC_POSITION` | `bottom-right` | `center` / `bottom-right` / `bottom-left` / `tiled` |
+| `PHYTO_IMGSEC_OPACITY` | 60 | Watermark opacity 0–100 |
+| `PHYTO_IMGSEC_SIZE_PCT` | 25 | Watermark width as % of image width (5–75) |
+| `PHYTO_IMGSEC_PROTECT_ENABLED` | 1 | Enable/disable JS front-office protection |
+
+**Watermark engine:** `classes/PhytoImageWatermarker.php` — pure GD, no external dependencies. Handles JPEG, PNG, GIF, WebP. Correct per-pixel alpha compositing for PNG logos.
+
+**Batch processor:** Admin → Module Config → "Start Batch Watermark" — processes all product images in chunks of 20 via AJAX with a live progress bar.
+
+**Hooks used:** `actionWatermark` (fires after any product image is generated/regenerated, including via `phytoquickadd`), `displayHeader` (JS protection), `displayBackOfficeHeader` (admin assets).
+
+**Note:** Disable PrestaShop's built-in Watermark module before using this one to avoid double watermarks.
+
+---
+
 ## Taxonomy Packs
 
 Botanical taxonomy data lives in `/taxonomy/` and is fetched live by `phytoquickadd` (1-hour cache).
@@ -418,6 +565,7 @@ docker cp modules/phyto_grex_registry ps-test:/var/www/html/modules/
 | `phyto_wholesale_portal` | Customers → Wholesale → approve application; log in as wholesale customer → tiered pricing shown |
 | `phyto_subscription` | Catalog → Subscription Plans → create plan; visit `/module/phyto_subscription/plans` |
 | `phytoquickadd` | Catalog → Phyto Quick Add → Taxonomy Packs tab → loads pack list from GitHub |
+| `phyto_image_sec` | Upload a product image → check it gets watermarked; visit product page → right-click on image blocked |
 
 ---
 
