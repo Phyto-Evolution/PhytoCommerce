@@ -56,6 +56,13 @@
     "icon": "sprout"
   },
   {
+    "id": "phyto_image_sec",
+    "title": "Phyto Image Sec — Image Protection",
+    "description": "",
+    "category": "Run the Business",
+    "icon": "badge"
+  },
+  {
     "id": "phyto_live_arrival",
     "title": "Phyto Live Arrival Guarantee",
     "description": "Live Arrival Guarantee opt-in at checkout with configurable shipping windows, fee management, and claim forms.",
@@ -114,7 +121,7 @@
   {
     "id": "phytocommerce_pack",
     "title": "PhytoCommerce Pack",
-    "description": "1-click installer for the complete PhytoCommerce module suite — 20 modules for specialty plant e-commerce.",
+    "description": "1-click installer for the complete PhytoCommerce module suite — 21 modules for specialty plant e-commerce.",
     "category": "Run the Business",
     "icon": "badge"
   },
