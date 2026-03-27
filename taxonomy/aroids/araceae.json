@@ -1,0 +1,281 @@
+{
+  "pack_id": "araceae",
+  "schema_version": "1.1",
+  "family": "Araceae",
+  "common_name": "Aroids",
+  "description": "Araceae is a large monocot family comprising over 140 genera and 3700 species of flowering plants known as aroids. The family includes some of the most popular houseplants and exotic collectibles in the world: Monstera, Philodendron, Anthurium, and Alocasia among them. Aroids are characterised by their distinctive spadix inflorescence enclosed in a spathe, and range from small creeping groundcovers to giant epiphytes and climbers.",
+  "meta_title": "Aroids — Araceae | PhytoCommerce",
+  "meta_description": "Shop rare and collectible aroids — Monstera, Philodendron, Anthurium, Alocasia. TC-grown plants with full provenance and cultivar certificates.",
+  "meta_keywords": "aroids, Araceae, Monstera, Philodendron, Anthurium, Alocasia, rare houseplants, buy aroids",
+  "genera": [
+    {
+      "genus": "Monstera",
+      "common_name": "Split-leaf Philodendrons",
+      "description": "<em>Monstera</em> comprises about 50 species of hemiepiphytic climbing aroids from tropical Central and South America. Famous for the large, perforated or fenestrated leaves of mature plants, Monstera have become iconic in interior design. The genus is defined by its cheese-like leaf holes (fenestrae), which are thought to allow wind and light to pass through without leaf damage.",
+      "meta_title": "Monstera — Split-leaf Aroids",
+      "meta_description": "Buy rare and classic Monstera plants. Fenestrated climbing aroids for collectors and plant enthusiasts; TC-grown with cultivar provenance.",
+      "meta_keywords": "Monstera for sale, rare Monstera, Monstera deliciosa, Monstera albo, fenestrated aroid",
+      "native_range": "Tropical Central and South America",
+      "care_level": "Beginner–Intermediate",
+      "tc_suitability": "High",
+      "conservation_status": "varies by species",
+      "species": [
+        {
+          "full_name": "Monstera deliciosa",
+          "common_name": "Swiss Cheese Plant",
+          "description": "<em>Monstera deliciosa</em> is the most widely grown aroid houseplant in the world. Native from Mexico to Panama, it produces enormous fenestrated leaves up to 90 cm across on mature plants. Aerial roots anchor it to host trees. The edible fruit (ceriman) is fragrant and pineapple-like. Multiple variegated and sport cultivars exist.",
+          "meta_title": "Monstera deliciosa — Swiss Cheese Plant",
+          "meta_description": "Buy Monstera deliciosa plants and cultivars. Classic Swiss cheese plant with iconic fenestrated leaves; species, albo, and Thai Constellation forms available.",
+          "meta_keywords": "Monstera deliciosa, Swiss cheese plant, Monstera albo variegata, Thai Constellation",
+          "native_range": "Mexico to Panama, naturalised worldwide",
+          "conservation_status": "LC",
+          "notes": "Tolerates moderate light but fenestrates best in bright indirect light. Water when top 2 cm dry.",
+          "cultivars": [
+            { "cultivar": "Albo Variegata", "description": "Stable white sectoral variegation on leaves and petioles; highly sought collector form." },
+            { "cultivar": "Thai Constellation", "description": "Creamy yellow-white speckled variegation produced via TC; more stable than albo." },
+            { "cultivar": "Aurea", "description": "Golden-yellow variegation; rarer than albo forms with striking yellow sectors." },
+            { "cultivar": "Mint", "description": "Minty-green marbled variegation; pastel tones make it one of the most unusual colour forms." }
+          ]
+        },
+        {
+          "full_name": "Monstera adansonii",
+          "common_name": "Five Holes Plant",
+          "description": "<em>Monstera adansonii</em> is a smaller, more compact climbing Monstera with oval leaves featuring large oval holes. Highly variable across its range from Mexico to Argentina. Easy-care and fast-growing, making it popular for shelves and hanging baskets.",
+          "meta_title": "Monstera adansonii — Five Holes Plant",
+          "meta_description": "Buy Monstera adansonii, the five holes plant. Fast-growing climbing aroid ideal for shelves and hanging baskets; wide and narrow form available.",
+          "meta_keywords": "Monstera adansonii, five holes plant, Swiss cheese vine, compact Monstera",
+          "native_range": "Mexico to Argentina and West Indies",
+          "conservation_status": "LC",
+          "notes": "Fast grower; tolerates lower light than M. deliciosa. Two forms: wide and narrow leaf.",
+          "cultivars": [
+            { "cultivar": "Variegata", "description": "White sectoral variegation; rarer than M. deliciosa albo but similarly prized by collectors." }
+          ]
+        },
+        {
+          "full_name": "Monstera obliqua",
+          "common_name": "Window Leaf Monstera",
+          "description": "<em>Monstera obliqua</em> is one of the rarest Monstera species, with leaves that are more hole than leaf — the extensive perforations can exceed 90% of the leaf area. Extremely slow-growing and seldom seen in cultivation. Often confused with <em>M. adansonii</em>.",
+          "meta_title": "Monstera obliqua — Ultra-rare Window Leaf",
+          "meta_description": "Buy genuine Monstera obliqua — one of the rarest aroids with leaves that are mostly hole. Extremely slow-growing collector specimen.",
+          "meta_keywords": "Monstera obliqua, rare Monstera, window leaf plant, ultra-rare aroid",
+          "native_range": "Bolivia, Peru, Ecuador, Venezuela",
+          "conservation_status": "NT",
+          "notes": "Extremely rare and slow. Requires high humidity (>70%) and very careful watering.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera standleyana",
+          "common_name": "Cobra Plant",
+          "description": "<em>Monstera standleyana</em> is a compact climbing species with elongated oval leaves lacking fenestrations. Available in green and variegated forms. Excellent climber for moss poles; manageable size makes it ideal for indoor spaces.",
+          "meta_title": "Monstera standleyana — Cobra Plant Aroid",
+          "meta_description": "Buy Monstera standleyana, the cobra plant aroid. Unfenestrated climbing Monstera with striking albo and aurea variegated forms.",
+          "meta_keywords": "Monstera standleyana, cobra plant, Monstera standleyana albo, compact Monstera",
+          "native_range": "Costa Rica, Panama",
+          "conservation_status": "LC",
+          "notes": "Compact climber; no fenestrations. Variegated forms highly collectible.",
+          "cultivars": [
+            { "cultivar": "Albo Variegata", "description": "Bold white streaks and sectors across the dark green leaves." },
+            { "cultivar": "Aurea", "description": "Golden-yellow variegation giving a warm, tropical appearance." }
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Philodendron",
+      "common_name": "Philodendrons",
+      "description": "<em>Philodendron</em> is one of the largest genera in Araceae, with nearly 500 species ranging from compact groundcovers to massive tree-climbing epiphytes. Native to the Neotropics, philodendrons are divided into climbing (hemiepiphytic) and non-climbing (terrestrial) groups. The genus includes many beloved houseplants and some of the most valuable rare aroids in the collector market.",
+      "meta_title": "Philodendron — Tropical Climbing Aroids",
+      "meta_description": "Buy rare and classic Philodendron plants. Climbing and self-heading species, variegated cultivars, TC-grown with full provenance.",
+      "meta_keywords": "Philodendron for sale, rare Philodendron, Philodendron gloriosum, Philodendron melanochrysum, climbing aroid",
+      "native_range": "Tropical Central and South America, Caribbean",
+      "care_level": "Beginner–Intermediate",
+      "tc_suitability": "High",
+      "conservation_status": "varies by species",
+      "species": [
+        {
+          "full_name": "Philodendron gloriosum",
+          "common_name": "Glorious Philodendron",
+          "description": "<em>Philodendron gloriosum</em> is a terrestrial creeping species from Colombia and Venezuela prized for its velvety heart-shaped leaves with striking white venation. Leaves can exceed 90 cm in nature. A slow grower but one of the most coveted collectible aroids. Thrives in high humidity with excellent drainage.",
+          "meta_title": "Philodendron gloriosum — Glorious Velvet Philodendron",
+          "meta_description": "Buy Philodendron gloriosum, the glorious philodendron. Velvety heart leaves with white veins; terrestrial creeper from Colombia. TC-grown stock.",
+          "meta_keywords": "Philodendron gloriosum, glorious philodendron, velvet aroid, Colombia Philodendron",
+          "native_range": "Colombia, Venezuela",
+          "conservation_status": "NT",
+          "notes": "Terrestrial; grows horizontally. Needs high humidity and well-draining chunky mix.",
+          "cultivars": [
+            { "cultivar": "Round Form", "description": "Rounder leaf shape with more prominent primary veination; selected collector clone." }
+          ]
+        },
+        {
+          "full_name": "Philodendron melanochrysum",
+          "common_name": "Black Gold Philodendron",
+          "description": "<em>Philodendron melanochrysum</em> is a stunning climbing species with long, velvety dark green leaves with golden venation when juvenile. Native to the cloud forests of Colombia. Among the most beautiful rare aroids, with iridescent foliage catching light magnificently.",
+          "meta_title": "Philodendron melanochrysum — Black Gold Aroid",
+          "meta_description": "Buy Philodendron melanochrysum, the black gold philodendron. Velvety iridescent dark leaves with golden veins; climbing cloud forest species.",
+          "meta_keywords": "Philodendron melanochrysum, black gold philodendron, velvet climbing aroid, Colombia aroid",
+          "native_range": "Colombia (cloud forests)",
+          "conservation_status": "NT",
+          "notes": "Climbing; loves moss poles. Benefits from misting. Intermediate to high humidity.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron bipennifolium",
+          "common_name": "Horse Head Philodendron",
+          "description": "<em>Philodendron bipennifolium</em> is a climbing species from Brazil and Argentina with distinctively lobed, guitar-shaped leaves. Young leaves are simple; mature foliage develops elaborate lobing. Often called the 'horsehead' or 'violin leaf' philodendron for its leaf silhouette.",
+          "meta_title": "Philodendron bipennifolium — Horse Head Philodendron",
+          "meta_description": "Buy Philodendron bipennifolium, the horse head philodendron. Lobed guitar-shaped leaves on a vigorous climbing aroid from South America.",
+          "meta_keywords": "Philodendron bipennifolium, horse head philodendron, violin leaf philodendron, climbing philodendron",
+          "native_range": "Brazil, Argentina, Paraguay",
+          "conservation_status": "LC",
+          "notes": "Vigorous climber. Juvenile and mature leaf forms differ dramatically in lobing.",
+          "cultivars": [
+            { "cultivar": "Aurea", "description": "Golden-yellow foliage phase; striking and uncommon in the trade." }
+          ]
+        },
+        {
+          "full_name": "Philodendron verrucosum",
+          "common_name": "Ecuador Philodendron",
+          "description": "<em>Philodendron verrucosum</em> is a climbing species prized for its deeply saturated dark green velvety leaves with pale to yellow-green venation, and its distinctive furry red-orange petioles. Native to Ecuador and neighbouring countries at intermediate elevations.",
+          "meta_title": "Philodendron verrucosum — Ecuador Velvet Aroid",
+          "meta_description": "Buy Philodendron verrucosum, the Ecuador velvet philodendron. Furry petioles, dark velvety leaves with light venation; intermediate elevation species.",
+          "meta_keywords": "Philodendron verrucosum, Ecuador philodendron, velvet aroid, hairy petiole Philodendron",
+          "native_range": "Ecuador, Costa Rica, Panama, Colombia",
+          "conservation_status": "LC",
+          "notes": "Prefers intermediate conditions (18–24°C). Hairy cataphylls; dramatic dark foliage.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron xanadu",
+          "common_name": "Xanadu Philodendron",
+          "description": "<em>Philodendron xanadu</em> is a self-heading (non-climbing) compact species producing deeply lobed, glossy green leaves. Excellent as a landscape or indoor specimen plant. Introduced to horticulture from Brazil and remains a popular choice for its tidy growth habit.",
+          "meta_title": "Philodendron xanadu — Self-heading Compact Aroid",
+          "meta_description": "Buy Philodendron xanadu, the compact self-heading philodendron. Deeply lobed glossy leaves; ideal indoor or tropical landscape plant.",
+          "meta_keywords": "Philodendron xanadu, xanadu philodendron, self-heading philodendron, compact aroid",
+          "native_range": "Brazil",
+          "conservation_status": "LC",
+          "notes": "Self-heading; stays compact. Great for pots. Tolerates drier conditions than climbing species.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Anthurium",
+      "common_name": "Flamingo Flowers",
+      "description": "<em>Anthurium</em> is the largest genus in Araceae, with over 1000 species of flowering and foliage aroids native to the Neotropics. The genus includes both ornamental flowering types (e.g., <em>A. andraeanum</em>) prized for their waxy spathes, and foliage collectors' gems like <em>A. crystallinum</em> and <em>A. magnificum</em> with their dramatically veined velvety leaves.",
+      "meta_title": "Anthurium — Flamingo Flowers and Velvets",
+      "meta_description": "Buy Anthurium plants — flamingo flowers and rare velvet-leaf collector species. TC-grown with cultivar provenance. Foliage and flowering types available.",
+      "meta_keywords": "Anthurium for sale, rare Anthurium, Anthurium crystallinum, velvet Anthurium, flamingo flower",
+      "native_range": "Tropical Americas (Mexico to Argentina and Caribbean)",
+      "care_level": "Intermediate",
+      "tc_suitability": "High",
+      "conservation_status": "varies by species",
+      "species": [
+        {
+          "full_name": "Anthurium crystallinum",
+          "common_name": "Crystal Anthurium",
+          "description": "<em>Anthurium crystallinum</em> is a stunning foliage species from Panama and Colombia. Large, dark green, velvety heart-shaped leaves are decorated with a crystalline silver-white venation pattern that catches light spectacularly. One of the most prized collector aroids; thrives in high humidity and well-draining medium.",
+          "meta_title": "Anthurium crystallinum — Crystal Velvet Anthurium",
+          "meta_description": "Buy Anthurium crystallinum, the crystal anthurium. Velvety dark leaves with silver crystalline veins; rare collector aroid from Panama and Colombia.",
+          "meta_keywords": "Anthurium crystallinum, crystal anthurium, velvet Anthurium, rare collector aroid",
+          "native_range": "Panama, Colombia",
+          "conservation_status": "NT",
+          "notes": "High humidity (>60%) essential. Well-draining epiphytic mix. Avoid cold draughts.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium magnificum",
+          "common_name": "Magnificent Anthurium",
+          "description": "<em>Anthurium magnificum</em> is a large-leaved velvety species from Colombia. The enormous leaves can exceed 60 cm in cultivation, with prominent pale venation on a deep matte green background. Distinguished from <em>A. crystallinum</em> by its distinctly quadrangular petiole. A true collector showpiece.",
+          "meta_title": "Anthurium magnificum — Magnificent Velvet Aroid",
+          "meta_description": "Buy Anthurium magnificum from Colombia. Large velvety foliage with pale veination; distinguished by its 4-winged petiole. Collector quality.",
+          "meta_keywords": "Anthurium magnificum, magnificent anthurium, velvet Anthurium, large leaf aroid",
+          "native_range": "Colombia",
+          "conservation_status": "NT",
+          "notes": "Quadrangular petiole distinguishes from A. crystallinum. Needs very humid conditions.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium andraeanum",
+          "common_name": "Flamingo Flower",
+          "description": "<em>Anthurium andraeanum</em> is the archetypal flowering anthurium, producing glossy waxy spathes in red, pink, white, and bicolour forms year-round. Native to Colombia and Ecuador, it has been extensively hybridised for the cut-flower industry. Excellent long-lasting indoor plant.",
+          "meta_title": "Anthurium andraeanum — Classic Flamingo Flower",
+          "meta_description": "Buy Anthurium andraeanum flamingo flowers. Red, pink, white and bicolour spathes; year-round bloomer for tropical indoor displays.",
+          "meta_keywords": "Anthurium andraeanum, flamingo flower, flowering Anthurium, tropical houseplant",
+          "native_range": "Colombia, Ecuador",
+          "conservation_status": "LC",
+          "notes": "Flowering type. Long-lasting spathes; prefers bright indirect light. Very rewarding houseplant.",
+          "cultivars": [
+            { "cultivar": "Pink Champion", "description": "Consistent soft pink spathes; popular cut flower and potted plant." },
+            { "cultivar": "White Gemini", "description": "Pure white spathe with cream-yellow spadix; elegant and long-lasting." }
+          ]
+        },
+        {
+          "full_name": "Anthurium warocqueanum",
+          "common_name": "Queen Anthurium",
+          "description": "<em>Anthurium warocqueanum</em> — the Queen Anthurium — produces some of the most dramatically elongated foliage in the genus, with pendant velvet leaves reaching over 1.5 m in ideal conditions. The deep green velvety surface is marked with contrasting pale veins. A crown jewel of any aroid collection.",
+          "meta_title": "Anthurium warocqueanum — Queen Anthurium",
+          "meta_description": "Buy Anthurium warocqueanum, the Queen anthurium. Pendant velvet leaves up to 1.5 m with silver-white veination; crown jewel collector aroid.",
+          "meta_keywords": "Anthurium warocqueanum, queen anthurium, pendant aroid, long-leaf Anthurium",
+          "native_range": "Colombia (cloud forests, 500–1500 m)",
+          "conservation_status": "VU",
+          "notes": "Pendant growth habit; leaves grow very long. Needs consistent high humidity and perfect drainage.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Alocasia",
+      "common_name": "Elephant Ears",
+      "description": "<em>Alocasia</em> comprises about 90 species of rhizomatous aroids native to tropical and subtropical Asia and Eastern Australia. Known as elephant ears, they produce large, often dramatically marked or textured leaves on upright stems. The genus has experienced explosive popularity in the collector plant market due to species with velvety, metallic, or unusually veined foliage.",
+      "meta_title": "Alocasia — Elephant Ear Aroids",
+      "meta_description": "Buy rare and classic Alocasia elephant ear plants. Velvet, metallic, and giant-leaved species with TC provenance for collectors and home gardeners.",
+      "meta_keywords": "Alocasia for sale, rare Alocasia, Alocasia zebrina, elephant ear plant, velvet Alocasia",
+      "native_range": "Tropical–subtropical Asia to Eastern Australia",
+      "care_level": "Intermediate",
+      "tc_suitability": "High",
+      "conservation_status": "varies by species",
+      "species": [
+        {
+          "full_name": "Alocasia zebrina",
+          "common_name": "Zebra Alocasia",
+          "description": "<em>Alocasia zebrina</em> is immediately recognisable by its bold zebra-striped petioles in yellow-green and dark brown-black. Native to the Philippines, it produces large arrowhead leaves on tall, strikingly patterned stems. Fast-growing and dramatic; excellent for indoor or covered outdoor tropical settings.",
+          "meta_title": "Alocasia zebrina — Zebra Elephant Ear",
+          "meta_description": "Buy Alocasia zebrina, the zebra alocasia from the Philippines. Dramatic zebra-striped petioles on a fast-growing large-leaved elephant ear.",
+          "meta_keywords": "Alocasia zebrina, zebra alocasia, striped alocasia, Philippines elephant ear",
+          "native_range": "Philippines",
+          "conservation_status": "LC",
+          "notes": "Fast-growing in warmth. Zebra-pattern petioles most vivid in bright indirect light.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia reginula",
+          "common_name": "Black Velvet Alocasia",
+          "description": "<em>Alocasia reginula</em> 'Black Velvet' is a compact jewel species from Borneo prized for its near-black velvety leaves with contrasting silver-white venation. Small in stature (leaves 10–20 cm) but immensely popular with collectors. Prefers high humidity and well-draining substrate.",
+          "meta_title": "Alocasia reginula — Black Velvet Jewel Alocasia",
+          "meta_description": "Buy Alocasia reginula Black Velvet, the jewel Alocasia from Borneo. Near-black velvety leaves with silver veins; compact collector gem.",
+          "meta_keywords": "Alocasia reginula, black velvet Alocasia, jewel Alocasia, Borneo alocasia",
+          "native_range": "Borneo",
+          "conservation_status": "NT",
+          "notes": "Compact jewel form. High humidity essential. Avoid overwatering; prone to root rot.",
+          "cultivars": [
+            { "cultivar": "Black Velvet", "description": "The classic cultivar with near-black leaves and crystalline silver veination." }
+          ]
+        },
+        {
+          "full_name": "Alocasia macrorrhizos",
+          "common_name": "Giant Taro",
+          "description": "<em>Alocasia macrorrhizos</em> is the true giant elephant ear, with enormous upright arrowhead leaves reaching 1–2 m in tropical conditions. Widely cultivated across Asia as a food crop and ornamental. In tropical gardens it creates an imposing statement specimen. The stem is edible after cooking.",
+          "meta_title": "Alocasia macrorrhizos — Giant Taro Elephant Ear",
+          "meta_description": "Buy Alocasia macrorrhizos, the giant taro. Enormous upright leaves to 2 m; edible stem, tropical landscape specimen, or bold indoor feature.",
+          "meta_keywords": "Alocasia macrorrhizos, giant taro, giant elephant ear, large Alocasia",
+          "native_range": "Southeast Asia to Pacific Islands",
+          "conservation_status": "LC",
+          "notes": "Tropical giant; needs full sun or bright light, warmth, and ample water. Edible with preparation.",
+          "cultivars": [
+            { "cultivar": "Variegata", "description": "Irregular white and green variegation on the large leaves; rare and striking." }
+          ]
+        }
+      ]
+    }
+  ]
+}

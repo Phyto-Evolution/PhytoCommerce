@@ -1,6 +1,6 @@
 {
   "version": "1.1.0",
-  "last_updated": "2026-03-15",
+  "last_updated": "2026-03-27",
   "maintainer": "Phyto Evolution Private Limited",
   "repository": "https://github.com/Phyto-Evolution/PhytoCommerce",
   "base_url": "https://raw.githubusercontent.com/Phyto-Evolution/PhytoCommerce/main/taxonomy/",
@@ -12,5 +12,5 @@
     { "id": "succulents", "name": "Succulents & Cacti", "index": "succulents/index.json", "pack_count": 4 },
     { "id": "bromeliads", "name": "Bromeliads & Air Plants", "index": "bromeliads/index.json", "pack_count": 1 }
   ],
-  "summary": { "total_categories": 5, "total_packs": 15, "total_genera": 41, "total_species": 129, "total_cultivars": 72 }
+  "summary": { "total_categories": 5, "total_packs": 15, "total_genera": 38, "total_species": 138, "total_cultivars": 80 }
 }

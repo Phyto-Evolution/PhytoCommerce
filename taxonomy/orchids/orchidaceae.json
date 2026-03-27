@@ -1,0 +1,271 @@
+{
+  "pack_id": "orchidaceae",
+  "schema_version": "1.1",
+  "family": "Orchidaceae",
+  "common_name": "Orchids",
+  "description": "Orchidaceae is the largest family of flowering plants, comprising over 28,000 accepted species across 763 genera — approximately 6–11% of all flowering plant species. Orchids occupy nearly every terrestrial habitat on Earth except deserts and glaciers. The family is renowned for the extraordinary diversity of flower form, adaptations for specific pollinators, and the horticultural value of both species orchids and highly bred hybrids.",
+  "meta_title": "Orchids — Orchidaceae | PhytoCommerce",
+  "meta_description": "Shop rare and classic orchid species and cultivars — Paphiopedilum, Dendrobium, Vanda, Coelogyne, Bulbophyllum. TC-grown with provenance certificates.",
+  "meta_keywords": "orchids, Orchidaceae, rare orchids, Paphiopedilum, Dendrobium, Vanda, buy orchids online",
+  "genera": [
+    {
+      "genus": "Paphiopedilum",
+      "common_name": "Slipper Orchids",
+      "description": "<em>Paphiopedilum</em> comprises about 85 species of slipper orchids native to South and Southeast Asia. The pouch-shaped labellum acts as an insect trap for pollination. These terrestrial to lithophytic orchids are among the most popular and collectible in the orchid world. Many species and hybrid cultivars command high prices. All wild-collected plants are CITES Appendix I protected.",
+      "meta_title": "Paphiopedilum — Asian Slipper Orchids",
+      "meta_description": "Buy Paphiopedilum slipper orchids — species and hybrids. TC-grown from registered cultivars with CITES-compliant provenance. Species and hybrid forms.",
+      "meta_keywords": "Paphiopedilum for sale, slipper orchid, paph orchid, Paphiopedilum rothschildianum, rare orchid",
+      "native_range": "South and Southeast Asia (India to Pacific)",
+      "care_level": "Intermediate",
+      "tc_suitability": "Moderate",
+      "conservation_status": "CITES Appendix I (all species)",
+      "species": [
+        {
+          "full_name": "Paphiopedilum rothschildianum",
+          "common_name": "Gold of Kinabalu Orchid",
+          "description": "<em>Paphiopedilum rothschildianum</em> is often called the king of slipper orchids and one of the most valuable orchids in the world. Endemic to Mount Kinabalu, Sabah, Malaysia, it produces long horizontal inflorescences bearing 3–5 large flowers with dramatically striped petals. CITES Appendix I. Slow-growing; 7–15 years to first bloom from seed.",
+          "meta_title": "Paphiopedilum rothschildianum — King of Slipper Orchids",
+          "meta_description": "Buy Paphiopedilum rothschildianum, the gold of Kinabalu orchid. Most valuable slipper orchid; CITES-compliant TC seedlings with provenance certificate.",
+          "meta_keywords": "Paphiopedilum rothschildianum, gold of Kinabalu, king slipper orchid, rare Paph",
+          "native_range": "Borneo — Mount Kinabalu, Sabah (1200–1700 m)",
+          "conservation_status": "CR",
+          "notes": "CITES Appendix I. Very slow to bloom. Cool-intermediate conditions. High-value collector plant.",
+          "cultivars": [
+            { "cultivar": "Album", "description": "White-form with reduced dark pigmentation; exceptionally rare variant." }
+          ]
+        },
+        {
+          "full_name": "Paphiopedilum malipoense",
+          "common_name": "Malipoense Slipper Orchid",
+          "description": "<em>Paphiopedilum malipoense</em> is a Chinese–Vietnamese species noted for its large green flowers with a striking helmet-shaped dorsal sepal and a very long twisted ventral sepal. One of the few fragrant Paphiopedilum, with a raspberry-like scent. Intermediate conditions.",
+          "meta_title": "Paphiopedilum malipoense — Fragrant Chinese Slipper Orchid",
+          "meta_description": "Buy Paphiopedilum malipoense, the fragrant green slipper orchid from China and Vietnam. Raspberry scent, helmet-shaped dorsal sepal.",
+          "meta_keywords": "Paphiopedilum malipoense, fragrant slipper orchid, green paph, Chinese orchid",
+          "native_range": "Southern China (Guangxi, Yunnan), northern Vietnam",
+          "conservation_status": "EN",
+          "notes": "Fragrant; intermediate to cool conditions. Flowers spring–summer.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Paphiopedilum bellatulum",
+          "common_name": "Pretty Slipper Orchid",
+          "description": "<em>Paphiopedilum bellatulum</em> is a compact lithophytic species from Myanmar, Thailand, and southern China. Produces nearly round, heavily spotted white to cream flowers held close to the heavily marbled foliage. Requires excellent drainage and warm–intermediate conditions.",
+          "meta_title": "Paphiopedilum bellatulum — Pretty Spotted Slipper Orchid",
+          "meta_description": "Buy Paphiopedilum bellatulum, the pretty slipper orchid. Round spotted white flowers close to beautiful marbled foliage; limestone lithophyte.",
+          "meta_keywords": "Paphiopedilum bellatulum, pretty paph, spotted slipper orchid, compact slipper orchid",
+          "native_range": "Myanmar, Thailand, Yunnan, China",
+          "conservation_status": "EN",
+          "notes": "Lithophyte on limestone. Needs perfect drainage and warm–intermediate conditions.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Paphiopedilum sukhakulii",
+          "common_name": "Sukhakul's Slipper Orchid",
+          "description": "<em>Paphiopedilum sukhakulii</em> is a compact Thai species with attractive mottled foliage and flowers featuring distinctive purple-spotted petals held horizontally. A parent of many popular complex hybrids. Relatively easier to grow than many Paphiopedilum; warm conditions.",
+          "meta_title": "Paphiopedilum sukhakulii — Sukhakul's Slipper Orchid",
+          "meta_description": "Buy Paphiopedilum sukhakulii from Thailand. Mottled foliage, horizontal spotted petals; great beginner paph and important hybrid parent.",
+          "meta_keywords": "Paphiopedilum sukhakulii, Sukhakul slipper orchid, Thai Paph, spotted slipper orchid",
+          "native_range": "Northeast Thailand",
+          "conservation_status": "EN",
+          "notes": "Warm-growing. Good beginner paph; reliable bloomer with horizontal petals.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Dendrobium",
+      "common_name": "Cane Orchids",
+      "description": "<em>Dendrobium</em> is one of the largest orchid genera, with nearly 2000 species distributed from India to Japan, Southeast Asia, Australia, and the Pacific. The genus is extraordinarily diverse in habitat and flower form. It includes compact miniatures, towering cane species, and deciduous cool-growers. Commercially important as cut flowers and potted plants.",
+      "meta_title": "Dendrobium — Cane and Epiphytic Orchids",
+      "meta_description": "Buy Dendrobium orchids — species and hybrids. Cane, pendulous, and compact forms. TC-grown with provenance; suitable for warm and intermediate growers.",
+      "meta_keywords": "Dendrobium for sale, Dendrobium orchid, cane orchid, Dendrobium nobile, epiphytic orchid",
+      "native_range": "South Asia, Southeast Asia, Pacific, Australia",
+      "care_level": "Beginner–Intermediate",
+      "tc_suitability": "High",
+      "conservation_status": "varies by species",
+      "species": [
+        {
+          "full_name": "Dendrobium nobile",
+          "common_name": "Noble Dendrobium",
+          "description": "<em>Dendrobium nobile</em> is a classic cool-growing deciduous Dendrobium from the Himalayan foothills through Indochina. Produces fragrant flowers along the length of leafless canes after a dry cool winter rest. The species parent of thousands of nobile-type hybrids widely sold as spring gifts.",
+          "meta_title": "Dendrobium nobile — Noble Cane Orchid",
+          "meta_description": "Buy Dendrobium nobile orchids. Classic fragrant Himalayan cane orchid; cool dry winter rest triggers spring flowering. Species and nobile hybrids.",
+          "meta_keywords": "Dendrobium nobile, noble dendrobium, nobile orchid, Himalayan orchid",
+          "native_range": "Himalayan foothills to Indochina (1000–2000 m)",
+          "conservation_status": "LC",
+          "notes": "Deciduous cool-growing. Dry cool winter rest essential for flowering. Fragrant.",
+          "cultivars": [
+            { "cultivar": "Pink Form", "description": "Vivid pink-tipped flowers with white base; popular selected form." },
+            { "cultivar": "Album", "description": "Pure white flowers with yellow throat; elegant and fragrant." }
+          ]
+        },
+        {
+          "full_name": "Dendrobium phalaenopsis",
+          "common_name": "Cooktown Orchid",
+          "description": "<em>Dendrobium phalaenopsis</em> (syn. <em>D. bigibbum</em>) is the floral emblem of Queensland, Australia. Produces erect racemes of 5–20 flowers in shades of purple to white. Warm-growing and long-blooming; widely used in the cut-flower trade and as a parent for warm-type hybrids.",
+          "meta_title": "Dendrobium phalaenopsis — Cooktown Orchid",
+          "meta_description": "Buy Dendrobium phalaenopsis, Queensland's floral emblem. Purple to white flowers on erect racemes; warm-growing cut-flower orchid.",
+          "meta_keywords": "Dendrobium phalaenopsis, Cooktown orchid, Queensland orchid, purple Dendrobium",
+          "native_range": "Northern Australia (Queensland), New Guinea",
+          "conservation_status": "LC",
+          "notes": "Warm-growing; sunny position. Long-lasting flowers; popular cut-flower parent.",
+          "cultivars": [
+            { "cultivar": "Alba", "description": "Pure white form; clean and elegant." }
+          ]
+        },
+        {
+          "full_name": "Dendrobium cuthbertsonii",
+          "common_name": "Rainbow Orchid",
+          "description": "<em>Dendrobium cuthbertsonii</em> is a miniature high-altitude species from New Guinea remarkable for its disproportionately large flowers (nearly as big as the plant) in vivid reds, oranges, pinks, and bicolours. Flowers are extremely long-lasting — often 6–9 months. Cool growing; requires excellent ventilation.",
+          "meta_title": "Dendrobium cuthbertsonii — Rainbow Miniature Orchid",
+          "meta_description": "Buy Dendrobium cuthbertsonii, the rainbow orchid. Giant flowers on a tiny plant; months-long bloom in reds, oranges, pinks. Cool-growing New Guinea miniature.",
+          "meta_keywords": "Dendrobium cuthbertsonii, rainbow orchid, miniature orchid, long-blooming orchid, New Guinea orchid",
+          "native_range": "New Guinea highlands (2000–3200 m)",
+          "conservation_status": "NT",
+          "notes": "Cool-growing miniature; needs excellent air movement. Flowers 6–9 months. Highly collectible.",
+          "cultivars": [
+            { "cultivar": "Red Form", "description": "Vivid scarlet-red flowers; one of the most sought-after colour forms." }
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Vanda",
+      "common_name": "Vanda Orchids",
+      "description": "<em>Vanda</em> comprises about 80 monopodial epiphytic orchids from South and Southeast Asia. Famous for their large, flat, often strongly patterned flowers produced on erect racemes from leaf axils. Vandas are warm-growing, high-light orchids that perform best when grown bare-root in hanging baskets with daily watering in tropical conditions. Extensively hybridised for the cut-flower industry.",
+      "meta_title": "Vanda — Tropical Monopodial Orchids",
+      "meta_description": "Buy Vanda orchids — species and hybrid forms. Large flat flowers in blues, purples, oranges and tessellated patterns. Warm-growing bare-root epiphytes.",
+      "meta_keywords": "Vanda orchid for sale, blue Vanda, Vanda coerulea, monopodial orchid, tropical orchid",
+      "native_range": "South Asia, Southeast Asia, Pacific",
+      "care_level": "Intermediate",
+      "tc_suitability": "Moderate",
+      "conservation_status": "varies by species",
+      "species": [
+        {
+          "full_name": "Vanda coerulea",
+          "common_name": "Blue Vanda",
+          "description": "<em>Vanda coerulea</em> is the famous blue orchid of the Himalayas and Southeast Asia, one of the few truly blue-flowered orchids. Native to Assam, Myanmar, Thailand, and southern China at 1000–1800 m. Flowers are pale to deep sky blue with a finely tessellated network pattern. CITES Appendix I. Essential parent of blue hybrid Vandas.",
+          "meta_title": "Vanda coerulea — Blue Himalayan Vanda Orchid",
+          "meta_description": "Buy Vanda coerulea, the rare blue vanda orchid. CITES-compliant TC seedlings with provenance; blue tessellated flowers from Himalayan foothills.",
+          "meta_keywords": "Vanda coerulea, blue vanda, blue orchid, Himalayan vanda, rare orchid",
+          "native_range": "Assam, Myanmar, Thailand, southern China (1000–1800 m)",
+          "conservation_status": "EN",
+          "notes": "CITES Appendix I. Cool-intermediate. Primary parent for blue Vanda hybrids.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vanda tricolor",
+          "common_name": "Tricolour Vanda",
+          "description": "<em>Vanda tricolor</em> is a vigorous warm-growing species from Java and Bali producing large, sweetly fragrant flowers in creamy yellow with purple-brown spots and a rose-purple lip. One of the easier Vanda species to cultivate.",
+          "meta_title": "Vanda tricolor — Fragrant Tricolour Vanda",
+          "meta_description": "Buy Vanda tricolor from Java and Bali. Fragrant yellow-spotted purple-brown flowers with rose lip; vigorous warm-grower.",
+          "meta_keywords": "Vanda tricolor, tricolour vanda, fragrant vanda, Java orchid",
+          "native_range": "Java, Bali",
+          "conservation_status": "LC",
+          "notes": "Warm-growing; fragrant. Good starter Vanda species.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vanda tessellata",
+          "common_name": "Tessellated Vanda",
+          "description": "<em>Vanda tessellata</em> is a widely distributed South Asian species with attractive yellowish-green flowers heavily marked with a brown-purple tessellated pattern. Medicinal uses documented in Ayurvedic traditions. Hardy and adaptable compared to other Vandas.",
+          "meta_title": "Vanda tessellata — Tessellated South Asian Vanda",
+          "meta_description": "Buy Vanda tessellata from South Asia. Yellowish-green tessellated flowers with purple-brown markings; medicinal uses and adaptable grower.",
+          "meta_keywords": "Vanda tessellata, tessellated vanda, South Asian orchid, Ayurvedic orchid",
+          "native_range": "India, Sri Lanka, Myanmar, Bangladesh",
+          "conservation_status": "LC",
+          "notes": "Hardy Vanda; tolerates brief dry periods. Used in Ayurvedic medicine.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Coelogyne",
+      "common_name": "Coelogyne Orchids",
+      "description": "<em>Coelogyne</em> comprises about 200 species of sympodial orchids distributed across South and Southeast Asia to the Pacific. The genus is valued for its often large, frequently fragrant, white or cream flowers with intricate markings on the lip. Growth habits range from compact miniatures to large specimen plants. Many species are cool-growing, making them suitable for temperate-zone greenhouses.",
+      "meta_title": "Coelogyne — Asian Sympodial Orchids",
+      "meta_description": "Buy Coelogyne orchids — fragrant white and cream-flowered sympodial orchids from South and Southeast Asia. Cool and intermediate species available.",
+      "meta_keywords": "Coelogyne for sale, Coelogyne cristata, fragrant orchid, white orchid, Asian orchid",
+      "native_range": "South Asia, Southeast Asia to Pacific",
+      "care_level": "Beginner–Intermediate",
+      "tc_suitability": "Moderate",
+      "conservation_status": "varies by species",
+      "species": [
+        {
+          "full_name": "Coelogyne cristata",
+          "common_name": "Crystal Orchid",
+          "description": "<em>Coelogyne cristata</em> is one of the showiest orchids for cool climates, producing large clusters of pure white flowers with a distinctive orange-yellow crested lip. Native to the Himalayas at 1300–2000 m. A cool dry winter rest is essential to trigger the spectacular spring flush of fragrant blooms.",
+          "meta_title": "Coelogyne cristata — Crystal Himalayan Orchid",
+          "meta_description": "Buy Coelogyne cristata, the crystal orchid from the Himalayas. White fragrant spring flowers with orange-crested lip; needs cool dry winter rest.",
+          "meta_keywords": "Coelogyne cristata, crystal orchid, white Coelogyne, Himalayan orchid, fragrant orchid",
+          "native_range": "Himalayas (Nepal, Bhutan, Sikkim, Yunnan) 1300–2000 m",
+          "conservation_status": "NT",
+          "notes": "Cool-growing; dry cool winter triggers flowering. Spectacular spring bloom. Fragrant.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Coelogyne flaccida",
+          "common_name": "Flaccid Coelogyne",
+          "description": "<em>Coelogyne flaccida</em> produces attractive pendant racemes of creamy white flowers with brown markings on the lip and a sweet fragrance. Native to the Himalayas and Southeast Asia. Intermediate-growing and reliable bloomer in late winter–spring.",
+          "meta_title": "Coelogyne flaccida — Pendant White Coelogyne",
+          "meta_description": "Buy Coelogyne flaccida, the pendant-raceme Coelogyne. Creamy white fragrant flowers with brown-marked lip; intermediate-growing Himalayan orchid.",
+          "meta_keywords": "Coelogyne flaccida, pendant Coelogyne, fragrant Coelogyne, white orchid",
+          "native_range": "Himalayas, Myanmar, Thailand",
+          "conservation_status": "LC",
+          "notes": "Intermediate conditions. Pendant inflorescences best displayed in hanging baskets.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Coelogyne nitida",
+          "common_name": "Bright-lipped Coelogyne",
+          "description": "<em>Coelogyne nitida</em> bears erect racemes of glistening white flowers with a bright yellow-orange marked lip. Compact growth habit; native to the Himalayan foothills. One of the more floriferous and reliable cool-growing Coelogyne species.",
+          "meta_title": "Coelogyne nitida — Bright-lipped Compact Coelogyne",
+          "meta_description": "Buy Coelogyne nitida, the bright-lipped compact Coelogyne. White flowers with vivid yellow-orange lip; erect racemes on a floriferous cool-grower.",
+          "meta_keywords": "Coelogyne nitida, bright-lipped coelogyne, compact orchid, Himalayan cool-growing orchid",
+          "native_range": "Nepal, Bhutan, northeast India, Myanmar",
+          "conservation_status": "LC",
+          "notes": "Cool-growing; compact. Reliable and floriferous; good for beginners in cool conditions.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Bulbophyllum",
+      "common_name": "Bulbophyllums",
+      "description": "<em>Bulbophyllum</em> is the largest genus of orchids and possibly all flowering plants, with over 2000 accepted species distributed across every tropical region. The genus is famous for its extraordinary flower diversity — from tiny to enormous, from sweetly fragrant to offensively malodorous (to attract carrion fly pollinators). Mostly epiphytic with pseudobulbs bearing one or two leaves; habits range from creeping mats to large specimen clumps.",
+      "meta_title": "Bulbophyllum — World's Largest Orchid Genus",
+      "meta_description": "Buy rare Bulbophyllum orchids. World's largest orchid genus with extraordinary flower diversity. Miniature to large species; TC-grown with provenance.",
+      "meta_keywords": "Bulbophyllum for sale, rare Bulbophyllum, Bulbophyllum rothschildianum, miniature orchid, tropical orchid",
+      "native_range": "All tropical regions worldwide",
+      "care_level": "Intermediate",
+      "tc_suitability": "Moderate",
+      "conservation_status": "varies by species",
+      "species": [
+        {
+          "full_name": "Bulbophyllum rothschildianum",
+          "common_name": "Rothschild's Bulbophyllum",
+          "description": "<em>Bulbophyllum rothschildianum</em> produces pendulous umbels of up to 12 large flowers with dramatically long, thin lateral sepals striped in red-purple on white. Native to India (Assam) and Myanmar. One of the showiest Bulbophyllum in cultivation, requiring warm conditions and bright but filtered light.",
+          "meta_title": "Bulbophyllum rothschildianum — Rothschild's Showpiece Orchid",
+          "meta_description": "Buy Bulbophyllum rothschildianum, Rothschild's bulbophyllum. Long-tailed striped flowers in umbel clusters; warm-growing showpiece from Assam.",
+          "meta_keywords": "Bulbophyllum rothschildianum, Rothschild bulbophyllum, showpiece orchid, Assam orchid",
+          "native_range": "India (Assam), Myanmar",
+          "conservation_status": "VU",
+          "notes": "Warm-growing; umbellate inflorescences of 10–12 flowers. One of the most dramatic Bulbophyllum.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Bulbophyllum lobbii",
+          "common_name": "Lobb's Bulbophyllum",
+          "description": "<em>Bulbophyllum lobbii</em> is a Southeast Asian species producing large solitary fragrant flowers — yellow with red-brown stripes — from each pseudobulb. The lip rocks in air movement. A popular and rewarding Bulbophyllum for intermediate to warm conditions.",
+          "meta_title": "Bulbophyllum lobbii — Lobb's Fragrant Bulbophyllum",
+          "meta_description": "Buy Bulbophyllum lobbii from Southeast Asia. Large solitary fragrant yellow-striped flowers on robust pseudobulbs; intermediate to warm conditions.",
+          "meta_keywords": "Bulbophyllum lobbii, Lobb's bulbophyllum, fragrant bulbophyllum, large-flowered orchid",
+          "native_range": "Peninsular Malaysia, Sumatra, Java, Borneo, Philippines",
+          "conservation_status": "LC",
+          "notes": "Intermediate to warm. Single large fragrant flower per pseudobulb. Rocking lip is diagnostic.",
+          "cultivars": []
+        }
+      ]
+    }
+  ]
+}

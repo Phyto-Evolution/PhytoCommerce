@@ -1,0 +1,232 @@
+{
+  "pack_id": "bromeliaceae",
+  "schema_version": "1.1",
+  "family": "Bromeliaceae",
+  "common_name": "Bromeliads",
+  "description": "Bromeliaceae is a Neotropical monocot family comprising about 75 genera and over 3700 species. Bromeliads are native almost exclusively to the Americas, from the southern United States to Patagonia, with one species in West Africa. The family is extraordinarily diverse in form: from drought-adapted atmospheric tillandsias to water-tank epiphytes, terrestrial species, and ornamental flowering types. Many bromeliads form a central cup or tank that collects water and nutrients; others are xerophytic with absorbent trichomes.",
+  "meta_title": "Bromeliads — Bromeliaceae | PhytoCommerce",
+  "meta_description": "Shop rare and classic bromeliads — Tillandsia, Neoregelia, Vriesea, Aechmea. TC-grown Neotropical epiphytes and ornamentals with cultivar provenance.",
+  "meta_keywords": "bromeliads, Bromeliaceae, Tillandsia, Neoregelia, Vriesea, Aechmea, air plants, buy bromeliads",
+  "genera": [
+    {
+      "genus": "Tillandsia",
+      "common_name": "Air Plants",
+      "description": "<em>Tillandsia</em> is the largest genus in Bromeliaceae, with over 650 species. The genus ranges from the large tank bromeliads to the iconic atmospheric air plants — rootless epiphytes that absorb moisture and nutrients entirely through specialised trichomes on their leaves. Air plants are native from the southern USA through Central and South America. They require no soil, merely bright light, air movement, and regular misting or soaking.",
+      "meta_title": "Tillandsia — Air Plants",
+      "meta_description": "Buy Tillandsia air plants — rootless atmospheric epiphytes needing no soil. From compact ionantha to giant xerographica; species and cultivars with care guides.",
+      "meta_keywords": "Tillandsia for sale, air plants, Tillandsia xerographica, Tillandsia ionantha, rootless bromeliad",
+      "native_range": "Southern USA to South America",
+      "care_level": "Beginner–Intermediate",
+      "tc_suitability": "Moderate",
+      "conservation_status": "varies by species",
+      "species": [
+        {
+          "full_name": "Tillandsia xerographica",
+          "common_name": "King of Air Plants",
+          "description": "<em>Tillandsia xerographica</em> is the largest and most dramatic atmospheric Tillandsia, forming a symmetrical, silvery sphere of long, curling, strap-like leaves up to 90 cm across. Native to dry forests of Guatemala, El Salvador, Honduras, and southern Mexico. Produces a spectacular red, yellow, and violet inflorescence when mature. Slow-growing and long-lived; CITES II.",
+          "meta_title": "Tillandsia xerographica — King of Air Plants",
+          "meta_description": "Buy Tillandsia xerographica, the king of air plants. Giant silvery curling rosette to 90 cm; spectacular inflorescence, CITES II. Slow-growing dry-climate epiphyte.",
+          "meta_keywords": "Tillandsia xerographica, king of air plants, giant air plant, silver tillandsia, CITES bromeliad",
+          "native_range": "Guatemala, El Salvador, Honduras, southern Mexico (dry forest)",
+          "conservation_status": "NT",
+          "notes": "CITES II. Large, slow-growing. Water sparingly; needs excellent air circulation and very bright light.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia ionantha",
+          "common_name": "Sky Plant",
+          "description": "<em>Tillandsia ionantha</em> is one of the most popular air plants, forming small clustering rosettes of silvery-green leaves that blush brilliant red to violet at the centre when approaching bloom. Produces vivid purple flowers. Native to Mexico and Central America. Extremely adaptable and ideal for beginners. Many selected and named forms.",
+          "meta_title": "Tillandsia ionantha — Sky Plant Air Plant",
+          "meta_description": "Buy Tillandsia ionantha sky plants. Small clustering air plants that blush red when blooming; purple flowers, easy care, ideal beginners' Tillandsia.",
+          "meta_keywords": "Tillandsia ionantha, sky plant, small air plant, beginner tillandsia, blushing air plant",
+          "native_range": "Mexico, Guatemala, El Salvador, Honduras, Nicaragua",
+          "conservation_status": "LC",
+          "notes": "Best beginner air plant. Mist 2–3 times per week. Blushes red at bloom time.",
+          "cultivars": [
+            { "cultivar": "Fuego", "description": "Deeply saturated red blushing with purple flowers; compact, vibrant selection." },
+            { "cultivar": "Rubra", "description": "Silvery leaves with intense violet-red colouring; smaller and more colourful than the straight species." }
+          ]
+        },
+        {
+          "full_name": "Tillandsia cyanea",
+          "common_name": "Pink Quill Plant",
+          "description": "<em>Tillandsia cyanea</em> is a terrestrial or epiphytic species from Ecuador prized for its striking fan-shaped pink-red flower bract from which vivid blue-violet flowers emerge sequentially. One of the most ornamental bromeliads; commonly sold as a gift plant. Grows in a pot unlike most air plants.",
+          "meta_title": "Tillandsia cyanea — Pink Quill Bromeliad",
+          "meta_description": "Buy Tillandsia cyanea, the pink quill plant from Ecuador. Fan-shaped pink bract with violet flowers; pot-grown ornamental bromeliad for indoor display.",
+          "meta_keywords": "Tillandsia cyanea, pink quill plant, pink bromeliad, ornamental tillandsia, gift plant",
+          "native_range": "Ecuador",
+          "conservation_status": "LC",
+          "notes": "Grows in a pot; not a true atmospheric air plant. Striking pink quill inflorescence.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia usneoides",
+          "common_name": "Spanish Moss",
+          "description": "<em>Tillandsia usneoides</em> — Spanish moss — is the iconic draping grey-green Tillandsia that festoons trees across the American South. It has no roots and absorbs all nutrients through dense trichomes. Produces tiny fragrant lime-green flowers. One of the most widely distributed bromeliads, ranging from Virginia to Argentina.",
+          "meta_title": "Tillandsia usneoides — Spanish Moss",
+          "meta_description": "Buy Tillandsia usneoides Spanish moss. Draping rootless bromeliad with fragrant flowers; absorbs all nutrients through trichomes. From Virginia to Argentina.",
+          "meta_keywords": "Tillandsia usneoides, Spanish moss, draping air plant, rootless bromeliad, southern USA plant",
+          "native_range": "Virginia, USA to Argentina",
+          "conservation_status": "LC",
+          "notes": "Completely rootless. Mist regularly. Ideal for hanging displays; prefers filtered bright light.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Neoregelia",
+      "common_name": "Neoregelia Bromeliads",
+      "description": "<em>Neoregelia</em> comprises about 115 species of tank bromeliads from South America, primarily Brazil. The genus is prized for its intensely coloured, often spotted, striped, or banded foliage and for the dramatic blushing of the central cup leaves at bloom time. The flowers themselves are small and nested inside the water-filled cup, but the surrounding leaf colouration can last for months. Thousands of cultivars exist from Florida and Australian hybridisers.",
+      "meta_title": "Neoregelia — Tank Bromeliads",
+      "meta_description": "Buy Neoregelia bromeliads from South America. Vivid blushing and spotted foliage with water-tank cups; species and cultivars from Florida and Brazilian breeding.",
+      "meta_keywords": "Neoregelia for sale, tank bromeliad, Neoregelia carolinae, spotted bromeliad, colourful bromeliad",
+      "native_range": "South America (primarily Brazil)",
+      "care_level": "Beginner–Intermediate",
+      "tc_suitability": "High",
+      "conservation_status": "varies by species",
+      "species": [
+        {
+          "full_name": "Neoregelia carolinae",
+          "common_name": "Blushing Bromeliad",
+          "description": "<em>Neoregelia carolinae</em> is the most widely grown Neoregelia species, producing flat rosettes of strap-shaped green leaves that blush brilliant scarlet at the centre just before and during flowering. The small violet flowers open at the base of the central cup. The red colouring persists for many months. The 'Tricolor' variegated form is one of the most popular bromeliads in the world.",
+          "meta_title": "Neoregelia carolinae — Blushing Bromeliad",
+          "meta_description": "Buy Neoregelia carolinae, the blushing bromeliad. Flat green rosette turning scarlet at centre before bloom; Tricolor variegated form also available.",
+          "meta_keywords": "Neoregelia carolinae, blushing bromeliad, red-centre bromeliad, Neoregelia Tricolor, tank bromeliad",
+          "native_range": "Brazil (Bahia, Espírito Santo, Rio de Janeiro)",
+          "conservation_status": "LC",
+          "notes": "Keep cup filled with clean water. Dramatic red blush lasts months. Easy and rewarding.",
+          "cultivars": [
+            { "cultivar": "Tricolor", "description": "Cream and green longitudinal striped leaves with bright red central cup flush; one of the most popular bromeliads worldwide." },
+            { "cultivar": "Meyendorffii", "description": "Larger form with olive-green leaves and deeper red blushing; subspecies often treated as a separate cultivar." }
+          ]
+        },
+        {
+          "full_name": "Neoregelia concentrica",
+          "common_name": "Giant Neoregelia",
+          "description": "<em>Neoregelia concentrica</em> forms large, spreading flat rosettes with broad leaves marked by irregular purple spots and bands. The central leaves blush deep purple-violet at bloom time. Among the largest Neoregelia species in cultivation. Parent of many large-bodied hybrids.",
+          "meta_title": "Neoregelia concentrica — Giant Purple-spotted Bromeliad",
+          "meta_description": "Buy Neoregelia concentrica, the giant bromeliad. Large flat rosette with purple-spotted broad leaves and violet blushing centre; hybrid parent for large-form neoregelias.",
+          "meta_keywords": "Neoregelia concentrica, giant bromeliad, purple spotted bromeliad, large Neoregelia",
+          "native_range": "Brazil",
+          "conservation_status": "LC",
+          "notes": "Large species; needs more space than carolinae. Keep cup filled. Purple spots intensify in bright light.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia ampullacea",
+          "common_name": "Tube Neoregelia",
+          "description": "<em>Neoregelia ampullacea</em> is a miniature to compact species forming upright tubular rosettes rather than flat plates. Bright red and green banding. Highly collectible; pups freely and creates a dense clump over time. Popular parent for miniature hybrid breeding.",
+          "meta_title": "Neoregelia ampullacea — Miniature Tube Bromeliad",
+          "meta_description": "Buy Neoregelia ampullacea, the tube neoregelia. Compact upright tubular rosettes with red-green banding; free-pupping miniature bromeliad.",
+          "meta_keywords": "Neoregelia ampullacea, miniature bromeliad, tube neoregelia, compact bromeliad, red-green bromeliad",
+          "native_range": "Brazil",
+          "conservation_status": "LC",
+          "notes": "Miniature and free-pupping. Upright tubular rosette is distinct from flat-plate Neoregelia growth habit.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Vriesea",
+      "common_name": "Flaming Sword Bromeliads",
+      "description": "<em>Vriesea</em> comprises about 250 species of mostly epiphytic tank bromeliads from Central and South America. The genus is prized for its highly ornamental flat paddle-shaped flower spikes, often vividly coloured in red, yellow, or orange, from which small tubular flowers emerge. The 'flaming sword' inflorescence of <em>V. splendens</em> is iconic. Many species have attractively banded or mottled foliage.",
+      "meta_title": "Vriesea — Flaming Sword Bromeliads",
+      "meta_description": "Buy Vriesea bromeliads — flaming sword and tank bromeliads. Spectacular flat paddle-shaped red-yellow inflorescences with banded or mottled foliage.",
+      "meta_keywords": "Vriesea for sale, flaming sword bromeliad, Vriesea splendens, Vriesea hieroglyphica, ornamental bromeliad",
+      "native_range": "Central and South America",
+      "care_level": "Beginner–Intermediate",
+      "tc_suitability": "Moderate",
+      "conservation_status": "varies by species",
+      "species": [
+        {
+          "full_name": "Vriesea splendens",
+          "common_name": "Flaming Sword",
+          "description": "<em>Vriesea splendens</em> is the quintessential flaming sword bromeliad. The flat, sword-shaped inflorescence is brilliant scarlet or orange-red with small yellow flowers. Leaves are dark green with irregular transverse purple-black banding, creating an ornate appearance even when not in flower. One of the most recognisable and widely grown bromeliads globally.",
+          "meta_title": "Vriesea splendens — Flaming Sword Bromeliad",
+          "meta_description": "Buy Vriesea splendens, the flaming sword bromeliad. Scarlet sword-shaped flower spike above dark banded foliage; iconic ornamental bromeliad.",
+          "meta_keywords": "Vriesea splendens, flaming sword, scarlet bromeliad, banded bromeliad, ornamental bromeliad",
+          "native_range": "Venezuela, Guiana, Trinidad",
+          "conservation_status": "LC",
+          "notes": "Keep central tank filled with clean water. Indirect bright light. Dramatic inflorescence lasts months.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea hieroglyphica",
+          "common_name": "King of Bromeliads",
+          "description": "<em>Vriesea hieroglyphica</em> — the king of bromeliads — forms enormous, dramatic rosettes of broad, arching leaves covered in complex dark green hieroglyphic-like banding patterns on a lighter background. Grown primarily as a foliage specimen; the flowers are less spectacular than the leaves. Requires larger spaces than most bromeliads.",
+          "meta_title": "Vriesea hieroglyphica — King of Bromeliads",
+          "meta_description": "Buy Vriesea hieroglyphica, the king of bromeliads. Enormous rosette of broad leaves with dramatic dark hieroglyphic-pattern banding; statement foliage specimen.",
+          "meta_keywords": "Vriesea hieroglyphica, king of bromeliads, patterned bromeliad, large bromeliad, foliage bromeliad",
+          "native_range": "Southeast Brazil",
+          "conservation_status": "NT",
+          "notes": "Large specimen plant; needs space. Keep tank filled. Grown for dramatic patterned foliage.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea carinata",
+          "common_name": "Lobster Claw Bromeliad",
+          "description": "<em>Vriesea carinata</em> produces a distinctive flat-paddle inflorescence of alternating yellow and red bracts resembling a lobster claw or Christmas decoration. Compact in size; an excellent tabletop or windowsill bromeliad. Flowers emerge from yellow bracts at the tip.",
+          "meta_title": "Vriesea carinata — Lobster Claw Bromeliad",
+          "meta_description": "Buy Vriesea carinata, the lobster claw bromeliad. Compact with red and yellow alternating bract inflorescence; excellent tabletop bromeliad.",
+          "meta_keywords": "Vriesea carinata, lobster claw bromeliad, compact vriesea, red yellow bromeliad",
+          "native_range": "Brazil (Bahia, Minas Gerais, Rio de Janeiro, São Paulo)",
+          "conservation_status": "LC",
+          "notes": "Compact and ideal for windowsill display. Alternating red-yellow bracts are very decorative.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Aechmea",
+      "common_name": "Urn Plants",
+      "description": "<em>Aechmea</em> comprises about 250 species of mostly epiphytic tank bromeliads from Central and South America. The genus is defined by toothed leaf margins and spiny-bracted inflorescences that often persist for months. <em>Aechmea fasciata</em> — the urn plant — is one of the most popular bromeliads in the world. The genus ranges from compact to very large specimens and includes forms with attractive banded, silver, or multicoloured foliage.",
+      "meta_title": "Aechmea — Urn Plants and Tank Bromeliads",
+      "meta_description": "Buy Aechmea urn plants and tank bromeliads. Spiny-bracted inflorescences lasting months above banded or silver foliage. Popular indoor and tropical garden bromeliads.",
+      "meta_keywords": "Aechmea for sale, urn plant, Aechmea fasciata, silver vase bromeliad, tank bromeliad",
+      "native_range": "Central and South America",
+      "care_level": "Beginner",
+      "tc_suitability": "Moderate",
+      "conservation_status": "varies by species",
+      "species": [
+        {
+          "full_name": "Aechmea fasciata",
+          "common_name": "Silver Vase Plant",
+          "description": "<em>Aechmea fasciata</em> — the silver vase plant or urn plant — is one of the world's most popular bromeliads. The broad grey-green leaves are attractively cross-banded with silver scurf. The inflorescence is a spectacular persistent pink pyramid studded with small blue flowers that age to red. Flowers once then produces pups. Keeps for months as a display plant.",
+          "meta_title": "Aechmea fasciata — Silver Vase Urn Plant",
+          "meta_description": "Buy Aechmea fasciata, the silver vase urn plant. Silver cross-banded leaves; persistent pink-blue inflorescence lasting months. Most popular bromeliad worldwide.",
+          "meta_keywords": "Aechmea fasciata, silver vase plant, urn plant, pink bromeliad, popular bromeliad",
+          "native_range": "Brazil (Bahia to Santa Catarina)",
+          "conservation_status": "LC",
+          "notes": "Keep central tank filled with clean water. Inflorescence lasts 3–6 months. Pups after flowering.",
+          "cultivars": [
+            { "cultivar": "Primera", "description": "Selected for consistency of flower colour and inflorescence size; widely sold commercial form." }
+          ]
+        },
+        {
+          "full_name": "Aechmea chantinii",
+          "common_name": "Amazonian Zebra Plant",
+          "description": "<em>Aechmea chantinii</em> forms dramatic rosettes of dark green leaves with bold silvery-white transverse banding — hence the name zebra plant. The inflorescence bears orange-red bracts and yellow-tipped red flowers. One of the most ornamental Aechmea species for foliage alone. Large specimen plant.",
+          "meta_title": "Aechmea chantinii — Amazonian Zebra Plant",
+          "meta_description": "Buy Aechmea chantinii, the Amazonian zebra plant. Dark green leaves with bold silver banding; dramatic orange-red inflorescence. Large ornamental bromeliad.",
+          "meta_keywords": "Aechmea chantinii, zebra bromeliad, banded Aechmea, Amazonian bromeliad, large bromeliad",
+          "native_range": "Brazil, Peru, Colombia, Ecuador (Amazon basin)",
+          "conservation_status": "LC",
+          "notes": "Large and dramatic. Bold silver banding very effective even without inflorescence. Keep tank filled.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea gamosepala",
+          "common_name": "Matchstick Bromeliad",
+          "description": "<em>Aechmea gamosepala</em> produces erect, slender inflorescences of small pink and blue matchstick-like flowers. More compact than <em>A. fasciata</em>; excellent for smaller spaces. The flowers are followed by persistent pink-purple berries that remain attractive long after flowering. Cold-tolerant for a bromeliad.",
+          "meta_title": "Aechmea gamosepala — Matchstick Bromeliad",
+          "meta_description": "Buy Aechmea gamosepala, the matchstick bromeliad. Slender pink-blue inflorescences followed by decorative berries; compact and cold-tolerant Aechmea.",
+          "meta_keywords": "Aechmea gamosepala, matchstick bromeliad, compact Aechmea, cold-tolerant bromeliad",
+          "native_range": "Brazil (South and Southeast)",
+          "conservation_status": "LC",
+          "notes": "Compact; more cold-tolerant than most Aechmea. Persistent berries extend ornamental value.",
+          "cultivars": []
+        }
+      ]
+    }
+  ]
+}
