@@ -2,7 +2,7 @@
 
 A PrestaShop 8 module suite for specialty plant e-commerce — designed around the operational needs of tissue-culture producers, nurseries, and rare plant retailers. Covers TC batch provenance, phytosanitary compliance, wholesale portals, recurring subscriptions, scientific taxonomy, customer grow journals, image protection, and more.
 
-> **Last updated:** 2026-03-27
+> **Last updated:** 2026-03-27 (phyto_image_sec v0.3 · QuickAdd multi-media)
 > Session logs: [`docs/CHECKPOINT.md`](docs/CHECKPOINT.md) · [`docs/ACTIVITY_LOG.md`](docs/ACTIVITY_LOG.md)
 
 ---
@@ -47,7 +47,7 @@ PhytoCommerce/
 │   ├── phyto_subscription/               ✅ Built
 │   │
 │   └── [SECURITY]
-│       └── phyto_image_sec/              ✅ Built  (v0.1 — products; v0.2 video planned)
+│       └── phyto_image_sec/              ✅ Built  (v0.3 — watermark · WebP · IPTC · text overlay)
 │
 └── taxonomy/                             ✅ Built
     ├── carnivorous/   (8 packs)
@@ -78,7 +78,7 @@ Replaces the default PrestaShop footer with a custom Phyto-branded one. Keeps yo
 ---
 
 ### phytoquickadd — Fast Product Entry
-Adds a "Quick Add" page under your Catalog menu so you can create products much faster than the default PrestaShop product form. Type a plant name, generate a description using AI with one click, set price and stock, upload an image, and save — all from a single streamlined form. Also lets you import entire botanical family trees (genus → species → cultivar) in one go from pre-built taxonomy packs.
+Adds a "Quick Add" page under your Catalog menu so you can create products much faster than the default PrestaShop product form. Type a plant name, generate a description using AI with one click, set price and stock, upload multiple images (first one becomes the cover automatically), and save — all from a single streamlined form. All uploaded images are automatically watermarked and converted to WebP by `phyto_image_sec` if installed. Also lets you import entire botanical family trees (genus → species → cultivar) in one go from pre-built taxonomy packs.
 
 ---
 
@@ -172,8 +172,8 @@ Lets customers subscribe to regular deliveries — mystery plant boxes, monthly 
 
 ---
 
-### phyto_image_sec — Image Protection (v0.1)
-Protects your product photography from being copied or stolen. When installed, it automatically stamps your shop logo as a watermark onto every product image — on upload and when thumbnails are regenerated. You control the watermark position (corner, centre, or tiled), opacity, and size. On the front end, right-clicking images is disabled, dragging images to the desktop is blocked, and Ctrl+S is intercepted — all without breaking the image zoom or lightbox. A batch processor lets you watermark your entire existing catalogue in one click. v0.2 will extend this protection to video assets.
+### phyto_image_sec — Image Protection (v0.3)
+Protects your product photography from being copied or stolen. When installed, it automatically stamps your shop logo as a watermark onto every product image on upload. After watermarking, it embeds your shop name and URL as invisible IPTC copyright metadata inside each JPEG so ownership is recorded in the file itself. It then generates a compressed WebP version alongside every image (typically 35% smaller than JPEG) which modern browsers load automatically. You can also enable a product name text overlay — by default the plant name is drawn in white text along the left edge of the image, rotated upward, with a dark outline for readability on any background. On the front end, right-clicking, drag-to-save, and Ctrl+S are all blocked without breaking lightbox or zoom. A batch processor handles your entire existing catalogue in one click.
 
 ---
 
@@ -217,7 +217,7 @@ rm -rf /path/to/prestashop/var/cache/*/smarty/compile/*
 | Module | Description |
 |--------|-------------|
 | `phytocommercefooter` | Branded footer replacement |
-| `phytoquickadd` | Admin quick-add for products and categories with AI descriptions and botanical taxonomy import |
+| `phytoquickadd` | Admin quick-add for products and categories with AI descriptions, botanical taxonomy import, and multiple image upload |
 | `phytoerpconnector` | Bidirectional sync with ERPNext v15 (orders, customers, products, invoices) |
 | `phytoseobooster` | AI-powered SEO automation — meta generation, schema markup, bulk alt-text audit |
 
@@ -261,7 +261,7 @@ rm -rf /path/to/prestashop/var/cache/*/smarty/compile/*
 
 | Module | Description |
 |--------|-------------|
-| `phyto_image_sec` | Watermarks all product images with your shop logo; JS blocks right-click, drag-to-save, and Ctrl+S on product/category pages. Batch processor for existing catalogue. v0.1 — product images. |
+| `phyto_image_sec` | Watermarks product images with shop logo; embeds IPTC copyright metadata; generates WebP siblings; optional product name text overlay (white, rotated, configurable position); JS blocks right-click/drag/Ctrl+S. v0.3. |
 
 ---
 
@@ -282,10 +282,12 @@ rm -rf /path/to/prestashop/var/cache/*/smarty/compile/*
 
 | Tab | Purpose |
 |-----|---------|
-| Add Product | Name, description, price, stock, category, image; AI description on demand |
+| Add Product | Name, description, price, stock, category, **multiple images** (first = cover); AI description on demand |
 | Add Category | Create categories/sub-categories with live AJAX tree view |
 | Taxonomy Packs | Import botanical family hierarchies from GitHub (family → genus → species → cultivar) |
 | Settings | Claude AI API key for description generation |
+
+**Multiple image upload:** Select any number of images at once — the first file is automatically set as the cover image (shown with a green border and "Cover" badge in the preview). All images fire `actionWatermark` on save, so `phyto_image_sec` watermarks, embeds metadata, and generates WebP for each one automatically.
 
 **AI setup:** Obtain a Claude API key from [console.anthropic.com](https://console.anthropic.com/settings/keys) and paste into the Settings tab.
 
