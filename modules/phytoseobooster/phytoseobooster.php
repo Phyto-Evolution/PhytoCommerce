@@ -9,7 +9,7 @@ class PhytoSeoBooster extends Module {
         $this->name          = 'phytoseobooster';
         $this->tab           = 'seo';
         $this->version       = '1.0.0';
-        $this->author        = 'Phyto Evolution';
+        $this->author        = 'Phyto Commerce';
         $this->need_instance = 0;
         parent::__construct();
         $this->displayName = 'Phyto SEO Booster';

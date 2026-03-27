@@ -80,7 +80,7 @@
   "@type": "Product",
   "name": "Nepenthes rajah",
   "sku": "NEP-001",
-  "brand": { "@type": "Brand", "name": "Phyto Evolution" },
+  "brand": { "@type": "Brand", "name": "Phyto Commerce" },
   "offers": {
     "@type": "Offer",
     "price": "2999.00",
