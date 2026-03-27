@@ -12,6 +12,7 @@
     var $bar      = $('#phyto-batch-bar');
     var $status   = $('#phyto-batch-status');
     var ajaxUrl   = $btn.data('ajax-url');
+    var csrfToken = $btn.data('token');
     var total     = 0;
 
     if (!$btn.length) {
@@ -22,7 +23,7 @@
     function init() {
         $btn.prop('disabled', true).html('<i class="icon-spinner icon-spin"></i> Counting images…');
 
-        $.post(ajaxUrl, { action: 'Init', ajax: 1 })
+        $.post(ajaxUrl, { action: 'Init', ajax: 1, token: csrfToken })
             .done(function (resp) {
                 if (!resp.success) {
                     showError(resp.error || 'Initialisation failed.');
@@ -51,7 +52,7 @@
 
     // ── Recursive chunk processor ─────────────────────────────────────────────
     function processChunk(offset) {
-        $.post(ajaxUrl, { action: 'Chunk', offset: offset, ajax: 1 })
+        $.post(ajaxUrl, { action: 'Chunk', offset: offset, ajax: 1, token: csrfToken })
             .done(function (resp) {
                 if (!resp.success) {
                     showError(resp.error || 'Chunk processing failed at offset ' + offset + '.');
