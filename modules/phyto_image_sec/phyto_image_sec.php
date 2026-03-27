@@ -176,6 +176,12 @@ class Phyto_Image_Sec extends Module
 
     protected function installTab(string $className, string $name, $parent): bool
     {
+        // Remove any stale tab left over from a failed previous install/reset
+        $existingId = (int) Tab::getIdFromClassName($className);
+        if ($existingId > 0) {
+            (new Tab($existingId))->delete();
+        }
+
         $tab             = new Tab();
         $tab->active     = 1;
         $tab->class_name = $className;
