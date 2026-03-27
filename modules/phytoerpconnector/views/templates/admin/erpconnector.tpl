@@ -172,9 +172,18 @@
                     </div>
                     <div class="form-group">
                         <label>API Secret</label>
+                        {if $erp_secret_set}
+                        <div class="input-group">
+                            <input type="password" name="erp_api_secret" class="form-control"
+                                   value="" placeholder="Leave blank to keep current secret">
+                            <span class="input-group-addon" style="background:#dff0d8;color:#3c763d;">
+                                <i class="icon-check"></i> Configured
+                            </span>
+                        </div>
+                        {else}
                         <input type="password" name="erp_api_secret" class="form-control"
-                               value="{$erp_api_secret|escape:'html'}"
-                               placeholder="ERPNext API Secret">
+                               value="" placeholder="ERPNext API Secret">
+                        {/if}
                     </div>
 
                     <h5 style="margin-top:25px;"><i class="icon-toggle-on"></i> Auto-sync Triggers</h5>

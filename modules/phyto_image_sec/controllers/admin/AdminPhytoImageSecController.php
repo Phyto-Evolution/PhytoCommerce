@@ -42,11 +42,24 @@ class AdminPhytoImageSecController extends ModuleAdminController
     }
 
     // ──────────────────────────────────────────────────────────────
+    //  CSRF guard — call at the top of every state-changing AJAX method
+    // ──────────────────────────────────────────────────────────────
+
+    private function checkCsrf(): void
+    {
+        if (!Tools::getValue('token') || Tools::getValue('token') !== Tools::getAdminTokenLite($this->controller_name)) {
+            $this->sendJson(['success' => false, 'error' => 'Invalid security token.']);
+        }
+    }
+
+    // ──────────────────────────────────────────────────────────────
     //  AJAX: Init — count total product images
     // ──────────────────────────────────────────────────────────────
 
     public function ajaxProcessInit(): void
     {
+        $this->checkCsrf();
+
         $total = (int) Db::getInstance()->getValue(
             'SELECT COUNT(*) FROM `' . _DB_PREFIX_ . 'image`'
         );
@@ -60,6 +73,7 @@ class AdminPhytoImageSecController extends ModuleAdminController
 
     public function ajaxProcessChunk(): void
     {
+        $this->checkCsrf();
         $offset = max(0, (int) Tools::getValue('offset', 0));
 
         $logoPath = _PS_IMG_DIR_ . Configuration::get('PS_LOGO');
