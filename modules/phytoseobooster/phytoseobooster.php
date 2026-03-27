@@ -11,6 +11,8 @@ class PhytoSeoBooster extends Module {
         $this->version       = '1.0.0';
         $this->author        = 'Phyto Evolution';
         $this->need_instance = 0;
+        $this->bootstrap     = true;
+        $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => _PS_VERSION_];
         parent::__construct();
         $this->displayName = 'Phyto SEO Booster';
         $this->description = 'AI-powered SEO automation for plant listings — auto meta, schema markup, alt text, and bulk audit';
@@ -18,6 +20,7 @@ class PhytoSeoBooster extends Module {
 
     public function install() {
         return parent::install()
+            && $this->runSql('install')
             && $this->installTab()
             && $this->registerHook('displayHeader')
             && $this->registerHook('actionObjectProductAddAfter')
@@ -25,7 +28,26 @@ class PhytoSeoBooster extends Module {
     }
 
     public function uninstall() {
-        return parent::uninstall() && $this->uninstallTab();
+        return $this->runSql('uninstall')
+            && $this->uninstallTab()
+            && parent::uninstall();
+    }
+
+    private function runSql(string $type): bool
+    {
+        $file = __DIR__ . '/sql/' . $type . '.sql';
+        if (!file_exists($file)) {
+            return true;
+        }
+        $sql = file_get_contents($file);
+        $sql = str_replace('PREFIX_', _DB_PREFIX_, $sql);
+        $sql = str_replace('ENGINE_TYPE', _MYSQL_ENGINE_, $sql);
+        foreach (array_filter(array_map('trim', explode(';', $sql))) as $statement) {
+            if (!Db::getInstance()->execute($statement)) {
+                return false;
+            }
+        }
+        return true;
     }
 
     public function getContent() {

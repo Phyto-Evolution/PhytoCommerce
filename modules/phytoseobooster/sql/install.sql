@@ -7,4 +7,4 @@ CREATE TABLE IF NOT EXISTS `PREFIX_phyto_seo_audit` (
     `date_audited` datetime    NOT NULL,
     PRIMARY KEY (`id_audit`),
     UNIQUE KEY `product_lang` (`id_product`, `id_lang`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=ENGINE_TYPE DEFAULT CHARSET=utf8mb4;

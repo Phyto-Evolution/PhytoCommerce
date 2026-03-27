@@ -13,4 +13,4 @@ CREATE TABLE IF NOT EXISTS `PREFIX_phyto_phytosanitary_doc` (
   PRIMARY KEY (`id_doc`),
   KEY `idx_id_product` (`id_product`),
   KEY `idx_expiry_date` (`expiry_date`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=ENGINE_TYPE DEFAULT CHARSET=utf8mb4;

@@ -400,7 +400,7 @@ class PhytoTcBatch extends ObjectModel
         $last = Db::getInstance()->getValue(
             "SELECT `batch_code` FROM `" . _DB_PREFIX_ . "phyto_tc_batch`
              WHERE `batch_code` LIKE '" . pSQL($base) . "-%'
-             ORDER BY `batch_code` DESC LIMIT 1"
+             ORDER BY `batch_code` DESC"
         );
 
         if ($last) {

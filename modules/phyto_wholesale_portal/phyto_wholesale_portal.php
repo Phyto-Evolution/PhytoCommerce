@@ -59,6 +59,10 @@ class Phyto_Wholesale_Portal extends Module
 
     public function uninstall(): bool
     {
+        foreach (['PHYTO_WHOLESALE_GROUP_ID', 'PHYTO_WHOLESALE_REQUIRE_APPROVAL',
+                  'PHYTO_WHOLESALE_INVOICE_DELIVERY', 'PHYTO_WHOLESALE_INVOICE_DAYS'] as $key) {
+            Configuration::deleteByName($key);
+        }
         return $this->uninstallTab()
             && $this->runSql('uninstall')
             && parent::uninstall();
@@ -81,6 +85,7 @@ class Phyto_Wholesale_Portal extends Module
         }
 
         $sql     = str_replace('PREFIX_', _DB_PREFIX_, $sql);
+        $sql     = str_replace('ENGINE_TYPE', _MYSQL_ENGINE_, $sql);
         $queries = preg_split('/;\s*[\r\n]+/', $sql, -1, PREG_SPLIT_NO_EMPTY);
 
         foreach ($queries as $query) {
@@ -144,7 +149,7 @@ class Phyto_Wholesale_Portal extends Module
         // Check if group already exists
         $existingId = (int) Db::getInstance()->getValue(
             'SELECT `id_group` FROM `' . _DB_PREFIX_ . 'group_lang`
-             WHERE `name` = \'Wholesale\' LIMIT 1'
+             WHERE `name` = \'Wholesale\''
         );
 
         if ($existingId > 0) {

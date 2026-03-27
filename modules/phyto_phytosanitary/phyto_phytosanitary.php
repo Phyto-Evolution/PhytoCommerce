@@ -99,6 +99,7 @@ class Phyto_Phytosanitary extends Module
 
         // Replace PREFIX_ placeholder with the actual DB prefix
         $sql = str_replace('PREFIX_', _DB_PREFIX_, $sql);
+        $sql = str_replace('ENGINE_TYPE', _MYSQL_ENGINE_, $sql);
 
         // Split on semicolons and execute each statement
         $statements = array_filter(

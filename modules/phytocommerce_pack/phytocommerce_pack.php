@@ -50,6 +50,8 @@ class Phytocommerce_Pack extends Module {
         $this->version       = '1.0.0';
         $this->author        = 'Phyto Evolution';
         $this->need_instance = 0;
+        $this->bootstrap     = true;
+        $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => _PS_VERSION_];
         parent::__construct();
         $this->displayName = 'PhytoCommerce Pack';
         $this->description = '1-click installer for the complete PhytoCommerce module suite — 20 modules for specialty plant e-commerce.';
