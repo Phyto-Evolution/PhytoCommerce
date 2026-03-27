@@ -61,9 +61,10 @@ class Phyto_Image_Sec extends Module
 
     public function uninstall(): bool
     {
+        $this->deleteConfig();
+
         return $this->uninstallTabs()
             && $this->runSql('uninstall')
-            && $this->deleteConfig()
             && parent::uninstall();
     }
 
