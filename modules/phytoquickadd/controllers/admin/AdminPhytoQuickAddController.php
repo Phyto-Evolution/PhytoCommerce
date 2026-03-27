@@ -148,8 +148,17 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
                 }
             }
 
-            if (isset($_FILES['product_image']) && $_FILES['product_image']['error'] === 0) {
-                $this->handleProductImage($product->id, $_FILES['product_image']['tmp_name']);
+            // Handle one or more uploaded images
+            if (isset($_FILES['product_images']) && is_array($_FILES['product_images']['error'])) {
+                foreach ($_FILES['product_images']['error'] as $idx => $error) {
+                    if ($error === UPLOAD_ERR_OK) {
+                        $this->handleProductImage(
+                            $product->id,
+                            $_FILES['product_images']['tmp_name'][$idx],
+                            $idx === 0  // first image is the cover
+                        );
+                    }
+                }
             }
             $cat_count = count($category_ids);
             $this->confirmations[] = 'Product "' . $name . '" added to ' . $cat_count
@@ -161,11 +170,11 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
         }
     }
 
-    protected function handleProductImage($id_product, $tmp_file) {
+    protected function handleProductImage($id_product, $tmp_file, $isCover = true) {
         $image = new Image();
         $image->id_product = $id_product;
         $image->position   = Image::getHighestPosition($id_product) + 1;
-        $image->cover      = true;
+        $image->cover      = $isCover;
         if ($image->add()) {
             $path = $image->getPathForCreation();
             ImageManager::resize($tmp_file, $path . '.jpg');
