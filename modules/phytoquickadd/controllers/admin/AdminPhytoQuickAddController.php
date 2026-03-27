@@ -32,8 +32,22 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
         }
     }
 
+    // Supported providers: id => label
+    private static $AI_PROVIDERS = [
+        'claude'   => 'Claude (Anthropic)',
+        'openai'   => 'GPT-4o mini (OpenAI)',
+        'gemini'   => 'Gemini Flash (Google)',
+        'mistral'  => 'Mistral Small',
+        'cohere'   => 'Command R (Cohere)',
+    ];
+
     public function postProcess() {
         if (Tools::isSubmit('saveSettings')) {
+            $provider = Tools::getValue('ai_provider');
+            if (!array_key_exists($provider, self::$AI_PROVIDERS)) {
+                $provider = 'claude';
+            }
+            Configuration::updateValue('PHYTO_AI_PROVIDER', $provider);
             Configuration::updateValue('PHYTO_AI_KEY', Tools::getValue('ai_key'));
             $this->confirmations[] = 'Settings saved successfully.';
         }
@@ -54,6 +68,8 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
             'flat_categories' => $flat_categories,
             'imported_packs'  => $imported_packs,
             'ai_key'          => Configuration::get('PHYTO_AI_KEY') ?: '',
+            'ai_provider'     => Configuration::get('PHYTO_AI_PROVIDER') ?: 'claude',
+            'ai_providers'    => self::$AI_PROVIDERS,
             'ajax_url'        => $this->context->link->getAdminLink('AdminPhytoQuickAdd'),
         ]);
 
@@ -190,9 +206,10 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
     private function ajaxGenerateDescription() {
         $plant_name = trim(Tools::getValue('plant_name'));
         $ai_key     = Configuration::get('PHYTO_AI_KEY');
+        $provider   = Configuration::get('PHYTO_AI_PROVIDER') ?: 'claude';
 
         ob_clean();
-        if (empty($ai_key))     { echo json_encode(['error' => 'Claude AI key not set. Go to Settings tab.']); exit; }
+        if (empty($ai_key))     { echo json_encode(['error' => 'AI key not set. Go to Settings tab.']); exit; }
         if (empty($plant_name)) { echo json_encode(['error' => 'Plant name is required.']); exit; }
 
         // Strip control characters and limit length to prevent prompt injection
@@ -205,41 +222,129 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
                 . "Under 200 words. Also provide a 2-sentence short description. "
                 . "Return ONLY valid JSON: {\"description\": \"...\", \"short_description\": \"...\"}";
 
-        $ch = curl_init('https://api.anthropic.com/v1/messages');
-        curl_setopt_array($ch, [
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_POST           => true,
-            CURLOPT_TIMEOUT        => 30,
-            CURLOPT_HTTPHEADER     => [
-                'Content-Type: application/json',
-                'x-api-key: ' . $ai_key,
-                'anthropic-version: 2023-06-01',
-            ],
-            CURLOPT_POSTFIELDS => json_encode([
+        switch ($provider) {
+            case 'openai':   $raw = $this->callOpenAI($prompt, $ai_key);   break;
+            case 'gemini':   $raw = $this->callGemini($prompt, $ai_key);   break;
+            case 'mistral':  $raw = $this->callMistral($prompt, $ai_key);  break;
+            case 'cohere':   $raw = $this->callCohere($prompt, $ai_key);   break;
+            default:         $raw = $this->callClaude($prompt, $ai_key);   break;
+        }
+
+        if (isset($raw['error'])) { echo json_encode($raw); exit; }
+
+        // Unwrap markdown code fences if the model wrapped its JSON
+        $content = preg_replace('/^```json\s*/i', '', trim($raw['text']));
+        $content = preg_replace('/\s*```$/', '', $content);
+        $parsed  = json_decode($content, true);
+        echo json_encode($parsed ?: ['description' => $content, 'short_description' => '']);
+        exit;
+    }
+
+    // ── AI provider implementations ───────────────────────────────────────────
+
+    private function callClaude(string $prompt, string $key): array {
+        $resp = $this->curlPost(
+            'https://api.anthropic.com/v1/messages',
+            json_encode([
                 'model'      => 'claude-haiku-4-5-20251001',
                 'max_tokens' => 500,
                 'messages'   => [['role' => 'user', 'content' => $prompt]],
             ]),
-        ]);
+            [
+                'Content-Type: application/json',
+                'x-api-key: ' . $key,
+                'anthropic-version: 2023-06-01',
+            ]
+        );
+        if ($resp['err']) return ['error' => 'Connection error: ' . $resp['err']];
+        $d = json_decode($resp['body'], true);
+        if (isset($d['content'][0]['text'])) return ['text' => $d['content'][0]['text']];
+        return ['error' => 'Claude error: ' . ($d['error']['message'] ?? 'Unknown')];
+    }
 
+    private function callOpenAI(string $prompt, string $key): array {
+        $resp = $this->curlPost(
+            'https://api.openai.com/v1/chat/completions',
+            json_encode([
+                'model'      => 'gpt-4o-mini',
+                'max_tokens' => 500,
+                'messages'   => [['role' => 'user', 'content' => $prompt]],
+            ]),
+            [
+                'Content-Type: application/json',
+                'Authorization: Bearer ' . $key,
+            ]
+        );
+        if ($resp['err']) return ['error' => 'Connection error: ' . $resp['err']];
+        $d = json_decode($resp['body'], true);
+        if (isset($d['choices'][0]['message']['content'])) return ['text' => $d['choices'][0]['message']['content']];
+        return ['error' => 'OpenAI error: ' . ($d['error']['message'] ?? 'Unknown')];
+    }
+
+    private function callGemini(string $prompt, string $key): array {
+        $url  = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=' . urlencode($key);
+        $resp = $this->curlPost(
+            $url,
+            json_encode(['contents' => [['parts' => [['text' => $prompt]]]]]),
+            ['Content-Type: application/json']
+        );
+        if ($resp['err']) return ['error' => 'Connection error: ' . $resp['err']];
+        $d = json_decode($resp['body'], true);
+        if (isset($d['candidates'][0]['content']['parts'][0]['text'])) return ['text' => $d['candidates'][0]['content']['parts'][0]['text']];
+        return ['error' => 'Gemini error: ' . ($d['error']['message'] ?? 'Unknown')];
+    }
+
+    private function callMistral(string $prompt, string $key): array {
+        $resp = $this->curlPost(
+            'https://api.mistral.ai/v1/chat/completions',
+            json_encode([
+                'model'      => 'mistral-small-latest',
+                'max_tokens' => 500,
+                'messages'   => [['role' => 'user', 'content' => $prompt]],
+            ]),
+            [
+                'Content-Type: application/json',
+                'Authorization: Bearer ' . $key,
+            ]
+        );
+        if ($resp['err']) return ['error' => 'Connection error: ' . $resp['err']];
+        $d = json_decode($resp['body'], true);
+        if (isset($d['choices'][0]['message']['content'])) return ['text' => $d['choices'][0]['message']['content']];
+        return ['error' => 'Mistral error: ' . ($d['error']['message'] ?? 'Unknown')];
+    }
+
+    private function callCohere(string $prompt, string $key): array {
+        $resp = $this->curlPost(
+            'https://api.cohere.com/v2/chat',
+            json_encode([
+                'model'      => 'command-r-plus',
+                'max_tokens' => 500,
+                'messages'   => [['role' => 'user', 'content' => $prompt]],
+            ]),
+            [
+                'Content-Type: application/json',
+                'Authorization: Bearer ' . $key,
+            ]
+        );
+        if ($resp['err']) return ['error' => 'Connection error: ' . $resp['err']];
+        $d = json_decode($resp['body'], true);
+        if (isset($d['message']['content'][0]['text'])) return ['text' => $d['message']['content'][0]['text']];
+        return ['error' => 'Cohere error: ' . ($d['error']['message'] ?? 'Unknown')];
+    }
+
+    private function curlPost(string $url, string $body, array $headers): array {
+        $ch = curl_init($url);
+        curl_setopt_array($ch, [
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_POST           => true,
+            CURLOPT_TIMEOUT        => 30,
+            CURLOPT_HTTPHEADER     => $headers,
+            CURLOPT_POSTFIELDS     => $body,
+        ]);
         $result = curl_exec($ch);
         $err    = curl_error($ch);
         curl_close($ch);
-
-        if ($err) { echo json_encode(['error' => 'Connection error: ' . $err]); exit; }
-
-        $data = json_decode($result, true);
-        if (isset($data['content'][0]['text'])) {
-            $content = trim($data['content'][0]['text']);
-            $content = preg_replace('/^```json\s*/i', '', $content);
-            $content = preg_replace('/\s*```$/',       '', $content);
-            $parsed  = json_decode($content, true);
-            echo json_encode($parsed ?: ['description' => $content, 'short_description' => '']);
-        } else {
-            $msg = isset($data['error']['message']) ? $data['error']['message'] : 'Unknown error';
-            echo json_encode(['error' => 'Claude API error: ' . $msg]);
-        }
-        exit;
+        return ['body' => $result, 'err' => $err];
     }
 
     private function ajaxSearchCategories() {
