@@ -78,10 +78,16 @@ class AdminPhytoImageSecController extends ModuleAdminController
             ]);
         }
 
+        $defaultLang = (int) Configuration::get('PS_LANG_DEFAULT');
+
         $images = Db::getInstance()->executeS(
-            'SELECT `id_image`
-             FROM `' . _DB_PREFIX_ . 'image`
-             ORDER BY `id_image` ASC
+            'SELECT i.`id_image`, i.`id_product`,
+                    COALESCE(pl.`name`, \'\') AS product_name
+             FROM `' . _DB_PREFIX_ . 'image` i
+             LEFT JOIN `' . _DB_PREFIX_ . 'product_lang` pl
+                    ON pl.`id_product` = i.`id_product`
+                   AND pl.`id_lang` = ' . $defaultLang . '
+             ORDER BY i.`id_image` ASC
              LIMIT ' . self::CHUNK_SIZE . ' OFFSET ' . $offset
         );
 
@@ -100,9 +106,10 @@ class AdminPhytoImageSecController extends ModuleAdminController
         $processed   = 0;
 
         foreach ($images as $row) {
-            $idImage = (int) $row['id_image'];
-            $folder  = Image::getImgFolderStatic($idImage);
-            $baseDir = _PS_PROD_IMG_DIR_ . $folder;
+            $idImage     = (int) $row['id_image'];
+            $productName = (string) ($row['product_name'] ?? '');
+            $folder      = Image::getImgFolderStatic($idImage);
+            $baseDir     = _PS_PROD_IMG_DIR_ . $folder;
 
             // Watermark all thumbnail sizes
             foreach ($imageTypes as $type) {
@@ -110,7 +117,7 @@ class AdminPhytoImageSecController extends ModuleAdminController
                     $path = $baseDir . $idImage . '-' . $type['name'] . $ext;
 
                     if (file_exists($path)) {
-                        $watermarker->apply($path);
+                        $watermarker->apply($path, $productName);
                     }
                 }
             }
@@ -120,7 +127,7 @@ class AdminPhytoImageSecController extends ModuleAdminController
                 $path = $baseDir . $idImage . $ext;
 
                 if (file_exists($path)) {
-                    $watermarker->apply($path);
+                    $watermarker->apply($path, $productName);
                     break;
                 }
             }

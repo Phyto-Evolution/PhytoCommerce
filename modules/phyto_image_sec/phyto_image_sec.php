@@ -28,7 +28,7 @@ class Phyto_Image_Sec extends Module
     {
         $this->name            = 'phyto_image_sec';
         $this->tab             = 'administration';
-        $this->version         = '0.2.0';
+        $this->version         = '0.3.0';
         $this->author          = 'PhytoCommerce';
         $this->need_instance   = 0;
         $this->bootstrap       = true;
@@ -81,6 +81,9 @@ class Phyto_Image_Sec extends Module
             'PHYTO_IMGSEC_SIZE_PCT'          => 25,
             'PHYTO_IMGSEC_PROTECT_ENABLED'   => 1,
             'PHYTO_IMGSEC_WEBP_QUALITY'      => 82,
+            'PHYTO_IMGSEC_TEXT_ENABLED'      => 0,
+            'PHYTO_IMGSEC_TEXT_POSITION'     => 'bottom-left-rotated',
+            'PHYTO_IMGSEC_TEXT_SIZE'         => 14,
         ];
 
         foreach ($defaults as $key => $value) {
@@ -101,6 +104,9 @@ class Phyto_Image_Sec extends Module
             'PHYTO_IMGSEC_SIZE_PCT',
             'PHYTO_IMGSEC_PROTECT_ENABLED',
             'PHYTO_IMGSEC_WEBP_QUALITY',
+            'PHYTO_IMGSEC_TEXT_ENABLED',
+            'PHYTO_IMGSEC_TEXT_POSITION',
+            'PHYTO_IMGSEC_TEXT_SIZE',
         ];
 
         foreach ($keys as $key) {
@@ -239,8 +245,19 @@ class Phyto_Image_Sec extends Module
             return;
         }
 
+        // Get product name for text overlay (only if feature is enabled)
+        $productName = '';
+        $idProduct   = (int) ($params['id_product'] ?? 0);
+
+        if (Configuration::get('PHYTO_IMGSEC_TEXT_ENABLED') && $idProduct) {
+            $product     = new Product($idProduct, false, $this->context->language->id);
+            $productName = is_array($product->name)
+                ? ($product->name[$this->context->language->id] ?? reset($product->name))
+                : (string) $product->name;
+        }
+
         $watermarker = $this->buildWatermarker($logoPath);
-        $this->watermarkAllSizes($watermarker, $idImage);
+        $this->watermarkAllSizes($watermarker, $idImage, $productName);
     }
 
     // ──────────────────────────────────────────────────────────────
@@ -351,6 +368,18 @@ class Phyto_Image_Sec extends Module
         Configuration::updateValue('PHYTO_IMGSEC_SIZE_PCT', $size);
         Configuration::updateValue('PHYTO_IMGSEC_WEBP_QUALITY', $webpQuality);
         Configuration::updateValue(
+            'PHYTO_IMGSEC_TEXT_ENABLED',
+            (int) Tools::getValue('PHYTO_IMGSEC_TEXT_ENABLED')
+        );
+        Configuration::updateValue(
+            'PHYTO_IMGSEC_TEXT_POSITION',
+            Tools::getValue('PHYTO_IMGSEC_TEXT_POSITION')
+        );
+        Configuration::updateValue(
+            'PHYTO_IMGSEC_TEXT_SIZE',
+            (int) Tools::getValue('PHYTO_IMGSEC_TEXT_SIZE')
+        );
+        Configuration::updateValue(
             'PHYTO_IMGSEC_PROTECT_ENABLED',
             (int) Tools::getValue('PHYTO_IMGSEC_PROTECT_ENABLED')
         );
@@ -447,6 +476,47 @@ class Phyto_Image_Sec extends Module
                 'required' => true,
             ],
             [
+                'type'    => 'switch',
+                'label'   => $this->l('Embed Product Name on Image'),
+                'name'    => 'PHYTO_IMGSEC_TEXT_ENABLED',
+                'is_bool' => true,
+                'desc'    => $this->l(
+                    'Draws the product name in white text onto every image. '
+                    . 'Default position: bottom-left, rotated 90° upward. '
+                    . 'Applied at upload time — run Batch Watermark to update existing images.'
+                ),
+                'values'  => [
+                    ['id' => 'text_on',  'value' => 1, 'label' => $this->l('Enabled')],
+                    ['id' => 'text_off', 'value' => 0, 'label' => $this->l('Disabled')],
+                ],
+            ],
+            [
+                'type'    => 'select',
+                'label'   => $this->l('Product Name Position'),
+                'name'    => 'PHYTO_IMGSEC_TEXT_POSITION',
+                'desc'    => $this->l('Where to draw the product name. "Bottom-left rotated" is the default — text reads upward along the left edge.'),
+                'options' => [
+                    'query' => [
+                        ['key' => 'bottom-left-rotated', 'name' => $this->l('Bottom-left, rotated 90° upward (default)')],
+                        ['key' => 'bottom-left',         'name' => $this->l('Bottom-left, horizontal')],
+                        ['key' => 'bottom-center',       'name' => $this->l('Bottom-center, horizontal')],
+                        ['key' => 'bottom-right',        'name' => $this->l('Bottom-right, horizontal')],
+                        ['key' => 'top-left',            'name' => $this->l('Top-left, horizontal')],
+                        ['key' => 'top-right',           'name' => $this->l('Top-right, horizontal')],
+                    ],
+                    'id'   => 'key',
+                    'name' => 'name',
+                ],
+            ],
+            [
+                'type'     => 'text',
+                'label'    => $this->l('Product Name Font Size'),
+                'name'     => 'PHYTO_IMGSEC_TEXT_SIZE',
+                'class'    => 'fixed-width-sm',
+                'desc'     => $this->l('Font size in points. Recommended: 12–18 for thumbnails, 20–28 for large images.'),
+                'required' => true,
+            ],
+            [
                 'type'     => 'text',
                 'label'    => $this->l('WebP Quality'),
                 'name'     => 'PHYTO_IMGSEC_WEBP_QUALITY',
@@ -492,6 +562,9 @@ class Phyto_Image_Sec extends Module
             'PHYTO_IMGSEC_OPACITY'           => (int) Configuration::get('PHYTO_IMGSEC_OPACITY'),
             'PHYTO_IMGSEC_SIZE_PCT'          => (int) Configuration::get('PHYTO_IMGSEC_SIZE_PCT'),
             'PHYTO_IMGSEC_WEBP_QUALITY'      => (int) Configuration::get('PHYTO_IMGSEC_WEBP_QUALITY'),
+            'PHYTO_IMGSEC_TEXT_ENABLED'      => (int) Configuration::get('PHYTO_IMGSEC_TEXT_ENABLED'),
+            'PHYTO_IMGSEC_TEXT_POSITION'     => Configuration::get('PHYTO_IMGSEC_TEXT_POSITION'),
+            'PHYTO_IMGSEC_TEXT_SIZE'         => (int) Configuration::get('PHYTO_IMGSEC_TEXT_SIZE'),
             'PHYTO_IMGSEC_PROTECT_ENABLED'   => (int) Configuration::get('PHYTO_IMGSEC_PROTECT_ENABLED'),
         ];
 
@@ -527,14 +600,19 @@ class Phyto_Image_Sec extends Module
             (int) (Configuration::get('PHYTO_IMGSEC_SIZE_PCT') ?: 25),
             (string) (Configuration::get('PS_SHOP_NAME') ?: ''),
             (string) Tools::getShopDomain(true, true),
-            (int) (Configuration::get('PHYTO_IMGSEC_WEBP_QUALITY') ?: 82)
+            (int) (Configuration::get('PHYTO_IMGSEC_WEBP_QUALITY') ?: 82),
+            (bool) (int) Configuration::get('PHYTO_IMGSEC_TEXT_ENABLED'),
+            Configuration::get('PHYTO_IMGSEC_TEXT_POSITION') ?: 'bottom-left-rotated',
+            (int) (Configuration::get('PHYTO_IMGSEC_TEXT_SIZE') ?: 14)
         );
     }
 
     /**
-     * Apply watermark to all thumbnail sizes + original for a given image ID.
+     * Apply watermark (and optional text overlay) to all thumbnail sizes + original.
+     *
+     * @param string $productName  Product name for text overlay; empty string skips text.
      */
-    public function watermarkAllSizes(PhytoImageWatermarker $watermarker, int $idImage): void
+    public function watermarkAllSizes(PhytoImageWatermarker $watermarker, int $idImage, string $productName = ''): void
     {
         $folder   = Image::getImgFolderStatic($idImage);
         $baseDir  = _PS_PROD_IMG_DIR_ . $folder;
@@ -546,7 +624,7 @@ class Phyto_Image_Sec extends Module
                 $path = $baseDir . $idImage . '-' . $type['name'] . $ext;
 
                 if (file_exists($path)) {
-                    $watermarker->apply($path);
+                    $watermarker->apply($path, $productName);
                 }
             }
         }
@@ -556,7 +634,7 @@ class Phyto_Image_Sec extends Module
             $path = $baseDir . $idImage . $ext;
 
             if (file_exists($path)) {
-                $watermarker->apply($path);
+                $watermarker->apply($path, $productName);
                 break;
             }
         }

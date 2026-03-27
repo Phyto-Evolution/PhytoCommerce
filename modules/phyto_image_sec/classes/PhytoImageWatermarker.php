@@ -46,22 +46,41 @@ class PhytoImageWatermarker
     /** @var int WebP output quality 1–100 (default 82) */
     private int $webpQuality;
 
+    /** @var bool Whether to draw product name text on images */
+    private bool $textEnabled;
+
+    /**
+     * @var string Text position:
+     *   bottom-left-rotated (default — text reads upward along left edge)
+     *   bottom-left | bottom-right | bottom-center | top-left | top-right
+     */
+    private string $textPosition;
+
+    /** @var int Font size in pt (default 14) */
+    private int $textSize;
+
     public function __construct(
         string $logoPath,
         string $position,
         int    $opacityPct,
         int    $sizePct,
-        string $shopName    = '',
-        string $shopUrl     = '',
-        int    $webpQuality = 82
+        string $shopName     = '',
+        string $shopUrl      = '',
+        int    $webpQuality  = 82,
+        bool   $textEnabled  = false,
+        string $textPosition = 'bottom-left-rotated',
+        int    $textSize     = 14
     ) {
-        $this->logoPath    = $logoPath;
-        $this->position    = $position;
-        $this->opacityPct  = max(0, min(100, $opacityPct));
-        $this->sizePct     = max(5, min(75, $sizePct));
-        $this->shopName    = $shopName;
-        $this->shopUrl     = $shopUrl;
-        $this->webpQuality = max(1, min(100, $webpQuality));
+        $this->logoPath      = $logoPath;
+        $this->position      = $position;
+        $this->opacityPct    = max(0, min(100, $opacityPct));
+        $this->sizePct       = max(5, min(75, $sizePct));
+        $this->shopName      = $shopName;
+        $this->shopUrl       = $shopUrl;
+        $this->webpQuality   = max(1, min(100, $webpQuality));
+        $this->textEnabled   = $textEnabled;
+        $this->textPosition  = $textPosition;
+        $this->textSize      = max(8, min(72, $textSize));
     }
 
     // ──────────────────────────────────────────────────────────────
@@ -69,13 +88,14 @@ class PhytoImageWatermarker
     // ──────────────────────────────────────────────────────────────
 
     /**
-     * Apply watermark to a single image file (in-place).
+     * Apply watermark (and optional text overlay) to a single image file (in-place).
      *
-     * @param string $imagePath Absolute path to the image to watermark.
+     * @param string $imagePath    Absolute path to the image to watermark.
+     * @param string $overlayText  Product name to draw on the image (empty = skip).
      *
      * @return bool True on success, false on any error.
      */
-    public function apply(string $imagePath): bool
+    public function apply(string $imagePath, string $overlayText = ''): bool
     {
         if (!file_exists($imagePath) || !is_writable($imagePath)) {
             return false;
@@ -136,6 +156,11 @@ class PhytoImageWatermarker
         }
 
         imagedestroy($wm);
+
+        // Draw product name text overlay (if enabled and text provided)
+        if ($this->textEnabled && $overlayText !== '') {
+            $this->drawTextOverlay($base, $overlayText, $baseW, $baseH);
+        }
 
         // 1. Save watermarked image back in its original format
         $result = $this->saveImage($base, $imagePath, $baseMime);
@@ -319,6 +344,152 @@ class PhytoImageWatermarker
                 imagecopy($base, $wm, $x, $y, 0, 0, $wW, $wH);
             }
         }
+    }
+
+    // ──────────────────────────────────────────────────────────────
+    //  Text overlay
+    // ──────────────────────────────────────────────────────────────
+
+    /**
+     * Draw the product name onto the image in white with a dark outline.
+     * Readable on any background colour.
+     *
+     * Default position: bottom-left-rotated — text reads upward along the
+     * left edge (90° counter-clockwise). All other positions are horizontal.
+     *
+     * @param resource|GdImage $img
+     */
+    private function drawTextOverlay($img, string $text, int $imgW, int $imgH): void
+    {
+        $font = $this->findFont();
+
+        if (!$font) {
+            // GD built-in fallback — no rotation support, basic readability
+            $this->drawTextFallback($img, $text, $imgW, $imgH);
+            return;
+        }
+
+        $size  = (float) $this->textSize;
+        $angle = ($this->textPosition === 'bottom-left-rotated') ? 90.0 : 0.0;
+        $pad   = 12;
+
+        // Measure text to calculate position
+        $bbox = imagettfbbox($size, $angle, $font, $text);
+
+        // Screen width/height of the rendered text block
+        $tw = abs($bbox[4] - $bbox[0]);
+        $th = abs($bbox[5] - $bbox[1]);
+
+        [$x, $y] = $this->calcTextPosition($imgW, $imgH, $tw, $th, $pad, $angle);
+
+        // Outline: draw text in near-black at 8 surrounding offsets
+        $outline = imagecolorallocatealpha($img, 0, 0, 0, 40);
+        foreach ([[-1,-1],[-1,0],[-1,1],[0,-1],[0,1],[1,-1],[1,0],[1,1]] as [$ox, $oy]) {
+            imagettftext($img, $size, $angle, $x + $ox, $y + $oy, $outline, $font, $text);
+        }
+
+        // Main text in white
+        $white = imagecolorallocatealpha($img, 255, 255, 255, 0);
+        imagettftext($img, $size, $angle, $x, $y, $white, $font, $text);
+    }
+
+    /**
+     * Calculate anchor point (x, y) for imagettftext given position.
+     *
+     * For angle=90 (CCW), GD's anchor is the baseline of the first character.
+     * The text runs upward from that point, so for bottom-left-rotated we
+     * anchor near the bottom-left corner.
+     *
+     * @return int[]  [$x, $y]
+     */
+    private function calcTextPosition(
+        int   $imgW,
+        int   $imgH,
+        int   $tw,
+        int   $th,
+        int   $pad,
+        float $angle
+    ): array {
+        switch ($this->textPosition) {
+            case 'bottom-left-rotated': // text goes upward along left edge
+                return [$pad + $th, $imgH - $pad];
+
+            case 'bottom-left':
+                return [$pad, $imgH - $pad];
+
+            case 'bottom-right':
+                return [$imgW - $tw - $pad, $imgH - $pad];
+
+            case 'bottom-center':
+                return [(int)(($imgW - $tw) / 2), $imgH - $pad];
+
+            case 'top-left':
+                return [$pad, $pad + $th];
+
+            case 'top-right':
+                return [$imgW - $tw - $pad, $pad + $th];
+
+            default:
+                return [$pad + $th, $imgH - $pad];
+        }
+    }
+
+    /**
+     * Fallback text drawing using GD's built-in bitmap fonts (no TTF needed).
+     * Supports horizontal text only — no rotation.
+     *
+     * @param resource|GdImage $img
+     */
+    private function drawTextFallback($img, string $text, int $imgW, int $imgH): void
+    {
+        $font  = 3; // GD built-in font 3 (~14px)
+        $fw    = imagefontwidth($font);
+        $fh    = imagefontheight($font);
+        $textW = $fw * strlen($text);
+        $pad   = 10;
+
+        $x = $pad;
+        $y = $imgH - $fh - $pad;
+
+        // Black shadow
+        $black = imagecolorallocate($img, 0, 0, 0);
+        imagestring($img, $font, $x + 1, $y + 1, $text, $black);
+
+        // White text
+        $white = imagecolorallocate($img, 255, 255, 255);
+        imagestring($img, $font, $x, $y, $text, $white);
+    }
+
+    /**
+     * Find a usable TrueType font file on the system.
+     * Returns empty string if none found (triggers built-in fallback).
+     */
+    private function findFont(): string
+    {
+        // Check for a font bundled inside the module first
+        $bundled = dirname(__FILE__) . '/../fonts/DejaVuSans-Bold.ttf';
+
+        if (file_exists($bundled)) {
+            return $bundled;
+        }
+
+        // System font candidates (common on Debian/Ubuntu)
+        $candidates = [
+            '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',
+            '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',
+            '/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf',
+            '/usr/share/fonts/truetype/ubuntu/Ubuntu-B.ttf',
+            '/usr/share/fonts/truetype/freefont/FreeSansBold.ttf',
+            '/usr/share/fonts/truetype/noto/NotoSans-Bold.ttf',
+        ];
+
+        foreach ($candidates as $path) {
+            if (file_exists($path)) {
+                return $path;
+            }
+        }
+
+        return '';
     }
 
     // ──────────────────────────────────────────────────────────────
