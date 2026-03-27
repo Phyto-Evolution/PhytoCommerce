@@ -22,4 +22,4 @@ CREATE TABLE IF NOT EXISTS `PREFIX_phyto_tc_contamination_log` (
     KEY `idx_id_batch` (`id_batch`),
     KEY `idx_incident_date` (`incident_date`),
     KEY `idx_resolved` (`resolved`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=ENGINE_TYPE DEFAULT CHARSET=utf8mb4;

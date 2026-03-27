@@ -1,0 +1,263 @@
+{
+  "pack_id": "lentibulariaceae",
+  "schema_version": "1.1.0",
+  "family": "Lentibulariaceae",
+  "common_name": "Butterworts, Bladderworts and Corkscrew Plants",
+  "description": "The family Lentibulariaceae contains three genera of carnivorous plants united by their small, often colourful flowers and highly reduced vegetative bodies adapted to nutrient-poor habitats. <em>Pinguicula</em> (butterworts) use sticky flat leaves to trap insects. <em>Utricularia</em> (bladderworts) deploy tiny suction traps to catch aquatic or soil-dwelling invertebrates — the fastest active traps in the plant kingdom. <em>Genlisea</em> (corkscrew plants) trap soil protozoa in elaborate spiral underground traps.",
+  "meta_title": "Lentibulariaceae — Butterworts, Bladderworts and Corkscrew Plants",
+  "meta_description": "Shop Pinguicula butterworts, Utricularia bladderworts and Genlisea corkscrew plants. Wide range of species, excellent pest-control plants, easy to grow.",
+  "meta_keywords": "Pinguicula, butterwort, Utricularia, bladderwort, Genlisea, corkscrew plant, carnivorous plants",
+  "genera": [
+    {
+      "genus": "Pinguicula",
+      "common_name": "Butterworts",
+      "description": "<em>Pinguicula</em> comprises approximately 100 species of rosette-forming carnivores with flat, glandular leaves coated in sticky mucilage. They trap small insects and fungus gnats with passive adhesion. Many Mexican highland species produce a winter rosette of non-carnivorous succulent leaves during dry season — a striking transformation. Flowers are showy and violet-to-white, resembling small orchids.",
+      "meta_title": "Pinguicula — Butterworts for Sale",
+      "meta_description": "Buy Pinguicula butterworts. Mexican highland species ideal for controlling fungus gnats. Beautiful flowers, compact rosettes, easy windowsill culture.",
+      "meta_keywords": "Pinguicula, butterwort, Mexican butterwort, Pinguicula moranensis, fungus gnat control, carnivorous rosette",
+      "native_range": "Northern Hemisphere temperate and tropical regions; greatest diversity in Mexican highlands; also Europe, Andes",
+      "care_level": "beginner",
+      "tc_suitability": "high",
+      "conservation_status": "varies_by_species",
+      "species": [
+        {
+          "full_name": "Pinguicula moranensis",
+          "common_name": "Moranensis Butterwort",
+          "description": "<em>Pinguicula moranensis</em> is the most commonly cultivated Mexican butterwort and an excellent introduction to the genus. Large carnivorous leaves in summer trap fungus gnats; compact succulent winter rosette. Produces beautiful pink to magenta flowers. Grows well on a sunny windowsill with well-drained mineral mix.",
+          "meta_title": "Pinguicula moranensis — Common Mexican Butterwort",
+          "meta_description": "Popular Pinguicula moranensis — large pink flowers, effective fungus gnat trap, easy windowsill culture. Multiple forms available.",
+          "meta_keywords": "Pinguicula moranensis, Mexican butterwort, fungus gnat, easy butterwort",
+          "native_range": "Mexican highlands (Hidalgo, San Luis Potosi, Oaxaca) at 1,200–3,200 m",
+          "conservation_status": "LC",
+          "notes": "Summer: large sticky carnivorous leaves. Winter: compact dry-growing succulent rosette. Reduce watering in winter. Mineral substrate (pumice/perlite) preferred.",
+          "cultivars": [
+            { "cultivar": "A", "description": "Classic large-leafed form; deep magenta flowers; most commonly distributed clone." },
+            { "cultivar": "D", "description": "Compact form with slightly smaller rosette; reliable and vigorous." }
+          ]
+        },
+        {
+          "full_name": "Pinguicula gypsicola",
+          "common_name": "Gypsum Butterwort",
+          "description": "<em>Pinguicula gypsicola</em> is a specialist of gypsum outcrops in San Luis Potosi, Mexico. It has unusually long, narrow carnivorous leaves compared to other Mexican butterworts and produces delicate pale violet flowers. Requires extremely well-drained, mineral-rich substrate mimicking its gypsum habitat.",
+          "meta_title": "Pinguicula gypsicola — Gypsum Specialist Butterwort",
+          "meta_description": "Unusual Pinguicula gypsicola from Mexican gypsum outcrops. Long narrow leaves, pale violet flowers. For collectors seeking unusual butterwort forms.",
+          "meta_keywords": "Pinguicula gypsicola, gypsum butterwort, unusual Pinguicula, San Luis Potosi",
+          "native_range": "Mexico — San Luis Potosi (gypsum outcrops, 1,800–2,400 m)",
+          "conservation_status": "NT",
+          "notes": "Gypsum specialist — very mineral, alkaline substrate required (unusual for carnivores). Keep dry in winter. Long strap-like carnivorous leaves.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pinguicula ehlersiae",
+          "common_name": "Ehlers' Butterwort",
+          "description": "<em>Pinguicula ehlersiae</em> is a small, delicate Mexican highland butterwort producing attractive violet-purple flowers with a white throat. Very easy to grow and propagate by leaf pullings. Forms neat flat rosettes of oval carnivorous leaves in summer.",
+          "meta_title": "Pinguicula ehlersiae — Delicate Mexican Butterwort",
+          "meta_description": "Charming Pinguicula ehlersiae with violet-purple flowers. Easy leaf-pull propagation. Perfect compact butterwort for windowsill collections.",
+          "meta_keywords": "Pinguicula ehlersiae, Mexican butterwort, purple butterwort, easy Pinguicula",
+          "native_range": "Mexico — Hidalgo and Queretaro (limestone outcrops, 1,600–2,800 m)",
+          "conservation_status": "LC",
+          "notes": "Very easy. Propagate by leaf pullings. Flat rosette; nice violet flowers. Semi-dry winter rosette.",
+          "cultivars": [
+            { "cultivar": "La Posa", "description": "Select form from La Posa locality; slightly larger rosette and deeper violet flower colouration." }
+          ]
+        },
+        {
+          "full_name": "Pinguicula cyclosecta",
+          "common_name": "Cyclosecta Butterwort",
+          "description": "<em>Pinguicula cyclosecta</em> is one of the most striking Mexican butterworts, producing vivid blue-purple flowers with distinctive circular petal markings. The winter rosette is particularly attractive — small and almost cactus-like. A collector favourite.",
+          "meta_title": "Pinguicula cyclosecta — Blue-purple Flowered Butterwort",
+          "meta_description": "Striking Pinguicula cyclosecta with vivid blue-purple circular-patterned flowers. Attractive winter succulent rosette. Collector's butterwort.",
+          "meta_keywords": "Pinguicula cyclosecta, blue butterwort, Mexican Pinguicula, collector butterwort",
+          "native_range": "Mexico — Nuevo Leon (limestone, 1,400–2,200 m)",
+          "conservation_status": "LC",
+          "notes": "Outstanding blue-purple flowers with circular markings. Winter rosette looks almost succulent. Mineral substrate essential.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pinguicula agnata",
+          "common_name": "Agnata Butterwort",
+          "description": "<em>Pinguicula agnata</em> is a larger Mexican butterwort with elongated, strap-like carnivorous leaves and rich violet flowers with a white centre. Very vigorous; one of the easiest Mexican Pinguicula to grow and flower reliably.",
+          "meta_title": "Pinguicula agnata — Large Easy Mexican Butterwort",
+          "meta_description": "Vigorous Pinguicula agnata. Large strap-like leaves, violet flowers. One of the most reliable and easy-flowering Mexican butterworts.",
+          "meta_keywords": "Pinguicula agnata, large butterwort, Mexican Pinguicula, easy flowering",
+          "native_range": "Mexico — Tamaulipas and San Luis Potosi (1,200–2,000 m)",
+          "conservation_status": "LC",
+          "notes": "One of the more vigorous and reliable Mexican butterworts. Large summer leaves; well-defined dry winter rosette.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pinguicula laueana",
+          "common_name": "Laue's Butterwort",
+          "description": "<em>Pinguicula laueana</em> is prized for its red flowers — unusual in a genus dominated by violet and white flowers. Native to Oaxaca, Mexico. Produces medium-sized carnivorous rosettes in summer and a compact dry winter form.",
+          "meta_title": "Pinguicula laueana — Red-flowered Mexican Butterwort",
+          "meta_description": "Unusual red-flowered Pinguicula laueana from Oaxaca, Mexico. Rare colour in the genus; collector favourite. Easy to grow.",
+          "meta_keywords": "Pinguicula laueana, red butterwort, Oaxaca Pinguicula, red flowered carnivorous plant",
+          "native_range": "Mexico — Oaxaca (limestone, 1,600–2,400 m)",
+          "conservation_status": "LC",
+          "notes": "Outstanding red flowers, very unusual for Pinguicula. Otherwise standard Mexican highland care applies.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pinguicula grandiflora",
+          "common_name": "Large-flowered Butterwort",
+          "description": "<em>Pinguicula grandiflora</em> is the showiest European butterwort, native to the limestone mountains of Ireland, the Alps, and the Pyrenees. It produces large, vivid violet flowers with a white throat in late spring. Requires cold dormancy in winter. Excellent for outdoor rock gardens in cool-temperate climates.",
+          "meta_title": "Pinguicula grandiflora — Large-flowered European Butterwort",
+          "meta_description": "Hardy European Pinguicula grandiflora from Irish and Alpine mountains. Large vivid violet flowers. Cold-hardy outdoor rock garden plant.",
+          "meta_keywords": "Pinguicula grandiflora, European butterwort, hardy butterwort, Irish butterwort, alpine butterwort",
+          "native_range": "Ireland, southern England, Pyrenees, Alps, Apennines (limestone mountain habitats)",
+          "conservation_status": "LC",
+          "notes": "Cold-hardy; suitable for outdoor rock gardens in cool climates. Cold winter dormancy required. Unlike Mexican species, does not go fully dry — keep slightly moist even in winter.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pinguicula vulgaris",
+          "common_name": "Common Butterwort",
+          "description": "<em>Pinguicula vulgaris</em> is the most widespread Pinguicula species, found across Europe, northern Asia, and North America in wet, often calcareous rock faces and wet tundra. Small rosettes with yellow-green leaves; modest violet flowers. Requires cold, wet conditions and a hard winter dormancy.",
+          "meta_title": "Pinguicula vulgaris — Common Circumpolar Butterwort",
+          "meta_description": "Widespread Pinguicula vulgaris from European and circumpolar habitats. Small, cold-hardy butterwort for rock gardens and bog terrariums.",
+          "meta_keywords": "Pinguicula vulgaris, common butterwort, circumpolar butterwort, arctic alpine plant",
+          "native_range": "Circumboreal — Europe, Scandinavia, northern Asia, North America (wet limestone, tundra)",
+          "conservation_status": "LC",
+          "notes": "Cold-hardy. Requires hard frost dormancy. Cold, wet, mineral substrate. Small plant; suitable for cold terrariums or outdoor alpine gardens.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Utricularia",
+      "common_name": "Bladderworts",
+      "description": "<em>Utricularia</em> is the largest genus of carnivorous plants with approximately 230 species. All produce tiny suction-trap bladders that fire in under 15 milliseconds — the fastest movement in the plant kingdom. Terrestrial species grow in waterlogged peat and are generally easy; epiphytic and aquatic species are more demanding. Most have surprisingly showy flowers for their size.",
+      "meta_title": "Utricularia — Bladderworts for Sale",
+      "meta_description": "Buy Utricularia bladderworts. Terrestrial, epiphytic, and aquatic species. Beautiful flowers, easy culture, fastest traps in the plant kingdom.",
+      "meta_keywords": "Utricularia, bladderwort, buy bladderwort, Utricularia sandersonii, terrestrial bladderwort",
+      "native_range": "Cosmopolitan — tropical and temperate wetlands, bogs, aquatic habitats",
+      "care_level": "beginner",
+      "tc_suitability": "medium",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Utricularia sandersonii",
+          "common_name": "Sanderson's Bladderwort",
+          "description": "<em>Utricularia sandersonii</em> produces masses of tiny white and lilac flowers resembling rabbit faces, earning it the common name 'bunny bladderwort'. Extremely easy terrestrial species from South Africa. Grows happily in a peat-perlite tray with virtually no attention. Self-seeds and spreads freely.",
+          "meta_title": "Utricularia sandersonii — Bunny Bladderwort",
+          "meta_description": "Charming and easy Utricularia sandersonii with bunny-face flowers. Perfect starter bladderwort; self-seeds, grows in tray water, flowers freely.",
+          "meta_keywords": "Utricularia sandersonii, bunny bladderwort, easy Utricularia, South Africa bladderwort",
+          "native_range": "South Africa — KwaZulu-Natal and Eastern Cape (wet sandy soils)",
+          "conservation_status": "LC",
+          "notes": "Easiest Utricularia. Tray watering. Flowers prolifically year-round. Self-seeds into neighbouring pots.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Utricularia livida",
+          "common_name": "Pale Bladderwort",
+          "description": "<em>Utricularia livida</em> is a vigorous terrestrial species from Africa and Mexico, producing delicate pale violet flowers on erect scapes. Very free-flowering and easy to grow in standard carnivorous plant peat mixes. Often used as a companion plant in mixed bog containers.",
+          "meta_title": "Utricularia livida — Prolific Terrestrial Bladderwort",
+          "meta_description": "Free-flowering Utricularia livida. Pale violet flowers; easy terrestrial culture. Excellent companion for sundews and other bog plants.",
+          "meta_keywords": "Utricularia livida, pale bladderwort, terrestrial Utricularia, easy bladderwort",
+          "native_range": "Africa (widespread), Mexico (disjunct population)",
+          "conservation_status": "LC",
+          "notes": "Very easy. Grows well in standard peat-perlite. Flowers freely. Excellent companion plant.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Utricularia bisquamata",
+          "common_name": "Two-scaled Bladderwort",
+          "description": "<em>Utricularia bisquamata</em> is a tiny but prolific self-seeding terrestrial bladderwort from South Africa. It produces hundreds of minuscule white and violet flowers and seeds so freely it often appears uninvited in collections of other carnivorous plants. Easy and interesting but can become a weed.",
+          "meta_title": "Utricularia bisquamata — Self-seeding Bladderwort",
+          "meta_description": "Prolific Utricularia bisquamata seeds freely into pots. Tiny white flowers in abundance. Easy self-spreading bladderwort for bog collections.",
+          "meta_keywords": "Utricularia bisquamata, self seeding bladderwort, tiny bladderwort, South Africa",
+          "native_range": "South Africa — Western Cape and Eastern Cape (wet sandy heathland)",
+          "conservation_status": "LC",
+          "notes": "Self-seeds extremely prolifically. Will appear spontaneously in other carnivorous plant pots. Can become a nuisance weed but harmless.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Utricularia reniformis",
+          "common_name": "Kidney-leaved Bladderwort",
+          "description": "<em>Utricularia reniformis</em> is a spectacular epiphytic and lithophytic bladderwort from Brazil, producing large kidney-shaped leaves up to 15 cm across and beautiful large violet flowers. One of the most impressive-looking Utricularia species. Requires high humidity and intermediate conditions.",
+          "meta_title": "Utricularia reniformis — Large-leaved Brazilian Bladderwort",
+          "meta_description": "Spectacular Utricularia reniformis from Brazilian Atlantic forest. Huge kidney-shaped leaves; large violet flowers. Epiphytic; intermediate conditions.",
+          "meta_keywords": "Utricularia reniformis, large Utricularia, Brazilian bladderwort, epiphytic Utricularia",
+          "native_range": "Brazil — Atlantic forest (epiphytic on mossy rocks and trees, 500–1,800 m)",
+          "conservation_status": "LC",
+          "notes": "Epiphytic; grow in sphagnum or orchid bark mix. High humidity. Large attractive leaves and flowers. Intermediate temperature.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Utricularia nelumbifolia",
+          "common_name": "Lotus-leaved Bladderwort",
+          "description": "<em>Utricularia nelumbifolia</em> is a remarkable epiphytic bladderwort that grows naturally inside the water-holding leaf bases (tanks) of large bromeliads such as <em>Vriesea hieroglyphica</em>. Its large rounded leaves and vivid violet flowers make it one of the most visually striking Utricularia. Requires bromeliad or bromeliad-mimicking culture.",
+          "meta_title": "Utricularia nelumbifolia — Bromeliad-tank Bladderwort",
+          "meta_description": "Unique Utricularia nelumbifolia grows inside bromeliad tanks. Large rounded leaves and vivid violet flowers. Unusual and spectacular epiphytic bladderwort.",
+          "meta_keywords": "Utricularia nelumbifolia, bromeliad bladderwort, tank plant Utricularia, unusual bladderwort",
+          "native_range": "Brazil — Serra dos Órgãos, Rio de Janeiro state (epiphytic in bromeliad tanks, 1,000–2,200 m)",
+          "conservation_status": "LC",
+          "notes": "Grow in large-leafed bromeliad tanks or in pure sphagnum with standing water. High humidity. Large attractive flowers.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Utricularia dichotoma",
+          "common_name": "Fairy Aprons Bladderwort",
+          "description": "<em>Utricularia dichotoma</em> is an Australian and New Zealand terrestrial bladderwort producing masses of delicate purple flowers. Easy to grow in standard bog conditions; a reliable flowerer and good introduction to the Australian bladderwort flora.",
+          "meta_title": "Utricularia dichotoma — Australian Fairy Aprons Bladderwort",
+          "meta_description": "Pretty Utricularia dichotoma from Australia and New Zealand. Purple fairy apron flowers; easy bog culture. Good introduction to Australian Utricularia.",
+          "meta_keywords": "Utricularia dichotoma, fairy aprons, Australian bladderwort, purple bladderwort",
+          "native_range": "Australia (Victoria, Tasmania, South Australia, Western Australia) and New Zealand",
+          "conservation_status": "LC",
+          "notes": "Easy terrestrial. Standard peat-perlite in tray water. Flowers freely in good light.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Genlisea",
+      "common_name": "Corkscrew Plants",
+      "description": "<em>Genlisea</em> comprises approximately 30 species of carnivorous plants from Africa and South America. They are geophytes with two types of leaves: flat photosynthetic leaves above ground and subterranean, spiral, hollow trapping leaves that catch and digest soil protozoa and nematodes. Tiny flowers resemble miniature snapdragons. Rarely cultivated but fascinating for collectors.",
+      "meta_title": "Genlisea — Corkscrew Plants",
+      "meta_description": "Unusual Genlisea corkscrew plants from Africa and South America. Subterranean spiral traps catch soil protozoa. Collector plants with miniature snapdragon flowers.",
+      "meta_keywords": "Genlisea, corkscrew plant, soil carnivore, unusual carnivorous plant, Genlisea aurea",
+      "native_range": "Africa (sub-Saharan) and South America (Brazil, Venezuela, Guyana)",
+      "care_level": "intermediate",
+      "tc_suitability": "low",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Genlisea aurea",
+          "common_name": "Golden Corkscrew Plant",
+          "description": "<em>Genlisea aurea</em> is the largest and most commonly cultivated Genlisea species, native to Brazil's cerrado savanna. It produces attractive small bright yellow flowers above flat green leaf rosettes. The underground corkscrew traps are fascinating but invisible in cultivation. Grows well in standard peat-based carnivorous plant mix.",
+          "meta_title": "Genlisea aurea — Golden Corkscrew Plant",
+          "meta_description": "Largest Genlisea species. Yellow flowers above flat rosette; invisible underground corkscrew traps catch soil organisms. Brazilian cerrado species.",
+          "meta_keywords": "Genlisea aurea, golden corkscrew plant, Brazilian carnivore, Genlisea largest",
+          "native_range": "Brazil — cerrado and campo rupestre of Minas Gerais, Bahia, Goias",
+          "conservation_status": "LC",
+          "notes": "Most accessible Genlisea. Standard peat-perlite in tray. Flowers yellow. Underground corkscrew traps not visible in cultivation.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Genlisea margaretae",
+          "common_name": "Margaret's Corkscrew Plant",
+          "description": "<em>Genlisea margaretae</em> is a small African corkscrew plant from east-central Africa. It produces violet flowers and tiny rosettes. Grows in wet, sandy, seasonally flooded savanna habitats. One of the more accessible African species.",
+          "meta_title": "Genlisea margaretae — African Corkscrew Plant",
+          "meta_description": "Small African Genlisea margaretae. Violet flowers; tiny flat rosettes above invisible underground traps. Wet sandy savanna species.",
+          "meta_keywords": "Genlisea margaretae, African corkscrew plant, violet Genlisea",
+          "native_range": "East-central Africa — Tanzania, Zambia, Mozambique (wet sandy savannas)",
+          "conservation_status": "LC",
+          "notes": "Grows well in standard carnivorous plant conditions. Small plant; suitable for mixed bog collections.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Genlisea hispidula",
+          "common_name": "Hairy Corkscrew Plant",
+          "description": "<em>Genlisea hispidula</em> is a widespread African species found from the Cape through east Africa. One of the easier African Genlisea, it tolerates a range of conditions and produces small violet flowers. Named for the fine hairs on its leaves.",
+          "meta_title": "Genlisea hispidula — Hairy African Corkscrew Plant",
+          "meta_description": "Widespread and adaptable African Genlisea hispidula. One of the easiest Genlisea; tolerates a range of growing conditions.",
+          "meta_keywords": "Genlisea hispidula, hairy corkscrew plant, African Genlisea, easy Genlisea",
+          "native_range": "Africa — widespread from South Africa through east Africa to Ethiopia",
+          "conservation_status": "LC",
+          "notes": "More tolerant than many Genlisea. Standard peat conditions. Small and compact.",
+          "cultivars": []
+        }
+      ]
+    }
+  ]
+}

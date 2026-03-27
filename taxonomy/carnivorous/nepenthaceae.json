@@ -1,0 +1,197 @@
+{
+  "pack_id": "nepenthaceae",
+  "schema_version": "1.1.0",
+  "family": "Nepenthaceae",
+  "common_name": "Tropical Pitcher Plants",
+  "description": "The family Nepenthaceae contains the monogeneric tropical pitcher plants of the genus <em>Nepenthes</em>. Found across South-East Asia, the Indian subcontinent, northern Australia, and Madagascar, these spectacular carnivores lure invertebrates — and occasionally small vertebrates — into fluid-filled pitchers where prey are digested by enzymes and bacteria. Over 170 species are described, with hundreds of cultivars in active cultivation.",
+  "meta_title": "Tropical Pitcher Plants — Nepenthes | PhytoCommerce",
+  "meta_description": "Shop rare and exotic Nepenthes tropical pitcher plants. TC-grown specimens with full batch provenance, cultivar descriptions, and care guides for lowland and highland species.",
+  "meta_keywords": "Nepenthes, tropical pitcher plant, carnivorous plants, buy Nepenthes, highland Nepenthes, lowland Nepenthes",
+  "genera": [
+    {
+      "genus": "Nepenthes",
+      "common_name": "Tropical Pitcher Plants",
+      "description": "<em>Nepenthes</em> is the sole genus in Nepenthaceae, comprising approximately 170 described species of climbing or scrambling carnivorous plants. Pitchers develop at the tips of leaf tendrils and range from small insect traps to giant urns capable of digesting frogs and rodents. Most species are native to highland Borneo and Sumatra; lowland species are more forgiving in cultivation.",
+      "meta_title": "Nepenthes — Tropical Pitcher Plants for Sale",
+      "meta_description": "Buy Nepenthes online. Lowland and highland species, rare cultivars, tissue-cultured seedlings with full batch certificates. Expert care guides included.",
+      "meta_keywords": "Nepenthes for sale, highland Nepenthes, lowland Nepenthes, pitcher plant cultivars, Nepenthes rajah, Nepenthes ventricosa",
+      "native_range": "South-East Asia, Borneo, Sumatra, Philippines, Sri Lanka, Madagascar, north-eastern Australia",
+      "care_level": "intermediate",
+      "tc_suitability": "high",
+      "conservation_status": "varies_by_species",
+      "species": [
+        {
+          "full_name": "Nepenthes rajah",
+          "common_name": "Rajah Pitcher Plant",
+          "description": "<em>Nepenthes rajah</em> produces the largest pitchers of any species — up to 40 cm tall and capable of holding 3.5 litres of fluid. Endemic to Mount Kinabalu and Mount Tambuyukon in Sabah, Borneo at 1,500–2,650 m elevation. Cool, humid highland conditions are essential. Extremely slow-growing; TC seedlings are the ethical choice.",
+          "meta_title": "Nepenthes rajah — Giant Highland Pitcher Plant",
+          "meta_description": "Rare Nepenthes rajah for sale. TC-grown plants with contamination-free batch certificates. Highland species requiring cool nights. Vulnerable (IUCN).",
+          "meta_keywords": "Nepenthes rajah, giant pitcher plant, highland Nepenthes, Borneo carnivorous plant, Nepenthes rajah for sale",
+          "native_range": "Borneo — Mount Kinabalu and Mount Tambuyukon, Sabah, Malaysia (1,500–2,650 m)",
+          "conservation_status": "VU",
+          "notes": "Requires cool highland conditions (day 20–28 °C, night 8–15 °C). One of the slowest-growing Nepenthes. TC seedlings only — wild collection is illegal.",
+          "cultivars": [
+            {
+              "cultivar": "Red Hairy",
+              "description": "Dense red indumentum covering leaves, tendrils and pitcher exterior; pitchers develop deep claret colouring at maturity."
+            },
+            {
+              "cultivar": "Clonal Giant",
+              "description": "Select clone producing pitchers exceeding 35 cm in height; vigorous highland grower."
+            }
+          ]
+        },
+        {
+          "full_name": "Nepenthes lowii",
+          "common_name": "Low's Pitcher Plant",
+          "description": "<em>Nepenthes lowii</em> is famous for its mutualistic relationship with treeshrews (<em>Tupaia</em> spp.), which defecate into the upper pitchers while feeding on nectar secreted from the pitcher lid — providing up to 57 % of the plant's nitrogen intake. Native to highland Borneo at 1,000–2,600 m.",
+          "meta_title": "Nepenthes lowii — Treeshrew Mutualist Pitcher Plant",
+          "meta_description": "Buy Nepenthes lowii, the remarkable treeshrew-associated highland pitcher plant from Borneo. TC-grown with provenance documentation.",
+          "meta_keywords": "Nepenthes lowii, treeshrew pitcher plant, highland Nepenthes Borneo",
+          "native_range": "Borneo — Sarawak, Sabah, Brunei (1,000–2,600 m)",
+          "conservation_status": "LC",
+          "notes": "Intermediate to expert care. Lower pitchers terrestrial; upper pitchers infundibular with treeshrew-attracting nectar ridges on lid underside.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Nepenthes ventricosa",
+          "common_name": "Ventricose Pitcher Plant",
+          "description": "<em>Nepenthes ventricosa</em> is one of the most popular and reliably cultivated Nepenthes species. Native to the Philippines at 1,000–2,000 m, it tolerates a wide temperature range and produces classic, wasp-waisted red and green pitchers. Responds exceptionally well to tissue culture; widely used in hybridisation.",
+          "meta_title": "Nepenthes ventricosa — Beginners' Highland Pitcher",
+          "meta_description": "Hardy Nepenthes ventricosa from the Philippines. Tolerant of home conditions, vigorous grower, excellent for first highland Nepenthes. Available as TC seedlings.",
+          "meta_keywords": "Nepenthes ventricosa, hardy Nepenthes, Philippine pitcher plant, beginners Nepenthes",
+          "native_range": "Philippines — Luzon, Palawan (1,000–2,000 m)",
+          "conservation_status": "NT",
+          "notes": "One of the hardiest highland Nepenthes. Tolerates temps up to 32 °C if nights are slightly cooler. Highly recommended for beginners transitioning to highland species.",
+          "cultivars": [
+            {
+              "cultivar": "Red",
+              "description": "Deep crimson pitchers and peristome; more intensely coloured than the typical form under high light."
+            },
+            {
+              "cultivar": "Madja-as",
+              "description": "Select clone from Madja-as mountain range, Panay; pitchers with pronounced waisting and bold red striping."
+            }
+          ]
+        },
+        {
+          "full_name": "Nepenthes mirabilis",
+          "common_name": "Common Swamp Pitcher",
+          "description": "<em>Nepenthes mirabilis</em> is the most widespread Nepenthes species, ranging from China and Indochina through Malesia to northern Australia. It grows at low elevations in open, often disturbed habitats. Very adaptable and a good choice for beginners wanting a lowland species.",
+          "meta_title": "Nepenthes mirabilis — Widespread Lowland Pitcher",
+          "meta_description": "Easy lowland Nepenthes mirabilis. Tolerates warm temperatures, widely adaptable, and ideal for novice carnivorous plant growers.",
+          "meta_keywords": "Nepenthes mirabilis, lowland Nepenthes, easy pitcher plant, beginner Nepenthes",
+          "native_range": "South China, Indochina, Malesia, northern Australia (coastal lowlands)",
+          "conservation_status": "LC",
+          "notes": "Warm lowland conditions (25–35 °C). Tolerates a range of humidity. Excellent beginner species.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Nepenthes ampullaria",
+          "common_name": "Flask-shaped Pitcher Plant",
+          "description": "<em>Nepenthes ampullaria</em> is a detritivore rather than an active insectivore — its flask-shaped, wide-mouthed lower pitchers collect falling leaf litter from the forest canopy above, digesting dead plant matter for nitrogen. Native to South-East Asian lowland forest.",
+          "meta_title": "Nepenthes ampullaria — Leaf-litter Pitcher Plant",
+          "meta_description": "Unique detritivorous Nepenthes ampullaria. Rosette of ground pitchers collects leaf litter. Warm lowland conditions. Available in multiple cultivars.",
+          "meta_keywords": "Nepenthes ampullaria, flask pitcher plant, detritivore Nepenthes, lowland Nepenthes",
+          "native_range": "Peninsular Malaysia, Sumatra, Borneo, Singapore, Thailand (lowland peat swamp and kerangas forest)",
+          "conservation_status": "LC",
+          "notes": "Grow warm and humid. Lower pitchers are the display feature; uppers are reduced or absent. Forms dense pitcher rosettes at ground level.",
+          "cultivars": [
+            {
+              "cultivar": "Harlequin",
+              "description": "Striking mottled red and green pitchers; selected for maximum colour contrast."
+            },
+            {
+              "cultivar": "William's Red",
+              "description": "Deep burgundy-red pitchers throughout; selected clone producing consistent colouration."
+            }
+          ]
+        },
+        {
+          "full_name": "Nepenthes truncata",
+          "common_name": "Truncated Pitcher Plant",
+          "description": "<em>Nepenthes truncata</em> produces some of the largest pitchers in the lowland–intermediate range, with a distinctive truncated leaf base. Native to Mindanao, Philippines. Intermediate conditions suit it well; an impressive species that develops striking red and yellow pitchers.",
+          "meta_title": "Nepenthes truncata — Large Philippine Pitcher Plant",
+          "meta_description": "Impressive Nepenthes truncata from Mindanao, Philippines. Large pitchers, intermediate conditions, striking red and yellow colouration. TC plants available.",
+          "meta_keywords": "Nepenthes truncata, Philippine pitcher plant, large Nepenthes, intermediate pitcher plant",
+          "native_range": "Philippines — Mindanao (400–1,600 m)",
+          "conservation_status": "VU",
+          "notes": "Intermediate temperatures (18–30 °C). Rapid grower for its size once established. Benefits from high humidity.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Nepenthes maxima",
+          "common_name": "Large Pitcher Plant",
+          "description": "<em>Nepenthes maxima</em> is a highly variable species from Sulawesi, New Guinea, and the Maluku Islands, growing at intermediate to highland elevations. It is frequently used in hybridisation and produces attractive elongated pitchers. One of the more accommodating highland species.",
+          "meta_title": "Nepenthes maxima — Variable Highland Pitcher Plant",
+          "meta_description": "Vigorous Nepenthes maxima from Sulawesi. Highly variable form, widely adaptable, and tolerant of intermediate conditions. Popular parent in hybrids.",
+          "meta_keywords": "Nepenthes maxima, Sulawesi pitcher plant, highland Nepenthes, Nepenthes hybrid parent",
+          "native_range": "Sulawesi, New Guinea, Maluku Islands (800–2,800 m)",
+          "conservation_status": "LC",
+          "notes": "Tolerates a wide altitude range; intermediate to highland conditions. Very rewarding and fast growing for the genus.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Nepenthes veitchii",
+          "common_name": "Veitch's Pitcher Plant",
+          "description": "<em>Nepenthes veitchii</em> is a climbing species endemic to Borneo with striking hairy peristome and attractive banded pitchers. It grows epiphytically or on mossy rocks at 100–1,600 m. Requires bright light for peristome to develop strong colouration.",
+          "meta_title": "Nepenthes veitchii — Hairy Climbing Pitcher Plant",
+          "meta_description": "Striking Nepenthes veitchii from Borneo. Hairy peristome, banded pitchers, climbing habit. Intermediate conditions. TC-grown plants available.",
+          "meta_keywords": "Nepenthes veitchii, hairy Nepenthes, Borneo pitcher plant, climbing Nepenthes",
+          "native_range": "Borneo — Sarawak, Sabah, Brunei (100–1,600 m)",
+          "conservation_status": "LC",
+          "notes": "Best peristome colouration under high light. Tolerates intermediate temperatures. Notable for prominent nectar-secreting peristome teeth.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Nepenthes burbidgeae",
+          "common_name": "Burbidge's Pitcher Plant",
+          "description": "<em>Nepenthes burbidgeae</em> is endemic to Mount Kinabalu and the Crocker Range in Sabah, Borneo. It is prized for its extraordinary peristome with elongated, wing-like flared ribs. Endangered due to habitat loss and over-collection. TC propagation is critical for conservation.",
+          "meta_title": "Nepenthes burbidgeae — Endangered Borneo Pitcher",
+          "meta_description": "Rare Nepenthes burbidgeae from Sabah. Spectacular ruffled peristome. Endangered species available as TC-grown plants only. Conservation provenance documented.",
+          "meta_keywords": "Nepenthes burbidgeae, endangered pitcher plant, highland Borneo Nepenthes, ruffled peristome",
+          "native_range": "Borneo — Mount Kinabalu and Crocker Range, Sabah (1,200–2,400 m)",
+          "conservation_status": "EN",
+          "notes": "Highland cool conditions required. Extremely rare in the wild. TC propagation is the only ethically acceptable source. Handle with awareness of conservation status.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Nepenthes edwardsiana",
+          "common_name": "Edward's Pitcher Plant",
+          "description": "<em>Nepenthes edwardsiana</em> is famed for its spectacular elongated peristome with prominent toothed ribs, earning it a reputation as one of the most beautiful Nepenthes. Endemic to Sabah at high elevation. Slow-growing and demanding; suitable for experienced growers.",
+          "meta_title": "Nepenthes edwardsiana — Spectacular Toothed Peristome",
+          "meta_description": "Magnificent Nepenthes edwardsiana. Elongated ribbed peristome, highland Sabah endemic. Endangered. TC-grown plants only. For experienced growers.",
+          "meta_keywords": "Nepenthes edwardsiana, toothed peristome Nepenthes, highland Sabah, endangered Nepenthes",
+          "native_range": "Borneo — Mount Kinabalu and Tambuyukon, Sabah (1,800–3,200 m)",
+          "conservation_status": "EN",
+          "notes": "Very cool conditions required (day 15–22 °C, night 5–12 °C). Extremely slow-growing even by Nepenthes standards. Advanced growers only.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Nepenthes tentaculata",
+          "common_name": "Tentacled Pitcher Plant",
+          "description": "<em>Nepenthes tentaculata</em> is a compact, vigorous highland species named for the distinctive hair-like appendages on the pitcher lid. Native to Borneo and Sulawesi at 600–2,600 m. Well-suited to intermediate highland culture and one of the easier cold-highland species.",
+          "meta_title": "Nepenthes tentaculata — Compact Highland Pitcher",
+          "meta_description": "Compact and vigorous Nepenthes tentaculata with distinctive tentacle-like lid appendages. Intermediate-highland conditions. Hardy and recommended for highland beginners.",
+          "meta_keywords": "Nepenthes tentaculata, compact highland Nepenthes, Borneo Sulawesi pitcher plant",
+          "native_range": "Borneo, Sulawesi (600–2,600 m)",
+          "conservation_status": "LC",
+          "notes": "One of the hardier highland species. Good introduction to cold-growing Nepenthes. Compact growth habit ideal for smaller growing spaces.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Nepenthes villosa",
+          "common_name": "Villous Pitcher Plant",
+          "description": "<em>Nepenthes villosa</em> is a stunning endemic of Mount Kinabalu and Tambuyukon, Sabah, growing at 2,300–3,240 m — among the highest altitudes for any Nepenthes. It is covered in dense woolly indumentum and has an extraordinary fringed peristome. Extremely cold and humidity-demanding; expert growers only.",
+          "meta_title": "Nepenthes villosa — Ultra-highland Woolly Pitcher Plant",
+          "meta_description": "Extraordinary Nepenthes villosa from the summit zone of Mount Kinabalu. Dense indumentum, fringed peristome, ultra-highland conditions. For expert growers only.",
+          "meta_keywords": "Nepenthes villosa, ultra-highland Nepenthes, woolly pitcher plant, Mount Kinabalu",
+          "native_range": "Borneo — Mount Kinabalu and Tambuyukon summit zone, Sabah (2,300–3,240 m)",
+          "conservation_status": "EN",
+          "notes": "Coolest conditions of all cultivated Nepenthes (day 12–18 °C, night 2–8 °C). Requires extremely high humidity (>90 %). Expert growers only.",
+          "cultivars": []
+        }
+      ]
+    }
+  ]
+}

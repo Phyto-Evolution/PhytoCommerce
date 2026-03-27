@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS `PREFIX_phyto_subscription_plan` (
   `active` tinyint(1) NOT NULL DEFAULT 1,
   `date_add` datetime DEFAULT NULL,
   PRIMARY KEY (`id_plan`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=ENGINE_TYPE DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE IF NOT EXISTS `PREFIX_phyto_subscription_customer` (
   `id_sub` int(11) NOT NULL AUTO_INCREMENT,
@@ -26,4 +26,4 @@ CREATE TABLE IF NOT EXISTS `PREFIX_phyto_subscription_customer` (
   KEY `idx_id_customer` (`id_customer`),
   KEY `idx_id_plan` (`id_plan`),
   KEY `idx_cashfree_subscription_id` (`cashfree_subscription_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=ENGINE_TYPE DEFAULT CHARSET=utf8mb4;
