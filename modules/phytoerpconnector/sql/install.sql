@@ -10,4 +10,4 @@ CREATE TABLE IF NOT EXISTS `PREFIX_phyto_erp_sync_log` (
     PRIMARY KEY (`id`),
     KEY `sync_type` (`sync_type`),
     KEY `ps_id` (`ps_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=ENGINE_TYPE DEFAULT CHARSET=utf8mb4;

@@ -2,8 +2,8 @@
 <module>
     <name>phyto_tc_batch_tracker</name>
     <displayName><![CDATA[TC Batch Tracker]]></displayName>
-    <version><![CDATA[1.0.0]]></version>
-    <description><![CDATA[Link tissue-culture products to propagation batch records. Buyers see provenance; admin sees batch-grouped inventory.]]></description>
+    <version><![CDATA[1.1.0]]></version>
+    <description><![CDATA[Link tissue-culture products to propagation batch records. Buyers see full provenance; admin manages inventory with lineage, contamination log, QR labels, and low-stock alerts.]]></description>
     <author><![CDATA[PhytoCommerce]]></author>
     <tab><![CDATA[administration]]></tab>
     <is_configurable>0</is_configurable>
