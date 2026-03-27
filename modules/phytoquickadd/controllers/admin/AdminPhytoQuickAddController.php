@@ -188,12 +188,17 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
     }
 
     private function ajaxGenerateDescription() {
-        $plant_name = Tools::getValue('plant_name');
+        $plant_name = trim(Tools::getValue('plant_name'));
         $ai_key     = Configuration::get('PHYTO_AI_KEY');
 
         ob_clean();
         if (empty($ai_key))     { echo json_encode(['error' => 'Claude AI key not set. Go to Settings tab.']); exit; }
         if (empty($plant_name)) { echo json_encode(['error' => 'Plant name is required.']); exit; }
+
+        // Strip control characters and limit length to prevent prompt injection
+        $plant_name = preg_replace('/[^\p{L}\p{N}\s\.\-\'×]/u', '', $plant_name);
+        $plant_name = mb_substr($plant_name, 0, 100);
+        if (empty($plant_name)) { echo json_encode(['error' => 'Invalid plant name.']); exit; }
 
         $prompt = "Write a compelling ecommerce product description for a rare/exotic plant called '$plant_name'. "
                 . "Include what makes it special, care difficulty, size, ideal conditions, why someone should buy it. "

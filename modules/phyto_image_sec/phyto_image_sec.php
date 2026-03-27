@@ -412,7 +412,8 @@ class Phyto_Image_Sec extends Module
                 . '</p>
                 <button id="phyto-batch-start"
                         class="btn btn-warning"
-                        data-ajax-url="' . htmlspecialchars($ajaxUrl, ENT_QUOTES) . '">
+                        data-ajax-url="' . htmlspecialchars($ajaxUrl, ENT_QUOTES) . '"
+                        data-token="' . Tools::getAdminTokenLite('AdminPhytoImageSec') . '">
                     <i class="icon-play"></i>&nbsp;'
                         . $this->l('Start Batch Watermark')
                 . '</button>
