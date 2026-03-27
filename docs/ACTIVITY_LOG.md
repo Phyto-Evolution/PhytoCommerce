@@ -164,21 +164,21 @@
 
 ## VPS / Deployment
 
-**VPS:** `ubuntu@REDACTED_VPS_IP`
+**VPS:** `ubuntu@[VPS_IP_REDACTED]`
 **Claude Code:** installed on the VPS — recommended to run sessions directly there
 **SSH key (ed25519):** generated 2026-03-22, public key added to VPS via `docs/vps-setup.sh`
 
 SSH config (add to `~/.ssh/config` on any machine you use):
 ```
 Host phytocommerce-vps
-    HostName REDACTED_VPS_IP
+    HostName [VPS_IP_REDACTED]
     User ubuntu
     IdentityFile ~/.ssh/REDACTED_KEY_NAME
 ```
 
 **First-time VPS setup** (run from a machine that has SSH access):
 ```bash
-sshpass -p 'PASSWORD' ssh ubuntu@REDACTED_VPS_IP 'bash -s' < docs/vps-setup.sh
+sshpass -p 'PASSWORD' ssh ubuntu@[VPS_IP_REDACTED] 'bash -s' < docs/vps-setup.sh
 ```
 This installs the ed25519 key, clones the repo, and verifies Claude Code.
 
