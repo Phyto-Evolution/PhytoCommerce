@@ -2,7 +2,7 @@
 <module>
     <name>phyto_image_sec</name>
     <displayName><![CDATA[Phyto Image Sec — Image Protection]]></displayName>
-    <version><![CDATA[0.2.0]]></version>
+    <version><![CDATA[0.3.0]]></version>
     <description><![CDATA[Watermarks product images with your shop logo, embeds IPTC copyright metadata, generates compressed WebP siblings, and blocks right-click / drag / download.]]></description>
     <author><![CDATA[PhytoCommerce]]></author>
     <tab><![CDATA[administration]]></tab>

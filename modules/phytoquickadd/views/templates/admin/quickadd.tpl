@@ -125,13 +125,11 @@
                         </small>
                     </div>
                     <div class="form-group">
-                        <label>Product Image</label>
-                        <input type="file" name="product_image" class="form-control"
-                               accept="image/*" onchange="previewImage(this)">
-                        <div id="img_preview" style="margin-top:8px;display:none;">
-                            <img id="img_preview_src"
-                                 style="max-height:120px;border-radius:4px;border:1px solid #ddd;">
-                        </div>
+                        <label>Product Images</label>
+                        <input type="file" name="product_images[]" class="form-control"
+                               accept="image/*" multiple onchange="previewImages(this)">
+                        <small class="text-muted">Select one or more images. First image becomes the cover. All will be watermarked automatically.</small>
+                        <div id="img_previews" style="margin-top:8px;display:none;display:flex;flex-wrap:wrap;gap:8px;"></div>
                     </div>
                 </div>
             </div>
@@ -430,15 +428,34 @@ function filterSelect(selectId, term) {
     }
 }
 
-function previewImage(input) {
-    if (input.files && input.files[0]) {
+function previewImages(input) {
+    var container = document.getElementById('img_previews');
+    container.innerHTML = '';
+    if (!input.files || !input.files.length) {
+        container.style.display = 'none';
+        return;
+    }
+    container.style.display = 'flex';
+    Array.prototype.forEach.call(input.files, function(file, idx) {
         var reader = new FileReader();
         reader.onload = function(e) {
-            document.getElementById('img_preview_src').src = e.target.result;
-            document.getElementById('img_preview').style.display = 'block';
+            var wrap = document.createElement('div');
+            wrap.style.cssText = 'position:relative;display:inline-block;';
+            var img = document.createElement('img');
+            img.src = e.target.result;
+            img.style.cssText = 'height:100px;border-radius:4px;border:2px solid ' + (idx === 0 ? '#5cb85c' : '#ddd') + ';';
+            img.title = file.name;
+            wrap.appendChild(img);
+            if (idx === 0) {
+                var badge = document.createElement('span');
+                badge.textContent = 'Cover';
+                badge.style.cssText = 'position:absolute;bottom:4px;left:4px;background:#5cb85c;color:#fff;font-size:10px;padding:1px 5px;border-radius:3px;';
+                wrap.appendChild(badge);
+            }
+            container.appendChild(wrap);
         };
-        reader.readAsDataURL(input.files[0]);
-    }
+        reader.readAsDataURL(file);
+    });
 }
 
 function loadPacks() {
