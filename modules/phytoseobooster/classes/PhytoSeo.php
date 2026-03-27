@@ -37,7 +37,7 @@ class PhytoSeo {
             'sku'      => $product->reference ?: 'PS-' . $product->id,
             'brand'    => [
                 '@type' => 'Brand',
-                'name'  => Configuration::get('PS_SHOP_NAME') ?: 'Phyto Evolution',
+                'name'  => Configuration::get('PS_SHOP_NAME') ?: 'Phyto Commerce',
             ],
             'offers'   => [
                 '@type'         => 'Offer',
@@ -46,7 +46,7 @@ class PhytoSeo {
                 'availability'  => $available,
                 'seller'        => [
                     '@type' => 'Organization',
-                    'name'  => Configuration::get('PS_SHOP_NAME') ?: 'Phyto Evolution',
+                    'name'  => Configuration::get('PS_SHOP_NAME') ?: 'Phyto Commerce',
                 ],
             ],
         ];

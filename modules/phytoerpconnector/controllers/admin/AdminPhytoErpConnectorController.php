@@ -53,7 +53,7 @@ class AdminPhytoErpConnectorController extends ModuleAdminController {
         ];
 
         $this->context->smarty->assign([
-            'erp_url'          => Configuration::get('PHYTO_ERP_URL') ?: 'https://erp.phytolabs.in',
+            'erp_url'          => Configuration::get('PHYTO_ERP_URL') ?: 'https://erp.phytocommerce.com',
             'erp_api_key'      => Configuration::get('PHYTO_ERP_API_KEY') ?: '',
             'erp_api_secret'   => Configuration::get('PHYTO_ERP_API_SECRET') ?: '',
             'sync_orders'      => (int)Configuration::get('PHYTO_ERP_SYNC_ORDERS'),
