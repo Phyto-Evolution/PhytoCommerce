@@ -19,6 +19,7 @@ class Phytocommerce_Pack extends Module {
     const MODULES = [
         // Foundation
         'phytocommercefooter',
+        'phytocommerce_branding',
         'phytoquickadd',
         'phytoerpconnector',
         'phytoseobooster',
@@ -58,7 +59,7 @@ class Phytocommerce_Pack extends Module {
         $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => _PS_VERSION_];
         parent::__construct();
         $this->displayName = 'PhytoCommerce Pack';
-        $this->description = '1-click installer for the complete PhytoCommerce module suite — 22 modules for specialty plant e-commerce.';
+        $this->description = '1-click installer for the complete PhytoCommerce module suite — 24 modules for specialty plant e-commerce.';
     }
 
     public function install() {

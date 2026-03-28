@@ -2,7 +2,7 @@
 
 A PrestaShop 8 module suite for specialty plant e-commerce — designed around the operational needs of tissue-culture producers, nurseries, and rare plant retailers. Covers TC batch provenance, phytosanitary compliance, wholesale portals, recurring subscriptions, scientific taxonomy, customer grow journals, image protection, and more.
 
-> **Last updated:** 2026-03-28 (phyto_kyc v1.0 — KYC verification, price blur/freeze)
+> **Last updated:** 2026-03-28 (phytocommerce_branding v1.0 · phyto_kyc v1.0)
 > Session logs: [`docs/CHECKPOINT.md`](docs/CHECKPOINT.md) · [`docs/ACTIVITY_LOG.md`](docs/ACTIVITY_LOG.md)
 
 ---
@@ -18,6 +18,7 @@ PhytoCommerce/
 │   │
 │   ├── [FOUNDATION]
 │   ├── phytocommercefooter/              ✅ Built
+│   ├── phytocommerce_branding/           ✅ Built  (v1.0 — CSS design tokens, brand banner)
 │   ├── phytoquickadd/                    ✅ Built
 │   ├── phytoerpconnector/                ✅ Built
 │   ├── phytoseobooster/                  ✅ Built
@@ -60,7 +61,7 @@ PhytoCommerce/
     └── bromeliads/    (1 pack)
 ```
 
-> **23 modules built · 15 taxonomy packs**
+> **24 modules built · 15 taxonomy packs**
 
 ---
 
@@ -282,6 +283,7 @@ rm -rf /path/to/prestashop/var/cache/*/smarty/compile/*
 | Module | Description |
 |--------|-------------|
 | `phytocommercefooter` | Branded footer replacement |
+| `phytocommerce_branding` | Theme-agnostic CSS design tokens (brand colours, logo URL, contact info) + configurable brand banner at top of every page |
 | `phytoquickadd` | Admin quick-add for products and categories with AI descriptions, botanical taxonomy import, and multiple image upload |
 | `phytoerpconnector` | Bidirectional sync with ERPNext v15 (orders, customers, products, invoices) |
 | `phytoseobooster` | AI-powered SEO automation — meta generation, schema markup, bulk alt-text audit |
