@@ -63,6 +63,13 @@
     "icon": "badge"
   },
   {
+    "id": "phyto_kyc",
+    "title": "Phyto KYC",
+    "description": "Customer KYC verification. Blurs prices for unverified customers.",
+    "category": "Run the Business",
+    "icon": "badge"
+  },
+  {
     "id": "phyto_live_arrival",
     "title": "Phyto Live Arrival Guarantee",
     "description": "Live Arrival Guarantee opt-in at checkout with configurable shipping windows, fee management, and claim forms.",
