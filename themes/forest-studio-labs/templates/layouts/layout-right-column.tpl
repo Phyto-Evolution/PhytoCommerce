@@ -3,7 +3,7 @@
 <head>
   {block name='head'}{include file='_partials/head.tpl'}{/block}
 </head>
-<body id="{$page.page_name}" class="{$page.body_classes|implode:' '}">
+<body id="{$page.page_name}" class="{$page.body_classes|classnames}">
 
   {hook h='displayAfterBodyOpeningTag'}
 
