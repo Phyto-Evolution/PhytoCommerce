@@ -43,21 +43,46 @@ global_settings:
       - name: displayFslPromo
         title: FSL — Mid-page Promo Banner
   image_types:
+    cart_default:
+      width: 125
+      height: 125
+      scope: [ products ]
+    small_default:
+      width: 98
+      height: 98
+      scope: [ products, categories, manufacturers, suppliers ]
+    medium_default:
+      width: 452
+      height: 452
+      scope: [ products, manufacturers, suppliers ]
+    home_default:
+      width: 250
+      height: 250
+      scope: [ products ]
+    large_default:
+      width: 800
+      height: 800
+      scope: [ products, manufacturers, suppliers ]
+    category_default:
+      width: 141
+      height: 180
+      scope: [ categories ]
+    stores_default:
+      width: 170
+      height: 115
+      scope: [ stores ]
     fsl_card:
       width: 480
       height: 600
-      scope:
-        - products
+      scope: [ products ]
     fsl_thumb:
       width: 80
       height: 80
-      scope:
-        - products
+      scope: [ products ]
     fsl_hero:
       width: 1600
       height: 700
-      scope:
-        - categories
+      scope: [ categories ]
   configuration:
     - name: fsl_hero_headline
       default: "Where Nature Meets Home"
@@ -72,6 +97,12 @@ global_settings:
 
 theme_settings:
   default_layout: layout-full-width
+  layouts:
+    category: layout-left-column
+    best-sales: layout-left-column
+    new-products: layout-left-column
+    prices-drop: layout-left-column
+    search: layout-left-column
 
 columns:
   left: 3
