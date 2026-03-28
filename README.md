@@ -611,8 +611,7 @@ A bespoke PrestaShop 8 theme for plant e-commerce. **No classic fallback** — e
 
 ```
 themes/forest-studio-labs/
-├── theme.yml                              ← PS8 manifest (parent: ~ — no classic fallback)
-├── config/theme.yml                       ← image types, hook definitions
+├── config/theme.yml                       ← PS8 manifest (parent: ~, assets, image types, hooks)
 ├── assets/
 │   ├── css/theme.css                      ← full design system + all page styles
 │   └── js/theme.js                        ← scroll effects, gallery, qty spinner, back-to-top
