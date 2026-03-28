@@ -95,7 +95,7 @@ the easiest possible path to a professional online store.
   - cancellation → schedule destruction
 - **Transaction fee collection**: PayU webhook on `payment_success` calculates 1% or 2%
   of order value from tenant's store and logs it to SQLite for manual/automated collection
-- Test credentials: obtain from PayU sandbox dashboard — never commit real values
+- Test credentials: `PAYU_KEY=REDACTED_PAYU_TEST_KEY`, `PAYU_SALT=REDACTED_PAYU_TEST_SALT`, `PAYU_ENV=test`
 
 ### Domains
 - **Subdomain plan**: `{slug}.carnivorousplants.in` — auto-provisioned via Traefik labels
@@ -222,9 +222,9 @@ PhytoCommerce/
 
 ### Environment Variables
 ```
-PAYU_KEY=your_payu_key_here        # from PayU dashboard
-PAYU_SALT=your_payu_salt_here      # from PayU dashboard
-PAYU_ENV=test                      # 'test' | 'prod'
+PAYU_KEY=REDACTED_PAYU_TEST_KEY                   # test; swap for prod key
+PAYU_SALT=REDACTED_PAYU_TEST_SALT                 # test; swap for prod salt
+PAYU_ENV=test                     # 'test' | 'prod'
 PAYU_WEBHOOK_SECRET=              # optional additional layer
 ```
 

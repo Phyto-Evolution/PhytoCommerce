@@ -30,6 +30,8 @@ Current standalone modules:
 - `phyto_wholesale_portal`
 - `phyto_subscription`
 - `phyto_image_sec`
+- `phytocommerce_branding`
+- `phyto_kyc`
 
 **Set B — PhytoCommerce Pack** (`modules/phytocommerce_pack/`)
 A meta-installer module that installs all of the above in one click.
