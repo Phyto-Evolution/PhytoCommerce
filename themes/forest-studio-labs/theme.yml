@@ -5,7 +5,7 @@ author:
   name: PhytoCommerce
   email: aphytoevolution@gmail.com
   url: https://phytolabs.in
-parent: classic
+parent: ~
 use_parent_assets: false
 assets:
   css:
