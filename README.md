@@ -2,7 +2,7 @@
 
 A PrestaShop 8 module suite for specialty plant e-commerce — designed around the operational needs of tissue-culture producers, nurseries, and rare plant retailers. Covers TC batch provenance, phytosanitary compliance, wholesale portals, recurring subscriptions, scientific taxonomy, customer grow journals, image protection, and more.
 
-> **Last updated:** 2026-03-28 (phytocommerce_branding v1.0 · phyto_kyc v1.0)
+> **Last updated:** 2026-03-28 (forest-studio-labs theme v1.0 · phytocommerce_branding · phyto_kyc)
 > Session logs: [`docs/CHECKPOINT.md`](docs/CHECKPOINT.md) · [`docs/ACTIVITY_LOG.md`](docs/ACTIVITY_LOG.md)
 
 ---
@@ -53,15 +53,18 @@ PhytoCommerce/
 │   └── [IDENTITY & ACCESS]
 │       └── phyto_kyc/                    ✅ Built  (v1.0 — PAN/GST verification · price blur · admin review)
 │
-└── taxonomy/                             ✅ Built
-    ├── carnivorous/   (8 packs)
-    ├── succulents/    (4 packs)
-    ├── aroids/        (1 pack)
-    ├── orchids/       (1 pack)
-    └── bromeliads/    (1 pack)
+├── taxonomy/                             ✅ Built
+│   ├── carnivorous/   (8 packs)
+│   ├── succulents/    (4 packs)
+│   ├── aroids/        (1 pack)
+│   ├── orchids/       (1 pack)
+│   └── bromeliads/    (1 pack)
+│
+└── themes/
+    └── forest-studio-labs/               ✅ Built  (v1.0 — earthy · clean · sage green · Cormorant Garamond)
 ```
 
-> **24 modules built · 15 taxonomy packs**
+> **24 modules built · 15 taxonomy packs · 1 theme**
 
 ---
 
@@ -585,6 +588,50 @@ python3 generate_climate_data.py
 **Hooks used:** `actionWatermark` (fires after any product image is generated/regenerated, including via `phytoquickadd`), `displayHeader` (JS protection), `displayBackOfficeHeader` (admin assets).
 
 **Note:** Disable PrestaShop's built-in Watermark module before using this one to avoid double watermarks.
+
+---
+
+## Theme — Forest Studio Labs
+
+A bespoke PrestaShop 8 theme for plant e-commerce. Built on `parent: classic` (inherits all PS logic, overrides only design-relevant templates).
+
+**Design language:** soft, sophisticated, posh — earthy botanical meets clean modern. White and light sage base with warm gray text and terracotta accents.
+
+| Token | Value | Purpose |
+|-------|-------|---------|
+| `--fsl-forest` | `#4a7c59` | Primary green — CTAs, active states |
+| `--fsl-sage` | `#8aab8e` | Secondary green — icons, borders |
+| `--fsl-light-green` | `#e8f0e9` | Background tints, hover states |
+| `--fsl-cream` | `#f4f6f2` | Card backgrounds, hero fills |
+| `--fsl-warm` | `#c4a882` | Accent — sale badges, stars |
+| Display font | Cormorant Garamond 300–600 | Headings, hero, product names |
+| Body font | DM Sans 300–600 | Navigation, body copy, UI |
+
+**Files:**
+
+```
+themes/forest-studio-labs/
+├── theme.yml                          ← PS8 theme manifest (parent: classic)
+├── config/theme.yml                   ← image types, hook definitions
+├── assets/
+│   ├── css/theme.css                  ← full design system + all page styles
+│   └── js/theme.js                    ← scroll effects, gallery, qty spinner, back-to-top
+└── templates/
+    ├── _partials/header.tpl           ← sticky header, top bar, search, cart icons
+    ├── _partials/footer.tpl           ← 4-col footer, newsletter, social links
+    ├── index.tpl                      ← homepage: hero, feature strip, promo banner, testimonials
+    ├── catalog/
+    │   ├── listing/product-miniature.tpl  ← product card with quick-add hover
+    │   └── product.tpl                    ← full product page (gallery, price, ATC, tabs)
+    ├── layouts/
+    │   ├── layout-full-width.tpl
+    │   └── layout-left-column.tpl     ← category listing with sidebar
+    └── errors/404.tpl
+```
+
+**Install:** Copy `themes/forest-studio-labs/` to your PS8 `/themes/` directory → Admin → Design → Theme & Logo → select Forest Studio Labs.
+
+**Pairs with:** `phytocommerce_branding` module (brand tokens flow into the theme's CSS variables automatically).
 
 ---
 
