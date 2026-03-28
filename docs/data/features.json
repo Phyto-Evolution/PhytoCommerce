@@ -126,9 +126,16 @@
     "icon": "briefcase"
   },
   {
+    "id": "phytocommerce_branding",
+    "title": "Phyto Commerce Theme Branding",
+    "description": "Applies Phyto Commerce visual branding tokens to compatible PrestaShop themes.",
+    "category": "Run the Business",
+    "icon": "badge"
+  },
+  {
     "id": "phytocommerce_pack",
     "title": "PhytoCommerce Pack",
-    "description": "1-click installer for the complete PhytoCommerce module suite — 22 modules for specialty plant e-commerce.",
+    "description": "1-click installer for the complete PhytoCommerce module suite — 24 modules for specialty plant e-commerce.",
     "category": "Run the Business",
     "icon": "badge"
   },
