@@ -38,10 +38,13 @@ global_settings:
     custom_hooks:
       - name: displayFslHero
         title: FSL — Hero Banner
+        description: Hook for the full-width hero banner on the homepage
       - name: displayFslFeaturedStrip
         title: FSL — Featured Category Strip
+        description: Hook for the featured category strip below the hero
       - name: displayFslPromo
         title: FSL — Mid-page Promo Banner
+        description: Hook for the mid-page promotional banner section
   image_types:
     cart_default:
       width: 125
