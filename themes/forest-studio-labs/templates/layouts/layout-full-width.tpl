@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{$language.iso_code|escape:'htmlall':'UTF-8'}" dir="{$language.is_rtl ? 'rtl' : 'ltr'}">
+<html lang="{$language.iso_code|escape:'htmlall':'UTF-8'}" dir="{if $language.is_rtl}rtl{else}ltr{/if}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
