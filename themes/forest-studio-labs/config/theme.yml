@@ -70,6 +70,9 @@ global_settings:
     - name: fsl_accent_color
       default: "#4a7c59"
 
+theme_settings:
+  default_layout: layout-full-width
+
 columns:
   left: 3
   right: 9
