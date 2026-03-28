@@ -105,21 +105,21 @@ If coming back to this project:
 
 ## VPS Access
 
-**Host:** `ubuntu@[VPS_IP_REDACTED]`
+**Host:** `ubuntu@51.83.192.49`
 **SSH key:** `~/.ssh/phytocommerce_vps` (ed25519, set up 2026-03-22)
 **Claude Code:** installed on VPS — best to run Claude sessions directly there
 
 Add to `~/.ssh/config`:
 ```
 Host phytocommerce-vps
-    HostName [VPS_IP_REDACTED]
+    HostName 51.83.192.49
     User ubuntu
     IdentityFile ~/.ssh/phytocommerce_vps
 ```
 
 First-time setup (installs SSH key + clones repo on VPS):
 ```bash
-sshpass -p 'PASSWORD' ssh ubuntu@[VPS_IP_REDACTED] 'bash -s' < docs/vps-setup.sh
+sshpass -p 'PASSWORD' ssh ubuntu@51.83.192.49 'bash -s' < docs/vps-setup.sh
 ```
 
 **Note:** Claude Code web sandbox cannot reach the VPS over the network.
