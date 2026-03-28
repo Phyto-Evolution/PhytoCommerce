@@ -1,0 +1,40 @@
+name: Forest Studio Labs
+display_name: Forest Studio Labs
+version: 1.0.0
+author:
+  name: PhytoCommerce
+
+meta:
+  compatibility:
+    from: "8.0.0"
+    to: ~
+
+global_settings:
+  hooks:
+    custom_hooks:
+      - name: displayFslHero
+        title: FSL — Hero Banner
+      - name: displayFslFeaturedStrip
+        title: FSL — Featured Category Strip
+      - name: displayFslPromo
+        title: FSL — Mid-page Promo Banner
+  image_types:
+    fsl_card:
+      width: 480
+      height: 600
+      scope:
+        - products
+    fsl_thumb:
+      width: 80
+      height: 80
+      scope:
+        - products
+    fsl_hero:
+      width: 1600
+      height: 700
+      scope:
+        - categories
+
+columns:
+  left: 3
+  right: 9

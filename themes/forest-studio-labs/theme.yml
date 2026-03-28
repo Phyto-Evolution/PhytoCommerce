@@ -1,0 +1,37 @@
+name: Forest Studio Labs
+display_name: Forest Studio Labs
+version: 1.0.0
+author:
+  name: PhytoCommerce
+  email: aphytoevolution@gmail.com
+  url: https://phytolabs.in
+parent: classic
+use_parent_assets: false
+assets:
+  css:
+    all:
+      - id: fsl-theme
+        path: assets/css/theme.css
+        media: all
+  js:
+    all:
+      - id: fsl-theme
+        path: assets/js/theme.js
+        position: bottom
+        priority: 200
+global_settings:
+  configuration:
+    - name: fsl_hero_headline
+      default: "Where Nature Meets Home"
+    - name: fsl_hero_subline
+      default: "Rare & cultivated plants, curated for collectors and garden lovers"
+    - name: fsl_hero_cta
+      default: "Shop Collection"
+    - name: fsl_hero_bg_url
+      default: ""
+    - name: fsl_accent_color
+      default: "#4a7c59"
+meta:
+  compatibility:
+    from: "8.0.0"
+    to: ~
