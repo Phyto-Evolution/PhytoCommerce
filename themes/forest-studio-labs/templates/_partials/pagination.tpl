@@ -5,7 +5,7 @@
       {* Previous *}
       {if $pagination.current_page > 1}
         <li class="page-item">
-          <a class="page-link" href="{$pagination.pages_count|intval > 1 ? $pagination.pages[0].url : '#'|escape:'htmlall':'UTF-8'}" aria-label="{l s='Previous' mod='fsl'}">
+          <a class="page-link" href="{if $pagination.pages_count > 1}{$pagination.pages[0].url|escape:'htmlall':'UTF-8'}{else}#{/if}" aria-label="{l s='Previous' mod='fsl'}">
             <span class="material-icons" style="font-size:16px">chevron_left</span>
           </a>
         </li>
