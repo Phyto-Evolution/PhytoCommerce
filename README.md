@@ -2,7 +2,7 @@
 
 A PrestaShop 8 module suite for specialty plant e-commerce — designed around the operational needs of tissue-culture producers, nurseries, and rare plant retailers. Covers TC batch provenance, phytosanitary compliance, wholesale portals, recurring subscriptions, scientific taxonomy, customer grow journals, image protection, and more.
 
-> **Last updated:** 2026-03-27 (phyto_image_sec v0.3 · QuickAdd multi-media)
+> **Last updated:** 2026-03-28 (phyto_kyc v1.0 — KYC verification, price blur/freeze)
 > Session logs: [`docs/CHECKPOINT.md`](docs/CHECKPOINT.md) · [`docs/ACTIVITY_LOG.md`](docs/ACTIVITY_LOG.md)
 
 ---
@@ -46,8 +46,11 @@ PhytoCommerce/
 │   ├── phyto_wholesale_portal/           ✅ Built
 │   ├── phyto_subscription/               ✅ Built
 │   │
-│   └── [SECURITY]
-│       └── phyto_image_sec/              ✅ Built  (v0.3 — watermark · WebP · IPTC · text overlay)
+│   ├── [SECURITY]
+│   │   └── phyto_image_sec/              ✅ Built  (v0.3 — watermark · WebP · IPTC · text overlay)
+│   │
+│   └── [IDENTITY & ACCESS]
+│       └── phyto_kyc/                    ✅ Built  (v1.0 — PAN/GST verification · price blur · admin review)
 │
 └── taxonomy/                             ✅ Built
     ├── carnivorous/   (8 packs)
@@ -57,7 +60,7 @@ PhytoCommerce/
     └── bromeliads/    (1 pack)
 ```
 
-> **22 modules built · 15 taxonomy packs**
+> **23 modules built · 15 taxonomy packs**
 
 ---
 
@@ -325,6 +328,12 @@ rm -rf /path/to/prestashop/var/cache/*/smarty/compile/*
 |--------|-------------|
 | `phyto_image_sec` | Watermarks product images with shop logo; embeds IPTC copyright metadata; generates WebP siblings; optional product name text overlay (white, rotated, configurable position); JS blocks right-click/drag/Ctrl+S. v0.3. |
 
+### Identity & Access
+
+| Module | Description |
+|--------|-------------|
+| `phyto_kyc` | Customer KYC verification — L1 (PAN) and L2 (GST/business). When enabled, blurs/freezes all prices for unverified customers. Instant verification via Sandbox.co.in API with manual review fallback. Admin review panel with bulk approve/reject and customer email notification. |
+
 ---
 
 ## Requirements
@@ -523,6 +532,38 @@ python3 generate_climate_data.py
 
 ---
 
+### phyto_kyc (v1.0)
+
+**DB tables:** `phyto_kyc_profile`, `phyto_kyc_document`
+
+**Two verification levels:**
+
+| Level | Trigger | Method | Unlocks |
+|-------|---------|--------|---------|
+| L1 — PAN | All registered customers | Sandbox.co.in API (instant) or manual review | Price visibility |
+| L2 — Business/GST | Wholesale customers | Sandbox.co.in GSTIN API or manual review + doc upload | Wholesale pricing |
+
+**Blur/freeze behaviour:**
+- Module **ON** + customer not KYC'd → `kyc-blur-active` CSS class on `<body>` → all `.price`, `.current-price`, `[itemprop="price"]`, cart totals etc. get `filter:blur(6px)` and `pointer-events:none`
+- Module **OFF** → everything visible to all visitors
+- Yellow banner on every page for unverified logged-in customers with link to verify
+
+**Admin:** Customers → KYC Verification — list all profiles, bulk or per-row Approve/Reject L1/L2, email sent to customer on each action.
+
+**Front:** `/module/phyto_kyc/kyc` — My Account KYC page with status tracker and submission forms.
+
+**Config keys:**
+
+| Key | Default | Description |
+|-----|---------|-------------|
+| `PHYTO_KYC_ENABLED` | 0 | Enable blur/freeze for unverified customers |
+| `PHYTO_KYC_SANDBOX_API_KEY` | — | Sandbox.co.in API key for instant PAN/GST verification |
+| `PHYTO_KYC_MODE` | `sandbox` | `sandbox` or `production` |
+| `PHYTO_KYC_REQUIRE_L1` | 1 | Require PAN verification |
+| `PHYTO_KYC_REQUIRE_L2` | 0 | Require GST/business verification |
+
+---
+
 ### phyto_image_sec (v0.1)
 
 **Config keys:**
@@ -630,6 +671,7 @@ docker cp modules/phyto_grex_registry ps-test:/var/www/html/modules/
 | `phyto_subscription` | Catalog → Subscription Plans → create plan; visit `/module/phyto_subscription/plans` |
 | `phytoquickadd` | Catalog → Phyto Quick Add → Taxonomy Packs tab → loads pack list from GitHub |
 | `phyto_image_sec` | Upload a product image → check it gets watermarked; visit product page → right-click on image blocked |
+| `phyto_kyc` | Enable module → log in as customer → prices blurred; visit `/module/phyto_kyc/kyc` → submit PAN → prices unblur on verify |
 
 ---
 
