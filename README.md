@@ -593,7 +593,7 @@ python3 generate_climate_data.py
 
 ## Theme — Forest Studio Labs
 
-A bespoke PrestaShop 8 theme for plant e-commerce. Built on `parent: classic` (inherits all PS logic, overrides only design-relevant templates).
+A bespoke PrestaShop 8 theme for plant e-commerce. **No classic fallback** — every template is purpose-built (`parent: ~`). 37 templates covering every page.
 
 **Design language:** soft, sophisticated, posh — earthy botanical meets clean modern. White and light sage base with warm gray text and terracotta accents.
 
@@ -611,22 +611,57 @@ A bespoke PrestaShop 8 theme for plant e-commerce. Built on `parent: classic` (i
 
 ```
 themes/forest-studio-labs/
-├── theme.yml                          ← PS8 theme manifest (parent: classic)
-├── config/theme.yml                   ← image types, hook definitions
+├── theme.yml                              ← PS8 manifest (parent: ~ — no classic fallback)
+├── config/theme.yml                       ← image types, hook definitions
 ├── assets/
-│   ├── css/theme.css                  ← full design system + all page styles
-│   └── js/theme.js                    ← scroll effects, gallery, qty spinner, back-to-top
-└── templates/
-    ├── _partials/header.tpl           ← sticky header, top bar, search, cart icons
-    ├── _partials/footer.tpl           ← 4-col footer, newsletter, social links
-    ├── index.tpl                      ← homepage: hero, feature strip, promo banner, testimonials
-    ├── catalog/
-    │   ├── listing/product-miniature.tpl  ← product card with quick-add hover
-    │   └── product.tpl                    ← full product page (gallery, price, ATC, tabs)
+│   ├── css/theme.css                      ← full design system + all page styles
+│   └── js/theme.js                        ← scroll effects, gallery, qty spinner, back-to-top
+└── templates/                             ← 37 purpose-built templates, zero classic inheritance
+    ├── page.tpl                           ← master layout (head, header, footer, hooks)
+    ├── index.tpl                          ← homepage: hero, feature strip, promo banner, testimonials
+    ├── contact.tpl                        ← contact form + email/hours/dispatch info
+    ├── sitemap.tpl                        ← 3-col sitemap category groups
+    ├── _partials/
+    │   ├── head.tpl                       ← meta, SEO, OG, fonts, CSS
+    │   ├── header.tpl                     ← sticky header, nav, search, cart icon
+    │   ├── footer.tpl                     ← 4-col footer, newsletter, social
+    │   ├── breadcrumb.tpl                 ← breadcrumb trail
+    │   ├── notifications.tpl              ← success/error flash messages
+    │   ├── pagination.tpl                 ← prev/next page controls
+    │   └── form-errors.tpl                ← inline form validation errors
     ├── layouts/
     │   ├── layout-full-width.tpl
-    │   └── layout-left-column.tpl     ← category listing with sidebar
-    └── errors/404.tpl
+    │   └── layout-left-column.tpl         ← category listing with filter sidebar
+    ├── catalog/
+    │   ├── product.tpl                    ← product page (gallery, price, ATC, trust badges, tabs)
+    │   └── listing/
+    │       ├── product-miniature.tpl      ← product card with quick-add hover
+    │       ├── product-list.tpl           ← category listing (sidebar filters, sort, grid)
+    │       └── searched-products.tpl      ← search results page
+    ├── checkout/
+    │   ├── cart.tpl                       ← cart (line items, qty controls, voucher, summary)
+    │   ├── checkout.tpl                   ← multi-step checkout with order summary sidebar
+    │   └── order-confirmation.tpl         ← success page (order detail, what's next)
+    ├── customer/
+    │   ├── my-account.tpl                 ← account dashboard (sidebar nav, content area)
+    │   ├── authentication.tpl             ← login form
+    │   ├── registration.tpl               ← register form
+    │   ├── identity.tpl                   ← personal info
+    │   ├── password.tpl                   ← forgot password
+    │   ├── new-password.tpl               ← set new password
+    │   ├── addresses.tpl                  ← address book (card grid)
+    │   ├── address.tpl                    ← add/edit address form
+    │   ├── order-history.tpl              ← orders table with status badges
+    │   ├── order-detail.tpl               ← order detail (products, totals, delivery)
+    │   ├── order-follow.tpl               ← guest order tracking
+    │   └── guest-login.tpl                ← guest order reference form
+    ├── cms/
+    │   ├── page.tpl                       ← CMS page (centered prose layout)
+    │   └── category.tpl                   ← CMS category (card grid of pages)
+    └── errors/
+        ├── 404.tpl                        ← "This page has gone to seed."
+        ├── 403.tpl                        ← forbidden (403 Access Restricted)
+        └── maintenance.tpl                ← standalone HTML, no PS deps ("tending the garden")
 ```
 
 **Install:** Copy `themes/forest-studio-labs/` to your PS8 `/themes/` directory → Admin → Design → Theme & Logo → select Forest Studio Labs.
