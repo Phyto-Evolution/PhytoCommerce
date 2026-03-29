@@ -21,7 +21,7 @@
                 <input type="checkbox" id="enable_ai" onchange="toggleAI(this.checked)">
                 &nbsp;<i class="icon-magic" style="color:#6f42c1;"></i>
                 <strong>Use AI to generate description</strong>
-                <small class="text-muted"> — requires OpenAI API key in Settings</small>
+                <small class="text-muted"> — requires API key in Settings tab</small>
             </label>
         </div>
 
@@ -125,13 +125,11 @@
                         </small>
                     </div>
                     <div class="form-group">
-                        <label>Product Image</label>
-                        <input type="file" name="product_image" class="form-control"
-                               accept="image/*" onchange="previewImage(this)">
-                        <div id="img_preview" style="margin-top:8px;display:none;">
-                            <img id="img_preview_src"
-                                 style="max-height:120px;border-radius:4px;border:1px solid #ddd;">
-                        </div>
+                        <label>Product Images</label>
+                        <input type="file" name="product_images[]" class="form-control"
+                               accept="image/*" multiple onchange="previewImages(this)">
+                        <small class="text-muted">Select one or more images. First image becomes the cover. All will be watermarked automatically.</small>
+                        <div id="img_previews" style="margin-top:8px;display:none;display:flex;flex-wrap:wrap;gap:8px;"></div>
                     </div>
                 </div>
             </div>
@@ -234,25 +232,40 @@
 
 <div class="tab-pane" id="tab-settings">
 <div class="panel">
-    <div class="panel-heading"><i class="icon-cog"></i> Settings</div>
+    <div class="panel-heading"><i class="icon-cog"></i> AI Settings</div>
     <div class="panel-body">
         <form method="post">
             <input type="hidden" name="saveSettings" value="1">
             <div class="row">
                 <div class="col-md-6">
+
                     <div class="form-group">
-                        <label><i class="icon-magic"></i> Claude AI API Key</label>
-                        <input type="password" name="ai_key" class="form-control"
+                        <label><i class="icon-magic"></i> AI Provider</label>
+                        <select name="ai_provider" id="phyto-ai-provider" class="form-control">
+                            {foreach from=$ai_providers key=id item=label}
+                            <option value="{$id}" {if $ai_provider == $id}selected{/if}>{$label}</option>
+                            {/foreach}
+                        </select>
+                        <small class="text-muted">Choose which AI service generates your product descriptions.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="icon-key"></i> API Key</label>
+                        <input type="password" name="ai_key" id="phyto-ai-key" class="form-control"
                                value="{if isset($ai_key)}{$ai_key}{/if}"
-                               placeholder="sk-ant-...">
+                               placeholder="Paste your API key here">
                         <small class="text-muted">
-                            Get your key at
-                            <a href="https://console.anthropic.com/settings/keys" target="_blank">
+                            Get your key:
+                            <a id="phyto-ai-key-link" href="https://console.anthropic.com/settings/keys" target="_blank">
                                 console.anthropic.com
                             </a>
-                            — stored as PHYTO_AI_KEY
                         </small>
                     </div>
+
+                    <div id="phyto-ai-provider-info" class="alert alert-info" style="font-size:12px;padding:8px 12px;">
+                        {* filled by JS on load and on change *}
+                    </div>
+
                 </div>
             </div>
             <button type="submit" class="btn btn-primary">
@@ -268,6 +281,54 @@
 {literal}
 <script>
 var AJAX_URL = '{/literal}{$ajax_url}{literal}';
+
+// ── AI provider info map ──────────────────────────────────────────────────────
+var AI_PROVIDERS = {
+    claude:  {
+        placeholder: 'sk-ant-api03-...',
+        link: 'https://console.anthropic.com/settings/keys',
+        linkText: 'console.anthropic.com',
+        info: '⚡ Claude Haiku — fast, cheap, great at plant descriptions. Free trial available.',
+    },
+    openai:  {
+        placeholder: 'sk-proj-...',
+        link: 'https://platform.openai.com/api-keys',
+        linkText: 'platform.openai.com',
+        info: '⚡ GPT-4o mini — most widely used, reliable, very low cost per request.',
+    },
+    gemini:  {
+        placeholder: 'AIzaSy...',
+        link: 'https://aistudio.google.com/app/apikey',
+        linkText: 'aistudio.google.com',
+        info: '⚡ Gemini 2.0 Flash — Google\'s fastest model. Generous free tier available.',
+    },
+    mistral: {
+        placeholder: 'your-mistral-key',
+        link: 'https://console.mistral.ai/api-keys',
+        linkText: 'console.mistral.ai',
+        info: '🇪🇺 Mistral Small — European AI, strong privacy stance, GDPR-friendly.',
+    },
+    cohere:  {
+        placeholder: 'your-cohere-key',
+        link: 'https://dashboard.cohere.com/api-keys',
+        linkText: 'dashboard.cohere.com',
+        info: '✍️ Command R+ — Cohere specialises in business and e-commerce copy.',
+    },
+};
+
+function updateProviderUI() {
+    var provider = document.getElementById('phyto-ai-provider').value;
+    var data     = AI_PROVIDERS[provider];
+    if (!data) return;
+    document.getElementById('phyto-ai-key').placeholder = data.placeholder;
+    var link = document.getElementById('phyto-ai-key-link');
+    link.href      = data.link;
+    link.textContent = data.linkText;
+    document.getElementById('phyto-ai-provider-info').textContent = data.info;
+}
+
+document.getElementById('phyto-ai-provider').addEventListener('change', updateProviderUI);
+updateProviderUI(); // run on page load
 
 
 function addCategory() {
@@ -430,15 +491,34 @@ function filterSelect(selectId, term) {
     }
 }
 
-function previewImage(input) {
-    if (input.files && input.files[0]) {
+function previewImages(input) {
+    var container = document.getElementById('img_previews');
+    container.innerHTML = '';
+    if (!input.files || !input.files.length) {
+        container.style.display = 'none';
+        return;
+    }
+    container.style.display = 'flex';
+    Array.prototype.forEach.call(input.files, function(file, idx) {
         var reader = new FileReader();
         reader.onload = function(e) {
-            document.getElementById('img_preview_src').src = e.target.result;
-            document.getElementById('img_preview').style.display = 'block';
+            var wrap = document.createElement('div');
+            wrap.style.cssText = 'position:relative;display:inline-block;';
+            var img = document.createElement('img');
+            img.src = e.target.result;
+            img.style.cssText = 'height:100px;border-radius:4px;border:2px solid ' + (idx === 0 ? '#5cb85c' : '#ddd') + ';';
+            img.title = file.name;
+            wrap.appendChild(img);
+            if (idx === 0) {
+                var badge = document.createElement('span');
+                badge.textContent = 'Cover';
+                badge.style.cssText = 'position:absolute;bottom:4px;left:4px;background:#5cb85c;color:#fff;font-size:10px;padding:1px 5px;border-radius:3px;';
+                wrap.appendChild(badge);
+            }
+            container.appendChild(wrap);
         };
-        reader.readAsDataURL(input.files[0]);
-    }
+        reader.readAsDataURL(file);
+    });
 }
 
 function loadPacks() {

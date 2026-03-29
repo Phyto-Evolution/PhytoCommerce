@@ -2,140 +2,189 @@
   {
     "id": "phyto_acclimation_bundler",
     "title": "Phyto Acclimation Bundler",
-    "description": "",
+    "description": "Automatically suggests acclimation accessories in the cart when a tissue-culture or deflasked plant is added, helping buyers get everything they need in one order. Triggers can be based on Phyto Growth Stage IDs or product tags, and a configurable bundle discount rewards customers who add all kit items at once. The dismissable cart widget shows up to a configurable number of kit products with images and prices.",
     "category": "Show Your Plants Professionally",
     "icon": "box"
   },
   {
+    "id": "phyto_bundle_builder",
+    "title": "Phyto Bundle Builder",
+    "description": "Lets admin define named bundle templates with typed slots — for example a Starter Kit requiring one plant, one pot, and one substrate — and customers then choose specific products for each slot on an interactive front-end builder page. A configurable bundle discount is applied to the total and the completed selection is added to the cart as a pack in a single click. The savings amount is displayed prominently on the builder page, and the call-to-action button label is editable from the module configuration. Ideal for plant stores that want to upsell complementary growing supplies alongside each plant purchase.",
+    "category": "Run the Business",
+    "icon": "badge"
+  },
+  {
     "id": "phyto_care_card",
     "title": "Phyto Care Card",
-    "description": "Auto-generate printable PDF care sheets per product, attached to order confirmation emails.",
+    "description": "Generates a branded PDF care sheet for each plant product covering light, water type and method, humidity, temperature, growing media, feeding protocol, dormancy instructions, potting tips, and common problems. The PDF is automatically attached to the order confirmation email so every buyer receives customised care guidance the moment they purchase. Uses TCPDF when available, with an HTML fallback, and supports a custom store logo and footer text on every sheet.",
     "category": "Show Your Plants Professionally",
     "icon": "document"
   },
   {
     "id": "phyto_climate_zone",
     "title": "Phyto Climate Zone",
-    "description": "Maps products to 15 PCC-IN climate zones via offline pincode lookup. Covers 797 India PIN prefixes.",
+    "description": "Maps each product to one or more of 15 granular PhytoCommerce India Climate Codes (PCC-IN) covering the full range of Indian growing conditions from humid tropical coasts to arid plateaus and Himalayan highlands. Customers enter their 6-digit PIN code on the product page and instantly receive an offline suitability check without any server-side API call, using a pre-loaded map of 797 PIN prefixes. Includes intolerance flags for hard frost, direct rain, low humidity, and alkaline water, plus min/max temperature ranges and outdoor growing notes per product.",
     "category": "Build Trust & Community",
     "icon": "map"
   },
   {
     "id": "phyto_collection_widget",
     "title": "Phyto Plant Collection Widget",
-    "description": "Allow customers to track and manage their plant collection from purchased orders.",
+    "description": "Lets logged-in customers build and manage a personal plant collection made up of products they have purchased, with the option to add private care notes to each entry and make the collection publicly shareable via a unique URL. Purchased plants are automatically added to the collection on order confirmation, and a \"My Collection\" tab appears on product pages for plants already owned. A dedicated admin panel under Customers gives staff a full view of every customer collection.",
     "category": "Build Trust & Community",
     "icon": "collection"
   },
   {
     "id": "phyto_dispatch_logger",
     "title": "Phyto Dispatch Logger",
-    "description": "",
+    "description": "Records packing conditions for every shipment at the point of dispatch, including temperature, humidity, packing method, gel and heat packs used, and an optional photo of the packed box. Staff log entries from a dedicated tab inside the back-office order view, and buyers see the dispatch conditions on their order detail page. Records serve as primary evidence when handling Live Arrival Guarantee claims and support accountability across the packing team.",
     "category": "Run the Business",
     "icon": "truck"
   },
   {
     "id": "phyto_grex_registry",
     "title": "Phyto Grex Registry",
-    "description": "Attach structured scientific and horticultural taxonomy metadata to any product.",
+    "description": "Attach structured scientific and horticultural taxonomy data to any product, including genus, species, subspecies, cultivar, grex name, hybrid formula, mother/father parentage, natural habitat, endemic region, and IUCN conservation status. A \"Scientific Profile\" tab is displayed on the product page front end, and all fields are editable from within the standard product editor. Designed for orchid, carnivorous plant, and rare species retailers who need verifiable provenance information visible to buyers.",
     "category": "Show Your Plants Professionally",
     "icon": "dna"
   },
   {
     "id": "phyto_growers_journal",
     "title": "Grower's Journal",
-    "description": "",
+    "description": "Creates a chronological grow-log attached to each product page, where staff can post progress updates with photos to show how listed plants are developing. When enabled, verified buyers who have purchased the product can also submit their own journal entries, providing authentic social proof and community engagement. Entry approval is managed from a dedicated back-office controller, and customers can view their own posts from the My Account area.",
     "category": "Build Trust & Community",
     "icon": "camera"
   },
   {
     "id": "phyto_growth_stage",
     "title": "Phyto Growth Stages",
-    "description": "Replace or augment combination size labels with named growth stages, each carrying care-difficulty and time-to-maturity metadata.",
+    "description": "Replaces or augments standard combination size labels with named plant growth stages such as Seedling, Juvenile, or Mature, each carrying a care-difficulty rating and weeks-to-next-stage estimate. A stage badge appears near the product price and a full \"Growth Stage\" tab is displayed on the product page, helping buyers choose plants suited to their experience level. Integrates with the Phyto Acclimation Bundler to trigger acclimation kit suggestions for early-stage tissue-culture plants.",
     "category": "Show Your Plants Professionally",
     "icon": "sprout"
   },
   {
+    "id": "phyto_image_sec",
+    "title": "Phyto Image Sec — Image Protection",
+    "description": "Protects product images by automatically watermarking them with your shop logo at a configurable position, opacity, and size whenever images are uploaded or regenerated, and can optionally embed the product name as a text overlay. Also generates compressed WebP sibling files alongside each image for faster page loads, and embeds IPTC copyright metadata. A JavaScript layer blocks right-click, drag-to-desktop, and Ctrl+S on product, category, and search pages, while a batch tool applies watermarks to all existing catalogue images at once.",
+    "category": "Run the Business",
+    "icon": "badge"
+  },
+  {
+    "id": "phyto_invoice_customizer",
+    "title": "Phyto Invoice Customizer",
+    "description": "Customises PrestaShop 8 PDF invoices for plant stores by injecting TC batch numbers from Phyto TC Batch Tracker, phytosanitary certificate references from Phyto Phytosanitary, and a configurable Live Arrival Guarantee clause onto every order invoice. A branded header carries your store name and a custom footer note closes each document, all configurable from the module settings page without editing any template files. The module hooks into the standard PrestaShop PDF invoice generation pipeline, so customisations apply automatically to new and reprinted invoices.",
+    "category": "Run the Business",
+    "icon": "badge"
+  },
+  {
+    "id": "phyto_kyc",
+    "title": "Phyto KYC",
+    "description": "Enforces identity verification before revealing prices and purchase options, using a two-tier KYC system: Level 1 validates PAN cards for retail customers and Level 2 validates GST numbers for B2B or wholesale buyers, both via live API calls to sandbox.co.in. Unverified visitors see blurred prices and a KYC prompt banner, while verified customers get full access immediately. A KYC tab in the My Account area lets customers submit and track their documents, and staff can review, approve, or reject submissions from a dedicated back-office panel. Designed specifically for Indian plant stores that need to comply with PAN and GST identity requirements.",
+    "category": "Run the Business",
+    "icon": "badge"
+  },
+  {
     "id": "phyto_live_arrival",
     "title": "Phyto Live Arrival Guarantee",
-    "description": "Live Arrival Guarantee opt-in at checkout with configurable shipping windows, fee management, and claim forms.",
+    "description": "Adds a Live Arrival Guarantee opt-in widget at checkout, restricting dispatch to configurable allowed days of the week and holiday blackout dates to minimise transit mortality. Supports a flat LAG fee that is automatically waived above a set cart total, and generates a claim form where customers submit photo evidence within a configurable claim window. LAG status and claim history are visible on the customer order detail page, and all claim notifications are emailed to the store.",
     "category": "Sell with Confidence",
     "icon": "shield"
   },
   {
+    "id": "phyto_loyalty",
+    "title": "Phyto Loyalty",
+    "description": "Runs a points-based loyalty programme where customers earn points on every purchase at a configurable INR-per-point earn rate and can redeem accumulated points as cart discounts at a separately configured redeem rate. A tier system (such as Seed, Sapling, and Canopy) rewards higher-spending customers with bonus earn multipliers, and points carry a configurable expiry period to encourage regular ordering. Admin can manually adjust any customer balance from the back office, and a cart widget lets customers choose how many points to apply at checkout. Built for Indian plant stores transacting in INR.",
+    "category": "Run the Business",
+    "icon": "badge"
+  },
+  {
     "id": "phyto_phytosanitary",
     "title": "Phyto Phytosanitary",
-    "description": "",
+    "description": "Attaches phytosanitary inspection certificates, import permits, and other regulatory documents to products, with uploaded PDFs available for customers to download on the product page under a \"Regulatory Documents\" tab. Reference numbers from attached documents are automatically printed on packing slip PDFs, providing a complete compliance paper trail. Essential for sellers of regulated plant material, especially imported species subject to CITES or national phytosanitary requirements.",
     "category": "Run the Business",
     "icon": "certificate"
   },
   {
+    "id": "phyto_restock_alert",
+    "title": "Phyto Restock Alert",
+    "description": "Adds a \"Notify me when available\" subscription form to out-of-stock product pages so customers can register their email address without creating an account. When stock quantity rises above zero, the module automatically dispatches notification emails to all subscribers for that product and clears the subscriber list. Admin can view the full subscriber list per product from a dedicated back-office panel, and settings control the sender name and maximum notifications dispatched per run to avoid mail server flooding.",
+    "category": "Run the Business",
+    "icon": "badge"
+  },
+  {
     "id": "phyto_seasonal_availability",
     "title": "Phyto Seasonal Availability",
-    "description": "Mark products with dormancy/shipping windows, block purchase during incompatible months, and show a notify-me form when out of season.",
+    "description": "Marks each product with the months it can be safely shipped and any dormancy periods, then automatically blocks purchase outside the allowed window and displays a customisable out-of-season message. A visual month-grid on the product page shows buyers exactly when the plant ships, and an optional \"Notify me when back in season\" email capture collects interested buyers for later outreach. Essential for tropical and temperate plant sellers whose stock availability changes with the season.",
     "category": "Sell with Confidence",
     "icon": "calendar"
   },
   {
     "id": "phyto_source_badge",
     "title": "Phyto Source Badge",
-    "description": "Display sourcing origin badges on product cards and pages.",
+    "description": "Displays coloured sourcing origin badges on product listing cards and product pages to communicate how and where each plant was produced — for example Tissue Culture, Wild Collected, Nursery Grown, or Imported. Admin defines badge definitions with custom labels, colours, and slugs, then assigns them to individual products along with permit reference numbers and origin country. Badges appear as pill overlays near the price on listings and in a dedicated \"Source and Origin\" tab on the product page.",
     "category": "Show Your Plants Professionally",
     "icon": "badge"
   },
   {
     "id": "phyto_subscription",
     "title": "Phyto Subscription",
-    "description": "Recurring mystery box and replenishment subscriptions via Cashfree.",
+    "description": "Enables recurring subscription plans for mystery plant boxes and regular replenishment orders, processing payments through the Cashfree Subscriptions API. Admin creates plan templates with billing cycles and pricing; customers subscribe from their account and can view and manage active subscriptions. Supports both Sandbox and Production Cashfree environments and verifies webhook signatures for secure payment event handling. Designed for Indian plant stores that want to offer curated monthly deliveries in INR.",
     "category": "Sell with Confidence",
     "icon": "box"
   },
   {
     "id": "phyto_tc_batch_tracker",
     "title": "TC Batch Tracker",
-    "description": "",
+    "description": "Links tissue-culture products to propagation batch records so buyers can see the full provenance of every plant they purchase. Admin features include mother-batch lineage tracking, a contamination log, printable QR labels, inventory auto-decrement when orders are shipped, and automatic low-stock email alerts. Purpose-built for TC nurseries that need documented batch traceability from flask to dispatch.",
     "category": "Build Trust & Community",
     "icon": "qr"
   },
   {
     "id": "phyto_tc_cost_calculator",
     "title": "Phyto TC Cost Calculator",
-    "description": "",
+    "description": "Back-office pricing tool for tissue-culture batches that calculates substrate costs, overhead, and labour to derive a total cost per plant, then suggests retail prices at configurable gross-margin targets. All calculations are stored per batch so pricing history is preserved as input costs change. Intended for nursery managers who need to consistently price new TC deflasks without manually working through spreadsheets.",
     "category": "Run the Business",
     "icon": "briefcase"
   },
   {
     "id": "phyto_wholesale_portal",
     "title": "Phyto Wholesale Portal",
-    "description": "B2B wholesale tier with MOQ, tiered pricing and invoice payment.",
+    "description": "Creates a fully managed B2B wholesale tier where businesses apply for a wholesale account, get approved and placed into a dedicated customer group, and then see quantity-based tiered pricing and minimum order quantity (MOQ) rules on product pages. Approved wholesalers can optionally be offered invoice-on-delivery payment terms with a configurable payment window. A self-service application form and a Wholesale Applications admin panel make the onboarding and approval workflow entirely admin-side.",
     "category": "Sell with Confidence",
     "icon": "briefcase"
   },
   {
+    "id": "phytocommerce_branding",
+    "title": "Phyto Commerce Theme Branding",
+    "description": "Applies your brand identity — name, tagline, primary/secondary/accent colours, logo URL, and contact details — as CSS custom-property tokens across compatible PrestaShop themes. Configure once in the admin and all theme components pick up the palette automatically. Designed for plant nurseries and tissue-culture stores wanting a cohesive, on-brand storefront without editing template files.",
+    "category": "Run the Business",
+    "icon": "badge"
+  },
+  {
     "id": "phytocommerce_pack",
     "title": "PhytoCommerce Pack",
-    "description": "1-click installer for the complete PhytoCommerce module suite — 20 modules for specialty plant e-commerce.",
+    "description": "1-click installer for the complete PhytoCommerce module suite — 28 modules for specialty plant e-commerce.",
     "category": "Run the Business",
     "icon": "badge"
   },
   {
     "id": "phytoerpconnector",
     "title": "Phyto ERP Connector",
-    "description": "Connects PrestaShop stores to ERPNext v15 — syncs orders, customers, products and invoices",
+    "description": "Connects your PrestaShop store to ERPNext v15 via its REST API, automatically syncing orders on status change, new customer accounts, and product additions and updates. A sync log in the admin records every push with its status and any error messages. Essential for plant businesses running ERPNext for accounting, procurement, or inventory and needing both systems in alignment without manual data entry.",
     "category": "Run the Business",
     "icon": "sync"
   },
   {
     "id": "phytoquickadd",
     "title": "Phyto Quick Add",
-    "description": "Quickly add products and categories with taxonomy intelligence",
+    "description": "Speeds up catalogue management by providing a streamlined product and category creation form with built-in plant taxonomy intelligence. Auto-suggests genus, species, and horticultural classifications so listings are created consistently without navigating the full product editor. Best suited for nurseries and tissue-culture sellers managing large, frequently updated catalogues.",
     "category": "Run the Business",
     "icon": "ai"
   },
   {
     "id": "phytoseobooster",
     "title": "Phyto SEO Booster",
-    "description": "AI-powered SEO automation for plant listings — auto meta, schema markup, alt text, and bulk audit",
+    "description": "Automates SEO for plant listings by injecting JSON-LD Product schema markup on every product page and auto-generating meta titles and descriptions when those fields are left empty. Includes a bulk audit tool so you can review and fix SEO gaps across your entire catalogue at once. Built specifically for plant and tissue-culture stores where product names follow scientific nomenclature.",
     "category": "Run the Business",
     "icon": "ai"
   }

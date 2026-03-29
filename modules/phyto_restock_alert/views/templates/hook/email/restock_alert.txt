@@ -1,0 +1,14 @@
+Hi {firstname},
+
+Great news — {product_name} is back in stock and ready to order!
+
+View the product: {product_link}
+
+Hurry — availability may be limited.
+
+Happy growing,
+The {shop_name} Team
+
+---
+You received this email because you subscribed to restock notifications at {shop_name} ({shop_url}).
+If you no longer wish to receive these alerts, you can unsubscribe by returning to the product page.

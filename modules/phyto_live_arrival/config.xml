@@ -3,7 +3,7 @@
     <name>phyto_live_arrival</name>
     <displayName><![CDATA[Phyto Live Arrival Guarantee]]></displayName>
     <version><![CDATA[1.0.0]]></version>
-    <description><![CDATA[Live Arrival Guarantee opt-in at checkout. Controls shipping window, adds fee or free LAG threshold, and generates LAG claim forms.]]></description>
+    <description><![CDATA[Adds a Live Arrival Guarantee opt-in widget at checkout, restricting dispatch to configurable allowed days of the week and holiday blackout dates to minimise transit mortality. Supports a flat LAG fee that is automatically waived above a set cart total, and generates a claim form where customers submit photo evidence within a configurable claim window. LAG status and claim history are visible on the customer order detail page, and all claim notifications are emailed to the store.]]></description>
     <author><![CDATA[PhytoCommerce]]></author>
     <tab><![CDATA[shipping_logistics]]></tab>
     <is_configurable>1</is_configurable>

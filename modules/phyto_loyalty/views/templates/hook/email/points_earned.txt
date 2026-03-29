@@ -1,0 +1,25 @@
+You Earned Loyalty Points!
+===========================
+
+Hi {firstname} {lastname},
+
+Your order #{order_reference} has been completed and you've earned loyalty points.
+
+Points earned:    +{points_earned}
+Your new balance: {balance} points
+
+Current Tier: {tier}
+
+{if next_tier != 'Maximum tier reached'}
+You need {points_to_next} more lifetime points to reach the {next_tier} tier.
+{else}
+You've reached the highest tier — Rare! You're a true plant enthusiast.
+{/if}
+
+View your loyalty account and redeem points at:
+{account_url}
+
+Points can be redeemed at checkout for discounts.
+
+---
+PhytoCommerce — This is an automated message, please do not reply.

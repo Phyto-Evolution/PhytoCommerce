@@ -3,7 +3,7 @@
     <name>phytoseobooster</name>
     <displayName><![CDATA[Phyto SEO Booster]]></displayName>
     <version><![CDATA[1.0.0]]></version>
-    <description><![CDATA[SEO automation for plant listings — JSON-LD schema markup, auto meta generation, alt text suggestions, and bulk audit.]]></description>
+    <description><![CDATA[Automates SEO for plant listings by injecting JSON-LD Product schema markup on every product page and auto-generating meta titles and descriptions when those fields are left empty. Includes a bulk audit tool so you can review and fix SEO gaps across your entire catalogue at once. Built specifically for plant and tissue-culture stores where product names follow scientific nomenclature.]]></description>
     <author><![CDATA[Phyto Evolution]]></author>
     <tab>seo</tab>
     <is_configurable>1</is_configurable>

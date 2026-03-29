@@ -31,9 +31,13 @@ class AdminPhytoErpConnectorController extends ModuleAdminController {
 
     public function postProcess() {
         if (Tools::isSubmit('saveErpSettings')) {
-            Configuration::updateValue('PHYTO_ERP_URL',          Tools::getValue('erp_url'));
-            Configuration::updateValue('PHYTO_ERP_API_KEY',      Tools::getValue('erp_api_key'));
-            Configuration::updateValue('PHYTO_ERP_API_SECRET',   Tools::getValue('erp_api_secret'));
+            Configuration::updateValue('PHYTO_ERP_URL',     Tools::getValue('erp_url'));
+            Configuration::updateValue('PHYTO_ERP_API_KEY', Tools::getValue('erp_api_key'));
+            // Only overwrite the secret if a new value was explicitly submitted
+            $newSecret = Tools::getValue('erp_api_secret');
+            if (!empty($newSecret)) {
+                Configuration::updateValue('PHYTO_ERP_API_SECRET', $newSecret);
+            }
             Configuration::updateValue('PHYTO_ERP_SYNC_ORDERS',  (int)Tools::getValue('sync_orders'));
             Configuration::updateValue('PHYTO_ERP_SYNC_CUSTOMERS',(int)Tools::getValue('sync_customers'));
             Configuration::updateValue('PHYTO_ERP_SYNC_PRODUCTS', (int)Tools::getValue('sync_products'));
@@ -54,8 +58,8 @@ class AdminPhytoErpConnectorController extends ModuleAdminController {
 
         $this->context->smarty->assign([
             'erp_url'          => Configuration::get('PHYTO_ERP_URL') ?: 'https://erp.phytolabs.in',
-            'erp_api_key'      => Configuration::get('PHYTO_ERP_API_KEY') ?: '',
-            'erp_api_secret'   => Configuration::get('PHYTO_ERP_API_SECRET') ?: '',
+            'erp_api_key'         => Configuration::get('PHYTO_ERP_API_KEY') ?: '',
+            'erp_secret_set'      => !empty(Configuration::get('PHYTO_ERP_API_SECRET')),
             'sync_orders'      => (int)Configuration::get('PHYTO_ERP_SYNC_ORDERS'),
             'sync_customers'   => (int)Configuration::get('PHYTO_ERP_SYNC_CUSTOMERS'),
             'sync_products'    => (int)Configuration::get('PHYTO_ERP_SYNC_PRODUCTS'),

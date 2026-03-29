@@ -110,7 +110,12 @@ class PhytoSeo {
     // ── Alt Text Generation ──────────────────────────────────────────────────
 
     public static function generateAltText($product_name, $ai_key) {
-        $prompt = "Write a concise, SEO-friendly alt text (under 125 chars) for a product image of a plant called: '$product_name'. "
+        // Sanitize before interpolating into prompt
+        $safe_name = preg_replace('/[^\p{L}\p{N}\s\.\-\'×]/u', '', (string) $product_name);
+        $safe_name = mb_substr(trim($safe_name), 0, 100);
+        if (empty($safe_name)) { return (string) $product_name; }
+
+        $prompt = "Write a concise, SEO-friendly alt text (under 125 chars) for a product image of a plant called: '$safe_name'. "
                 . "Return ONLY the alt text string, no quotes, no extra text.";
         $result = self::callClaude($prompt, $ai_key, 80);
         return $result ? trim($result) : $product_name;
