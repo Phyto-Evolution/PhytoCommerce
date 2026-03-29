@@ -7,6 +7,13 @@
     "icon": "box"
   },
   {
+    "id": "phyto_bundle_builder",
+    "title": "Phyto Bundle Builder",
+    "description": "",
+    "category": "Run the Business",
+    "icon": "badge"
+  },
+  {
     "id": "phyto_care_card",
     "title": "Phyto Care Card",
     "description": "Auto-generate printable PDF care sheets per product, attached to order confirmation emails.",
@@ -77,11 +84,25 @@
     "icon": "shield"
   },
   {
+    "id": "phyto_loyalty",
+    "title": "Phyto Loyalty",
+    "description": "Points-based loyalty programme. Customers earn points on purchases and redeem them as cart discounts.",
+    "category": "Run the Business",
+    "icon": "badge"
+  },
+  {
     "id": "phyto_phytosanitary",
     "title": "Phyto Phytosanitary",
     "description": "",
     "category": "Run the Business",
     "icon": "certificate"
+  },
+  {
+    "id": "phyto_restock_alert",
+    "title": "Phyto Restock Alert",
+    "description": "",
+    "category": "Run the Business",
+    "icon": "badge"
   },
   {
     "id": "phyto_seasonal_availability",
@@ -135,7 +156,7 @@
   {
     "id": "phytocommerce_pack",
     "title": "PhytoCommerce Pack",
-    "description": "1-click installer for the complete PhytoCommerce module suite — 24 modules for specialty plant e-commerce.",
+    "description": "1-click installer for the complete PhytoCommerce module suite — 28 modules for specialty plant e-commerce.",
     "category": "Run the Business",
     "icon": "badge"
   },
