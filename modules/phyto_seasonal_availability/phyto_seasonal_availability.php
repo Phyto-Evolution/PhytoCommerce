@@ -43,7 +43,7 @@ class Phyto_Seasonal_Availability extends Module
         parent::__construct();
 
         $this->displayName = $this->l('Phyto Seasonal Availability');
-        $this->description = $this->l('Mark products with dormancy/shipping windows, block purchase during incompatible months, and show a notify-me form when out of season.');
+        $this->description = $this->l('Marks each product with the months it can be safely shipped and any dormancy periods, then automatically blocks purchase outside the allowed window and displays a customisable out-of-season message. A visual month-grid on the product page shows buyers exactly when the plant ships, and an optional "Notify me when back in season" email capture collects interested buyers for later outreach. Essential for tropical and temperate plant sellers whose stock availability changes with the season.');
         $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => _PS_VERSION_];
     }
 

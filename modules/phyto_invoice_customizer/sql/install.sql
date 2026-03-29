@@ -1,0 +1,13 @@
+-- Phyto Invoice Customizer — Install SQL
+--
+-- This module does not create any new tables.
+-- It reads data from other PhytoCommerce modules' tables:
+--
+--   PREFIX_phyto_tc_batch          (phyto_tc_batch_tracker)
+--   PREFIX_phyto_tc_batch_product  (phyto_tc_batch_tracker)
+--   PREFIX_phyto_phytosanitary_doc (phyto_phytosanitary)
+--
+-- All cross-module queries are guarded by SHOW TABLES LIKE checks so that
+-- this module can be installed independently of the other modules.
+--
+-- No SQL statements to execute.

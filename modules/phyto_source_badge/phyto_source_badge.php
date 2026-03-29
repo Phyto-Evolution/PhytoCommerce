@@ -34,7 +34,7 @@ class Phyto_Source_Badge extends Module
         parent::__construct();
 
         $this->displayName = $this->l('Phyto Source Badge');
-        $this->description = $this->l('Display sourcing origin badges on product cards and pages.');
+        $this->description = $this->l('Displays coloured sourcing origin badges on product listing cards and product pages to communicate how and where each plant was produced — for example Tissue Culture, Wild Collected, Nursery Grown, or Imported. Admin defines badge definitions with custom labels, colours, and slugs, then assigns them to individual products along with permit reference numbers and origin country. Badges appear as pill overlays near the price on listings and in a dedicated "Source and Origin" tab on the product page.');
         $this->confirmUninstall = $this->l('Are you sure you want to uninstall? All badge assignments will be deleted.');
     }
 

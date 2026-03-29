@@ -38,11 +38,7 @@ class Phyto_Tc_Batch_Tracker extends Module
         parent::__construct();
 
         $this->displayName = $this->l('TC Batch Tracker');
-        $this->description = $this->l(
-            'Link tissue-culture products to propagation batch records. '
-            . 'Buyers see full provenance; admin manages inventory with lineage, '
-            . 'contamination log, QR labels, and low-stock alerts.'
-        );
+        $this->description = $this->l('Links tissue-culture products to propagation batch records so buyers can see the full provenance of every plant they purchase. Admin features include mother-batch lineage tracking, a contamination log, printable QR labels, inventory auto-decrement when orders are shipped, and automatic low-stock email alerts. Purpose-built for TC nurseries that need documented batch traceability from flask to dispatch.');
         $this->ps_versions_compliancy = array('min' => '1.7.0.0', 'max' => _PS_VERSION_);
     }
 

@@ -46,7 +46,7 @@ class Phyto_Kyc extends Module
         parent::__construct();
 
         $this->displayName = $this->l('Phyto KYC');
-        $this->description = $this->l('Customer KYC verification. Blurs prices for unverified customers.');
+        $this->description = $this->l('Enforces identity verification before revealing prices and purchase options, using a two-tier KYC system: Level 1 validates PAN cards for retail customers and Level 2 validates GST numbers for B2B or wholesale buyers, both via live API calls to sandbox.co.in. Unverified visitors see blurred prices and a KYC prompt banner, while verified customers get full access immediately. A KYC tab in the My Account area lets customers submit and track their documents, and staff can review, approve, or reject submissions from a dedicated back-office panel. Designed specifically for Indian plant stores that need to comply with PAN and GST identity requirements.');
         $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => _PS_VERSION_];
     }
 

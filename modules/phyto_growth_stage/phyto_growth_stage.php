@@ -30,7 +30,7 @@ class Phyto_Growth_Stage extends Module
         parent::__construct();
 
         $this->displayName = $this->l('Phyto Growth Stages');
-        $this->description = $this->l('Replace or augment combination size labels with named growth stages, each carrying care-difficulty and time-to-maturity metadata.');
+        $this->description = $this->l('Replaces or augments standard combination size labels with named plant growth stages such as Seedling, Juvenile, or Mature, each carrying a care-difficulty rating and weeks-to-next-stage estimate. A stage badge appears near the product price and a full "Growth Stage" tab is displayed on the product page, helping buyers choose plants suited to their experience level. Integrates with the Phyto Acclimation Bundler to trigger acclimation kit suggestions for early-stage tissue-culture plants.');
 
         $this->confirmUninstall = $this->l('Are you sure? All growth stage data will be deleted.');
     }

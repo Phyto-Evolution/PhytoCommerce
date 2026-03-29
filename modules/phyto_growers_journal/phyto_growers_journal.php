@@ -32,10 +32,7 @@ class Phyto_Growers_Journal extends Module
         parent::__construct();
 
         $this->displayName = $this->l("Grower's Journal");
-        $this->description = $this->l(
-            'Living grow-log attached to each product. Store posts updates with photos; '
-            . 'buyers can also post updates on purchased products. Acts as social proof.'
-        );
+        $this->description = $this->l('Creates a chronological grow-log attached to each product page, where staff can post progress updates with photos to show how listed plants are developing. When enabled, verified buyers who have purchased the product can also submit their own journal entries, providing authentic social proof and community engagement. Entry approval is managed from a dedicated back-office controller, and customers can view their own posts from the My Account area.');
         $this->ps_versions_compliancy = array('min' => '8.0.0', 'max' => _PS_VERSION_);
     }
 

@@ -3,7 +3,7 @@
     <name>phytoquickadd</name>
     <displayName><![CDATA[Phyto Quick Add]]></displayName>
     <version><![CDATA[3.0.0]]></version>
-    <description><![CDATA[Quickly add products and categories to PrestaShop with carnivorous plant taxonomy intelligence.]]></description>
+    <description><![CDATA[Speeds up catalogue management by providing a streamlined product and category creation form with built-in plant taxonomy intelligence. Auto-suggests genus, species, and horticultural classifications so listings are created consistently without navigating the full product editor. Best suited for nurseries and tissue-culture sellers managing large, frequently updated catalogues.]]></description>
     <author><![CDATA[Phyto Evolution]]></author>
     <tab>administration</tab>
     <is_configurable>0</is_configurable>

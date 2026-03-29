@@ -15,7 +15,7 @@ class PhytoErpConnector extends Module {
         $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => _PS_VERSION_];
         parent::__construct();
         $this->displayName = 'Phyto ERP Connector';
-        $this->description = 'Connects PrestaShop stores to ERPNext v15 — syncs orders, customers, products and invoices';
+        $this->description = 'Connects your PrestaShop store to ERPNext v15 via its REST API, automatically syncing orders on status change, new customer accounts, and product additions and updates. A sync log in the admin records every push with its status and any error messages. Essential for plant businesses running ERPNext for accounting, procurement, or inventory and needing both systems in alignment without manual data entry.';
     }
 
     public function install() {

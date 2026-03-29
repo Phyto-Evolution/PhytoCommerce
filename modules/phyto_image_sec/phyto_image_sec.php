@@ -37,10 +37,7 @@ class Phyto_Image_Sec extends Module
         parent::__construct();
 
         $this->displayName    = $this->l('Phyto Image Sec — Image Protection');
-        $this->description    = $this->l(
-            'Watermarks product images with your shop logo, embeds IPTC copyright metadata, '
-            . 'generates compressed WebP siblings, and blocks right-click / drag / download.'
-        );
+        $this->description    = $this->l('Protects product images by automatically watermarking them with your shop logo at a configurable position, opacity, and size whenever images are uploaded or regenerated, and can optionally embed the product name as a text overlay. Also generates compressed WebP sibling files alongside each image for faster page loads, and embeds IPTC copyright metadata. A JavaScript layer blocks right-click, drag-to-desktop, and Ctrl+S on product, category, and search pages, while a batch tool applies watermarks to all existing catalogue images at once.');
         $this->confirmUninstall = $this->l(
             'Uninstalling will NOT restore already-watermarked images. Continue?'
         );

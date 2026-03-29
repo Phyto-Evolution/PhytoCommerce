@@ -35,7 +35,7 @@ class Phyto_Loyalty extends Module
         parent::__construct();
 
         $this->displayName = $this->l('Phyto Loyalty');
-        $this->description = $this->l('Points-based loyalty programme. Customers earn points on purchases and redeem them as cart discounts.');
+        $this->description = $this->l('Runs a points-based loyalty programme where customers earn points on every purchase at a configurable INR-per-point earn rate and can redeem accumulated points as cart discounts at a separately configured redeem rate. A tier system (such as Seed, Sapling, and Canopy) rewards higher-spending customers with bonus earn multipliers, and points carry a configurable expiry period to encourage regular ordering. Admin can manually adjust any customer balance from the back office, and a cart widget lets customers choose how many points to apply at checkout. Built for Indian plant stores transacting in INR.');
         $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => _PS_VERSION_];
     }
 

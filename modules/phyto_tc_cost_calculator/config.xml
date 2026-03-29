@@ -3,7 +3,7 @@
     <name>phyto_tc_cost_calculator</name>
     <displayName><![CDATA[Phyto TC Cost Calculator]]></displayName>
     <version><![CDATA[1.0.0]]></version>
-    <description><![CDATA[Internal tool for pricing TC batches with cost and margin analysis]]></description>
+    <description><![CDATA[Back-office pricing tool for tissue-culture batches that calculates substrate costs, overhead, and labour to derive a total cost per plant, then suggests retail prices at configurable gross-margin targets. All calculations are stored per batch so pricing history is preserved as input costs change. Intended for nursery managers who need to consistently price new TC deflasks without manually working through spreadsheets.]]></description>
     <author><![CDATA[PhytoCommerce]]></author>
     <tab><![CDATA[AdminCatalog]]></tab>
     <is_configurable>0</is_configurable>

@@ -3,7 +3,7 @@
     <name>phyto_phytosanitary</name>
     <displayName><![CDATA[Phyto Phytosanitary]]></displayName>
     <version><![CDATA[1.0.0]]></version>
-    <description><![CDATA[Attach inspection certificates and import permits to products]]></description>
+    <description><![CDATA[Attaches phytosanitary inspection certificates, import permits, and other regulatory documents to products, with uploaded PDFs available for customers to download on the product page under a "Regulatory Documents" tab. Reference numbers from attached documents are automatically printed on packing slip PDFs, providing a complete compliance paper trail. Essential for sellers of regulated plant material, especially imported species subject to CITES or national phytosanitary requirements.]]></description>
     <author><![CDATA[PhytoCommerce]]></author>
     <tab><![CDATA[administration]]></tab>
     <is_configurable>0</is_configurable>

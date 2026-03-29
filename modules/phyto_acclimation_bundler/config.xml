@@ -3,7 +3,7 @@
     <name>phyto_acclimation_bundler</name>
     <displayName><![CDATA[Phyto Acclimation Bundler]]></displayName>
     <version><![CDATA[1.0.0]]></version>
-    <description><![CDATA[Auto-suggest acclimation accessories when TC or deflasked plants are added to cart]]></description>
+    <description><![CDATA[Automatically suggests acclimation accessories in the cart when a tissue-culture or deflasked plant is added, helping buyers get everything they need in one order. Triggers can be based on Phyto Growth Stage IDs or product tags, and a configurable bundle discount rewards customers who add all kit items at once. The dismissable cart widget shows up to a configurable number of kit products with images and prices.]]></description>
     <author><![CDATA[PhytoCommerce]]></author>
     <tab><![CDATA[front_office_features]]></tab>
     <is_configurable>1</is_configurable>

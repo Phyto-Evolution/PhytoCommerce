@@ -40,7 +40,7 @@ class Phyto_Wholesale_Portal extends Module
         parent::__construct();
 
         $this->displayName = $this->l('Phyto Wholesale Portal');
-        $this->description = $this->l('B2B wholesale tier with MOQ, tiered pricing and invoice payment.');
+        $this->description = $this->l('Creates a fully managed B2B wholesale tier where businesses apply for a wholesale account, get approved and placed into a dedicated customer group, and then see quantity-based tiered pricing and minimum order quantity (MOQ) rules on product pages. Approved wholesalers can optionally be offered invoice-on-delivery payment terms with a configurable payment window. A self-service application form and a Wholesale Applications admin panel make the onboarding and approval workflow entirely admin-side.');
         $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => _PS_VERSION_];
     }
 

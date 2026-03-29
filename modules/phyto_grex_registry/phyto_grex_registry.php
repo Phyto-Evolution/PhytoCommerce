@@ -41,7 +41,7 @@ class Phyto_Grex_Registry extends Module
         parent::__construct();
 
         $this->displayName = $this->l('Phyto Grex Registry');
-        $this->description = $this->l('Attach structured scientific and horticultural taxonomy metadata to any product.');
+        $this->description = $this->l('Attach structured scientific and horticultural taxonomy data to any product, including genus, species, subspecies, cultivar, grex name, hybrid formula, mother/father parentage, natural habitat, endemic region, and IUCN conservation status. A "Scientific Profile" tab is displayed on the product page front end, and all fields are editable from within the standard product editor. Designed for orchid, carnivorous plant, and rare species retailers who need verifiable provenance information visible to buyers.');
         $this->confirmUninstall = $this->l('Are you sure you want to uninstall? All taxonomy data will be permanently deleted.');
     }
 

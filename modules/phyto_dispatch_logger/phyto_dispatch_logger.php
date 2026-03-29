@@ -40,9 +40,7 @@ class Phyto_Dispatch_Logger extends Module
         $this->bootstrap       = true;
 
         $this->displayName = $this->l('Phyto Dispatch Logger');
-        $this->description = $this->l(
-            'Log packing conditions per shipment for dispatch evidence.'
-        );
+        $this->description = $this->l('Records packing conditions for every shipment at the point of dispatch, including temperature, humidity, packing method, gel and heat packs used, and an optional photo of the packed box. Staff log entries from a dedicated tab inside the back-office order view, and buyers see the dispatch conditions on their order detail page. Records serve as primary evidence when handling Live Arrival Guarantee claims and support accountability across the packing team.');
         $this->confirmUninstall = $this->l(
             'Are you sure you want to uninstall? All dispatch log data will be deleted.'
         );

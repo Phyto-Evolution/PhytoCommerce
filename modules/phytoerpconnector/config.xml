@@ -3,7 +3,7 @@
     <name>phytoerpconnector</name>
     <displayName><![CDATA[Phyto ERP Connector]]></displayName>
     <version><![CDATA[1.0.0]]></version>
-    <description><![CDATA[Connects PrestaShop to ERPNext v15 — syncs orders, customers, products and invoices.]]></description>
+    <description><![CDATA[Connects your PrestaShop store to ERPNext v15 via its REST API, automatically syncing orders on status change, new customer accounts, and product additions and updates. A sync log in the admin records every push with its status and any error messages. Essential for plant businesses running ERPNext for accounting, procurement, or inventory and needing both systems in alignment without manual data entry.]]></description>
     <author><![CDATA[Phyto Evolution]]></author>
     <tab>administration</tab>
     <is_configurable>1</is_configurable>

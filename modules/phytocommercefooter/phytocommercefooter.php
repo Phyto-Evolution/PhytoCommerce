@@ -12,7 +12,7 @@ class PhytoCommerceFooter extends Module {
         $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => _PS_VERSION_];
         parent::__construct();
         $this->displayName = 'Phyto Commerce Footer';
-        $this->description = 'Adds Phyto Commerce branding to footer';
+        $this->description = 'Injects a branded Phyto Commerce credit line into the store footer on every page. The footer link points to phytolabs.in and is styled to blend with any theme. Ideal for stores built on the Phyto Commerce platform that want to display their technology partner identity.';
     }
 
     public function install() {

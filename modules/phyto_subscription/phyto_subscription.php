@@ -31,7 +31,7 @@ class Phyto_Subscription extends Module
         parent::__construct();
 
         $this->displayName = $this->l('Phyto Subscription');
-        $this->description = $this->l('Recurring mystery box and replenishment subscriptions via Cashfree.');
+        $this->description = $this->l('Enables recurring subscription plans for mystery plant boxes and regular replenishment orders, processing payments through the Cashfree Subscriptions API. Admin creates plan templates with billing cycles and pricing; customers subscribe from their account and can view and manage active subscriptions. Supports both Sandbox and Production Cashfree environments and verifies webhook signatures for secure payment event handling. Designed for Indian plant stores that want to offer curated monthly deliveries in INR.');
         $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => _PS_VERSION_];
     }
 

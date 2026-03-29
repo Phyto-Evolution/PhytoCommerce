@@ -40,9 +40,7 @@ class Phyto_Bundle_Builder extends Module
         parent::__construct();
 
         $this->displayName = $this->l('Phyto Bundle Builder');
-        $this->description = $this->l(
-            'Let customers build custom bundles from predefined slot templates and get a combined discount.'
-        );
+        $this->description = $this->l('Lets admin define named bundle templates with typed slots — for example a Starter Kit requiring one plant, one pot, and one substrate — and customers then choose specific products for each slot on an interactive front-end builder page. A configurable bundle discount is applied to the total and the completed selection is added to the cart as a pack in a single click. The savings amount is displayed prominently on the builder page, and the call-to-action button label is editable from the module configuration. Ideal for plant stores that want to upsell complementary growing supplies alongside each plant purchase.');
         $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => _PS_VERSION_];
     }
 
