@@ -3,7 +3,7 @@
     <name>phyto_bundle_builder</name>
     <displayName><![CDATA[Phyto Bundle Builder]]></displayName>
     <version><![CDATA[1.0.0]]></version>
-    <description><![CDATA[Customer-facing bundle creator with slot-based product selection and combined discounts]]></description>
+    <description><![CDATA[Lets admin define named bundle templates with typed slots — for example a Starter Kit requiring one plant, one pot, and one substrate — and customers then choose specific products for each slot on an interactive front-end builder page. A configurable bundle discount is applied to the total and the completed selection is added to the cart as a pack in a single click. The savings amount is displayed prominently on the builder page, and the call-to-action button label is editable from the module configuration. Ideal for plant stores that want to upsell complementary growing supplies alongside each plant purchase.]]></description>
     <author><![CDATA[PhytoCommerce]]></author>
     <tab><![CDATA[front_office_features]]></tab>
     <is_configurable>1</is_configurable>

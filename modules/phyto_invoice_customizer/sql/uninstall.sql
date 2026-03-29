@@ -1,0 +1,6 @@
+-- Phyto Invoice Customizer — Uninstall SQL
+--
+-- Configuration keys are removed in PHP (Module::removeConfig()).
+-- No tables were created by this module, so nothing to drop here.
+--
+-- No SQL statements to execute.

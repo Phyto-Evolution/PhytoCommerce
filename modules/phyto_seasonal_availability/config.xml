@@ -3,7 +3,7 @@
     <name>phyto_seasonal_availability</name>
     <displayName><![CDATA[Phyto Seasonal Availability]]></displayName>
     <version><![CDATA[1.0.0]]></version>
-    <description><![CDATA[Mark products with dormancy/shipping windows, block purchase during incompatible months, and show a notify-me form when out of season.]]></description>
+    <description><![CDATA[Marks each product with the months it can be safely shipped and any dormancy periods, then automatically blocks purchase outside the allowed window and displays a customisable out-of-season message. A visual month-grid on the product page shows buyers exactly when the plant ships, and an optional "Notify me when back in season" email capture collects interested buyers for later outreach. Essential for tropical and temperate plant sellers whose stock availability changes with the season.]]></description>
     <author><![CDATA[PhytoCommerce]]></author>
     <tab><![CDATA[front_office_features]]></tab>
     <is_configurable>0</is_configurable>

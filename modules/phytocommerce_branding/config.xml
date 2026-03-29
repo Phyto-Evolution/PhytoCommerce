@@ -3,7 +3,7 @@
   <name>phytocommerce_branding</name>
   <displayName><![CDATA[Phyto Commerce Theme Branding]]></displayName>
   <version><![CDATA[1.0.0]]></version>
-  <description><![CDATA[Applies Phyto Commerce visual branding tokens to compatible PrestaShop themes.]]></description>
+  <description><![CDATA[Applies your brand identity — name, tagline, primary/secondary/accent colours, logo URL, and contact details — as CSS custom-property tokens across compatible PrestaShop themes. Configure once in the admin and all theme components pick up the palette automatically. Designed for plant nurseries and tissue-culture stores wanting a cohesive, on-brand storefront without editing template files.]]></description>
   <author><![CDATA[Phyto Commerce]]></author>
   <tab><![CDATA[front_office_features]]></tab>
   <is_configurable>1</is_configurable>

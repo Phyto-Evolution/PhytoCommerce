@@ -15,7 +15,7 @@ class PhytoQuickAdd extends Module {
         $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => _PS_VERSION_];
         parent::__construct();
         $this->displayName = 'Phyto Quick Add';
-        $this->description = 'Quickly add products and categories with taxonomy intelligence';
+        $this->description = 'Speeds up catalogue management by providing a streamlined product and category creation form with built-in plant taxonomy intelligence. Auto-suggests genus, species, and horticultural classifications so listings are created consistently without navigating the full product editor. Best suited for nurseries and tissue-culture sellers managing large, frequently updated catalogues.';
     }
 
     public function install() {

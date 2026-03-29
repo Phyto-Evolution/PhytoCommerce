@@ -43,7 +43,7 @@ class Phyto_Live_Arrival extends Module
         parent::__construct();
 
         $this->displayName = $this->l('Phyto Live Arrival Guarantee');
-        $this->description = $this->l('Live Arrival Guarantee opt-in at checkout with configurable shipping windows, fee management, and claim forms.');
+        $this->description = $this->l('Adds a Live Arrival Guarantee opt-in widget at checkout, restricting dispatch to configurable allowed days of the week and holiday blackout dates to minimise transit mortality. Supports a flat LAG fee that is automatically waived above a set cart total, and generates a claim form where customers submit photo evidence within a configurable claim window. LAG status and claim history are visible on the customer order detail page, and all claim notifications are emailed to the store.');
         $this->confirmUninstall = $this->l('Are you sure you want to uninstall the Live Arrival Guarantee module? All LAG data will be removed.');
     }
 
