@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You earned loyalty points!</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
+    .wrapper { max-width: 600px; margin: 40px auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .header { background: #2e7d32; color: #fff; padding: 32px 40px; text-align: center; }
+    .header h1 { margin: 0; font-size: 26px; }
+    .header .star { font-size: 36px; display: block; margin-bottom: 8px; }
+    .body { padding: 32px 40px; }
+    .body p { color: #333; line-height: 1.6; }
+    .points-box { background: #e8f5e9; border-left: 4px solid #2e7d32; border-radius: 4px; padding: 16px 20px; margin: 20px 0; }
+    .points-box .earned { font-size: 28px; font-weight: bold; color: #2e7d32; }
+    .points-box .balance { font-size: 18px; color: #555; margin-top: 4px; }
+    .tier-section { margin: 24px 0; }
+    .tier-badge { display: inline-block; padding: 6px 16px; border-radius: 20px; font-weight: bold; text-transform: capitalize; }
+    .tier-seed   { background: #f1f8e9; color: #558b2f; border: 1px solid #558b2f; }
+    .tier-sprout { background: #e8f5e9; color: #2e7d32; border: 1px solid #2e7d32; }
+    .tier-bloom  { background: #e3f2fd; color: #1565c0; border: 1px solid #1565c0; }
+    .tier-rare   { background: #fce4ec; color: #880e4f; border: 1px solid #880e4f; }
+    .progress-bar-wrap { background: #e0e0e0; border-radius: 8px; height: 12px; margin: 10px 0; overflow: hidden; }
+    .progress-bar-fill { background: #2e7d32; height: 100%; border-radius: 8px; }
+    .cta { text-align: center; margin: 28px 0; }
+    .cta a { background: #2e7d32; color: #fff; padding: 14px 32px; border-radius: 6px; text-decoration: none; font-size: 16px; font-weight: bold; }
+    .footer { background: #f9f9f9; padding: 16px 40px; text-align: center; font-size: 12px; color: #999; border-top: 1px solid #eee; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <span class="star">&#9733;</span>
+      <h1>You Earned Loyalty Points!</h1>
+    </div>
+    <div class="body">
+      <p>Hi <strong>{firstname} {lastname}</strong>,</p>
+      <p>Great news! Your order <strong>#{order_reference}</strong> has been completed and you've earned loyalty points.</p>
+
+      <div class="points-box">
+        <div class="earned">+{points_earned} points earned</div>
+        <div class="balance">Your new balance: <strong>{balance} points</strong></div>
+      </div>
+
+      <div class="tier-section">
+        <p><strong>Current Tier:</strong>
+          <span class="tier-badge tier-{tier}">{tier}</span>
+        </p>
+        {if next_tier != 'Maximum tier reached'}
+          <p>You need <strong>{points_to_next} more lifetime points</strong> to reach the <strong>{next_tier}</strong> tier.</p>
+        {else}
+          <p><strong>You've reached the highest tier — Rare!</strong> You're a true plant enthusiast.</p>
+        {/if}
+      </div>
+
+      <div class="cta">
+        <a href="{account_url}">View My Points</a>
+      </div>
+
+      <p style="color:#777; font-size:13px;">Points can be redeemed at checkout for discounts. Log in and visit the cart to redeem.</p>
+    </div>
+    <div class="footer">
+      &copy; PhytoCommerce &mdash; This is an automated message, please do not reply.
+    </div>
+  </div>
+</body>
+</html>

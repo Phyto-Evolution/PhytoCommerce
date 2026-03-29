@@ -3,7 +3,7 @@
     <name>phyto_dispatch_logger</name>
     <displayName><![CDATA[Phyto Dispatch Logger]]></displayName>
     <version><![CDATA[1.0.0]]></version>
-    <description><![CDATA[Log packing conditions per shipment for dispatch evidence]]></description>
+    <description><![CDATA[Records packing conditions for every shipment at the point of dispatch, including temperature, humidity, packing method, gel and heat packs used, and an optional photo of the packed box. Staff log entries from a dedicated tab inside the back-office order view, and buyers see the dispatch conditions on their order detail page. Records serve as primary evidence when handling Live Arrival Guarantee claims and support accountability across the packing team.]]></description>
     <author><![CDATA[PhytoCommerce]]></author>
     <tab><![CDATA[AdminParentOrders]]></tab>
     <is_configurable>0</is_configurable>

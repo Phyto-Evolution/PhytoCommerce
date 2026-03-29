@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>phyto_restock_alert</name>
+    <displayName><![CDATA[Phyto Restock Alert]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Adds a "Notify me when available" subscription form to out-of-stock product pages so customers can register their email address without creating an account. When stock quantity rises above zero, the module automatically dispatches notification emails to all subscribers for that product and clears the subscriber list. Admin can view the full subscriber list per product from a dedicated back-office panel, and settings control the sender name and maximum notifications dispatched per run to avoid mail server flooding.]]></description>
+    <author><![CDATA[PhytoCommerce]]></author>
+    <tab><![CDATA[AdminCatalog]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+    <limited_countries></limited_countries>
+</module>

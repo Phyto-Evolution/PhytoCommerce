@@ -29,9 +29,7 @@ class Phyto_Tc_Cost_Calculator extends Module
         parent::__construct();
 
         $this->displayName = $this->l('Phyto TC Cost Calculator');
-        $this->description = $this->l(
-            'Internal tool for pricing TC batches with cost and margin analysis.'
-        );
+        $this->description = $this->l('Back-office pricing tool for tissue-culture batches that calculates substrate costs, overhead, and labour to derive a total cost per plant, then suggests retail prices at configurable gross-margin targets. All calculations are stored per batch so pricing history is preserved as input costs change. Intended for nursery managers who need to consistently price new TC deflasks without manually working through spreadsheets.');
         $this->ps_versions_compliancy = [
             'min' => '8.0.0',
             'max' => _PS_VERSION_,

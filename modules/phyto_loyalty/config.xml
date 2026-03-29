@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>phyto_loyalty</name>
+    <displayName><![CDATA[Phyto Loyalty Programme]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Runs a points-based loyalty programme where customers earn points on every purchase at a configurable INR-per-point earn rate and can redeem accumulated points as cart discounts at a separately configured redeem rate. A tier system (such as Seed, Sapling, and Canopy) rewards higher-spending customers with bonus earn multipliers, and points carry a configurable expiry period to encourage regular ordering. Admin can manually adjust any customer balance from the back office, and a cart widget lets customers choose how many points to apply at checkout. Built for Indian plant stores transacting in INR.]]></description>
+    <author><![CDATA[PhytoCommerce]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+    <limited_countries></limited_countries>
+</module>

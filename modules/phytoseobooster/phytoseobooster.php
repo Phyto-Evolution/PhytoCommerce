@@ -15,7 +15,7 @@ class PhytoSeoBooster extends Module {
         $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => _PS_VERSION_];
         parent::__construct();
         $this->displayName = 'Phyto SEO Booster';
-        $this->description = 'AI-powered SEO automation for plant listings — auto meta, schema markup, alt text, and bulk audit';
+        $this->description = 'Automates SEO for plant listings by injecting JSON-LD Product schema markup on every product page and auto-generating meta titles and descriptions when those fields are left empty. Includes a bulk audit tool so you can review and fix SEO gaps across your entire catalogue at once. Built specifically for plant and tissue-culture stores where product names follow scientific nomenclature.';
     }
 
     public function install() {

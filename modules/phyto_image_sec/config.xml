@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>phyto_image_sec</name>
+    <displayName><![CDATA[Phyto Image Sec — Image Protection]]></displayName>
+    <version><![CDATA[0.3.0]]></version>
+    <description><![CDATA[Protects product images by automatically watermarking them with your shop logo at a configurable position, opacity, and size whenever images are uploaded or regenerated, and can optionally embed the product name as a text overlay. Also generates compressed WebP sibling files alongside each image for faster page loads, and embeds IPTC copyright metadata. A JavaScript layer blocks right-click, drag-to-desktop, and Ctrl+S on product, category, and search pages, while a batch tool applies watermarks to all existing catalogue images at once.]]></description>
+    <author><![CDATA[PhytoCommerce]]></author>
+    <tab><![CDATA[administration]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+    <limited_countries></limited_countries>
+</module>
