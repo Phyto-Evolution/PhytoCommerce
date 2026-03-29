@@ -1,0 +1,6 @@
+.phyto-restock-wrap { margin: 1.5em 0; padding: 1em; border: 1px solid #e0e0e0; border-radius: 4px; background: #f9f9f9; }
+.phyto-restock-wrap h4 { margin: 0 0 .75em; }
+.phyto-restock-form .input-text { display: block; width: 100%; margin-bottom: .5em; }
+.phyto-restock-message { margin-top: .75em; padding: .5em 1em; border-radius: 3px; }
+.phyto-restock-message.success { background: #d4edda; color: #155724; }
+.phyto-restock-message.error   { background: #f8d7da; color: #721c24; }
