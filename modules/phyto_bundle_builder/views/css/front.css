@@ -1,0 +1,393 @@
+/* ============================================================
+   Phyto Bundle Builder — Front-End Styles
+   ============================================================ */
+
+/* ---- Layout ---- */
+.phyto-bundle-builder {
+  margin-bottom: 2rem;
+}
+
+.phyto-bb-heading {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.phyto-bb-subheading {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.phyto-bb-description {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* ---- Listing cards ---- */
+.phyto-bb-listing {
+  margin-top: 1rem;
+}
+
+.phyto-bb-card {
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease;
+  height: 100%;
+}
+
+.phyto-bb-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.phyto-bb-listing-item {
+  margin-bottom: 1.5rem;
+}
+
+.phyto-bb-discount-badge {
+  display: inline-block;
+  background: #28a745;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  margin-bottom: 0.75rem;
+}
+
+.phyto-bb-start-btn {
+  margin-top: 0.5rem;
+}
+
+/* ---- Back link ---- */
+.phyto-bb-back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.phyto-bb-back-link:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* ---- Discount info banner ---- */
+.phyto-bb-discount-info {
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+/* ---- Slots ---- */
+.phyto-bb-slots {
+  margin-bottom: 1.5rem;
+}
+
+.phyto-bb-slot {
+  margin-bottom: 1.25rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.phyto-bb-slot-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #f8f9fa;
+  padding: 0.75rem 1rem;
+}
+
+.phyto-bb-slot-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #495057;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.phyto-bb-slot-name {
+  font-weight: 600;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.phyto-bb-required {
+  color: #dc3545;
+  margin-left: 2px;
+}
+
+.phyto-bb-slot-status {
+  font-size: 0.8rem;
+  color: #888;
+  margin-left: auto;
+}
+
+.phyto-bb-slot-status.phyto-bb-slot-selected {
+  color: #28a745;
+  font-weight: 600;
+}
+
+/* ---- Search box ---- */
+.phyto-bb-search-box {
+  margin-bottom: 0.75rem;
+}
+
+/* ---- Product grid ---- */
+.phyto-bb-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.75rem;
+  max-height: 360px;
+  overflow-y: auto;
+  padding: 4px;
+}
+
+.phyto-bb-product-card {
+  border: 2px solid #dee2e6;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+}
+
+.phyto-bb-product-card:hover {
+  border-color: #adb5bd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.phyto-bb-product-card.phyto-bb-selected {
+  border-color: #28a745;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.2);
+}
+
+/* Checkmark overlay */
+.phyto-bb-product-image {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #f8f9fa;
+}
+
+.phyto-bb-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.phyto-bb-no-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #adb5bd;
+  font-size: 2rem;
+}
+
+.phyto-bb-checkmark {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 26px;
+  height: 26px;
+  background: #28a745;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1rem;
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  pointer-events: none;
+}
+
+.phyto-bb-checkmark .material-icons {
+  font-size: 16px;
+}
+
+.phyto-bb-product-card.phyto-bb-selected .phyto-bb-checkmark {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.phyto-bb-product-info {
+  padding: 0.4rem 0.5rem;
+}
+
+.phyto-bb-product-name {
+  font-size: 0.78rem;
+  font-weight: 500;
+  margin: 0 0 2px 0;
+  line-height: 1.3;
+  max-height: 2.6em;
+  overflow: hidden;
+}
+
+.phyto-bb-product-ref {
+  font-size: 0.7rem;
+  color: #888;
+  margin: 0 0 2px 0;
+}
+
+.phyto-bb-product-price {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #212529;
+  margin: 0;
+}
+
+.phyto-bb-no-products {
+  grid-column: 1 / -1;
+}
+
+/* ---- Totals panel ---- */
+.phyto-bb-totals {
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+}
+
+.phyto-bb-total-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.phyto-bb-total-line:last-child {
+  border-bottom: none;
+}
+
+.phyto-bb-label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.phyto-bb-grand-total-line .phyto-bb-label,
+.phyto-bb-grand-total {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #212529;
+}
+
+.phyto-bb-savings-line .phyto-bb-savings-label,
+.phyto-bb-savings {
+  color: #28a745;
+  font-weight: 600;
+}
+
+/* ---- Submit row ---- */
+.phyto-bb-submit-row {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.phyto-bb-submit-btn {
+  min-width: 200px;
+  font-size: 1rem;
+  padding: 0.7rem 2rem;
+}
+
+.phyto-bb-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.phyto-bb-submit-hint {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* ---- Widget ---- */
+.phyto-bb-widget {
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.phyto-bb-widget--sidebar {
+  padding: 1rem;
+}
+
+.phyto-bb-widget-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.phyto-bb-widget-subtitle {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+
+.phyto-bb-widget-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.75rem 0;
+}
+
+.phyto-bb-widget-item {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.phyto-bb-widget-item:last-child {
+  border-bottom: none;
+}
+
+.phyto-bb-widget-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.15s;
+}
+
+.phyto-bb-widget-link:hover {
+  color: #28a745;
+}
+
+.phyto-bb-widget-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #d4edda;
+  color: #155724;
+  padding: 0.15rem 0.45rem;
+  border-radius: 12px;
+}
+
+.phyto-bb-widget-cta {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.phyto-bb-widget-empty {
+  font-size: 0.85rem;
+  color: #888;
+  margin: 0;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 576px) {
+  .phyto-bb-product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    max-height: 280px;
+  }
+
+  .phyto-bb-slot-header {
+    flex-wrap: wrap;
+  }
+}

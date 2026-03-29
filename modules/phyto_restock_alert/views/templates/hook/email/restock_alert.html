@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good news! {product_name} is back in stock</title>
+  <style>
+    body {
+      margin: 0; padding: 0;
+      background-color: #f5f5f5;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      color: #333333;
+    }
+    .wrapper {
+      width: 100%;
+      background-color: #f5f5f5;
+      padding: 30px 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .header {
+      background-color: #2d6a4f;
+      padding: 28px 32px;
+      text-align: center;
+    }
+    .header h1 {
+      margin: 0;
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .content {
+      padding: 32px;
+    }
+    .content p {
+      margin: 0 0 16px;
+      line-height: 1.6;
+    }
+    .product-box {
+      background-color: #f0f7f4;
+      border-left: 4px solid #2d6a4f;
+      border-radius: 4px;
+      padding: 18px 20px;
+      margin: 24px 0;
+    }
+    .product-box strong {
+      display: block;
+      font-size: 17px;
+      color: #1b4332;
+      margin-bottom: 8px;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #2d6a4f;
+      color: #ffffff !important;
+      text-decoration: none;
+      padding: 13px 28px;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 15px;
+      margin-top: 8px;
+    }
+    .footer {
+      padding: 24px 32px;
+      background-color: #f5f5f5;
+      text-align: center;
+      font-size: 12px;
+      color: #888888;
+      border-top: 1px solid #e0e0e0;
+    }
+    .footer a {
+      color: #2d6a4f;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+
+      <!-- Header -->
+      <div class="header">
+        <h1>&#127807; {shop_name}</h1>
+      </div>
+
+      <!-- Body -->
+      <div class="content">
+        <p>Hi{if isset({firstname}) && {firstname} != ''} <strong>{firstname}</strong>{/if},</p>
+
+        <p>Great news &#127881; — the product you were waiting for is <strong>back in stock</strong> and ready to order!</p>
+
+        <div class="product-box">
+          <strong>{product_name}</strong>
+          <a href="{product_link}" class="btn">Shop Now &rarr;</a>
+        </div>
+
+        <p>
+          Hurry — availability may be limited. Click the button above to grab yours before it sells out again.
+        </p>
+
+        <p>Happy growing,<br><strong>The {shop_name} Team</strong></p>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>
+          You received this email because you subscribed to restock notifications at
+          <a href="{shop_url}">{shop_name}</a>.
+        </p>
+        <p>
+          If you no longer wish to receive these alerts, you can unsubscribe by returning to the product page.
+        </p>
+        <p>
+          &copy; {shop_name} &bull; <a href="{shop_url}">{shop_url}</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
