@@ -1,0 +1,6 @@
+.phyto-loyalty-cart-widget { padding: 1em; background: #f9fff9; border: 1px solid #cde; border-radius: 4px; margin-top: 1em; }
+.phyto-loyalty-cart-widget h4 { margin: 0 0 .5em; }
+.phyto-loyalty-redeem-form { display: flex; gap: .5em; margin-top: .5em; }
+.phyto-loyalty-redeem-form input { flex: 1; }
+#phyto-loyalty-message { margin-top: .5em; font-size: .9em; }
+.phyto-loyalty-account-block { padding: 1em; background: #f9fff9; border-radius: 4px; }

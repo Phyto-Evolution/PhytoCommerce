@@ -1,0 +1,17 @@
+/* Phyto Phytosanitary — Admin Styles */
+
+.phyto-ps-expiry--valid    { color: #2e7d32; }
+.phyto-ps-expiry--expiring { color: #856404; font-weight: 600; }
+.phyto-ps-expiry--expired  { color: #c62d2d; font-weight: 600; }
+
+.phyto-ps-meta-box table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.phyto-ps-meta-box th,
+.phyto-ps-meta-box td {
+    padding: 6px 8px;
+    border: 1px solid #e0e0e0;
+    font-size: 0.85rem;
+}
