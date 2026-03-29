@@ -101,7 +101,7 @@ class Phyto_Climate_Zone extends Module
         parent::__construct();
 
         $this->displayName = $this->l('Phyto Climate Zone');
-        $this->description = $this->l('Maps products to 15 PCC-IN climate zones via offline pincode lookup. Covers 797 India PIN prefixes.');
+        $this->description = $this->l('Maps each product to one or more of 15 granular PhytoCommerce India Climate Codes (PCC-IN) covering the full range of Indian growing conditions from humid tropical coasts to arid plateaus and Himalayan highlands. Customers enter their 6-digit PIN code on the product page and instantly receive an offline suitability check without any server-side API call, using a pre-loaded map of 797 PIN prefixes. Includes intolerance flags for hard frost, direct rain, low humidity, and alkaline water, plus min/max temperature ranges and outdoor growing notes per product.');
         $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => '8.99.99'];
     }
 

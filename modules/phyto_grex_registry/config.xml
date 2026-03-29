@@ -3,7 +3,7 @@
     <name>phyto_grex_registry</name>
     <displayName><![CDATA[Phyto Grex Registry]]></displayName>
     <version><![CDATA[1.0.0]]></version>
-    <description><![CDATA[Attach structured scientific and horticultural taxonomy metadata to any product. Displays a taxonomy card on the product page front end.]]></description>
+    <description><![CDATA[Attach structured scientific and horticultural taxonomy data to any product, including genus, species, subspecies, cultivar, grex name, hybrid formula, mother/father parentage, natural habitat, endemic region, and IUCN conservation status. A "Scientific Profile" tab is displayed on the product page front end, and all fields are editable from within the standard product editor. Designed for orchid, carnivorous plant, and rare species retailers who need verifiable provenance information visible to buyers.]]></description>
     <author><![CDATA[PhytoCommerce]]></author>
     <tab><![CDATA[front_office_features]]></tab>
     <is_configurable>0</is_configurable>

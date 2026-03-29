@@ -3,7 +3,7 @@
     <name>phyto_growth_stage</name>
     <displayName><![CDATA[Phyto Growth Stages]]></displayName>
     <version><![CDATA[1.0.0]]></version>
-    <description><![CDATA[Replace or augment combination size labels with named growth stages, each carrying care-difficulty and time-to-maturity metadata.]]></description>
+    <description><![CDATA[Replaces or augments standard combination size labels with named plant growth stages such as Seedling, Juvenile, or Mature, each carrying a care-difficulty rating and weeks-to-next-stage estimate. A stage badge appears near the product price and a full "Growth Stage" tab is displayed on the product page, helping buyers choose plants suited to their experience level. Integrates with the Phyto Acclimation Bundler to trigger acclimation kit suggestions for early-stage tissue-culture plants.]]></description>
     <author><![CDATA[PhytoCommerce]]></author>
     <tab><![CDATA[front_office_features]]></tab>
     <is_configurable>0</is_configurable>

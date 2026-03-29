@@ -40,10 +40,7 @@ class Phyto_Restock_Alert extends Module
         parent::__construct();
 
         $this->displayName = $this->l('Phyto Restock Alert');
-        $this->description = $this->l(
-            'Let customers subscribe to "Notify me when available" on out-of-stock products. '
-            . 'Automatic email notifications are sent when stock is replenished.'
-        );
+        $this->description = $this->l('Adds a "Notify me when available" subscription form to out-of-stock product pages so customers can register their email address without creating an account. When stock quantity rises above zero, the module automatically dispatches notification emails to all subscribers for that product and clears the subscriber list. Admin can view the full subscriber list per product from a dedicated back-office panel, and settings control the sender name and maximum notifications dispatched per run to avoid mail server flooding.');
         $this->confirmUninstall      = $this->l('Are you sure? All subscriber data will be removed.');
         $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => _PS_VERSION_];
     }
