@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>phyto_restock_alert</name>
+    <displayName><![CDATA[Phyto Restock Alert]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Let customers subscribe to "Notify me when available" on out-of-stock products. Automatic email notifications are sent when stock is replenished.]]></description>
+    <author><![CDATA[PhytoCommerce]]></author>
+    <tab><![CDATA[AdminCatalog]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+    <limited_countries></limited_countries>
+</module>

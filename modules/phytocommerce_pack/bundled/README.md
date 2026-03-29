@@ -25,7 +25,9 @@ phytocommerce_pack/
     ├── phyto_phytosanitary/
     ├── phyto_tc_cost_calculator/
     ├── phyto_wholesale_portal/
-    └── phyto_subscription/
+    ├── phyto_subscription/
+    ├── phyto_restock_alert/
+    └── phyto_invoice_customizer/
 ```
 
 **When deploying from a full repo checkout** (all modules already in PrestaShop's

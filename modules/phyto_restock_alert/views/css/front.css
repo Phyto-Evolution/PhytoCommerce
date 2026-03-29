@@ -1,0 +1,126 @@
+/**
+ * front.css
+ * Phyto Restock Alert — front-end widget styles
+ * Minimal overrides; relies on PrestaShop Bootstrap base.
+ */
+
+/* Widget container */
+.phyto-restock-widget {
+  border: 1px solid #d4edda;
+  border-radius: 6px;
+  background-color: #f8fffe;
+}
+
+.phyto-restock-widget .card-body {
+  padding: 1.25rem;
+}
+
+/* Heading */
+.phyto-restock-heading {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  color: #1b4332;
+  margin-bottom: 0.75rem;
+}
+
+.phyto-restock-heading .material-icons {
+  font-size: 1.15rem;
+  color: #2d6a4f;
+}
+
+/* Form inputs */
+.phyto-restock-form .form-group {
+  margin-bottom: 0.75rem;
+}
+
+.phyto-restock-form .form-control-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.phyto-restock-form .form-control {
+  border-color: #b7dfc8;
+}
+
+.phyto-restock-form .form-control:focus {
+  border-color: #2d6a4f;
+  box-shadow: 0 0 0 0.2rem rgba(45, 106, 79, 0.2);
+}
+
+/* Submit button */
+.phyto-restock-submit {
+  background-color: #2d6a4f;
+  border-color: #2d6a4f;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+}
+
+.phyto-restock-submit:hover,
+.phyto-restock-submit:focus {
+  background-color: #1b4332;
+  border-color: #1b4332;
+  color: #ffffff;
+}
+
+.phyto-restock-submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.phyto-restock-submit .material-icons {
+  font-size: 1rem;
+}
+
+/* Feedback message */
+.phyto-restock-message {
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.phyto-restock-message.is-success {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+}
+
+.phyto-restock-message.is-error {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+}
+
+.phyto-restock-message.is-info {
+  background-color: #d1ecf1;
+  border: 1px solid #bee5eb;
+  color: #0c5460;
+}
+
+/* Privacy note */
+.phyto-restock-privacy {
+  font-size: 0.775rem;
+  line-height: 1.4;
+}
+
+/* Loading spinner */
+.phyto-restock-submit .phyto-spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  animation: phyto-spin 0.7s linear infinite;
+}
+
+@keyframes phyto-spin {
+  to { transform: rotate(360deg); }
+}

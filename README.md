@@ -2,7 +2,7 @@
 
 A PrestaShop 8 module suite for specialty plant e-commerce — designed around the operational needs of tissue-culture producers, nurseries, and rare plant retailers. Covers TC batch provenance, phytosanitary compliance, wholesale portals, recurring subscriptions, scientific taxonomy, customer grow journals, image protection, and more.
 
-> **Last updated:** 2026-03-29 (phytocommerce_branding · phyto_kyc)
+> **Last updated:** 2026-03-29 (phyto_invoice_customizer · phyto_restock_alert · phyto_bundle_builder · phyto_loyalty)
 > Session logs: [`docs/CHECKPOINT.md`](docs/CHECKPOINT.md) · [`docs/ACTIVITY_LOG.md`](docs/ACTIVITY_LOG.md)
 
 ---
@@ -50,8 +50,18 @@ PhytoCommerce/
 │   ├── [SECURITY]
 │   │   └── phyto_image_sec/              ✅ Built  (v0.3 — watermark · WebP · IPTC · text overlay)
 │   │
-│   └── [IDENTITY & ACCESS]
-│       └── phyto_kyc/                    ✅ Built  (v1.0 — PAN/GST verification · price blur · admin review)
+│   ├── [IDENTITY & ACCESS]
+│   │   └── phyto_kyc/                    ✅ Built  (v1.0 — PAN/GST verification · price blur · admin review)
+│   │
+│   ├── [INVOICING]
+│   │   └── phyto_invoice_customizer/     ✅ Built  (v1.0 — phytosanitary refs · TC batches · LAG text · branded PDF)
+│   │
+│   ├── [NOTIFICATIONS]
+│   │   └── phyto_restock_alert/          ✅ Built  (v1.0 — out-of-stock subscribe · auto email · admin bulk actions)
+│   │
+│   └── [CUSTOMER ENGAGEMENT]
+│       ├── phyto_bundle_builder/         ✅ Built  (v1.0 — customer bundle creator · slot-based · combined discount · AJAX product picker)
+│       └── phyto_loyalty/               ✅ Built  (v1.0 — points on purchase · redeem in cart · 4 tiers · full ledger · admin adjustments)
 │
 ├── taxonomy/                             ✅ Built
 │   ├── carnivorous/   (8 packs)
@@ -62,7 +72,7 @@ PhytoCommerce/
 │
 ```
 
-> **24 modules built · 15 taxonomy packs**
+> **28 modules built · 15 taxonomy packs**
 
 ---
 
@@ -231,6 +241,13 @@ Lets customers subscribe to regular deliveries — mystery plant boxes, monthly 
 
 ---
 
+### phyto_restock_alert — "Notify Me When Available"
+
+#### v1.0 — Launch
+When a product is out of stock, a small widget appears on the product page with a form: customers enter their first name and email to be notified when it comes back in stock. Guests and logged-in customers alike can subscribe. The moment the stock quantity goes above zero — whether from a manual stock update or a restocked quantity via the back-office — all subscribers for that product automatically receive a branded email with a direct link to buy. There is no manual step required. The admin can also view all subscriptions in a dedicated "Restock Alert Subscriptions" list, filter by product or notified status, delete entries, mark them notified, or trigger manual send for any row. A summary of subscribers appears inside each product's own admin page.
+
+---
+
 ### phyto_image_sec — Image Protection
 
 #### v0.1 — First Build
@@ -324,6 +341,7 @@ rm -rf /path/to/prestashop/var/cache/*/smarty/compile/*
 |--------|-------------|
 | `phyto_wholesale_portal` | B2B wholesale tier — application workflow, MOQ enforcement, tiered pricing, invoice-on-delivery |
 | `phyto_subscription` | Recurring mystery-box and replenishment subscriptions |
+| `phyto_restock_alert` | "Notify me when available" — customers subscribe their email on out-of-stock products; automatic email fired when stock goes above 0 |
 
 ### Security
 
@@ -336,6 +354,15 @@ rm -rf /path/to/prestashop/var/cache/*/smarty/compile/*
 | Module | Description |
 |--------|-------------|
 | `phyto_kyc` | Customer KYC verification — L1 (PAN) and L2 (GST/business). When enabled, blurs/freezes all prices for unverified customers. Instant verification via Sandbox.co.in API with manual review fallback. Admin review panel with bulk approve/reject and customer email notification. |
+
+### Invoicing
+
+| Module | Description |
+|--------|-------------|
+| `phyto_invoice_customizer` | Customises PDF invoices with phytosanitary certificate references, TC batch numbers, Live Arrival Guarantee text, and a branded header/footer. Reads data from `phyto_tc_batch_tracker` and `phyto_phytosanitary` (gracefully skipped if not installed). Fully configurable per-section toggles. |
+| `phyto_restock_alert` | "Notify me when available" widget for out-of-stock products. Customers subscribe via email; automatic notification sent when stock goes above 0. Supports product combinations. Admin list with bulk actions and manual trigger. |
+| `phyto_bundle_builder` | Customer-facing bundle creator. Admin defines bundle templates with named slots (e.g. plant + pot + substrate), each restricted to a category. Customer picks one product per slot, gets a configurable combined discount. AJAX product search per slot. |
+| `phyto_loyalty` | Points-based loyalty programme. Customers earn points per ₹ spent, redeem as cart discount. Four tiers (Seed → Sprout → Bloom → Rare) based on lifetime points. Full transaction ledger, points expiry, admin manual adjustments, email on earn. |
 
 ---
 
