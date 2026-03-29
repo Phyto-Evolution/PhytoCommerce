@@ -1,0 +1,142 @@
+/* phyto_loyalty — front-end styles */
+
+.phyto-loyalty-widget {
+    background: #f4f6f2;
+    border: 1px solid #d1e3d5;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    font-size: 14px;
+}
+
+.phyto-loyalty-widget__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: #4a7c59;
+    margin-bottom: 10px;
+}
+
+.phyto-loyalty-widget__balance {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #2d4a38;
+}
+
+.phyto-loyalty-widget__label {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 12px;
+}
+
+.phyto-loyalty-widget__redeem {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.phyto-loyalty-widget__redeem input[type="number"] {
+    width: 100px;
+    padding: 6px 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.phyto-loyalty-widget__redeem .btn-redeem {
+    background: #4a7c59;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.phyto-loyalty-widget__redeem .btn-redeem:hover {
+    background: #3a6347;
+}
+
+.phyto-loyalty-widget__msg {
+    margin-top: 8px;
+    font-size: 13px;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+.phyto-loyalty-widget__msg.success {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.phyto-loyalty-widget__msg.error {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* Account page */
+.phyto-loyalty-account {
+    max-width: 720px;
+}
+
+.phyto-loyalty-tier {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+}
+
+.phyto-loyalty-tier--seed    { background: #f3f4f6; color: #6b7280; }
+.phyto-loyalty-tier--sprout  { background: #d1fae5; color: #065f46; }
+.phyto-loyalty-tier--bloom   { background: #fef3c7; color: #92400e; }
+.phyto-loyalty-tier--rare    { background: #ede9fe; color: #5b21b6; }
+
+.phyto-loyalty-progress {
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 8px 0;
+}
+
+.phyto-loyalty-progress__bar {
+    height: 100%;
+    background: #4a7c59;
+    border-radius: 4px;
+    transition: width 0.4s ease;
+}
+
+.phyto-loyalty-txn-table {
+    width: 100%;
+    font-size: 13px;
+    border-collapse: collapse;
+}
+
+.phyto-loyalty-txn-table th {
+    text-align: left;
+    padding: 8px 12px;
+    background: #f9fafb;
+    border-bottom: 2px solid #e5e7eb;
+    font-weight: 600;
+    color: #374151;
+}
+
+.phyto-loyalty-txn-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #f3f4f6;
+    color: #4b5563;
+}
+
+.phyto-loyalty-txn-table .points-earn   { color: #065f46; font-weight: 600; }
+.phyto-loyalty-txn-table .points-redeem { color: #991b1b; font-weight: 600; }
+.phyto-loyalty-txn-table .points-expire { color: #92400e; }
+.phyto-loyalty-txn-table .points-adjust { color: #1d4ed8; }
