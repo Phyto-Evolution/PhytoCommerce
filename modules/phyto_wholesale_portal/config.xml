@@ -3,7 +3,7 @@
     <name>phyto_wholesale_portal</name>
     <displayName><![CDATA[Phyto Wholesale Portal]]></displayName>
     <version><![CDATA[1.0.0]]></version>
-    <description><![CDATA[B2B wholesale tier with MOQ, tiered pricing and invoice payment]]></description>
+    <description><![CDATA[Creates a fully managed B2B wholesale tier where businesses apply for a wholesale account, get approved and placed into a dedicated customer group, and then see quantity-based tiered pricing and minimum order quantity (MOQ) rules on product pages. Approved wholesalers can optionally be offered invoice-on-delivery payment terms with a configurable payment window. A self-service application form and a Wholesale Applications admin panel make the onboarding and approval workflow entirely admin-side.]]></description>
     <author><![CDATA[PhytoCommerce]]></author>
     <tab><![CDATA[AdminCustomers]]></tab>
     <is_configurable>1</is_configurable>

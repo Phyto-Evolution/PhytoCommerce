@@ -27,7 +27,7 @@ class Phytocommerce_Branding extends Module
         parent::__construct();
 
         $this->displayName = $this->l('Phyto Commerce Theme Branding');
-        $this->description = $this->l('Applies Phyto Commerce visual branding tokens to compatible PrestaShop themes.');
+        $this->description = $this->l('Applies your brand identity — name, tagline, primary/secondary/accent colours, logo URL, and contact details — as CSS custom-property tokens across compatible PrestaShop themes. Configure once in the admin and all theme components pick up the palette automatically. Designed for plant nurseries and tissue-culture stores wanting a cohesive, on-brand storefront without editing template files.');
     }
 
     public function install()

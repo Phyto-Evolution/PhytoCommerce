@@ -3,7 +3,7 @@
     <name>phytocommercefooter</name>
     <displayName><![CDATA[Phyto Commerce Footer]]></displayName>
     <version><![CDATA[1.0.0]]></version>
-    <description><![CDATA[Adds Phyto Commerce branding to the store footer.]]></description>
+    <description><![CDATA[Injects a branded Phyto Commerce credit line into the store footer on every page. The footer link points to phytolabs.in and is styled to blend with any theme. Ideal for stores built on the Phyto Commerce platform that want to display their technology partner identity.]]></description>
     <author><![CDATA[Phyto Evolution]]></author>
     <tab>front_office_features</tab>
     <is_configurable>0</is_configurable>

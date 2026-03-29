@@ -27,7 +27,7 @@ class Phyto_Collection_Widget extends Module
         parent::__construct();
 
         $this->displayName = $this->l('Phyto Plant Collection Widget');
-        $this->description = $this->l('Allow customers to track and manage their plant collection from purchased orders.');
+        $this->description = $this->l('Lets logged-in customers build and manage a personal plant collection made up of products they have purchased, with the option to add private care notes to each entry and make the collection publicly shareable via a unique URL. Purchased plants are automatically added to the collection on order confirmation, and a "My Collection" tab appears on product pages for plants already owned. A dedicated admin panel under Customers gives staff a full view of every customer collection.');
         $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => _PS_VERSION_];
     }
 

@@ -33,9 +33,7 @@ class Phyto_Phytosanitary extends Module
         parent::__construct();
 
         $this->displayName = $this->l('Phyto Phytosanitary');
-        $this->description = $this->l(
-            'Attach inspection certificates and import permits to products.'
-        );
+        $this->description = $this->l('Attaches phytosanitary inspection certificates, import permits, and other regulatory documents to products, with uploaded PDFs available for customers to download on the product page under a "Regulatory Documents" tab. Reference numbers from attached documents are automatically printed on packing slip PDFs, providing a complete compliance paper trail. Essential for sellers of regulated plant material, especially imported species subject to CITES or national phytosanitary requirements.');
         $this->ps_versions_compliancy = [
             'min' => '8.0.0',
             'max' => _PS_VERSION_,

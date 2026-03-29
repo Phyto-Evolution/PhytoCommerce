@@ -44,7 +44,7 @@ class Phyto_Care_Card extends Module
         parent::__construct();
 
         $this->displayName = $this->l('Phyto Care Card');
-        $this->description = $this->l('Auto-generate printable PDF care sheets per product, attached to order confirmation emails.');
+        $this->description = $this->l('Generates a branded PDF care sheet for each plant product covering light, water type and method, humidity, temperature, growing media, feeding protocol, dormancy instructions, potting tips, and common problems. The PDF is automatically attached to the order confirmation email so every buyer receives customised care guidance the moment they purchase. Uses TCPDF when available, with an HTML fallback, and supports a custom store logo and footer text on every sheet.');
         $this->confirmUninstall = $this->l('Are you sure you want to uninstall Phyto Care Card? All care card data will be deleted.');
     }
 

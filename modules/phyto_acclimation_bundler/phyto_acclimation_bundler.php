@@ -37,9 +37,7 @@ class Phyto_Acclimation_Bundler extends Module
         parent::__construct();
 
         $this->displayName = $this->l('Phyto Acclimation Bundler');
-        $this->description = $this->l(
-            'Auto-suggest acclimation accessories when TC or deflasked plants are added to cart.'
-        );
+        $this->description = $this->l('Automatically suggests acclimation accessories in the cart when a tissue-culture or deflasked plant is added, helping buyers get everything they need in one order. Triggers can be based on Phyto Growth Stage IDs or product tags, and a configurable bundle discount rewards customers who add all kit items at once. The dismissable cart widget shows up to a configurable number of kit products with images and prices.');
         $this->ps_versions_compliancy = ['min' => '8.0.0', 'max' => _PS_VERSION_];
     }
 

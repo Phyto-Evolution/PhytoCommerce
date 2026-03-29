@@ -3,7 +3,7 @@
     <name>phyto_care_card</name>
     <displayName><![CDATA[Phyto Care Card]]></displayName>
     <version><![CDATA[1.0.0]]></version>
-    <description><![CDATA[Auto-generate printable PDF care sheets per product, attached to order confirmation emails.]]></description>
+    <description><![CDATA[Generates a branded PDF care sheet for each plant product covering light, water type and method, humidity, temperature, growing media, feeding protocol, dormancy instructions, potting tips, and common problems. The PDF is automatically attached to the order confirmation email so every buyer receives customised care guidance the moment they purchase. Uses TCPDF when available, with an HTML fallback, and supports a custom store logo and footer text on every sheet.]]></description>
     <author><![CDATA[PhytoCommerce]]></author>
     <tab><![CDATA[front_office_features]]></tab>
     <is_configurable>1</is_configurable>
