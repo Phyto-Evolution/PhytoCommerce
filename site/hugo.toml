@@ -1,0 +1,12 @@
+baseURL = 'https://phyto-evolution.github.io/PhytoCommerce/'
+languageCode = 'en-us'
+title = 'PhytoCommerce'
+pluralizeListTitles = false
+
+[params]
+  description = 'A PrestaShop 8 module suite for specialty plant e-commerce — tissue-culture provenance, phytosanitary compliance, wholesale portals, subscriptions, and more.'
+  repoBase = 'https://github.com/Phyto-Evolution/PhytoCommerce'
+  repoModules = 'https://github.com/Phyto-Evolution/PhytoCommerce/tree/main/modules'
+
+[taxonomies]
+  category = 'categories'
