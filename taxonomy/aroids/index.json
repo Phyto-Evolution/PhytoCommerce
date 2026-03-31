@@ -2,6 +2,16 @@
   "category": "aroids",
   "name": "Aroids",
   "packs": [
-    { "id": "araceae", "name": "Aroids", "file": "araceae.json", "genera": ["Monstera", "Philodendron", "Anthurium", "Alocasia"] }
+    {
+      "id": "araceae",
+      "name": "Aroids",
+      "file": "aroids/araceae.json",
+      "genera": [
+        "Monstera",
+        "Philodendron",
+        "Anthurium",
+        "Alocasia"
+      ]
+    }
   ]
 }

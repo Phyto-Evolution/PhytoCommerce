@@ -2,6 +2,16 @@
   "category": "bromeliads",
   "name": "Bromeliads & Air Plants",
   "packs": [
-    { "id": "bromeliaceae", "name": "Bromeliads & Air Plants", "file": "bromeliaceae.json", "genera": ["Tillandsia", "Neoregelia", "Vriesea", "Aechmea"] }
+    {
+      "id": "bromeliaceae",
+      "name": "Bromeliads & Air Plants",
+      "file": "bromeliads/bromeliaceae.json",
+      "genera": [
+        "Tillandsia",
+        "Neoregelia",
+        "Vriesea",
+        "Aechmea"
+      ]
+    }
   ]
 }

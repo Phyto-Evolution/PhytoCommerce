@@ -107,7 +107,9 @@
             // fetch each pack file
             var packFiles = catIdx.packs || [];
             return Promise.all(packFiles.map(function(p){
-              return fetch(RAW + (p.file || cat.id+'/'+p.id+'.json'))
+              var pf = p.file || (cat.id+'/'+p.id+'.json');
+              if (pf.indexOf('/') === -1) pf = cat.id+'/'+pf;
+              return fetch(RAW + pf)
                 .then(function(r){ return r.json(); })
                 .catch(function(){ return null; });
             })).then(function(packs){

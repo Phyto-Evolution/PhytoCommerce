@@ -2,9 +2,45 @@
   "category": "succulents",
   "name": "Succulents & Cacti",
   "packs": [
-    { "id": "cactaceae", "name": "Cacti", "file": "cactaceae.json", "genera": ["Astrophytum", "Gymnocalycium", "Mammillaria", "Ariocarpus"] },
-    { "id": "crassulaceae", "name": "Stonecrops & Rosette Succulents", "file": "crassulaceae.json", "genera": ["Echeveria", "Haworthia", "Sempervivum", "Aeonium"] },
-    { "id": "asphodelaceae", "name": "Aloes, Gasteria & Haworthiopsis", "file": "asphodelaceae.json", "genera": ["Aloe", "Gasteria", "Haworthiopsis"] },
-    { "id": "euphorbiaceae", "name": "Succulent Euphorbias", "file": "euphorbiaceae.json", "genera": ["Euphorbia"] }
+    {
+      "id": "cactaceae",
+      "name": "Cacti",
+      "file": "succulents/cactaceae.json",
+      "genera": [
+        "Astrophytum",
+        "Gymnocalycium",
+        "Mammillaria",
+        "Ariocarpus"
+      ]
+    },
+    {
+      "id": "crassulaceae",
+      "name": "Stonecrops & Rosette Succulents",
+      "file": "succulents/crassulaceae.json",
+      "genera": [
+        "Echeveria",
+        "Haworthia",
+        "Sempervivum",
+        "Aeonium"
+      ]
+    },
+    {
+      "id": "asphodelaceae",
+      "name": "Aloes, Gasteria & Haworthiopsis",
+      "file": "succulents/asphodelaceae.json",
+      "genera": [
+        "Aloe",
+        "Gasteria",
+        "Haworthiopsis"
+      ]
+    },
+    {
+      "id": "euphorbiaceae",
+      "name": "Succulent Euphorbias",
+      "file": "succulents/euphorbiaceae.json",
+      "genera": [
+        "Euphorbia"
+      ]
+    }
   ]
 }
