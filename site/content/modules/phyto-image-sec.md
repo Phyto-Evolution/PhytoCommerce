@@ -5,6 +5,7 @@ module_name: "phyto_image_sec"
 category: "Security & Identity"
 category_id: "security-identity"
 version: "0.3"
+platform: "PrestaShop 8"
 weight: 70
 ---
 

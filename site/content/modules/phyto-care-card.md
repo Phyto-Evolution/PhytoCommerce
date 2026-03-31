@@ -5,6 +5,7 @@ module_name: "phyto_care_card"
 category: "Plant Science"
 category_id: "plant-science"
 version: "1.0"
+platform: "PrestaShop 8"
 weight: 34
 ---
 

@@ -13,6 +13,11 @@
     <div class="module-meta">
       {{ with .Params.category }}<span class="badge badge-category" style="background:rgba(125,171,138,.25);color:#b8d4bf">{{ . }}</span>{{ end }}
       {{ with .Params.version }}<span class="badge badge-version" style="background:rgba(255,255,255,.1);color:#faf8f3">v{{ . }}</span>{{ end }}
+      {{ with .Params.platform }}
+        {{ if eq . "WooCommerce" }}<span class="badge-platform badge-woo">WooCommerce</span>
+        {{ else if eq . "PrestaShop 8" }}<span class="badge-platform badge-ps8">PrestaShop 8</span>
+        {{ else }}<span class="badge-platform" style="background:rgba(255,255,255,.15);color:#faf8f3">{{ . }}</span>{{ end }}
+      {{ end }}
       <a class="btn btn-primary" href="{{ $.Site.Params.repoModules }}/{{ .Params.module_name }}" target="_blank" rel="noopener">
         Browse Source on GitHub ↗
       </a>

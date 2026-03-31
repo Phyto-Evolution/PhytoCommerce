@@ -5,6 +5,7 @@ module_name: "phyto_seasonal_availability"
 category: "Plant Science"
 category_id: "plant-science"
 version: "1.0"
+platform: "PrestaShop 8"
 weight: 33
 ---
 

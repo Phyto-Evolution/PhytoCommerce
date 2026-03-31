@@ -5,6 +5,7 @@ module_name: "phyto_tc_cost_calculator"
 category: "Operations & Compliance"
 category_id: "operations-compliance"
 version: "1.0"
+platform: "PrestaShop 8"
 weight: 52
 ---
 

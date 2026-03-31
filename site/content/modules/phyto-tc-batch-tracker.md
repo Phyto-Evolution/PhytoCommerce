@@ -5,6 +5,7 @@ module_name: "phyto_tc_batch_tracker"
 category: "Plant Science"
 category_id: "plant-science"
 version: "1.1"
+platform: "PrestaShop 8"
 weight: 31
 ---
 

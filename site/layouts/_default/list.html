@@ -1,18 +1,27 @@
 {{ define "main" }}
+{{ $wooSection := .Site.GetPage "modules-woo" }}
+{{ $wooPages   := cond (ne $wooSection nil) $wooSection.Pages (slice) }}
+
 <section class="hero" style="padding:3rem 2rem 2.5rem">
   <div class="hero-inner">
-    <h1 style="font-size:2.2rem">All 28 Modules</h1>
-    <p>Every PhytoCommerce module grouped by category. Click any card to read the full documentation and find the source path on GitHub.</p>
+    <h1 style="font-size:2.2rem">All Modules</h1>
+    <p>Every PhytoCommerce module grouped by category and platform. Click any card for full documentation and GitHub source.</p>
     <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem">
-      <div class="stat"><div class="stat-num">28</div><div class="stat-label">Modules</div></div>
+      <div class="stat"><div class="stat-num">28</div><div class="stat-label">PS8 Modules</div></div>
+      <div class="stat"><div class="stat-num">{{ len $wooPages }}</div><div class="stat-label">WooCommerce</div></div>
       <div class="stat"><div class="stat-num">8</div><div class="stat-label">Categories</div></div>
-      <div class="stat"><div class="stat-num">PS8</div><div class="stat-label">PrestaShop</div></div>
     </div>
   </div>
 </section>
 
 <main>
 <div class="container">
+
+<!-- ── PrestaShop 8 ──────────────────────────────────── -->
+<div class="platform-section-header">
+  <span class="badge-platform badge-ps8">PrestaShop 8</span>
+  <h2 class="platform-section-title">PrestaShop 8 Modules</h2>
+</div>
 
 {{ $categories := slice
   (dict "id" "pack"                    "label" "📦 Pack Installer"            "color" "#e8a135")
@@ -41,7 +50,10 @@
     <a class="module-card" href="{{ .RelPermalink }}" style="--cat-color:{{ $catColor }}">
       <div class="module-card-top">
         <code class="module-name">{{ .Title }}</code>
-        {{ with .Params.version }}<span class="badge badge-version">v{{ . }}</span>{{ end }}
+        <div style="display:flex;gap:.35rem;align-items:center;flex-shrink:0">
+          {{ with .Params.version }}<span class="badge badge-version">v{{ . }}</span>{{ end }}
+          {{ with .Params.platform }}<span class="badge-platform badge-ps8-sm">PS8</span>{{ end }}
+        </div>
       </div>
       <p class="module-desc">{{ .Description }}</p>
       <div class="module-card-footer">
@@ -52,6 +64,54 @@
     {{ end }}
   </div>
 </div>
+{{ end }}
+{{ end }}
+
+<!-- ── WooCommerce ───────────────────────────────────── -->
+{{ if $wooPages }}
+<div class="platform-section-header" style="margin-top:3rem" id="woocommerce">
+  <span class="badge-platform badge-woo">WooCommerce</span>
+  <h2 class="platform-section-title">WooCommerce Plugins</h2>
+</div>
+
+{{ $wooCategories := slice
+  (dict "id" "woo-plant-science"      "label" "🔬 Plant Science"        "color" "#3a9a6a")
+  (dict "id" "woo-customer-community" "label" "👥 Customer & Community" "color" "#5a8fbf")
+  (dict "id" "woo-commerce"           "label" "🛒 Commerce"             "color" "#d0603a")
+  (dict "id" "woo-operations"         "label" "📋 Operations"           "color" "#b07ab0")
+}}
+
+{{ range $wooCategories }}
+{{ $catID    := .id }}
+{{ $catLabel := .label }}
+{{ $catColor := .color }}
+{{ $pages    := where $wooPages "Params.category_id" $catID }}
+{{ if $pages }}
+<div class="cat-group" id="{{ $catID }}">
+  <div class="cat-group-title" style="border-left-color:{{ $catColor }}">
+    {{ $catLabel }}
+    <span class="cat-group-count">{{ len $pages }} plugin{{ if gt (len $pages) 1 }}s{{ end }}</span>
+  </div>
+  <div class="module-grid">
+    {{ range $pages }}
+    <a class="module-card" href="{{ .RelPermalink }}" style="--cat-color:{{ $catColor }}">
+      <div class="module-card-top">
+        <code class="module-name">{{ .Title }}</code>
+        <div style="display:flex;gap:.35rem;align-items:center;flex-shrink:0">
+          {{ with .Params.version }}<span class="badge badge-version">v{{ . }}</span>{{ end }}
+          <span class="badge-platform badge-woo-sm">Woo</span>
+        </div>
+      </div>
+      <p class="module-desc">{{ .Description }}</p>
+      <div class="module-card-footer">
+        <span class="badge badge-category" style="background:{{ $catColor }}18;color:{{ $catColor }}">{{ .Params.category }}</span>
+        <span class="module-arrow">View details →</span>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
 {{ end }}
 {{ end }}
 

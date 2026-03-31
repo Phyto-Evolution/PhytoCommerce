@@ -5,6 +5,7 @@ module_name: "phyto_wholesale_portal"
 category: "Commerce"
 category_id: "commerce"
 version: "1.0"
+platform: "PrestaShop 8"
 weight: 60
 ---
 

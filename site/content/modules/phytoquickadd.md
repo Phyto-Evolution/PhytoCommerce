@@ -5,6 +5,7 @@ module_name: "phytoquickadd"
 category: "Foundation"
 category_id: "foundation"
 version: "3.0"
+platform: "PrestaShop 8"
 weight: 22
 ---
 

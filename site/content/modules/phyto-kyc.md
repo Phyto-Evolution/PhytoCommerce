@@ -5,6 +5,7 @@ module_name: "phyto_kyc"
 category: "Security & Identity"
 category_id: "security-identity"
 version: "1.0"
+platform: "PrestaShop 8"
 weight: 71
 ---
 

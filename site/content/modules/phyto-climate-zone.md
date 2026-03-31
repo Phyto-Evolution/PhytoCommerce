@@ -5,6 +5,7 @@ module_name: "phyto_climate_zone"
 category: "Plant Science"
 category_id: "plant-science"
 version: "2.0"
+platform: "PrestaShop 8"
 weight: 35
 ---
 

@@ -5,6 +5,7 @@ module_name: "phyto_growth_stage"
 category: "Plant Science"
 category_id: "plant-science"
 version: "1.0"
+platform: "PrestaShop 8"
 weight: 32
 ---
 

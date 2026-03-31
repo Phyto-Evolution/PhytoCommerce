@@ -5,6 +5,7 @@ module_name: "phyto_loyalty"
 category: "Commerce"
 category_id: "commerce"
 version: "1.0"
+platform: "PrestaShop 8"
 weight: 63
 ---
 

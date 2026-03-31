@@ -5,6 +5,7 @@ module_name: "phytocommerce_pack"
 category: "Pack Installer"
 category_id: "pack"
 version: "1.0"
+platform: "PrestaShop 8"
 weight: 10
 ---
 

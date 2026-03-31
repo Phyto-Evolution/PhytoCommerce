@@ -72,6 +72,22 @@
 
     </div>
 
+    <!-- ── BUILD LOG TERMINAL ───────────────────── -->
+    <div class="build-terminal">
+      <div class="terminal-titlebar">
+        <div class="terminal-dots">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <span class="terminal-title">phytocommerce@github — build log</span>
+        <span class="terminal-live" id="term-live">● live</span>
+      </div>
+      <div class="terminal-body" id="terminal-body">
+        <div class="term-line dim">Connecting to GitHub API…</div>
+      </div>
+    </div>
+
     <!-- ── GET YOUR OWN STORE BANNER ─────────────── -->
     <div class="store-pitch">
       <div class="store-pitch-left">
@@ -122,4 +138,5 @@
 
   </div>
 </main>
+<script src="{{ "js/build-log.js" | relURL }}" defer></script>
 {{ end }}

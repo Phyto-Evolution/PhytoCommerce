@@ -5,6 +5,7 @@ module_name: "phyto_restock_alert"
 category: "Invoicing & Notifications"
 category_id: "invoicing-notifications"
 version: "1.0"
+platform: "PrestaShop 8"
 weight: 81
 ---
 

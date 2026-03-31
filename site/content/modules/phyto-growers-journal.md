@@ -5,6 +5,7 @@ module_name: "phyto_growers_journal"
 category: "Customer & Community"
 category_id: "customer-community"
 version: "1.0"
+platform: "PrestaShop 8"
 weight: 40
 ---
 

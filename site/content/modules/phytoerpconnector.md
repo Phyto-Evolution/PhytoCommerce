@@ -5,6 +5,7 @@ module_name: "phytoerpconnector"
 category: "Foundation"
 category_id: "foundation"
 version: "1.0"
+platform: "PrestaShop 8"
 weight: 23
 ---
 
