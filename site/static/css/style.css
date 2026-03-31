@@ -433,13 +433,49 @@ footer {
 .footer-col ul a { color: var(--sage-light); font-size: .85rem; transition: color .15s; }
 .footer-col ul a:hover { color: var(--amber); }
 .footer-contact p { font-size: .83rem; color: var(--sage-light); line-height: 1.55; margin-bottom: .85rem; }
+
+.footer-ig {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  color: var(--sage-light);
+  font-size: .83rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: .9rem;
+  transition: color .15s;
+}
+.footer-ig:hover { color: #e1306c; }
+
+.footer-contact-info { margin-bottom: .9rem; }
+.contact-line {
+  display: flex;
+  align-items: flex-start;
+  gap: .5rem;
+  font-size: .83rem;
+  color: var(--sage-light);
+  margin-bottom: .45rem;
+  font-weight: 600;
+}
+.contact-line svg { flex-shrink: 0; margin-top: .15rem; opacity: .7; }
+.contact-line--small {
+  font-size: .78rem;
+  font-weight: 400;
+  opacity: .8;
+  padding-left: 1.6rem;
+  line-height: 1.5;
+  margin-top: -.15rem;
+}
+
 .footer-contact-btn {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
   background: rgba(255,255,255,.07);
   border: 1px solid rgba(255,255,255,.15);
   border-radius: var(--radius);
   padding: .55rem 1rem;
-  font-size: .83rem;
+  font-size: .82rem;
   font-weight: 600;
   color: var(--white);
   text-decoration: none;
