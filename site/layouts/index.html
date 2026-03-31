@@ -25,6 +25,77 @@
 <main>
   <div class="container">
 
+    <!-- ── WHAT IS PHYTOCOMMERCE ──────────────────── -->
+    <h2 class="section-title">What Is PhytoCommerce?</h2>
+    <div class="what-is-grid">
+      <div class="what-is-story">
+        <p class="what-is-lead">Generic e-commerce platforms were built to sell shoes and electronics. <strong>Plant businesses are different.</strong> You track TC batch provenance. You manage seasonal availability and live arrival windows. You deal with phytosanitary certificates, KYC checks for wholesale pricing, and customers who need to know exactly what growth stage their Nepenthes is at before they commit.</p>
+        <p>PhytoCommerce is a suite of modules — 28 and counting — that slots into the platforms your developers already know, and gives your plant store the specialist features it actually needs. No workarounds. No spreadsheets alongside your cart. Just a store that speaks plant.</p>
+        <blockquote class="what-is-quote">
+          "Built by plant people, for plant people — every module exists because a real nursery or TC lab needed it."
+        </blockquote>
+        <p>The first implementations are live on <strong>PrestaShop 8</strong> and being ported to <strong>WooCommerce</strong>. OpenCart, BigCommerce, and a bespoke scratch-built stack are next in line — same feature set, idiomatic code for each platform.</p>
+      </div>
+      <div class="what-is-features">
+        <div class="wif-item">
+          <span class="wif-icon">🧬</span>
+          <div>
+            <strong>TC Batch Tracking</strong>
+            <p>Link every product to its in-vitro batch record — medium formula, deflask date, operator, conservation status.</p>
+          </div>
+        </div>
+        <div class="wif-item">
+          <span class="wif-icon">📋</span>
+          <div>
+            <strong>Phytosanitary & Compliance</strong>
+            <p>Auto-attach phyto documents to orders, log dispatch evidence, and print compliant invoices in one click.</p>
+          </div>
+        </div>
+        <div class="wif-item">
+          <span class="wif-icon">🏷️</span>
+          <div>
+            <strong>Wholesale & KYC</strong>
+            <p>B2B price tiers that only unlock after PAN/GST verification — no more manual DMs to share wholesale rates.</p>
+          </div>
+        </div>
+        <div class="wif-item">
+          <span class="wif-icon">🌦️</span>
+          <div>
+            <strong>Seasonal & Climate Logic</strong>
+            <p>Products that know their own season and climate zone — auto-hide out-of-window listings, notify on restock.</p>
+          </div>
+        </div>
+        <div class="wif-item">
+          <span class="wif-icon">🚀</span>
+          <div>
+            <strong>One-click Pack Install</strong>
+            <p>Deploy all 28 modules in the correct dependency order with a single upload — production-ready in minutes.</p>
+          </div>
+        </div>
+        <div class="wif-item">
+          <span class="wif-icon">🔓</span>
+          <div>
+            <strong>Fully Open Source</strong>
+            <p>Every line of code lives on GitHub. No lock-in, no phone-home, no vendor surprise. Fork it, extend it, own it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="what-is-install">
+      <div class="install-box">
+        <div class="install-platform">🛒 PrestaShop 8</div>
+        <p>Upload <a href="{{ "modules/phytocommerce-pack/" | relURL }}"><code>phytocommerce_pack</code></a> → click <strong>Install</strong>. All modules deploy in dependency order. Or drop any individual module into <code>/modules/</code>.</p>
+      </div>
+      <div class="install-box">
+        <div class="install-platform">🟣 WooCommerce</div>
+        <p>Upload the plugin ZIP via <strong>Plugins → Add New → Upload</strong>, or copy the folder to <code>wp-content/plugins/</code> and activate.</p>
+      </div>
+      <div class="install-box">
+        <div class="install-platform">📂 Source Code</div>
+        <p>All modules at <a href="{{ .Site.Params.repoBase }}" target="_blank" rel="noopener">GitHub ↗</a>. Each directory has its own <code>README.md</code>, SQL scripts, and frontend assets.</p>
+      </div>
+    </div>
+
     <h2 class="section-title">Module Categories</h2>
     <div class="category-grid">
 
@@ -194,20 +265,6 @@
         <strong>₹400 / month</strong> — same package on your own domain (e.g. <code>shop.yourbrand.com</code>).<br>
         <a href="mailto:aphytoevolution@gmail.com">Drop us a mail</a> to get started — usually live within 24 hours.
       </div>
-    </div>
-
-    <!-- ── WHAT IS PHYTOCOMMERCE ──────────────────── -->
-    <h2 class="section-title">What Is PhytoCommerce?</h2>
-    <div class="module-content">
-      <p>PhytoCommerce is a <strong>platform-agnostic e-commerce module suite built for plant businesses</strong> — tissue-culture labs, nurseries, rare-plant retailers, and botanical collectors. Every module solves a real operational gap that generic platforms ignore: tracking TC batch provenance, printing phytosanitary-aware invoices, gating prices behind KYC, or notifying customers when a seasonal species is back in stock.</p>
-      <p>The first implementations target <strong>PrestaShop 8</strong> (28 modules, production-ready) and <strong>WooCommerce</strong> (actively porting). <strong>OpenCart</strong>, <strong>BigCommerce</strong>, and a bespoke scratch-built plant-commerce stack are on the roadmap — same feature set, idiomatic code for each platform.</p>
-      <p>If you run your own e-commerce server the source is open. If you want a fully managed store tuned for your catalogue, we handle the entire stack — <a href="mailto:aphytoevolution@gmail.com">reach out</a> to discuss.</p>
-      <h3>Quick Install (PrestaShop 8)</h3>
-      <p>Upload <a href="{{ "modules/phytocommerce-pack/" | relURL }}"><code>phytocommerce_pack</code></a> and click <strong>Install</strong>. All modules deploy in the correct dependency order. Or drop any single module into your <code>/modules/</code> directory.</p>
-      <h3>Quick Install (WooCommerce)</h3>
-      <p>Upload the plugin ZIP via <strong>Plugins → Add New → Upload</strong>, or copy the plugin folder to <code>wp-content/plugins/</code> and activate.</p>
-      <h3>Source Code</h3>
-      <p>All modules are open source at <a href="{{ .Site.Params.repoBase }}" target="_blank" rel="noopener">{{ .Site.Params.repoBase }} ↗</a>. Each directory contains its own <code>README.md</code>, install/uninstall scripts, and all frontend assets.</p>
     </div>
 
   </div>

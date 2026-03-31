@@ -12,7 +12,7 @@
   --amber-light:#f5c97a;
   --bark:       #5c3d2e;
   --text:       #1c2b22;
-  --muted:      #5a7060;
+  --muted:      #3e5243;
   --white:      #ffffff;
   --radius:     8px;
   --shadow:     0 2px 12px rgba(26,60,43,.10);
@@ -208,7 +208,7 @@ a.module-card:hover {
 a.module-card:hover .module-name { background: var(--cream-dark); }
 
 .module-desc {
-  font-size: .85rem;
+  font-size: .88rem;
   color: var(--muted);
   flex: 1;
   margin-bottom: 1rem;
@@ -646,6 +646,106 @@ footer {
 .footer-bottom a { color: var(--sage); text-decoration: none; }
 .footer-bottom a:hover { color: var(--amber); }
 
+/* ── WHAT IS PHYTOCOMMERCE SECTION ──────────────────── */
+.what-is-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  margin-bottom: 1.5rem;
+}
+.what-is-story p {
+  font-size: .95rem;
+  color: var(--text);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+.what-is-lead {
+  font-size: 1.05rem !important;
+  color: var(--forest) !important;
+}
+.what-is-quote {
+  border-left: 3px solid var(--sage);
+  padding: .7rem 1.1rem;
+  margin: 1.25rem 0;
+  font-style: italic;
+  font-size: .92rem;
+  color: var(--forest-mid);
+  background: var(--sage-pale);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  line-height: 1.6;
+}
+.what-is-features {
+  display: flex;
+  flex-direction: column;
+  gap: .9rem;
+}
+.wif-item {
+  display: flex;
+  gap: .85rem;
+  align-items: flex-start;
+  background: var(--white);
+  border: 1px solid var(--cream-dark);
+  border-radius: var(--radius);
+  padding: .85rem 1rem;
+  box-shadow: var(--shadow);
+}
+.wif-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: .1rem;
+}
+.wif-item strong {
+  display: block;
+  font-size: .88rem;
+  color: var(--forest);
+  margin-bottom: .2rem;
+}
+.wif-item p {
+  font-size: .81rem;
+  color: var(--muted);
+  line-height: 1.5;
+  margin: 0;
+}
+.what-is-install {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.install-box {
+  background: var(--white);
+  border: 1px solid var(--cream-dark);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  box-shadow: var(--shadow);
+}
+.install-platform {
+  font-size: .78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--forest-mid);
+  margin-bottom: .55rem;
+}
+.install-box p {
+  font-size: .83rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0;
+}
+.install-box a { color: var(--forest-mid); }
+.install-box a:hover { color: var(--amber); }
+.install-box code {
+  font-family: 'Fira Mono', 'Courier New', monospace;
+  font-size: .78rem;
+  background: var(--sage-pale);
+  color: var(--forest);
+  padding: .1rem .35rem;
+  border-radius: 3px;
+}
+
 /* ── PLATFORM BADGES ─────────────────────────────────── */
 .badge-platform {
   display: inline-flex;
@@ -925,6 +1025,8 @@ footer {
 @media (max-width: 960px) {
   .store-pitch { grid-template-columns: 1fr; gap: 1.75rem; }
   .pricing-grid { grid-template-columns: 1fr; }
+  .what-is-grid { grid-template-columns: 1fr; }
+  .what-is-install { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
   .footer-seg--brand { grid-column: 1 / -1; }
 }
