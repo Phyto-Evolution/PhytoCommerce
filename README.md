@@ -710,7 +710,7 @@ docker cp modules/phyto_grex_registry ps-test:/var/www/html/modules/
 
 WooCommerce ports of the PhytoCommerce module suite. Same plant-specialised features, built for WordPress/WooCommerce stores.
 
-> **WooCommerce Plugins Built: 8**
+> **WooCommerce Plugins Built: 9**
 
 ### Plant Science
 
@@ -723,6 +723,12 @@ WooCommerce ports of the PhytoCommerce module suite. Same plant-specialised feat
 | [`phyto-tc-batch-tracker`](modules-woo/phyto-tc-batch-tracker/) | Link WooCommerce products to tissue-culture batch records — track batch code, donor clone, agar medium, deflask date, and lab operator; displays a "Batch Provenance" tab on the product page with colour-coded status badges. | 1.0.0 |
 | [`phyto-climate-zone`](modules-woo/phyto-climate-zone/) | Tag products with India climate-zone suitability (7 zones from coastal humid to temperate north) — suitability pill badges on shop listings and a dedicated "Climate Suitability" tab on single product pages. | 1.0.0 |
 | [`phyto-live-arrival`](modules-woo/phyto-live-arrival/) | Per-product Live Arrival Guarantee system — configurable claim window, replacement/refund/store-credit policy, required checkout opt-in, admin claim logging with resolution status, and automatic email policy reminders. | 1.0.0 |
+
+### Notifications
+
+| Plugin | Description | Version |
+|--------|-------------|---------|
+| [`phyto-restock-alert`](modules-woo/phyto-restock-alert/) | "Notify me when available" subscriber system for out-of-stock products — email subscribe form on the product page, auto-notification on stock restore or re-publish, admin meta box with bulk notify, individual delete, and CSV export. | 1.0.0 |
 
 ### Customer & Community
 
