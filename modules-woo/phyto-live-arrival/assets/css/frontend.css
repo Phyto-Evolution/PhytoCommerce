@@ -1,0 +1,105 @@
+/* ==========================================================================
+   Phyto Live Arrival — Frontend Styles
+   ========================================================================== */
+
+/* Badge wrapper */
+.phyto-lag-badge-wrap {
+	margin: 12px 0;
+}
+
+/* Toggle button */
+.phyto-lag-badge-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	background: #f4fff7;
+	color: #1a3c2b;
+	border: 1px solid #2d7a4f;
+	border-radius: 20px;
+	padding: 6px 14px;
+	font-size: 0.9em;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background 0.2s ease, color 0.2s ease;
+}
+
+.phyto-lag-badge-btn:hover,
+.phyto-lag-badge-btn:focus {
+	background: #2d7a4f;
+	color: #fff;
+	outline: 2px solid #2d7a4f;
+	outline-offset: 2px;
+}
+
+.phyto-lag-icon {
+	color: #2d7a4f;
+	font-size: 0.7em;
+}
+
+.phyto-lag-badge-btn:hover .phyto-lag-icon,
+.phyto-lag-badge-btn:focus .phyto-lag-icon {
+	color: #fff;
+}
+
+.phyto-lag-chevron {
+	font-size: 0.75em;
+	margin-left: 2px;
+}
+
+/* Expandable details panel */
+.phyto-lag-details {
+	margin-top: 10px;
+	padding: 12px 16px;
+	background: #f9fffe;
+	border: 1px solid #c3e6cb;
+	border-radius: 6px;
+	font-size: 0.875em;
+	color: #333;
+}
+
+.phyto-lag-details ul {
+	margin: 0 0 8px;
+	padding-left: 20px;
+}
+
+.phyto-lag-details ul li {
+	margin-bottom: 4px;
+}
+
+.phyto-lag-custom-note,
+.phyto-lag-disclaimer {
+	margin: 8px 0 0;
+	font-style: italic;
+	color: #555;
+}
+
+/* Checkout opt-in */
+.phyto-lag-checkout-optin {
+	margin: 16px 0;
+	padding: 12px 16px;
+	background: #f4fff7;
+	border: 1px solid #2d7a4f;
+	border-radius: 4px;
+}
+
+.phyto-lag-checkout-optin label {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	cursor: pointer;
+	font-size: 0.9em;
+	line-height: 1.5;
+}
+
+.phyto-lag-checkout-optin input[type="checkbox"] {
+	margin-top: 3px;
+	flex-shrink: 0;
+	accent-color: #2d7a4f;
+}
+
+.phyto-lag-checkout-optin abbr.required {
+	color: #c00;
+	border: none;
+	text-decoration: none;
+	margin-left: 2px;
+}
