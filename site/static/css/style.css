@@ -501,6 +501,8 @@ footer {
   color: rgba(184,212,191,.6);
   line-height: 1.6;
 }
+.footer-org a { color: var(--sage-light); text-decoration: underline; text-underline-offset: 2px; }
+.footer-org a:hover { color: var(--amber); }
 
 .footer-heading {
   font-size: .72rem;
