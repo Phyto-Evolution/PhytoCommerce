@@ -1,67 +1,72 @@
 <footer>
   <div class="footer-inner">
-    <div class="footer-cols">
+    <div class="footer-grid">
 
-      <div class="footer-col">
+      <!-- Segment 1: Brand -->
+      <div class="footer-seg footer-seg--brand">
         <div class="footer-logo">🌿 PhytoCommerce</div>
-        <p class="footer-tagline">A PrestaShop 8 module suite built for specialty plant e-commerce — tissue culture, compliance, wholesale, and beyond.</p>
-        <a class="footer-ig" href="https://www.instagram.com/foreststudiolabs/" target="_blank" rel="noopener" aria-label="Forest Studio Labs on Instagram">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          @foreststudiolabs
-        </a>
+        <p class="footer-tagline">A PrestaShop 8 module suite for specialty plant e-commerce — tissue culture, compliance, wholesale, and beyond.</p>
+        <p class="footer-dev">
+          Developed by
+          <a href="https://www.linkedin.com/in/kshivaramakrishnan/" target="_blank" rel="noopener">Shivaramakrishnan</a>
+        </p>
+        <p class="footer-org">
+          Forest Studio Labs &amp; Phyto Evolution Private Limited<br>
+          Chennai — 603013
+        </p>
       </div>
 
-      <div class="footer-col">
-        <h4>Modules</h4>
-        <ul>
+      <!-- Segment 2: Navigation -->
+      <div class="footer-seg">
+        <h4 class="footer-heading">Modules</h4>
+        <ul class="footer-links">
           <li><a href="{{ "modules/" | relURL }}#pack">Pack Installer</a></li>
           <li><a href="{{ "modules/" | relURL }}#foundation">Foundation</a></li>
           <li><a href="{{ "modules/" | relURL }}#plant-science">Plant Science</a></li>
+          <li><a href="{{ "modules/" | relURL }}#customer-community">Customer &amp; Community</a></li>
+          <li><a href="{{ "modules/" | relURL }}#operations-compliance">Operations &amp; Compliance</a></li>
           <li><a href="{{ "modules/" | relURL }}#commerce">Commerce</a></li>
-          <li><a href="{{ "modules/" | relURL }}">All 28 modules →</a></li>
+          <li><a href="{{ "modules/" | relURL }}">Browse all 28 →</a></li>
         </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Repository</h4>
-        <ul>
-          <li><a href="{{ .Site.Params.repoBase }}" target="_blank" rel="noopener">GitHub →</a></li>
+        <h4 class="footer-heading" style="margin-top:1.4rem">Repository</h4>
+        <ul class="footer-links">
+          <li><a href="{{ .Site.Params.repoBase }}" target="_blank" rel="noopener">GitHub</a></li>
           <li><a href="{{ .Site.Params.repoBase }}/issues" target="_blank" rel="noopener">Issues</a></li>
           <li><a href="{{ .Site.Params.repoBase }}/blob/main/README.md" target="_blank" rel="noopener">README</a></li>
-          <li><a href="{{ .Site.Params.repoBase }}/blob/main/LICENSE" target="_blank" rel="noopener">License</a></li>
         </ul>
       </div>
 
-      <div class="footer-col footer-contact">
-        <h4>Contact</h4>
-        <div class="footer-contact-info">
-          <div class="contact-line">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            Shivaramakrishnan
-          </div>
-          <div class="contact-line">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            Forest Studio Labs
-          </div>
-          <div class="contact-line contact-line--small">
-            Phyto Evolution Private Limited<br>
-            Chennai — 603013
-          </div>
-        </div>
-        <a class="footer-contact-btn" href="mailto:aphytoevolution@gmail.com">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          aphytoevolution@gmail.com
-        </a>
-        <a class="footer-contact-btn" href="https://www.instagram.com/foreststudiolabs/" target="_blank" rel="noopener">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          Instagram ↗
-        </a>
+      <!-- Segment 3: Contact -->
+      <div class="footer-seg">
+        <h4 class="footer-heading">Get in Touch</h4>
+        <p class="footer-contact-note">Questions, integrations, or want a plant-specialised store of your own? Reach out.</p>
+        <ul class="footer-contact-list">
+          <li>
+            <a href="mailto:aphytoevolution@gmail.com">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              aphytoevolution@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/foreststudiolabs/" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              @foreststudiolabs
+            </a>
+          </li>
+          <li>
+            <a href="{{ .Site.Params.repoBase }}/issues/new" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              Open a GitHub Issue
+            </a>
+          </li>
+        </ul>
       </div>
 
     </div>
+
     <div class="footer-bottom">
-      <span>Developed by <strong>Shivaramakrishnan</strong> · Forest Studio Labs · Phyto Evolution Private Limited · Chennai 603013</span>
-      <a href="{{ .Site.Params.repoBase }}" target="_blank" rel="noopener">View on GitHub ↗</a>
+      <span>© 2026 <a href="https://www.linkedin.com/in/kshivaramakrishnan/" target="_blank" rel="noopener">Shivaramakrishnan</a> · Forest Studio Labs · Phyto Evolution Private Limited</span>
+      <a href="{{ .Site.Params.repoBase }}" target="_blank" rel="noopener">GitHub ↗</a>
     </div>
   </div>
 </footer>
