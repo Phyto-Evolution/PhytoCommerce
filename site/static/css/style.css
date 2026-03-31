@@ -538,54 +538,89 @@ footer {
 .footer-contact-list a:hover svg { stroke: var(--amber); }
 .footer-contact-list svg { flex-shrink: 0; opacity: .7; }
 
-/* UPI tip jar */
-.footer-upi {
-  margin-top: 1.1rem;
-  padding-top: 1rem;
+/* UPI one-liner */
+.footer-upi-line {
+  margin-top: 1rem;
+  padding-top: .9rem;
   border-top: 1px solid rgba(255,255,255,.08);
-}
-.footer-upi-label {
-  font-size: .7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: .08em;
-  color: var(--amber);
-  margin-bottom: .55rem;
-}
-.footer-upi-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: .4rem;
-  background: rgba(232,161,53,.15);
-  border: 1px solid rgba(232,161,53,.3);
-  color: var(--amber);
   font-size: .8rem;
-  font-weight: 700;
-  padding: .35rem .85rem;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background .15s;
-  margin-bottom: .55rem;
+  color: rgba(184,212,191,.6);
+  line-height: 1.5;
 }
-.footer-upi-btn:hover { background: rgba(232,161,53,.25); color: var(--amber); }
-.footer-upi-id {
-  display: block;
+.footer-upi-line a { color: var(--amber); text-decoration: none; }
+.footer-upi-line a:hover { color: var(--amber-light); }
+.footer-upi-line code {
   font-family: 'Fira Mono', 'Courier New', monospace;
-  font-size: .8rem;
-  color: var(--sage-light);
-  background: rgba(255,255,255,.06);
-  padding: .25rem .6rem;
+  font-size: .78rem;
+  background: rgba(232,161,53,.12);
+  color: var(--amber);
+  padding: .1rem .4rem;
   border-radius: 4px;
-  width: fit-content;
-  margin-bottom: .45rem;
   user-select: all;
 }
-.footer-upi-note {
-  font-size: .74rem;
-  color: rgba(184,212,191,.45);
-  line-height: 1.55;
-  max-width: 280px;
+.footer-upi-hint { color: rgba(184,212,191,.35); font-size: .74rem; }
+/* Hosted domain cards (homepage explainer) */
+.hosted-domains-box { max-width: 900px; }
+.domain-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.25rem;
 }
+.domain-card {
+  background: var(--sage-pale);
+  border: 1px solid var(--sage-light);
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+.domain-card-name {
+  font-family: 'Fira Mono', 'Courier New', monospace;
+  font-size: .8rem;
+  font-weight: 700;
+  color: var(--forest);
+}
+.domain-card-desc {
+  font-size: .82rem;
+  color: var(--muted);
+  line-height: 1.5;
+  flex: 1;
+}
+.domain-card-example {
+  font-size: .76rem;
+  color: var(--muted);
+  margin-top: .25rem;
+}
+.domain-card-example code {
+  font-size: .73rem;
+  background: rgba(26,60,43,.08);
+  color: var(--forest-mid);
+  padding: .1rem .35rem;
+  border-radius: 3px;
+  font-family: 'Fira Mono', 'Courier New', monospace;
+}
+.domain-pricing-note {
+  background: var(--cream-dark);
+  border-left: 3px solid var(--sage);
+  padding: .85rem 1.1rem;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: .88rem;
+  color: var(--text);
+  line-height: 1.8;
+}
+.domain-pricing-note a { color: var(--forest-mid); text-decoration: underline; }
+.domain-pricing-note a:hover { color: var(--amber); }
+.domain-pricing-note code {
+  font-family: 'Fira Mono', 'Courier New', monospace;
+  font-size: .82rem;
+  background: rgba(26,60,43,.08);
+  color: var(--forest);
+  padding: .1rem .35rem;
+  border-radius: 3px;
+}
+
 .footer-domain-pill {
   display: inline-block;
   font-family: 'Fira Mono', 'Courier New', monospace;
