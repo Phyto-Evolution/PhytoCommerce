@@ -2,7 +2,7 @@
 
 A PrestaShop 8 module suite for specialty plant e-commerce — designed around the operational needs of tissue-culture producers, nurseries, and rare plant retailers. Covers TC batch provenance, phytosanitary compliance, wholesale portals, recurring subscriptions, scientific taxonomy, customer grow journals, image protection, and more.
 
-> **Last updated:** 2026-03-29 (phyto_invoice_customizer · phyto_restock_alert · phyto_bundle_builder · phyto_loyalty)
+> **Last updated:** 2026-03-31 (phyto_invoice_customizer · phyto_restock_alert · phyto_bundle_builder · phyto_loyalty · phyto-grex-registry [WooCommerce])
 > Session logs: [`docs/CHECKPOINT.md`](docs/CHECKPOINT.md) · [`docs/ACTIVITY_LOG.md`](docs/ACTIVITY_LOG.md)
 
 ---
@@ -703,6 +703,20 @@ docker cp modules/phyto_grex_registry ps-test:/var/www/html/modules/
 | `phytoquickadd` | Catalog → Phyto Quick Add → Taxonomy Packs tab → loads pack list from GitHub |
 | `phyto_image_sec` | Upload a product image → check it gets watermarked; visit product page → right-click on image blocked |
 | `phyto_kyc` | Enable module → log in as customer → prices blurred; visit `/module/phyto_kyc/kyc` → submit PAN → prices unblur on verify |
+
+---
+
+## WooCommerce Plugins
+
+WooCommerce ports of the PhytoCommerce module suite. Same plant-specialised features, built for WordPress/WooCommerce stores.
+
+> **WooCommerce Plugins Built: 1**
+
+### Plant Science
+
+| Plugin | Description | Version |
+|--------|-------------|---------|
+| [`phyto-grex-registry`](modules-woo/phyto-grex-registry/) | Attach scientific taxonomy metadata (genus, species, grex, authority, conservation status) to WooCommerce products — displays as a "Scientific Profile" tab on the product page. | 1.0.0 |
 
 ---
 
