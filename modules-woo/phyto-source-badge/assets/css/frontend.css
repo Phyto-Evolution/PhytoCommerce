@@ -1,0 +1,104 @@
+/**
+ * Phyto Source Badge — Frontend Styles
+ *
+ * Pill badges for WooCommerce shop listings and product pages.
+ * Uses the CSS custom property --sb-color set inline per badge instance,
+ * allowing each badge to carry its own colour without duplicating selectors.
+ *
+ * @package PhytoSourceBadge
+ * @version 1.0.0
+ */
+
+/* =========================================================
+   Badge — core pill styles (shared by loop + single)
+   ========================================================= */
+
+.phyto-sb-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 3px 10px;
+	border-radius: 20px;
+	background-color: color-mix( in srgb, var( --sb-color, #3a9a6a ) 15%, transparent );
+	/* Fallback for browsers without color-mix support */
+	background-color: rgba( 58, 154, 106, 0.12 );
+	background-color: color-mix( in srgb, var( --sb-color, #3a9a6a ) 15%, transparent );
+	border: 1px solid var( --sb-color, #3a9a6a );
+	color: var( --sb-color, #3a9a6a );
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.2px;
+	line-height: 1.4;
+	white-space: nowrap;
+	cursor: default;
+	transition: background-color 0.15s ease, filter 0.15s ease;
+	text-decoration: none;
+}
+
+.phyto-sb-badge:hover {
+	filter: brightness( 0.88 );
+}
+
+/* =========================================================
+   Wrapper — archive / shop loop
+   ========================================================= */
+
+/*
+ * On archive cards the badge strip sits directly below the product image,
+ * above the product title. Multiple badges wrap into a row.
+ */
+.phyto-sb-wrap--archive {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	padding: 4px 0 2px;
+	line-height: 1;
+}
+
+/* Smaller pill size on archive cards to keep the grid compact */
+.phyto-sb-wrap--archive .phyto-sb-badge {
+	font-size: 10px;
+	padding: 2px 8px;
+}
+
+/* =========================================================
+   Wrapper — single product page
+   ========================================================= */
+
+/*
+ * On the single product page the badges appear in a full-size row
+ * below the product title and above the price.
+ */
+.phyto-sb-wrap--single {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 6px;
+	margin-bottom: 12px;
+}
+
+.phyto-sb-wrap--single .phyto-sb-badge {
+	font-size: 12px;
+	padding: 4px 12px;
+}
+
+/* =========================================================
+   Responsive adjustments
+   ========================================================= */
+
+@media ( max-width: 480px ) {
+
+	.phyto-sb-badge {
+		font-size: 10px;
+		padding: 2px 7px;
+	}
+
+	.phyto-sb-wrap--single {
+		gap: 4px;
+		margin-bottom: 8px;
+	}
+
+	.phyto-sb-wrap--archive {
+		gap: 3px;
+	}
+}
