@@ -2,15 +2,21 @@
 <section class="hero">
   <div class="hero-inner">
     <h1>🌿 <em>Phyto</em>Commerce</h1>
-    <p>{{ .Site.Params.description }}</p>
+    <p>Purpose-built e-commerce tooling for plant businesses — tissue-culture labs, nurseries, and rare-plant retailers. The features generic platforms never ship.</p>
+    <div style="display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1rem">
+      <span class="badge-platform badge-ps8" style="font-size:.72rem">PrestaShop 8</span>
+      <span class="badge-platform badge-woo" style="font-size:.72rem">WooCommerce</span>
+      <span class="badge-platform badge-coming" style="font-size:.72rem">OpenCart — soon</span>
+      <span class="badge-platform badge-coming" style="font-size:.72rem">BigCommerce — soon</span>
+    </div>
     <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem">
-      <a class="btn btn-primary" href="{{ "modules/" | relURL }}">Browse All 28 Modules</a>
+      <a class="btn btn-primary" href="{{ "modules/" | relURL }}">Browse All Modules</a>
       <a class="btn btn-outline" href="{{ .Site.Params.repoBase }}" target="_blank" rel="noopener">View on GitHub ↗</a>
     </div>
     <div class="hero-stats">
       <div class="stat"><div class="stat-num">28</div><div class="stat-label">Modules Built</div></div>
       <div class="stat"><div class="stat-num">8</div><div class="stat-label">Categories</div></div>
-      <div class="stat"><div class="stat-num">PS8</div><div class="stat-label">PrestaShop</div></div>
+      <div class="stat"><div class="stat-num">2+</div><div class="stat-label">Platforms</div></div>
       <div class="stat"><div class="stat-num">15</div><div class="stat-label">Taxonomy Packs</div></div>
     </div>
   </div>
@@ -88,52 +94,63 @@
       </div>
     </div>
 
-    <!-- ── GET YOUR OWN STORE BANNER ─────────────── -->
-    <div class="store-pitch">
-      <div class="store-pitch-left">
-        <div class="store-pitch-eyebrow">For Plant Businesses</div>
-        <h2>Want your own plant-specialised store?</h2>
-        <p>
-          We can spin up a fully-configured PhytoCommerce store for your nursery, tissue-culture lab, or rare plant shop — deployed under your own domain, or get started instantly on a subdomain at
-          <strong>carnivorousplants.in</strong>.
-          All 28 modules, pre-installed and tuned for your catalogue.
-        </p>
-        <div class="store-pitch-actions">
-          <a class="btn btn-primary" href="mailto:aphytoevolution@gmail.com">Get in Touch →</a>
+    <!-- ── HOSTING vs SELF-HOST PRICING ──────────── -->
+    <h2 class="section-title">How to Get the Modules</h2>
+    <div class="pricing-grid">
+
+      <div class="pricing-card pricing-card--hosted">
+        <div class="pricing-eyebrow">Managed Hosting</div>
+        <h3 class="pricing-name">Host with Us</h3>
+        <p class="pricing-tagline">We deploy, manage, and tune a complete PhytoCommerce store for your plant business.</p>
+        <ul class="pricing-perks">
+          <li>✓ Every module pre-installed &amp; configured</li>
+          <li>✓ Your own domain or a subdomain at <strong>carnivorousplants.in</strong></li>
+          <li>✓ Catalogue setup for your species &amp; taxonomy</li>
+          <li>✓ Phytosanitary &amp; wholesale flows ready on day one</li>
+          <li>✓ Ongoing support from the team that built it</li>
+          <li>✓ <strong>All current &amp; future modules included</strong></li>
+        </ul>
+        <div class="pricing-cta">
+          <a class="btn btn-primary" href="mailto:aphytoevolution@gmail.com">Talk to Us →</a>
           <a class="btn btn-outline-dark" href="https://www.instagram.com/foreststudiolabs/" target="_blank" rel="noopener">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
             Forest Studio Labs
           </a>
         </div>
       </div>
-      <div class="store-pitch-right">
-        <div class="pitch-item">
-          <span class="pitch-icon">🌐</span>
-          <div><strong>Your own domain</strong><br>Bring your domain — we handle the stack</div>
-        </div>
-        <div class="pitch-item">
-          <span class="pitch-icon">🌱</span>
-          <div><strong>Subdomain at carnivorousplants.in</strong><br>Launch fast under a trusted plant domain</div>
-        </div>
-        <div class="pitch-item">
-          <span class="pitch-icon">⚙️</span>
-          <div><strong>All 28 modules pre-installed</strong><br>TC tracking, care cards, wholesale, loyalty — ready to go</div>
-        </div>
-        <div class="pitch-item">
-          <span class="pitch-icon">📧</span>
-          <div><strong>aphytoevolution@gmail.com</strong><br>Drop us a line to discuss your requirements</div>
+
+      <div class="pricing-card pricing-card--self">
+        <div class="pricing-eyebrow">Self-Hosted / Open Source</div>
+        <h3 class="pricing-name">Use on Your Own Stack</h3>
+        <p class="pricing-tagline">Run PhytoCommerce modules on your own server. Source is open; individual premium modules start at $1.</p>
+        <ul class="pricing-perks">
+          <li>✓ Full source code on GitHub — no lock-in</li>
+          <li>✓ Works on PrestaShop 8, WooCommerce, and more platforms being ported</li>
+          <li>✓ Install individually or via the Pack Installer</li>
+          <li>◎ Premium modules &amp; licence keys — from <strong>$1 / module</strong></li>
+          <li>◎ Priority support add-on available</li>
+          <li>◎ OpenCart, BigCommerce ports — coming once hosted tier is stable</li>
+        </ul>
+        <div class="pricing-cta">
+          <a class="btn btn-forest" href="{{ .Site.Params.repoBase }}" target="_blank" rel="noopener">Browse Source ↗</a>
+          <a class="btn btn-forest-outline" href="{{ "modules/" | relURL }}">View All Modules</a>
         </div>
       </div>
+
     </div>
 
+    <!-- ── WHAT IS PHYTOCOMMERCE ──────────────────── -->
     <h2 class="section-title">What Is PhytoCommerce?</h2>
     <div class="module-content">
-      <p>PhytoCommerce is a <strong>PrestaShop 8 module suite</strong> built specifically for specialty plant businesses — tissue-culture labs, nurseries, rare plant retailers, and botanical collectors. Each of the 28 modules addresses a real operational need that generic e-commerce platforms ignore.</p>
-      <p>From tracking TC batch provenance through to phytosanitary compliance, B2B wholesale tiering, customer plant journals, and live arrival guarantees — the suite covers the full lifecycle of a specialty plant sale.</p>
-      <h3>Quick Install</h3>
-      <p>Upload <a href="{{ "modules/phytocommerce-pack/" | relURL }}"><code>phytocommerce_pack</code></a> to PrestaShop and click <strong>Install</strong>. All modules deploy in the correct dependency order. Or install any module individually by copying it to your <code>/modules/</code> directory.</p>
+      <p>PhytoCommerce is a <strong>platform-agnostic e-commerce module suite built for plant businesses</strong> — tissue-culture labs, nurseries, rare-plant retailers, and botanical collectors. Every module solves a real operational gap that generic platforms ignore: tracking TC batch provenance, printing phytosanitary-aware invoices, gating prices behind KYC, or notifying customers when a seasonal species is back in stock.</p>
+      <p>The first implementations target <strong>PrestaShop 8</strong> (28 modules, production-ready) and <strong>WooCommerce</strong> (actively porting). <strong>OpenCart</strong>, <strong>BigCommerce</strong>, and a bespoke scratch-built plant-commerce stack are on the roadmap — same feature set, idiomatic code for each platform.</p>
+      <p>If you run your own e-commerce server the source is open. If you want a fully managed store tuned for your catalogue, we handle the entire stack — <a href="mailto:aphytoevolution@gmail.com">reach out</a> to discuss.</p>
+      <h3>Quick Install (PrestaShop 8)</h3>
+      <p>Upload <a href="{{ "modules/phytocommerce-pack/" | relURL }}"><code>phytocommerce_pack</code></a> and click <strong>Install</strong>. All modules deploy in the correct dependency order. Or drop any single module into your <code>/modules/</code> directory.</p>
+      <h3>Quick Install (WooCommerce)</h3>
+      <p>Upload the plugin ZIP via <strong>Plugins → Add New → Upload</strong>, or copy the plugin folder to <code>wp-content/plugins/</code> and activate.</p>
       <h3>Source Code</h3>
-      <p>All modules are open source and live at <a href="{{ .Site.Params.repoModules }}" target="_blank" rel="noopener">{{ .Site.Params.repoModules }} ↗</a>. Each module directory contains its own <code>README.md</code>, SQL install/uninstall scripts, PHP classes, Smarty templates, and frontend assets.</p>
+      <p>All modules are open source at <a href="{{ .Site.Params.repoBase }}" target="_blank" rel="noopener">{{ .Site.Params.repoBase }} ↗</a>. Each directory contains its own <code>README.md</code>, install/uninstall scripts, and all frontend assets.</p>
     </div>
 
   </div>

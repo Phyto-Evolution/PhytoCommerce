@@ -4,6 +4,6 @@ title = 'PhytoCommerce'
 pluralizeListTitles = false
 
 [params]
-  description = 'A PrestaShop 8 module suite for specialty plant e-commerce — tissue-culture provenance, phytosanitary compliance, wholesale portals, subscriptions, and more.'
+  description = 'E-commerce tooling built for plant businesses — tissue-culture labs, nurseries, and rare-plant retailers. Runs on PrestaShop 8, WooCommerce, and more platforms coming.'
   repoBase = 'https://github.com/Phyto-Evolution/PhytoCommerce'
   repoModules = 'https://github.com/Phyto-Evolution/PhytoCommerce/tree/main/modules'

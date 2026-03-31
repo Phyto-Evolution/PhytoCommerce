@@ -566,6 +566,11 @@ footer {
   white-space: nowrap;
   flex-shrink: 0;
 }
+.badge-coming {
+  background: rgba(255,255,255,.08);
+  color: rgba(255,255,255,.4);
+  border: 1px solid rgba(255,255,255,.15);
+}
 .badge-ps8 {
   background: rgba(78,110,242,.18);
   color: #4e6ef2;
@@ -612,6 +617,104 @@ footer {
   color: var(--forest);
   margin: 0;
 }
+
+/* ── PRICING CARDS ───────────────────────────────────── */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+.pricing-card {
+  border-radius: 12px;
+  padding: 2rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+.pricing-card--hosted {
+  background: var(--forest);
+  color: var(--white);
+  box-shadow: 0 8px 32px rgba(26,60,43,.3);
+  position: relative;
+  overflow: hidden;
+}
+.pricing-card--hosted::before {
+  content: '★ Recommended';
+  position: absolute;
+  top: 1rem;
+  right: -2rem;
+  background: var(--amber);
+  color: var(--forest);
+  font-size: .65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  padding: .2rem 3rem;
+  transform: rotate(35deg);
+}
+.pricing-card--self {
+  background: var(--white);
+  border: 1px solid var(--cream-dark);
+  box-shadow: var(--shadow);
+}
+.pricing-eyebrow {
+  font-size: .68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--amber);
+  margin-bottom: .2rem;
+}
+.pricing-card--self .pricing-eyebrow { color: var(--muted); }
+.pricing-name {
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 .4rem;
+  color: var(--white);
+}
+.pricing-card--self .pricing-name { color: var(--forest); }
+.pricing-tagline {
+  font-size: .88rem;
+  line-height: 1.6;
+  color: var(--sage-light);
+  margin-bottom: .5rem;
+}
+.pricing-card--self .pricing-tagline { color: var(--muted); }
+.pricing-perks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .45rem;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+.pricing-perks li {
+  font-size: .86rem;
+  color: var(--sage-light);
+  line-height: 1.45;
+}
+.pricing-card--self .pricing-perks li { color: var(--text); }
+.pricing-perks li strong { color: var(--white); }
+.pricing-card--self .pricing-perks li strong { color: var(--forest); }
+.pricing-cta { display: flex; gap: .7rem; flex-wrap: wrap; margin-top: auto; }
+.btn-forest {
+  display: inline-flex; align-items: center; gap: .4rem;
+  padding: .55rem 1.1rem; border-radius: var(--radius);
+  font-size: .875rem; font-weight: 600;
+  background: var(--forest); color: var(--white);
+  text-decoration: none; transition: all .15s;
+}
+.btn-forest:hover { background: var(--forest-mid); color: var(--white); }
+.btn-forest-outline {
+  display: inline-flex; align-items: center; gap: .4rem;
+  padding: .55rem 1.1rem; border-radius: var(--radius);
+  font-size: .875rem; font-weight: 600;
+  background: transparent; border: 1.5px solid var(--sage-light);
+  color: var(--forest); text-decoration: none; transition: all .15s;
+}
+.btn-forest-outline:hover { background: var(--sage-pale); color: var(--forest); }
 
 /* ── BUILD LOG TERMINAL ──────────────────────────────── */
 .build-terminal {
@@ -687,6 +790,7 @@ footer {
 /* ── RESPONSIVE ──────────────────────────────────── */
 @media (max-width: 960px) {
   .store-pitch { grid-template-columns: 1fr; gap: 1.75rem; }
+  .pricing-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
   .footer-seg--brand { grid-column: 1 / -1; }
 }
