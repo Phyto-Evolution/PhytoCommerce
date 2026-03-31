@@ -1,6 +1,48 @@
 <footer>
-  <p>
-    PhytoCommerce — PrestaShop 8 module suite for specialty plant e-commerce ·
-    <a href="{{ .Site.Params.repoBase }}" target="_blank" rel="noopener">View on GitHub ↗</a>
-  </p>
+  <div class="footer-inner">
+    <div class="footer-cols">
+
+      <div class="footer-col">
+        <div class="footer-logo">🌿 PhytoCommerce</div>
+        <p class="footer-tagline">A PrestaShop 8 module suite built for specialty plant e-commerce — tissue culture, compliance, wholesale, and beyond.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Modules</h4>
+        <ul>
+          <li><a href="{{ "modules/" | relURL }}#pack">Pack Installer</a></li>
+          <li><a href="{{ "modules/" | relURL }}#foundation">Foundation</a></li>
+          <li><a href="{{ "modules/" | relURL }}#plant-science">Plant Science</a></li>
+          <li><a href="{{ "modules/" | relURL }}#commerce">Commerce</a></li>
+          <li><a href="{{ "modules/" | relURL }}">All 28 modules →</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Repository</h4>
+        <ul>
+          <li><a href="{{ .Site.Params.repoBase }}" target="_blank" rel="noopener">GitHub →</a></li>
+          <li><a href="{{ .Site.Params.repoBase }}/issues" target="_blank" rel="noopener">Issues</a></li>
+          <li><a href="{{ .Site.Params.repoBase }}/blob/main/README.md" target="_blank" rel="noopener">README</a></li>
+          <li><a href="{{ .Site.Params.repoBase }}/blob/main/LICENSE" target="_blank" rel="noopener">License</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-contact">
+        <h4>Contact Us</h4>
+        <p>Questions, contributions, or integration enquiries — reach out via GitHub or email.</p>
+        <a class="footer-contact-btn" href="{{ .Site.Params.repoBase }}/issues/new" target="_blank" rel="noopener">
+          Open an Issue ↗
+        </a>
+        <a class="footer-contact-btn" href="mailto:hello@phytocommerce.dev">
+          hello@phytocommerce.dev
+        </a>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 PhytoCommerce · PrestaShop 8 module suite for specialty plant e-commerce</span>
+      <a href="{{ .Site.Params.repoBase }}" target="_blank" rel="noopener">View on GitHub ↗</a>
+    </div>
+  </div>
 </footer>

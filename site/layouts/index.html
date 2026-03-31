@@ -4,7 +4,7 @@
     <h1>🌿 <em>Phyto</em>Commerce</h1>
     <p>{{ .Site.Params.description }}</p>
     <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem">
-      <a class="btn btn-primary" href="{{ "/modules/" | relURL }}">Browse All Modules</a>
+      <a class="btn btn-primary" href="{{ "modules/" | relURL }}">Browse All 28 Modules</a>
       <a class="btn btn-outline" href="{{ .Site.Params.repoBase }}" target="_blank" rel="noopener">View on GitHub ↗</a>
     </div>
     <div class="hero-stats">
@@ -18,54 +18,53 @@
 
 <main>
   <div class="container">
-    {{ .Content }}
 
     <h2 class="section-title">Module Categories</h2>
     <div class="category-grid">
 
-      <a class="category-card" href="{{ "/modules/" | relURL }}#pack">
+      <a class="category-card" href="{{ "modules/" | relURL }}#pack">
         <div class="cat-count">1 module</div>
         <h3>📦 Pack Installer</h3>
         <p>1-click meta-installer that deploys all PhytoCommerce modules in the correct order.</p>
       </a>
 
-      <a class="category-card" href="{{ "/modules/" | relURL }}#foundation">
+      <a class="category-card" href="{{ "modules/" | relURL }}#foundation">
         <div class="cat-count">5 modules</div>
         <h3>🏗 Foundation</h3>
         <p>Branding, footer, quick product entry, ERPNext sync, and automated SEO.</p>
       </a>
 
-      <a class="category-card" href="{{ "/modules/" | relURL }}#plant-science">
+      <a class="category-card" href="{{ "modules/" | relURL }}#plant-science">
         <div class="cat-count">8 modules</div>
         <h3>🔬 Plant Science</h3>
         <p>TC batch tracking, growth stages, seasonal availability, care cards, climate suitability, acclimation kits, live arrival guarantees.</p>
       </a>
 
-      <a class="category-card" href="{{ "/modules/" | relURL }}#customer-community">
+      <a class="category-card" href="{{ "modules/" | relURL }}#customer-community">
         <div class="cat-count">3 modules</div>
         <h3>👥 Customer & Community</h3>
         <p>Growers journals, personal plant collections, and sourcing-origin badges.</p>
       </a>
 
-      <a class="category-card" href="{{ "/modules/" | relURL }}#operations-compliance">
+      <a class="category-card" href="{{ "modules/" | relURL }}#operations-compliance">
         <div class="cat-count">3 modules</div>
         <h3>📋 Operations & Compliance</h3>
         <p>Shipment evidence logging, phytosanitary document management, and TC cost calculators.</p>
       </a>
 
-      <a class="category-card" href="{{ "/modules/" | relURL }}#commerce">
+      <a class="category-card" href="{{ "modules/" | relURL }}#commerce">
         <div class="cat-count">4 modules</div>
         <h3>🛒 Commerce</h3>
         <p>B2B wholesale portals, recurring subscriptions, customer bundle builders, and loyalty points.</p>
       </a>
 
-      <a class="category-card" href="{{ "/modules/" | relURL }}#security-identity">
+      <a class="category-card" href="{{ "modules/" | relURL }}#security-identity">
         <div class="cat-count">2 modules</div>
         <h3>🔒 Security & Identity</h3>
         <p>Image watermarking + WebP conversion, and KYC verification (PAN/GST) with price blur.</p>
       </a>
 
-      <a class="category-card" href="{{ "/modules/" | relURL }}#invoicing-notifications">
+      <a class="category-card" href="{{ "modules/" | relURL }}#invoicing-notifications">
         <div class="cat-count">2 modules</div>
         <h3>🔔 Invoicing & Notifications</h3>
         <p>Phytosanitary-aware branded PDF invoices and out-of-stock restock alert subscriptions.</p>
@@ -78,10 +77,11 @@
       <p>PhytoCommerce is a <strong>PrestaShop 8 module suite</strong> built specifically for specialty plant businesses — tissue-culture labs, nurseries, rare plant retailers, and botanical collectors. Each of the 28 modules addresses a real operational need that generic e-commerce platforms ignore.</p>
       <p>From tracking TC batch provenance through to phytosanitary compliance, B2B wholesale tiering, customer plant journals, and live arrival guarantees — the suite covers the full lifecycle of a specialty plant sale.</p>
       <h3>Quick Install</h3>
-      <p>Upload <a href="{{ "/modules/phytocommerce-pack/" | relURL }}"><code>phytocommerce_pack</code></a> to PrestaShop and click <strong>Install</strong>. All modules deploy in the correct dependency order. Or install any module individually by copying it to your <code>/modules/</code> directory.</p>
+      <p>Upload <a href="{{ "modules/phytocommerce-pack/" | relURL }}"><code>phytocommerce_pack</code></a> to PrestaShop and click <strong>Install</strong>. All modules deploy in the correct dependency order. Or install any module individually by copying it to your <code>/modules/</code> directory.</p>
       <h3>Source Code</h3>
       <p>All modules are open source and live at <a href="{{ .Site.Params.repoModules }}" target="_blank" rel="noopener">{{ .Site.Params.repoModules }} ↗</a>. Each module directory contains its own <code>README.md</code>, SQL install/uninstall scripts, PHP classes, Smarty templates, and frontend assets.</p>
     </div>
+
   </div>
 </main>
 {{ end }}

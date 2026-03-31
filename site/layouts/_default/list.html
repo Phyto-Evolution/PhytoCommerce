@@ -1,8 +1,13 @@
 {{ define "main" }}
 <section class="hero" style="padding:3rem 2rem 2.5rem">
   <div class="hero-inner">
-    <h1 style="font-size:2rem">📦 All Modules</h1>
-    <p>28 PrestaShop 8 modules for specialty plant e-commerce. Each card links to the full module page and its source on GitHub.</p>
+    <h1 style="font-size:2.2rem">All 28 Modules</h1>
+    <p>Every PhytoCommerce module grouped by category. Click any card to read the full documentation and find the source path on GitHub.</p>
+    <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem">
+      <div class="stat"><div class="stat-num">28</div><div class="stat-label">Modules</div></div>
+      <div class="stat"><div class="stat-num">8</div><div class="stat-label">Categories</div></div>
+      <div class="stat"><div class="stat-num">PS8</div><div class="stat-label">PrestaShop</div></div>
+    </div>
   </div>
 </section>
 
@@ -10,33 +15,40 @@
 <div class="container">
 
 {{ $categories := slice
-  (dict "id" "pack"                  "label" "📦 Pack Installer"          "icon" "📦")
-  (dict "id" "foundation"            "label" "🏗 Foundation"               "icon" "🏗")
-  (dict "id" "plant-science"         "label" "🔬 Plant Science"            "icon" "🔬")
-  (dict "id" "customer-community"    "label" "👥 Customer & Community"     "icon" "👥")
-  (dict "id" "operations-compliance" "label" "📋 Operations & Compliance"  "icon" "📋")
-  (dict "id" "commerce"              "label" "🛒 Commerce"                 "icon" "🛒")
-  (dict "id" "security-identity"     "label" "🔒 Security & Identity"      "icon" "🔒")
-  (dict "id" "invoicing-notifications" "label" "🔔 Invoicing & Notifications" "icon" "🔔")
+  (dict "id" "pack"                    "label" "📦 Pack Installer"            "color" "#e8a135")
+  (dict "id" "foundation"              "label" "🏗 Foundation"                 "color" "#7dab8a")
+  (dict "id" "plant-science"           "label" "🔬 Plant Science"              "color" "#3a9a6a")
+  (dict "id" "customer-community"      "label" "👥 Customer & Community"       "color" "#5a8fbf")
+  (dict "id" "operations-compliance"   "label" "📋 Operations & Compliance"    "color" "#b07ab0")
+  (dict "id" "commerce"                "label" "🛒 Commerce"                   "color" "#d0603a")
+  (dict "id" "security-identity"       "label" "🔒 Security & Identity"        "color" "#c0404a")
+  (dict "id" "invoicing-notifications" "label" "🔔 Invoicing & Notifications"  "color" "#8a7a3a")
 }}
 
 {{ range $categories }}
-{{ $catID := .id }}
+{{ $catID    := .id }}
 {{ $catLabel := .label }}
-{{ $pages := where $.Pages "Params.category_id" $catID }}
+{{ $catColor := .color }}
+{{ $pages    := where $.Pages "Params.category_id" $catID }}
 {{ if $pages }}
 <div class="cat-group" id="{{ $catID }}">
-  <div class="cat-group-title">{{ $catLabel }}</div>
+  <div class="cat-group-title" style="border-left-color:{{ $catColor }}">
+    {{ $catLabel }}
+    <span class="cat-group-count">{{ len $pages }} module{{ if gt (len $pages) 1 }}s{{ end }}</span>
+  </div>
   <div class="module-grid">
     {{ range $pages }}
-    <div class="module-card">
-      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-      <p>{{ .Description }}</p>
-      <div class="module-card-footer">
-        <span class="badge badge-category">{{ .Params.category }}</span>
+    <a class="module-card" href="{{ .RelPermalink }}" style="--cat-color:{{ $catColor }}">
+      <div class="module-card-top">
+        <code class="module-name">{{ .Title }}</code>
         {{ with .Params.version }}<span class="badge badge-version">v{{ . }}</span>{{ end }}
       </div>
-    </div>
+      <p class="module-desc">{{ .Description }}</p>
+      <div class="module-card-footer">
+        <span class="badge badge-category" style="background:{{ $catColor }}18;color:{{ $catColor }}">{{ .Params.category }}</span>
+        <span class="module-arrow">View details →</span>
+      </div>
+    </a>
     {{ end }}
   </div>
 </div>

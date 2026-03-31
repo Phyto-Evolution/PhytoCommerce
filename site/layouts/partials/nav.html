@@ -1,8 +1,8 @@
 <nav>
-  <a class="nav-logo" href="{{ "/" | relURL }}">🌿 Phyto<span>Commerce</span></a>
+  <a class="nav-logo" href="{{ .Site.Home.RelPermalink }}">🌿 Phyto<span>Commerce</span></a>
   <ul>
-    <li><a href="{{ "/" | relURL }}">Home</a></li>
-    <li><a href="{{ "/modules/" | relURL }}">Modules</a></li>
+    <li><a href="{{ .Site.Home.RelPermalink }}">Home</a></li>
+    <li><a href="{{ "modules/" | relURL }}">Modules</a></li>
     <li><a href="{{ .Site.Params.repoBase }}" target="_blank" rel="noopener">GitHub ↗</a></li>
   </ul>
 </nav>

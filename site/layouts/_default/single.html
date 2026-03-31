@@ -1,16 +1,20 @@
 {{ define "main" }}
 <section class="module-hero">
   <div class="module-hero-inner">
+    <div class="module-hero-breadcrumb">
+      <a href="{{ .Site.Home.RelPermalink }}">Home</a>
+      <span>›</span>
+      <a href="{{ "modules/" | relURL }}">Modules</a>
+      <span>›</span>
+      <span>{{ .Title }}</span>
+    </div>
     <h1>{{ .Title }}</h1>
     <p class="desc">{{ .Description }}</p>
     <div class="module-meta">
-      {{ with .Params.category }}<span class="badge badge-category">{{ . }}</span>{{ end }}
-      {{ with .Params.version }}<span class="badge badge-version">v{{ . }}</span>{{ end }}
+      {{ with .Params.category }}<span class="badge badge-category" style="background:rgba(125,171,138,.25);color:#b8d4bf">{{ . }}</span>{{ end }}
+      {{ with .Params.version }}<span class="badge badge-version" style="background:rgba(255,255,255,.1);color:#faf8f3">v{{ . }}</span>{{ end }}
       <a class="btn btn-primary" href="{{ $.Site.Params.repoModules }}/{{ .Params.module_name }}" target="_blank" rel="noopener">
-        View on GitHub ↗
-      </a>
-      <a class="btn btn-outline" href="{{ $.Site.Params.repoModules }}/{{ .Params.module_name }}/{{ .Params.module_name }}.php" target="_blank" rel="noopener">
-        Main PHP ↗
+        Browse Source on GitHub ↗
       </a>
     </div>
   </div>
@@ -19,18 +23,15 @@
 <main>
 <div class="container">
 
-  <div class="breadcrumb">
-    <a href="{{ "/" | relURL }}">Home</a>
-    <span>›</span>
-    <a href="{{ "/modules/" | relURL }}">Modules</a>
-    <span>›</span>
-    <span>{{ .Title }}</span>
-  </div>
-
   <div class="github-box">
-    <div class="path">modules/{{ .Params.module_name }}/</div>
+    <div>
+      <div class="path">modules/{{ .Params.module_name }}/</div>
+      <div style="font-size:.8rem;color:var(--muted);margin-top:.2rem">
+        Direct path in the repo → all PHP, SQL, templates, and assets
+      </div>
+    </div>
     <a class="btn btn-primary" style="flex-shrink:0" href="{{ $.Site.Params.repoModules }}/{{ .Params.module_name }}" target="_blank" rel="noopener">
-      Browse Source on GitHub ↗
+      Open on GitHub ↗
     </a>
   </div>
 
@@ -38,9 +39,9 @@
     {{ .Content }}
   </div>
 
-  <div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap">
+  <div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center">
     <a class="btn btn-primary" href="{{ $.Site.Params.repoModules }}/{{ .Params.module_name }}" target="_blank" rel="noopener">View Full Source ↗</a>
-    <a class="btn btn-outline" style="color:var(--forest);border-color:var(--sage)" href="{{ "/modules/" | relURL }}">← Back to All Modules</a>
+    <a class="btn btn-back" href="{{ "modules/" | relURL }}">← Back to All Modules</a>
   </div>
 
 </div>
