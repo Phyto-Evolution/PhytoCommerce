@@ -23,7 +23,7 @@
 {{ range $categories }}
 {{ $catID := .id }}
 {{ $catLabel := .label }}
-{{ $pages := where $.Site.RegularPages "Params.category_id" $catID }}
+{{ $pages := where $.Pages "Params.category_id" $catID }}
 {{ if $pages }}
 <div class="cat-group" id="{{ $catID }}">
   <div class="cat-group-title">{{ $catLabel }}</div>
