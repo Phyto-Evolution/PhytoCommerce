@@ -1,0 +1,140 @@
+/**
+ * Phyto Growth Stage — Frontend Styles
+ *
+ * Colour-coded stage badges for WooCommerce shop listings and product pages.
+ * Uses the CSS custom property --gs-color set inline per badge instance,
+ * so the five stage colours are driven by PHP without duplicating selectors.
+ *
+ * @package PhytoGrowthStage
+ * @version 1.0.0
+ */
+
+/* =========================================================
+   Badge — core pill styles (shared by loop + single)
+   ========================================================= */
+
+.phyto-gs-badge {
+	display: inline-block;
+	padding: 3px 10px;
+	border-radius: 20px;
+	background-color: var( --gs-color, #5b9bd5 );
+	color: #fff;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.3px;
+	line-height: 1.4;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+/* Muted metadata label (difficulty · time) */
+.phyto-gs-meta {
+	display: inline-block;
+	margin-left: 6px;
+	color: #666;
+	font-size: 11px;
+	vertical-align: middle;
+}
+
+/* =========================================================
+   Wrapper — archive / shop loop (absolute badge overlay)
+   ========================================================= */
+
+/*
+ * WooCommerce wraps each loop item in a position:relative container.
+ * We position the badge over the product image, top-left, matching
+ * the style of the built-in "Sale!" badge.
+ */
+.phyto-gs-badge-wrap--archive {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	z-index: 10;
+	line-height: 1;
+	pointer-events: none; /* allow clicks to pass through to the image link */
+}
+
+/* Hide the meta text in the archive overlay — space is too tight */
+.phyto-gs-badge-wrap--archive .phyto-gs-meta {
+	display: none;
+}
+
+/* =========================================================
+   Wrapper — single product page
+   ========================================================= */
+
+.phyto-gs-badge-wrap--single {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	margin-bottom: 10px;
+}
+
+/* On the single page show full meta text */
+.phyto-gs-badge-wrap--single .phyto-gs-meta {
+	display: inline-block;
+}
+
+/* =========================================================
+   Care & Stage Info product tab
+   ========================================================= */
+
+.phyto-gs-care-tab {
+	padding: 16px 0;
+}
+
+.phyto-gs-care-tab__stage {
+	display: flex;
+	align-items: flex-start;
+	gap: 14px;
+	margin-bottom: 16px;
+}
+
+.phyto-gs-care-tab__meta {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.8;
+}
+
+.phyto-gs-care-tab__meta strong {
+	margin-right: 4px;
+}
+
+.phyto-gs-care-tab__notes h3 {
+	margin-top: 0;
+	font-size: 15px;
+}
+
+.phyto-gs-care-tab__notes p {
+	font-size: 14px;
+	line-height: 1.6;
+	color: #444;
+}
+
+/* =========================================================
+   Responsive adjustments
+   ========================================================= */
+
+@media ( max-width: 480px ) {
+
+	.phyto-gs-badge {
+		font-size: 10px;
+		padding: 2px 8px;
+	}
+
+	.phyto-gs-badge-wrap--single {
+		flex-wrap: wrap;
+		gap: 4px;
+	}
+
+	.phyto-gs-meta {
+		font-size: 10px;
+	}
+
+	.phyto-gs-badge-wrap--archive {
+		top: 4px;
+		left: 4px;
+	}
+}
