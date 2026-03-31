@@ -2,7 +2,7 @@
 
 A PrestaShop 8 module suite for specialty plant e-commerce — designed around the operational needs of tissue-culture producers, nurseries, and rare plant retailers. Covers TC batch provenance, phytosanitary compliance, wholesale portals, recurring subscriptions, scientific taxonomy, customer grow journals, image protection, and more.
 
-> **Last updated:** 2026-03-31 (phyto_invoice_customizer · phyto_restock_alert · phyto_bundle_builder · phyto_loyalty · phyto-grex-registry · phyto-growth-stage · phyto-source-badge [WooCommerce])
+> **Last updated:** 2026-03-31 (phyto_invoice_customizer · phyto_restock_alert · phyto_bundle_builder · phyto_loyalty · phyto-grex-registry · phyto-growth-stage · phyto-source-badge · phyto-seasonal-availability [WooCommerce])
 > Session logs: [`docs/CHECKPOINT.md`](docs/CHECKPOINT.md) · [`docs/ACTIVITY_LOG.md`](docs/ACTIVITY_LOG.md)
 
 ---
@@ -710,7 +710,7 @@ docker cp modules/phyto_grex_registry ps-test:/var/www/html/modules/
 
 WooCommerce ports of the PhytoCommerce module suite. Same plant-specialised features, built for WordPress/WooCommerce stores.
 
-> **WooCommerce Plugins Built: 3**
+> **WooCommerce Plugins Built: 4**
 
 ### Plant Science
 
@@ -718,6 +718,7 @@ WooCommerce ports of the PhytoCommerce module suite. Same plant-specialised feat
 |--------|-------------|---------|
 | [`phyto-grex-registry`](modules-woo/phyto-grex-registry/) | Attach scientific taxonomy metadata (genus, species, grex, authority, conservation status) to WooCommerce products — displays as a "Scientific Profile" tab on the product page. | 1.0.0 |
 | [`phyto-growth-stage`](modules-woo/phyto-growth-stage/) | Tag WooCommerce products with a growth stage (Deflasked → Specimen) — colour-coded badge on shop listings and product pages, with care difficulty and time-to-maturity metadata. | 1.0.0 |
+| [`phyto-seasonal-availability`](modules-woo/phyto-seasonal-availability/) | Block product purchases during off-season months and capture "notify me when in season" email subscribers — auto-notified when the product returns to its shipping window. | 1.0.0 |
 
 ### Customer & Community
 
