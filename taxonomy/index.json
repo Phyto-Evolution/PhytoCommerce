@@ -1,6 +1,6 @@
 {
   "version": "1.1.0",
-  "last_updated": "2026-03-27",
+  "last_updated": "2026-03-31",
   "maintainer": "Phyto Evolution Private Limited",
   "repository": "https://github.com/Phyto-Evolution/PhytoCommerce",
   "base_url": "https://raw.githubusercontent.com/Phyto-Evolution/PhytoCommerce/main/taxonomy/",
@@ -10,7 +10,10 @@
     { "id": "aroids", "name": "Aroids", "index": "aroids/index.json", "pack_count": 1 },
     { "id": "orchids", "name": "Orchids", "index": "orchids/index.json", "pack_count": 1 },
     { "id": "succulents", "name": "Succulents & Cacti", "index": "succulents/index.json", "pack_count": 4 },
-    { "id": "bromeliads", "name": "Bromeliads & Air Plants", "index": "bromeliads/index.json", "pack_count": 1 }
+    { "id": "bromeliads", "name": "Bromeliads & Air Plants", "index": "bromeliads/index.json", "pack_count": 1 },
+    { "id": "banana", "name": "Bananas & Relatives", "index": "banana/index.json", "pack_count": 2 },
+    { "id": "palms", "name": "Palms", "index": "palms/index.json", "pack_count": 2 },
+    { "id": "horticulture", "name": "Horticulture Crops", "index": "horticulture/index.json", "pack_count": 4 }
   ],
-  "summary": { "total_categories": 5, "total_packs": 15, "total_genera": 38, "total_species": 138, "total_cultivars": 80 }
+  "summary": { "total_categories": 8, "total_packs": 23, "total_genera": 102, "total_species": 234, "total_cultivars": 194 }
 }

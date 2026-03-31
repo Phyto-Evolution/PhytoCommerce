@@ -1,0 +1,336 @@
+{
+  "pack_id": "vegetables",
+  "schema_version": "1.1",
+  "family": "Solanaceae / Cucurbitaceae / Brassicaceae (mixed)",
+  "common_name": "Indian Vegetables",
+  "description": "India cultivates an extraordinary diversity of vegetables across its varied agro-climatic zones. This pack covers the major vegetable genera — from the Solanaceae nightshades (brinjal, tomato, chilli) to Cucurbitaceae gourds, Brassicaceae cabbages, and Liliaceae alliums — with Indian regional names and commercially important cultivars.",
+  "meta_title": "Indian Vegetables — Horticulture Taxonomy | PhytoCommerce",
+  "meta_description": "Botanical taxonomy of Indian vegetables — brinjal, tomato, chilli, potato, cucumber, okra, cabbage, onion, garlic, spinach, fenugreek, coriander and carrot with Indian cultivar names.",
+  "meta_keywords": "Indian vegetables taxonomy, brinjal cultivars India, tomato chilli potato botany India, Indian vegetable horticulture",
+  "genera": [
+    {
+      "genus": "Solanum",
+      "common_name": "Brinjal / Tomato / Potato",
+      "description": "<em>Solanum</em> is a vast genus of over 1,500 species in the family Solanaceae, including three of India's most economically significant vegetables: brinjal (Baingan), tomato (Tamatar), and potato (Aloo). Together these three species dominate Indian vegetable cultivation in area and value. India is among the world's top producers of all three crops.",
+      "species": [
+        {
+          "full_name": "Solanum melongena",
+          "common_name": "Brinjal / Baingan / Eggplant",
+          "description": "<em>Solanum melongena</em>, brinjal or eggplant, is native to India and is one of the oldest cultivated vegetables on the subcontinent. India is the world's second-largest producer. The vegetable comes in enormous variation — purple, green, white, round, long — and is used in bhartha (smoky mash), curries, baingan ka salan, and fried preparations. Bt Brinjal (Bollgard event) is a subject of ongoing policy debate in India.",
+          "meta_title": "Solanum melongena — Brinjal / Baingan / Eggplant",
+          "meta_description": "Botanical profile of Solanum melongena (Brinjal/Baingan). Indian origin vegetable; Pusa Purple Long, Black Beauty cultivars; India second-largest global producer.",
+          "meta_keywords": "Solanum melongena, brinjal, Baingan, eggplant, Pusa Purple Long, Black Beauty, Indian brinjal cultivars",
+          "native_range": "India (origin in Indo-Burma region)",
+          "conservation_status": "LC",
+          "notes": "Native to India. Enormous cultivar diversity — purple, green, white, round, long forms. Pusa Purple Long is IARI selection.",
+          "cultivars": [
+            "Pusa Purple Long",
+            "Black Beauty"
+          ]
+        },
+        {
+          "full_name": "Solanum lycopersicum",
+          "common_name": "Tomato / Tamatar",
+          "description": "<em>Solanum lycopersicum</em>, the tomato, was introduced to India by the Portuguese and is now one of the most widely consumed vegetables. India is among the world's top three tomato producers. Tomato is used in gravies, dals, chutneys, soups, and ketchup. Pusa Ruby (IARI) is a classic open-pollinated cultivar; Arka Vikas (IIHR Bangalore) is widely grown in South India.",
+          "meta_title": "Solanum lycopersicum — Tomato / Tamatar",
+          "meta_description": "Botanical profile of Solanum lycopersicum (Tomato/Tamatar). India top-3 global producer; Pusa Ruby and Arka Vikas cultivar profiles.",
+          "meta_keywords": "Solanum lycopersicum, tomato, Tamatar, Pusa Ruby, Arka Vikas, Indian tomato cultivars",
+          "native_range": "Western South America; domesticated in Mexico",
+          "conservation_status": "LC",
+          "notes": "Introduced by Portuguese. India top-3 producer globally. Pusa Ruby (IARI), Arka Vikas (IIHR) are landmark cultivars.",
+          "cultivars": [
+            "Pusa Ruby",
+            "Arka Vikas"
+          ]
+        },
+        {
+          "full_name": "Solanum tuberosum",
+          "common_name": "Potato / Aloo",
+          "description": "<em>Solanum tuberosum</em>, the potato, is the most widely consumed vegetable in India by volume. Introduced in the 17th century, it now dominates vegetable cultivation in Uttar Pradesh and West Bengal. The Central Potato Research Institute (CPRI) Shimla has released numerous improved cultivars. Kufri Jyoti is the most widely grown variety in the hills; Kufri Chandramukhi (early maturing) is popular in plains.",
+          "meta_title": "Solanum tuberosum — Potato / Aloo",
+          "meta_description": "Botanical profile of Solanum tuberosum (Potato/Aloo). India's most consumed vegetable; Kufri Jyoti, Kufri Chandramukhi cultivars from CPRI Shimla.",
+          "meta_keywords": "Solanum tuberosum, potato, Aloo, Kufri Jyoti, Kufri Chandramukhi, CPRI Shimla, Indian potato cultivars",
+          "native_range": "Andes Mountains, South America",
+          "conservation_status": "LC",
+          "notes": "CPRI Shimla (HP) is the national potato research institute. Kufri Jyoti — hills; Kufri Chandramukhi — plains.",
+          "cultivars": [
+            "Kufri Jyoti",
+            "Kufri Chandramukhi"
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Capsicum",
+      "common_name": "Chilli / Mirch / Bell Pepper / Shimla Mirch",
+      "description": "<em>Capsicum</em> is a genus of about 35 species in the family Solanaceae, all native to the Americas. <em>Capsicum annuum</em> encompasses both hot chillies (Mirch) and sweet bell peppers (Shimla Mirch). India is the world's largest producer, consumer, and exporter of chillies. The pungency is determined by capsaicin content, measured in Scoville Heat Units (SHU).",
+      "species": [
+        {
+          "full_name": "Capsicum annuum",
+          "common_name": "Chilli / Mirch — Bell Pepper / Shimla Mirch",
+          "description": "<em>Capsicum annuum</em> encompasses an enormous range from sweet bell pepper (0 SHU) to scorching hot varieties. In India, Jwala (Gujarat) and Byadagi (Karnataka) are landmark hot cultivars — Byadagi is a GI-tagged deep-red, low-pungency chilli used for colour. Kashmiri chilli is prized for its vibrant red colour and mild heat. California Wonder is the standard green bell pepper (Shimla Mirch) in Indian markets.",
+          "meta_title": "Capsicum annuum — Chilli / Mirch & Bell Pepper / Shimla Mirch",
+          "meta_description": "Botanical profile of Capsicum annuum. India world's largest chilli producer; GI-tagged Byadagi and Kashmiri chilli; California Wonder bell pepper.",
+          "meta_keywords": "Capsicum annuum, chilli, Mirch, Shimla Mirch, bell pepper, Byadagi chilli GI, Kashmiri chilli, Jwala chilli, California Wonder",
+          "native_range": "Americas; domesticated in Mexico",
+          "conservation_status": "LC",
+          "notes": "India: world's largest chilli producer and exporter. Byadagi (Karnataka) and Kashmiri are GI-tagged. Jwala: Gujarat's hot green chilli.",
+          "cultivars": [
+            "Jwala",
+            "Byadagi",
+            "Kashmiri",
+            "California Wonder (Bell Pepper)"
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Cucumis",
+      "common_name": "Cucumber / Muskmelon",
+      "description": "<em>Cucumis</em> is a genus of about 52 species in the family Cucurbitaceae, native to Africa and South Asia. The two most important species are the cucumber (Kheera) and muskmelon (Kharbooja). Both are warm-season crops widely grown across India. India ranks among the world's top cucumber and muskmelon producers.",
+      "species": [
+        {
+          "full_name": "Cucumis sativus",
+          "common_name": "Cucumber / Kheera",
+          "description": "<em>Cucumis sativus</em>, cucumber, is cultivated across India as both a field crop and a protected horticulture crop. Used in salads, raita, pickles (achaar), and fresh consumption. Long green types (for salad) and small pickling types are both popular. Major producing states include Haryana, UP, Madhya Pradesh, and Karnataka.",
+          "meta_title": "Cucumis sativus — Cucumber / Kheera",
+          "meta_description": "Botanical profile of Cucumis sativus (Cucumber/Kheera). Widely grown salad and pickle cucumber across Indian states; raita and achaar uses.",
+          "meta_keywords": "Cucumis sativus, cucumber, Kheera, Indian cucumber cultivation, raita cucumber, pickle cucumber India",
+          "native_range": "South Asia (India)",
+          "conservation_status": "LC",
+          "notes": "Native to India. Kheera (Hindi), Vellarikkai (Tamil). Field and polyhouse cultivation.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cucumis melo",
+          "common_name": "Muskmelon / Kharbooja",
+          "description": "<em>Cucumis melo</em>, the muskmelon, is a summer fruit-vegetable grown extensively in the hot dry plains of Rajasthan, UP, MP, and Punjab. The sweet, orange-fleshed aromatic varieties (Kharbooja) are popular summer cooling foods. Subvariety <em>C. melo</em> var. <em>inodorus</em> (Honeydew) and var. <em>cantalupensis</em> (Cantaloupe) are also grown under protected cultivation in India.",
+          "meta_title": "Cucumis melo — Muskmelon / Kharbooja",
+          "meta_description": "Botanical profile of Cucumis melo (Muskmelon/Kharbooja). Sweet summer fruit-vegetable of Rajasthan and UP plains; arid-zone crop.",
+          "meta_keywords": "Cucumis melo, muskmelon, Kharbooja, Indian melon, Rajasthan muskmelon, summer melon India",
+          "native_range": "Africa, South Asia",
+          "conservation_status": "LC",
+          "notes": "Kharbooja (Hindi). Hot arid plains crop. Rajasthan and UP major producers. Honeydew and Cantaloupe types in polyhouses.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Cucurbita",
+      "common_name": "Pumpkin / Gourd",
+      "description": "<em>Cucurbita</em> is a genus of about 20 species in the Cucurbitaceae, native to the Americas. Pumpkin (Kaddu) and gourds are staple vegetables across India. <em>Lagenaria siceraria</em> (Bottle Gourd/Lauki) is also included here under the broader gourd category as it is closely associated in Indian cultivation and cuisine.",
+      "species": [
+        {
+          "full_name": "Cucurbita pepo",
+          "common_name": "Pumpkin / Kaddu",
+          "description": "<em>Cucurbita pepo</em>, pumpkin, is one of the oldest cultivated crops. In India it is a widely grown warm-season vegetable used in curries, halwa (kaddu ka halwa), and soups. Varieties range from the large round orange types to the smaller round green ones (Kaddu). Both bush and vine types are grown. Rajasthan, UP, and West Bengal are major producing states.",
+          "meta_title": "Cucurbita pepo — Pumpkin / Kaddu",
+          "meta_description": "Botanical profile of Cucurbita pepo (Pumpkin/Kaddu). Warm-season Indian vegetable; Kaddu ki sabzi and halwa; major producing states.",
+          "meta_keywords": "Cucurbita pepo, pumpkin, Kaddu, Indian pumpkin, kaddu ka halwa, warm season gourd India",
+          "native_range": "Mexico, Central America",
+          "conservation_status": "LC",
+          "notes": "Kaddu (Hindi). Warm season. Bush and vine types. Seeds also roasted and eaten.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Lagenaria siceraria",
+          "common_name": "Bottle Gourd / Lauki / Doodhi",
+          "description": "<em>Lagenaria siceraria</em>, bottle gourd, is one of the oldest cultivated plants and the only crop plant thought to have been domesticated in Africa and spread to the Americas before European contact. Known as Lauki or Ghiya in Hindi, Doodhi in Marathi. It is a staple Indian vegetable used in curries, kofta, halwa (lauki ka halwa), and juice. One of the most widely grown summer vegetables in India.",
+          "meta_title": "Lagenaria siceraria — Bottle Gourd / Lauki / Doodhi",
+          "meta_description": "Botanical profile of Lagenaria siceraria (Bottle Gourd/Lauki/Doodhi). One of the oldest domesticated plants; lauki ki sabzi, kofta, halwa across India.",
+          "meta_keywords": "Lagenaria siceraria, bottle gourd, Lauki, Ghiya, Doodhi, Indian gourd cultivation, lauki juice",
+          "native_range": "Tropical Africa (origin); pan-tropical cultivation",
+          "conservation_status": "LC",
+          "notes": "Lauki/Ghiya (Hindi), Doodhi (Marathi), Suraikkai (Tamil). One of humanity's oldest cultivated plants. Juice popular as health drink.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Momordica",
+      "common_name": "Bitter Gourd / Karela",
+      "description": "<em>Momordica</em> is a genus of about 60 species in the Cucurbitaceae, native to tropical Africa, Asia, and Australia. <em>Momordica charantia</em>, bitter gourd (Karela), is a distinctive warty, deeply bitter vegetable that is paradoxically one of India's most medicinally valued vegetables. It is used in Ayurvedic and folk medicine to manage blood sugar and is widely consumed despite (or because of) its bitterness.",
+      "species": [
+        {
+          "full_name": "Momordica charantia",
+          "common_name": "Bitter Gourd / Karela",
+          "description": "<em>Momordica charantia</em> is a climbing annual vine with distinctive warty green fruits. The bitterness is due to momordicin and charantin compounds. Used in stuffed karela (bharwan karela), karela ki sabzi, chips, and juice. Karela juice is widely consumed as a diabetic supplement. India cultivates both the long-fruited Indo-Chinese type and the shorter, knobby Indian type. Major producing states: UP, Bihar, Karnataka, AP.",
+          "meta_title": "Momordica charantia — Bitter Gourd / Karela",
+          "meta_description": "Botanical profile of Momordica charantia (Bitter Gourd/Karela). Medicinal vegetable for blood sugar management; bharwan karela; India's major bitter gourd producer.",
+          "meta_keywords": "Momordica charantia, bitter gourd, Karela, Pavakkai, Indian bitter melon, diabetic vegetable India",
+          "native_range": "Tropical Africa and Asia",
+          "conservation_status": "LC",
+          "notes": "Karela (Hindi), Pavakkai (Tamil), Kakarakaya (Telugu). Medicinal: blood sugar management. Two types — Indian (short) and Indo-Chinese (long).",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Abelmoschus",
+      "common_name": "Okra / Bhindi / Lady's Finger",
+      "description": "<em>Abelmoschus</em> is a genus of about 15 species in the mallow family Malvaceae, native to the Old World tropics. <em>Abelmoschus esculentus</em>, okra or ladies' finger, is among India's most important vegetable crops. India is the world's second-largest okra producer. The tender pods are used in curries, pickles, bhindi masala, and sambar. Okra is a warm-season crop tolerating heat and partial drought.",
+      "species": [
+        {
+          "full_name": "Abelmoschus esculentus",
+          "common_name": "Okra / Bhindi / Vendakkai / Lady's Finger",
+          "description": "<em>Abelmoschus esculentus</em>, okra (ladies' finger), is a tall annual herb to 2 m. Tender green pods are harvested 4–5 days after pollination. Rich in fibre, vitamin C, folate, and mucilage. Used in bhindi masala (North), vendakkai curry (South), sambar, and as a thickener in gumbo (global). Major cultivars from IIVR Varanasi and IIHR Bangalore. India: second-largest global producer.",
+          "meta_title": "Abelmoschus esculentus — Okra / Bhindi / Vendakkai",
+          "meta_description": "Botanical profile of Abelmoschus esculentus (Okra/Bhindi). India second-largest producer; bhindi masala; IIHR and IIVR improved cultivars.",
+          "meta_keywords": "Abelmoschus esculentus, okra, Bhindi, Vendakkai, Lady's Finger, Indian okra cultivation, bhindi masala",
+          "native_range": "Tropical Africa / South Asia (disputed)",
+          "conservation_status": "LC",
+          "notes": "Bhindi (Hindi), Vendakkai (Tamil), Bende (Kannada). Harvest pods young (4–5 days after flowering). India second-largest producer.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Brassica",
+      "common_name": "Cabbage / Cauliflower / Mustard",
+      "description": "<em>Brassica</em> is a genus of flowering plants in the mustard family Brassicaceae. It is remarkable for containing multiple major vegetable and oilseed crops in a single genus. In India, <em>Brassica oleracea</em> provides cabbage and cauliflower, while <em>Brassica juncea</em> provides the mustard greens and mustard oil that are central to North Indian and Bengali cuisine.",
+      "species": [
+        {
+          "full_name": "Brassica oleracea",
+          "common_name": "Cabbage / Patta Gobhi — Cauliflower / Phool Gobhi",
+          "description": "<em>Brassica oleracea</em> encompasses an extraordinary array of cultivated forms including cabbage, cauliflower, broccoli, kohlrabi, and Brussels sprouts. In India, the most important are Patta Gobhi (cabbage) and Phool Gobhi (cauliflower). India is the world's second-largest cauliflower producer. Bihar, West Bengal, Odisha, and UP are major producing states. Pusa Snowball (cauliflower) and Golden Acre (cabbage) are classic Indian cultivars.",
+          "meta_title": "Brassica oleracea — Cabbage (Patta Gobhi) & Cauliflower (Phool Gobhi)",
+          "meta_description": "Botanical profile of Brassica oleracea (Cabbage/Patta Gobhi, Cauliflower/Phool Gobhi). India second-largest cauliflower producer; major producing states and cultivars.",
+          "meta_keywords": "Brassica oleracea, cabbage, Patta Gobhi, cauliflower, Phool Gobhi, Indian Brassica cultivation, Pusa Snowball",
+          "native_range": "European Atlantic coast",
+          "conservation_status": "LC",
+          "notes": "Patta Gobhi (cabbage), Phool Gobhi (cauliflower). India: second-largest cauliflower producer. Winter season crop in North India.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Brassica juncea",
+          "common_name": "Mustard Greens / Sarson / Rai",
+          "description": "<em>Brassica juncea</em>, Indian mustard, is both an oilseed crop (Rai/Sarson) and a leafy vegetable (Sarson ka Saag). Mustard oil is the dominant cooking oil in Bengal, Bihar, Assam, Rajasthan, and Punjab. The iconic dish Sarson ka Saag with Makke di Roti (corn bread) is a winter staple of Punjab and Haryana. India is a major global mustard oil producer.",
+          "meta_title": "Brassica juncea — Mustard Greens / Sarson / Rai",
+          "meta_description": "Botanical profile of Brassica juncea (Mustard/Sarson). Dual use — oilseed and Sarson ka Saag leafy vegetable; Punjab winter cuisine; Indian mustard oil.",
+          "meta_keywords": "Brassica juncea, mustard greens, Sarson, Rai, Sarson ka Saag, Indian mustard oil, Punjab mustard",
+          "native_range": "Central Asia (hybrid of B. rapa and B. nigra)",
+          "conservation_status": "LC",
+          "notes": "Sarson (Hindi). Oilseed (Rai/Sarson oil) and vegetable (Sarson ka Saag). Punjab's iconic winter dish.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Allium",
+      "common_name": "Onion / Garlic",
+      "description": "<em>Allium</em> is a genus of about 920 species in the family Amaryllidaceae, including onion, garlic, leek, and chives. Onion (Pyaaz) and garlic (Lahsun) are essential aromatics in virtually every regional Indian cuisine. India is the world's second-largest onion producer and a major garlic producer. Nashik (Maharashtra) is the onion capital of India.",
+      "species": [
+        {
+          "full_name": "Allium cepa",
+          "common_name": "Onion / Pyaaz",
+          "description": "<em>Allium cepa</em>, onion, is an essential ingredient in Indian cooking — the base of virtually every curry, masala, and gravy. India is the world's second-largest onion producer. Nashik (Maharashtra) is the principal onion trading hub. Major cultivars: Nashik Red (deep-red, pungent, excellent storage), Pusa Red (IARI Delhi). Onion exports are a politically sensitive commodity in India.",
+          "meta_title": "Allium cepa — Onion / Pyaaz",
+          "meta_description": "Botanical profile of Allium cepa (Onion/Pyaaz). India second-largest world producer; Nashik Maharashtra onion market; Nashik Red and Pusa Red cultivars.",
+          "meta_keywords": "Allium cepa, onion, Pyaaz, Nashik Red onion, Pusa Red, Indian onion production, Nashik onion market",
+          "native_range": "Central Asia (Iran to Pakistan)",
+          "conservation_status": "LC",
+          "notes": "Nashik (Maharashtra) is India's onion capital. Nashik Red — deep red, good storage. Onion prices are politically sensitive commodity.",
+          "cultivars": [
+            "Nashik Red",
+            "Pusa Red"
+          ]
+        },
+        {
+          "full_name": "Allium sativum",
+          "common_name": "Garlic / Lahsun",
+          "description": "<em>Allium sativum</em>, garlic, is a fundamental flavouring in almost all Indian regional cooking. India is the world's second-largest garlic producer. Madhya Pradesh, Rajasthan, and Uttar Pradesh are the leading states. Yamuna Safed (G-1) from NHRDF is one of the most widely grown improved cultivars, known for large cloves, high yield, and white skin.",
+          "meta_title": "Allium sativum — Garlic / Lahsun",
+          "meta_description": "Botanical profile of Allium sativum (Garlic/Lahsun). India second-largest producer; Yamuna Safed (G-1) from NHRDF; MP and Rajasthan major states.",
+          "meta_keywords": "Allium sativum, garlic, Lahsun, Yamuna Safed, Indian garlic cultivation, NHRDF garlic, Madhya Pradesh garlic",
+          "native_range": "Central Asia",
+          "conservation_status": "LC",
+          "notes": "Yamuna Safed (G-1) — NHRDF improved cultivar. India second-largest producer. MP, Rajasthan, UP dominant states.",
+          "cultivars": [
+            "Yamuna Safed"
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Spinacia",
+      "common_name": "Spinach / Palak",
+      "description": "<em>Spinacia</em> is a genus of three species in the family Amaranthaceae, native to central and western Asia. <em>Spinacia oleracea</em>, spinach, is cultivated across India as a winter leafy vegetable. Known as Palak in Hindi, it is a key ingredient in Palak Paneer, Palak Dal, and various saags. Rich in iron, folate, and vitamins A and K.",
+      "species": [
+        {
+          "full_name": "Spinacia oleracea",
+          "common_name": "Spinach / Palak",
+          "description": "<em>Spinacia oleracea</em> is a fast-growing cool-season annual grown for its broad, dark green leaves. In India it is a winter crop in the plains and a year-round crop in the hills. Palak Paneer (spinach with cottage cheese) is one of India's most globally recognised dishes. Quick growing (harvest in 30–40 days from sowing). Introduced to India from Persia.",
+          "meta_title": "Spinacia oleracea — Spinach / Palak",
+          "meta_description": "Botanical profile of Spinacia oleracea (Spinach/Palak). Cool-season winter leafy vegetable; Palak Paneer ingredient; 30–40 day crop.",
+          "meta_keywords": "Spinacia oleracea, spinach, Palak, Palak Paneer, Indian spinach, winter leafy vegetable India",
+          "native_range": "Central and western Asia (Persia/Iran)",
+          "conservation_status": "LC",
+          "notes": "Palak (Hindi). Cool-season crop. Introduced from Persia. Fast-maturing (30–40 days). Key Palak Paneer ingredient.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Trigonella",
+      "common_name": "Fenugreek / Methi",
+      "description": "<em>Trigonella</em> is a genus of about 97 species in the legume family Fabaceae. <em>Trigonella foenum-graecum</em>, fenugreek, is one of India's most important culinary herbs, used both as a fresh leafy vegetable (Methi) and as a dried spice (Methi dana/seeds). Kasuri Methi (sun-dried fenugreek leaves from Kasur, Punjab) is a prized condiment. Rajasthan is India's largest methi producer.",
+      "species": [
+        {
+          "full_name": "Trigonella foenum-graecum",
+          "common_name": "Fenugreek / Methi",
+          "description": "<em>Trigonella foenum-graecum</em> is a cool-season annual herb. In India, fresh Methi leaves are used in Methi Paratha, Methi Dal, Aloo Methi, and Methi Matar Malai. Dried Kasuri Methi (from Kasur/Punjab region) adds distinctive flavour to butter chicken, dal makhni, and paneer dishes. Seeds are ground into a slightly bitter spice used in sambhar powder, chaat masala, and pickles. Medicinally used to manage blood sugar.",
+          "meta_title": "Trigonella foenum-graecum — Fenugreek / Methi",
+          "meta_description": "Botanical profile of Trigonella foenum-graecum (Fenugreek/Methi). Fresh leaves, Kasuri Methi, and seeds; key Indian herb and spice; Rajasthan major producer.",
+          "meta_keywords": "Trigonella foenum-graecum, fenugreek, Methi, Kasuri Methi, Methi Paratha, Indian fenugreek cultivation",
+          "native_range": "Mediterranean, Middle East, Indian subcontinent",
+          "conservation_status": "LC",
+          "notes": "Methi (Hindi). Kasuri Methi (GI-tagged from Kasur/Punjab). Rajasthan: India's largest methi producer. Medicinally: blood sugar management.",
+          "cultivars": [
+            "Kasuri Methi"
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Coriandrum",
+      "common_name": "Coriander / Dhania / Kotthamalli",
+      "description": "<em>Coriandrum</em> is a monotypic genus containing only <em>Coriandrum sativum</em>. Coriander is indispensable in Indian cooking — fresh leaves (Hara Dhania/Kotthamalli) as garnish, ground seeds as the base of most Indian spice blends. India is the world's largest producer and consumer of coriander seeds. Rajasthan produces the majority of Indian coriander seed.",
+      "species": [
+        {
+          "full_name": "Coriandrum sativum",
+          "common_name": "Coriander / Dhania / Kotthamalli",
+          "description": "<em>Coriandrum sativum</em> is a delicate annual herb to 50 cm. Both fresh leaves and dried seeds are used extensively in Indian cuisine. Fresh leaves (Hara Dhania) garnish curries, chutneys, and chaats. Ground coriander (Dhania powder) is the backbone of most Indian spice blends (masalas). India accounts for approximately 80% of world coriander production. Rajasthan, Madhya Pradesh, and Andhra Pradesh are the leading seed-producing states.",
+          "meta_title": "Coriandrum sativum — Coriander / Dhania / Kotthamalli",
+          "meta_description": "Botanical profile of Coriandrum sativum (Coriander/Dhania). India world's largest producer; fresh leaves and seed spice; Rajasthan dominant state.",
+          "meta_keywords": "Coriandrum sativum, coriander, Dhania, Kotthamalli, Hara Dhania, Indian coriander production, Rajasthan coriander",
+          "native_range": "Mediterranean, Middle East",
+          "conservation_status": "LC",
+          "notes": "Dhania (Hindi), Kotthamalli (Tamil), Kothimeera (Telugu). India ~80% world production. Fresh leaves and dried seeds both widely used.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Daucus",
+      "common_name": "Carrot / Gajar",
+      "description": "<em>Daucus</em> is a genus of about 25 species in the family Apiaceae. <em>Daucus carota</em>, the carrot, is grown across India as a winter root vegetable. India is the fifth-largest carrot producer globally. The bright-red Indian carrot type (red gajar) is distinct from the orange European types — it is sweeter and used in the iconic Gajar ka Halwa, a traditional Indian winter dessert.",
+      "species": [
+        {
+          "full_name": "Daucus carota",
+          "common_name": "Carrot / Gajar",
+          "description": "<em>Daucus carota</em> subsp. <em>sativus</em> is a biennial grown as an annual root vegetable. India produces both the red Asian carrot (Gajar — Pusa Kesar being a signature red cultivar from IARI) and orange European types (Nantes, Kuroda). Gajar ka Halwa is a quintessential Indian winter sweet made from grated red carrots, milk, ghee, and sugar. Punjab and Haryana produce large quantities of red gajar.",
+          "meta_title": "Daucus carota — Carrot / Gajar",
+          "meta_description": "Botanical profile of Daucus carota (Carrot/Gajar). Indian red Gajar (Pusa Kesar) vs European orange types (Nantes); Gajar ka Halwa winter dessert.",
+          "meta_keywords": "Daucus carota, carrot, Gajar, Pusa Kesar carrot, Gajar ka Halwa, red carrot India, Indian winter vegetable",
+          "native_range": "Central Asia (Afghanistan origin of cultivated carrot)",
+          "conservation_status": "LC",
+          "notes": "Pusa Kesar — IARI red carrot for halwa. Nantes — orange type. Punjab and Haryana major red gajar producers.",
+          "cultivars": [
+            "Pusa Kesar",
+            "Nantes"
+          ]
+        }
+      ]
+    }
+  ]
+}

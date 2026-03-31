@@ -1,0 +1,298 @@
+{
+  "pack_id": "cashcrops",
+  "schema_version": "1.1",
+  "family": "Poaceae / Malvaceae / Asteraceae (mixed)",
+  "common_name": "Indian Cash & Field Crops",
+  "description": "Cash and field crops are the backbone of Indian agricultural production and the national economy. This pack covers the major cereal grains, millets, sugarcane, cotton, oilseeds, and tobacco that define Indian commercial agriculture — with Indian common names, regional varieties, and key cultivar details.",
+  "meta_title": "Indian Cash & Field Crops — Horticulture Taxonomy | PhytoCommerce",
+  "meta_description": "Botanical taxonomy of Indian cash and field crops — Rice, Bajra, Jowar, Ragi, Maize, Sugarcane, Cotton, Groundnut, Sunflower, Sesame and Tobacco with Indian cultivar names.",
+  "meta_keywords": "Indian cash crops taxonomy, rice cultivars India, Bajra Jowar Ragi millets, Sugarcane Ganna, Cotton Kapas India, Indian oilseeds",
+  "genera": [
+    {
+      "genus": "Oryza",
+      "common_name": "Rice / Chawal / Dhan",
+      "description": "<em>Oryza</em> is a genus of 23 species in the family Poaceae. <em>Oryza sativa</em>, the common rice, is the world's most important food crop and the staple grain for over half of India's population. India is the world's second-largest rice producer and the largest rice exporter. The Indo-Gangetic Plain, West Bengal, Tamil Nadu, Andhra Pradesh, and Odisha are the major rice bowls. India's Basmati rice (GI-tagged) is the world's most prized aromatic rice.",
+      "species": [
+        {
+          "full_name": "Oryza sativa",
+          "common_name": "Rice / Chawal / Dhan",
+          "description": "<em>Oryza sativa</em> is an annual grass grown in flooded paddies. India cultivates both Kharif (wet season, July–November) and Rabi (winter/dry season) rice. Basmati rice — Pusa Basmati 1121 (the dominant export variety) and Taraori Basmati from Haryana — commands premium global prices. Non-aromatic varieties include Sona Masoori (Andhra Pradesh/Telangana/Karnataka), Ponni (Tamil Nadu), IR-64 (high-yielding Green Revolution variety), Gobindobhog (aromatic, West Bengal), and Swarna/MTU-7029 (most widely grown variety in eastern India).",
+          "meta_title": "Oryza sativa — Rice / Chawal / Dhan",
+          "meta_description": "Botanical profile of Oryza sativa (Rice/Chawal). India world's largest rice exporter; GI-tagged Basmati (Pusa 1121, Taraori); Sona Masoori, Ponni, Swarna regional varieties.",
+          "meta_keywords": "Oryza sativa, rice, Chawal, Dhan, Basmati rice, Pusa Basmati 1121, Taraori Basmati, Sona Masoori, Ponni rice, Gobindobhog, Swarna rice India",
+          "native_range": "Southeast Asia (China/Yangtze River valley origin)",
+          "conservation_status": "LC",
+          "notes": "India world's largest rice exporter. Basmati GI-tagged (Haryana, UP, Punjab, Uttarakhand). Pusa Basmati 1121 dominant export cultivar. Swarna (MTU-7029) most widely grown non-Basmati variety.",
+          "cultivars": [
+            "Pusa Basmati 1121",
+            "Taraori Basmati",
+            "Sona Masoori",
+            "Ponni",
+            "IR-64",
+            "Gobindobhog",
+            "Swarna (MTU-7029)"
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Sorghum",
+      "common_name": "Jowar / Sorghum",
+      "description": "<em>Sorghum</em> is a genus of about 25 species of grasses, native to tropical Africa. <em>Sorghum bicolor</em>, jowar, is the fifth most important cereal globally and a vital food and fodder crop in semi-arid India. Jowar is the traditional staple grain of Maharashtra, Karnataka, and Andhra Pradesh, where bhakri (jowar flatbread) has been eaten for centuries. India is one of the world's leading sorghum producers.",
+      "species": [
+        {
+          "full_name": "Sorghum bicolor",
+          "common_name": "Jowar / Sorghum",
+          "description": "<em>Sorghum bicolor</em> is a tall C4 grass to 4 m, extremely drought-tolerant and heat-adapted. In India it is grown in both Kharif and Rabi seasons. Traditional jowar bhakri is a staple in Maharashtra, Karnataka, and Andhra Pradesh. Dual-purpose — grain and fodder. India has recently seen a Jowar revival as a gluten-free ancient grain. CSH-16 and CSH-17 are ICRISAT-developed commercial hybrids. Phule Yashoda is a Maharashtra state release.",
+          "meta_title": "Sorghum bicolor — Jowar / Sorghum",
+          "meta_description": "Botanical profile of Sorghum bicolor (Jowar/Sorghum). Drought-tolerant staple of Maharashtra and Karnataka; jowar bhakri; CSH-16, CSH-17 and Phule Yashoda cultivars.",
+          "meta_keywords": "Sorghum bicolor, jowar, sorghum, jowar bhakri, CSH-16, Phule Yashoda, Indian sorghum, dryland cereal India",
+          "native_range": "Tropical Africa",
+          "conservation_status": "LC",
+          "notes": "Jowar (Hindi/Marathi), Cholam (Tamil), Jonnalu (Telugu). C4 drought-tolerant. Bhakri staple in Maharashtra and Karnataka. Gluten-free revival crop.",
+          "cultivars": [
+            "CSH-16",
+            "CSH-17",
+            "Phule Yashoda"
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Cenchrus",
+      "common_name": "Pearl Millet / Bajra",
+      "description": "<em>Cenchrus</em> (formerly <em>Pennisetum</em>) is a genus of about 25 species of grasses native to warm and tropical regions. <em>Cenchrus americanus</em> (pearl millet/Bajra) is the most widely grown millet in India and one of the most drought- and heat-tolerant food crops in the world. Rajasthan is the largest Bajra-producing state in India. Bajra roti is a staple winter food in Rajasthan and Haryana.",
+      "species": [
+        {
+          "full_name": "Cenchrus americanus",
+          "common_name": "Pearl Millet / Bajra",
+          "description": "<em>Cenchrus americanus</em> (syn. <em>Pennisetum glaucum</em>), pearl millet, is India's most important millet. It grows on poor soils with minimal rainfall in Rajasthan, Maharashtra, Gujarat, and Haryana. Bajra roti with ghee and jaggery is a traditional winter meal in Rajasthan. Also used in bajra khichdi, bajra ladoo, and as poultry feed. HHB-67 was India's first hybrid bajra; HHB-197 and GHB-538 are improved hybrids.",
+          "meta_title": "Cenchrus americanus — Pearl Millet / Bajra",
+          "meta_description": "Botanical profile of Cenchrus americanus (Pearl Millet/Bajra). India's most important millet; Rajasthan staple; HHB-67, HHB-197, GHB-538 hybrid cultivars.",
+          "meta_keywords": "Cenchrus americanus, Pennisetum glaucum, pearl millet, Bajra, HHB-67, HHB-197, GHB-538, Rajasthan bajra, Indian millet",
+          "native_range": "West Africa (Sahel region)",
+          "conservation_status": "LC",
+          "notes": "Bajra (Hindi), Kambu (Tamil), Sajje (Kannada). India largest global Bajra producer. HHB-67 — India's first bajra hybrid. Rajasthan dominant producer.",
+          "cultivars": [
+            "HHB-67",
+            "HHB-197",
+            "GHB-538"
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Eleusine",
+      "common_name": "Finger Millet / Ragi / Nachni",
+      "description": "<em>Eleusine</em> is a genus of nine species of grasses native to Africa and Asia. <em>Eleusine coracana</em>, finger millet, is the most nutritionally dense of all millets — exceptionally high in calcium (344 mg/100g), iron, and dietary fibre. It is a staple grain of Karnataka (Ragi), Tamil Nadu, Maharashtra (Nachni), and Uttarakhand. Ragi mudde (finger millet balls with sambar) is Karnataka's iconic dish.",
+      "species": [
+        {
+          "full_name": "Eleusine coracana",
+          "common_name": "Finger Millet / Ragi / Nachni",
+          "description": "<em>Eleusine coracana</em> has multiple finger-like spikes at the top of the stem (hence 'finger millet'). It is gluten-free, highly nutritious, and forms the basis of Ragi mudde, Ragi dosa, Ragi malt, and Ragi roti. Karnataka and Tamil Nadu are the largest producers. The grain stores for decades without pest damage — a critical food security attribute. GPU-28 (IIMR) and VL Mandua-352 (VPKAS Almora) are leading improved cultivars.",
+          "meta_title": "Eleusine coracana — Finger Millet / Ragi / Nachni",
+          "meta_description": "Botanical profile of Eleusine coracana (Finger Millet/Ragi/Nachni). Highest calcium millet; Ragi mudde, Karnataka; GPU-28, VL Mandua-352 cultivars.",
+          "meta_keywords": "Eleusine coracana, finger millet, Ragi, Nachni, Mandua, Ragi mudde, GPU-28, VL Mandua-352, Indian millet nutrition",
+          "native_range": "East Africa (Ethiopian highlands origin); widely grown in South Asia",
+          "conservation_status": "LC",
+          "notes": "Ragi (Kannada/Tamil), Nachni (Marathi), Mandua (Hindi). Highest calcium of all millets (344 mg/100g). Karnataka: largest Indian producer. Grain stores for decades.",
+          "cultivars": [
+            "GPU-28",
+            "VL Mandua-352",
+            "MR-6"
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Setaria",
+      "common_name": "Foxtail Millet / Kangni / Thinai",
+      "description": "<em>Setaria</em> is a genus of about 125 species of grasses native to tropical and temperate regions. <em>Setaria italica</em>, foxtail millet, is one of the oldest cultivated millets — with evidence of cultivation in China dating to 6000 BCE. In India it is known as Kangni (Hindi), Thinai (Tamil), and Korralu (Telugu). It is a short-season crop (60–70 days), drought tolerant, and gaining renewed interest as a nutraceutical grain.",
+      "species": [
+        {
+          "full_name": "Setaria italica",
+          "common_name": "Foxtail Millet / Kangni / Thinai",
+          "description": "<em>Setaria italica</em> is a fast-growing annual grass with a characteristic bristly, fox-tail shaped panicle. In India it is grown in Andhra Pradesh, Telangana, Karnataka, Tamil Nadu, and Rajasthan. Used in khichdi, upma, porridge, and idli variants. Foxtail millet has a low glycaemic index, making it valuable for diabetic diets. It is a Millet Board of India-promoted 'smart food'.",
+          "meta_title": "Setaria italica — Foxtail Millet / Kangni / Thinai",
+          "meta_description": "Botanical profile of Setaria italica (Foxtail Millet/Kangni/Thinai). One of oldest cultivated millets; low GI; Millets Board of India promoted crop.",
+          "meta_keywords": "Setaria italica, foxtail millet, Kangni, Thinai, Korralu, Indian millet, low GI grain, smart food millet",
+          "native_range": "East Asia (China, origin); widely cultivated in South and East Asia",
+          "conservation_status": "LC",
+          "notes": "Kangni (Hindi), Thinai (Tamil), Korralu (Telugu), Navane (Kannada). Low GI. Short season 60–70 days. Smart Food/Millet Board promotion.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Zea",
+      "common_name": "Maize / Makka / Bhutta",
+      "description": "<em>Zea</em> is a genus of five species of grasses native to Central America. <em>Zea mays</em>, maize, is the world's most produced cereal crop and India's third most important cereal after rice and wheat. India is a major maize producer, with Karnataka, Madhya Pradesh, Maharashtra, Bihar, and Andhra Pradesh as leading states. Maize is used for food (makka roti, bhutta), poultry and livestock feed, starch, and increasingly for ethanol.",
+      "species": [
+        {
+          "full_name": "Zea mays",
+          "common_name": "Maize / Makka / Bhutta",
+          "description": "<em>Zea mays</em> is a tall annual grass to 3–4 m. In India, maize is consumed roasted on the cob (Bhutta), ground into flour for Makke di Roti (paired with Sarson ka Saag), and processed into starch, oil, and popcorn. Vivek-27 (world's earliest maturing maize variety, developed in Uttarakhand hills) is a landmark ICAR release. NK-6240 and Pro-368 are widely grown commercial hybrids. Sweet corn is gaining popularity in urban India.",
+          "meta_title": "Zea mays — Maize / Makka / Bhutta",
+          "meta_description": "Botanical profile of Zea mays (Maize/Makka). India third-largest cereal; Bhutta, Makke di Roti; Vivek-27 world's earliest maize; NK-6240, Pro-368 hybrids.",
+          "meta_keywords": "Zea mays, maize, Makka, Bhutta, Makke di Roti, Vivek-27, NK-6240, Indian maize production, sweet corn India",
+          "native_range": "Mexico (teosinte ancestor)",
+          "conservation_status": "LC",
+          "notes": "Makka/Bhutta (Hindi), Makkajonna (Telugu), Cholam (Tamil). Vivek-27 (VPKAS Almora) — world's earliest-maturing maize variety. India 3rd largest cereal crop.",
+          "cultivars": [
+            "Vivek-27",
+            "NK-6240",
+            "Pro-368 (Sweet Corn)"
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Saccharum",
+      "common_name": "Sugarcane / Ganna / Iku",
+      "description": "<em>Saccharum</em> is a genus of six to 37 species (depending on classification) of tall perennial grasses in the family Poaceae, native to tropical South and Southeast Asia. <em>Saccharum officinarum</em> is the primary cultivated sugarcane species, though modern commercial cultivars are complex hybrids of multiple <em>Saccharum</em> species. India is the world's second-largest sugar producer and the largest consumer. Uttar Pradesh and Maharashtra are the dominant producing states.",
+      "species": [
+        {
+          "full_name": "Saccharum officinarum",
+          "common_name": "Sugarcane / Ganna",
+          "description": "<em>Saccharum officinarum</em>, noble cane, and its modern commercial hybrids form the basis of India's massive sugar industry. Commercial cultivars are complex inter-specific hybrids. Sugarcane is processed into raw sugar, refined sugar, jaggery (Gur/Bellam), khandsari, and ethanol. Fresh cane juice is a popular street beverage. ICAR-SBI Coimbatore has released numerous landmark cultivars: Co-86032 (dominant in South India), CoC-671 (Tamil Nadu), Co-0238 (dominant in UP), and Co-0118.",
+          "meta_title": "Saccharum officinarum — Sugarcane / Ganna",
+          "meta_description": "Botanical profile of Saccharum officinarum (Sugarcane/Ganna). India second-largest sugar producer; Co-86032, Co-0238, CoC-671 cultivars; jaggery and ethanol production.",
+          "meta_keywords": "Saccharum officinarum, sugarcane, Ganna, Ikshu, Co-86032, CoC-671, Co-0238, Indian sugar industry, SBI Coimbatore",
+          "native_range": "New Guinea and South Asia (complex hybrid origin)",
+          "conservation_status": "LC",
+          "notes": "Ganna (Hindi), Ikshu (Sanskrit), Karumbu (Tamil). India 2nd largest global sugar producer. ICAR-SBI Coimbatore is the national sugarcane research centre. Co-0238 dominant in UP.",
+          "cultivars": [
+            "Co-86032",
+            "CoC-671",
+            "Co-0238",
+            "Co-0118"
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Gossypium",
+      "common_name": "Cotton / Kapas",
+      "description": "<em>Gossypium</em> is a genus of about 50 species of shrubs and small trees in the mallow family Malvaceae. Cotton is the world's most important natural textile fibre. India is the world's largest cotton producer by area and the second-largest producer by volume. The cotton fibre (lint) surrounds the seeds and is processed into yarn, fabric, and oil. India grows both upland cotton (<em>G. hirsutum</em>) and desi (native) cotton (<em>G. arboreum</em>). Maharashtra, Gujarat, Telangana, and Andhra Pradesh are the 'Cotton Belt' states.",
+      "species": [
+        {
+          "full_name": "Gossypium hirsutum",
+          "common_name": "Upland Cotton / Bt Cotton / Kapas",
+          "description": "<em>Gossypium hirsutum</em>, upland cotton, accounts for over 90% of world cotton production. In India, Bt Cotton (Bollgard-II — double stacked Bt genes Cry1Ac + Cry2Ab) was approved in 2002 and rapidly transformed Indian cotton farming, reducing bollworm damage and pesticide use. India became the world's largest cotton producer in 2014. However, Bt cotton controversies around second-generation pests (Pink Bollworm/Helicoverpa) and seed costs persist.",
+          "meta_title": "Gossypium hirsutum — Upland Cotton / Bt Cotton / Kapas",
+          "meta_description": "Botanical profile of Gossypium hirsutum (Cotton/Kapas). India world's largest cotton producer; Bt Cotton Bollgard-II; Gujarat and Maharashtra cotton belt.",
+          "meta_keywords": "Gossypium hirsutum, cotton, Kapas, Bt Cotton, Bollgard-II, Indian cotton production, Maharashtra cotton, Gujarat cotton",
+          "native_range": "Mesoamerica (Mexico)",
+          "conservation_status": "LC",
+          "notes": "Kapas (Hindi). Bollgard-II (Cry1Ac + Cry2Ab) dominant Bt technology in India. Pink Bollworm resistance emerging. India world's largest cotton producer by area.",
+          "cultivars": [
+            "Bt Cotton (Bollgard-II)"
+          ]
+        },
+        {
+          "full_name": "Gossypium arboreum",
+          "common_name": "Desi Cotton / Tree Cotton / Kapas",
+          "description": "<em>Gossypium arboreum</em>, desi or Asiatic cotton, is native to the Indian subcontinent and one of the four cultivated Gossypium species. Though displaced by upland cotton commercially, desi cotton is still grown in limited areas for speciality textiles (Kala Cotton of Kutch, Dongari) and organic farming systems. Kala Cotton from Kutch (Gujarat) is used in making authentic Kutchi textiles and is associated with traditional crafts.",
+          "meta_title": "Gossypium arboreum — Desi Cotton / Tree Cotton",
+          "meta_description": "Botanical profile of Gossypium arboreum (Desi Cotton). Native Indian cotton; Kala Cotton of Kutch for traditional textiles; organic farming use.",
+          "meta_keywords": "Gossypium arboreum, desi cotton, tree cotton, Kala Cotton Kutch, Indian native cotton, organic cotton India",
+          "native_range": "Indian subcontinent, East Africa",
+          "conservation_status": "LC",
+          "notes": "Kala Cotton (Kutch/Gujarat) — native desi cotton for handloom and organic farming. Short staple but hardy and low-input.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Arachis",
+      "common_name": "Groundnut / Moongfali / Peanut",
+      "description": "<em>Arachis</em> is a genus of about 80 species of annual and perennial plants in the Fabaceae, native to South America. <em>Arachis hypogaea</em>, groundnut or peanut, is India's most important oilseed crop and a major source of edible oil and protein. India is the world's second-largest groundnut producer. Gujarat leads Indian production, followed by Andhra Pradesh, Tamil Nadu, and Rajasthan. Groundnut oil, roasted groundnuts, chikki (peanut brittle), and peanut butter are major products.",
+      "species": [
+        {
+          "full_name": "Arachis hypogaea",
+          "common_name": "Groundnut / Moongfali / Peanut",
+          "description": "<em>Arachis hypogaea</em> is a unique annual legume that produces its pods underground (geocarpic). The plant flowers above ground but bends the fertilised ovary (peg) into the soil where the pod matures. India is the world's second-largest producer. Gujarat (Saurashtra) is the leading state. Major products: groundnut oil (Moongfali tel), roasted salted peanuts, chikki, and peanut butter. TAG-24 and GG-20 are leading Indian cultivars from Gujarat. Girnar-2 is a high-yielding NRCG release.",
+          "meta_title": "Arachis hypogaea — Groundnut / Moongfali / Peanut",
+          "meta_description": "Botanical profile of Arachis hypogaea (Groundnut/Moongfali). India second-largest producer; TAG-24, GG-20, Girnar-2 cultivars; Gujarat Saurashtra dominant region.",
+          "meta_keywords": "Arachis hypogaea, groundnut, peanut, Moongfali, TAG-24, GG-20, Girnar-2, Gujarat groundnut, Indian oilseed",
+          "native_range": "South America (Bolivia/Brazil origin)",
+          "conservation_status": "LC",
+          "notes": "Moongfali (Hindi), Verusenaga (Telugu), Kadalekai (Kannada). Geocarpic — pods form underground. India 2nd largest producer. Gujarat (Saurashtra) dominant state.",
+          "cultivars": [
+            "TAG-24",
+            "GG-20",
+            "Girnar-2"
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Helianthus",
+      "common_name": "Sunflower / Surajmukhi",
+      "description": "<em>Helianthus</em> is a genus of about 70 species of annual and perennial flowering plants native to North and Central America. <em>Helianthus annuus</em>, sunflower, is a major oilseed crop in India, cultivated primarily in Karnataka, Andhra Pradesh, Maharashtra, and Odisha. Sunflower oil is a premium light edible oil popular in South India. India is a major global sunflower producer.",
+      "species": [
+        {
+          "full_name": "Helianthus annuus",
+          "common_name": "Sunflower / Surajmukhi",
+          "description": "<em>Helianthus annuus</em> is a tall annual herb to 3 m with large flower heads that track the sun (heliotropism) in the seedling stage. In India it is grown as a Kharif and Rabi oilseed crop. Sunflower oil has high linoleic acid content and is valued as a light cooking oil. KBSH-1 and KBSH-44 are leading Indian hybrids from KARI Bidar (Karnataka); Morden is an older open-pollinated variety.",
+          "meta_title": "Helianthus annuus — Sunflower / Surajmukhi",
+          "meta_description": "Botanical profile of Helianthus annuus (Sunflower/Surajmukhi). Premium Indian oilseed; KBSH-1, KBSH-44 hybrids from Karnataka; South India cooking oil.",
+          "meta_keywords": "Helianthus annuus, sunflower, Surajmukhi, KBSH-1, KBSH-44, Morden sunflower, Indian sunflower oil, Karnataka sunflower",
+          "native_range": "North America (Mexico/southwest USA)",
+          "conservation_status": "LC",
+          "notes": "Surajmukhi (Hindi). KBSH-1 and KBSH-44 from KARI Bidar (Karnataka). Heliotropic in seedling stage. Light cooking oil.",
+          "cultivars": [
+            "KBSH-1",
+            "KBSH-44",
+            "Morden"
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Sesamum",
+      "common_name": "Sesame / Til / Gingelly",
+      "description": "<em>Sesamum</em> is a genus of about 37 species in the family Pedaliaceae, native to Africa and Asia. <em>Sesamum indicum</em>, sesame, is one of the oldest oilseed crops in the world, with a cultivation history of over 5,000 years in India. Known as Til in Hindi, Gingelly or Ellu in Tamil/Kannada. India is a major global sesame producer. Gujarat, Rajasthan, West Bengal, and Madhya Pradesh are leading states.",
+      "species": [
+        {
+          "full_name": "Sesamum indicum",
+          "common_name": "Sesame / Til / Gingelly / Ellu",
+          "description": "<em>Sesamum indicum</em>, sesame, is a drought-tolerant annual herb to 1.5 m. In India, white sesame seeds are used in til ladoo (Makar Sankranti sweet), til chikki, gingelly oil (for South Indian cooking and massage), tahini, and bread toppings. Black sesame (Krishna Til) is used in Ayurvedic preparations. Sesame oil (Gingelly oil) is the traditional cooking medium in Tamil Nadu and Andhra Pradesh. Rt-54, GT-10 (Gujarat), and Pragati (ICAR) are leading cultivars.",
+          "meta_title": "Sesamum indicum — Sesame / Til / Gingelly / Ellu",
+          "meta_description": "Botanical profile of Sesamum indicum (Sesame/Til/Gingelly). One of humanity's oldest oilseeds; til ladoo, Gingelly oil, South India cooking oil; Rt-54, GT-10 cultivars.",
+          "meta_keywords": "Sesamum indicum, sesame, Til, Gingelly, Ellu, til ladoo, Gingelly oil, Indian sesame production, Rt-54 GT-10",
+          "native_range": "African origin; cultivated for 5000+ years in India",
+          "conservation_status": "LC",
+          "notes": "Til (Hindi), Ellu (Tamil/Kannada), Nuvvulu (Telugu). Gingelly oil = traditional South Indian cooking and therapeutic oil. Rt-54, GT-10 (Gujarat), Pragati (ICAR) leading cultivars.",
+          "cultivars": [
+            "Rt-54",
+            "GT-10",
+            "Pragati"
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Nicotiana",
+      "common_name": "Tobacco / Tambaaku",
+      "description": "<em>Nicotiana</em> is a genus of about 75 species in the nightshade family Solanaceae, native to the Americas and Australasia. <em>Nicotiana tabacum</em>, tobacco, is the commercially cultivated species. India is the world's third-largest tobacco producer and second-largest exporter. Andhra Pradesh (primarily Guntur district) accounts for the vast majority of Indian tobacco production. Major types grown in India: Flue-cured Virginia (FCV), Bidi tobacco, Hookah tobacco, and Chewing tobacco.",
+      "species": [
+        {
+          "full_name": "Nicotiana tabacum",
+          "common_name": "Tobacco / Tambaaku",
+          "description": "<em>Nicotiana tabacum</em>, tobacco, is a tall annual herb to 2 m grown for its leaves, which are processed into cigarettes, bidis, hookah tobacco, chewing tobacco (gutkha, zarda), and snuff. Guntur District (Andhra Pradesh) is India's tobacco capital, producing 75% of the country's FCV tobacco. India is world's third-largest producer. Flue-cured variety GT-7 is a landmark Gujarat cultivar; Mysore Local is the classic Bidi tobacco variety from Karnataka.",
+          "meta_title": "Nicotiana tabacum — Tobacco / Tambaaku",
+          "meta_description": "Botanical profile of Nicotiana tabacum (Tobacco/Tambaaku). India third-largest producer; Guntur AP FCV hub; GT-7 flue-cured, Mysore Local bidi tobacco cultivars.",
+          "meta_keywords": "Nicotiana tabacum, tobacco, Tambaaku, Guntur tobacco, FCV tobacco India, Bidi tobacco, Mysore Local tobacco, GT-7 tobacco",
+          "native_range": "South America; cultivated pan-tropically",
+          "conservation_status": "LC",
+          "notes": "Tambaaku (Hindi). Guntur (AP) — India's tobacco capital, 75% FCV production. GT-7 — Gujarat flue-cured. Mysore Local — Karnataka bidi tobacco. India 3rd largest global producer.",
+          "cultivars": [
+            "GT-7 (Flue-cured)",
+            "Mysore Local (Bidi)"
+          ]
+        }
+      ]
+    }
+  ]
+}

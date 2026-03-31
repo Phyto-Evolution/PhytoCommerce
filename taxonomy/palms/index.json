@@ -1,0 +1,8 @@
+{
+  "pack_id": "palms", "schema_version": "1.1",
+  "description": "Palm family packs — economic and ornamental Arecaceae with Indian common names",
+  "packs": [
+    { "id": "arecaceae_economic", "file": "palms/arecaceae_economic.json", "name": "Economic Palms" },
+    { "id": "arecaceae_ornamental", "file": "palms/arecaceae_ornamental.json", "name": "Ornamental Palms" }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "pack_id": "pulses",
+  "schema_version": "1.1",
+  "family": "Fabaceae",
+  "common_name": "Indian Pulses & Dal Crops",
+  "description": "Pulses (dal crops) are the dried edible seeds of leguminous plants and form the protein backbone of the Indian vegetarian diet. India is both the world's largest producer and consumer of pulses. This pack covers the major genera — from Vigna and Cajanus to Cicer and Lens — with Indian market names, regional common names, and key cultivars.",
+  "meta_title": "Indian Pulses & Dal Crops — Horticulture Taxonomy | PhytoCommerce",
+  "meta_description": "Botanical taxonomy of Indian pulses — Moong Dal, Urad Dal, Toor Dal, Chana Dal, Masoor, Rajma, Kulthi and more with regional Indian names, cultivars and production data.",
+  "meta_keywords": "Indian pulses taxonomy, dal crops India, Moong Dal, Urad Dal, Toor Dal, Chana Dal, Masoor Dal, Rajma botany",
+  "genera": [
+    {
+      "genus": "Vigna",
+      "common_name": "Vigna Pulses — Moong / Urad / Cowpea / Moth",
+      "description": "<em>Vigna</em> is a large genus of legumes in the family Fabaceae, native to tropical Africa and Asia, with approximately 100 species. In India, four <em>Vigna</em> species are economically critical pulse crops: mung bean (Moong Dal), black gram (Urad Dal), cowpea (Lobia), and moth bean (Matki). All are nitrogen-fixing crops that improve soil fertility.",
+      "species": [
+        {
+          "full_name": "Vigna radiata",
+          "common_name": "Mung Bean / Moong Dal",
+          "description": "<em>Vigna radiata</em>, mung bean, is one of India's most versatile legumes — consumed as whole green (Sabut Moong), split with husk (Chilka Moong), and split dehusked (Yellow Moong Dal). It is quick-cooking, easily digestible, and used in dal, khichdi, sprouts, and the festive dish Panchmel Dal. India is the world's largest mung bean producer. Rajasthan, Maharashtra, and Andhra Pradesh are major producers.",
+          "meta_title": "Vigna radiata — Mung Bean / Moong Dal",
+          "meta_description": "Botanical profile of Vigna radiata (Mung Bean/Moong Dal). India world's largest producer; Sabut Moong, Chilka Moong, Yellow Moong Dal; Pusa Baishakhi cultivar.",
+          "meta_keywords": "Vigna radiata, mung bean, Moong Dal, Sabut Moong, Yellow Moong Dal, Indian pulse production, Pusa Baishakhi",
+          "native_range": "Indian subcontinent",
+          "conservation_status": "LC",
+          "notes": "India world's largest mung bean producer. Three commercial forms: Sabut (whole), Chilka (split with husk), Yellow Dal (dehusked). Quick cooking, easily digestible.",
+          "cultivars": [
+            "Pusa Baishakhi"
+          ]
+        },
+        {
+          "full_name": "Vigna mungo",
+          "common_name": "Black Gram / Urad Dal",
+          "description": "<em>Vigna mungo</em>, black gram, is a crucial ingredient in South Indian and North Indian cuisines. Urad Dal (split dehusked) is used in dal makhni, dal bukhara, idli, dosa, medu vada, and papad. Sabut Urad (whole black gram) makes dal makhni its characteristic black appearance. India is the world's largest producer. Andhra Pradesh, Madhya Pradesh, and Tamil Nadu are leading producers.",
+          "meta_title": "Vigna mungo — Black Gram / Urad Dal",
+          "meta_description": "Botanical profile of Vigna mungo (Black Gram/Urad Dal). Idli, dosa, dal makhni base; India world's largest producer; T-9 cultivar profile.",
+          "meta_keywords": "Vigna mungo, black gram, Urad Dal, dal makhni, idli dosa urad, Indian black gram, T-9 cultivar",
+          "native_range": "Indian subcontinent",
+          "conservation_status": "LC",
+          "notes": "Urad Dal (Hindi), Ulundu (Tamil), Minumulu (Telugu). Idli/dosa batter (fermented) requires urad. Dal makhni uses Sabut Urad (whole). T-9 is classic cultivar.",
+          "cultivars": [
+            "T-9"
+          ]
+        },
+        {
+          "full_name": "Vigna unguiculata",
+          "common_name": "Cowpea / Lobia / Chavli",
+          "description": "<em>Vigna unguiculata</em>, cowpea, is a drought-tolerant multipurpose legume grown across India for both grain (Lobia in Hindi, Chavli in Marathi) and green vegetable pods. It is especially important in the dry regions of Rajasthan, Gujarat, and Karnataka. Cowpea is used in curries, rice dishes (Lobia chawal), and as cattle fodder. It is among the most heat- and drought-tolerant food legumes.",
+          "meta_title": "Vigna unguiculata — Cowpea / Lobia / Chavli",
+          "meta_description": "Botanical profile of Vigna unguiculata (Cowpea/Lobia). Drought-tolerant pulse; Lobia chawal; fodder and grain use in arid India.",
+          "meta_keywords": "Vigna unguiculata, cowpea, Lobia, Chavli, Indian cowpea, drought tolerant pulse, Lobia chawal",
+          "native_range": "West Africa (origin); pan-tropical cultivation",
+          "conservation_status": "LC",
+          "notes": "Lobia (Hindi), Chavli (Marathi), Alasande (Kannada). Drought and heat tolerant. Grain and green pod uses. Nitrogen fixing.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vigna aconitifolia",
+          "common_name": "Moth Bean / Matki",
+          "description": "<em>Vigna aconitifolia</em>, moth bean, is among the most drought-tolerant pulses in the world and is a critical crop in the arid and semi-arid regions of Rajasthan, Gujarat, and Haryana. Known as Matki in Marathi (the Maharashtrian dish Misal Pav uses sprouted matki). The small, brown-yellowish seeds are nutritious and quick-sprouting. Rajasthan is the dominant Indian producer.",
+          "meta_title": "Vigna aconitifolia — Moth Bean / Matki",
+          "meta_description": "Botanical profile of Vigna aconitifolia (Moth Bean/Matki). Most drought-tolerant Indian pulse; Misal Pav base; Rajasthan dominant producer.",
+          "meta_keywords": "Vigna aconitifolia, moth bean, Matki, Misal Pav, Rajasthan pulse, drought tolerant legume India",
+          "native_range": "India (arid regions)",
+          "conservation_status": "LC",
+          "notes": "Matki (Marathi) — key Misal Pav ingredient. Most drought-tolerant Indian pulse. Rajasthan: dominant producer.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Cajanus",
+      "common_name": "Pigeon Pea / Toor Dal / Arhar",
+      "description": "<em>Cajanus</em> is a genus of about 32 species of woody herbs and shrubs in the family Fabaceae, with <em>Cajanus cajan</em> being the only cultivated food crop species. Pigeon pea, known as Toor Dal or Arhar Dal, is the second most important pulse crop in India after chickpea. It is the primary ingredient in dal tadka, sambar, rasam, and countless regional dals. India accounts for approximately 70% of world pigeon pea production.",
+      "species": [
+        {
+          "full_name": "Cajanus cajan",
+          "common_name": "Pigeon Pea / Toor Dal / Arhar",
+          "description": "<em>Cajanus cajan</em> is a perennial woody shrub grown as an annual crop, reaching 1–3 m. Pigeon pea is the dominant dal of West and South India. Dal tadka (tempered toor dal) is India's most consumed dal. Maharashtra, Karnataka, Madhya Pradesh, and Uttar Pradesh are major producers. Regional names: Toor (Hindi), Thuvaram Paruppu (Tamil), Kandi Pappu (Telugu), Togari Bele (Kannada). ICRISAT developed the hybrid ICPH-2671.",
+          "meta_title": "Cajanus cajan — Pigeon Pea / Toor Dal / Arhar",
+          "meta_description": "Botanical profile of Cajanus cajan (Pigeon Pea/Toor Dal). India 70% world production; dal tadka, sambar base; ICPH-2671 hybrid; regional Indian names.",
+          "meta_keywords": "Cajanus cajan, pigeon pea, Toor Dal, Arhar Dal, dal tadka, sambar base, Thuvaram Paruppu, Kandi Pappu, ICPH-2671",
+          "native_range": "Indian subcontinent (origin: India or East Africa)",
+          "conservation_status": "LC",
+          "notes": "Toor (Hindi), Thuvaram Paruppu (Tamil), Kandi Pappu (Telugu), Togari Bele (Kannada). India ~70% world production. ICPH-2671 is ICRISAT hybrid. Perennial, grown as annual.",
+          "cultivars": [
+            "ICPH-2671",
+            "Maruti"
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Cicer",
+      "common_name": "Chickpea / Chana",
+      "description": "<em>Cicer</em> is a genus of nine annual and six perennial species in the Fabaceae. <em>Cicer arietinum</em>, chickpea, is India's most important pulse crop by both area and production. India is the world's largest producer (accounting for ~65% of global output). Two main types: Desi (small, dark, angular) and Kabuli (large, cream-coloured, round). Used as Chana Dal, whole Kabuli Chana (chole), Kala Chana, besan (chickpea flour), and roasted chana.",
+      "species": [
+        {
+          "full_name": "Cicer arietinum",
+          "common_name": "Chickpea / Chana — Desi & Kabuli",
+          "description": "<em>Cicer arietinum</em> is India's most important pulse crop. Desi chickpea: small, dark, wrinkled, split into Chana Dal (ubiquitous in Indian cooking). Kabuli chickpea: large, cream-coloured — makes Punjabi Chole, Chole Bhature. Kala Chana (black chickpea) is a popular whole Desi type. Besan (chickpea flour) is essential for pakoras, kadhi, and mithai. Madhya Pradesh, Rajasthan, Maharashtra, and Uttar Pradesh are major producers.",
+          "meta_title": "Cicer arietinum — Chickpea / Chana (Desi & Kabuli)",
+          "meta_description": "Botanical profile of Cicer arietinum (Chickpea/Chana). India 65% world production; Desi Chana Dal, Kabuli Chole, Kala Chana, Besan; Pusa-256 and Pusa-1003 cultivars.",
+          "meta_keywords": "Cicer arietinum, chickpea, Chana Dal, Kabuli Chana, Kala Chana, Chole Bhature, Besan, India chickpea production, Pusa-256",
+          "native_range": "Turkey, Syria (Fertile Crescent origin)",
+          "conservation_status": "LC",
+          "notes": "Chana Dal (split Desi), Kabuli Chana (Chole), Kala Chana (dark whole), Besan (flour). India ~65% world production. Pusa-256 (Desi), Pusa-1003 (Kabuli).",
+          "cultivars": [
+            "Pusa-256 (Desi)",
+            "Pusa-1003 (Kabuli)"
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Lens",
+      "common_name": "Lentil / Masoor Dal",
+      "description": "<em>Lens</em> is a genus of four species of annual legumes, with <em>Lens culinaris</em> being the only cultivated species. Masoor Dal (red/pink split lentil) is one of the most widely consumed dals in India, prized for its quick cooking time (no soaking needed) and delicate flavour. India is a major lentil producer, with Madhya Pradesh and Uttar Pradesh as the leading states.",
+      "species": [
+        {
+          "full_name": "Lens culinaris",
+          "common_name": "Lentil / Masoor Dal",
+          "description": "<em>Lens culinaris</em>, lentil, is consumed in India as both Sabut Masoor (whole brown lentil) and Masoor Dal (split pink/orange lentil). Masoor Dal is one of the quickest-cooking pulses (20 minutes, no soaking) and is used in daily dals, soups, and khichdi. Rich in protein, iron, and folate. Madhya Pradesh and Uttar Pradesh lead Indian lentil production. Pusa Masoor-1 and Malika are IARI-released cultivars.",
+          "meta_title": "Lens culinaris — Lentil / Masoor Dal",
+          "meta_description": "Botanical profile of Lens culinaris (Lentil/Masoor Dal). Quick-cooking Indian dal; Sabut Masoor and split Masoor Dal; Pusa Masoor-1 and Malika cultivars.",
+          "meta_keywords": "Lens culinaris, lentil, Masoor Dal, Sabut Masoor, Pusa Masoor-1, Malika lentil, Indian lentil production",
+          "native_range": "Fertile Crescent (Near East origin)",
+          "conservation_status": "LC",
+          "notes": "Masoor Dal (Hindi) — split pink/orange form. Quickest cooking major Indian pulse. No soaking needed. Pusa Masoor-1, Malika are IARI releases.",
+          "cultivars": [
+            "Pusa Masoor-1",
+            "Malika"
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Phaseolus",
+      "common_name": "Kidney Bean / Rajma — French Bean",
+      "description": "<em>Phaseolus</em> is a genus of about 70 species of New World origin in the Fabaceae. <em>Phaseolus vulgaris</em> encompasses both the kidney bean (Rajma) used in the iconic North Indian curry Rajma Chawal, and French bean (Frasbi/French Beans) grown as a green vegetable. Rajma is most extensively grown in Jammu & Kashmir and Himachal Pradesh.",
+      "species": [
+        {
+          "full_name": "Phaseolus vulgaris",
+          "common_name": "Kidney Bean / Rajma — French Bean / Frasbi",
+          "description": "<em>Phaseolus vulgaris</em>, common bean, in India manifests primarily as Rajma (dried kidney beans) and Frasbi/French Bean (green snap bean). Rajma Chawal (kidney bean curry with rice) is the quintessential comfort food of Punjab, Himachal Pradesh, and Jammu & Kashmir. Jammu Rajma (small, dark red) and Chitra Rajma (speckled) are regionally prized varieties. French beans are a significant vegetable crop in Himachal Pradesh and Uttarakhand hills.",
+          "meta_title": "Phaseolus vulgaris — Kidney Bean / Rajma & French Bean / Frasbi",
+          "meta_description": "Botanical profile of Phaseolus vulgaris (Rajma/Kidney Bean, Frasbi/French Bean). Rajma Chawal, Jammu Rajma and Chitra Rajma; hill vegetable French bean.",
+          "meta_keywords": "Phaseolus vulgaris, kidney bean, Rajma, Rajma Chawal, Jammu Rajma, Chitra Rajma, French Bean, Frasbi India",
+          "native_range": "Central America, Mexico",
+          "conservation_status": "LC",
+          "notes": "Rajma (dried kidney bean) and Frasbi (French/snap bean) are the two Indian forms. Jammu Rajma GI-tagged. Himalayan hills dominant region.",
+          "cultivars": [
+            "Jammu Rajma",
+            "Chitra Rajma",
+            "French Bean (Frasbi)"
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Macrotyloma",
+      "common_name": "Horse Gram / Kulthi / Ulavalu",
+      "description": "<em>Macrotyloma</em> is a genus of about 25 species in the Fabaceae, native to Africa and Asia. <em>Macrotyloma uniflorum</em>, horse gram, is one of the hardiest legumes — requiring minimal water and growing on poor soils. It is a climate-resilient 'orphan crop' of great importance to rainfed subsistence farmers in South India, Jharkhand, Chhattisgarh, and the Deccan Plateau.",
+      "species": [
+        {
+          "full_name": "Macrotyloma uniflorum",
+          "common_name": "Horse Gram / Kulthi / Ulavalu",
+          "description": "<em>Macrotyloma uniflorum</em>, horse gram, is traditionally used as cattle fodder ('horse gram') but is also a nutritious human food crop. In South India it is a staple: Kollu Rasam (Tamil), Ulavacharu (Telugu horse gram stew), and sprouted horse gram salad. Rich in protein, calcium, and iron. Ayurvedic texts prescribe it for kidney stones and urinary disorders. Andhra Pradesh, Karnataka, and Tamil Nadu are major producers.",
+          "meta_title": "Macrotyloma uniflorum — Horse Gram / Kulthi / Ulavalu",
+          "meta_description": "Botanical profile of Macrotyloma uniflorum (Horse Gram/Kulthi). Climate-resilient rainfed pulse; Kollu Rasam, Ulavacharu South Indian dishes; kidney stone traditional remedy.",
+          "meta_keywords": "Macrotyloma uniflorum, horse gram, Kulthi, Ulavalu, Kollu, Ulavacharu, rainfed pulse India, South India horse gram",
+          "native_range": "Indian subcontinent",
+          "conservation_status": "LC",
+          "notes": "Kulthi (Hindi), Kollu (Tamil), Ulavalu (Telugu), Hurali (Kannada). Drought tolerant. Ayurvedic: kidney stone prevention. Climate-resilient crop.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Lablab",
+      "common_name": "Hyacinth Bean / Sem / Avarekalu",
+      "description": "<em>Lablab</em> is a monotypic genus containing only <em>Lablab purpureus</em>, hyacinth bean, native to Africa and widely cultivated across tropical Asia. In India it is used as both a pulse (dried seeds) and a green vegetable (pods). Known as Sem (Hindi), Avarekalu (Kannada), Mochai (Tamil), and Papdi (Marathi). The Avarekai festival in Bengaluru celebrates the winter harvest of this beloved Karnataka crop.",
+      "species": [
+        {
+          "full_name": "Lablab purpureus",
+          "common_name": "Hyacinth Bean / Sem / Avarekalu",
+          "description": "<em>Lablab purpureus</em> is a fast-growing twining vine with attractive purple or white flowers and flat pods containing colourful seeds. In Karnataka, Avarekalu (field beans) is such an important crop that Bangalore holds an Avarekai Mela (festival fair) each winter. The seeds are used in upma, pulao, and saaru (Karnataka thin soup). The dried seeds are mildly toxic if uncooked — soaking and boiling is required to remove cyanogenic glycosides.",
+          "meta_title": "Lablab purpureus — Hyacinth Bean / Sem / Avarekalu",
+          "meta_description": "Botanical profile of Lablab purpureus (Hyacinth Bean/Sem/Avarekalu). Bangalore's Avarekai Mela winter crop; Karnataka and Tamil Nadu pulse and vegetable.",
+          "meta_keywords": "Lablab purpureus, hyacinth bean, Sem, Avarekalu, Avarekai, Mochai, Papdi, Karnataka bean, Indian field bean",
+          "native_range": "Tropical Africa; cultivated pan-tropically",
+          "conservation_status": "LC",
+          "notes": "Sem (Hindi), Avarekalu (Kannada), Mochai (Tamil), Papdi (Marathi). Bangalore's Avarekai Mela celebrates winter harvest. Must be boiled before eating.",
+          "cultivars": []
+        }
+      ]
+    }
+  ]
+}

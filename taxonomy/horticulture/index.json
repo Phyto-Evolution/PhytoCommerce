@@ -1,0 +1,10 @@
+{
+  "pack_id": "horticulture", "schema_version": "1.1",
+  "description": "Horticultural crop packs with Indian common names",
+  "packs": [
+    { "id": "fruits", "file": "horticulture/fruits.json", "name": "Fruits" },
+    { "id": "vegetables", "file": "horticulture/vegetables.json", "name": "Vegetables" },
+    { "id": "pulses", "file": "horticulture/pulses.json", "name": "Pulses & Dal Crops" },
+    { "id": "cashcrops", "file": "horticulture/cashcrops.json", "name": "Cash & Field Crops" }
+  ]
+}

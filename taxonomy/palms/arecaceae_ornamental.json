@@ -1,0 +1,212 @@
+{
+  "pack_id": "arecaceae_ornamental",
+  "schema_version": "1.1",
+  "family": "Arecaceae",
+  "common_name": "Ornamental Palms",
+  "description": "Ornamental palms are cultivated primarily for their aesthetic value in gardens, avenues, indoor spaces, and landscape design. The Arecaceae family offers extraordinary diversity in form — from majestic royal palms lining boulevards to compact parlour palms for interior decoration. This pack covers genera widely grown as ornamentals in India and globally.",
+  "meta_title": "Ornamental Palms — Arecaceae | PhytoCommerce",
+  "meta_description": "Explore ornamental palms including Royal Palm, Fan Palm, Butterfly Palm, Bismarck Palm and more. Botanical data with Indian common names for landscapers and collectors.",
+  "meta_keywords": "ornamental palms India, Royal Palm, fan palm, Butterfly Palm, Bismarck Palm, Arecaceae ornamental",
+  "genera": [
+    {
+      "genus": "Livistona",
+      "common_name": "Fan Palm / Pankha Palm",
+      "description": "<em>Livistona</em> is a genus of approximately 36 species of fan palms native to Africa, the Middle East, South and Southeast Asia, and Australia. Known as Pankha Palm in India for their large, rounded, fan-shaped leaves. They are popular as avenue trees and garden specimens, tolerating a range of soils. Named after Patrick Murray, Baron of Livingstone.",
+      "species": [
+        {
+          "full_name": "Livistona chinensis",
+          "common_name": "Chinese Fan Palm / Pankha Palm",
+          "description": "<em>Livistona chinensis</em>, the Chinese fan palm, is one of the most widely cultivated ornamental palms in India. Its large, circular fan leaves with drooping tips create an elegant silhouette. It is drought-tolerant once established and adapts well to Indian tropical and subtropical climates. Commonly planted in parks, hotel gardens, and avenue plantings.",
+          "meta_title": "Livistona chinensis — Chinese Fan Palm",
+          "meta_description": "Botanical profile of Livistona chinensis (Chinese Fan Palm/Pankha Palm). Popular ornamental palm for Indian gardens and avenue planting.",
+          "meta_keywords": "Livistona chinensis, Chinese fan palm, Pankha Palm, Indian ornamental palm, fan palm India",
+          "native_range": "Southern China, Japan (Ryukyu Islands)",
+          "conservation_status": "LC",
+          "notes": "Widely cultivated ornamental. Tolerates light frost as a juvenile. Self-cleaning in maturity.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona rotundifolia",
+          "common_name": "Footstool Palm / Round-leaved Fan Palm",
+          "description": "<em>Livistona rotundifolia</em>, the footstool or round-leaved fan palm, produces nearly perfectly circular, deeply-divided fan leaves that are glossy and bright green. Native to Southeast Asia and widely planted in Indian tropical gardens. Prefers warm, humid conditions and grows faster than <em>L. chinensis</em> in tropical regions.",
+          "meta_title": "Livistona rotundifolia — Footstool Palm / Round Fan Palm",
+          "meta_description": "Botanical profile of Livistona rotundifolia (Footstool Palm). Glossy, circular fan leaves; tropical ornamental palm popular in South India.",
+          "meta_keywords": "Livistona rotundifolia, footstool palm, round fan palm, tropical ornamental palm India",
+          "native_range": "Malaysia, Philippines, Indonesia",
+          "conservation_status": "LC",
+          "notes": "Faster growing than L. chinensis in humid tropics. Attractive glossy foliage.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Roystonea",
+      "common_name": "Royal Palm / Shahi Taal",
+      "description": "<em>Roystonea</em> is a genus of 11 species of tall, stately palms native to the Caribbean, Central America, and southern Florida. Known as Shahi Taal (Royal Palm) in India, they are among the most majestic landscape palms, characterised by a smooth, grey-white concrete-like trunk with a prominent bright green crownshaft. Widely planted in Indian government buildings, resorts, and botanical gardens.",
+      "species": [
+        {
+          "full_name": "Roystonea regia",
+          "common_name": "Cuban Royal Palm / Shahi Taal",
+          "description": "<em>Roystonea regia</em>, the Cuban royal palm, is the most widely planted royal palm in India, reaching 20–30 m. The brilliant green crownshaft is unmistakable. National tree of Cuba. In India it lines the driveways of heritage buildings, Raj Bhavans, and upscale resorts. Tolerates waterlogging and coastal conditions. Grows rapidly in tropical Indian climates.",
+          "meta_title": "Roystonea regia — Cuban Royal Palm / Shahi Taal",
+          "meta_description": "Botanical profile of Roystonea regia (Cuban Royal Palm/Shahi Taal). Majestic avenue palm widely planted in Indian government and resort landscapes.",
+          "meta_keywords": "Roystonea regia, Cuban Royal Palm, Shahi Taal, avenue palm India, royal palm India",
+          "native_range": "Cuba, Florida (USA)",
+          "conservation_status": "LC",
+          "notes": "Most widely planted royal palm in India. Rapid growth in tropics. Tolerates waterlogging.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Roystonea oleracea",
+          "common_name": "Caribbean Royal Palm",
+          "description": "<em>Roystonea oleracea</em>, the Caribbean or cabbage royal palm, can exceed 40 m making it one of the tallest palms. Less common than <em>R. regia</em> in India but planted in botanical gardens and large estates. Distinguished by its slightly swollen trunk base and stiffer crown. The terminal bud (heart of palm) is edible — historically called 'palmito'.",
+          "meta_title": "Roystonea oleracea — Caribbean Royal Palm",
+          "meta_description": "Botanical profile of Roystonea oleracea (Caribbean Royal Palm). One of the tallest palms; grown in Indian botanical gardens and large estates.",
+          "meta_keywords": "Roystonea oleracea, Caribbean royal palm, tall ornamental palm India, botanical garden palm",
+          "native_range": "Caribbean, northern South America",
+          "conservation_status": "LC",
+          "notes": "Among the tallest palms globally. Heart of palm (palmito) is edible.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Washingtonia",
+      "common_name": "Washington Palm / Desert Fan Palm",
+      "description": "<em>Washingtonia</em> is a genus of two species of tall fan palms native to the desert Southwest USA and northwestern Mexico. Both species are among the most drought-tolerant palms in cultivation and are widely planted in hot, dry regions of India including Rajasthan, Gujarat, and the Deccan Plateau. Named after US President George Washington.",
+      "species": [
+        {
+          "full_name": "Washingtonia robusta",
+          "common_name": "Mexican Fan Palm / Mexican Washingtonia",
+          "description": "<em>Washingtonia robusta</em>, the Mexican fan palm, is a slender, fast-growing palm reaching 30 m with a narrow trunk. Fan-shaped leaves persist as dead fronds ('petticoat') unless trimmed. Extremely drought-tolerant. Widely planted along roadsides and in parks in arid and semi-arid India. One of the fastest-growing palms in dry conditions.",
+          "meta_title": "Washingtonia robusta — Mexican Fan Palm",
+          "meta_description": "Botanical profile of Washingtonia robusta (Mexican Fan Palm). Fast-growing drought-tolerant palm for arid Indian landscapes and avenue planting.",
+          "meta_keywords": "Washingtonia robusta, Mexican fan palm, drought tolerant palm India, desert palm, Rajasthan palm",
+          "native_range": "Baja California, Mexico",
+          "conservation_status": "LC",
+          "notes": "Very drought tolerant. Dead fronds persist as a 'petticoat'. Fast growing.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Washingtonia filifera",
+          "common_name": "California Fan Palm / Desert Fan Palm",
+          "description": "<em>Washingtonia filifera</em>, the California fan palm, is stout and slower-growing than <em>W. robusta</em>, with a thicker trunk and longer-lived persistent dead fronds. The only palm native to the western USA. Leaf margins have distinctive white filaments (threads). Less commonly planted in India but valued for its robust, more imposing form.",
+          "meta_title": "Washingtonia filifera — California Fan Palm / Desert Fan Palm",
+          "meta_description": "Botanical profile of Washingtonia filifera (California Fan Palm). Stout desert fan palm with distinctive leaf threads; cold and drought tolerant.",
+          "meta_keywords": "Washingtonia filifera, California fan palm, desert fan palm, cold-hardy ornamental palm",
+          "native_range": "Southern California (USA), Baja California (Mexico)",
+          "conservation_status": "LC",
+          "notes": "Slightly more cold-hardy than W. robusta. Thicker trunk, slower growth. White thread filaments on leaf margins.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Bismarckia",
+      "common_name": "Bismarck Palm / Silver Palm",
+      "description": "<em>Bismarckia</em> is a monotypic genus containing only <em>Bismarckia nobilis</em>, an imposing fan palm endemic to the open grasslands of Madagascar. It is one of the most spectacular ornamental palms, highly sought after by collectors and landscape designers for its massive silvery-blue fan leaves. Named after German Chancellor Otto von Bismarck.",
+      "species": [
+        {
+          "full_name": "Bismarckia nobilis",
+          "common_name": "Bismarck Palm / Silver Palm",
+          "description": "<em>Bismarckia nobilis</em> is a dioecious, massively crowned fan palm reaching 25 m. The silver-blue to silver-green form is the most popular ornamental, producing enormous fan leaves up to 3 m across with a waxy, glaucous silver-blue sheen. Highly drought-tolerant once established. Gaining popularity in premium Indian landscape projects for its bold architectural statement.",
+          "meta_title": "Bismarckia nobilis — Bismarck Palm / Silver Fan Palm",
+          "meta_description": "Botanical profile of Bismarckia nobilis (Bismarck Palm/Silver Palm). Spectacular silver-blue fan palm from Madagascar; bold architectural landscape specimen.",
+          "meta_keywords": "Bismarckia nobilis, Bismarck palm, silver palm, silver-blue fan palm, Madagascar palm, specimen palm India",
+          "native_range": "Madagascar",
+          "conservation_status": "LC",
+          "notes": "Silver-blue (glaucous) and green forms exist. Drought tolerant once established. Dioecious — needs male and female for seed.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Chamaedorea",
+      "common_name": "Parlour Palm / Bamboo Palm",
+      "description": "<em>Chamaedorea</em> is a large genus of approximately 107 species of small to medium palms native to tropical rainforests of Central and South America. They are the most widely sold indoor palms in India, valued for their tolerance of low light, modest size, and elegant appearance. The genus name means 'near the ground' in Greek, reflecting many species' preference for forest understorey conditions.",
+      "species": [
+        {
+          "full_name": "Chamaedorea elegans",
+          "common_name": "Parlour Palm / Neanthe Bella",
+          "description": "<em>Chamaedorea elegans</em>, the parlour palm, is the most popular houseplant palm in India and globally. Its compact size (rarely exceeding 2 m indoors), tolerance of low light and irregular watering, and graceful feathery fronds make it ideal for interiors. A staple of nurseries, interior designers, and office spaces across India. Sold in single-stem or multi-stem arrangements.",
+          "meta_title": "Chamaedorea elegans — Parlour Palm / Neanthe Bella",
+          "meta_description": "Botanical profile of Chamaedorea elegans (Parlour Palm). India's most popular indoor palm; low-light tolerant, compact and graceful.",
+          "meta_keywords": "Chamaedorea elegans, parlour palm, indoor palm India, Neanthe Bella, low light palm, houseplant palm",
+          "native_range": "Mexico, Guatemala",
+          "conservation_status": "LC",
+          "notes": "Best-selling indoor palm in India. Prefers indirect light. Keep soil moist; avoid overwatering.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Chamaedorea seifrizii",
+          "common_name": "Reed Palm / Bamboo Palm",
+          "description": "<em>Chamaedorea seifrizii</em>, the bamboo or reed palm, grows in clumping multi-stem clusters resembling bamboo canes, reaching 3–4 m. It is one of the best air-purifying indoor palms (noted in NASA Clean Air Study) and widely used in Indian offices, malls, and home interiors. More robust than <em>C. elegans</em> and tolerates slightly more light.",
+          "meta_title": "Chamaedorea seifrizii — Reed Palm / Bamboo Palm",
+          "meta_description": "Botanical profile of Chamaedorea seifrizii (Reed Palm/Bamboo Palm). Air-purifying indoor clumping palm popular in Indian offices and malls.",
+          "meta_keywords": "Chamaedorea seifrizii, reed palm, bamboo palm, air purifying palm India, indoor clumping palm",
+          "native_range": "Mexico, Belize, Honduras",
+          "conservation_status": "LC",
+          "notes": "Clumping habit. Air-purifying indoor palm. Slightly more light-tolerant than C. elegans.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Dypsis",
+      "common_name": "Butterfly Palm / Areca Palm",
+      "description": "<em>Dypsis</em> is a genus of approximately 140 species of palms endemic to Madagascar, with a few species in the Comoros Islands. <em>Dypsis lutescens</em> is the most widely cultivated palm in India, sold ubiquitously as 'Areca Palm' in nurseries (a trade name — it is not the true <em>Areca catechu</em>). The genus name comes from Greek meaning 'dripping', referring to the weeping frond tips.",
+      "species": [
+        {
+          "full_name": "Dypsis lutescens",
+          "common_name": "Butterfly Palm / Areca Palm / Sona Champa Palm",
+          "description": "<em>Dypsis lutescens</em>, the butterfly or golden cane palm, is the best-selling ornamental palm in India, widely known by its trade name 'Areca Palm'. It grows in dense, multi-stemmed clumps with arching golden-yellow canes and bright green pinnate fronds — the arching frond silhouette resembles butterfly wings in breeze. Known as Sona Champa Palm in some Indian markets. Top-rated for indoor and outdoor tropical landscaping and one of the top air-purifying plants.",
+          "meta_title": "Dypsis lutescens — Butterfly Palm / Areca Palm / Sona Champa Palm",
+          "meta_description": "Botanical profile of Dypsis lutescens (Butterfly Palm/Areca Palm). India's best-selling ornamental palm; golden canes, air-purifying, ideal for indoor and outdoor use.",
+          "meta_keywords": "Dypsis lutescens, Butterfly Palm, Areca Palm India, Sona Champa Palm, golden cane palm, indoor outdoor palm India",
+          "native_range": "Madagascar",
+          "conservation_status": "VU (in wild)",
+          "notes": "Sold in India universally as 'Areca Palm'. Not the same as Areca catechu (betel nut palm). Clumping; golden yellow canes. Excellent air purifier.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Ravenea",
+      "common_name": "Majesty Palm",
+      "description": "<em>Ravenea</em> is a genus of 16 species of palms endemic to Madagascar and the Comoros Islands. <em>Ravenea rivularis</em>, the majesty palm, is the most commercially important species — a large, graceful feather palm sold globally as a high-end indoor and landscape palm. The genus is named after French botanist J.M. Ravené.",
+      "species": [
+        {
+          "full_name": "Ravenea rivularis",
+          "common_name": "Majesty Palm",
+          "description": "<em>Ravenea rivularis</em>, the majesty palm, is a robust feather palm reaching 9 m indoors and up to 25 m in nature. It grows naturally along riverbanks in Madagascar. The graceful arching dark green fronds and stately form make it one of the premium indoor palms sold in India. It requires bright indirect light, consistent moisture, and high humidity — more demanding than Dypsis or Chamaedorea indoors.",
+          "meta_title": "Ravenea rivularis — Majesty Palm",
+          "meta_description": "Botanical profile of Ravenea rivularis (Majesty Palm). Premium indoor feather palm from Madagascar; graceful arching fronds for high-end Indian interiors.",
+          "meta_keywords": "Ravenea rivularis, majesty palm, premium indoor palm India, Madagascar palm, feather palm",
+          "native_range": "Madagascar (riparian zones)",
+          "conservation_status": "EN",
+          "notes": "Requires consistently moist soil and high humidity indoors. Bright indirect light. Fertilise regularly in growing season.",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Sabal",
+      "common_name": "Sabal Palm / Cabbage Palm",
+      "description": "<em>Sabal</em> is a genus of 16 species of fan palms native to North America, Central America, and the Caribbean. They are among the most cold-hardy palms in cultivation. <em>Sabal palmetto</em>, the cabbage palm, is the State tree of Florida and South Carolina and is occasionally planted in India as a landscape specimen where its cold and drought tolerance is an advantage.",
+      "species": [
+        {
+          "full_name": "Sabal palmetto",
+          "common_name": "Cabbage Palm / Sabal Palm",
+          "description": "<em>Sabal palmetto</em>, the cabbage or sabal palm, is a robust fan palm reaching 15–25 m with a shaggy brown trunk and large palmate fan leaves. The terminal bud is edible (hence 'cabbage palm'). One of the most cold-hardy large palms — surviving frosts to -10°C — making it suitable for planting in northern India. Its adaptability to a range of soils and coastal salt spray adds to its versatility.",
+          "meta_title": "Sabal palmetto — Cabbage Palm / Sabal Palm",
+          "meta_description": "Botanical profile of Sabal palmetto (Cabbage Palm). Cold-hardy fan palm; suitable for northern India landscapes; salt spray and drought tolerant.",
+          "meta_keywords": "Sabal palmetto, cabbage palm, cold-hardy palm India, Sabal palm, fan palm North America",
+          "native_range": "Southeastern USA, Cuba, Bahamas",
+          "conservation_status": "LC",
+          "notes": "Extremely cold-hardy (to -10°C). Salt-spray and drought tolerant. State tree of Florida and South Carolina.",
+          "cultivars": []
+        }
+      ]
+    }
+  ]
+}
