@@ -1,0 +1,42 @@
+/**
+ * Phyto Care Card — Frontend Styles
+ *
+ * Styles the "Download Care Guide (PDF)" button on the single product page.
+ * Uses forest-green (#1a3c2b) as the brand colour to match the PDF header.
+ *
+ * @package PhytoCareCard
+ */
+
+/* ---- Download button ---- */
+.phyto-cc-btn {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 10px 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+
+    /* Colours: forest-green text/border on cream background */
+    color: #1a3c2b !important;
+    background-color: #f8f5ee;
+    border: 2px solid #1a3c2b !important;
+    border-radius: 3px;
+
+    /* Smooth transition for hover */
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.phyto-cc-btn:hover,
+.phyto-cc-btn:focus {
+    /* Invert: filled forest green with white text */
+    background-color: #1a3c2b;
+    color: #ffffff !important;
+    text-decoration: none;
+    outline: none;
+}
+
+.phyto-cc-btn:focus-visible {
+    outline: 2px solid #7dab8a;
+    outline-offset: 3px;
+}
