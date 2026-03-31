@@ -2,7 +2,7 @@
 
 A PrestaShop 8 module suite for specialty plant e-commerce — designed around the operational needs of tissue-culture producers, nurseries, and rare plant retailers. Covers TC batch provenance, phytosanitary compliance, wholesale portals, recurring subscriptions, scientific taxonomy, customer grow journals, image protection, and more.
 
-> **Last updated:** 2026-03-31 (phyto_invoice_customizer · phyto_restock_alert · phyto_bundle_builder · phyto_loyalty · phyto-grex-registry · phyto-growth-stage · phyto-source-badge · phyto-seasonal-availability · phyto-care-card · phyto-tc-batch-tracker [WooCommerce])
+> **Last updated:** 2026-03-31 (phyto_invoice_customizer · phyto_restock_alert · phyto_bundle_builder · phyto_loyalty · phyto-grex-registry · phyto-growth-stage · phyto-source-badge · phyto-seasonal-availability · phyto-care-card · phyto-tc-batch-tracker · phyto-climate-zone [WooCommerce])
 > Session logs: [`docs/CHECKPOINT.md`](docs/CHECKPOINT.md) · [`docs/ACTIVITY_LOG.md`](docs/ACTIVITY_LOG.md)
 
 ---
@@ -710,7 +710,7 @@ docker cp modules/phyto_grex_registry ps-test:/var/www/html/modules/
 
 WooCommerce ports of the PhytoCommerce module suite. Same plant-specialised features, built for WordPress/WooCommerce stores.
 
-> **WooCommerce Plugins Built: 6**
+> **WooCommerce Plugins Built: 7**
 
 ### Plant Science
 
@@ -721,6 +721,7 @@ WooCommerce ports of the PhytoCommerce module suite. Same plant-specialised feat
 | [`phyto-seasonal-availability`](modules-woo/phyto-seasonal-availability/) | Block product purchases during off-season months and capture "notify me when in season" email subscribers — auto-notified when the product returns to its shipping window. | 1.0.0 |
 | [`phyto-care-card`](modules-woo/phyto-care-card/) | Generate downloadable PDF care guides per product — light, water, humidity, temperature, media, dormancy — served on-demand from the product page and optionally attached to order confirmation emails. | 1.0.0 |
 | [`phyto-tc-batch-tracker`](modules-woo/phyto-tc-batch-tracker/) | Link WooCommerce products to tissue-culture batch records — track batch code, donor clone, agar medium, deflask date, and lab operator; displays a "Batch Provenance" tab on the product page with colour-coded status badges. | 1.0.0 |
+| [`phyto-climate-zone`](modules-woo/phyto-climate-zone/) | Tag products with India climate-zone suitability (7 zones from coastal humid to temperate north) — suitability pill badges on shop listings and a dedicated "Climate Suitability" tab on single product pages. | 1.0.0 |
 
 ### Customer & Community
 

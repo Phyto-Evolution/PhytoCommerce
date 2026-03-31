@@ -1,0 +1,261 @@
+/**
+ * Phyto Climate Zone — Frontend Styles
+ *
+ * Archive badge strip + single product "Climate Suitability" tab.
+ * Each zone key maps to a distinct accent colour via a modifier class
+ * (e.g. .phyto-cz-pill--coastal) so zones are visually distinct without
+ * requiring inline styles.
+ *
+ * @package PhytoClimateZone
+ * @version 1.0.0
+ */
+
+/* =========================================================
+   Zone pill — base styles (shared by archive + tab)
+   ========================================================= */
+
+.phyto-cz-pill {
+	display: inline-flex;
+	align-items: center;
+	gap: 3px;
+	padding: 3px 9px;
+	border-radius: 20px;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.2px;
+	line-height: 1.4;
+	white-space: nowrap;
+	cursor: default;
+	transition: filter 0.15s ease;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.phyto-cz-pill:hover {
+	filter: brightness( 0.9 );
+}
+
+/* Per-zone colour overrides */
+.phyto-cz-pill--coastal {
+	background-color: rgba( 0, 119, 182, 0.12 );
+	border-color: #0077b6;
+	color: #0077b6;
+}
+
+.phyto-cz-pill--tropical_highland {
+	background-color: rgba( 76, 130, 69, 0.12 );
+	border-color: #4c8245;
+	color: #4c8245;
+}
+
+.phyto-cz-pill--tropical_plains {
+	background-color: rgba( 230, 126, 34, 0.12 );
+	border-color: #d4770d;
+	color: #d4770d;
+}
+
+.phyto-cz-pill--arid {
+	background-color: rgba( 192, 134, 74, 0.12 );
+	border-color: #a0622a;
+	color: #a0622a;
+}
+
+.phyto-cz-pill--temperate {
+	background-color: rgba( 56, 142, 60, 0.12 );
+	border-color: #388e3c;
+	color: #388e3c;
+}
+
+.phyto-cz-pill--subtropical {
+	background-color: rgba( 142, 68, 173, 0.12 );
+	border-color: #8e44ad;
+	color: #8e44ad;
+}
+
+.phyto-cz-pill--northeast {
+	background-color: rgba( 41, 128, 185, 0.12 );
+	border-color: #2980b9;
+	color: #2980b9;
+}
+
+/* =========================================================
+   Archive / shop loop badge strip
+   ========================================================= */
+
+.phyto-cz-badge-strip--archive {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	padding: 4px 0 2px;
+	line-height: 1;
+}
+
+.phyto-cz-badge-strip--archive .phyto-cz-pill {
+	font-size: 10px;
+	padding: 2px 7px;
+}
+
+/* =========================================================
+   Single product — Climate Suitability tab
+   ========================================================= */
+
+.phyto-cz-tab {
+	max-width: 720px;
+}
+
+.phyto-cz-tab__heading {
+	font-size: 18px;
+	font-weight: 700;
+	color: #1a3c2b;
+	margin: 0 0 16px;
+	padding: 0;
+}
+
+/* Zone list */
+.phyto-cz-tab__label {
+	font-size: 13px;
+	font-weight: 600;
+	color: #444;
+	margin: 0 0 10px;
+}
+
+.phyto-cz-tab__zone-list {
+	list-style: none;
+	margin: 0 0 20px;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.phyto-cz-tab__zone-item {
+	display: flex;
+	align-items: baseline;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.phyto-cz-tab__zone-pill {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 4px 12px;
+	border-radius: 20px;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.2px;
+	white-space: nowrap;
+	border-width: 1px;
+	border-style: solid;
+}
+
+/* Re-apply zone colours to the larger tab pill */
+.phyto-cz-tab__zone-pill.phyto-cz-pill--coastal {
+	background-color: rgba( 0, 119, 182, 0.12 );
+	border-color: #0077b6;
+	color: #0077b6;
+}
+
+.phyto-cz-tab__zone-pill.phyto-cz-pill--tropical_highland {
+	background-color: rgba( 76, 130, 69, 0.12 );
+	border-color: #4c8245;
+	color: #4c8245;
+}
+
+.phyto-cz-tab__zone-pill.phyto-cz-pill--tropical_plains {
+	background-color: rgba( 230, 126, 34, 0.12 );
+	border-color: #d4770d;
+	color: #d4770d;
+}
+
+.phyto-cz-tab__zone-pill.phyto-cz-pill--arid {
+	background-color: rgba( 192, 134, 74, 0.12 );
+	border-color: #a0622a;
+	color: #a0622a;
+}
+
+.phyto-cz-tab__zone-pill.phyto-cz-pill--temperate {
+	background-color: rgba( 56, 142, 60, 0.12 );
+	border-color: #388e3c;
+	color: #388e3c;
+}
+
+.phyto-cz-tab__zone-pill.phyto-cz-pill--subtropical {
+	background-color: rgba( 142, 68, 173, 0.12 );
+	border-color: #8e44ad;
+	color: #8e44ad;
+}
+
+.phyto-cz-tab__zone-pill.phyto-cz-pill--northeast {
+	background-color: rgba( 41, 128, 185, 0.12 );
+	border-color: #2980b9;
+	color: #2980b9;
+}
+
+.phyto-cz-tab__zone-regions {
+	font-size: 12px;
+	color: #666;
+}
+
+/* Meta table (temp range, placement, notes) */
+.phyto-cz-tab__meta {
+	border-top: 1px solid #e0e0e0;
+	padding-top: 16px;
+	margin: 0;
+}
+
+.phyto-cz-tab__meta-row {
+	display: flex;
+	gap: 12px;
+	padding: 8px 0;
+	border-bottom: 1px solid #f0f0f0;
+	align-items: baseline;
+}
+
+.phyto-cz-tab__meta-row:last-child {
+	border-bottom: none;
+}
+
+.phyto-cz-tab__meta-row dt {
+	font-weight: 600;
+	font-size: 13px;
+	color: #333;
+	min-width: 140px;
+	flex-shrink: 0;
+}
+
+.phyto-cz-tab__meta-row dd {
+	font-size: 13px;
+	color: #555;
+	margin: 0;
+}
+
+.phyto-cz-tab__meta-row--notes dd {
+	line-height: 1.6;
+}
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+
+@media ( max-width: 600px ) {
+
+	.phyto-cz-tab__zone-item {
+		flex-direction: column;
+		gap: 4px;
+	}
+
+	.phyto-cz-tab__meta-row {
+		flex-direction: column;
+		gap: 4px;
+	}
+
+	.phyto-cz-tab__meta-row dt {
+		min-width: unset;
+	}
+
+	.phyto-cz-badge-strip--archive .phyto-cz-pill {
+		font-size: 9px;
+		padding: 2px 6px;
+	}
+}
