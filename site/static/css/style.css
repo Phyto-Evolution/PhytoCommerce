@@ -1064,33 +1064,139 @@ footer {
 .dim { color: #484f58; }
 @keyframes blink { 0%,100% { opacity:1; } 50% { opacity:0; } }
 
-/* ── RESPONSIVE ──────────────────────────────────── */
-@media (max-width: 960px) {
-  .store-pitch { grid-template-columns: 1fr; gap: 1.75rem; }
-  .pricing-grid { grid-template-columns: 1fr; }
-  .what-is-grid { grid-template-columns: 1fr; }
-  .what-is-install { grid-template-columns: 1fr; }
-  .domain-cards-full { grid-template-columns: 1fr 1fr; }
-  .domain-card-full { border-bottom: 1px solid var(--cream-dark); }
-  .domain-card-full:nth-child(2n) { border-right: none; }
-  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
-  .footer-seg--brand { grid-column: 1 / -1; }
+/* ── HAMBURGER NAV ───────────────────────────────── */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  margin-left: auto;
+  flex-shrink: 0;
 }
+.nav-toggle span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--sage-light);
+  border-radius: 2px;
+  transition: transform .22s ease, opacity .15s ease;
+}
+.nav-toggle.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle.is-open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-toggle.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ── RESPONSIVE ──────────────────────────────────── */
+
+/* Tablet — 960px */
+@media (max-width: 960px) {
+  .store-pitch        { grid-template-columns: 1fr; gap: 1.75rem; }
+  .pricing-grid       { grid-template-columns: 1fr; }
+  .what-is-grid       { grid-template-columns: 1fr; }
+  .what-is-install    { grid-template-columns: 1fr 1fr; }
+  .domain-cards-full  { grid-template-columns: 1fr 1fr; }
+  .domain-card-full   { border-bottom: 1px solid var(--cream-dark); }
+  .domain-card-full:nth-child(2n) { border-right: none; }
+  .footer-grid        { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .footer-seg--brand  { grid-column: 1 / -1; }
+  .module-hero h1     { font-size: 1.4rem; }
+}
+
+/* Mobile — 640px */
 @media (max-width: 640px) {
-  .domain-cards-full { grid-template-columns: 1fr; }
-  .domain-card-full { border-right: none; }
-  .hosted-domains-intro { padding: 1.25rem 1.5rem; }
-  .domain-pricing-note { padding: 1rem 1.5rem; }
-  .hero { padding: 3rem 1.5rem 2.5rem; }
-  .hero-stats { gap: 1rem; }
-  .container { padding: 0 1.25rem; }
-  main { padding: 2rem 0; }
-  .module-content { padding: 1.25rem 1.5rem; }
-  nav { padding: 0 1.25rem; gap: 1rem; }
-  nav ul { gap: 1rem; }
-  .store-pitch { padding: 1.75rem 1.5rem; }
-  .store-pitch h2 { font-size: 1.25rem; }
-  .footer-grid { grid-template-columns: 1fr; gap: 1.75rem; }
-  .footer-seg--brand { grid-column: auto; }
-  .footer-inner { padding: 2rem 1.25rem 1.25rem; }
+  /* prevent horizontal scroll */
+  html, body { overflow-x: hidden; }
+
+  /* nav: show hamburger, hide links */
+  .nav-toggle { display: flex; }
+  nav { padding: 0 1.25rem; position: relative; }
+  nav ul.nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--forest);
+    flex-direction: column;
+    padding: .5rem 0 1rem;
+    gap: 0;
+    border-top: 1px solid rgba(255,255,255,.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,.35);
+    z-index: 200;
+    margin: 0;
+  }
+  nav ul.nav-menu.nav-open { display: flex; }
+  nav ul.nav-menu li { border-bottom: 1px solid rgba(255,255,255,.06); }
+  nav ul.nav-menu li:last-child { border-bottom: none; }
+  nav ul.nav-menu a {
+    display: block;
+    padding: .85rem 1.5rem;
+    font-size: .95rem;
+    color: var(--sage-light);
+  }
+  nav ul.nav-menu a:hover { color: var(--amber); background: rgba(255,255,255,.04); }
+
+  /* hero */
+  .hero             { padding: 2.5rem 1.25rem 2rem; }
+  .hero h1          { font-size: clamp(1.6rem, 8vw, 2.4rem); }
+  .hero p           { font-size: 1rem; }
+  .hero-stats       { gap: .75rem; }
+  .stat             { padding: .6rem 1rem; }
+  .stat-num         { font-size: 1.4rem; }
+
+  /* layout */
+  .container  { padding: 0 1rem; }
+  main        { padding: 1.75rem 0; }
+  .section-title { font-size: 1.2rem; }
+
+  /* what is */
+  .what-is-install  { grid-template-columns: 1fr; }
+  .what-is-lead     { font-size: .97rem !important; }
+  .wif-item         { padding: .7rem .85rem; }
+
+  /* module grids */
+  .module-grid      { grid-template-columns: 1fr; }
+  .category-grid    { grid-template-columns: 1fr; }
+
+  /* domain section */
+  .domain-cards-full    { grid-template-columns: 1fr; }
+  .domain-card-full     { border-right: none; }
+  .hosted-domains-intro { padding: 1.25rem 1.25rem; }
+  .domain-pricing-note  { padding: .9rem 1.25rem; line-height: 1.9; }
+
+  /* pricing */
+  .pricing-card { padding: 1.5rem 1.25rem; }
+  .pricing-card--hosted::before { display: none; }
+
+  /* terminal */
+  .terminal-body   { max-height: 220px; font-size: .77rem; }
+  .terminal-title  { display: none; }
+
+  /* module single page */
+  .module-hero             { padding: 1.75rem 0; }
+  .module-hero h1          { font-size: 1.2rem; }
+  .module-hero .desc       { font-size: .88rem; }
+  .module-meta             { gap: .5rem; }
+  .module-content          { padding: 1.1rem 1.25rem; }
+  .github-box              { flex-direction: column; align-items: flex-start; gap: .75rem; }
+
+  /* buttons — better touch targets */
+  .btn, .btn-forest, .btn-forest-outline, .btn-outline-dark {
+    min-height: 44px;
+    padding: .65rem 1.1rem;
+    font-size: .875rem;
+  }
+
+  /* footer */
+  .footer-grid        { grid-template-columns: 1fr; gap: 1.5rem; }
+  .footer-seg--brand  { grid-column: auto; }
+  .footer-inner       { padding: 1.75rem 1.25rem 1.25rem; }
+  .footer-bottom      { flex-direction: column; align-items: flex-start; gap: .5rem; }
+  .store-pitch        { padding: 1.5rem 1.25rem; }
+  .store-pitch h2     { font-size: 1.2rem; }
 }
