@@ -2,12 +2,14 @@
 <section class="hero">
   <div class="hero-inner">
     <h1>🌿 <em>Phyto</em>Commerce</h1>
-    <p>Purpose-built e-commerce tooling for plant businesses — tissue-culture labs, nurseries, and rare-plant retailers. The features generic platforms never ship.</p>
+    <p class="hero-by">by <strong>Phyto Evolution Private Limited</strong></p>
+    <p>Specialty e-commerce modules for plant businesses — every platform, every plant, every scale. The features generic platforms never ship.</p>
     <div style="display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1rem">
       <span class="badge-platform badge-ps8" style="font-size:.72rem">PrestaShop 8</span>
       <span class="badge-platform badge-woo" style="font-size:.72rem">WooCommerce</span>
       <span class="badge-platform badge-coming" style="font-size:.72rem">OpenCart — soon</span>
       <span class="badge-platform badge-coming" style="font-size:.72rem">BigCommerce — soon</span>
+      <span class="badge-platform badge-coming" style="font-size:.72rem">Magento OSS — soon</span>
     </div>
     <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem">
       <a class="btn btn-primary" href="{{ "modules/" | relURL }}">Browse All Modules</a>
@@ -16,7 +18,7 @@
     <div class="hero-stats">
       <div class="stat"><div class="stat-num">28</div><div class="stat-label">Modules Built</div></div>
       <div class="stat"><div class="stat-num">8</div><div class="stat-label">Categories</div></div>
-      <div class="stat"><div class="stat-num">2+</div><div class="stat-label">Platforms</div></div>
+      <div class="stat"><div class="stat-num">4+</div><div class="stat-label">Platforms</div></div>
       <div class="stat"><div class="stat-num">15</div><div class="stat-label">Taxonomy Packs</div></div>
     </div>
   </div>
@@ -25,23 +27,34 @@
 <main>
   <div class="container">
 
+    <!-- ── WHO BUILT THIS & WHY ───────────────────── -->
+    <div class="origin-story">
+      <div class="origin-story-avatar">🌱</div>
+      <div class="origin-story-text">
+        <h2 class="origin-story-heading">Who built this — and why</h2>
+        <p>I'm K. Shivaramakrishnan — a tissue-culture lab owner, plant seller, collector, breeder, and cultivar enthusiast. When I tried to build a proper online store for my plant business, every platform I touched was built for selling electronics or apparel. None of them understood TC batch provenance, seasonal shipping windows, phytosanitary requirements, or why a buyer needs to know a plant's exact growth stage before committing.</p>
+        <p>I spent months bolting things together with spreadsheets, manual DMs, and workarounds. Eventually I decided to build the tooling I wished existed — modules that make an e-commerce platform actually speak <em>plant</em>. PhytoCommerce is that tooling, open-sourced so no other plant business owner has to go through the same frustration.</p>
+        <p class="origin-story-sig">— K. Shivaramakrishnan · <a href="https://www.linkedin.com/in/kshivaramakrishnan/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://carnivorousplants.in" target="_blank" rel="noopener">Forest Studio Labs</a></p>
+      </div>
+    </div>
+
     <!-- ── WHAT IS PHYTOCOMMERCE ──────────────────── -->
     <h2 class="section-title">What Is PhytoCommerce?</h2>
     <div class="what-is-grid">
       <div class="what-is-story">
-        <p class="what-is-lead">Generic e-commerce platforms were built to sell shoes and electronics. <strong>Plant businesses are different.</strong> You track TC batch provenance. You manage seasonal availability and live arrival windows. You deal with phytosanitary certificates, KYC checks for wholesale pricing, and customers who need to know exactly what growth stage their Nepenthes is at before they commit.</p>
-        <p>PhytoCommerce is a suite of modules — 28 and counting — that slots into the platforms your developers already know, and gives your plant store the specialist features it actually needs. No workarounds. No spreadsheets alongside your cart. Just a store that speaks plant.</p>
+        <p class="what-is-lead">Generic e-commerce platforms were built to sell shoes and electronics. <strong>Plant businesses are different.</strong> You track TC batch provenance. You manage seasonal availability and live arrival windows. You deal with phytosanitary certificates, KYC checks for wholesale pricing, and customers who need to know exactly what growth stage a plant is at before they commit.</p>
+        <p>PhytoCommerce is a suite of modules — 28 and counting — that slots into the platforms your developers already know, and gives your plant store the specialist features it actually needs. Any plant. Any scale. Any platform. No workarounds, no spreadsheets alongside your cart — just a store that speaks plant.</p>
         <blockquote class="what-is-quote">
-          "Built by plant people, for plant people — every module exists because a real nursery or TC lab needed it."
+          "We are specialty module developers — not tied to any single platform. We build the plant-commerce layer; you choose the foundation."
         </blockquote>
-        <p>The first implementations are live on <strong>PrestaShop 8</strong> and being ported to <strong>WooCommerce</strong>. OpenCart, BigCommerce, and a bespoke scratch-built stack are next in line — same feature set, idiomatic code for each platform.</p>
+        <p>Live on <strong>PrestaShop 8</strong> (28 modules, production-ready) and actively porting to <strong>WooCommerce</strong>. <strong>OpenCart</strong>, <strong>BigCommerce</strong>, and <strong>Magento Open Source</strong> are next — same feature set, idiomatic code per platform.</p>
       </div>
       <div class="what-is-features">
         <div class="wif-item">
           <span class="wif-icon">🧬</span>
           <div>
             <strong>TC Batch Tracking</strong>
-            <p>Link every product to its in-vitro batch record — medium formula, deflask date, operator, conservation status.</p>
+            <p>Link every product to its in-vitro batch record — medium formula, deflask date, operator, provenance.</p>
           </div>
         </div>
         <div class="wif-item">
@@ -68,15 +81,15 @@
         <div class="wif-item">
           <span class="wif-icon">🚀</span>
           <div>
-            <strong>One-click Pack Install</strong>
-            <p>Deploy all 28 modules in the correct dependency order with a single upload — production-ready in minutes.</p>
+            <strong>Platform Pack Installers</strong>
+            <p>One-click meta-installer per platform deploys all modules in the correct dependency order — live in minutes.</p>
           </div>
         </div>
         <div class="wif-item">
           <span class="wif-icon">🔓</span>
           <div>
             <strong>Fully Open Source</strong>
-            <p>Every line of code lives on GitHub. No lock-in, no phone-home, no vendor surprise. Fork it, extend it, own it.</p>
+            <p>Every line of code on GitHub. No lock-in, no phone-home, no vendor surprise. Fork it, extend it, own it.</p>
           </div>
         </div>
       </div>
@@ -84,15 +97,15 @@
     <div class="what-is-install">
       <div class="install-box">
         <div class="install-platform">🛒 PrestaShop 8</div>
-        <p>Upload <a href="{{ "modules/phytocommerce-pack/" | relURL }}"><code>phytocommerce_pack</code></a> → click <strong>Install</strong>. All modules deploy in dependency order. Or drop any individual module into <code>/modules/</code>.</p>
+        <p>Install modules individually — drop into <code>/modules/</code> and activate. The <strong>Pack Installer</strong> is available to hosted customers only and deploys everything in one shot.</p>
       </div>
       <div class="install-box">
         <div class="install-platform">🟣 WooCommerce</div>
-        <p>Upload the plugin ZIP via <strong>Plugins → Add New → Upload</strong>, or copy the folder to <code>wp-content/plugins/</code> and activate.</p>
+        <p>Upload any plugin ZIP via <strong>Plugins → Add New → Upload</strong>, or copy the folder to <code>wp-content/plugins/</code> and activate. Individual modules only.</p>
       </div>
       <div class="install-box">
         <div class="install-platform">📂 Source Code</div>
-        <p>All modules at <a href="{{ .Site.Params.repoBase }}" target="_blank" rel="noopener">GitHub ↗</a>. Each directory has its own <code>README.md</code>, SQL scripts, and frontend assets.</p>
+        <p>All modules at <a href="{{ .Site.Params.repoBase }}" target="_blank" rel="noopener">GitHub ↗</a>. Each directory has its own <code>README.md</code>, install scripts, and frontend assets.</p>
       </div>
     </div>
 
@@ -102,13 +115,13 @@
       <a class="category-card" href="{{ "modules/" | relURL }}#pack">
         <div class="cat-count">1 module</div>
         <h3>📦 Pack Installer</h3>
-        <p>1-click meta-installer that deploys all PhytoCommerce modules in the correct order.</p>
+        <p>Hosted-only one-click installer — deploys all modules in correct dependency order. Per-platform editions: PS8, WooCommerce, and more.</p>
       </a>
 
       <a class="category-card" href="{{ "modules/" | relURL }}#foundation">
         <div class="cat-count">5 modules</div>
         <h3>🏗 Foundation</h3>
-        <p>Branding, footer, quick product entry, ERPNext sync, and automated SEO.</p>
+        <p>Branding, storefront rebranding, quick product entry, ERPNext sync, and automated SEO — the base layer every plant store needs.</p>
       </a>
 
       <a class="category-card" href="{{ "modules/" | relURL }}#plant-science">
@@ -158,46 +171,37 @@
         <h3 class="pricing-name">Host with Us</h3>
         <div class="pricing-price">
           <span class="price-amount">₹300</span><span class="price-period">/month</span>
-          <span class="price-alt">· ₹400/mo with your own domain</span>
+          <span class="price-alt">for your subdomain · ₹400/mo on your own domain</span>
         </div>
-        <p class="pricing-tagline">We deploy, manage, and tune a complete PhytoCommerce store for your plant business. Every module, pre-installed.</p>
+        <p class="pricing-tagline">We run the full stack — server, platform, modules, updates. You focus on your plants and your customers.</p>
         <ul class="pricing-perks">
           <li>✓ All modules pre-installed &amp; configured</li>
-          <li>✓ Choose your subdomain:<br>
-            <span class="domain-list">
-              <code>you.carnivorousplants.in</code>
-              <code>you.phytolabs.in</code>
-              <code>you.tcplants.in</code>
-              <code>you.onlinegarden.in</code>
-            </span>
-          </li>
+          <li>✓ <strong>No platform restrictions</strong> — full admin freedom, no feature limits</li>
+          <li>✓ Full business analytics dashboard included</li>
+          <li>✓ Choose your subdomain on any of our plant domains</li>
           <li>✓ Or bring your own domain — <strong>₹400/month</strong></li>
-          <li>✓ Catalogue setup for your species &amp; taxonomy</li>
-          <li>✓ Phytosanitary &amp; wholesale flows ready on day one</li>
+          <li>✓ One-click Pack Installer — hosted customers only</li>
           <li>✓ <strong>All current &amp; future modules included</strong></li>
+          <li>✓ Catalogue &amp; taxonomy setup for your plants</li>
         </ul>
         <div class="pricing-cta">
           <a class="btn btn-primary" href="mailto:aphytoevolution@gmail.com">Get Started →</a>
-          <a class="btn btn-outline-dark" href="https://www.instagram.com/foreststudiolabs/" target="_blank" rel="noopener">
-            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            Forest Studio Labs
-          </a>
+          <a class="btn btn-outline-dark" href="https://wa.me/917810011581?text=Hi%20there%2C%20I%27m%20at%20the%20PhytoCommerce%20site" target="_blank" rel="noopener">WhatsApp Us</a>
         </div>
       </div>
 
       <div class="pricing-card pricing-card--self">
         <div class="pricing-eyebrow">Self-Hosted / Open Source</div>
-        <h3 class="pricing-name">Use on Your Own Stack</h3>
+        <h3 class="pricing-name">Your Own Stack</h3>
         <div class="pricing-price pricing-price--dark">
           <span class="price-amount">Free</span>
           <span class="price-alt">· premium modules from ₹99</span>
         </div>
-        <p class="pricing-tagline">Source is fully open. Self-host on PrestaShop 8, WooCommerce, or any supported platform. Pay only for premium modules.</p>
+        <p class="pricing-tagline">Full source on GitHub. Install on any supported open-source platform — no lock-in, no phone-home.</p>
         <ul class="pricing-perks">
-          <li>✓ Full source on GitHub — no lock-in, no phone-home</li>
-          <li>✓ PrestaShop 8 &amp; WooCommerce — production ready</li>
-          <li>✓ OpenCart, BigCommerce — coming soon</li>
-          <li>✓ Install individually or via the Pack Installer</li>
+          <li>✓ Works on: <strong>PrestaShop 8</strong>, <strong>WooCommerce</strong>, <strong>OpenCart</strong>, <strong>Magento Open Source</strong>, <strong>BigCommerce</strong> (porting in progress)</li>
+          <li>✓ Install modules individually — no pack installer required</li>
+          <li>✓ Full source code, fork and extend freely</li>
           <li>◎ Premium modules &amp; licence keys — from <strong>₹99 / module</strong></li>
           <li>◎ Priority support add-on available</li>
         </ul>
@@ -213,8 +217,8 @@
     <h2 class="section-title">Where Does Your Store Live?</h2>
     <div class="hosted-domains-section">
       <div class="hosted-domains-intro">
-        <p>🏪 When you host with us, we take care of the entire tech stack — server, software, updates, all modules — so you only think about your plants and your customers. Pick a web address from one of our plant-focused domains, or bring your own. <strong>Usually live within 24 hours.</strong></p>
-        <p>Think of it as a fully-stocked shop in a building we run. You bring the plants, we handle everything else.</p>
+        <p>🏪 When you host with us, we handle the full tech stack — server, software, updates, all modules. You pick an address from one of our plant-focused domains or bring your own. <strong>Usually live within 24 hours.</strong></p>
+        <p>Think of it as a fully stocked, fully staffed shop in a building we run. You bring the plants, we handle everything else.</p>
       </div>
       <div class="domain-cards-full">
 
@@ -226,7 +230,7 @@
               <div class="domain-card-full-tag">Carnivorous &amp; Specialty CP</div>
             </div>
           </div>
-          <p>Already a known destination for CP collectors in India. If you sell Nepenthes, Sarracenia, Heliamphora, Sundews, or other carnivores — your store lives under a domain people are already searching for.</p>
+          <p>A known destination for CP collectors in India. Ideal if you sell carnivorous plants or other rare specialty species — the domain works for you from day one.</p>
           <div class="domain-card-example">🔗 e.g. <code>your-nursery.carnivorousplants.in</code></div>
         </div>
 
@@ -250,7 +254,7 @@
               <div class="domain-card-full-tag">Tissue-Culture Labs</div>
             </div>
           </div>
-          <p>Purpose-built for labs that sell deflasked or in-vitro plants. The domain itself signals to buyers that your stock is lab-origin — provenance built into the address.</p>
+          <p>Purpose-built for labs that sell deflasked or in-vitro plants. The domain itself signals lab-origin provenance to buyers — trust built into the address.</p>
           <div class="domain-card-example">🔗 e.g. <code>your-lab.tcplants.in</code></div>
         </div>
 
@@ -262,16 +266,15 @@
               <div class="domain-card-full-tag">Retail Garden &amp; Home Plants</div>
             </div>
           </div>
-          <p>For everyday plant retail — succulents, flowering plants, kitchen herbs, landscaping species. Familiar and approachable for buyers who are not deep-hobbyists.</p>
+          <p>For everyday plant retail — succulents, flowering plants, kitchen herbs, landscaping species. Approachable for buyers who aren't deep hobbyists.</p>
           <div class="domain-card-example">🔗 e.g. <code>terracegreens.onlinegarden.in</code></div>
         </div>
 
       </div>
-
       <div class="domain-pricing-note">
-        <strong>₹300 / month</strong> — subdomain on any of the above, every module included, managed by us.<br>
-        <strong>₹400 / month</strong> — same deal on your own domain (e.g. <code>shop.yourbrand.com</code>).<br>
-        <a href="mailto:aphytoevolution@gmail.com">Mail us</a> or <a href="https://wa.me/917810011581?text=Hi%20there%2C%20I%27m%20at%20the%20PhytoCommerce%20site" target="_blank" rel="noopener">WhatsApp us</a> — usually live within 24 hours.
+        <strong>₹300 / month</strong> — your own subdomain like <code>yourbrand.carnivorousplants.in</code> (or any of our domains above), every module included, managed by us.<br>
+        <strong>₹400 / month</strong> — same deal on your own domain, e.g. <code>yourbrand.com</code>.<br>
+        <a href="mailto:aphytoevolution@gmail.com">Mail us</a> or <a href="https://wa.me/917810011581?text=Hi%20there%2C%20I%27m%20at%20the%20PhytoCommerce%20site" target="_blank" rel="noopener">WhatsApp us</a> — usually live within 24 hours to get your site rolling.
       </div>
     </div>
 
@@ -295,4 +298,5 @@
   </div>
 </main>
 <script src="{{ "js/build-log.js" | relURL }}" defer></script>
+<script src="{{ "js/visitor-log.js" | relURL }}" defer></script>
 {{ end }}

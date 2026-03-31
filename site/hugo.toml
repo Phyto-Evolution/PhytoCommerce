@@ -7,3 +7,5 @@ pluralizeListTitles = false
   description = 'E-commerce tooling built for plant businesses — tissue-culture labs, nurseries, and rare-plant retailers. Runs on PrestaShop 8, WooCommerce, and more platforms coming.'
   repoBase = 'https://github.com/Phyto-Evolution/PhytoCommerce'
   repoModules = 'https://github.com/Phyto-Evolution/PhytoCommerce/tree/main/modules'
+  # logWebhook = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec'  # uncomment + add your Apps Script URL
+  # gaID = 'G-XXXXXXXXXX'  # uncomment + add your GA4 measurement ID

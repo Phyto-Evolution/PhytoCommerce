@@ -47,10 +47,10 @@
     BODY.innerHTML = '';
 
     /* --- commits block --- */
-    prompt('git log --oneline -10');
+    prompt('git log --oneline -20');
     commits.forEach(function (c) {
       const sha  = c.sha.slice(0, 7);
-      const msg  = esc(c.commit.message.split('\n')[0].slice(0, 72));
+      const msg  = esc(c.commit.message.split('\n')[0].slice(0, 80));
       const when = timeAgo(c.commit.committer.date);
       line(
         '<span class="term-sha">' + sha + '</span> ' +
@@ -87,8 +87,8 @@
 
   /* ── fetch ───────────────────────────────────────── */
   Promise.all([
-    fetch(API + '/commits?per_page=10').then(function (r) { return r.json(); }),
-    fetch(API + '/actions/runs?per_page=5').then(function (r) { return r.json(); }).catch(function () { return {}; })
+    fetch(API + '/commits?per_page=20').then(function (r) { return r.json(); }),
+    fetch(API + '/actions/runs?per_page=8').then(function (r) { return r.json(); }).catch(function () { return {}; })
   ])
   .then(function (results) {
     const commits = Array.isArray(results[0]) ? results[0] : [];

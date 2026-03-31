@@ -80,8 +80,15 @@ nav ul a:hover { color: var(--amber); }
   opacity: .4;
 }
 .hero-inner { position: relative; max-width: 760px; margin: 0 auto; }
-.hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; letter-spacing: -1px; margin-bottom: .75rem; }
+.hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; letter-spacing: -1px; margin-bottom: .3rem; }
 .hero h1 em { color: var(--sage); font-style: normal; }
+.hero-by {
+  font-size: .82rem;
+  color: rgba(184,212,191,.55);
+  margin-bottom: .9rem;
+  letter-spacing: .01em;
+}
+.hero-by strong { color: rgba(184,212,191,.8); font-weight: 600; }
 .hero p { font-size: 1.15rem; color: var(--sage-light); max-width: 560px; margin: 0 auto 2rem; }
 .hero-stats {
   display: flex;
@@ -688,6 +695,58 @@ footer {
 }
 .footer-bottom a { color: var(--sage); text-decoration: none; }
 .footer-bottom a:hover { color: var(--amber); }
+
+/* ── ORIGIN STORY SECTION ───────────────────────────── */
+.origin-story {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  background: var(--forest);
+  color: var(--white);
+  border-radius: 12px;
+  padding: 2.25rem 2.5rem;
+  margin-bottom: 3rem;
+}
+.origin-story-avatar {
+  font-size: 3rem;
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  background: rgba(125,171,138,.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.origin-story-heading {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--amber);
+  margin: 0 0 .9rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-size: .72rem;
+}
+.origin-story-text p {
+  font-size: .93rem;
+  color: var(--sage-light);
+  line-height: 1.75;
+  margin-bottom: .75rem;
+}
+.origin-story-text p:last-child { margin-bottom: 0; }
+.origin-story-text em { color: var(--white); font-style: italic; }
+.origin-story-sig {
+  font-size: .82rem !important;
+  color: rgba(184,212,191,.55) !important;
+  margin-top: 1rem !important;
+}
+.origin-story-sig a { color: var(--sage); text-decoration: underline; text-underline-offset: 2px; }
+.origin-story-sig a:hover { color: var(--amber); }
+@media (max-width: 640px) {
+  .origin-story { flex-direction: column; gap: 1.25rem; padding: 1.5rem 1.25rem; }
+  .origin-story-avatar { width: 48px; height: 48px; font-size: 2rem; }
+}
 
 /* ── WHAT IS PHYTOCOMMERCE SECTION ──────────────────── */
 .what-is-grid {
