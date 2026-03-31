@@ -149,22 +149,6 @@
 
     </div>
 
-    <!-- ── BUILD LOG TERMINAL ───────────────────── -->
-    <div class="build-terminal">
-      <div class="terminal-titlebar">
-        <div class="terminal-dots">
-          <span class="dot dot-red"></span>
-          <span class="dot dot-yellow"></span>
-          <span class="dot dot-green"></span>
-        </div>
-        <span class="terminal-title">phytocommerce@github — build log</span>
-        <span class="terminal-live" id="term-live">● live</span>
-      </div>
-      <div class="terminal-body" id="terminal-body">
-        <div class="term-line dim">Connecting to GitHub API…</div>
-      </div>
-    </div>
-
     <!-- ── HOSTING vs SELF-HOST PRICING ──────────── -->
     <h2 class="section-title">How to Get the Modules</h2>
     <div class="pricing-grid">
@@ -227,43 +211,84 @@
 
     <!-- ── HOSTED DOMAINS EXPLAINER ─────────────── -->
     <h2 class="section-title">Where Does Your Store Live?</h2>
-    <div class="module-content hosted-domains-box">
-      <p>When you host with us, we set up and run everything — server, software, all modules — so you only need to think about your plants and your customers. You pick a web address from one of our domains (or bring your own), and your store is ready within a day.</p>
-      <p>Think of it like renting a fully furnished shop in a building we own. You bring your stock, we handle the building, power, and security.</p>
+    <div class="hosted-domains-section">
+      <div class="hosted-domains-intro">
+        <p>🏪 When you host with us, we take care of the entire tech stack — server, software, updates, all modules — so you only think about your plants and your customers. Pick a web address from one of our plant-focused domains, or bring your own. <strong>Usually live within 24 hours.</strong></p>
+        <p>Think of it as a fully-stocked shop in a building we run. You bring the plants, we handle everything else.</p>
+      </div>
+      <div class="domain-cards-full">
 
-      <h3>Available hosted domains</h3>
-      <div class="domain-cards">
-
-        <div class="domain-card">
-          <div class="domain-card-name">*.carnivorousplants.in</div>
-          <div class="domain-card-desc">For carnivorous plant sellers — Nepenthes, Sarracenia, Heliamphora, Sundews. Already a known destination for CP collectors in India.</div>
-          <div class="domain-card-example">e.g. <code>your-nursery.carnivorousplants.in</code></div>
+        <div class="domain-card-full">
+          <div class="domain-card-full-header">
+            <span class="domain-card-full-emoji">🪤</span>
+            <div>
+              <div class="domain-card-name">*.carnivorousplants.in</div>
+              <div class="domain-card-full-tag">Carnivorous &amp; Specialty CP</div>
+            </div>
+          </div>
+          <p>Already a known destination for CP collectors in India. If you sell Nepenthes, Sarracenia, Heliamphora, Sundews, or other carnivores — your store lives under a domain people are already searching for.</p>
+          <div class="domain-card-example">🔗 e.g. <code>your-nursery.carnivorousplants.in</code></div>
         </div>
 
-        <div class="domain-card">
-          <div class="domain-card-name">*.phytolabs.in</div>
-          <div class="domain-card-desc">For any plant business — general nurseries, rare houseplants, botanical retailers. Clean, professional, and not species-specific.</div>
-          <div class="domain-card-example">e.g. <code>greenfolia.phytolabs.in</code></div>
+        <div class="domain-card-full">
+          <div class="domain-card-full-header">
+            <span class="domain-card-full-emoji">🌿</span>
+            <div>
+              <div class="domain-card-name">*.phytolabs.in</div>
+              <div class="domain-card-full-tag">General Plant Business</div>
+            </div>
+          </div>
+          <p>Clean and professional — works for any plant business. Rare houseplants, botanical retailers, general nurseries. Not species-specific, so it grows with your catalogue.</p>
+          <div class="domain-card-example">🔗 e.g. <code>greenfolia.phytolabs.in</code></div>
         </div>
 
-        <div class="domain-card">
-          <div class="domain-card-name">*.tcplants.in</div>
-          <div class="domain-card-desc">Built for tissue-culture labs that sell deflasked or in-vitro plants. Signals to buyers that your stock comes from a lab setting.</div>
-          <div class="domain-card-example">e.g. <code>your-lab.tcplants.in</code></div>
+        <div class="domain-card-full">
+          <div class="domain-card-full-header">
+            <span class="domain-card-full-emoji">🧬</span>
+            <div>
+              <div class="domain-card-name">*.tcplants.in</div>
+              <div class="domain-card-full-tag">Tissue-Culture Labs</div>
+            </div>
+          </div>
+          <p>Purpose-built for labs that sell deflasked or in-vitro plants. The domain itself signals to buyers that your stock is lab-origin — provenance built into the address.</p>
+          <div class="domain-card-example">🔗 e.g. <code>your-lab.tcplants.in</code></div>
         </div>
 
-        <div class="domain-card">
-          <div class="domain-card-name">*.onlinegarden.in</div>
-          <div class="domain-card-desc">For retail garden centres and plant shops aimed at everyday buyers — succulents, flowering plants, kitchen herbs, landscaping species.</div>
-          <div class="domain-card-example">e.g. <code>terracegreens.onlinegarden.in</code></div>
+        <div class="domain-card-full">
+          <div class="domain-card-full-header">
+            <span class="domain-card-full-emoji">🏡</span>
+            <div>
+              <div class="domain-card-name">*.onlinegarden.in</div>
+              <div class="domain-card-full-tag">Retail Garden &amp; Home Plants</div>
+            </div>
+          </div>
+          <p>For everyday plant retail — succulents, flowering plants, kitchen herbs, landscaping species. Familiar and approachable for buyers who are not deep-hobbyists.</p>
+          <div class="domain-card-example">🔗 e.g. <code>terracegreens.onlinegarden.in</code></div>
         </div>
 
       </div>
 
       <div class="domain-pricing-note">
-        <strong>₹300 / month</strong> — hosted subdomain on any of the above domains, all modules included.<br>
-        <strong>₹400 / month</strong> — same package on your own domain (e.g. <code>shop.yourbrand.com</code>).<br>
-        <a href="mailto:aphytoevolution@gmail.com">Drop us a mail</a> to get started — usually live within 24 hours.
+        <strong>₹300 / month</strong> — subdomain on any of the above, every module included, managed by us.<br>
+        <strong>₹400 / month</strong> — same deal on your own domain (e.g. <code>shop.yourbrand.com</code>).<br>
+        <a href="mailto:aphytoevolution@gmail.com">Mail us</a> or <a href="https://wa.me/917810011581?text=Hi%20there%2C%20I%27m%20at%20the%20PhytoCommerce%20site" target="_blank" rel="noopener">WhatsApp us</a> — usually live within 24 hours.
+      </div>
+    </div>
+
+    <!-- ── BUILD LOG TERMINAL ───────────────────── -->
+    <h2 class="section-title">What We're Building Right Now</h2>
+    <div class="build-terminal">
+      <div class="terminal-titlebar">
+        <div class="terminal-dots">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <span class="terminal-title">phytocommerce@github — live build log</span>
+        <span class="terminal-live" id="term-live">● live</span>
+      </div>
+      <div class="terminal-body" id="terminal-body">
+        <div class="term-line dim">Connecting to GitHub API…</div>
       </div>
     </div>
 
