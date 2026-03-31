@@ -1,0 +1,164 @@
+/**
+ * Phyto Loyalty — Front-end styles
+ *
+ * @package PhytoLoyalty
+ */
+
+/* ------------------------------------------------------------------ */
+/* My Points page                                                       */
+/* ------------------------------------------------------------------ */
+
+.phyto-loyalty-my-points {
+    max-width: 760px;
+}
+
+.phyto-loyalty-balance-card {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 10px;
+    background: #1a3c2b;
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px 32px;
+    margin-bottom: 28px;
+}
+
+.phyto-loyalty-balance-number {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.phyto-loyalty-balance-label {
+    font-size: 1rem;
+    opacity: 0.85;
+}
+
+.phyto-loyalty-how-to-earn {
+    background: #f3f8f5;
+    border-left: 4px solid #5a9a6e;
+    padding: 16px 20px;
+    margin-bottom: 28px;
+    border-radius: 4px;
+}
+
+.phyto-loyalty-how-to-earn h3 {
+    margin-top: 0;
+    color: #1a3c2b;
+}
+
+.phyto-loyalty-how-to-earn ul {
+    margin: 8px 0 0 20px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Ledger table (shared front + back)                                   */
+/* ------------------------------------------------------------------ */
+
+.phyto-loyalty-ledger-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+.phyto-loyalty-ledger-table th,
+.phyto-loyalty-ledger-table td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 0.9rem;
+}
+
+.phyto-loyalty-ledger-table thead th {
+    background: #f0f0f0;
+    font-weight: 600;
+}
+
+.phyto-loyalty-positive {
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+.phyto-loyalty-negative {
+    color: #c62828;
+    font-weight: 600;
+}
+
+/* ------------------------------------------------------------------ */
+/* Cart redeem block                                                    */
+/* ------------------------------------------------------------------ */
+
+.phyto-loyalty-redeem-block {
+    padding: 14px 0 10px;
+}
+
+.phyto-loyalty-redeem-block strong {
+    display: block;
+    margin-bottom: 6px;
+    color: #1a3c2b;
+}
+
+.phyto-loyalty-balance-line {
+    margin: 0 0 10px;
+    font-size: 0.95rem;
+}
+
+.phyto-loyalty-apply-form {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.phyto-loyalty-apply-form input[type="number"] {
+    width: 120px;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.phyto-loyalty-hint {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 6px 0 0;
+}
+
+.phyto-loyalty-applied-msg {
+    color: #2e7d32;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.phyto-loyalty-msg {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+.phyto-loyalty-msg.success {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+}
+
+.phyto-loyalty-msg.error {
+    background: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+}
+
+/* ------------------------------------------------------------------ */
+/* Checkout earn preview                                                */
+/* ------------------------------------------------------------------ */
+
+.phyto-loyalty-checkout-earn {
+    background: #e8f5e9;
+    border: 1px solid #a5d6a7;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    font-size: 0.92rem;
+    color: #2e7d32;
+}

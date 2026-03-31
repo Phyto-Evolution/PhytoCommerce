@@ -2,7 +2,7 @@
 
 A PrestaShop 8 module suite for specialty plant e-commerce — designed around the operational needs of tissue-culture producers, nurseries, and rare plant retailers. Covers TC batch provenance, phytosanitary compliance, wholesale portals, recurring subscriptions, scientific taxonomy, customer grow journals, image protection, and more.
 
-> **Last updated:** 2026-03-31 (phyto_invoice_customizer · phyto_restock_alert · phyto_bundle_builder · phyto_loyalty · phyto-grex-registry · phyto-growth-stage · phyto-source-badge · phyto-seasonal-availability · phyto-care-card · phyto-tc-batch-tracker · phyto-climate-zone [WooCommerce])
+> **Last updated:** 2026-03-31 (phyto_invoice_customizer · phyto_restock_alert · phyto_bundle_builder · phyto_loyalty · phyto-grex-registry · phyto-growth-stage · phyto-source-badge · phyto-seasonal-availability · phyto-care-card · phyto-tc-batch-tracker · phyto-climate-zone · phyto-loyalty [WooCommerce — 10/10 complete])
 > Session logs: [`docs/CHECKPOINT.md`](docs/CHECKPOINT.md) · [`docs/ACTIVITY_LOG.md`](docs/ACTIVITY_LOG.md)
 
 ---
@@ -710,7 +710,7 @@ docker cp modules/phyto_grex_registry ps-test:/var/www/html/modules/
 
 WooCommerce ports of the PhytoCommerce module suite. Same plant-specialised features, built for WordPress/WooCommerce stores.
 
-> **WooCommerce Plugins Built: 9**
+> **WooCommerce Plugins Built: 10 — all WooCommerce ports complete**
 
 ### Plant Science
 
@@ -735,6 +735,12 @@ WooCommerce ports of the PhytoCommerce module suite. Same plant-specialised feat
 | Plugin | Description | Version |
 |--------|-------------|---------|
 | [`phyto-source-badge`](modules-woo/phyto-source-badge/) | Create sourcing-origin badges (Tissue Culture, Wild Collected, Conservation Propagation, etc.) and display them on WooCommerce product listings and product pages. | 1.0.0 |
+
+### Commerce
+
+| Plugin | Description | Version |
+|--------|-------------|---------|
+| [`phyto-loyalty`](modules-woo/phyto-loyalty/) | Points-based loyalty programme — customers earn Green Points on completed purchases and redeem them as cart discounts; full ledger per customer, admin manual adjustments, configurable earn/redeem rates. | 1.0.0 |
 
 ---
 
