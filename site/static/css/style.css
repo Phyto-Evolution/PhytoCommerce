@@ -1221,12 +1221,13 @@ footer {
 /* Sticky nav strip — two rows: pills then search */
 .taxo-nav-strip {
   position: sticky;
-  top: 60px; /* offset below the 60px site nav so it is never hidden behind it */
+  top: 60px;
   z-index: 90;
-  background: #ffffff;
+  background-color: #fff !important;
   border-bottom: 1px solid #e5e7eb;
-  box-shadow: 0 2px 6px rgba(0,0,0,.07);
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
 }
+.taxo-nav-inner { background-color: #fff !important; }
 .taxo-nav-inner {
   max-width: 1100px;
   margin: 0 auto;
