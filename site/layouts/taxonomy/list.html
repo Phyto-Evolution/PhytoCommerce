@@ -19,6 +19,7 @@
 <!-- ═══════════════════════ STICKY NAV ═══════════════════════ -->
 <div class="taxo-nav-strip">
   <div class="taxo-nav-inner">
+    <!-- Row 1: category jump pills -->
     <nav class="taxo-nav-pills" id="taxo-nav-pills" aria-label="Jump to category">
       <div class="taxo-pill-skel"></div>
       <div class="taxo-pill-skel"></div>
@@ -26,7 +27,8 @@
       <div class="taxo-pill-skel"></div>
       <div class="taxo-pill-skel"></div>
     </nav>
-    <div class="taxo-search-wrap">
+    <!-- Row 2: search -->
+    <div class="taxo-search-row">
       <svg class="taxo-search-ico" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd"/></svg>
       <input class="taxo-search" id="taxo-search" type="search" placeholder="Search genus, species, common name…" aria-label="Search taxonomy">
     </div>
@@ -194,6 +196,13 @@
     });
   }
 
+  /* ── search — attach immediately, works once packs render ── */
+  var searchInp = document.getElementById('taxo-search');
+  if (searchInp) {
+    searchInp.addEventListener('input',  function () { applySearch(this.value); });
+    searchInp.addEventListener('search', function () { applySearch(this.value); });
+  }
+
   /* ── fetch & render ───────────────────────────── */
   fetch(RAW + 'index.json')
     .then(function (r) { return r.json(); })
@@ -204,14 +213,25 @@
       document.getElementById('ts-genera').textContent  = s.total_genera   || '—';
       document.getElementById('ts-species').textContent = (s.total_species || '—').toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
-      /* build category nav pills */
+      /* build category nav pills — direct hex colours (no CSS custom props; minifier strips them) */
       var pillsEl = document.getElementById('taxo-nav-pills');
       pillsEl.innerHTML = idx.categories.map(function (cat) {
         var col  = CAT_COLOR[cat.id] || '#374151';
         var icon = CAT_ICON[cat.id]  || '🌱';
-        return '<a class="taxo-nav-pill" href="#cat-' + esc(cat.id) + '" style="--cat-c:' + col + '">'
+        return '<a class="taxo-nav-pill" href="#cat-' + esc(cat.id) + '"'
+          + ' data-col="' + col + '"'
+          + ' style="color:' + col + ';border-color:' + col + '">'
           + icon + ' ' + esc(cat.name) + '</a>';
       }).join('');
+      /* hover: swap bg/text via JS (can't use :hover with inline color) */
+      pillsEl.addEventListener('mouseover', function (e) {
+        var a = e.target.closest ? e.target.closest('.taxo-nav-pill') : null;
+        if (a) { a.style.background = a.getAttribute('data-col'); a.style.color = '#fff'; }
+      });
+      pillsEl.addEventListener('mouseout', function (e) {
+        var a = e.target.closest ? e.target.closest('.taxo-nav-pill') : null;
+        if (a) { a.style.background = ''; a.style.color = a.getAttribute('data-col'); }
+      });
 
       /* fetch all categories in parallel */
       return Promise.all(idx.categories.map(function (cat) {
@@ -234,13 +254,8 @@
       document.getElementById('taxo-loading').style.display = 'none';
       document.getElementById('taxo-content').innerHTML =
         categories.map(function (c) { return renderCategory(c.cat, c.packs); }).join('');
-
-      /* wire up search */
-      var inp = document.getElementById('taxo-search');
-      if (inp) {
-        inp.addEventListener('input', function () { applySearch(this.value); });
-        inp.addEventListener('search', function () { applySearch(this.value); });
-      }
+      /* re-apply any term already typed while data was loading */
+      if (searchInp && searchInp.value) applySearch(searchInp.value);
     })
     .catch(function () {
       document.getElementById('taxo-loading').style.display = 'none';

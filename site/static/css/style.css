@@ -1218,7 +1218,7 @@ footer {
   white-space: nowrap;
 }
 
-/* Sticky nav strip */
+/* Sticky nav strip — two rows: pills then search */
 .taxo-nav-strip {
   position: sticky;
   top: 0;
@@ -1230,18 +1230,18 @@ footer {
 .taxo-nav-inner {
   max-width: 1100px;
   margin: 0 auto;
-  padding: .6rem 1.5rem;
+  padding: .55rem 1.5rem .5rem;
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  flex-direction: column;
+  gap: .45rem;
 }
+/* Row 1 — category pills */
 .taxo-nav-pills {
   display: flex;
   gap: .35rem;
   overflow-x: auto;
   scrollbar-width: none;
-  flex: 1;
-  min-width: 0;
+  padding-bottom: 1px;
 }
 .taxo-nav-pills::-webkit-scrollbar { display: none; }
 .taxo-nav-pill {
@@ -1249,46 +1249,48 @@ footer {
   align-items: center;
   gap: .28rem;
   white-space: nowrap;
-  padding: .32rem .78rem;
+  padding: .3rem .78rem;
   border-radius: 20px;
-  font-size: .79rem;
+  font-size: .8rem;
   font-weight: 700;
-  color: var(--cat-c, #374151);
-  border: 1.5px solid var(--cat-c, #374151);
   text-decoration: none;
-  opacity: .65;
-  transition: background .14s, opacity .14s, color .14s;
+  border: 1.5px solid;
+  opacity: .72;
+  transition: opacity .14s;
+  /* colour set via inline style="color:…;border-color:…" */
 }
-.taxo-nav-pill:hover { background: var(--cat-c, #374151); color: #fff; opacity: 1; }
+.taxo-nav-pill:hover { opacity: 1; }
 .taxo-pill-skel {
   display: inline-block;
-  width: 88px;
-  height: 28px;
+  width: 90px;
+  height: 27px;
   border-radius: 20px;
   background: #e5e7eb;
   flex-shrink: 0;
   animation: taxo-shimmer 1.4s ease-in-out infinite;
 }
-
-/* Search input */
-.taxo-search-wrap { position: relative; flex-shrink: 0; }
+/* Row 2 — search */
+.taxo-search-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
 .taxo-search-ico {
   position: absolute;
   left: .6rem;
-  top: 50%;
-  transform: translateY(-50%);
   width: 15px;
   height: 15px;
   color: #9ca3af;
   pointer-events: none;
+  flex-shrink: 0;
 }
 .taxo-search {
-  padding: .38rem .75rem .38rem 2rem;
-  font-size: .84rem;
+  width: 100%;
+  padding: .38rem .8rem .38rem 2.1rem;
+  font-size: .85rem;
   font-family: inherit;
   border: 1.5px solid #d1d5db;
   border-radius: 8px;
-  width: 210px;
   outline: none;
   color: #111827;
   background: #f9fafb;
@@ -1544,9 +1546,7 @@ footer {
   /* taxonomy responsive */
   .taxo-hero          { padding: 2.5rem 1.25rem 2rem; }
   .taxo-hero-wrap     { gap: 1.75rem; }
-  .taxo-nav-inner     { flex-wrap: wrap; }
-  .taxo-search-wrap   { width: 100%; }
-  .taxo-search        { width: 100%; }
+  .taxo-nav-inner     { padding: .5rem 1rem .45rem; }
   .taxo-page          { padding: 1.75rem 1.25rem 3rem; }
   .tx-pack-hd         { flex-direction: column; gap: .6rem; }
 }
