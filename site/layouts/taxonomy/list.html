@@ -1,170 +1,340 @@
 {{ define "main" }}
 
 <!-- ═══════════════════════ HERO ═══════════════════════ -->
-<div class="taxo-hero">
-  <div class="taxo-hero-wrap">
-    <div class="taxo-hero-copy">
-      <h1 class="taxo-hero-h1">Botanical Taxonomy<br>Standard</h1>
-      <p class="taxo-hero-sub">Modular plant family data for all PhytoCommerce platform ports. Covers species, genera, common names and registered cultivars — import directly into any store.</p>
+<div class="tx3-hero">
+  <div class="tx3-hero-inner">
+    <div class="tx3-hero-text">
+      <h1 class="tx3-h1">Botanical Taxonomy<br>Standard</h1>
+      <p class="tx3-sub">Modular plant family data for all PhytoCommerce platform ports. Covers species, genera, common names and registered cultivars — import directly into any store.</p>
     </div>
-    <div class="taxo-hero-stats">
-      <div class="taxo-stat"><div class="taxo-stat-n" id="ts-cats">—</div><div class="taxo-stat-l">Categories</div></div>
-      <div class="taxo-stat"><div class="taxo-stat-n" id="ts-packs">—</div><div class="taxo-stat-l">Packs</div></div>
-      <div class="taxo-stat"><div class="taxo-stat-n" id="ts-genera">—</div><div class="taxo-stat-l">Genera</div></div>
-      <div class="taxo-stat"><div class="taxo-stat-n" id="ts-species">—</div><div class="taxo-stat-l">Species</div></div>
-    </div>
-  </div>
-</div>
-
-<!-- ═══════════════════════ STICKY NAV ═══════════════════════ -->
-<div class="taxo-nav-strip" style="background:#fff;background-color:#fff">
-  <div class="taxo-nav-inner" style="background:#fff">
-    <!-- Row 1: category jump pills (div not nav — global nav{} rule sets forest-green bg) -->
-    <div class="taxo-nav-pills" id="taxo-nav-pills" role="navigation" aria-label="Jump to category">
-      <div class="taxo-pill-skel"></div>
-      <div class="taxo-pill-skel"></div>
-      <div class="taxo-pill-skel"></div>
-      <div class="taxo-pill-skel"></div>
-      <div class="taxo-pill-skel"></div>
-    </div>
-    <!-- Row 2: search -->
-    <div class="taxo-search-row">
-      <svg class="taxo-search-ico" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd"/></svg>
-      <input class="taxo-search" id="taxo-search" type="search" placeholder="Search genus, species, common name…" aria-label="Search taxonomy">
+    <div class="tx3-stats">
+      <div class="tx3-stat"><div class="tx3-stat-n" id="ts-cats">—</div><div class="tx3-stat-l">Categories</div></div>
+      <div class="tx3-stat"><div class="tx3-stat-n" id="ts-packs">—</div><div class="tx3-stat-l">Families</div></div>
+      <div class="tx3-stat"><div class="tx3-stat-n" id="ts-genera">—</div><div class="tx3-stat-l">Genera</div></div>
+      <div class="tx3-stat"><div class="tx3-stat-n" id="ts-species">—</div><div class="tx3-stat-l">Species</div></div>
     </div>
   </div>
 </div>
 
-<!-- ═══════════════════════ CONTENT ═══════════════════════ -->
-<div class="taxo-page">
-
-  <!-- Loading skeleton -->
-  <div class="taxo-skeleton" id="taxo-loading">
-    <div class="taxo-skel-section">
-      <div class="taxo-skel-hdr"></div>
-      <div class="taxo-skel-card"></div>
-      <div class="taxo-skel-card"></div>
+<!-- ═══════════════════════ STICKY TOOLBAR ═══════════════════════ -->
+<div class="tx3-toolbar" id="tx3-toolbar">
+  <div class="tx3-toolbar-inner">
+    <div class="tx3-search-wrap">
+      <svg class="tx3-search-ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="9" cy="9" r="6"/><path d="M15 15l3 3" stroke-linecap="round"/></svg>
+      <input class="tx3-search" id="tx3-search" type="search" placeholder="Search genus, species, common name, cultivar…" aria-label="Search taxonomy">
     </div>
-    <div class="taxo-skel-section">
-      <div class="taxo-skel-hdr"></div>
-      <div class="taxo-skel-card"></div>
+    <div class="tx3-cat-pills" id="tx3-cat-pills">
+      <div class="tx3-pill-skel"></div>
+      <div class="tx3-pill-skel"></div>
+      <div class="tx3-pill-skel"></div>
+      <div class="tx3-pill-skel"></div>
+      <div class="tx3-pill-skel"></div>
     </div>
   </div>
+</div>
 
-  <!-- Rendered content -->
-  <div id="taxo-content"></div>
+<!-- ═══════════════════════ TREE VIEW ═══════════════════════ -->
+<div class="tx3-tree-section" id="tx3-tree-section">
+  <button class="tx3-tree-toggle" id="tx3-tree-toggle" aria-expanded="true">
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+      <path d="M3 5h2m0 0v10m0-5h8m0-5v10" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    Full Taxonomy Tree
+    <span class="tx3-tree-hint">— click any genus to jump to it</span>
+    <svg class="tx3-tree-chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <div class="tx3-tree" id="tx3-tree" aria-hidden="false">
+    <div class="tx3-tree-inner">
+      <div class="tx3-skel tx3-skel-line" style="width:38%"></div>
+      <div class="tx3-skel tx3-skel-line" style="width:50%;margin-left:1.4rem"></div>
+      <div class="tx3-skel tx3-skel-line" style="width:42%;margin-left:2.8rem"></div>
+      <div class="tx3-skel tx3-skel-line" style="width:36%;margin-left:1.4rem"></div>
+    </div>
+  </div>
+</div>
 
-  <!-- Error state -->
-  <p class="taxo-error" id="taxo-error" style="display:none">
-    Could not load taxonomy data.
-    <a href="https://github.com/Phyto-Evolution/PhytoCommerce/tree/main/taxonomy" target="_blank" rel="noopener">View on GitHub ↗</a>
-  </p>
+<!-- ═══════════════════════ MAIN LAYOUT ═══════════════════════ -->
+<div class="tx3-main" id="tx3-main">
 
+  <!-- Filter sidebar -->
+  <aside class="tx3-sidebar" id="tx3-sidebar">
+    <div class="tx3-sidebar-hdr">
+      <span class="tx3-sidebar-title">Filter by Genus</span>
+      <button class="tx3-filter-clear" id="tx3-filter-clear">Clear all</button>
+    </div>
+    <div class="tx3-filter-body" id="tx3-filter-body">
+      <div class="tx3-skel tx3-skel-line"></div>
+      <div class="tx3-skel tx3-skel-line" style="width:78%"></div>
+      <div class="tx3-skel tx3-skel-line" style="width:62%"></div>
+      <div class="tx3-skel tx3-skel-line" style="width:80%"></div>
+      <div class="tx3-skel tx3-skel-line" style="width:55%"></div>
+    </div>
+  </aside>
+
+  <!-- Content -->
+  <div class="tx3-content" id="tx3-content">
+
+    <!-- Mobile filter toggle button -->
+    <button class="tx3-mob-filter-btn" id="tx3-mob-filter-btn" aria-expanded="false">
+      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 5h14M6 10h8M9 15h2" stroke-linecap="round"/></svg>
+      Filters
+      <span class="tx3-mob-filter-count" id="tx3-mob-filter-count" style="display:none">0</span>
+    </button>
+
+    <!-- Loading skeleton -->
+    <div id="tx3-loading" class="tx3-skeleton">
+      <div class="tx3-skel-cat-hdr"></div>
+      <div class="tx3-skel-pack"></div>
+      <div class="tx3-skel-pack" style="height:100px"></div>
+      <div class="tx3-skel-cat-hdr" style="margin-top:1.5rem"></div>
+      <div class="tx3-skel-pack" style="height:110px"></div>
+    </div>
+
+    <!-- Error state -->
+    <div id="tx3-error" style="display:none" class="tx3-error-box">
+      <p>Could not load taxonomy data.</p>
+      <a href="https://github.com/Phyto-Evolution/PhytoCommerce/tree/main/taxonomy" target="_blank" rel="noopener">View raw data on GitHub ↗</a>
+    </div>
+
+    <!-- Rendered taxonomy content -->
+    <div id="tx3-packs"></div>
+
+  </div>
 </div>
 
 <script>
 (function () {
   var RAW = 'https://raw.githubusercontent.com/Phyto-Evolution/PhytoCommerce/main/taxonomy/';
 
-  /* ── per-category colours & icons ─────────────── */
+  /* ── category colours & icons ────────────────────────────── */
   var CAT_COLOR = {
-    carnivorous: '#7c2d12', aroids: '#14532d',   orchids:     '#581c87',
-    succulents:  '#78350f', bromeliads: '#9a3412', banana:     '#713f12',
+    carnivorous: '#7c2d12', aroids: '#14532d', orchids: '#581c87',
+    succulents:  '#78350f', bromeliads: '#9a3412', banana: '#713f12',
     palms:       '#164e63', horticulture: '#1e3a5f'
   };
   var CAT_ICON = {
-    carnivorous:'🪤', aroids:'🌿', orchids:'🌸', succulents:'🌵',
-    bromeliads:'🍍',  banana:'🍌', palms:'🌴',   horticulture:'🌾'
+    carnivorous: '🪤', aroids: '🌿', orchids: '🌸', succulents: '🌵',
+    bromeliads: '🍍', banana: '🍌', palms: '🌴', horticulture: '🌾'
   };
-  var STATUS = {
-    critically_endangered: { label:'CR',      c:'#dc2626', bg:'#fef2f2' },
-    endangered:            { label:'EN',      c:'#d97706', bg:'#fffbeb' },
-    vulnerable:            { label:'VU',      c:'#ca8a04', bg:'#fefce8' },
-    cites_appendix_i:      { label:'CITES I', c:'#7c3aed', bg:'#f5f3ff' },
-    cites_appendix_ii:     { label:'CITES II',c:'#6d28d9', bg:'#f5f3ff' },
-    extinct:               { label:'EX',      c:'#6b7280', bg:'#f3f4f6' }
+  var STATUS_MAP = {
+    critically_endangered: { label: 'CR',       c: '#dc2626', bg: '#fef2f2' },
+    endangered:            { label: 'EN',       c: '#d97706', bg: '#fffbeb' },
+    vulnerable:            { label: 'VU',       c: '#ca8a04', bg: '#fefce8' },
+    cites_appendix_i:      { label: 'CITES I',  c: '#7c3aed', bg: '#f5f3ff' },
+    cites_appendix_ii:     { label: 'CITES II', c: '#6d28d9', bg: '#f5f3ff' },
+    extinct:               { label: 'EX',       c: '#6b7280', bg: '#f3f4f6' }
   };
 
-  /* ── helpers ──────────────────────────────────── */
+  /* ── state ───────────────────────────────────────────────── */
+  var allData      = [];
+  var checkedGenera = {};
+  var searchTerm   = '';
+  var treeOpen     = true;
+  var mobFilterOpen = false;
+
+  /* ── helpers ─────────────────────────────────────────────── */
   function esc(s) {
     return s ? String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') : '';
   }
+
   function statusBadge(s) {
     if (!s || s === 'least_concern' || s === 'not_evaluated' || s === '') return '';
-    var m = STATUS[s]; if (!m) return '';
-    return '<span class="tx-status" style="color:'+m.c+';background:'+m.bg+';border-color:'+m.c+'66">'+m.label+'</span>';
-  }
-  function pill(txt, mod) {
-    return '<span class="tx-pill tx-pill--'+mod+'">'+esc(txt)+'</span>';
+    var m = STATUS_MAP[s]; if (!m) return '';
+    return '<span class="tx3-badge" style="color:'+m.c+';background:'+m.bg+';border-color:'+m.c+'55">'+m.label+'</span>';
   }
 
-  /* ── render helpers ───────────────────────────── */
+  /* Build Wikipedia URL from species full_name.
+     Handles: "Drosera rotundifolia", "Sarracenia purpurea ssp. venosa",
+              "Drosera aff. petiolaris" → always uses genus + first epithet */
+  function wikiUrl(fullName) {
+    var parts = String(fullName).split(' ');
+    var genus = parts[0];
+    var epithet = '';
+    for (var i = 1; i < parts.length; i++) {
+      var w = parts[i];
+      // Skip qualifiers
+      if (/^(ssp\.|var\.|f\.|subsp\.|aff\.|×|x)$/i.test(w)) continue;
+      epithet = w; break;
+    }
+    var name = genus + (epithet ? '_' + epithet : '');
+    return 'https://en.wikipedia.org/wiki/' + name.replace(/[^A-Za-z0-9_]/g, '');
+  }
+
+  /* ── TREE RENDERING ──────────────────────────────────────── */
+  function renderTree(data) {
+    var html = '<ul class="tx3-tr-root">';
+    data.forEach(function (d) {
+      var cat = d.cat;
+      var col  = CAT_COLOR[cat.id] || '#374151';
+      var icon = CAT_ICON[cat.id]  || '🌱';
+      html += '<li class="tx3-tr-cat-li">'
+        + '<details open>'
+        + '<summary class="tx3-tr-cat-sum" style="color:'+col+'">'
+        + '<span class="tx3-tr-icon">'+icon+'</span>'
+        + '<strong>'+esc(cat.name)+'</strong>'
+        + '</summary>'
+        + '<ul class="tx3-tr-fams">';
+      d.packs.forEach(function (pack) {
+        var genera = pack.genera || [];
+        var totalSp = genera.reduce(function(n,g){ return n+(g.species||[]).length; }, 0);
+        html += '<li class="tx3-tr-fam-li">'
+          + '<details>'
+          + '<summary class="tx3-tr-fam-sum">'
+          + esc(pack.family || pack.pack_id)
+          + '<span class="tx3-tr-fam-meta">'+genera.length+'g · '+totalSp+'sp</span>'
+          + '</summary>'
+          + '<ul class="tx3-tr-gens">';
+        genera.forEach(function (g) {
+          var spCount = (g.species || []).length;
+          var cvCount = (g.species || []).reduce(function(n,s){ return n+(s.cultivars||[]).length; },0);
+          html += '<li><a class="tx3-tr-g-lnk" href="#g-'+esc(g.genus)+'">'
+            + '<em>'+esc(g.genus)+'</em>'
+            + (g.common_name ? '<span class="tx3-tr-g-com">'+esc(g.common_name)+'</span>' : '')
+            + '<span class="tx3-tr-g-cnt">'+spCount+' sp'+(cvCount?' · '+cvCount+' cv':'')+'</span>'
+            + '</a></li>';
+        });
+        html += '</ul></details></li>';
+      });
+      html += '</ul></details></li>';
+    });
+    html += '</ul>';
+    document.getElementById('tx3-tree').innerHTML = '<div class="tx3-tree-inner">'+html+'</div>';
+  }
+
+  /* ── FILTER RENDERING ────────────────────────────────────── */
+  function renderFilters(data) {
+    var html = '';
+    data.forEach(function (d) {
+      var cat  = d.cat;
+      var col  = CAT_COLOR[cat.id] || '#374151';
+      var icon = CAT_ICON[cat.id]  || '🌱';
+      var genera = [];
+      d.packs.forEach(function (p) {
+        (p.genera || []).forEach(function (g) { genera.push(g.genus); });
+      });
+      if (!genera.length) return;
+      html += '<div class="tx3-fg">'
+        + '<div class="tx3-fg-hdr" style="color:'+col+'">'
+        + icon + ' ' + esc(cat.name)
+        + '</div>';
+      genera.forEach(function (gName) {
+        var cbId = 'fg-' + gName.replace(/[^a-zA-Z0-9]/g, '-');
+        html += '<label class="tx3-fg-item">'
+          + '<input type="checkbox" class="tx3-fg-cb" value="'+esc(gName)+'" id="'+esc(cbId)+'">'
+          + '<em class="tx3-fg-name">'+esc(gName)+'</em>'
+          + '</label>';
+      });
+      html += '</div>';
+    });
+    document.getElementById('tx3-filter-body').innerHTML = html;
+
+    document.getElementById('tx3-filter-body').addEventListener('change', function (e) {
+      if (!e.target.classList.contains('tx3-fg-cb')) return;
+      if (e.target.checked) { checkedGenera[e.target.value] = true; }
+      else { delete checkedGenera[e.target.value]; }
+      updateFilterCount();
+      applyFilters();
+    });
+
+    document.getElementById('tx3-filter-clear').addEventListener('click', function () {
+      checkedGenera = {};
+      var cbs = document.querySelectorAll('.tx3-fg-cb');
+      for (var i = 0; i < cbs.length; i++) cbs[i].checked = false;
+      updateFilterCount();
+      applyFilters();
+    });
+  }
+
+  function updateFilterCount() {
+    var n = Object.keys(checkedGenera).length;
+    var countEl = document.getElementById('tx3-mob-filter-count');
+    if (countEl) {
+      countEl.textContent = n;
+      countEl.style.display = n > 0 ? '' : 'none';
+    }
+  }
+
+  /* ── CONTENT RENDERING ───────────────────────────────────── */
   function renderSpecies(species) {
     return (species || []).map(function (s) {
-      var cvs = (s.cultivars || []).length;
-      return '<li class="tx-sp">'
-        + '<em class="tx-sp-sci">' + esc(s.full_name) + '</em>'
-        + (s.common_name ? '<span class="tx-sp-com">' + esc(s.common_name) + '</span>' : '')
-        + (cvs ? '<span class="tx-sp-cvs">' + cvs + ' cv.</span>' : '')
+      var cvs = s.cultivars || [];
+      var cvHtml = cvs.length
+        ? '<div class="tx3-cvs">' + cvs.map(function(cv){ return '<span class="tx3-cv">'+esc(cv)+'</span>'; }).join('') + '</div>'
+        : '';
+      return '<li class="tx3-sp">'
+        + '<div class="tx3-sp-row">'
+        + '<a class="tx3-sp-link" href="'+wikiUrl(s.full_name)+'" target="_blank" rel="noopener" title="View '+esc(s.full_name)+' on Wikipedia">'
+        + '<em>'+esc(s.full_name)+'</em>'
+        + '<svg class="tx3-wiki-ico" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 2h3v3M10 2L5 7M4 3H2v7h7V8" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+        + '</a>'
+        + (s.common_name ? '<span class="tx3-sp-com">'+esc(s.common_name)+'</span>' : '')
         + statusBadge(s.conservation_status)
+        + (cvs.length ? '<span class="tx3-sp-cvc">'+cvs.length+' cv.</span>' : '')
+        + '</div>'
+        + cvHtml
         + '</li>';
     }).join('');
   }
 
   function renderGenus(g, col) {
-    var sps = g.species || [];
-    return '<div class="tx-genus">'
-      + '<button class="tx-genus-btn" aria-expanded="false" onclick="'
-        + 'var el=this.parentNode;el.classList.toggle(\'open\');'
-        + 'this.setAttribute(\'aria-expanded\',el.classList.contains(\'open\'));'
-        + '">'
-        + '<span class="tx-genus-sci">' + esc(g.genus) + '</span>'
-        + (g.common_name ? '<span class="tx-genus-com">' + esc(g.common_name) + '</span>' : '')
-        + '<span class="tx-genus-cnt" style="background:'+col+'15;color:'+col+'">' + sps.length + '&thinsp;sp.</span>'
-        + '<svg class="tx-chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg>'
+    var sps     = g.species || [];
+    var totalCv = sps.reduce(function (n, s) { return n + (s.cultivars || []).length; }, 0);
+    return '<div class="tx3-genus" id="g-' + esc(g.genus) + '">'
+      + '<button class="tx3-genus-btn" aria-expanded="false" onclick="'
+      + 'var el=this.parentNode;el.classList.toggle(\'open\');'
+      + 'this.setAttribute(\'aria-expanded\',el.classList.contains(\'open\'));'
+      + '">'
+      + '<em class="tx3-gs">'+esc(g.genus)+'</em>'
+      + (g.common_name ? '<span class="tx3-gc">'+esc(g.common_name)+'</span>' : '')
+      + '<span class="tx3-gpills">'
+      + '<span class="tx3-gp" style="background:'+col+'18;color:'+col+'">'+sps.length+' sp.</span>'
+      + (totalCv ? '<span class="tx3-gp tx3-gp--cv">'+totalCv+' cv.</span>' : '')
+      + '</span>'
+      + '<svg class="tx3-chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 6l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>'
       + '</button>'
-      + '<ul class="tx-sp-list">' + renderSpecies(sps) + '</ul>'
+      + '<ul class="tx3-sp-list">'+renderSpecies(sps)+'</ul>'
       + '</div>';
   }
 
   function renderPack(pack, col) {
-    var genera   = pack.genera || [];
-    var totalSp  = genera.reduce(function (n, g) { return n + (g.species || []).length; }, 0);
-    var totalCv  = genera.reduce(function (n, g) {
+    var genera    = pack.genera || [];
+    var genNames  = genera.map(function (g) { return g.genus; });
+    var totalSp   = genera.reduce(function (n, g) { return n + (g.species || []).length; }, 0);
+    var totalCv   = genera.reduce(function (n, g) {
       return n + (g.species || []).reduce(function (m, s) { return m + (s.cultivars || []).length; }, 0);
     }, 0);
 
-    var searchText = [
-      pack.family || '', pack.common_name || ''
-    ].concat(genera.map(function (g) {
-      return [g.genus, g.common_name || ''].concat(
-        (g.species || []).map(function (s) { return [s.full_name, s.common_name || ''].join(' '); })
-      ).join(' ');
-    })).join(' ').toLowerCase();
+    var searchTxt = [pack.family || '', pack.common_name || ''].concat(
+      genera.map(function (g) {
+        return [g.genus, g.common_name || ''].concat(
+          (g.species || []).map(function (s) {
+            return [s.full_name, s.common_name || ''].concat(s.cultivars || []).join(' ');
+          })
+        ).join(' ');
+      })
+    ).join(' ').toLowerCase();
 
-    var desc = '';
+    var descHtml = '';
     if (pack.description) {
       var stripped = pack.description.replace(/<[^>]+>/g, '');
-      desc = '<p class="tx-pack-desc">'
-        + esc(stripped.slice(0, 300)) + (stripped.length > 300 ? '…' : '')
-        + '</p>';
+      descHtml = '<p class="tx3-pack-desc">' + esc(stripped.slice(0, 220)) + (stripped.length > 220 ? '…' : '') + '</p>';
     }
 
-    return '<div class="tx-pack" data-tx-search="' + esc(searchText) + '">'
-      + '<div class="tx-pack-hd" style="border-left-color:' + col + '">'
-        + '<div class="tx-pack-meta">'
-          + '<div class="tx-pack-fam">' + esc(pack.family || pack.pack_id || '') + '</div>'
-          + (pack.common_name ? '<div class="tx-pack-com">' + esc(pack.common_name) + '</div>' : '')
-        + '</div>'
-        + '<div class="tx-pack-pills">'
-          + pill(genera.length + ' genera', 'g')
-          + pill(totalSp + ' species', 'b')
-          + (totalCv ? pill(totalCv + ' cultivars', 'p') : '')
-        + '</div>'
+    return '<div class="tx3-pack" data-search="'+esc(searchTxt)+'" data-genera="'+esc(genNames.join(','))+'">'
+      + '<div class="tx3-pack-hd" style="border-left-color:'+col+'">'
+      + '<div class="tx3-pack-info">'
+      + '<div class="tx3-pack-fam">'+esc(pack.family || pack.pack_id)+'</div>'
+      + (pack.common_name ? '<div class="tx3-pack-com">'+esc(pack.common_name)+'</div>' : '')
       + '</div>'
-      + desc
-      + '<div class="tx-genera">'
-        + genera.map(function (g) { return renderGenus(g, col); }).join('')
+      + '<div class="tx3-pack-cnt">'
+      + '<span class="tx3-pc-tag">'+genera.length+'&thinsp;genera</span>'
+      + '<span class="tx3-pc-tag">'+totalSp+'&thinsp;species</span>'
+      + (totalCv ? '<span class="tx3-pc-tag tx3-pc-tag--cv">'+totalCv+'&thinsp;cultivars</span>' : '')
+      + '</div>'
+      + '</div>'
+      + descHtml
+      + '<div class="tx3-genera">'
+      + genera.map(function (g) { return renderGenus(g, col); }).join('')
       + '</div>'
       + '</div>';
   }
@@ -172,38 +342,106 @@
   function renderCategory(cat, packs) {
     var col  = CAT_COLOR[cat.id] || '#374151';
     var icon = CAT_ICON[cat.id]  || '🌱';
-    return '<section class="tx-cat" id="cat-' + esc(cat.id) + '">'
-      + '<div class="tx-cat-hdr" style="background:' + col + '">'
-        + '<span class="tx-cat-icon">' + icon + '</span>'
-        + '<span class="tx-cat-name">' + esc(cat.name) + '</span>'
-        + '<span class="tx-cat-badge">' + packs.length + ' pack' + (packs.length !== 1 ? 's' : '') + '</span>'
+    return '<section class="tx3-cat" id="cat-'+esc(cat.id)+'">'
+      + '<div class="tx3-cat-hdr" style="border-left-color:'+col+';--cat-col:'+col+'">'
+      + '<span class="tx3-cat-icon">'+icon+'</span>'
+      + '<span class="tx3-cat-name" style="color:'+col+'">'+esc(cat.name)+'</span>'
+      + '<span class="tx3-cat-badge">'+packs.length+'&thinsp;pack'+(packs.length !== 1 ? 's' : '')+'</span>'
       + '</div>'
-      + '<div class="tx-packs">'
-        + packs.map(function (p) { return renderPack(p, col); }).join('')
-      + '</div>'
+      + packs.map(function (p) { return renderPack(p, col); }).join('')
       + '</section>';
   }
 
-  /* ── search ───────────────────────────────────── */
-  function applySearch(term) {
-    var q = term.toLowerCase().trim();
-    document.querySelectorAll('.tx-pack').forEach(function (el) {
-      el.style.display = (!q || (el.getAttribute('data-tx-search') || '').indexOf(q) !== -1) ? '' : 'none';
+  function renderAll(data) {
+    document.getElementById('tx3-packs').innerHTML =
+      data.map(function (d) { return renderCategory(d.cat, d.packs); }).join('');
+  }
+
+  /* ── FILTER + SEARCH LOGIC ───────────────────────────────── */
+  function applyFilters() {
+    var q              = searchTerm.toLowerCase().trim();
+    var hasGenFilter   = Object.keys(checkedGenera).length > 0;
+
+    document.querySelectorAll('.tx3-pack').forEach(function (el) {
+      var genNames = (el.getAttribute('data-genera') || '').split(',');
+      var searchOk = !q || (el.getAttribute('data-search') || '').indexOf(q) !== -1;
+      var genOk    = !hasGenFilter || genNames.some(function (g) { return checkedGenera[g]; });
+      el.style.display = (searchOk && genOk) ? '' : 'none';
     });
-    document.querySelectorAll('.tx-cat').forEach(function (el) {
-      var visible = [].some.call(el.querySelectorAll('.tx-pack'), function (p) { return p.style.display !== 'none'; });
-      el.style.display = visible ? '' : 'none';
+
+    document.querySelectorAll('.tx3-cat').forEach(function (el) {
+      var anyVisible = [].some.call(el.querySelectorAll('.tx3-pack'), function (p) {
+        return p.style.display !== 'none';
+      });
+      el.style.display = anyVisible ? '' : 'none';
+    });
+
+    /* per-species highlight when searching */
+    if (q) {
+      document.querySelectorAll('.tx3-sp').forEach(function (el) {
+        var txt = (el.textContent || '').toLowerCase();
+        el.style.display = txt.indexOf(q) !== -1 ? '' : 'none';
+      });
+      document.querySelectorAll('.tx3-genus').forEach(function (el) {
+        var any = [].some.call(el.querySelectorAll('.tx3-sp'), function (s) { return s.style.display !== 'none'; });
+        el.style.display = any ? '' : 'none';
+      });
+    } else {
+      document.querySelectorAll('.tx3-sp,.tx3-genus').forEach(function (el) { el.style.display = ''; });
+    }
+  }
+
+  /* ── SEARCH INPUT ────────────────────────────────────────── */
+  var searchEl = document.getElementById('tx3-search');
+  if (searchEl) {
+    searchEl.addEventListener('input', function () { searchTerm = this.value; applyFilters(); });
+    searchEl.addEventListener('search', function () { searchTerm = this.value; applyFilters(); });
+  }
+
+  /* ── TREE TOGGLE ─────────────────────────────────────────── */
+  var treeToggleEl = document.getElementById('tx3-tree-toggle');
+  var treeEl       = document.getElementById('tx3-tree');
+  if (treeToggleEl) {
+    treeToggleEl.addEventListener('click', function () {
+      treeOpen = !treeOpen;
+      treeEl.classList.toggle('tx3-tree--closed', !treeOpen);
+      treeToggleEl.setAttribute('aria-expanded', treeOpen ? 'true' : 'false');
     });
   }
 
-  /* ── search — attach immediately, works once packs render ── */
-  var searchInp = document.getElementById('taxo-search');
-  if (searchInp) {
-    searchInp.addEventListener('input',  function () { applySearch(this.value); });
-    searchInp.addEventListener('search', function () { applySearch(this.value); });
+  /* ── MOBILE FILTER TOGGLE ────────────────────────────────── */
+  var mobFilterBtn  = document.getElementById('tx3-mob-filter-btn');
+  var sidebarEl     = document.getElementById('tx3-sidebar');
+  if (mobFilterBtn && sidebarEl) {
+    mobFilterBtn.addEventListener('click', function () {
+      mobFilterOpen = !mobFilterOpen;
+      sidebarEl.classList.toggle('tx3-sidebar--open', mobFilterOpen);
+      mobFilterBtn.setAttribute('aria-expanded', mobFilterOpen ? 'true' : 'false');
+    });
   }
 
-  /* ── fetch & render ───────────────────────────── */
+  /* ── CATEGORY PILLS ──────────────────────────────────────── */
+  function buildCatPills(categories) {
+    var pillsEl = document.getElementById('tx3-cat-pills');
+    pillsEl.innerHTML = categories.map(function (cat) {
+      var col  = CAT_COLOR[cat.id] || '#374151';
+      var icon = CAT_ICON[cat.id]  || '🌱';
+      return '<a class="tx3-cat-pill" href="#cat-'+esc(cat.id)+'"'
+        +' data-col="'+col+'"'
+        +' style="color:'+col+';border-color:'+col+'">'
+        +icon+'&thinsp;'+esc(cat.name)+'</a>';
+    }).join('');
+    pillsEl.addEventListener('mouseover', function (e) {
+      var a = e.target.closest ? e.target.closest('.tx3-cat-pill') : null;
+      if (a) { a.style.background = a.getAttribute('data-col'); a.style.color = '#fff'; }
+    });
+    pillsEl.addEventListener('mouseout', function (e) {
+      var a = e.target.closest ? e.target.closest('.tx3-cat-pill') : null;
+      if (a) { a.style.background = ''; a.style.color = a.getAttribute('data-col'); }
+    });
+  }
+
+  /* ── FETCH ALL DATA ──────────────────────────────────────── */
   fetch(RAW + 'index.json')
     .then(function (r) { return r.json(); })
     .then(function (idx) {
@@ -211,35 +449,13 @@
       document.getElementById('ts-cats').textContent    = s.total_categories || idx.categories.length;
       document.getElementById('ts-packs').textContent   = s.total_packs    || '—';
       document.getElementById('ts-genera').textContent  = s.total_genera   || '—';
-      document.getElementById('ts-species').textContent = (s.total_species || '—').toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-
-      /* build category nav pills — direct hex colours (no CSS custom props; minifier strips them) */
-      var pillsEl = document.getElementById('taxo-nav-pills');
-      pillsEl.innerHTML = idx.categories.map(function (cat) {
-        var col  = CAT_COLOR[cat.id] || '#374151';
-        var icon = CAT_ICON[cat.id]  || '🌱';
-        return '<a class="taxo-nav-pill" href="#cat-' + esc(cat.id) + '"'
-          + ' data-col="' + col + '"'
-          + ' style="color:' + col + ';border-color:' + col + '">'
-          + icon + ' ' + esc(cat.name) + '</a>';
-      }).join('');
-      /* hover: swap bg/text via JS (can't use :hover with inline color) */
-      pillsEl.addEventListener('mouseover', function (e) {
-        var a = e.target.closest ? e.target.closest('.taxo-nav-pill') : null;
-        if (a) { a.style.background = a.getAttribute('data-col'); a.style.color = '#fff'; }
-      });
-      pillsEl.addEventListener('mouseout', function (e) {
-        var a = e.target.closest ? e.target.closest('.taxo-nav-pill') : null;
-        if (a) { a.style.background = ''; a.style.color = a.getAttribute('data-col'); }
-      });
-
-      /* fetch all categories in parallel */
+      document.getElementById('ts-species').textContent = (s.total_species  || '—').toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+      buildCatPills(idx.categories);
       return Promise.all(idx.categories.map(function (cat) {
         return fetch(RAW + cat.index)
           .then(function (r) { return r.json(); })
           .then(function (catIdx) {
-            var packFiles = catIdx.packs || [];
-            return Promise.all(packFiles.map(function (p) {
+            return Promise.all((catIdx.packs || []).map(function (p) {
               var pf = p.file || (cat.id + '/' + p.id + '.json');
               if (pf.indexOf('/') === -1) pf = cat.id + '/' + pf;
               return fetch(RAW + pf).then(function (r) { return r.json(); }).catch(function () { return null; });
@@ -250,16 +466,17 @@
           .catch(function () { return { cat: cat, packs: [] }; });
       }));
     })
-    .then(function (categories) {
-      document.getElementById('taxo-loading').style.display = 'none';
-      document.getElementById('taxo-content').innerHTML =
-        categories.map(function (c) { return renderCategory(c.cat, c.packs); }).join('');
-      /* re-apply any term already typed while data was loading */
-      if (searchInp && searchInp.value) applySearch(searchInp.value);
+    .then(function (data) {
+      allData = data;
+      document.getElementById('tx3-loading').style.display = 'none';
+      renderTree(data);
+      renderFilters(data);
+      renderAll(data);
+      if (searchEl && searchEl.value) { searchTerm = searchEl.value; applyFilters(); }
     })
     .catch(function () {
-      document.getElementById('taxo-loading').style.display = 'none';
-      document.getElementById('taxo-error').style.display   = 'block';
+      document.getElementById('tx3-loading').style.display = 'none';
+      document.getElementById('tx3-error').style.display   = '';
     });
 })();
 </script>
