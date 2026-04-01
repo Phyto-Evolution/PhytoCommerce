@@ -4,14 +4,17 @@
   "packs": [
     {
       "id": "bromeliaceae",
-      "name": "Bromeliads & Air Plants",
-      "file": "bromeliads/bromeliaceae.json",
-      "genera": [
-        "Tillandsia",
-        "Neoregelia",
-        "Vriesea",
-        "Aechmea"
-      ]
+      "file": "bromeliaceae.json",
+      "family": "Bromeliaceae",
+      "common_name": "Bromeliads & Air Plants",
+      "genera_count": 53,
+      "species_count": 526,
+      "cultivar_count": 44
     }
-  ]
+  ],
+  "summary": {
+    "total_genera": 53,
+    "total_species": 526,
+    "total_cultivars": 44
+  }
 }

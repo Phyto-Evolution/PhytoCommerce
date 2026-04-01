@@ -51,7 +51,6 @@ class Phytocommerce_Pack extends Module {
         // Invoicing
         'phyto_invoice_customizer',
         // Customer Engagement
-        'phyto_restock_alert',
         'phyto_bundle_builder',
         'phyto_loyalty',
     ];

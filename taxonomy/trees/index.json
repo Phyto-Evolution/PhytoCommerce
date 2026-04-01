@@ -1,0 +1,21 @@
+{
+  "category": "trees",
+  "name": "Remarkable Trees",
+  "description": "Notable ornamental and succulent trees from around the world",
+  "packs": [
+    {
+      "id": "remarkable_trees",
+      "file": "remarkable_trees.json",
+      "family": "Mixed Tree Families",
+      "common_name": "Remarkable Trees",
+      "genera_count": 123,
+      "species_count": 485,
+      "cultivar_count": 0
+    }
+  ],
+  "summary": {
+    "total_genera": 123,
+    "total_species": 485,
+    "total_cultivars": 0
+  }
+}

@@ -4,43 +4,80 @@
   "packs": [
     {
       "id": "cactaceae",
-      "name": "Cacti",
-      "file": "succulents/cactaceae.json",
-      "genera": [
-        "Astrophytum",
-        "Gymnocalycium",
-        "Mammillaria",
-        "Ariocarpus"
-      ]
-    },
-    {
-      "id": "crassulaceae",
-      "name": "Stonecrops & Rosette Succulents",
-      "file": "succulents/crassulaceae.json",
-      "genera": [
-        "Echeveria",
-        "Haworthia",
-        "Sempervivum",
-        "Aeonium"
-      ]
+      "file": "cactaceae.json",
+      "family": "Cactaceae",
+      "common_name": "Cacti",
+      "genera_count": 389,
+      "species_count": 9863,
+      "cultivar_count": 26
     },
     {
       "id": "asphodelaceae",
-      "name": "Aloes, Gasteria & Haworthiopsis",
-      "file": "succulents/asphodelaceae.json",
-      "genera": [
-        "Aloe",
-        "Gasteria",
-        "Haworthiopsis"
-      ]
+      "file": "asphodelaceae.json",
+      "family": "Asphodelaceae / Aloaceae",
+      "common_name": "Aloes, Haworthias & Allies",
+      "genera_count": 27,
+      "species_count": 1009,
+      "cultivar_count": 11
+    },
+    {
+      "id": "crassulaceae",
+      "file": "crassulaceae.json",
+      "family": "Crassulaceae",
+      "common_name": "Stonecrop Family",
+      "genera_count": 75,
+      "species_count": 1380,
+      "cultivar_count": 33
     },
     {
       "id": "euphorbiaceae",
-      "name": "Succulent Euphorbias",
-      "file": "succulents/euphorbiaceae.json",
-      "genera": [
-        "Euphorbia"
-      ]
+      "file": "euphorbiaceae.json",
+      "family": "Euphorbiaceae",
+      "common_name": "Euphorbias",
+      "genera_count": 45,
+      "species_count": 719,
+      "cultivar_count": 12
+    },
+    {
+      "id": "aizoaceae",
+      "file": "aizoaceae.json",
+      "family": "Aizoaceae",
+      "common_name": "Ice Plants & Living Stones",
+      "genera_count": 141,
+      "species_count": 1796,
+      "cultivar_count": 0
+    },
+    {
+      "id": "asclepiadaceae",
+      "file": "asclepiadaceae.json",
+      "family": "Asclepiadaceae",
+      "common_name": "Stapeliads & Milkweeds",
+      "genera_count": 121,
+      "species_count": 1421,
+      "cultivar_count": 0
+    },
+    {
+      "id": "agavaceae",
+      "file": "agavaceae.json",
+      "family": "Agavaceae",
+      "common_name": "Agaves, Yuccas & Dracaenas",
+      "genera_count": 51,
+      "species_count": 914,
+      "cultivar_count": 0
+    },
+    {
+      "id": "succulents_misc",
+      "file": "succulents_misc.json",
+      "family": "Mixed Succulent Families",
+      "common_name": "Diverse Succulents",
+      "genera_count": 221,
+      "species_count": 1531,
+      "cultivar_count": 0
     }
-  ]
+  ],
+  "summary": {
+    "total_genera": 1070,
+    "total_species": 18633,
+    "total_cultivars": 82
+  }
 }

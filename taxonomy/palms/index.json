@@ -3,53 +3,36 @@
   "name": "Palms",
   "packs": [
     {
-      "id": "arecaceae_economic",
-      "name": "Economic Palms",
-      "file": "palms/arecaceae_economic.json",
-      "genera": [
-        "Cocos",
-        "Elaeis",
-        "Phoenix",
-        "Borassus",
-        "Nypa",
-        "Metroxylon",
-        "Calamus",
-        "Areca",
-        "Caryota",
-        "Roystonea",
-        "Livistona",
-        "Daemonorops",
-        "Sabal",
-        "Trachycarpus"
-      ],
-      "description": "Commercially important palms: coconut, date, oil palm, sago, rattan, betel nut, palmyra, windmill palms with Indian varieties",
-      "display_name": "Economic Palms",
-      "difficulty_range": "Beginner\u2013Advanced"
+      "id": "arecaceae_ornamental",
+      "file": "arecaceae_ornamental.json",
+      "family": "Arecaceae",
+      "common_name": "Ornamental Palms",
+      "genera_count": 155,
+      "species_count": 799,
+      "cultivar_count": 7
     },
     {
-      "id": "arecaceae_ornamental",
-      "name": "Ornamental Palms",
-      "file": "palms/arecaceae_ornamental.json",
-      "genera": [
-        "Chamaedorea",
-        "Dypsis",
-        "Rhapis",
-        "Archontophoenix",
-        "Wodyetia",
-        "Bismarckia",
-        "Washingtonia",
-        "Syagrus",
-        "Butia",
-        "Hyophorbe",
-        "Brahea",
-        "Jubaea",
-        "Lodoicea",
-        "Pritchardia",
-        "Latania"
-      ],
-      "description": "Ornamental palms for gardens and interiors: parlour palms, areca/butterfly palm, foxtail, bangalow, bismarck, lady palms and more",
-      "display_name": "Ornamental Palms",
-      "difficulty_range": "Beginner\u2013Intermediate"
+      "id": "arecaceae_economic",
+      "file": "arecaceae_economic.json",
+      "family": "Arecaceae",
+      "common_name": "Economic Palms",
+      "genera_count": 14,
+      "species_count": 261,
+      "cultivar_count": 33
+    },
+    {
+      "id": "cycadaceae",
+      "file": "cycadaceae.json",
+      "family": "Cycadaceae / Zamiaceae",
+      "common_name": "Cycads",
+      "genera_count": 16,
+      "species_count": 330,
+      "cultivar_count": 0
     }
-  ]
+  ],
+  "summary": {
+    "total_genera": 185,
+    "total_species": 1390,
+    "total_cultivars": 40
+  }
 }

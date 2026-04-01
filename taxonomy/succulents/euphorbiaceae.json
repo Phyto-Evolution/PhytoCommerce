@@ -4,10 +4,504 @@
   "family": "Euphorbiaceae",
   "common_name": "Spurges & Succulent Euphorbias",
   "description": "Large family. Succulent Euphorbias mimic cacti in form. All produce toxic milky latex. E. milii (Crown of Thorns / Kranton) is one of India's most common flowering succulents.",
-  "meta_title": "Euphorbiaceae Taxonomy Pack — Succulent Euphorbias",
+  "meta_title": "Euphorbiaceae Taxonomy Pack \u2014 Succulent Euphorbias",
   "meta_description": "Succulent Euphorbia species list with Indian common names and conservation status.",
   "meta_keywords": "Euphorbia, Crown of Thorns, Kranton, Nagphani, spurge, succulent",
   "genera": [
+    {
+      "genus": "Adenorima",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Adenorima punicea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Adenoropium",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Adenoropium berlandieri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Adenoropium elegans",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Adenoropium gossypiifolium",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Adenoropium hastatum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Adenoropium integerrimum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Adenoropium jacquinii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Adenoropium multifidum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Adenoropium pandurifolium",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Anisophyllum",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Anisophyllum cordatum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anisophyllum multiforme",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anisophyllum ovalifolium",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Anthacantha",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Anthacantha desmetiana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthacantha mamillosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Arthrothamnus",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Arthrothamnus bergii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Arthrothamnus ecklonii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Arthrothamnus tirucalli",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Castiglionia",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Castiglionia lobata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Chamaesyce",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Chamaesyce celastroides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Chamaesyce cordata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Chamaesyce degeneri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Chamaesyce fimbriata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Chamaesyce laciniata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Chamaesyce lorifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Chamaesyce multiformis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Chamaesyce olowaluana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Chamaesyce ovalifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Crepidaria",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Crepidaria carinata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Crepidaria myrtifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Crepidaria padifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Crepidaria subcarinata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Curcas",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Curcas adansonii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Curcas curcas",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Curcas drastica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Curcas indica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Curcas lobata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Curcas purgans",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Dactylanthes",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Dactylanthes globosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dactylanthes hamata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Diadenaria",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Diadenaria articulata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Diadenaria involucrata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Diadenaria pavonis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Diasperus",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Diasperus mirabilis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Elaeophorbia",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Elaeophorbia drupifera",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Elaeophorbia neriifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Endoisila",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Endoisila myrsinites",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Esula",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Esula dendroides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
     {
       "genus": "Euphorbia",
       "common_name": "Euphorbias / Spurges",
@@ -208,6 +702,4819 @@
           "full_name": "Euphorbia neriifolia",
           "common_name": "Indian Spurge Tree / Sehund",
           "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia abdelkuri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia abyssinica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia acrurensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia actinoclada",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia adenensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia aeruginosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia aethiopum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia aggregata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia albipollinifera",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia alcicornis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia alluaudii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia alternicolor",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia ambatofinandranae",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia ambovombensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia ammak",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia anacampseroides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia ankarensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia annulata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia antafikiensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia antankara",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia antiquorum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia antunesii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia aphylla",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia arborescens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia arbuscula",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia armata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia astrispina",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia atrispina",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia atropurpurea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia atroviridis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia atrox",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia aureoviridiflora",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia avasmontana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia baga",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia baionensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia balsamifera",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia basutica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia baumii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia beharensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia bellica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia benguelensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia bergii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia berorohae",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia bevilaniensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia bilocularis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia biselegans",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia bisellenbeckii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia bisglobosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia bojeri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia bongolavensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia brachyphylla",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia bracteata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia breonii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia brunellii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia bubalina",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia bulbispina",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia bupleurifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia buruana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia cactus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia caducifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia caerulescens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia calycina",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia canaliculata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia candelabrum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia cap-saintemariensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia capazii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia capitosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia carinata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia celastroides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia cervicornis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia chamaecormos",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia cirsioides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia clava",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia clavarioides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia columnaris",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia commelinii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia confertiflora",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia confinalis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia conspicua",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia controversa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia cordata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia coronata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia cremersii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia crispa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia cucumerina",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia curtifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia cylindrifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia davyi",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia debilispina",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia decaryi",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia decepta",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia decidua",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia degeneri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia dendroides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia depressa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia dinteri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia disclusa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia discoidea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia divaricata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia dregeana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia drupifera",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia duseimata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia echinulata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia echinus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia ecklonii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia edulis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia elastica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia elliptica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia enormis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia enterophora",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia erigavensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia erythraeae",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia esculenta",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia evansii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia falsa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia fasciculata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia fianarantsoae",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia fiherenensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia fimbriata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia fortuita",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia fournieri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia francoisii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia frickiana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia friedrichiae",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia fructuspini",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia fruticosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia fusiformis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia geayi",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia geminata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia genoudiana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia geroldii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia gilbertii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia gladiata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia globulicaulis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia glomerata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia golisana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia gorgonis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia gossweileri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia gottlebei",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia grandialata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia grandidens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia grandis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia greenwayi",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia groenewaldii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia guentheri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia guillauminiana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia guillemetii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia gymnocalycioides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia halipedicola",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia hamata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia handiensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia hararensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia helicothele",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia heptagona",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia herman-schwartzii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia hermentiana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia hernandez-pachecoi",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia heterochroma",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia heteropoda",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia heterospina",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia hislopii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia hofstaetteri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia horombensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia horwoodii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia huttoniae",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia hystrix",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia impervia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia inaequispina",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia inermis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia infausta",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia insulae-europae",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia intisy",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia invenusta",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia itremensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia jansenvillensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia johnsonii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia kalaharica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia kalisana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia karasmontana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia khandallensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia klotzschii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia knobelii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia knuthii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia labatii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia laciniata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia laeta",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia lamarckii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia laro",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia lavranii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia laxiflora",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia lenewtonii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia leucodendron",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia leuconeura",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia ligularia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia lindenii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia lombardensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia longibracteata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia lophogona",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia loricata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia lorifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia lugardae",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia lydenburgensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia macowanii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia madagascariensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia mafingensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia magnifica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia mainty",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia major",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia maleolens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia mamillosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia mangelsdorffii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia mangokyensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia maritae",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia marlothiana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia marlothii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia maromokotrensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia marschalliana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia mayuranathanii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia media",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia medusae",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia melanacantha",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia meloniformis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia micracantha",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia millotii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia mira",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia mitis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia mitriformis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia monteiroi",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia moratii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia morinii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia mosaica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia muirii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia multifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia multiformis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia multiramosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia murielii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia nadiae",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia najuneranatanii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia namaquensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia neglecta",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia neoarborescens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia neobosseri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia neocapitata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia neococcinea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia neocrispa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia neoerubescens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia neogillettii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia neogracilis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia neohumbertii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia neomontana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia neopedunculata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia neoreflexa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia neorubella",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia neospinescens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia neostapelioides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia neostolonifera",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia neumanii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia neutra",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia nivulia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia oahuensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia obliquifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia obovalifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia obtusifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia officinarum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia olowaluana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia oncoclada",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia ornithopus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia orobanchoides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia ovalifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pachypodioides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia padifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia parasitica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia parvimamma",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pectinata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia peltigera",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pendula",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pentagona",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia perrieri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia petraea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pfersdorfii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia phillipsiae",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia phillipsioides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia phosphorea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pillansii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia piscidermis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pistiaefolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pistiifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia planiceps",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia platyacantha",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia platyclada",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia platymammillaris",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia poissonii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia polyacantha",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia polygona",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pomiformis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia ponderosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pontica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia primulaefolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia procumbens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia proteifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pseudodendroides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pseudoduseimata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pseudoglobosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pseudograntii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pseudohypogaea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pseudoracemosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pseudostellata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pseudotrinervis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pteroneura",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pubiglans",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pugniformis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia punicea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pyriformis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia quadrangularis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia radiata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia ramena",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia ramiglans",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia ramipressa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia razafindratsirae",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia rechingeri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia reinhardtii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia renouardii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia restricta",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia rhipsaloides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia rhizophora",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia richardiana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia rigida",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia ritchiei",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia rivularis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia rogeri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia rossii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia royleana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia rubrostriata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia sagittaria",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia sakarahaensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia sansalvador",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia schizacantha",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia schoenlandii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia schubei",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia scolopendrea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia scoparia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia scopoliana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia sepium",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia septemsulcata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia sepulta",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia silenifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia similis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia sipolisii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia spectabilis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia spiralis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia splendens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia squarrosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia stellaespina",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia stellispina",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia stenoclada",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia steyermarkii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia stokesii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia stuhlmannii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia suareziana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia subapoda",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia subfalcata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia submamillaris",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia succulenta",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia superans",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia suzannae-marnierae",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia symmetrica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia tardieuana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia tessellata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia tetragona",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia thi",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia torrei",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia tortirama",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia toxicaria",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia tozzii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia triangularis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia tribuloides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia trichadenia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia troyana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia truncata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia tuberculata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia tubiglans",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia tulearensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia turbiniformis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia umbellata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia uncinata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia unispina",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia ussanguensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia valida",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia venefica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia venenifica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia viguieri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia viminalis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia viperina",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia virgata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia virosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia vulcanorum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia waringiae",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia xylophylloides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia yattana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia zoutpansbergensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Euphorbiodendron",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Euphorbiodendron puniceum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbiodendron troyanum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Euphorbion",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Euphorbion dendroides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbion myrsinitum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Galarhoeus",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Galarhoeus myrsinites",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Jatropha",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Jatropha acerifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha acuminata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha afrocurcas",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha aphrodisiaca",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha arizonica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha berlandieri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha campestris",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha cathartica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha clutioides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha coccinea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha condor",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha crinita",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha curcas",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha diversifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha edulis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha elegans",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha ellenbeckii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha fissispina",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha gossypiifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha hastata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha heterophylla",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha heynei",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha integerrima",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha jacquinii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha janipha",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha kilimandscharica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha lagarinthoides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha macrantha",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha macrorhiza",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha mahafalensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha maheshwarii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha malmeana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha marginata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha messinica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha moluensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha multifida",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha palmata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha pandurifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha podagrica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha prunifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha pseudoglandulifera",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha somalensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha spicata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha staphysagriifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha tetracantha",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha trifida",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha tuberosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha unicostata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Jatropha yucatanensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Kanopikon",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Kanopikon atropurpureum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Lacanthis",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Lacanthis splendens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Lortia",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Lortia erubescens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Lortia major",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Manihot",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Manihot curcas",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Manihot gossypiifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Manihot multifida",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Medusea",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Medusea fructus-pini",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Medusea globosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Medusea hamata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Medusea major",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Medusea procumbens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Medusea tessellata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Medusea tuberculata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Monadenium",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Monadenium aculeolatum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium arborescens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium asperrimum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium capitatum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium coccineum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium crispum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium discoideum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium echinulatum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium elegans",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium ellenbeckii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium erubescens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium fanshawei",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium gillettii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium gladiatum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium globosum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium gracile",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium guentheri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium heteropodum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium intermedium",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium invenustum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium lindenii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium lugardae",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium lunulatum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium mafingense",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium magnificum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium majus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium montanum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium orobanchoides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium pedunculatum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium pseudoracemosum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium reflexum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium rhizophorum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium ritchiei",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium rubellum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium schubei",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium spectabile",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium spinescens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium stapelioides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium stellatum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium stoloniferum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium subulifolium",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium succulentum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium torrei",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium trinerve",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium yattanum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monadenium zavattarii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Murtekias",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Murtekias myrsinites",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Pachyclada",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Pachyclada obtusifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Pedilanthus",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Pedilanthus angustifolius",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus articulatus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus bracteatus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus camporum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus canaliculatus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus carinatus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus deamii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus fendleri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus greggii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus grisebachii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus gritensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus houlletii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus ierensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus involucratus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus itzaeus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus jamaicensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus latifolius",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus myrsifolius",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus myrtifolius",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus olsson-sefferi",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus padifolius",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus parasiticus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus pavonis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus petraeus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus pringlei",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus ramosissimus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus retusus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus rubescens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus smallii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus spectabilis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus subcarinatus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pedilanthus tithymaloides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Phyllanthodendron",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Phyllanthodendron mirabile",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Phyllanthus",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Phyllanthus mirabilis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Poinsettia",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Poinsettia punicea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Ricinoides",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Ricinoides americana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Ricinus",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Ricinus americanus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ricinus jarak",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Stenadenium",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Stenadenium spinescens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Sterigmanthe",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Sterigmanthe bojeri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sterigmanthe splendens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Synadenium",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Synadenium grantii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Synadenium umbellatum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Tirucalia",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Tirucalia alluaudii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tirucalia aphylla",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tirucalia arbuscula",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tirucalia dregeana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tirucalia enterophora",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tirucalia fiherenensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tirucalia indica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tirucalia intisy",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tirucalia mainty",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tirucalia platyclada",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tirucalia stenoclada",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tirucalia tirucalli",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tirucalia virgata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tirucalia xylophylloides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Tithymaloides",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Tithymaloides angustifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymaloides articulata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymaloides bracteata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymaloides fendleri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymaloides houlletii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymaloides involucrata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymaloides myrtifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymaloides padifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymaloides parasitica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymaloides pavonis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymaloides retusa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Tithymalus",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Tithymalus adenensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus antiquorus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus aphyllus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus arboreus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus atropurpureus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus attenuatus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus aztecus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus bahamensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus balsamifer",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus bergii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus bracteatus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus bupleurifolius",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus canariensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus crispus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus deamii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus dendroides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus ecklonii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus edulis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus ellipticus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus eochlorus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus fendleri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus greggii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus grisebachii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus ierensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus itzaeus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus jamaicensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus laetus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus longipetiolatus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus melanopotamicus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus myrsinites",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus myrtifolius",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus officinarum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus olsson-sefferi",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus padifolius",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus parasiticus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus pendulus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus petanophyllus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus petraeus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus pringlei",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus puniceus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus rechingeri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus resiniferus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus sarissophyllus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus silenifolius",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus smallii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus spectabilis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus splendens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus subpavonianus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus tithymaloides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus villicus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tithymalus virgatus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Torfosidis",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Torfosidis canariensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Treisia",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Treisia clava",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Treisia hystrix",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Treisia tuberculata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Tumalis",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Tumalis bojeri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Vallaris",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Vallaris fimbriata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Ventenatia",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Ventenatia bracteata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
           "cultivars": []
         }
       ]

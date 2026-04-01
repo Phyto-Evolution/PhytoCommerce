@@ -1,0 +1,2495 @@
+{
+  "pack_id": "cycadaceae",
+  "schema_version": "1.1",
+  "family": "Cycadaceae / Zamiaceae",
+  "common_name": "Cycads",
+  "description": "Cycads are ancient gymnosperm plants \u2014 living fossils with a lineage stretching back over 300 million years. Today's species belong to three families: Cycadaceae (Cycas), Zamiaceae (Encephalartos, Zamia, Ceratozamia, Macrozamia, Dioon and others) and Stangeriaceae (Stangeria, Bowenia). Many species are critically threatened in the wild and are subject to CITES Appendix I or II protections. Slow-growing and long-lived, cycads are prized collectors' plants.",
+  "genera": [
+    {
+      "genus": "Bowenia",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Bowenia serrulata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Bowenia spectabilis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Catakidozamia",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Catakidozamia macleayi",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Ceratozamia",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Ceratozamia fuscoviridis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ceratozamia ghiesbrechtii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ceratozamia hildae",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ceratozamia intermedia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ceratozamia karsteniana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ceratozamia katzeriana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ceratozamia kuesteriana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ceratozamia latifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ceratozamia longifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ceratozamia mexicana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ceratozamia miqueliana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ceratozamia purpurea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ceratozamia robusta",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Cycas",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Cycas angulata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas armstrongii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas arnhemica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas aurea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas basaltica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas beddomei",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas bifida",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas bougainvilleana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas caffra",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas cairnsiana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas calcicola",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas canalis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas celebica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas chamberlainii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas circinalis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas clivicola",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas cochinchinensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas comorensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas conferta",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas corsoniana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas couttsiana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas curranii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas desolata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas diannanensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas dilatata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas edentata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas elephantipes",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas elongata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas fairylakea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas furfuracea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas glauca",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas gracilis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas guizhouensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas immersa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas inermis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas javana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas jenkinsiana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas kennedyana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas kirkii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas lane-poolei",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas litoralis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas longlinensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas maconochiei",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas macrocarpa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas madagascariensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas media",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas micholitzii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas micronesica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas miquelii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas multiovula",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas multipinnata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas neocaledonica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas normanbyana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas panzhihuaensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas papuana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas pectinata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas pluma",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas pruinosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas revoluta",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas riedlei",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas riuminiana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas rumphii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas scratchleyana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas seemannii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas siamensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas siamensis ",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas simplicipinna",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas speciosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas sphaerica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas squamosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas squarrosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas szechuanensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas taitungensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas taiwaniana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas tansachana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas thouarsii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas truncata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas undulata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas villosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas wadei",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas wallichii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas wendlandii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas xipholepis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cycas zeylanica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Dioon",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Dioon aculeatum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dioon angustifolium",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dioon califanoi",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dioon caputoi",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dioon edule",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dioon imbricatum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dioon mejiae",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dioon merolae",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dioon purpusii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dioon sonorense",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dioon spinulosum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dioon strobilaceum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dioon strobilosum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Dipsacozamia",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Dipsacozamia mexicana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Dyerocycas",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Dyerocycas micholitzii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Encephalartos",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Encephalartos aemulans",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos altensteinii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos arenarius",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos brachyphyllus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos bubalinus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos caffer",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos cerinus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos chimanimaniensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos concinnus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos cycadis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos denisonii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos eugene-maraisii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos ferox",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos friderici-guilielmi",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos gratus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos heenanii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos hildebrandtii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos hirsutus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos horridus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos inopinus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos kanga",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos kisambo",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos kosiensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos lanuginosus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos latifolius",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos latifrons",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos laurentianus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos lehmannii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos longifolius",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos macdonnellii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos manikensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos marumii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos mauritianus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos middelburgensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos miquelii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos moorei",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos munchii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos nanus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos nubimontanus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos princeps",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos pterogonus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos pumilus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos pungens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos regalis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos sclavoi",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos septentrionalis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos spinulosus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos striatus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos successibus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos tegulaneus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos transvenosus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos trispinosus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos umbeluziensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos van-hallii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos venetus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos villosus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos voiensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Encephalartos whitelockii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Epicycas",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Epicycas elongata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Epicycas micholitzii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Epicycas miquelii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Epicycas multipinnata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Epicycas siamensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Lepidozamia",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Lepidozamia denisonii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Lepidozamia minor",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Lepidozamia peroffskyana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Macrozamia",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Macrozamia amabilis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Macrozamia australis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Macrozamia breviformis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Macrozamia communis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Macrozamia cylindrica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Macrozamia denisonii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Macrozamia elegantissima",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Macrozamia eximia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Macrozamia gigas",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Macrozamia hillii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Macrozamia littoralis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Macrozamia macdonnellii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Macrozamia mackenzii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Macrozamia miquelii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Macrozamia moorei",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Macrozamia pectinata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Macrozamia peroffskyana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Macrozamia pulchra",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Macrozamia riedlei",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Macrozamia stenomera",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Microcycas",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Microcycas calocoma",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Palmifolium",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Palmifolium angustifolium",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Palmifolium angustissimum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Palmifolium debile",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Palmifolium floridanum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Palmifolium furfuraceum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Palmifolium galeottii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Palmifolium integrifolium",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Palmifolium latifolium",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Palmifolium loddigesii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Palmifolium medium",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Palmifolium mexicanum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Palmifolium multifoliatum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Palmifolium muricatum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Palmifolium pseudoparasiticum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Palmifolium pumilum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Palmifolium sparteum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Palmifolium strictum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Palmifolium tenue",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Palmifolium yatesii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Platyzamia",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Platyzamia rigida",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Stangeria",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Stangeria eriopus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Stangeria katzeri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Stangeria paradoxa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Stangeria sanderiana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Stangeria schizodon",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Zamia",
+      "common_name": "",
+      "description": "",
+      "native_range": "",
+      "care_level": "",
+      "tc_suitability": "",
+      "conservation_status": "LC",
+      "species": [
+        {
+          "full_name": "Zamia allison-armourii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia altensteinii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia angustifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia angustissima",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia atropurpurea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia aurea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia brachyphylla",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia caffra",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia calocoma",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia caracasana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia concinna",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia corsoniana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia crassifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia cycadifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia cycadis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia cylindrica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia debilis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia dentata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia elliptica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia encephalartoides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia eriolepis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia erosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia farinosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia ferruginea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia floridana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia friderici-guilielmi",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia furfuracea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia fusca",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia galeottii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia glabra",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia glaucescens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia gleina",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia gracilis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia guggenheimiana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia gutierrezii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia herrerae",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia horrida",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia humilis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia inermis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia integrifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia katzeri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia katzeriana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia laeta",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia lanuginosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia latifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia latifoliolata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia lawsoniana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia lehmanniana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia leiboldii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia linearifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia linearis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia linifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia loddigesii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia longifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia lucayana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia macleani",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia macleayi",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia macrophylla",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia maelenii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia media",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia mexicana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia multifoliolata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia muricata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia nana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia nigra",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia niveolanuginosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia occidentalis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia ortgiesii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia pallida",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia picta",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia portoricensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia potemkini",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia prunifera",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia pseudoparasitica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia pumila",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia pungens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia rigida",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia serrulata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia sieboldii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia silvicola",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia spadicea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia spartea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia spinosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia spinulosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia splendens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia standleyi",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia stricta",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia subcoriacea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia sylvatica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia tenuis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia terrestris",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia tricuspidata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia umbrosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia unidentata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia variegata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia vazquezii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia verbruggiana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia vernicosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia verschaffeltii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia vestita",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia villosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia vroomanii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zamia yatesii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        }
+      ]
+    }
+  ]
+}

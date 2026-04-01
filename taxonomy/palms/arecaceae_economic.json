@@ -4,7 +4,7 @@
   "family": "Arecaceae",
   "common_name": "Economic Palms",
   "description": "Commercially and economically significant palms cultivated globally for food, oil, fiber, and raw materials. Includes coconut, date palm, oil palm, sago palm, rattan, betel nut, palmyra, and royal palms. Many species are critically important in Indian agriculture and cuisine.",
-  "meta_title": "Economic Palms Taxonomy Pack — Arecaceae",
+  "meta_title": "Economic Palms Taxonomy Pack \u2014 Arecaceae",
   "meta_description": "Complete taxonomy of economically important palms: coconut, date, oil palm, sago, betel, palmyra, rattan and more.",
   "meta_keywords": [
     "palm",
@@ -64,6 +64,188 @@
               "name": "Laccadive Ordinary"
             }
           ]
+        },
+        {
+          "full_name": "Cocos acrocomioides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos aculeata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos amara",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos arechavaletana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos arenaria",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos australis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos butyracea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos capitata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos crispa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos datil",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos elegantissima",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos erythrospatha",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos fusiformis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos geriba",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos indica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos leiospatha",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos lilaceiflora",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos martiana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos nana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos nehrlingiana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos odorata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos plumosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos poni",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos pulposa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos romanzoffiana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cocos yatay",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
         }
       ]
     },
@@ -101,6 +283,48 @@
           "full_name": "Elaeis oleifera",
           "common_name": "American Oil Palm",
           "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Elaeis dybowskii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Elaeis macrophylla",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Elaeis madagascariensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Elaeis melanococca",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Elaeis nigrescens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Elaeis virescens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
           "cultivars": []
         }
       ]
@@ -224,6 +448,76 @@
           "common_name": "Sri Lanka Date Palm",
           "conservation_status": "least_concern",
           "cultivars": []
+        },
+        {
+          "full_name": "Phoenix chevalieri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phoenix cycadifolia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phoenix erecta",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phoenix excelsior",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phoenix humilis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phoenix iberica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phoenix jubae",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phoenix macrocarpa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phoenix tenuis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phoenix vigieri",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
         }
       ]
     },
@@ -266,6 +560,27 @@
           "full_name": "Borassus sambiranensis",
           "common_name": "Sambirano Palmyra",
           "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Borassus caudatus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Borassus machadonis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Borassus schumannii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
           "cultivars": []
         }
       ]
@@ -322,6 +637,41 @@
           "full_name": "Metroxylon warburgii",
           "common_name": "Vanuatu Sago Palm",
           "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Metroxylon carolinense",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Metroxylon filare",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Metroxylon microcarpum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Metroxylon microspermum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Metroxylon ruffia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
           "cultivars": []
         }
       ]
@@ -420,13 +770,34 @@
           "common_name": "False Slender Rattan",
           "conservation_status": "least_concern",
           "cultivars": []
+        },
+        {
+          "full_name": "Calamus caryotoides",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Calamus glaucescens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Calamus kunzeanus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
         }
       ]
     },
     {
       "genus": "Areca",
       "common_name": "Areca / Betel Nut Palms",
-      "description": "Palms of South and Southeast Asia, best known for Areca catechu — the betel nut or supari. The fourth most consumed psychoactive substance worldwide. Called Supari in Hindi, Paakku in Tamil.",
+      "description": "Palms of South and Southeast Asia, best known for Areca catechu \u2014 the betel nut or supari. The fourth most consumed psychoactive substance worldwide. Called Supari in Hindi, Paakku in Tamil.",
       "species": [
         {
           "full_name": "Areca catechu",
@@ -502,6 +873,237 @@
           "full_name": "Areca whitfordii",
           "common_name": "Whitford's Areca",
           "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca alba",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca aurea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca borbonica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca cathechu",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca communis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca coronata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca costata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca erythrocarpa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca erythropoda",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca faufel",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca flavescens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca furfuracea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca henrici",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca himalayana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca hortensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca lactea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca langloisiana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca leptopetala",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca litoralis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca lutescens",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca macrocarpa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca nibung",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca nigra",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca paniculata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca pisifera",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca propria",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca purpurea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca rheophytica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca rubra",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca sechellarum",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca spinosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca tigillaria",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca verschaffeltii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
           "cultivars": []
         }
       ]
@@ -588,6 +1190,76 @@
           "common_name": "Canton Fishtail Palm",
           "conservation_status": "least_concern",
           "cultivars": []
+        },
+        {
+          "full_name": "Caryota furfuracea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caryota griffithii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caryota horrida",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caryota javanica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caryota nana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caryota obtusidentata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caryota propinqua",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caryota sobolifera",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caryota speciosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caryota tremula",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
         }
       ]
     },
@@ -654,6 +1326,27 @@
           "full_name": "Roystonea maisiana",
           "common_name": "Maisiana Royal Palm",
           "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Roystonea floridana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Roystonea jenmanii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Roystonea ventricosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
           "cultivars": []
         }
       ]
@@ -781,6 +1474,118 @@
           "full_name": "Livistona benthamii",
           "common_name": "Bentham's Fan Palm",
           "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona altissima",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona brassii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona crustacea",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona filamentosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona gaudichaudii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona japonica",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona leichhardtii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona martiana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona martii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona mauritiana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona microcarpa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona mindorensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona oliviformis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona robinsoniana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona sinensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona subglobosa",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
           "cultivars": []
         }
       ]
@@ -952,6 +1757,83 @@
           "common_name": "Mexican Palmetto",
           "conservation_status": "least_concern",
           "cultivars": []
+        },
+        {
+          "full_name": "Sabal bahamensis",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal beccariana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal blackburnia",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal blackburniana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal jamesiana",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal parviflora",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal princeps",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal schwarzii",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal serrulata",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal umbraculifera",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal viatoris",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
         }
       ]
     },
@@ -1012,6 +1894,20 @@
           "full_name": "Trachycarpus princeps",
           "common_name": "Stone Gate Palm",
           "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Trachycarpus caespitosus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
+          "cultivars": []
+        },
+        {
+          "full_name": "Trachycarpus excelsus",
+          "common_name": "",
+          "description": "",
+          "conservation_status": "LC",
           "cultivars": []
         }
       ]

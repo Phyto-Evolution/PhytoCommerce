@@ -1,6 +1,6 @@
 {
   "version": "1.1.0",
-  "last_updated": "2026-04-01",
+  "last_updated": "2026-04-02",
   "maintainer": "Phyto Evolution Private Limited",
   "repository": "https://github.com/Phyto-Evolution/PhytoCommerce",
   "base_url": "https://raw.githubusercontent.com/Phyto-Evolution/PhytoCommerce/main/taxonomy/",
@@ -28,7 +28,7 @@
       "id": "succulents",
       "name": "Succulents & Cacti",
       "index": "succulents/index.json",
-      "pack_count": 4
+      "pack_count": 8
     },
     {
       "id": "bromeliads",
@@ -46,20 +46,26 @@
       "id": "palms",
       "name": "Palms",
       "index": "palms/index.json",
-      "pack_count": 2
+      "pack_count": 3
     },
     {
       "id": "horticulture",
       "name": "Horticulture Crops",
       "index": "horticulture/index.json",
       "pack_count": 4
+    },
+    {
+      "id": "trees",
+      "name": "Remarkable Trees",
+      "index": "trees/index.json",
+      "pack_count": 1
     }
   ],
   "summary": {
-    "total_categories": 8,
-    "total_packs": 23,
-    "total_genera": 556,
-    "total_species": 12130,
+    "total_categories": 9,
+    "total_packs": 29,
+    "total_genera": 1544,
+    "total_species": 22649,
     "total_cultivars": 1106
   }
 }
