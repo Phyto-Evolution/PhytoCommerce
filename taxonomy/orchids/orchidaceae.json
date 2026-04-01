@@ -3,228 +3,812 @@
   "schema_version": "1.1",
   "family": "Orchidaceae",
   "common_name": "Orchids",
-  "description": "Orchidaceae is the largest family of flowering plants, comprising over 28,000 accepted species across 763 genera — approximately 6–11% of all flowering plant species. Orchids occupy nearly every terrestrial habitat on Earth except deserts and glaciers. The family is renowned for the extraordinary diversity of flower form, adaptations for specific pollinators, and the horticultural value of both species orchids and highly bred hybrids.",
-  "meta_title": "Orchids — Orchidaceae | PhytoCommerce",
-  "meta_description": "Shop rare and classic orchid species and cultivars — Paphiopedilum, Dendrobium, Vanda, Coelogyne, Bulbophyllum. TC-grown with provenance certificates.",
-  "meta_keywords": "orchids, Orchidaceae, rare orchids, Paphiopedilum, Dendrobium, Vanda, buy orchids online",
+  "description": "Largest flowering plant family with 25,000–30,000 species. Virtually all are CITES Appendix II. India has ~1400 orchid species, especially rich in the Himalayas, Western Ghats, and Northeast India.",
+  "meta_title": "Orchidaceae Taxonomy Pack — Phalaenopsis, Cattleya, Dendrobium, Vanda",
+  "meta_description": "Comprehensive orchid genus and species list including Indian native species, conservation status, and cultivars.",
+  "meta_keywords": "orchid, Phalaenopsis, Cattleya, Dendrobium, Cymbidium, Vanda, carnivorous, CITES",
   "genera": [
     {
-      "genus": "Paphiopedilum",
-      "common_name": "Slipper Orchids",
-      "description": "<em>Paphiopedilum</em> comprises about 85 species of slipper orchids native to South and Southeast Asia. The pouch-shaped labellum acts as an insect trap for pollination. These terrestrial to lithophytic orchids are among the most popular and collectible in the orchid world. Many species and hybrid cultivars command high prices. All wild-collected plants are CITES Appendix I protected.",
-      "meta_title": "Paphiopedilum — Asian Slipper Orchids",
-      "meta_description": "Buy Paphiopedilum slipper orchids — species and hybrids. TC-grown from registered cultivars with CITES-compliant provenance. Species and hybrid forms.",
-      "meta_keywords": "Paphiopedilum for sale, slipper orchid, paph orchid, Paphiopedilum rothschildianum, rare orchid",
-      "native_range": "South and Southeast Asia (India to Pacific)",
-      "care_level": "Intermediate",
-      "tc_suitability": "Moderate",
-      "conservation_status": "CITES Appendix I (all species)",
+      "genus": "Phalaenopsis",
+      "common_name": "Moth Orchids",
+      "description": "70+ species from tropical Asia. Most common orchid sold worldwide. All are CITES Appendix II.",
       "species": [
         {
-          "full_name": "Paphiopedilum rothschildianum",
-          "common_name": "Gold of Kinabalu Orchid",
-          "description": "<em>Paphiopedilum rothschildianum</em> is often called the king of slipper orchids and one of the most valuable orchids in the world. Endemic to Mount Kinabalu, Sabah, Malaysia, it produces long horizontal inflorescences bearing 3–5 large flowers with dramatically striped petals. CITES Appendix I. Slow-growing; 7–15 years to first bloom from seed.",
-          "meta_title": "Paphiopedilum rothschildianum — King of Slipper Orchids",
-          "meta_description": "Buy Paphiopedilum rothschildianum, the gold of Kinabalu orchid. Most valuable slipper orchid; CITES-compliant TC seedlings with provenance certificate.",
-          "meta_keywords": "Paphiopedilum rothschildianum, gold of Kinabalu, king slipper orchid, rare Paph",
-          "native_range": "Borneo — Mount Kinabalu, Sabah (1200–1700 m)",
-          "conservation_status": "CR",
-          "notes": "CITES Appendix I. Very slow to bloom. Cool-intermediate conditions. High-value collector plant.",
+          "full_name": "Phalaenopsis amabilis",
+          "common_name": "Moon Orchid",
+          "conservation_status": "cites_appendix_ii",
           "cultivars": [
-            { "cultivar": "Album", "description": "White-form with reduced dark pigmentation; exceptionally rare variant." }
+            "Doris"
           ]
         },
         {
-          "full_name": "Paphiopedilum malipoense",
-          "common_name": "Malipoense Slipper Orchid",
-          "description": "<em>Paphiopedilum malipoense</em> is a Chinese–Vietnamese species noted for its large green flowers with a striking helmet-shaped dorsal sepal and a very long twisted ventral sepal. One of the few fragrant Paphiopedilum, with a raspberry-like scent. Intermediate conditions.",
-          "meta_title": "Paphiopedilum malipoense — Fragrant Chinese Slipper Orchid",
-          "meta_description": "Buy Paphiopedilum malipoense, the fragrant green slipper orchid from China and Vietnam. Raspberry scent, helmet-shaped dorsal sepal.",
-          "meta_keywords": "Paphiopedilum malipoense, fragrant slipper orchid, green paph, Chinese orchid",
-          "native_range": "Southern China (Guangxi, Yunnan), northern Vietnam",
-          "conservation_status": "EN",
-          "notes": "Fragrant; intermediate to cool conditions. Flowers spring–summer.",
+          "full_name": "Phalaenopsis schilleriana",
+          "common_name": "Schiller's Orchid",
+          "conservation_status": "cites_appendix_ii",
           "cultivars": []
         },
         {
-          "full_name": "Paphiopedilum bellatulum",
-          "common_name": "Pretty Slipper Orchid",
-          "description": "<em>Paphiopedilum bellatulum</em> is a compact lithophytic species from Myanmar, Thailand, and southern China. Produces nearly round, heavily spotted white to cream flowers held close to the heavily marbled foliage. Requires excellent drainage and warm–intermediate conditions.",
-          "meta_title": "Paphiopedilum bellatulum — Pretty Spotted Slipper Orchid",
-          "meta_description": "Buy Paphiopedilum bellatulum, the pretty slipper orchid. Round spotted white flowers close to beautiful marbled foliage; limestone lithophyte.",
-          "meta_keywords": "Paphiopedilum bellatulum, pretty paph, spotted slipper orchid, compact slipper orchid",
-          "native_range": "Myanmar, Thailand, Yunnan, China",
-          "conservation_status": "EN",
-          "notes": "Lithophyte on limestone. Needs perfect drainage and warm–intermediate conditions.",
+          "full_name": "Phalaenopsis stuartiana",
+          "common_name": "Stuart's Orchid",
+          "conservation_status": "cites_appendix_ii",
           "cultivars": []
         },
         {
-          "full_name": "Paphiopedilum sukhakulii",
-          "common_name": "Sukhakul's Slipper Orchid",
-          "description": "<em>Paphiopedilum sukhakulii</em> is a compact Thai species with attractive mottled foliage and flowers featuring distinctive purple-spotted petals held horizontally. A parent of many popular complex hybrids. Relatively easier to grow than many Paphiopedilum; warm conditions.",
-          "meta_title": "Paphiopedilum sukhakulii — Sukhakul's Slipper Orchid",
-          "meta_description": "Buy Paphiopedilum sukhakulii from Thailand. Mottled foliage, horizontal spotted petals; great beginner paph and important hybrid parent.",
-          "meta_keywords": "Paphiopedilum sukhakulii, Sukhakul slipper orchid, Thai Paph, spotted slipper orchid",
-          "native_range": "Northeast Thailand",
-          "conservation_status": "EN",
-          "notes": "Warm-growing. Good beginner paph; reliable bloomer with horizontal petals.",
+          "full_name": "Phalaenopsis aphrodite",
+          "common_name": "Aphrodite's Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phalaenopsis equestris",
+          "common_name": "Equestrian Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phalaenopsis lindenii",
+          "common_name": "Linden's Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phalaenopsis violacea",
+          "common_name": "Violet Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phalaenopsis bellina",
+          "common_name": "Bellina Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phalaenopsis gigantea",
+          "common_name": "Giant Phalaenopsis",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phalaenopsis amboinensis",
+          "common_name": "Amboin Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phalaenopsis cornu-cervi",
+          "common_name": "Deer-antler Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phalaenopsis fasciata",
+          "common_name": "Banded Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phalaenopsis mariae",
+          "common_name": "Mary's Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phalaenopsis pulchra",
+          "common_name": "Beautiful Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phalaenopsis bastianii",
+          "common_name": "Bastian's Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phalaenopsis sanderiana",
+          "common_name": "Sander's Orchid",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phalaenopsis lobbii",
+          "common_name": "Lobb's Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phalaenopsis parishii",
+          "common_name": "Parish's Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phalaenopsis speciosa",
+          "common_name": "Showy Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phalaenopsis tetraspis",
+          "common_name": "Four-shield Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Cattleya",
+      "common_name": "Corsage Orchids",
+      "description": "120+ species including former Laelia, Sophronitis, etc. Classic corsage orchids of florists. Native to tropical Americas.",
+      "species": [
+        {
+          "full_name": "Cattleya labiata",
+          "common_name": "Lip Cattleya",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cattleya trianae",
+          "common_name": "Christmas Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cattleya mossiae",
+          "common_name": "Easter Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cattleya percivaliana",
+          "common_name": "Percival's Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cattleya warscewiczii",
+          "common_name": "Giant Cattleya",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cattleya maxima",
+          "common_name": "Large Cattleya",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cattleya aurantiaca",
+          "common_name": "Orange Cattleya",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cattleya bicolor",
+          "common_name": "Two-coloured Cattleya",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cattleya walkeriana",
+          "common_name": "Walker's Cattleya",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cattleya aclandiae",
+          "common_name": "Acland's Cattleya",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cattleya loddigesii",
+          "common_name": "Loddiges' Cattleya",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cattleya intermedia",
+          "common_name": "Intermediate Cattleya",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cattleya purpurata",
+          "common_name": "Purple Cattleya",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cattleya skinneri",
+          "common_name": "Skinner's Cattleya",
+          "conservation_status": "cites_appendix_i",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cattleya luteola",
+          "common_name": "Yellow Cattleya",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cattleya elongata",
+          "common_name": "Elongated Cattleya",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cattleya tigrina",
+          "common_name": "Tiger Cattleya",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cattleya velutina",
+          "common_name": "Velvety Cattleya",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cattleya granulosa",
+          "common_name": "Granular Cattleya",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cattleya harrisoniana",
+          "common_name": "Harrison's Cattleya",
+          "conservation_status": "cites_appendix_ii",
           "cultivars": []
         }
       ]
     },
     {
       "genus": "Dendrobium",
-      "common_name": "Cane Orchids",
-      "description": "<em>Dendrobium</em> is one of the largest orchid genera, with nearly 2000 species distributed from India to Japan, Southeast Asia, Australia, and the Pacific. The genus is extraordinarily diverse in habitat and flower form. It includes compact miniatures, towering cane species, and deciduous cool-growers. Commercially important as cut flowers and potted plants.",
-      "meta_title": "Dendrobium — Cane and Epiphytic Orchids",
-      "meta_description": "Buy Dendrobium orchids — species and hybrids. Cane, pendulous, and compact forms. TC-grown with provenance; suitable for warm and intermediate growers.",
-      "meta_keywords": "Dendrobium for sale, Dendrobium orchid, cane orchid, Dendrobium nobile, epiphytic orchid",
-      "native_range": "South Asia, Southeast Asia, Pacific, Australia",
-      "care_level": "Beginner–Intermediate",
-      "tc_suitability": "High",
-      "conservation_status": "varies by species",
+      "common_name": "Dendrobiums",
+      "description": "1800+ species — one of the two largest orchid genera. Native to tropical Asia, Australia, and the Pacific. Important Indian orchids in NE states.",
       "species": [
         {
           "full_name": "Dendrobium nobile",
-          "common_name": "Noble Dendrobium",
-          "description": "<em>Dendrobium nobile</em> is a classic cool-growing deciduous Dendrobium from the Himalayan foothills through Indochina. Produces fragrant flowers along the length of leafless canes after a dry cool winter rest. The species parent of thousands of nobile-type hybrids widely sold as spring gifts.",
-          "meta_title": "Dendrobium nobile — Noble Cane Orchid",
-          "meta_description": "Buy Dendrobium nobile orchids. Classic fragrant Himalayan cane orchid; cool dry winter rest triggers spring flowering. Species and nobile hybrids.",
-          "meta_keywords": "Dendrobium nobile, noble dendrobium, nobile orchid, Himalayan orchid",
-          "native_range": "Himalayan foothills to Indochina (1000–2000 m)",
-          "conservation_status": "LC",
-          "notes": "Deciduous cool-growing. Dry cool winter rest essential for flowering. Fragrant.",
+          "common_name": "Noble Orchid",
+          "conservation_status": "cites_appendix_ii",
           "cultivars": [
-            { "cultivar": "Pink Form", "description": "Vivid pink-tipped flowers with white base; popular selected form." },
-            { "cultivar": "Album", "description": "Pure white flowers with yellow throat; elegant and fragrant." }
+            "Wax Pink",
+            "Polar Fire",
+            "Polar Spring"
           ]
         },
         {
           "full_name": "Dendrobium phalaenopsis",
           "common_name": "Cooktown Orchid",
-          "description": "<em>Dendrobium phalaenopsis</em> (syn. <em>D. bigibbum</em>) is the floral emblem of Queensland, Australia. Produces erect racemes of 5–20 flowers in shades of purple to white. Warm-growing and long-blooming; widely used in the cut-flower trade and as a parent for warm-type hybrids.",
-          "meta_title": "Dendrobium phalaenopsis — Cooktown Orchid",
-          "meta_description": "Buy Dendrobium phalaenopsis, Queensland's floral emblem. Purple to white flowers on erect racemes; warm-growing cut-flower orchid.",
-          "meta_keywords": "Dendrobium phalaenopsis, Cooktown orchid, Queensland orchid, purple Dendrobium",
-          "native_range": "Northern Australia (Queensland), New Guinea",
-          "conservation_status": "LC",
-          "notes": "Warm-growing; sunny position. Long-lasting flowers; popular cut-flower parent.",
-          "cultivars": [
-            { "cultivar": "Alba", "description": "Pure white form; clean and elegant." }
-          ]
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
         },
         {
           "full_name": "Dendrobium cuthbertsonii",
-          "common_name": "Rainbow Orchid",
-          "description": "<em>Dendrobium cuthbertsonii</em> is a miniature high-altitude species from New Guinea remarkable for its disproportionately large flowers (nearly as big as the plant) in vivid reds, oranges, pinks, and bicolours. Flowers are extremely long-lasting — often 6–9 months. Cool growing; requires excellent ventilation.",
-          "meta_title": "Dendrobium cuthbertsonii — Rainbow Miniature Orchid",
-          "meta_description": "Buy Dendrobium cuthbertsonii, the rainbow orchid. Giant flowers on a tiny plant; months-long bloom in reds, oranges, pinks. Cool-growing New Guinea miniature.",
-          "meta_keywords": "Dendrobium cuthbertsonii, rainbow orchid, miniature orchid, long-blooming orchid, New Guinea orchid",
-          "native_range": "New Guinea highlands (2000–3200 m)",
-          "conservation_status": "NT",
-          "notes": "Cool-growing miniature; needs excellent air movement. Flowers 6–9 months. Highly collectible.",
-          "cultivars": [
-            { "cultivar": "Red Form", "description": "Vivid scarlet-red flowers; one of the most sought-after colour forms." }
-          ]
+          "common_name": "Cuthbertson's Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dendrobium speciosum",
+          "common_name": "Rock Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dendrobium kingianum",
+          "common_name": "Pink Rock Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dendrobium bigibbum",
+          "common_name": "Cooktown Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dendrobium chrysotoxum",
+          "common_name": "Golden Arch Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dendrobium thyrsiflorum",
+          "common_name": "Drooping Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dendrobium loddigesii",
+          "common_name": "Loddiges' Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dendrobium fimbriatum",
+          "common_name": "Fringe-lipped Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dendrobium parishii",
+          "common_name": "Parish's Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dendrobium primulinum",
+          "common_name": "Primrose Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dendrobium wardianum",
+          "common_name": "Ward's Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dendrobium densiflorum",
+          "common_name": "Dense-flowered Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dendrobium formosum",
+          "common_name": "Beautiful Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dendrobium moniliforme",
+          "common_name": "Necklace Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dendrobium herbaceum",
+          "common_name": "Herbaceous Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dendrobium peguanum",
+          "common_name": "Pegu Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dendrobium anosmum",
+          "common_name": "Unscented Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dendrobium aphyllum",
+          "common_name": "Leafless Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dendrobium crystallinum",
+          "common_name": "Crystal Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dendrobium devonianum",
+          "common_name": "Devon's Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dendrobium farmeri",
+          "common_name": "Farmer's Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dendrobium heterocarpum",
+          "common_name": "Variable-fruited Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dendrobium lindleyi",
+          "common_name": "Lindley's Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Cymbidium",
+      "common_name": "Cymbidiums / Boat Orchids",
+      "description": "52 species native to tropical/subtropical Asia and Australia. Long-lasting flowers; important cut flower crop. Grows wild in Himalayan India.",
+      "species": [
+        {
+          "full_name": "Cymbidium tracyanum",
+          "common_name": "Tracy's Cymbidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cymbidium lowianum",
+          "common_name": "Low's Cymbidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cymbidium hookerianum",
+          "common_name": "Hooker's Cymbidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cymbidium insigne",
+          "common_name": "Remarkable Cymbidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cymbidium elegans",
+          "common_name": "Elegant Cymbidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cymbidium devonianum",
+          "common_name": "Devon's Cymbidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cymbidium aloifolium",
+          "common_name": "Aloe-leaved Cymbidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cymbidium finlaysonianum",
+          "common_name": "Finlayson's Cymbidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cymbidium ensifolium",
+          "common_name": "Sword-leaved Cymbidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cymbidium sinense",
+          "common_name": "Chinese Cymbidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cymbidium goeringii",
+          "common_name": "Goering's Cymbidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cymbidium tigrinum",
+          "common_name": "Tiger Cymbidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cymbidium cochleare",
+          "common_name": "Cochlear Cymbidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cymbidium eburneum",
+          "common_name": "Ivory Cymbidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cymbidium floribundum",
+          "common_name": "Free-flowering Cymbidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Paphiopedilum",
+      "common_name": "Asian Slipper Orchids",
+      "description": "80+ species of sympodial slipper orchids native to tropical Asia. All CITES Appendix II; some Appendix I. India has P. druryi (critically endangered) and P. fairrieanum (endangered).",
+      "species": [
+        {
+          "full_name": "Paphiopedilum rothschildianum",
+          "common_name": "Rothschild's Slipper",
+          "conservation_status": "endangered",
+          "cultivars": []
+        },
+        {
+          "full_name": "Paphiopedilum malipoense",
+          "common_name": "Maliopo Slipper",
+          "conservation_status": "endangered",
+          "cultivars": []
+        },
+        {
+          "full_name": "Paphiopedilum bellatulum",
+          "common_name": "Pretty Slipper",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Paphiopedilum sukhakulii",
+          "common_name": "Sukhakul's Slipper",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Paphiopedilum callosum",
+          "common_name": "Callused Slipper",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Paphiopedilum barbatum",
+          "common_name": "Bearded Slipper",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Paphiopedilum lawrenceanum",
+          "common_name": "Lawrence's Slipper",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Paphiopedilum purpuratum",
+          "common_name": "Purple Slipper",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Paphiopedilum druryi",
+          "common_name": "Drury's Slipper",
+          "conservation_status": "critically_endangered",
+          "cultivars": []
+        },
+        {
+          "full_name": "Paphiopedilum fairrieanum",
+          "common_name": "Fairrie's Slipper",
+          "conservation_status": "endangered",
+          "cultivars": []
+        },
+        {
+          "full_name": "Paphiopedilum hirsutissimum",
+          "common_name": "Very Hairy Slipper",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Paphiopedilum spicerianum",
+          "common_name": "Spicer's Slipper",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Paphiopedilum venustum",
+          "common_name": "Charming Slipper",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Paphiopedilum villosum",
+          "common_name": "Shaggy Slipper",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Paphiopedilum insigne",
+          "common_name": "Notable Slipper",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Paphiopedilum concolor",
+          "common_name": "Same-coloured Slipper",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Paphiopedilum niveum",
+          "common_name": "Snow White Slipper",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Paphiopedilum godefroyae",
+          "common_name": "Godefroy's Slipper",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Paphiopedilum armeniacum",
+          "common_name": "Apricot Slipper",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Paphiopedilum micranthum",
+          "common_name": "Small-flowered Slipper",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
         }
       ]
     },
     {
       "genus": "Vanda",
       "common_name": "Vanda Orchids",
-      "description": "<em>Vanda</em> comprises about 80 monopodial epiphytic orchids from South and Southeast Asia. Famous for their large, flat, often strongly patterned flowers produced on erect racemes from leaf axils. Vandas are warm-growing, high-light orchids that perform best when grown bare-root in hanging baskets with daily watering in tropical conditions. Extensively hybridised for the cut-flower industry.",
-      "meta_title": "Vanda — Tropical Monopodial Orchids",
-      "meta_description": "Buy Vanda orchids — species and hybrid forms. Large flat flowers in blues, purples, oranges and tessellated patterns. Warm-growing bare-root epiphytes.",
-      "meta_keywords": "Vanda orchid for sale, blue Vanda, Vanda coerulea, monopodial orchid, tropical orchid",
-      "native_range": "South Asia, Southeast Asia, Pacific",
-      "care_level": "Intermediate",
-      "tc_suitability": "Moderate",
-      "conservation_status": "varies by species",
+      "description": "80+ species of monopodial orchids native to South and Southeast Asia. V. coerulea (Blue Vanda) is India's most famous orchid. Indian: Vandha.",
       "species": [
         {
           "full_name": "Vanda coerulea",
-          "common_name": "Blue Vanda",
-          "description": "<em>Vanda coerulea</em> is the famous blue orchid of the Himalayas and Southeast Asia, one of the few truly blue-flowered orchids. Native to Assam, Myanmar, Thailand, and southern China at 1000–1800 m. Flowers are pale to deep sky blue with a finely tessellated network pattern. CITES Appendix I. Essential parent of blue hybrid Vandas.",
-          "meta_title": "Vanda coerulea — Blue Himalayan Vanda Orchid",
-          "meta_description": "Buy Vanda coerulea, the rare blue vanda orchid. CITES-compliant TC seedlings with provenance; blue tessellated flowers from Himalayan foothills.",
-          "meta_keywords": "Vanda coerulea, blue vanda, blue orchid, Himalayan vanda, rare orchid",
-          "native_range": "Assam, Myanmar, Thailand, southern China (1000–1800 m)",
-          "conservation_status": "EN",
-          "notes": "CITES Appendix I. Cool-intermediate. Primary parent for blue Vanda hybrids.",
+          "common_name": "Blue Vanda / Blue Orchid",
+          "conservation_status": "endangered",
           "cultivars": []
         },
         {
           "full_name": "Vanda tricolor",
-          "common_name": "Tricolour Vanda",
-          "description": "<em>Vanda tricolor</em> is a vigorous warm-growing species from Java and Bali producing large, sweetly fragrant flowers in creamy yellow with purple-brown spots and a rose-purple lip. One of the easier Vanda species to cultivate.",
-          "meta_title": "Vanda tricolor — Fragrant Tricolour Vanda",
-          "meta_description": "Buy Vanda tricolor from Java and Bali. Fragrant yellow-spotted purple-brown flowers with rose lip; vigorous warm-grower.",
-          "meta_keywords": "Vanda tricolor, tricolour vanda, fragrant vanda, Java orchid",
-          "native_range": "Java, Bali",
-          "conservation_status": "LC",
-          "notes": "Warm-growing; fragrant. Good starter Vanda species.",
+          "common_name": "Three-coloured Vanda",
+          "conservation_status": "cites_appendix_ii",
           "cultivars": []
         },
         {
           "full_name": "Vanda tessellata",
           "common_name": "Tessellated Vanda",
-          "description": "<em>Vanda tessellata</em> is a widely distributed South Asian species with attractive yellowish-green flowers heavily marked with a brown-purple tessellated pattern. Medicinal uses documented in Ayurvedic traditions. Hardy and adaptable compared to other Vandas.",
-          "meta_title": "Vanda tessellata — Tessellated South Asian Vanda",
-          "meta_description": "Buy Vanda tessellata from South Asia. Yellowish-green tessellated flowers with purple-brown markings; medicinal uses and adaptable grower.",
-          "meta_keywords": "Vanda tessellata, tessellated vanda, South Asian orchid, Ayurvedic orchid",
-          "native_range": "India, Sri Lanka, Myanmar, Bangladesh",
-          "conservation_status": "LC",
-          "notes": "Hardy Vanda; tolerates brief dry periods. Used in Ayurvedic medicine.",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vanda cristata",
+          "common_name": "Crested Vanda",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vanda pumila",
+          "common_name": "Dwarf Vanda",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vanda sanderiana",
+          "common_name": "Waling-waling",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vanda wightii",
+          "common_name": "Wight's Vanda",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vanda bensonii",
+          "common_name": "Benson's Vanda",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vanda liouvillei",
+          "common_name": "Liouville's Vanda",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vanda coerulescens",
+          "common_name": "Bluish Vanda",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vanda roxburghii",
+          "common_name": "Roxburgh's Vanda",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vanda parviflora",
+          "common_name": "Small-flowered Vanda",
+          "conservation_status": "cites_appendix_ii",
           "cultivars": []
         }
       ]
     },
     {
-      "genus": "Coelogyne",
-      "common_name": "Coelogyne Orchids",
-      "description": "<em>Coelogyne</em> comprises about 200 species of sympodial orchids distributed across South and Southeast Asia to the Pacific. The genus is valued for its often large, frequently fragrant, white or cream flowers with intricate markings on the lip. Growth habits range from compact miniatures to large specimen plants. Many species are cool-growing, making them suitable for temperate-zone greenhouses.",
-      "meta_title": "Coelogyne — Asian Sympodial Orchids",
-      "meta_description": "Buy Coelogyne orchids — fragrant white and cream-flowered sympodial orchids from South and Southeast Asia. Cool and intermediate species available.",
-      "meta_keywords": "Coelogyne for sale, Coelogyne cristata, fragrant orchid, white orchid, Asian orchid",
-      "native_range": "South Asia, Southeast Asia to Pacific",
-      "care_level": "Beginner–Intermediate",
-      "tc_suitability": "Moderate",
-      "conservation_status": "varies by species",
+      "genus": "Oncidium",
+      "common_name": "Dancing Lady Orchids",
+      "description": "300+ species (broad sense including Brassia, Miltonia) from tropical Americas. Known for prolific small flowers resembling dancing figures.",
       "species": [
         {
-          "full_name": "Coelogyne cristata",
-          "common_name": "Crystal Orchid",
-          "description": "<em>Coelogyne cristata</em> is one of the showiest orchids for cool climates, producing large clusters of pure white flowers with a distinctive orange-yellow crested lip. Native to the Himalayas at 1300–2000 m. A cool dry winter rest is essential to trigger the spectacular spring flush of fragrant blooms.",
-          "meta_title": "Coelogyne cristata — Crystal Himalayan Orchid",
-          "meta_description": "Buy Coelogyne cristata, the crystal orchid from the Himalayas. White fragrant spring flowers with orange-crested lip; needs cool dry winter rest.",
-          "meta_keywords": "Coelogyne cristata, crystal orchid, white Coelogyne, Himalayan orchid, fragrant orchid",
-          "native_range": "Himalayas (Nepal, Bhutan, Sikkim, Yunnan) 1300–2000 m",
-          "conservation_status": "NT",
-          "notes": "Cool-growing; dry cool winter triggers flowering. Spectacular spring bloom. Fragrant.",
+          "full_name": "Oncidium sphacelatum",
+          "common_name": "Killing Oncidium",
+          "conservation_status": "cites_appendix_ii",
           "cultivars": []
         },
         {
-          "full_name": "Coelogyne flaccida",
-          "common_name": "Flaccid Coelogyne",
-          "description": "<em>Coelogyne flaccida</em> produces attractive pendant racemes of creamy white flowers with brown markings on the lip and a sweet fragrance. Native to the Himalayas and Southeast Asia. Intermediate-growing and reliable bloomer in late winter–spring.",
-          "meta_title": "Coelogyne flaccida — Pendant White Coelogyne",
-          "meta_description": "Buy Coelogyne flaccida, the pendant-raceme Coelogyne. Creamy white fragrant flowers with brown-marked lip; intermediate-growing Himalayan orchid.",
-          "meta_keywords": "Coelogyne flaccida, pendant Coelogyne, fragrant Coelogyne, white orchid",
-          "native_range": "Himalayas, Myanmar, Thailand",
-          "conservation_status": "LC",
-          "notes": "Intermediate conditions. Pendant inflorescences best displayed in hanging baskets.",
+          "full_name": "Oncidium tigrinum",
+          "common_name": "Tiger Oncidium",
+          "conservation_status": "cites_appendix_ii",
           "cultivars": []
         },
         {
-          "full_name": "Coelogyne nitida",
-          "common_name": "Bright-lipped Coelogyne",
-          "description": "<em>Coelogyne nitida</em> bears erect racemes of glistening white flowers with a bright yellow-orange marked lip. Compact growth habit; native to the Himalayan foothills. One of the more floriferous and reliable cool-growing Coelogyne species.",
-          "meta_title": "Coelogyne nitida — Bright-lipped Compact Coelogyne",
-          "meta_description": "Buy Coelogyne nitida, the bright-lipped compact Coelogyne. White flowers with vivid yellow-orange lip; erect racemes on a floriferous cool-grower.",
-          "meta_keywords": "Coelogyne nitida, bright-lipped coelogyne, compact orchid, Himalayan cool-growing orchid",
-          "native_range": "Nepal, Bhutan, northeast India, Myanmar",
-          "conservation_status": "LC",
-          "notes": "Cool-growing; compact. Reliable and floriferous; good for beginners in cool conditions.",
+          "full_name": "Oncidium ornithorhynchum",
+          "common_name": "Bird-beak Oncidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Oncidium leucochilum",
+          "common_name": "White-lipped Oncidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Oncidium varicosum",
+          "common_name": "Variable Oncidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Oncidium flexuosum",
+          "common_name": "Wavy Oncidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Oncidium sarcodes",
+          "common_name": "Flesh-like Oncidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Oncidium cheirophorum",
+          "common_name": "Hand-bearing Oncidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Oncidium kramerianum",
+          "common_name": "Kramer's Oncidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Oncidium excavatum",
+          "common_name": "Excavated Oncidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Oncidium microchilum",
+          "common_name": "Small-lipped Oncidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Oncidium hastatum",
+          "common_name": "Arrow-shaped Oncidium",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Oncidium longipes",
+          "common_name": "Long-stemmed Oncidium",
+          "conservation_status": "cites_appendix_ii",
           "cultivars": []
         }
       ]
@@ -232,37 +816,594 @@
     {
       "genus": "Bulbophyllum",
       "common_name": "Bulbophyllums",
-      "description": "<em>Bulbophyllum</em> is the largest genus of orchids and possibly all flowering plants, with over 2000 accepted species distributed across every tropical region. The genus is famous for its extraordinary flower diversity — from tiny to enormous, from sweetly fragrant to offensively malodorous (to attract carrion fly pollinators). Mostly epiphytic with pseudobulbs bearing one or two leaves; habits range from creeping mats to large specimen clumps.",
-      "meta_title": "Bulbophyllum — World's Largest Orchid Genus",
-      "meta_description": "Buy rare Bulbophyllum orchids. World's largest orchid genus with extraordinary flower diversity. Miniature to large species; TC-grown with provenance.",
-      "meta_keywords": "Bulbophyllum for sale, rare Bulbophyllum, Bulbophyllum rothschildianum, miniature orchid, tropical orchid",
-      "native_range": "All tropical regions worldwide",
-      "care_level": "Intermediate",
-      "tc_suitability": "Moderate",
-      "conservation_status": "varies by species",
+      "description": "2000+ species — the largest orchid genus. Native to tropical regions worldwide. Many produce extraordinary and bizarre flowers.",
       "species": [
         {
           "full_name": "Bulbophyllum rothschildianum",
           "common_name": "Rothschild's Bulbophyllum",
-          "description": "<em>Bulbophyllum rothschildianum</em> produces pendulous umbels of up to 12 large flowers with dramatically long, thin lateral sepals striped in red-purple on white. Native to India (Assam) and Myanmar. One of the showiest Bulbophyllum in cultivation, requiring warm conditions and bright but filtered light.",
-          "meta_title": "Bulbophyllum rothschildianum — Rothschild's Showpiece Orchid",
-          "meta_description": "Buy Bulbophyllum rothschildianum, Rothschild's bulbophyllum. Long-tailed striped flowers in umbel clusters; warm-growing showpiece from Assam.",
-          "meta_keywords": "Bulbophyllum rothschildianum, Rothschild bulbophyllum, showpiece orchid, Assam orchid",
-          "native_range": "India (Assam), Myanmar",
-          "conservation_status": "VU",
-          "notes": "Warm-growing; umbellate inflorescences of 10–12 flowers. One of the most dramatic Bulbophyllum.",
+          "conservation_status": "cites_appendix_ii",
           "cultivars": []
         },
         {
           "full_name": "Bulbophyllum lobbii",
           "common_name": "Lobb's Bulbophyllum",
-          "description": "<em>Bulbophyllum lobbii</em> is a Southeast Asian species producing large solitary fragrant flowers — yellow with red-brown stripes — from each pseudobulb. The lip rocks in air movement. A popular and rewarding Bulbophyllum for intermediate to warm conditions.",
-          "meta_title": "Bulbophyllum lobbii — Lobb's Fragrant Bulbophyllum",
-          "meta_description": "Buy Bulbophyllum lobbii from Southeast Asia. Large solitary fragrant yellow-striped flowers on robust pseudobulbs; intermediate to warm conditions.",
-          "meta_keywords": "Bulbophyllum lobbii, Lobb's bulbophyllum, fragrant bulbophyllum, large-flowered orchid",
-          "native_range": "Peninsular Malaysia, Sumatra, Java, Borneo, Philippines",
-          "conservation_status": "LC",
-          "notes": "Intermediate to warm. Single large fragrant flower per pseudobulb. Rocking lip is diagnostic.",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Bulbophyllum echinolabium",
+          "common_name": "Spiny-lipped Bulbophyllum",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Bulbophyllum beccarii",
+          "common_name": "Beccari's Bulbophyllum",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Bulbophyllum falcatum",
+          "common_name": "Sickle-shaped Bulbophyllum",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Bulbophyllum cocoinum",
+          "common_name": "Coconut-scented Bulbophyllum",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Bulbophyllum medusae",
+          "common_name": "Medusa Bulbophyllum",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Bulbophyllum barbigerum",
+          "common_name": "Bearded Bulbophyllum",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Bulbophyllum lemniscatoides",
+          "common_name": "Ribbon Bulbophyllum",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Bulbophyllum macranthum",
+          "common_name": "Large-flowered Bulbophyllum",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Bulbophyllum purpureorhachis",
+          "common_name": "Purple-rachis Bulbophyllum",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Bulbophyllum grandiflorum",
+          "common_name": "Large-flowered Bulbophyllum",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Bulbophyllum lobbii",
+          "common_name": "Lobb's Bulbophyllum",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Bulbophyllum makoyanum",
+          "common_name": "Makoy's Bulbophyllum",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Bulbophyllum maximum",
+          "common_name": "Maximum Bulbophyllum",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Masdevallia",
+      "common_name": "Kite Orchids",
+      "description": "600+ species of miniature orchids from the Andean cloud forests of South America. Known for colourful triangular flowers with elongated tails.",
+      "species": [
+        {
+          "full_name": "Masdevallia veitchiana",
+          "common_name": "Veitch's Kite Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Masdevallia coccinea",
+          "common_name": "Scarlet Kite Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Masdevallia ignea",
+          "common_name": "Fiery Kite Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Masdevallia infracta",
+          "common_name": "Broken Kite Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Masdevallia tovarensis",
+          "common_name": "Tovar Kite Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Masdevallia wageneriana",
+          "common_name": "Wagener's Kite Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Masdevallia nidifica",
+          "common_name": "Nest-like Kite Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Masdevallia triangularis",
+          "common_name": "Triangular Kite Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Masdevallia caudata",
+          "common_name": "Tailed Kite Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Masdevallia davisii",
+          "common_name": "Davis's Kite Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Masdevallia schlimii",
+          "common_name": "Schlim's Kite Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Masdevallia princeps",
+          "common_name": "Prince Kite Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Masdevallia uniflora",
+          "common_name": "Single-flowered Kite Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Coelogyne",
+      "common_name": "Coelogynes",
+      "description": "200+ species native to tropical Asia and the Pacific. Many Indian Himalayan species. Nodding racemes of fragrant white or pale flowers.",
+      "species": [
+        {
+          "full_name": "Coelogyne cristata",
+          "common_name": "Crested Coelogyne",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Coelogyne flaccida",
+          "common_name": "Flaccid Coelogyne",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Coelogyne nitida",
+          "common_name": "Shining Coelogyne",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Coelogyne speciosa",
+          "common_name": "Showy Coelogyne",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Coelogyne pandurata",
+          "common_name": "Black Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Coelogyne asperata",
+          "common_name": "Rough Coelogyne",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Coelogyne massangeana",
+          "common_name": "Massange's Coelogyne",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Coelogyne tomentosa",
+          "common_name": "Hairy Coelogyne",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Coelogyne ochracea",
+          "common_name": "Ochre Coelogyne",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Coelogyne elata",
+          "common_name": "Tall Coelogyne",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Coelogyne fimbriata",
+          "common_name": "Fringed Coelogyne",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Coelogyne stricta",
+          "common_name": "Erect Coelogyne",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Coelogyne punctulata",
+          "common_name": "Dotted Coelogyne",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Coelogyne viscosa",
+          "common_name": "Sticky Coelogyne",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Coelogyne mayeriana",
+          "common_name": "Mayer's Coelogyne",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Zygopetalum",
+      "common_name": "Zygopetalums",
+      "description": "15 species of fragrant South American orchids. Popular in cut flower trade for their blue-purple lip markings — rare in orchids.",
+      "species": [
+        {
+          "full_name": "Zygopetalum maculatum",
+          "common_name": "Spotted Zygopetalum",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zygopetalum maxillare",
+          "common_name": "Jawbone Zygopetalum",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zygopetalum crinitum",
+          "common_name": "Hairy Zygopetalum",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zygopetalum intermedium",
+          "common_name": "Intermediate Zygopetalum",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zygopetalum mackayi",
+          "common_name": "Mackay's Zygopetalum",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Zygopetalum brachypetalum",
+          "common_name": "Short-petalled Zygopetalum",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Dracula",
+      "common_name": "Monkey-face Orchids",
+      "description": "120+ species from the cloud forests of Central/South America. Named for Dracula-like appearance; flowers often resemble monkey faces. Cool-growing.",
+      "species": [
+        {
+          "full_name": "Dracula simia",
+          "common_name": "Monkey-face Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dracula bella",
+          "common_name": "Beautiful Dracula",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dracula erythrochaete",
+          "common_name": "Red-bristled Dracula",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dracula roezlii",
+          "common_name": "Roezl's Dracula",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dracula wallisii",
+          "common_name": "Wallis's Dracula",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dracula gigas",
+          "common_name": "Giant Dracula",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dracula chimaera",
+          "common_name": "Chimaera Dracula",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dracula vampira",
+          "common_name": "Vampire Dracula",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dracula lotax",
+          "common_name": "Lottery Dracula",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Miltoniopsis",
+      "common_name": "Pansy Orchids",
+      "description": "6 species of large-flowered Colombian and Ecuadorian orchids resembling pansies. Popular with hobbyists for flat, colourful faces.",
+      "species": [
+        {
+          "full_name": "Miltoniopsis roezlii",
+          "common_name": "Roezl's Pansy Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Miltoniopsis vexillaria",
+          "common_name": "Flag Pansy Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": [
+            "Red Knight",
+            "Pink Cadillac"
+          ]
+        },
+        {
+          "full_name": "Miltoniopsis phalaenopsis",
+          "common_name": "Moth Pansy Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Miltoniopsis warzewiczii",
+          "common_name": "Warzewicz's Pansy Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Miltoniopsis santanaei",
+          "common_name": "Santana's Pansy Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Miltoniopsis bismarckii",
+          "common_name": "Bismarck's Pansy Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Vanilla",
+      "common_name": "Vanilla",
+      "description": "110+ species of climbing orchids. V. planifolia is the source of natural vanilla flavouring. Widely cultivated in India (Kerala, NE states). Indian: Vanilla.",
+      "species": [
+        {
+          "full_name": "Vanilla planifolia",
+          "common_name": "Vanilla / Planifolia",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vanilla pompona",
+          "common_name": "Tahitian Vanilla",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vanilla tahitensis",
+          "common_name": "Tahiti Vanilla",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vanilla aphylla",
+          "common_name": "Leafless Vanilla",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Rhynchostylis",
+      "common_name": "Foxtail Orchids",
+      "description": "4 species from tropical Asia. R. retusa (Kopou Phool) is the state flower of Assam, India. Fragrant drooping racemes. Indian: Kopou Phool.",
+      "species": [
+        {
+          "full_name": "Rhynchostylis gigantea",
+          "common_name": "Giant Foxtail Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Rhynchostylis retusa",
+          "common_name": "Foxtail Orchid / Kopou Phool",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Rhynchostylis coelestis",
+          "common_name": "Sky Foxtail Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Rhynchostylis violacea",
+          "common_name": "Violet Foxtail Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Aerides",
+      "common_name": "Foxtail / Cat's-tail Orchids",
+      "description": "20+ species of monopodial orchids from South and Southeast Asia. Indian species bear fragrant waxy flowers.",
+      "species": [
+        {
+          "full_name": "Aerides odorata",
+          "common_name": "Fragrant Aerides",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aerides multiflora",
+          "common_name": "Many-flowered Aerides",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aerides maculosa",
+          "common_name": "Spotted Aerides",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aerides crispa",
+          "common_name": "Crisped Aerides",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aerides ringens",
+          "common_name": "Gaping Aerides",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aerides fieldingii",
+          "common_name": "Fielding's Aerides",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aerides quinquevulnera",
+          "common_name": "Five-wounded Aerides",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Habenaria",
+      "common_name": "Rein Orchids",
+      "description": "600+ species of terrestrial orchids worldwide. Many Himalayan Indian species bloom during monsoon in alpine meadows.",
+      "species": [
+        {
+          "full_name": "Habenaria intermedia",
+          "common_name": "Intermediate Rein Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Habenaria digitata",
+          "common_name": "Digitate Rein Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Habenaria edgeworthii",
+          "common_name": "Edgeworth's Rein Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Habenaria plantaginea",
+          "common_name": "Plantain-leaved Rein Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Habenaria longicorniculata",
+          "common_name": "Long-spurred Rein Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Habenaria acuminata",
+          "common_name": "Acuminate Rein Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Habenaria pectinata",
+          "common_name": "Comb-like Rein Orchid",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Habenaria susannae",
+          "common_name": "Susanna's Rein Orchid",
+          "conservation_status": "cites_appendix_ii",
           "cultivars": []
         }
       ]
