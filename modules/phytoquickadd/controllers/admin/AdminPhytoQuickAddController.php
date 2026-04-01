@@ -380,8 +380,13 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
                 if (strpos($pack['file'], '/') === false) {
                     $pack['file'] = $category['id'] . '/' . $pack['file'];
                 }
-                $pack['category_id'] = $category['id'];
-                $pack['category']    = $category['name'];
+                $pack['category_id']      = $category['id'];
+                $pack['category']         = $category['name'];
+                // Normalise fields so the JS template always has what it needs
+                $pack['display_name']     = $pack['display_name']     ?? $pack['name']  ?? $pack['id'];
+                $pack['description']      = $pack['description']      ?? '';
+                $pack['difficulty_range'] = $pack['difficulty_range'] ?? 'Varies';
+                if (!isset($pack['genera'])) $pack['genera'] = [];
                 $pack['imported']    = isset($imported[$pack['file']]);
                 if ($pack['imported']) {
                     $pack['imported_at'] = $imported[$pack['file']]['imported_at'];
