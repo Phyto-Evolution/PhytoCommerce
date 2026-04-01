@@ -2,146 +2,576 @@
   "pack_id": "musaceae",
   "schema_version": "1.1",
   "family": "Musaceae",
-  "common_name": "Banana Family",
-  "description": "Musaceae is a family of large monocotyledonous herbs native to tropical Asia and Africa. The family comprises two genera — <em>Musa</em> and <em>Ensete</em> — and includes the world's most important fruit crop. Bananas are technically giant herbaceous plants; what appears as a trunk is a pseudostem formed by tightly packed leaf bases. India is both a major producer and consumer of bananas, with the crop holding deep cultural and culinary significance.",
-  "meta_title": "Banana Family — Musaceae | PhytoCommerce",
-  "meta_description": "Shop Musa and Ensete species — ornamental bananas, fruiting cultivars, and rare wild species. Full Indian common names, cultivar notes, and care guides.",
-  "meta_keywords": "Musa, banana plant, Ensete, ornamental banana, Kela, banana cultivars India, buy banana plant",
+  "common_name": "Bananas & Plantains",
+  "description": "Musaceae is a family of monocots comprising Musa (60+ species — all bananas and plantains) and Ensete (7 species — Ethiopian banana/false banana). The cultivated banana Musa × paradisiaca and dessert banana varieties derived from M. acuminata are among the world's most important food crops. Called Kela in Hindi, Vaazha in Tamil, Arati in Telugu. India is one of the world's largest banana producers.",
+  "meta_title": "Musaceae — Bananas & Plantains Complete Taxonomy Pack",
+  "meta_description": "Full taxonomy of Musaceae: 60+ Musa species and 7 Ensete species with cultivar and conservation data.",
+  "meta_keywords": [
+    "banana",
+    "plantain",
+    "Musa",
+    "Ensete",
+    "kela",
+    "musaceae",
+    "tropical fruit"
+  ],
   "genera": [
     {
       "genus": "Musa",
-      "common_name": "Banana / Kela (केला)",
-      "description": "<em>Musa</em> is the primary genus of the banana family, comprising roughly 70 wild species and giving rise to the vast majority of edible banana and plantain cultivars through hybridisation of <em>M. acuminata</em> and <em>M. balbisiana</em>. Plants form pseudostems from overlapping leaf sheaths and bear pendant inflorescences with bracts that reveal hands of fruit. India is the world's largest banana producer, with cultivation spanning from Kerala's Nendran to Maharashtra's Grand Naine.",
-      "meta_title": "Musa — Bananas & Plantains",
-      "meta_description": "Buy Musa species and cultivars online. Fruiting bananas, ornamental varieties, and rare wild Musa — with full Indian cultivar notes.",
-      "meta_keywords": "Musa for sale, banana plant India, ornamental Musa, Kela plant, banana cultivars",
-      "native_range": "Tropical and subtropical Asia, South Pacific",
-      "care_level": "Beginner–Intermediate",
-      "tc_suitability": "High",
-      "conservation_status": "varies by species",
+      "common_name": "Bananas & Plantains",
+      "description": "60+ species of giant herbaceous plants (not trees) native from South Asia to the Pacific. All commercial bananas derive from crosses between M. acuminata and M. balbisiana. India cultivates hundreds of local banana varieties. Called Kela in Hindi, Vaazha in Tamil.",
       "species": [
         {
           "full_name": "Musa acuminata",
-          "common_name": "Common Banana / Kela (केला) / Bale Hannu (ಬಾಳೆ ಹಣ್ಣು)",
-          "description": "<em>Musa acuminata</em> (A-genome) is the primary progenitor of most commercial dessert banana cultivars. Wild plants bear seeded fruits, but through centuries of selection and hybridisation, seedless edible cultivars have been developed. The species is native to Southeast Asia but has been cultivated across India for millennia. It is the foundation of India's enormous banana industry.",
-          "meta_title": "Musa acuminata — Common Banana",
-          "meta_description": "Buy Musa acuminata and its cultivars. The source of most commercial dessert bananas — Cavendish, Grand Naine, Red Banana, Nendran and more.",
-          "meta_keywords": "Musa acuminata, common banana, Cavendish banana, Grand Naine, Nendran banana, Indian banana cultivar",
-          "native_range": "Southeast Asia, Indian Subcontinent",
-          "conservation_status": "LC",
-          "notes": "A-genome species; parent of most edible banana cultivars. Prefers deep, well-drained fertile soil with regular irrigation.",
+          "common_name": "Wild Banana / AA Banana / Kela",
+          "conservation_status": "least_concern",
           "cultivars": [
             {
-              "name": "Cavendish",
-              "description": "The dominant export banana worldwide. Medium pseudostem height; fruit sweet and seedless with thin yellow peel. Widely grown commercially across south and central India.",
-              "notes": "Susceptible to Fusarium wilt (TR4). Most common supermarket banana globally."
+              "name": "Cavendish"
             },
             {
-              "name": "Grand Naine",
-              "description": "A Cavendish sub-group cultivar and the most widely planted commercial banana in India. Tall plant, high bunch weight, good shelf life. Called 'G9' by Indian farmers.",
-              "notes": "Preferred by Maharashtra, Karnataka, and Andhra Pradesh growers. TC planting material widely available."
+              "name": "Grand Nain"
             },
             {
-              "name": "Robusta",
-              "description": "A tall Cavendish sub-group banana popular in Tamil Nadu and Karnataka. Vigorous plant with high yield potential and good fruit quality.",
-              "notes": "Traditional commercial variety; being replaced by Grand Naine in some regions."
+              "name": "Dwarf Cavendish"
             },
             {
-              "name": "Nendran (Nenthiran / Nenthra Pazham)",
-              "description": "Iconic South Indian cooking and dessert banana, especially beloved in Kerala. Thick-peeled, starchy fruit eaten ripe, as chips (banana chips / wafers), or as steamed/boiled snacks. Cultural staple of Kerala cuisine.",
-              "notes": "AAB genome group. Very popular in Kerala and Tamil Nadu. High demand for tender coconut and Nendran combo farms."
+              "name": "Giant Cavendish"
             },
             {
-              "name": "Red Banana (Lal Kela / Sevvazhai)",
-              "description": "Distinctive red-purple skinned banana with cream to pinkish flesh. Sweeter and denser than Cavendish. Grown in Tamil Nadu, Karnataka, and Maharashtra. Popular in Indian markets as a premium dessert banana.",
-              "notes": "Shorter shelf life than Cavendish. Rich in beta-carotene and potassium."
+              "name": "Williams"
             },
             {
-              "name": "Elakki Bale (Lady Finger / Elaichi Banana)",
-              "description": "Small, sweet, intensely flavoured banana popular in Karnataka and Tamil Nadu. Thin-skinned with aromatic flavour reminiscent of cardamom. Sold as a premium variety in South Indian markets.",
-              "notes": "Short plant, small bunch. Premium pricing in local markets. AAB genome type."
+              "name": "Robusta"
+            },
+            {
+              "name": "Lacatan"
+            },
+            {
+              "name": "Valery"
+            },
+            {
+              "name": "Poyo"
+            },
+            {
+              "name": "Gros Michel"
+            },
+            {
+              "name": "Silk"
+            },
+            {
+              "name": "Pisang Mas"
+            },
+            {
+              "name": "Red Dacca"
+            },
+            {
+              "name": "Rasthali"
+            },
+            {
+              "name": "Nendran"
+            },
+            {
+              "name": "Poovan"
+            },
+            {
+              "name": "Ney Poovan"
+            },
+            {
+              "name": "Karpooravalli"
+            },
+            {
+              "name": "Monthan"
+            },
+            {
+              "name": "Palayankodan"
+            },
+            {
+              "name": "Virupakshi"
+            },
+            {
+              "name": "Chakkarakeli"
+            },
+            {
+              "name": "Safed Velchi"
+            },
+            {
+              "name": "Basrai"
             }
           ]
         },
         {
           "full_name": "Musa balbisiana",
-          "common_name": "Seeded Banana / Jangli Kela (जंगली केला) / Kachkol",
-          "description": "<em>Musa balbisiana</em> (B-genome) is a wild banana species native to South and Southeast Asia, including India's northeastern states, Assam, and the Western Ghats foothills. Unlike <em>M. acuminata</em>, the fruit is heavily seeded and starchy. The B-genome contributes drought and disease tolerance to hybrid cultivars. Plants are hardier and more cold-tolerant than pure A-genome bananas.",
-          "meta_title": "Musa balbisiana — Seeded Wild Banana",
-          "meta_description": "Buy Musa balbisiana, the wild seeded banana native to South Asia. B-genome species prized for breeding and as an ornamental specimen plant.",
-          "meta_keywords": "Musa balbisiana, wild banana, seeded banana, B-genome banana, Jangli Kela",
-          "native_range": "South Asia and Southeast Asia (India, Bangladesh, Myanmar, China)",
-          "conservation_status": "LC",
-          "notes": "B-genome parent of plantains and many cooking banana hybrids. More drought-tolerant than M. acuminata.",
+          "common_name": "Wild Balbisiana Banana",
+          "conservation_status": "least_concern",
           "cultivars": []
         },
         {
-          "full_name": "Musa ornata",
-          "common_name": "Flowering Banana / Sushobhit Kela (सुशोभित केला) / Ornamental Banana",
-          "description": "<em>Musa ornata</em> is a compact ornamental banana native to Bangladesh and parts of Northeast India. It is prized for its striking upright pink-to-purple inflorescence with yellow-tipped bracts. While it does produce small fruits, these are not palatable. Widely used in tropical garden design and as a potted specimen.",
-          "meta_title": "Musa ornata — Flowering Banana",
-          "meta_description": "Buy Musa ornata, the beautiful flowering banana with vibrant pink-purple inflorescences. Compact ornamental variety for gardens and containers.",
-          "meta_keywords": "Musa ornata, flowering banana, ornamental banana, pink banana flower, buy Musa ornata",
-          "native_range": "Bangladesh, Northeast India, Myanmar",
-          "conservation_status": "LC",
-          "notes": "Excellent ornamental. Compact pseudostem to ~2 m. Prefers full sun and consistent moisture.",
+          "full_name": "Musa × paradisiaca",
+          "common_name": "Plantain / French Plantain / Kela",
+          "conservation_status": "not_evaluated",
+          "cultivars": [
+            {
+              "name": "Horn Plantain"
+            },
+            {
+              "name": "French Plantain"
+            },
+            {
+              "name": "False Horn"
+            },
+            {
+              "name": "Macho Plantain"
+            },
+            {
+              "name": "Bluggoe"
+            },
+            {
+              "name": "Pisang Awak"
+            },
+            {
+              "name": "Figue Rose"
+            }
+          ]
+        },
+        {
+          "full_name": "Musa textilis",
+          "common_name": "Abaca / Manila Hemp / Banana Hemp",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa coccinea",
+          "common_name": "Scarlet Banana / Red Flowering Banana",
+          "conservation_status": "least_concern",
           "cultivars": []
         },
         {
           "full_name": "Musa velutina",
-          "common_name": "Pink Banana / Gulaabi Kela (गुलाबी केला) / Hairy Banana",
-          "description": "<em>Musa velutina</em> is a small, fast-growing ornamental banana native to Assam and the northeastern Himalayan foothills of India. It is distinctive for its vivid pink, self-peeling fruits and upright pink inflorescence. The fruits are edible but very seedy. One of the most ornamental Musa species available for tropical gardens.",
-          "meta_title": "Musa velutina — Pink Banana",
-          "meta_description": "Buy Musa velutina, the pink banana with self-peeling pink fruits. Fast-growing ornamental Musa native to Northeast India.",
-          "meta_keywords": "Musa velutina, pink banana, ornamental banana, self-peeling banana, Assam banana",
-          "native_range": "Assam and Northeast India, Bhutan",
-          "conservation_status": "LC",
-          "notes": "Fast-growing; produces pink self-peeling fruits in first year. Excellent container or garden specimen.",
+          "common_name": "Pink Velvet Banana / Hairy Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa ornata",
+          "common_name": "Flowering Banana / Ornate Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa laterita",
+          "common_name": "Brick-red Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa aurantiaca",
+          "common_name": "Orange Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa gracilis",
+          "common_name": "Graceful Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa sanguinea",
+          "common_name": "Blood-red Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa mannii",
+          "common_name": "Mann's Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa nagensium",
+          "common_name": "Nagaland Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa rubinea",
+          "common_name": "Ruby Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa flaviflora",
+          "common_name": "Yellow-flowered Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa jackeyi",
+          "common_name": "Jackey's Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa lolodensis",
+          "common_name": "Loloda Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa maclayi",
+          "common_name": "Maclay's Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa peekelii",
+          "common_name": "Peekel's Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa schizocarpa",
+          "common_name": "Split-fruited Banana",
+          "conservation_status": "least_concern",
           "cultivars": []
         },
         {
           "full_name": "Musa basjoo",
-          "common_name": "Japanese Banana / Hardy Banana / Basho",
-          "description": "<em>Musa basjoo</em> is the most cold-hardy banana species, native to Sichuan Province in China (sometimes recorded from the Ryukyu Islands of Japan). The pseudostem can survive freezing temperatures when the corm is mulched. It is grown primarily as an ornamental landscape plant for its dramatic tropical foliage. Fruits are small and inedible. Popular in temperate gardens globally.",
-          "meta_title": "Musa basjoo — Japanese Hardy Banana",
-          "meta_description": "Buy Musa basjoo, the world's hardiest banana. Survives frost when mulched; grown for bold tropical foliage in temperate and subtropical gardens.",
-          "meta_keywords": "Musa basjoo, hardy banana, Japanese banana, cold-hardy Musa, frost-tolerant banana",
-          "native_range": "Sichuan, China (naturalised in Japan)",
-          "conservation_status": "LC",
-          "notes": "Hardy to approximately -10°C with corm protection. Pseudostem dies back in frost but regrows vigorously. Ideal for northern Indian hill stations.",
+          "common_name": "Japanese Fiber Banana / Japanese Banana",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Sakhalin"
+            }
+          ]
+        },
+        {
+          "full_name": "Musa cheesmanii",
+          "common_name": "Cheesman's Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa griersonii",
+          "common_name": "Grierson's Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa itinerans",
+          "common_name": "Traveller's Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa markkuana",
+          "common_name": "Markku's Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa salaccensis",
+          "common_name": "Salak Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa sikkimensis",
+          "common_name": "Sikkim Banana / Darjeeling Banana",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Red Tiger"
+            }
+          ]
+        },
+        {
+          "full_name": "Musa thomsonii",
+          "common_name": "Thomson's Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa tuberculata",
+          "common_name": "Tuberculate Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa yunnanensis",
+          "common_name": "Yunnan Banana",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa zebrina",
+          "common_name": "Blood Banana / Zebra Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa campestris",
+          "common_name": "Wild Field Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa cookii",
+          "common_name": "Cook's Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa fitzalanii",
+          "common_name": "Fitzalan's Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa ingens",
+          "common_name": "Giant Highland Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa monticola",
+          "common_name": "Mountain Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa muluensis",
+          "common_name": "Mulu Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa nana",
+          "common_name": "Dwarf Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa ochracea",
+          "common_name": "Ochre-coloured Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa olowaniana",
+          "common_name": "Olowani Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa paradisiaca",
+          "common_name": "Cooking Banana / True Plantain",
+          "conservation_status": "not_evaluated",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa ponapensis",
+          "common_name": "Ponape Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa pulneyensis",
+          "common_name": "Palni Hills Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa rosacea",
+          "common_name": "Rose-coloured Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa simiarum",
+          "common_name": "Monkey Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa sumatrana",
+          "common_name": "Sumatran Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa troglodytarum",
+          "common_name": "Fe'i Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa uranoscopos",
+          "common_name": "Sky-gazing Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa voonii",
+          "common_name": "Voon's Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa wilsonii",
+          "common_name": "Wilson's Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa zeylanica",
+          "common_name": "Ceylon Wild Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa angcorensis",
+          "common_name": "Angkor Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa borneensis",
+          "common_name": "Borneo Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa bukensis",
+          "common_name": "Buki Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa celebica",
+          "common_name": "Sulawesi Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa glaucophylla",
+          "common_name": "Blue-leaved Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa keejei",
+          "common_name": "Keejei Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa mindanaensis",
+          "common_name": "Mindanao Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa rungei",
+          "common_name": "Runge's Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa schizocarpoides",
+          "common_name": "Split-like Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa splendida",
+          "common_name": "Splendid Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Musa violascens",
+          "common_name": "Violet Banana",
+          "conservation_status": "least_concern",
           "cultivars": []
         }
       ]
     },
     {
       "genus": "Ensete",
-      "common_name": "Ethiopian Banana / Abyssinian Banana / Habasshi Kela (हबशी केला)",
-      "description": "<em>Ensete</em> is a genus of about seven species in the banana family, native to tropical Africa and parts of Asia. Unlike <em>Musa</em>, <em>Ensete</em> plants are monocarpic — they flower once and die. The genus is best known for <em>E. ventricosum</em>, an Ethiopian staple crop whose pseudostem and corm are fermented into a food called kocho. Several species are grown as bold ornamental foliage plants.",
-      "meta_title": "Ensete — Ethiopian Banana & Relatives",
-      "meta_description": "Buy Ensete species — bold architectural foliage plants and the remarkable Ethiopian food crop. Striking tropical statement plants for large gardens.",
-      "meta_keywords": "Ensete, Ethiopian banana, Ensete ventricosum, Abyssinian banana, ornamental banana plant",
-      "native_range": "Tropical Africa (primarily Ethiopia and East Africa), with some species in tropical Asia",
-      "care_level": "Intermediate",
-      "tc_suitability": "Moderate",
-      "conservation_status": "varies by species",
+      "common_name": "Enset / Ethiopian Banana",
+      "description": "Seven species of banana relatives. Ensete ventricosum is a critically important staple crop in Ethiopia, feeding 20+ million people. Its starchy pseudostem and corm are fermented to make 'kocho' flatbread.",
       "species": [
         {
           "full_name": "Ensete ventricosum",
-          "common_name": "Ethiopian Banana / Abyssinian Banana / Habasshi Kela (हबशी केला) / False Banana",
-          "description": "<em>Ensete ventricosum</em> is a massive monocarpic herb reaching 8–12 m in height, native to the Ethiopian Highlands. It is a critical food security crop for over 20 million people in southern Ethiopia, where the pseudostem, corm, and leaf midribs are fermented to produce kocho, bulla, and amicho. As an ornamental, it is prized for its enormous paddle-shaped leaves with striking red midribs on the 'Maurelii' cultivar.",
-          "meta_title": "Ensete ventricosum — Ethiopian Banana",
-          "meta_description": "Buy Ensete ventricosum, the dramatic Ethiopian banana. Massive architectural foliage plant; 'Maurelii' has stunning burgundy-red leaves.",
-          "meta_keywords": "Ensete ventricosum, Ethiopian banana, false banana, Maurelii banana, architectural foliage plant",
-          "native_range": "Ethiopian Highlands, East and Central Africa",
-          "conservation_status": "LC",
-          "notes": "Monocarpic; flowers once then dies. Propagate by division of basal suckers or TC. 'Maurelii' is the most popular ornamental clone.",
+          "common_name": "Enset / Ethiopian Banana / Wild Banana",
+          "conservation_status": "least_concern",
           "cultivars": [
             {
-              "name": "Maurelii (Red Abyssinian Banana)",
-              "description": "Highly ornamental cultivar with deep burgundy-red leaf undersides and midribs contrasting against dark green upper surfaces. Widely sold as a landscape specimen plant across tropical and subtropical India.",
-              "notes": "Most popular ornamental Ensete cultivar. Best colour in full sun. Pseudostem to 3–4 m in cultivation."
+              "name": "Yanbulo"
+            },
+            {
+              "name": "Gena"
+            },
+            {
+              "name": "Necho"
+            },
+            {
+              "name": "Mazia"
+            },
+            {
+              "name": "Dopi"
+            },
+            {
+              "name": "Arkia"
+            },
+            {
+              "name": "Gimbicho"
             }
           ]
+        },
+        {
+          "full_name": "Ensete glaucum",
+          "common_name": "Snow Banana / Glacier Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ensete lecongkietii",
+          "common_name": "Vietnam Enset",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ensete perrieri",
+          "common_name": "Perrier's Enset",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ensete superbum",
+          "common_name": "Cliff Banana / Rock Banana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ensete homblei",
+          "common_name": "Homblé's Enset",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ensete lasiocarpum",
+          "common_name": "Hairy-fruited Enset",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ensete wilsonii",
+          "common_name": "Wilson's Enset",
+          "conservation_status": "least_concern",
+          "cultivars": []
         }
       ]
     }
