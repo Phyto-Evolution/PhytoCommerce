@@ -1,8 +1,8 @@
 {{ define "main" }}
 <section class="hero" style="padding:3rem 2rem 2.5rem">
   <div class="hero-inner">
-    <h1 style="font-size:2rem">🌱 Taxonomy Packs</h1>
-    <p>PhytoCommerce Botanical Taxonomy Standard — modular plant family data covering species, genera, common names, and cultivars. Used by the <code>phyto_grex_registry</code> module and all platform ports.</p>
+    <h1 style="font-size:2rem">Taxonomy Packs</h1>
+    <p style="max-width:640px">PhytoCommerce Botanical Taxonomy Standard — modular plant family data covering species, genera, common names, and cultivars. Used by the <code>phyto_grex_registry</code> module and all platform ports.</p>
     <div class="hero-stats" id="taxo-stats" style="margin-top:1.5rem">
       <div class="stat"><div class="stat-num" id="ts-categories">—</div><div class="stat-label">Categories</div></div>
       <div class="stat"><div class="stat-num" id="ts-packs">—</div><div class="stat-label">Packs</div></div>
@@ -16,7 +16,11 @@
 <div class="container">
 
   <div id="taxo-loading" style="text-align:center;padding:3rem;color:var(--muted)">Loading taxonomy data…</div>
-  <div id="taxo-tree" style="display:none"></div>
+
+  <div id="taxo-content" style="display:none">
+    <nav class="taxo-nav" id="taxo-nav" aria-label="Jump to category"></nav>
+    <div id="taxo-tree"></div>
+  </div>
 
 </div>
 </main>
@@ -24,7 +28,9 @@
 <script>
 (function(){
   var RAW = 'https://raw.githubusercontent.com/Phyto-Evolution/PhytoCommerce/main/taxonomy/';
-  var tree = document.getElementById('taxo-tree');
+  var content = document.getElementById('taxo-content');
+  var tree    = document.getElementById('taxo-tree');
+  var nav     = document.getElementById('taxo-nav');
   var loading = document.getElementById('taxo-loading');
 
   function esc(s){ return s ? String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') : ''; }
@@ -35,38 +41,50 @@
 
   function renderPack(pack){
     var genera = pack.genera || [];
-    var speciesCount = genera.reduce(function(n,g){ return n + (g.species||[]).length; }, 0);
-    var cultivarCount = genera.reduce(function(n,g){ return n + (g.species||[]).reduce(function(m,s){ return m+(s.cultivars||[]).length;},0); }, 0);
+    var speciesCount  = genera.reduce(function(n,g){ return n + (g.species||[]).length; }, 0);
+    var cultivarCount = genera.reduce(function(n,g){
+      return n + (g.species||[]).reduce(function(m,s){ return m+(s.cultivars||[]).length; }, 0);
+    }, 0);
 
     var generaHtml = genera.map(function(g){
-      var species = (g.species||[]).map(function(s){
-        var cvs = (s.cultivars||[]).length ? '<span style="font-size:.72rem;color:var(--muted);margin-left:.5rem">'+s.cultivars.length+' cultivar'+(s.cultivars.length>1?'s':'')+'</span>' : '';
-        return '<li class="taxo-species"><span class="taxo-species-name">'+esc(s.full_name)+'</span>'+(s.common_name?'<span class="taxo-common"> — '+esc(s.common_name)+'</span>':'')+cvs+'</li>';
+      var speciesList = (g.species||[]).map(function(s){
+        var cvBadge = (s.cultivars||[]).length
+          ? '<span class="taxo-cultivar-count">'+(s.cultivars.length)+' cv.</span>'
+          : '';
+        var consBadge = s.conservation_status && s.conservation_status !== 'not_evaluated' && s.conservation_status !== ''
+          ? '<span style="font-size:.65rem;color:#c0572a;background:#c0572a14;border:1px solid #c0572a33;padding:.05rem .35rem;border-radius:20px">'+esc(s.conservation_status.replace(/_/g,' '))+'</span>'
+          : '';
+        return '<li class="taxo-species">'
+          +'<span class="taxo-species-name">'+esc(s.full_name)+'</span>'
+          +(s.common_name?'<span class="taxo-common">'+esc(s.common_name)+'</span>':'')
+          +cvBadge+consBadge
+          +'</li>';
       }).join('');
+
       return '<div class="taxo-genus">'
         +'<div class="taxo-genus-header" onclick="this.parentNode.classList.toggle(\'open\')">'
         +'<span class="taxo-genus-name">'+esc(g.genus)+'</span>'
-        +(g.common_name?'<span class="taxo-common"> — '+esc(g.common_name)+'</span>':'')
+        +(g.common_name?'<span class="taxo-common">'+esc(g.common_name)+'</span>':'')
         +'<span class="taxo-genus-count">'+(g.species||[]).length+' sp.</span>'
         +'<span class="taxo-chevron">›</span>'
         +'</div>'
-        +'<ul class="taxo-species-list">'+species+'</ul>'
+        +'<ul class="taxo-species-list">'+speciesList+'</ul>'
         +'</div>';
     }).join('');
 
     return '<div class="taxo-pack">'
       +'<div class="taxo-pack-header">'
-      +'<div>'
-      +'<div class="taxo-family">'+esc(pack.family||pack.pack_id)+'</div>'
-      +(pack.common_name?'<div class="taxo-family-common">'+esc(pack.common_name)+'</div>':'')
+        +'<div>'
+          +'<div class="taxo-family">'+esc(pack.family||pack.pack_id)+'</div>'
+          +(pack.common_name?'<div class="taxo-family-common">'+esc(pack.common_name)+'</div>':'')
+        +'</div>'
+        +'<div style="display:flex;gap:.4rem;flex-wrap:wrap;align-items:center">'
+          +badge(genera.length+' genera','#3a9a6a')
+          +badge(speciesCount+' species','#5a8fbf')
+          +(cultivarCount?badge(cultivarCount+' cultivars','#b07ab0'):'')
+        +'</div>'
       +'</div>'
-      +'<div style="display:flex;gap:.4rem;flex-wrap:wrap;align-items:center">'
-      +badge(genera.length+' genera','#3a9a6a')
-      +badge(speciesCount+' species','#5a8fbf')
-      +(cultivarCount?badge(cultivarCount+' cultivars','#b07ab0'):'')
-      +'</div>'
-      +'</div>'
-      +(pack.description?'<p class="taxo-pack-desc">'+pack.description.replace(/<[^>]+>/g,'').slice(0,200)+(pack.description.length>200?'…':'')+'</p>':'')
+      +(pack.description?'<p class="taxo-pack-desc">'+esc(pack.description.replace(/<[^>]+>/g,'').slice(0,280))+(pack.description.length>280?'…':'')+'</p>':'')
       +'<div class="taxo-genera-list">'+generaHtml+'</div>'
       +'</div>';
   }
@@ -75,36 +93,36 @@
     var packsHtml = packs.map(renderPack).join('');
     return '<div class="taxo-category" id="cat-'+esc(cat.id)+'">'
       +'<div class="taxo-cat-heading">'
-      +'<span class="taxo-cat-icon">'+getCatIcon(cat.id)+'</span>'
-      +'<span>'+esc(cat.name)+'</span>'
-      +'<span class="cat-group-count">'+packs.length+' pack'+(packs.length!==1?'s':'')+'</span>'
+        +'<span class="taxo-cat-icon">'+getCatIcon(cat.id)+'</span>'
+        +'<span>'+esc(cat.name)+'</span>'
+        +'<span class="cat-group-count">'+packs.length+' pack'+(packs.length!==1?'s':'')+'</span>'
       +'</div>'
       +packsHtml
       +'</div>';
   }
 
   function getCatIcon(id){
-    var icons = {carnivorous:'🪤',aroids:'🌿',orchids:'🌸',succulents:'🌵',bromeliads:'🍍',banana:'🍌',palms:'🌴',horticulture:'🌾',fruits:'🍎',vegetables:'🥦',pulses:'🫘',cashcrops:'🌾'};
+    var icons = {
+      carnivorous:'🪤', aroids:'🌿', orchids:'🌸', succulents:'🌵',
+      bromeliads:'🍍', banana:'🍌', palms:'🌴', horticulture:'🌾',
+      fruits:'🍎', vegetables:'🥦', pulses:'🫘', cashcrops:'🌾'
+    };
     return icons[id] || '🌱';
   }
 
-  // Fetch index then all category packs
   fetch(RAW + 'index.json')
     .then(function(r){ return r.json(); })
     .then(function(idx){
-      // update stats
       var s = idx.summary || {};
       document.getElementById('ts-categories').textContent = s.total_categories || idx.categories.length;
-      document.getElementById('ts-packs').textContent = s.total_packs || '—';
-      document.getElementById('ts-genera').textContent = s.total_genera || '—';
-      document.getElementById('ts-species').textContent = s.total_species || '—';
+      document.getElementById('ts-packs').textContent     = s.total_packs    || '—';
+      document.getElementById('ts-genera').textContent    = s.total_genera   || '—';
+      document.getElementById('ts-species').textContent   = s.total_species  || '—';
 
-      // fetch each category index
       return Promise.all(idx.categories.map(function(cat){
         return fetch(RAW + cat.index)
           .then(function(r){ return r.json(); })
           .then(function(catIdx){
-            // fetch each pack file
             var packFiles = catIdx.packs || [];
             return Promise.all(packFiles.map(function(p){
               var pf = p.file || (cat.id+'/'+p.id+'.json');
@@ -121,10 +139,18 @@
     })
     .then(function(categories){
       loading.style.display = 'none';
-      tree.style.display = 'block';
+      content.style.display = 'block';
+
+      // build category nav pills
+      nav.innerHTML = categories.map(function(c){
+        return '<a class="taxo-nav-pill" href="#cat-'+esc(c.cat.id)+'">'
+          +getCatIcon(c.cat.id)+' '+esc(c.cat.name)
+          +'</a>';
+      }).join('');
+
       tree.innerHTML = categories.map(function(c){ return renderCategory(c.cat, c.packs); }).join('');
     })
-    .catch(function(e){
+    .catch(function(){
       loading.textContent = 'Could not load taxonomy data. View directly on GitHub.';
     });
 })();

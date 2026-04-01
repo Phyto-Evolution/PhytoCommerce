@@ -1154,28 +1154,69 @@ footer {
 .nav-toggle.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 /* ── TAXONOMY TREE PAGE ──────────────────────────── */
-.taxo-category { margin-bottom: 3rem; }
+
+/* Category nav pills */
+.taxo-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--cream-dark);
+}
+.taxo-nav-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .35rem .8rem;
+  border-radius: 20px;
+  background: var(--cream);
+  border: 1px solid var(--cream-dark);
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--forest-mid);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+}
+.taxo-nav-pill:hover { background: var(--sage-pale); border-color: var(--sage); color: var(--forest); }
+
+/* Category block */
+.taxo-category { margin-bottom: 2.5rem; scroll-margin-top: 5rem; }
 .taxo-cat-heading {
   display: flex;
   align-items: center;
   gap: .75rem;
-  font-size: 1.05rem;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 800;
   color: var(--forest);
-  background: var(--sage-pale);
+  background: linear-gradient(90deg, var(--sage-pale) 0%, transparent 100%);
   border-left: 4px solid var(--sage);
-  padding: .7rem 1rem;
+  padding: .8rem 1.2rem;
   border-radius: 0 var(--radius) var(--radius) 0;
   margin-bottom: 1rem;
+  letter-spacing: .01em;
 }
-.taxo-cat-icon { font-size: 1.2rem; }
+.taxo-cat-icon { font-size: 1.3rem; }
+.cat-group-count {
+  margin-left: auto;
+  font-size: .72rem;
+  font-weight: 600;
+  color: var(--sage);
+  background: white;
+  border: 1px solid var(--sage);
+  padding: .15rem .55rem;
+  border-radius: 20px;
+}
+
+/* Pack card */
 .taxo-pack {
   background: var(--white);
   border: 1px solid var(--cream-dark);
   border-radius: var(--radius);
-  padding: 1.25rem 1.5rem;
   margin-bottom: 1rem;
   box-shadow: var(--shadow);
+  overflow: hidden;
 }
 .taxo-pack-header {
   display: flex;
@@ -1183,53 +1224,111 @@ footer {
   justify-content: space-between;
   gap: 1rem;
   flex-wrap: wrap;
-  margin-bottom: .75rem;
+  padding: 1rem 1.25rem .75rem;
+  background: linear-gradient(180deg, var(--cream) 0%, var(--white) 100%);
+  border-bottom: 1px solid var(--cream-dark);
 }
 .taxo-family {
   font-family: 'Fira Mono', 'Courier New', monospace;
-  font-size: .95rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--forest);
   font-style: italic;
+  letter-spacing: .01em;
 }
 .taxo-family-common {
   font-size: .8rem;
   color: var(--muted);
   margin-top: .2rem;
+  font-style: normal;
 }
 .taxo-pack-desc {
-  font-size: .84rem;
+  font-size: .83rem;
   color: var(--muted);
   line-height: 1.6;
-  margin-bottom: .9rem;
+  padding: .75rem 1.25rem;
+  margin: 0;
+  border-bottom: 1px solid var(--cream-dark);
 }
+
+/* Genera list inside pack */
+.taxo-genera-list { padding: .6rem .75rem .75rem; }
+
+/* Genus accordion */
 .taxo-genus {
   border: 1px solid var(--cream-dark);
   border-radius: 6px;
-  margin-bottom: .5rem;
+  margin-bottom: .45rem;
   overflow: hidden;
 }
 .taxo-genus-header {
   display: flex;
   align-items: center;
-  gap: .6rem;
-  padding: .65rem 1rem;
+  gap: .5rem;
+  padding: .6rem .9rem;
   cursor: pointer;
   background: var(--cream);
   user-select: none;
-  flex-wrap: wrap;
+  transition: background .15s;
 }
 .taxo-genus-header:hover { background: var(--sage-pale); }
-.taxo-genus-name { font-style: italic; font-weight: 700; font-size: .88rem; color: var(--forest); }
-.taxo-common { font-size: .82rem; color: var(--muted); }
-.taxo-genus-count { margin-left: auto; font-size: .72rem; color: var(--muted); background: var(--sage-pale); padding: .1rem .4rem; border-radius: 20px; }
-.taxo-chevron { font-size: .9rem; color: var(--muted); transition: transform .2s; flex-shrink: 0; }
+.taxo-genus-name {
+  font-style: italic;
+  font-weight: 700;
+  font-size: .9rem;
+  color: var(--forest);
+  flex-shrink: 0;
+}
+.taxo-common { font-size: .8rem; color: var(--muted); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.taxo-genus-count {
+  margin-left: auto;
+  flex-shrink: 0;
+  font-size: .7rem;
+  color: var(--muted);
+  background: white;
+  border: 1px solid var(--cream-dark);
+  padding: .1rem .45rem;
+  border-radius: 20px;
+}
+.taxo-chevron {
+  font-size: 1rem;
+  color: var(--sage);
+  transition: transform .2s;
+  flex-shrink: 0;
+  line-height: 1;
+}
 .taxo-genus.open .taxo-chevron { transform: rotate(90deg); }
-.taxo-species-list { display: none; list-style: none; padding: .5rem 1rem .75rem 1rem; background: var(--white); border-top: 1px solid var(--cream-dark); }
+
+/* Species list (hidden by default, shown when genus open) */
+.taxo-species-list {
+  display: none;
+  list-style: none;
+  padding: .4rem .9rem .6rem 1.1rem;
+  margin: 0;
+  background: var(--white);
+  border-top: 1px solid var(--cream-dark);
+}
 .taxo-genus.open .taxo-species-list { display: block; }
-.taxo-species { font-size: .83rem; padding: .3rem 0; border-bottom: 1px solid var(--cream-dark); display: flex; align-items: center; flex-wrap: wrap; gap: .4rem; }
+.taxo-species {
+  font-size: .82rem;
+  padding: .28rem 0;
+  border-bottom: 1px solid #f0ede8;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: .35rem;
+}
 .taxo-species:last-child { border-bottom: none; }
-.taxo-species-name { font-style: italic; color: var(--forest-mid); }
+.taxo-species::before { content: '·'; color: var(--sage); font-size: .9rem; flex-shrink: 0; }
+.taxo-species-name { font-style: italic; color: var(--forest-mid); font-weight: 500; }
+.taxo-cultivar-count {
+  font-size: .68rem;
+  color: #b07ab0;
+  background: #b07ab01a;
+  border: 1px solid #b07ab033;
+  padding: .05rem .35rem;
+  border-radius: 20px;
+}
 
 /* ── RESPONSIVE ──────────────────────────────────── */
 
