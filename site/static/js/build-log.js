@@ -1,6 +1,6 @@
 /* PhytoCommerce — Live Build Log Terminal Widget
- * Fetches recent commits + workflow runs from GitHub API (no auth needed,
- * public repo — 60 req/hr limit is fine for a portfolio site).
+ * Fetches full commit history + workflow runs from GitHub API (no auth needed,
+ * public repo — 60 req/hr unauthenticated limit).
  */
 (function () {
   const REPO   = 'Phyto-Evolution/PhytoCommerce';
@@ -13,14 +13,17 @@
   /* ── helpers ─────────────────────────────────────── */
   function timeAgo(iso) {
     const diff = (Date.now() - new Date(iso)) / 1000;
-    if (diff < 90)   return 'just now';
-    if (diff < 3600) return Math.round(diff / 60) + 'm ago';
+    if (diff < 90)    return 'just now';
+    if (diff < 3600)  return Math.round(diff / 60) + 'm ago';
     if (diff < 86400) return Math.round(diff / 3600) + 'h ago';
-    return Math.round(diff / 86400) + 'd ago';
+    const days = Math.round(diff / 86400);
+    if (days < 30)    return days + 'd ago';
+    if (days < 365)   return Math.round(days / 30) + 'mo ago';
+    return Math.round(days / 365) + 'yr ago';
   }
 
   function esc(s) {
-    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
   }
 
   function line(html, cls) {
@@ -39,7 +42,25 @@
     if (status === 'queued')      return '<span class="term-badge run">⧗ queued</span>';
     if (conclusion === 'success') return '<span class="term-badge ok">✓ passed</span>';
     if (conclusion === 'failure') return '<span class="term-badge fail">✗ failed</span>';
-    return '<span class="term-badge dim">· ' + (conclusion || status) + '</span>';
+    return '<span class="term-badge dim">· ' + esc(conclusion || status) + '</span>';
+  }
+
+  /* ── paginated commit fetch ──────────────────────── */
+  function fetchAllCommits(url, acc) {
+    acc = acc || [];
+    return fetch(url).then(function (r) {
+      var link = r.headers.get('Link') || '';
+      return r.json().then(function (data) {
+        var page = Array.isArray(data) ? data : [];
+        acc = acc.concat(page);
+        var nextMatch = link.match(/<([^>]+)>;\s*rel="next"/);
+        /* safety cap — 500 commits max to stay within rate limits */
+        if (nextMatch && acc.length < 500) {
+          return fetchAllCommits(nextMatch[1], acc);
+        }
+        return acc;
+      });
+    });
   }
 
   /* ── render ──────────────────────────────────────── */
@@ -47,25 +68,33 @@
     BODY.innerHTML = '';
 
     /* --- commits block --- */
-    prompt('git log --oneline -20');
-    commits.forEach(function (c) {
-      const sha  = c.sha.slice(0, 7);
-      const msg  = esc(c.commit.message.split('\n')[0].slice(0, 80));
-      const when = timeAgo(c.commit.committer.date);
+    prompt('git log --oneline');
+    if (commits.length) {
+      commits.forEach(function (c) {
+        const sha  = c.sha.slice(0, 7);
+        const msg  = esc(c.commit.message.split('\n')[0].slice(0, 90));
+        const when = timeAgo(c.commit.committer.date);
+        line(
+          '<span class="term-sha">' + sha + '</span> ' +
+          '<span class="term-msg">' + msg + '</span> ' +
+          '<span class="term-when dim">' + when + '</span>'
+        );
+      });
       line(
-        '<span class="term-sha">' + sha + '</span> ' +
-        '<span class="term-msg">' + msg + '</span> ' +
-        '<span class="term-when dim">' + when + '</span>'
+        '<span class="dim">' + commits.length + ' commit' + (commits.length !== 1 ? 's' : '') + ' total</span>',
+        'spacer'
       );
-    });
+    } else {
+      line('<span class="dim">No commits found.</span>');
+    }
 
     /* --- workflow runs block --- */
     if (runs && runs.length) {
       line('', 'spacer');
-      prompt('gh run list --limit 5');
+      prompt('gh run list --limit 20');
       runs.forEach(function (r) {
         const badge = statusBadge(r.conclusion, r.status);
-        const name  = esc(r.name.slice(0, 48));
+        const name  = esc((r.display_title || r.name || '').slice(0, 72));
         const when  = timeAgo(r.updated_at);
         line(badge + ' <span class="term-msg">' + name + '</span> <span class="dim">' + when + '</span>');
       });
@@ -87,11 +116,11 @@
 
   /* ── fetch ───────────────────────────────────────── */
   Promise.all([
-    fetch(API + '/commits?per_page=20').then(function (r) { return r.json(); }),
-    fetch(API + '/actions/runs?per_page=8').then(function (r) { return r.json(); }).catch(function () { return {}; })
+    fetchAllCommits(API + '/commits?per_page=100'),
+    fetch(API + '/actions/runs?per_page=20').then(function (r) { return r.json(); }).catch(function () { return {}; })
   ])
   .then(function (results) {
-    const commits = Array.isArray(results[0]) ? results[0] : [];
+    const commits = results[0] || [];
     const runs    = (results[1] && Array.isArray(results[1].workflow_runs)) ? results[1].workflow_runs : [];
     if (!commits.length) throw new Error('no data');
     render(commits, runs);

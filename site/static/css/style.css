@@ -1097,8 +1097,8 @@ footer {
   font-size: .82rem;
   line-height: 1.75;
   color: #c9d1d9;
-  min-height: 180px;
-  max-height: 340px;
+  min-height: 200px;
+  max-height: 520px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #30363d transparent;
@@ -1217,6 +1217,9 @@ footer {
   gap: 2rem;
   align-items: start;
 }
+
+/* Main content column */
+.taxo-main { min-width: 0; }
 
 /* Sticky sidebar */
 .taxo-sidebar { position: sticky; top: 5rem; }
@@ -1552,7 +1555,7 @@ footer {
   .pricing-card--hosted::before { display: none; }
 
   /* terminal */
-  .terminal-body   { max-height: 220px; font-size: .77rem; }
+  .terminal-body   { max-height: 320px; font-size: .77rem; }
   .terminal-title  { display: none; }
 
   /* module single page */
