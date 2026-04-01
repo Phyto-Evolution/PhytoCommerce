@@ -79,6 +79,27 @@
           "conservation_status": "LC",
           "notes": "Annual; tall and striking. No smoke needed. Grows fast under warm humid conditions.",
           "cultivars": []
+        },
+        {
+          "full_name": "Byblis lamellata",
+          "common_name": "Lamellate Rainbow Plant",
+          "description": "<em>Byblis lamellata</em> is a perennial species from the Swan Coastal Plain of Western Australia. Smaller than <em>B. gigantea</em>, it has distinctive lamellar (plate-like) appendages on the style. Requires smoke or karrikinolide treatment for germination. Rarer in cultivation than other perennial species.",
+          "meta_title": "Byblis lamellata — Lamellate Rainbow Plant",
+          "meta_description": "Buy Byblis lamellata, a rare perennial rainbow plant endemic to the Swan Coastal Plain, WA. Smoke germination required.",
+          "meta_keywords": "Byblis lamellata, lamellate rainbow plant, rare Byblis, Swan Coastal Plain carnivore",
+          "native_range": "Swan Coastal Plain, Western Australia",
+          "conservation_status": "LC",
+          "notes": "Perennial; smoke or karrikinolide treatment required for germination. Less common in cultivation.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Byblis guehoi",
+          "common_name": "Gueho's Rainbow Plant",
+          "description": "<em>Byblis guehoi</em> is a recently described annual species from Western Australia, related to <em>B. filifolia</em>. Named in honour of naturalist Gregory Gueho. Uncommon in cultivation.",
+          "native_range": "Northern Western Australia",
+          "conservation_status": "LC",
+          "notes": "Annual; similar culture to B. filifolia.",
+          "cultivars": []
         }
       ]
     }

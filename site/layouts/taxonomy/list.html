@@ -258,8 +258,12 @@
   function renderSpecies(species) {
     return (species || []).map(function (s) {
       var cvs = s.cultivars || [];
+      /* cultivars may be strings OR {name: "..."} objects */
       var cvHtml = cvs.length
-        ? '<div class="tx3-cvs">' + cvs.map(function(cv){ return '<span class="tx3-cv">'+esc(cv)+'</span>'; }).join('') + '</div>'
+        ? '<div class="tx3-cvs">' + cvs.map(function(cv){
+            var label = typeof cv === 'object' ? (cv.name || '') : cv;
+            return '<span class="tx3-cv">'+esc(label)+'</span>';
+          }).join('') + '</div>'
         : '';
       return '<li class="tx3-sp">'
         + '<div class="tx3-sp-row">'
