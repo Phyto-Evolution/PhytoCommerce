@@ -74,7 +74,7 @@
   <!-- Content -->
   <div class="tx3-content" id="tx3-content">
 
-    <!-- Mobile filter toggle button -->
+    <!-- Mobile filter toggle -->
     <button class="tx3-mob-filter-btn" id="tx3-mob-filter-btn" aria-expanded="false">
       <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 5h14M6 10h8M9 15h2" stroke-linecap="round"/></svg>
       Filters
@@ -126,38 +126,70 @@
   };
 
   /* ── state ───────────────────────────────────────────────── */
-  var allData      = [];
+  var allData       = [];   /* [{cat, packs:[packObj]}] — full JS data */
   var checkedGenera = {};
-  var searchTerm   = '';
-  var treeOpen     = true;
+  var searchTerm    = '';
+  var treeOpen      = true;
   var mobFilterOpen = false;
+
+  /* lazy render map: genusElId → {species[], col, rendered:bool} */
+  var genusLazyMap  = {};
 
   /* ── helpers ─────────────────────────────────────────────── */
   function esc(s) {
     return s ? String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') : '';
   }
-
   function statusBadge(s) {
     if (!s || s === 'least_concern' || s === 'not_evaluated' || s === '') return '';
     var m = STATUS_MAP[s]; if (!m) return '';
     return '<span class="tx3-badge" style="color:'+m.c+';background:'+m.bg+';border-color:'+m.c+'55">'+m.label+'</span>';
   }
-
-  /* Build Wikipedia URL from species full_name.
-     Handles: "Drosera rotundifolia", "Sarracenia purpurea ssp. venosa",
-              "Drosera aff. petiolaris" → always uses genus + first epithet */
   function wikiUrl(fullName) {
     var parts = String(fullName).split(' ');
-    var genus = parts[0];
-    var epithet = '';
+    var genus = parts[0], epithet = '';
     for (var i = 1; i < parts.length; i++) {
-      var w = parts[i];
-      // Skip qualifiers
-      if (/^(ssp\.|var\.|f\.|subsp\.|aff\.|×|x)$/i.test(w)) continue;
-      epithet = w; break;
+      if (/^(ssp\.|var\.|f\.|subsp\.|aff\.|×|x)$/i.test(parts[i])) continue;
+      epithet = parts[i]; break;
     }
-    var name = genus + (epithet ? '_' + epithet : '');
-    return 'https://en.wikipedia.org/wiki/' + name.replace(/[^A-Za-z0-9_]/g, '');
+    return 'https://en.wikipedia.org/wiki/' + (genus + (epithet ? '_' + epithet : '')).replace(/[^A-Za-z0-9_]/g, '');
+  }
+  /* Make a safe DOM id from a genus name */
+  function genusId(genusName) {
+    return 'g-' + genusName.replace(/[^A-Za-z0-9]/g, '-');
+  }
+
+  /* ── LAZY SPECIES RENDERING ──────────────────────────────── */
+  /* Renders species HTML into the .tx3-sp-list once on first open */
+  function lazyRenderSpecies(genusEl) {
+    var gid = genusEl.getAttribute('id');
+    var entry = genusLazyMap[gid];
+    if (!entry || entry.rendered) return;
+    entry.rendered = true;
+
+    var html = (entry.species || []).map(function (s) {
+      var cvs = s.cultivars || [];
+      var cvHtml = cvs.length
+        ? '<div class="tx3-cvs">' + cvs.map(function (cv) {
+            var label = typeof cv === 'object' ? (cv.name || '') : cv;
+            return '<span class="tx3-cv">' + esc(label) + '</span>';
+          }).join('') + '</div>'
+        : '';
+      return '<li class="tx3-sp">'
+        + '<div class="tx3-sp-row">'
+        + '<a class="tx3-sp-link" href="' + wikiUrl(s.full_name) + '" target="_blank" rel="noopener" title="View on Wikipedia">'
+        + '<em>' + esc(s.full_name) + '</em>'
+        + '<svg class="tx3-wiki-ico" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 2h3v3M10 2L5 7M4 3H2v7h7V8" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+        + '</a>'
+        + (s.common_name ? '<span class="tx3-sp-com">' + esc(s.common_name) + '</span>' : '')
+        + statusBadge(s.conservation_status)
+        + (cvs.length ? '<span class="tx3-sp-cvc">' + cvs.length + ' cv.</span>' : '')
+        + '</div>'
+        + cvHtml
+        + '</li>';
+    }).join('');
+
+    var listEl = genusEl.querySelector('.tx3-sp-list');
+    if (listEl) listEl.innerHTML = html;
   }
 
   /* ── TREE RENDERING ──────────────────────────────────────── */
@@ -167,30 +199,25 @@
       var cat = d.cat;
       var col  = CAT_COLOR[cat.id] || '#374151';
       var icon = CAT_ICON[cat.id]  || '🌱';
-      html += '<li class="tx3-tr-cat-li">'
-        + '<details open>'
-        + '<summary class="tx3-tr-cat-sum" style="color:'+col+'">'
-        + '<span class="tx3-tr-icon">'+icon+'</span>'
-        + '<strong>'+esc(cat.name)+'</strong>'
-        + '</summary>'
-        + '<ul class="tx3-tr-fams">';
+      html += '<li class="tx3-tr-cat-li"><details open>'
+        + '<summary class="tx3-tr-cat-sum" style="color:' + col + '">'
+        + '<span class="tx3-tr-icon">' + icon + '</span><strong>' + esc(cat.name) + '</strong>'
+        + '</summary><ul class="tx3-tr-fams">';
       d.packs.forEach(function (pack) {
         var genera = pack.genera || [];
-        var totalSp = genera.reduce(function(n,g){ return n+(g.species||[]).length; }, 0);
-        html += '<li class="tx3-tr-fam-li">'
-          + '<details>'
+        var totalSp = genera.reduce(function (n, g) { return n + (g.species || []).length; }, 0);
+        html += '<li class="tx3-tr-fam-li"><details>'
           + '<summary class="tx3-tr-fam-sum">'
           + esc(pack.family || pack.pack_id)
-          + '<span class="tx3-tr-fam-meta">'+genera.length+'g · '+totalSp+'sp</span>'
-          + '</summary>'
-          + '<ul class="tx3-tr-gens">';
+          + '<span class="tx3-tr-fam-meta">' + genera.length + 'g · ' + totalSp + 'sp</span>'
+          + '</summary><ul class="tx3-tr-gens">';
         genera.forEach(function (g) {
           var spCount = (g.species || []).length;
-          var cvCount = (g.species || []).reduce(function(n,s){ return n+(s.cultivars||[]).length; },0);
-          html += '<li><a class="tx3-tr-g-lnk" href="#g-'+esc(g.genus)+'">'
-            + '<em>'+esc(g.genus)+'</em>'
-            + (g.common_name ? '<span class="tx3-tr-g-com">'+esc(g.common_name)+'</span>' : '')
-            + '<span class="tx3-tr-g-cnt">'+spCount+' sp'+(cvCount?' · '+cvCount+' cv':'')+'</span>'
+          var cvCount = (g.species || []).reduce(function (n, s) { return n + (s.cultivars || []).length; }, 0);
+          html += '<li><a class="tx3-tr-g-lnk" href="#' + genusId(g.genus) + '">'
+            + '<em>' + esc(g.genus) + '</em>'
+            + (g.common_name ? '<span class="tx3-tr-g-com">' + esc(g.common_name) + '</span>' : '')
+            + '<span class="tx3-tr-g-cnt">' + spCount + ' sp' + (cvCount ? ' · ' + cvCount + ' cv' : '') + '</span>'
             + '</a></li>';
         });
         html += '</ul></details></li>';
@@ -198,10 +225,10 @@
       html += '</ul></details></li>';
     });
     html += '</ul>';
-    document.getElementById('tx3-tree').innerHTML = '<div class="tx3-tree-inner">'+html+'</div>';
+    document.getElementById('tx3-tree').innerHTML = '<div class="tx3-tree-inner">' + html + '</div>';
   }
 
-  /* ── FILTER RENDERING ────────────────────────────────────── */
+  /* ── FILTER SIDEBAR ──────────────────────────────────────── */
   function renderFilters(data) {
     var html = '';
     data.forEach(function (d) {
@@ -209,20 +236,14 @@
       var col  = CAT_COLOR[cat.id] || '#374151';
       var icon = CAT_ICON[cat.id]  || '🌱';
       var genera = [];
-      d.packs.forEach(function (p) {
-        (p.genera || []).forEach(function (g) { genera.push(g.genus); });
-      });
+      d.packs.forEach(function (p) { (p.genera || []).forEach(function (g) { genera.push(g.genus); }); });
       if (!genera.length) return;
-      html += '<div class="tx3-fg">'
-        + '<div class="tx3-fg-hdr" style="color:'+col+'">'
-        + icon + ' ' + esc(cat.name)
-        + '</div>';
+      html += '<div class="tx3-fg"><div class="tx3-fg-hdr" style="color:' + col + '">' + icon + ' ' + esc(cat.name) + '</div>';
       genera.forEach(function (gName) {
         var cbId = 'fg-' + gName.replace(/[^a-zA-Z0-9]/g, '-');
         html += '<label class="tx3-fg-item">'
-          + '<input type="checkbox" class="tx3-fg-cb" value="'+esc(gName)+'" id="'+esc(cbId)+'">'
-          + '<em class="tx3-fg-name">'+esc(gName)+'</em>'
-          + '</label>';
+          + '<input type="checkbox" class="tx3-fg-cb" value="' + esc(gName) + '" id="' + esc(cbId) + '">'
+          + '<em class="tx3-fg-name">' + esc(gName) + '</em></label>';
       });
       html += '</div>';
     });
@@ -235,7 +256,6 @@
       updateFilterCount();
       applyFilters();
     });
-
     document.getElementById('tx3-filter-clear').addEventListener('click', function () {
       checkedGenera = {};
       var cbs = document.querySelectorAll('.tx3-fg-cb');
@@ -248,75 +268,51 @@
   function updateFilterCount() {
     var n = Object.keys(checkedGenera).length;
     var countEl = document.getElementById('tx3-mob-filter-count');
-    if (countEl) {
-      countEl.textContent = n;
-      countEl.style.display = n > 0 ? '' : 'none';
-    }
+    if (countEl) { countEl.textContent = n; countEl.style.display = n > 0 ? '' : 'none'; }
   }
 
   /* ── CONTENT RENDERING ───────────────────────────────────── */
-  function renderSpecies(species) {
-    return (species || []).map(function (s) {
-      var cvs = s.cultivars || [];
-      /* cultivars may be strings OR {name: "..."} objects */
-      var cvHtml = cvs.length
-        ? '<div class="tx3-cvs">' + cvs.map(function(cv){
-            var label = typeof cv === 'object' ? (cv.name || '') : cv;
-            return '<span class="tx3-cv">'+esc(label)+'</span>';
-          }).join('') + '</div>'
-        : '';
-      return '<li class="tx3-sp">'
-        + '<div class="tx3-sp-row">'
-        + '<a class="tx3-sp-link" href="'+wikiUrl(s.full_name)+'" target="_blank" rel="noopener" title="View '+esc(s.full_name)+' on Wikipedia">'
-        + '<em>'+esc(s.full_name)+'</em>'
-        + '<svg class="tx3-wiki-ico" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 2h3v3M10 2L5 7M4 3H2v7h7V8" stroke-linecap="round" stroke-linejoin="round"/></svg>'
-        + '</a>'
-        + (s.common_name ? '<span class="tx3-sp-com">'+esc(s.common_name)+'</span>' : '')
-        + statusBadge(s.conservation_status)
-        + (cvs.length ? '<span class="tx3-sp-cvc">'+cvs.length+' cv.</span>' : '')
-        + '</div>'
-        + cvHtml
-        + '</li>';
-    }).join('');
-  }
-
+  /* Renders only genus BUTTONS — species are lazy-loaded on first open */
   function renderGenus(g, col) {
     var sps     = g.species || [];
     var totalCv = sps.reduce(function (n, s) { return n + (s.cultivars || []).length; }, 0);
-    return '<div class="tx3-genus" id="g-' + esc(g.genus) + '">'
-      + '<button class="tx3-genus-btn" aria-expanded="false" onclick="'
-      + 'var el=this.parentNode;el.classList.toggle(\'open\');'
+    var gid     = genusId(g.genus);
+
+    /* Store species data for lazy render */
+    genusLazyMap[gid] = { species: sps, col: col, rendered: sps.length === 0 };
+
+    return '<div class="tx3-genus" id="' + gid + '">'
+      + '<button class="tx3-genus-btn" aria-expanded="false" data-gid="' + esc(gid) + '" onclick="'
+      + 'var el=this.parentNode;var wasOpen=el.classList.contains(\'open\');'
+      + 'el.classList.toggle(\'open\');'
       + 'this.setAttribute(\'aria-expanded\',el.classList.contains(\'open\'));'
+      + 'if(!wasOpen)window._txLazy(el);'
       + '">'
-      + '<em class="tx3-gs">'+esc(g.genus)+'</em>'
-      + (g.common_name ? '<span class="tx3-gc">'+esc(g.common_name)+'</span>' : '')
+      + '<em class="tx3-gs">' + esc(g.genus) + '</em>'
+      + (g.common_name ? '<span class="tx3-gc">' + esc(g.common_name) + '</span>' : '')
       + '<span class="tx3-gpills">'
-      + '<span class="tx3-gp" style="background:'+col+'18;color:'+col+'">'+sps.length+' sp.</span>'
-      + (totalCv ? '<span class="tx3-gp tx3-gp--cv">'+totalCv+' cv.</span>' : '')
+      + '<span class="tx3-gp" style="background:' + col + '18;color:' + col + '">' + sps.length + ' sp.</span>'
+      + (totalCv ? '<span class="tx3-gp tx3-gp--cv">' + totalCv + ' cv.</span>' : '')
       + '</span>'
       + '<svg class="tx3-chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 6l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>'
       + '</button>'
-      + '<ul class="tx3-sp-list">'+renderSpecies(sps)+'</ul>'
+      + '<ul class="tx3-sp-list"></ul>'  /* empty — filled lazily */
       + '</div>';
   }
 
+  /* Expose lazy loader globally so inline onclick can call it */
+  window._txLazy = lazyRenderSpecies;
+
   function renderPack(pack, col) {
-    var genera    = pack.genera || [];
-    var genNames  = genera.map(function (g) { return g.genus; });
-    var totalSp   = genera.reduce(function (n, g) { return n + (g.species || []).length; }, 0);
-    var totalCv   = genera.reduce(function (n, g) {
+    var genera   = pack.genera || [];
+    var genNames = genera.map(function (g) { return g.genus; });
+    var totalSp  = genera.reduce(function (n, g) { return n + (g.species || []).length; }, 0);
+    var totalCv  = genera.reduce(function (n, g) {
       return n + (g.species || []).reduce(function (m, s) { return m + (s.cultivars || []).length; }, 0);
     }, 0);
 
-    var searchTxt = [pack.family || '', pack.common_name || ''].concat(
-      genera.map(function (g) {
-        return [g.genus, g.common_name || ''].concat(
-          (g.species || []).map(function (s) {
-            return [s.full_name, s.common_name || ''].concat(s.cultivars || []).join(' ');
-          })
-        ).join(' ');
-      })
-    ).join(' ').toLowerCase();
+    /* data-search: only family + genus names (NOT all species text — avoids huge attribute) */
+    var searchTxt = ([pack.family || '', pack.common_name || ''].concat(genNames)).join(' ').toLowerCase();
 
     var descHtml = '';
     if (pack.description) {
@@ -324,33 +320,31 @@
       descHtml = '<p class="tx3-pack-desc">' + esc(stripped.slice(0, 220)) + (stripped.length > 220 ? '…' : '') + '</p>';
     }
 
-    return '<div class="tx3-pack" data-search="'+esc(searchTxt)+'" data-genera="'+esc(genNames.join(','))+'">'
-      + '<div class="tx3-pack-hd" style="border-left-color:'+col+'">'
+    return '<div class="tx3-pack" data-search="' + esc(searchTxt) + '" data-genera="' + esc(genNames.join(',')) + '">'
+      + '<div class="tx3-pack-hd" style="border-left-color:' + col + '">'
       + '<div class="tx3-pack-info">'
-      + '<div class="tx3-pack-fam">'+esc(pack.family || pack.pack_id)+'</div>'
-      + (pack.common_name ? '<div class="tx3-pack-com">'+esc(pack.common_name)+'</div>' : '')
+      + '<div class="tx3-pack-fam">' + esc(pack.family || pack.pack_id) + '</div>'
+      + (pack.common_name ? '<div class="tx3-pack-com">' + esc(pack.common_name) + '</div>' : '')
       + '</div>'
       + '<div class="tx3-pack-cnt">'
-      + '<span class="tx3-pc-tag">'+genera.length+'&thinsp;genera</span>'
-      + '<span class="tx3-pc-tag">'+totalSp+'&thinsp;species</span>'
-      + (totalCv ? '<span class="tx3-pc-tag tx3-pc-tag--cv">'+totalCv+'&thinsp;cultivars</span>' : '')
-      + '</div>'
-      + '</div>'
+      + '<span class="tx3-pc-tag">' + genera.length + '&thinsp;genera</span>'
+      + '<span class="tx3-pc-tag">' + totalSp + '&thinsp;species</span>'
+      + (totalCv ? '<span class="tx3-pc-tag tx3-pc-tag--cv">' + totalCv + '&thinsp;cultivars</span>' : '')
+      + '</div></div>'
       + descHtml
       + '<div class="tx3-genera">'
       + genera.map(function (g) { return renderGenus(g, col); }).join('')
-      + '</div>'
-      + '</div>';
+      + '</div></div>';
   }
 
   function renderCategory(cat, packs) {
     var col  = CAT_COLOR[cat.id] || '#374151';
     var icon = CAT_ICON[cat.id]  || '🌱';
-    return '<section class="tx3-cat" id="cat-'+esc(cat.id)+'">'
-      + '<div class="tx3-cat-hdr" style="border-left-color:'+col+';--cat-col:'+col+'">'
-      + '<span class="tx3-cat-icon">'+icon+'</span>'
-      + '<span class="tx3-cat-name" style="color:'+col+'">'+esc(cat.name)+'</span>'
-      + '<span class="tx3-cat-badge">'+packs.length+'&thinsp;pack'+(packs.length !== 1 ? 's' : '')+'</span>'
+    return '<section class="tx3-cat" id="cat-' + esc(cat.id) + '">'
+      + '<div class="tx3-cat-hdr" style="border-left-color:' + col + '">'
+      + '<span class="tx3-cat-icon">' + icon + '</span>'
+      + '<span class="tx3-cat-name" style="color:' + col + '">' + esc(cat.name) + '</span>'
+      + '<span class="tx3-cat-badge">' + packs.length + '&thinsp;pack' + (packs.length !== 1 ? 's' : '') + '</span>'
       + '</div>'
       + packs.map(function (p) { return renderPack(p, col); }).join('')
       + '</section>';
@@ -361,44 +355,130 @@
       data.map(function (d) { return renderCategory(d.cat, d.packs); }).join('');
   }
 
-  /* ── FILTER + SEARCH LOGIC ───────────────────────────────── */
+  /* ── SEARCH & FILTER ─────────────────────────────────────── */
+  /*
+   * Pack-level filter: genus names + family name in data-search attribute.
+   * Species-level search: queries allData in memory — opens matched genera
+   * and lazily renders their species list, then hides non-matching items.
+   */
   function applyFilters() {
-    var q              = searchTerm.toLowerCase().trim();
-    var hasGenFilter   = Object.keys(checkedGenera).length > 0;
+    var q            = searchTerm.toLowerCase().trim();
+    var hasGenFilter = Object.keys(checkedGenera).length > 0;
 
+    /* ── 1. Pack visibility by genus filter ── */
     document.querySelectorAll('.tx3-pack').forEach(function (el) {
       var genNames = (el.getAttribute('data-genera') || '').split(',');
-      var searchOk = !q || (el.getAttribute('data-search') || '').indexOf(q) !== -1;
       var genOk    = !hasGenFilter || genNames.some(function (g) { return checkedGenera[g]; });
-      el.style.display = (searchOk && genOk) ? '' : 'none';
+      el.style.display = genOk ? '' : 'none';
     });
 
+    /* ── 2. Category visibility ── */
     document.querySelectorAll('.tx3-cat').forEach(function (el) {
-      var anyVisible = [].some.call(el.querySelectorAll('.tx3-pack'), function (p) {
-        return p.style.display !== 'none';
-      });
-      el.style.display = anyVisible ? '' : 'none';
+      var any = [].some.call(el.querySelectorAll('.tx3-pack'), function (p) { return p.style.display !== 'none'; });
+      el.style.display = any ? '' : 'none';
     });
 
-    /* per-species highlight when searching */
-    if (q) {
-      document.querySelectorAll('.tx3-sp').forEach(function (el) {
-        var txt = (el.textContent || '').toLowerCase();
-        el.style.display = txt.indexOf(q) !== -1 ? '' : 'none';
-      });
-      document.querySelectorAll('.tx3-genus').forEach(function (el) {
-        var any = [].some.call(el.querySelectorAll('.tx3-sp'), function (s) { return s.style.display !== 'none'; });
-        el.style.display = any ? '' : 'none';
-      });
-    } else {
-      document.querySelectorAll('.tx3-sp,.tx3-genus').forEach(function (el) { el.style.display = ''; });
+    /* ── 3. No search term → show all genera & reset species visibility ── */
+    if (!q) {
+      document.querySelectorAll('.tx3-genus').forEach(function (el) { el.style.display = ''; });
+      /* Hide species rows only if a genus filter hides their pack */
+      document.querySelectorAll('.tx3-sp').forEach(function (el) { el.style.display = ''; });
+      return;
     }
+
+    /* ── 4. Species-level search against in-memory data ── */
+    /* Build a set of genus names that have any species match */
+    var matchedGenera = {};
+    allData.forEach(function (d) {
+      d.packs.forEach(function (pack) {
+        (pack.genera || []).forEach(function (g) {
+          /* genus name itself matches */
+          if (g.genus.toLowerCase().indexOf(q) !== -1 ||
+              (g.common_name || '').toLowerCase().indexOf(q) !== -1) {
+            matchedGenera[g.genus] = 'genus';
+            return;
+          }
+          /* check species */
+          var hasMatch = (g.species || []).some(function (s) {
+            return s.full_name.toLowerCase().indexOf(q) !== -1 ||
+                   (s.common_name || '').toLowerCase().indexOf(q) !== -1 ||
+                   (s.cultivars || []).some(function (cv) {
+                     var label = typeof cv === 'object' ? (cv.name || '') : cv;
+                     return label.toLowerCase().indexOf(q) !== -1;
+                   });
+          });
+          if (hasMatch) matchedGenera[g.genus] = 'species';
+        });
+      });
+    });
+
+    /* ── 5. Show/hide genus elements; lazy-open matched ones ── */
+    document.querySelectorAll('.tx3-genus').forEach(function (genusEl) {
+      /* determine genus name from the button text */
+      var sciEl  = genusEl.querySelector('.tx3-gs');
+      var gName  = sciEl ? sciEl.textContent.trim() : '';
+      var matchType = matchedGenera[gName];
+
+      if (!matchType) {
+        genusEl.style.display = 'none';
+        return;
+      }
+      genusEl.style.display = '';
+
+      /* Open genus and lazy-render species if matched on species level */
+      if (matchType === 'species') {
+        genusEl.classList.add('open');
+        var btn = genusEl.querySelector('.tx3-genus-btn');
+        if (btn) btn.setAttribute('aria-expanded', 'true');
+        lazyRenderSpecies(genusEl);
+
+        /* Hide non-matching species rows */
+        var packGenusData = null;
+        allData.forEach(function (d) {
+          d.packs.forEach(function (pack) {
+            (pack.genera || []).forEach(function (g) {
+              if (g.genus === gName) packGenusData = g;
+            });
+          });
+        });
+        if (packGenusData) {
+          genusEl.querySelectorAll('.tx3-sp').forEach(function (spEl, idx) {
+            var s = (packGenusData.species || [])[idx];
+            if (!s) { spEl.style.display = 'none'; return; }
+            var text = (s.full_name + ' ' + (s.common_name || '') + ' ' +
+              (s.cultivars || []).map(function (cv) {
+                return typeof cv === 'object' ? (cv.name || '') : cv;
+              }).join(' ')).toLowerCase();
+            spEl.style.display = text.indexOf(q) !== -1 ? '' : 'none';
+          });
+        }
+      } else {
+        /* genus name matched — show all species, keep collapsed */
+        genusEl.querySelectorAll('.tx3-sp').forEach(function (el) { el.style.display = ''; });
+      }
+    });
+
+    /* Recheck pack visibility — hide packs where all genera hidden */
+    document.querySelectorAll('.tx3-pack').forEach(function (el) {
+      if (el.style.display === 'none') return;
+      var anyGenus = [].some.call(el.querySelectorAll('.tx3-genus'), function (g) { return g.style.display !== 'none'; });
+      el.style.display = anyGenus ? '' : 'none';
+    });
+    document.querySelectorAll('.tx3-cat').forEach(function (el) {
+      var any = [].some.call(el.querySelectorAll('.tx3-pack'), function (p) { return p.style.display !== 'none'; });
+      el.style.display = any ? '' : 'none';
+    });
   }
 
   /* ── SEARCH INPUT ────────────────────────────────────────── */
   var searchEl = document.getElementById('tx3-search');
   if (searchEl) {
-    searchEl.addEventListener('input', function () { searchTerm = this.value; applyFilters(); });
+    var debounceTimer;
+    searchEl.addEventListener('input', function () {
+      searchTerm = this.value;
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(applyFilters, 250);
+    });
     searchEl.addEventListener('search', function () { searchTerm = this.value; applyFilters(); });
   }
 
@@ -414,8 +494,8 @@
   }
 
   /* ── MOBILE FILTER TOGGLE ────────────────────────────────── */
-  var mobFilterBtn  = document.getElementById('tx3-mob-filter-btn');
-  var sidebarEl     = document.getElementById('tx3-sidebar');
+  var mobFilterBtn = document.getElementById('tx3-mob-filter-btn');
+  var sidebarEl    = document.getElementById('tx3-sidebar');
   if (mobFilterBtn && sidebarEl) {
     mobFilterBtn.addEventListener('click', function () {
       mobFilterOpen = !mobFilterOpen;
@@ -430,10 +510,10 @@
     pillsEl.innerHTML = categories.map(function (cat) {
       var col  = CAT_COLOR[cat.id] || '#374151';
       var icon = CAT_ICON[cat.id]  || '🌱';
-      return '<a class="tx3-cat-pill" href="#cat-'+esc(cat.id)+'"'
-        +' data-col="'+col+'"'
-        +' style="color:'+col+';border-color:'+col+'">'
-        +icon+'&thinsp;'+esc(cat.name)+'</a>';
+      return '<a class="tx3-cat-pill" href="#cat-' + esc(cat.id) + '"'
+        + ' data-col="' + col + '"'
+        + ' style="color:' + col + ';border-color:' + col + '">'
+        + icon + '&thinsp;' + esc(cat.name) + '</a>';
     }).join('');
     pillsEl.addEventListener('mouseover', function (e) {
       var a = e.target.closest ? e.target.closest('.tx3-cat-pill') : null;
@@ -473,8 +553,10 @@
     .then(function (data) {
       allData = data;
       document.getElementById('tx3-loading').style.display = 'none';
+      /* Render tree and filters (only genus names — fast) */
       renderTree(data);
       renderFilters(data);
+      /* Render pack/genus structure (NO species HTML — lazy) */
       renderAll(data);
       if (searchEl && searchEl.value) { searchTerm = searchEl.value; applyFilters(); }
     })
