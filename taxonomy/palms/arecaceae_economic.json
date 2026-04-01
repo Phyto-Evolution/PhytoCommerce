@@ -2,152 +2,1016 @@
   "pack_id": "arecaceae_economic",
   "schema_version": "1.1",
   "family": "Arecaceae",
-  "common_name": "Economic Palms of India",
-  "description": "Arecaceae is the palm family, comprising over 2,600 species of trees, shrubs, and vines. Economic palms are those cultivated for food, fibre, oil, and other commercial products. India has a rich palm culture with species integral to agriculture, cuisine, and tradition across its diverse regional landscapes.",
-  "meta_title": "Economic Palms of India — Arecaceae | PhytoCommerce",
-  "meta_description": "Explore economic palms of India including Coconut, Date Palm, Betel Nut, Palmyra and more. Full botanical data with Indian regional names and cultivar listings.",
-  "meta_keywords": "economic palms India, coconut palm, date palm, betel nut, palmyra palm, Arecaceae India",
+  "common_name": "Economic Palms",
+  "description": "Commercially and economically significant palms cultivated globally for food, oil, fiber, and raw materials. Includes coconut, date palm, oil palm, sago palm, rattan, betel nut, palmyra, and royal palms. Many species are critically important in Indian agriculture and cuisine.",
+  "meta_title": "Economic Palms Taxonomy Pack — Arecaceae",
+  "meta_description": "Complete taxonomy of economically important palms: coconut, date, oil palm, sago, betel, palmyra, rattan and more.",
+  "meta_keywords": [
+    "palm",
+    "coconut",
+    "date palm",
+    "oil palm",
+    "rattan",
+    "sago palm",
+    "economic crops",
+    "Arecaceae"
+  ],
   "genera": [
     {
       "genus": "Cocos",
-      "common_name": "Coconut / Nariyal",
-      "description": "<em>Cocos nucifera</em>, the coconut palm, is one of the most economically important palms in the world and a cornerstone of Indian coastal agriculture. Known as Nariyal in Hindi, it is called Narikela in Sanskrit, Thengai in Tamil, Kobbari in Telugu, and Thengu in Malayalam. Every part of the plant — from fruit and oil to coir fibre and timber — is utilised. India is one of the top three global producers of coconuts.",
+      "common_name": "Coconut",
+      "description": "Monotypic genus containing the coconut palm, one of the most economically important plants in the world, especially in tropical coastal Asia. Called Nariyal/Naariyal in Hindi, Thengai in Tamil, Tengu in Telugu.",
       "species": [
         {
           "full_name": "Cocos nucifera",
           "common_name": "Coconut / Nariyal",
-          "description": "<em>Cocos nucifera</em> is a tall monocotyledonous palm reaching 30 m, with a distinctive arching crown of pinnate leaves. The drupe (coconut) is consumed fresh, dried (copra), pressed for oil, or processed into various food products. Coir from the husk is a major fibre crop. Coconut water is a traditional beverage and sports drink.",
-          "meta_title": "Cocos nucifera — Coconut Palm / Nariyal",
-          "meta_description": "Botanical profile of Cocos nucifera (Coconut/Nariyal). Tall, West Coast and East Coast cultivars, D×T hybrids, copra and oil statistics for Indian growers.",
-          "meta_keywords": "Cocos nucifera, coconut palm, Nariyal, Indian coconut cultivars, West Coast Tall, D×T hybrid",
-          "native_range": "Pan-tropical (probable origin: Indo-Pacific)",
-          "conservation_status": "LC",
-          "notes": "Grown commercially along India's coastal states. Requires well-drained sandy loam and high humidity.",
+          "conservation_status": "least_concern",
           "cultivars": [
-            "West Coast Tall",
-            "East Coast Tall",
-            "Chowghat Orange Dwarf",
-            "Malayan Yellow Dwarf",
-            "D×T Hybrid"
+            {
+              "name": "Dwarf Green"
+            },
+            {
+              "name": "Dwarf Orange"
+            },
+            {
+              "name": "Dwarf Yellow"
+            },
+            {
+              "name": "Tall West African"
+            },
+            {
+              "name": "Malayan Dwarf"
+            },
+            {
+              "name": "King Coconut"
+            },
+            {
+              "name": "Macapuno"
+            },
+            {
+              "name": "Philippine Tall"
+            },
+            {
+              "name": "Chowghat Orange Dwarf"
+            },
+            {
+              "name": "Kera"
+            },
+            {
+              "name": "Chandrakalpa"
+            },
+            {
+              "name": "Laccadive Ordinary"
+            }
           ]
         }
       ]
     },
     {
-      "genus": "Phoenix",
-      "common_name": "Date Palm / Khajoor",
-      "description": "<em>Phoenix</em> is a genus of 14 species of palms native to regions spanning the Canary Islands through Africa, the Middle East, and South Asia. The genus is best known for <em>P. dactylifera</em> (Date Palm), though India has important native wild date species. Phoenix palms are dioecious, requiring both male and female plants for fruiting. The genus name is ancient Greek, possibly referencing Phoenicia or the mythical bird.",
+      "genus": "Elaeis",
+      "common_name": "Oil Palm",
+      "description": "Two species of oil palms producing the world's most consumed vegetable oil. Elaeis guineensis dominates global palm oil production. Called Tel Tal in Bengali.",
       "species": [
         {
-          "full_name": "Phoenix dactylifera",
-          "common_name": "Date Palm / Khajoor",
-          "description": "<em>Phoenix dactylifera</em> is the commercially cultivated date palm, one of humanity's oldest food crops. In India it is grown primarily in Rajasthan and Gujarat. The sweet drupes (dates) are consumed fresh, dried, or processed. Cultivation requires intense heat, low humidity at fruit maturity, and irrigation in arid regions.",
-          "meta_title": "Phoenix dactylifera — Date Palm / Khajoor",
-          "meta_description": "Botanical profile of Phoenix dactylifera (Date Palm/Khajoor). Commercial cultivation in Rajasthan and Gujarat; cultivar notes and production data.",
-          "meta_keywords": "Phoenix dactylifera, date palm, Khajoor, Indian dates, Rajasthan dates",
-          "native_range": "North Africa, Middle East (cultivated pan-tropically)",
-          "conservation_status": "LC",
-          "notes": "Requires high heat and dry conditions at fruiting. Predominantly grown in arid NW India.",
-          "cultivars": []
+          "full_name": "Elaeis guineensis",
+          "common_name": "African Oil Palm",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Dura"
+            },
+            {
+              "name": "Pisifera"
+            },
+            {
+              "name": "Tenera"
+            },
+            {
+              "name": "AVROS"
+            },
+            {
+              "name": "Ghana"
+            },
+            {
+              "name": "Nigeria"
+            }
+          ]
         },
         {
-          "full_name": "Phoenix sylvestris",
-          "common_name": "Wild Date Palm / Khajoor Junglee",
-          "description": "<em>Phoenix sylvestris</em>, the wild date palm, is a native Indian species distributed widely across the subcontinent. Known as Khajoor Junglee in Hindi and Eetha in Telugu. The sap is tapped for toddy and jaggery (date palm sugar/Nolen Gur), a Bengal winter delicacy. The tree plays an important role in rural economies and is a prominent landscape palm.",
-          "meta_title": "Phoenix sylvestris — Wild Date Palm / Khajoor Junglee",
-          "meta_description": "Botanical profile of Phoenix sylvestris, the Indian wild date palm. Tapped for toddy and Nolen Gur (date palm jaggery); widely distributed native species.",
-          "meta_keywords": "Phoenix sylvestris, wild date palm, Khajoor Junglee, Nolen Gur, date palm jaggery India",
-          "native_range": "Indian subcontinent (India, Bangladesh, Pakistan, Sri Lanka)",
-          "conservation_status": "LC",
-          "notes": "Native to India. Sap tapped in winter for toddy and jaggery. Drought tolerant once established.",
-          "cultivars": []
-        },
-        {
-          "full_name": "Phoenix rupicola",
-          "common_name": "Cliff Date Palm / Pahadi Khajoor",
-          "description": "<em>Phoenix rupicola</em>, the cliff date palm, is a graceful species native to rocky outcrops and hillsides in eastern India, particularly Sikkim, Bhutan, and the eastern Himalayas. Known as Pahadi Khajoor (Hill Date Palm). It is smaller than <em>P. sylvestris</em>, with soft arching leaves and small edible fruits. Increasingly popular as an ornamental in Indian horticulture.",
-          "meta_title": "Phoenix rupicola — Cliff Date Palm / Pahadi Khajoor",
-          "meta_description": "Botanical profile of Phoenix rupicola (Cliff Date/Pahadi Khajoor). Native Indian palm from rocky hillsides of the eastern Himalayas; ornamental and edible.",
-          "meta_keywords": "Phoenix rupicola, cliff date palm, Pahadi Khajoor, Indian native palm, eastern Himalaya palm",
-          "native_range": "Eastern Himalaya (Sikkim, Bhutan, NE India)",
-          "conservation_status": "LC",
-          "notes": "Rocky hillside native. Drought hardy. Soft, graceful fronds; suitable for garden landscapes.",
+          "full_name": "Elaeis oleifera",
+          "common_name": "American Oil Palm",
+          "conservation_status": "least_concern",
           "cultivars": []
         }
       ]
     },
     {
-      "genus": "Areca",
-      "common_name": "Betel Nut Palm / Supari",
-      "description": "<em>Areca</em> comprises about 50 species of palms native to tropical Asia and the Pacific. <em>Areca catechu</em>, the betel nut palm, is of immense cultural and economic significance across South and Southeast Asia. The areca nut (commonly but incorrectly called betel nut) is chewed with betel leaf (Piper betle) and slaked lime as a mild stimulant in a preparation called paan. India is a major producer.",
+      "genus": "Phoenix",
+      "common_name": "Date Palms",
+      "description": "Genus of 14 species of palms native from the Canary Islands through North Africa, the Middle East, and South Asia to Southeast Asia. Phoenix dactylifera is the true date palm, while P. sylvestris is the Indian date palm / Khajur used for jaggery and toddy.",
       "species": [
         {
-          "full_name": "Areca catechu",
-          "common_name": "Betel Nut Palm / Supari",
-          "description": "<em>Areca catechu</em> is a slender, elegant palm reaching 20–30 m. Cultivated extensively in Karnataka, Kerala, Assam, and other humid regions. The nut is chewed as paan (Paan Supari / Tambool), an ancient South Asian tradition. Regional names include Adike in Kannada and Kammugu in Tamil. The palm also yields husks used for fibre and packaging materials.",
-          "meta_title": "Areca catechu — Betel Nut Palm / Supari",
-          "meta_description": "Botanical profile of Areca catechu (Betel Nut/Supari). Cultural and economic significance of paan in India; cultivation in Karnataka, Kerala, Assam.",
-          "meta_keywords": "Areca catechu, betel nut palm, Supari, paan, Adike, Kammugu, Indian areca cultivation",
-          "native_range": "Unknown wild origin (possibly Philippines/Malaysia); cultivated across tropical Asia",
-          "conservation_status": "LC",
-          "notes": "Requires humid tropical climate. Known as Paan Supari (Hindi), Tambool (Sanskrit), Adike (Kannada), Kammugu (Tamil).",
+          "full_name": "Phoenix dactylifera",
+          "common_name": "Date Palm / Khajur",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Medjool"
+            },
+            {
+              "name": "Deglet Noor"
+            },
+            {
+              "name": "Barhi"
+            },
+            {
+              "name": "Ajwa"
+            },
+            {
+              "name": "Khalas"
+            },
+            {
+              "name": "Zahidi"
+            },
+            {
+              "name": "Halawy"
+            },
+            {
+              "name": "Khadrawy"
+            },
+            {
+              "name": "Dayri"
+            },
+            {
+              "name": "Thoory"
+            }
+          ]
+        },
+        {
+          "full_name": "Phoenix sylvestris",
+          "common_name": "Indian Date Palm / Silver Date Palm / Khajoor",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phoenix canariensis",
+          "common_name": "Canary Island Date Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phoenix reclinata",
+          "common_name": "Senegal Date Palm / African Wild Date",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phoenix rupicola",
+          "common_name": "Cliff Date Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phoenix roebelenii",
+          "common_name": "Pygmy Date Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phoenix loureiroi",
+          "common_name": "Mountain Date Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phoenix pusilla",
+          "common_name": "Ceylon Date Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phoenix paludosa",
+          "common_name": "Mangrove Date Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phoenix theophrasti",
+          "common_name": "Cretan Date Palm",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phoenix acaulis",
+          "common_name": "Stemless Date Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phoenix atlantica",
+          "common_name": "Cape Verde Date Palm",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phoenix caespitosa",
+          "common_name": "Tufted Date Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phoenix zeylanica",
+          "common_name": "Sri Lanka Date Palm",
+          "conservation_status": "least_concern",
           "cultivars": []
         }
       ]
     },
     {
       "genus": "Borassus",
-      "common_name": "Palmyra Palm / Taal",
-      "description": "<em>Borassus</em> is a genus of five species of tall dioecious fan palms native to tropical Africa, the Middle East, and South Asia. <em>Borassus flabellifer</em> is the dominant species in India, known by many regional names and deeply embedded in Indian culture. Every part — fruit, sap, flower spathe, seeds, and leaves — is utilised, earning it the title 'Tree of a Thousand Uses' in Tamil Nadu.",
+      "common_name": "Palmyra Palms",
+      "description": "Large fan palms of enormous economic importance in South and Southeast Asia. Borassus flabellifer (Palmyra/Taal/Taad) is the state tree of Tamil Nadu and provides sugar, fruit, timber, and fiber.",
       "species": [
         {
           "full_name": "Borassus flabellifer",
-          "common_name": "Palmyra Palm / Taal",
-          "description": "<em>Borassus flabellifer</em> is a massive fan palm reaching 30 m, iconic in the flat plains of Tamil Nadu, Andhra Pradesh, and West Bengal. It is the State tree of Tamil Nadu. The palm sap is fermented into toddy or concentrated into jaggery (Taal Mishri). The young endosperm (Nungu/Ice Apple) is a popular summer cooling food. Regional names: Taal (Hindi), Nungu (Tamil), Taati (Telugu), Tal (Bengali).",
-          "meta_title": "Borassus flabellifer — Palmyra Palm / Taal",
-          "meta_description": "Botanical profile of Borassus flabellifer (Palmyra/Taal). State tree of Tamil Nadu; jaggery, toddy, Ice Apple (Nungu) and fibre uses across India.",
-          "meta_keywords": "Borassus flabellifer, Palmyra palm, Taal, Nungu, Taati, Tal, ice apple, Indian palm tree",
-          "native_range": "Tropical Africa and Asia; widely naturalised across South and Southeast Asia",
-          "conservation_status": "LC",
-          "notes": "Taal (Hindi), Nungu (Tamil), Taati (Telugu), Tal (Bengali). State tree of Tamil Nadu. Multipurpose.",
+          "common_name": "Palmyra Palm / Taal / Taad / Nungu",
+          "conservation_status": "least_concern",
           "cultivars": []
-        }
-      ]
-    },
-    {
-      "genus": "Caryota",
-      "common_name": "Fish-tail Palm / Machli Tail Palm",
-      "description": "<em>Caryota</em> is a genus of 13 species of palms notable for their unique bipinnate (twice-divided) leaves, which give the leaflets a fish-tail outline. Native to tropical and subtropical Asia and Australia. <em>Caryota urens</em> is the most economically important species in India, tapped for sap to produce toddy and jaggery.",
-      "species": [
+        },
         {
-          "full_name": "Caryota urens",
-          "common_name": "Toddy Palm / Shendi",
-          "description": "<em>Caryota urens</em>, the toddy palm or fishtail wine palm, is a tall monocarpic palm (flowers once then dies) native to India and Sri Lanka. Known as Shendi or Sago Palm in India. The sap (toddy) is tapped from the inflorescence and consumed fresh (neera) or fermented. Starch from the trunk is used as sago. The fruits contain oxalate crystals and must not be handled bare-handed.",
-          "meta_title": "Caryota urens — Toddy Palm / Shendi (Fish-tail Palm)",
-          "meta_description": "Botanical profile of Caryota urens (Toddy Palm/Shendi). Monocarpic Indian palm tapped for toddy and sago; distinctive bipinnate fronds.",
-          "meta_keywords": "Caryota urens, toddy palm, Shendi, fishtail palm, Indian sago palm, neera",
-          "native_range": "India, Sri Lanka, Southeast Asia",
-          "conservation_status": "LC",
-          "notes": "Monocarpic — dies after flowering. Fruits contain calcium oxalate; handle with gloves. Sap: neera (fresh) or toddy (fermented).",
+          "full_name": "Borassus aethiopum",
+          "common_name": "African Palmyra Palm / African Fan Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Borassus akeassii",
+          "common_name": "Burkina Faso Palmyra",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Borassus heineanus",
+          "common_name": "New Guinea Palmyra",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Borassus madagascariensis",
+          "common_name": "Madagascar Palmyra",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Borassus sambiranensis",
+          "common_name": "Sambirano Palmyra",
+          "conservation_status": "least_concern",
           "cultivars": []
         }
       ]
     },
     {
       "genus": "Nypa",
-      "common_name": "Nipa Palm / Golpata",
-      "description": "<em>Nypa</em> is a monotypic genus containing only <em>Nypa fruticans</em>, an unusual mangrove palm that grows in tidal estuaries and coastal swamps. It is considered one of the most ancient flowering plants. In India it is found in the Sundarbans mangrove delta of West Bengal and in Andaman and Nicobar Islands. The leaves are used for thatching and the sap for sugar and vinegar.",
+      "common_name": "Nipa / Mangrove Palm",
+      "description": "Monotypic genus: the only mangrove palm. Found in coastal estuaries and tidal rivers from South Asia to the Pacific. Nypa fruticans is important for thatching, sugar/toddy production, and coastal protection.",
       "species": [
         {
           "full_name": "Nypa fruticans",
-          "common_name": "Nipa Palm / Golpata",
-          "description": "<em>Nypa fruticans</em> is a stemless or creeping mangrove palm with large, erect pinnate fronds rising directly from a buried rhizome. Known as Golpata in Bengali and Hogla in parts of India. Leaves are a primary thatching material in the Sundarbans. The sap is tapped for sugar and vinegar. Fruits are edible when young. The palm plays a significant role in mangrove ecosystem stability.",
-          "meta_title": "Nypa fruticans — Nipa Palm / Golpata",
-          "meta_description": "Botanical profile of Nypa fruticans (Nipa Palm/Golpata). Mangrove palm of the Sundarbans; thatching, sugar sap, and ecosystem roles.",
-          "meta_keywords": "Nypa fruticans, nipa palm, Golpata, Sundarbans palm, mangrove palm India, thatching palm",
-          "native_range": "South and Southeast Asia, western Pacific (mangrove zones)",
-          "conservation_status": "LC",
-          "notes": "Golpata (Bengali), Hogla. Mangrove habitat; requires saline tidal conditions. Ancient lineage — fossil record 70 Ma.",
+          "common_name": "Nipa Palm / Mangrove Palm / Attap",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Metroxylon",
+      "common_name": "Sago Palms",
+      "description": "Palms of Southeast Asia and the Pacific that accumulate massive quantities of starch in their trunk before flowering. Metroxylon sagu is the primary source of sago starch, a staple food in lowland New Guinea.",
+      "species": [
+        {
+          "full_name": "Metroxylon sagu",
+          "common_name": "Sago Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Metroxylon amicarum",
+          "common_name": "Caroline Islands Sago Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Metroxylon paulcoxii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Metroxylon salomonense",
+          "common_name": "Solomon Islands Sago Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Metroxylon vitiense",
+          "common_name": "Fiji Ivory Nut Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Metroxylon warburgii",
+          "common_name": "Vanuatu Sago Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Calamus",
+      "common_name": "Rattan Palms",
+      "description": "The largest palm genus with 500+ species, predominantly climbing palms used for rattan furniture, basketry, and construction material. Extensively traded in India and Southeast Asia. Called Bet/Rattan in Hindi.",
+      "species": [
+        {
+          "full_name": "Calamus rotang",
+          "common_name": "Common Rattan / Bet",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Calamus caesius",
+          "common_name": "Silver Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Calamus manan",
+          "common_name": "Manau Rattan",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Calamus scipionum",
+          "common_name": "Penang Lawyer Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Calamus viminalis",
+          "common_name": "Dragon Scale Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Calamus latifolius",
+          "common_name": "Broad-leaved Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Calamus flagellum",
+          "common_name": "Flagellum Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Calamus acanthospathus",
+          "common_name": "Indian Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Calamus andamanicus",
+          "common_name": "Andaman Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Calamus guruba",
+          "common_name": "Guruba Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Calamus thwaitesii",
+          "common_name": "Thwaites' Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Calamus travancoricus",
+          "common_name": "Travancore Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Calamus palustris",
+          "common_name": "Swamp Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Calamus tenuis",
+          "common_name": "Slender Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Calamus pseudotenuis",
+          "common_name": "False Slender Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Areca",
+      "common_name": "Areca / Betel Nut Palms",
+      "description": "Palms of South and Southeast Asia, best known for Areca catechu — the betel nut or supari. The fourth most consumed psychoactive substance worldwide. Called Supari in Hindi, Paakku in Tamil.",
+      "species": [
+        {
+          "full_name": "Areca catechu",
+          "common_name": "Betel Nut / Supari",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Mangala"
+            },
+            {
+              "name": "Sumangala"
+            },
+            {
+              "name": "VTL-1"
+            },
+            {
+              "name": "Shreemangala"
+            },
+            {
+              "name": "Mohitnagar Local"
+            }
+          ]
+        },
+        {
+          "full_name": "Areca triandra",
+          "common_name": "Three-stamened Areca",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca vestiaria",
+          "common_name": "Orange Crownshaft Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca guppyana",
+          "common_name": "Gupp's Areca",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca hutchinsoniana",
+          "common_name": "Hutchinson's Areca",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca ipot",
+          "common_name": "Philippine Areca",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca macrocalyx",
+          "common_name": "Large-calyx Areca",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca nagensis",
+          "common_name": "Naga Areca",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca oleracea",
+          "common_name": "Wild Betel",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Areca whitfordii",
+          "common_name": "Whitford's Areca",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Caryota",
+      "common_name": "Fishtail Palms",
+      "description": "Distinctive palms with bipinnate (twice-divided) leaves resembling a fishtail. Native to South and Southeast Asia. Called Jhula Tal in Hindi. Flowers once and dies (monocarpic). Used for sago and jaggery.",
+      "species": [
+        {
+          "full_name": "Caryota urens",
+          "common_name": "Toddy Palm / Wine Palm / Jhula Tal",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caryota mitis",
+          "common_name": "Clustered Fishtail Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caryota maxima",
+          "common_name": "Giant Fishtail Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caryota obtusa",
+          "common_name": "Thai Mountain Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caryota gigas",
+          "common_name": "Giant Caryota",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caryota zebrina",
+          "common_name": "Zebra Fishtail Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caryota cumingii",
+          "common_name": "Cuming's Fishtail Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caryota aequatorialis",
+          "common_name": "Equatorial Fishtail Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caryota bacsonensis",
+          "common_name": "Bach Son Fishtail Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caryota kiriwongensis",
+          "common_name": "Kiriwong Fishtail Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caryota monostachya",
+          "common_name": "Single-spike Fishtail Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caryota no",
+          "common_name": "Indonesian Fishtail Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caryota ochlandra",
+          "common_name": "Canton Fishtail Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Roystonea",
+      "common_name": "Royal Palms",
+      "description": "Tall, stately palms native to the Caribbean and Central America, widely planted in tropical avenues worldwide. The national tree of Cuba. Commonly planted on Indian roads and estates.",
+      "species": [
+        {
+          "full_name": "Roystonea regia",
+          "common_name": "Cuban Royal Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Roystonea oleracea",
+          "common_name": "Caribbean Royal Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Roystonea borinquena",
+          "common_name": "Puerto Rico Royal Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Roystonea elata",
+          "common_name": "Florida Royal Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Roystonea dunlapiana",
+          "common_name": "Dunlap's Royal Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Roystonea princeps",
+          "common_name": "Morass Royal Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Roystonea stellata",
+          "common_name": "Star Royal Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Roystonea altissima",
+          "common_name": "Mountain Cabbage Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Roystonea lenis",
+          "common_name": "Smooth Royal Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Roystonea maisiana",
+          "common_name": "Maisiana Royal Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Livistona",
+      "common_name": "Livistona Fan Palms",
+      "description": "Fan palms native from East Africa to Southeast Asia and Australia, used for thatch, weaving, and timber. L. chinensis is widely planted in Indian parks and gardens.",
+      "species": [
+        {
+          "full_name": "Livistona chinensis",
+          "common_name": "Chinese Fan Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona rotundifolia",
+          "common_name": "Table Palm / Footstool Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona australis",
+          "common_name": "Australian Cabbage Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona decora",
+          "common_name": "Ribbon Fan Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona saribus",
+          "common_name": "Taraw Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona jenkinsiana",
+          "common_name": "Assam Fan Palm",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona speciosa",
+          "common_name": "Speciose Fan Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona carinensis",
+          "common_name": "Carinata Fan Palm",
+          "conservation_status": "endangered",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona drudei",
+          "common_name": "Drude's Fan Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona fulva",
+          "common_name": "Tawny Fan Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona humilis",
+          "common_name": "Dwarf Fan Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona inermis",
+          "common_name": "Unarmed Fan Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona lorophylla",
+          "common_name": "Strap-leaved Fan Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona mariae",
+          "common_name": "Central Australian Fan Palm",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona muelleri",
+          "common_name": "Mueller's Fan Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona nasmophila",
+          "common_name": "Cliff Fan Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona nitida",
+          "common_name": "Carnarvon Fan Palm",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona rigida",
+          "common_name": "Mataranka Fan Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona alfredii",
+          "common_name": "Millstream Fan Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Livistona benthamii",
+          "common_name": "Bentham's Fan Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Daemonorops",
+      "common_name": "Dragon Blood Rattan",
+      "description": "Climbing rattan palms, formerly in Calamus, producing dragon's blood resin used in varnishes and traditional medicine. Important in Asian rattan trade.",
+      "species": [
+        {
+          "full_name": "Daemonorops draco",
+          "common_name": "Dragon Blood Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Daemonorops jenkinsiana",
+          "common_name": "Jenkins' Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Daemonorops angustifolia",
+          "common_name": "Narrow-leaved Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Daemonorops didymophylla",
+          "common_name": "Twin-leaved Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Daemonorops grandis",
+          "common_name": "Large-fruited Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Daemonorops kunstleri",
+          "common_name": "Kunstler's Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Daemonorops lewisiana",
+          "common_name": "Lewis' Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Daemonorops melanochaetes",
+          "common_name": "Black-bristled Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Daemonorops micracantha",
+          "common_name": "Small-spined Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Daemonorops propinqua",
+          "common_name": "Closely Related Rattan",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Sabal",
+      "common_name": "Palmetto Palms",
+      "description": "Fan palms native to the Americas. Sabal palmetto is the state tree of South Carolina and Florida. Several species are important for cabbage palm hearts (swamp cabbage), and thatch.",
+      "species": [
+        {
+          "full_name": "Sabal palmetto",
+          "common_name": "Cabbage Palm / Palmetto",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal minor",
+          "common_name": "Dwarf Palmetto",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal mexicana",
+          "common_name": "Texas Palmetto",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal bermudana",
+          "common_name": "Bermuda Palmetto",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal causiarum",
+          "common_name": "Hat Palm / Puerto Rico Palmetto",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal etonia",
+          "common_name": "Scrub Palmetto",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal maritima",
+          "common_name": "Jamaica Palmetto",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal miamiensis",
+          "common_name": "Miami Palmetto",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal rosei",
+          "common_name": "Rose's Palmetto",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal uresana",
+          "common_name": "Sonoran Palmetto",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal yapa",
+          "common_name": "Yapa Palmetto",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal domingensis",
+          "common_name": "Hispaniolan Palmetto",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal antillensis",
+          "common_name": "Antillean Palmetto",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal gretheriae",
+          "common_name": "Grether's Palmetto",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal guatemalensis",
+          "common_name": "Guatemala Palmetto",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Sabal pumos",
+          "common_name": "Mexican Palmetto",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Trachycarpus",
+      "common_name": "Windmill Palms",
+      "description": "Cold-hardy palms native to the Himalayas, China, and Japan. Trachycarpus fortunei is widely cultivated globally for its extreme cold tolerance. T. martianus is native to the Himalayas.",
+      "species": [
+        {
+          "full_name": "Trachycarpus fortunei",
+          "common_name": "Chinese Windmill Palm / Chusan Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Trachycarpus martianus",
+          "common_name": "Himalayan Fan Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Trachycarpus takil",
+          "common_name": "Kumaon Fan Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Trachycarpus wagnerianus",
+          "common_name": "Miniature Chusan Palm",
+          "conservation_status": "not_evaluated",
+          "cultivars": []
+        },
+        {
+          "full_name": "Trachycarpus nanus",
+          "common_name": "Dwarf Chinese Fan Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Trachycarpus latisectus",
+          "common_name": "Windamere Palm",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Trachycarpus ukhrulensis",
+          "common_name": "Ukhrulensis Windmill Palm",
+          "conservation_status": "not_evaluated",
+          "cultivars": []
+        },
+        {
+          "full_name": "Trachycarpus oreophilus",
+          "common_name": "Mountain Windmill Palm",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Trachycarpus princeps",
+          "common_name": "Stone Gate Palm",
+          "conservation_status": "vulnerable",
           "cultivars": []
         }
       ]
