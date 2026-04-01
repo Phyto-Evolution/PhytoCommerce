@@ -2,150 +2,464 @@
   "pack_id": "asphodelaceae",
   "schema_version": "1.1",
   "family": "Asphodelaceae",
-  "common_name": "Asphodel Family",
-  "description": "Asphodelaceae is a family of monocots that includes the succulent genera Aloe, Gasteria, and Haworthiopsis (formerly part of Liliaceae). The family is diverse in southern Africa and includes some of the world's most popular succulent houseplants. These genera are typically stemless or short-stemmed rosette succulents with fleshy leaves and tubular flowers adapted to sunbird and insect pollination.",
-  "meta_title": "Asphodel Family — Asphodelaceae | PhytoCommerce",
-  "meta_description": "Shop Aloe, Gasteria, and Haworthiopsis succulents. Southern African succulent gems with decorative foliage and tubular flowers. TC-grown with cultivar provenance.",
-  "meta_keywords": "Asphodelaceae, Aloe, Gasteria, Haworthiopsis, South African succulents, buy succulents",
+  "common_name": "Aloes & Haworthias",
+  "description": "Includes Aloe, Haworthia, Gasteria, and related genera. Native primarily to southern Africa. A. vera (Ghritkumari) has extensive medicinal use in India.",
+  "meta_title": "Asphodelaceae Taxonomy Pack — Aloe, Haworthia, Gasteria",
+  "meta_description": "Complete Aloe, Haworthia, Haworthiopsis, and Gasteria species list with Indian names and conservation status.",
+  "meta_keywords": "Aloe, Haworthia, Gasteria, succulent, Ghritkumari, medicinal plant",
   "genera": [
     {
       "genus": "Aloe",
       "common_name": "Aloes",
-      "description": "<em>Aloe</em> comprises over 580 species of succulent plants native primarily to Africa, Madagascar, and the Arabian Peninsula. Ranging from tiny dwarf rosettes to tree-sized specimens, aloes are defined by their fleshy, often toothed leaves and racemes of tubular orange, red, yellow, or white flowers. Many species have significant medicinal, cosmetic, and horticultural value. The genus includes some of the most dramatic landscape succulents.",
-      "meta_title": "Aloe — African Succulent Rosettes",
-      "meta_description": "Buy rare and classic Aloe plants. From dwarf windowsill types to tree aloes; species, hybrids, and cultivars with TC provenance. Tubular flowers attract birds.",
-      "meta_keywords": "Aloe for sale, rare Aloe, Aloe vera, Aloe polyphylla, tree aloe, African succulent",
-      "native_range": "Africa, Madagascar, Arabian Peninsula",
-      "care_level": "Beginner–Intermediate",
-      "tc_suitability": "High",
-      "conservation_status": "varies by species",
+      "description": "560+ species of succulent plants native mostly to Africa. A. vera (Ghritkumari/Kumari) has been used in Ayurvedic medicine for 3000+ years in India.",
       "species": [
+        {
+          "full_name": "Aloe vera",
+          "common_name": "Aloe Vera / Ghritkumari",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            "Barbadensis",
+            "Chinensis",
+            "Indian",
+            "True Aloe"
+          ]
+        },
         {
           "full_name": "Aloe polyphylla",
           "common_name": "Spiral Aloe",
-          "description": "<em>Aloe polyphylla</em> is the renowned spiral aloe from the highlands of Lesotho, forming a perfect geometric 5-armed spiral of grey-green toothed leaves. CITES Appendix I — strictly protected in the wild. The spiralling growth direction varies by individual plant (clockwise or counterclockwise). One of the most spectacular succulents in the world.",
-          "meta_title": "Aloe polyphylla — Spiral Aloe",
-          "meta_description": "Buy Aloe polyphylla, the spiral aloe from Lesotho. Perfect geometric spiral leaf arrangement; CITES I protected. TC-grown plants only with full provenance.",
-          "meta_keywords": "Aloe polyphylla, spiral aloe, Lesotho aloe, CITES aloe, geometric succulent",
-          "native_range": "Lesotho highlands (2000–2500 m)",
-          "conservation_status": "VU",
-          "notes": "CITES I. Cool-growing (prefers temperatures below 30°C). Cannot be legally wild-collected.",
+          "conservation_status": "vulnerable",
           "cultivars": []
-        },
-        {
-          "full_name": "Aloe vera",
-          "common_name": "True Aloe",
-          "description": "<em>Aloe vera</em> is the most widely cultivated aloe and among the most commercially valuable succulents in the world, used extensively in cosmetics, medicine, and food. The thick, succulent leaves contain a clear gel widely used for skin conditions and burns. Produces yellow tubular flowers. Origin uncertain — possibly from the Arabian Peninsula.",
-          "meta_title": "Aloe vera — True Medicinal Aloe",
-          "meta_description": "Buy Aloe vera, the true medicinal aloe. Gel-filled fleshy leaves used in cosmetics and medicine; easy windowsill or garden succulent with yellow flowers.",
-          "meta_keywords": "Aloe vera, medicinal aloe, true aloe, aloe gel, easy succulent",
-          "native_range": "Arabian Peninsula (naturalised worldwide)",
-          "conservation_status": "LC",
-          "notes": "Easy; tolerates neglect. Gel from leaf useful for burns and skin. Remove offsets regularly.",
-          "cultivars": [
-            { "cultivar": "Chinensis", "description": "Smaller, more compact form with spotted juvenile leaves; popular as a pot plant." }
-          ]
         },
         {
           "full_name": "Aloe marlothii",
           "common_name": "Mountain Aloe",
-          "description": "<em>Aloe marlothii</em> is a striking tree aloe from southern Africa, growing to 3–4 m with a single trunk topped by a rosette of grey-green spiny leaves. The old dry leaves remain attached to the trunk, creating a characteristic skirt. Winter flowers are produced in erect, multi-branched panicles in orange-red to yellow. Spectacular specimen for large gardens.",
-          "meta_title": "Aloe marlothii — Mountain Tree Aloe",
-          "meta_description": "Buy Aloe marlothii, the mountain tree aloe. Single-stemmed tree to 4 m with spiny grey-green leaves; spectacular orange-red winter flowers.",
-          "meta_keywords": "Aloe marlothii, mountain aloe, tree aloe, large aloe, Southern Africa aloe",
-          "native_range": "South Africa, Eswatini, Mozambique, Zimbabwe",
-          "conservation_status": "LC",
-          "notes": "Large tree aloe; requires space. Outstanding in frost-free gardens. Winter flowering.",
+          "conservation_status": "least_concern",
           "cultivars": []
         },
         {
           "full_name": "Aloe variegata",
           "common_name": "Tiger Aloe",
-          "description": "<em>Aloe variegata</em> — the tiger, partridge breast, or kanniedood aloe — is a compact stemless species from the arid Karoo. Dark green triangular leaves are marked with irregular white spots and banding arranged in three rows. One of the most popular houseplant aloes; produces coral-pink flowers on upright stems.",
-          "meta_title": "Aloe variegata — Tiger Aloe",
-          "meta_description": "Buy Aloe variegata, the tiger aloe from the Karoo. White-spotted and banded dark green leaves in three rows; compact houseplant with pink flowers.",
-          "meta_keywords": "Aloe variegata, tiger aloe, partridge breast aloe, spotted aloe, Karoo aloe",
-          "native_range": "South Africa (Northern Cape, Western Cape, Eastern Cape) and Namibia",
-          "conservation_status": "LC",
-          "notes": "Compact; excellent houseplant. Prefers bright light. Avoid overwatering in winter.",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe ferox",
+          "common_name": "Cape Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe arborescens",
+          "common_name": "Torch Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe striata",
+          "common_name": "Coral Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe brevifolia",
+          "common_name": "Short-leaved Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe aristata",
+          "common_name": "Lace Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe cameronii",
+          "common_name": "Red Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe capitata",
+          "common_name": "Head Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe castanea",
+          "common_name": "Cat's Tail Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe ciliaris",
+          "common_name": "Climbing Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe claviflora",
+          "common_name": "Narrow-stemmed Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe dichotoma",
+          "common_name": "Quiver Tree / Kokerboom",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe distans",
+          "common_name": "Distant Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe erinacea",
+          "common_name": "Bristly Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe glauca",
+          "common_name": "Blue Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe haemanthifolia",
+          "common_name": "Haemanthus-leaved Aloe",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe humilis",
+          "common_name": "Hedgehog Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe juvenna",
+          "common_name": "Tiger-tooth Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe krapohliana",
+          "common_name": "Krapohliana's Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe melanacantha",
+          "common_name": "Black-thorned Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe microstigma",
+          "common_name": "Small-spotted Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe maculata",
+          "common_name": "Soap Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe ramosissima",
+          "common_name": "Many-branched Aloe",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe speciosa",
+          "common_name": "Tilt-head Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe suprafoliata",
+          "common_name": "Book Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe thraskii",
+          "common_name": "Dune Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe greatheadii",
+          "common_name": "Spotted Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe aculeata",
+          "common_name": "Prickly Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe broomii",
+          "common_name": "Broom Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe petricola",
+          "common_name": "Rock Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe globuligemma",
+          "common_name": "Ball Aloe",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aloe secondary",
+          "common_name": "Hedgehog Aloe",
+          "conservation_status": "least_concern",
           "cultivars": []
         }
       ]
     },
     {
-      "genus": "Gasteria",
-      "common_name": "Ox Tongue Plants",
-      "description": "<em>Gasteria</em> comprises about 23 species of stemless succulent rosettes native to the Cape region of South Africa. Commonly called ox tongue plants or lawyer's tongue for their thick, tongue-shaped, often warty or spotted leaves. Distinctive for their stomach-shaped (gastric) flowers. Gasterias tolerate lower light than most succulents, making them ideal windowsill plants. They hybridise freely with Aloe and Haworthia.",
-      "meta_title": "Gasteria — Ox Tongue Succulents",
-      "meta_description": "Buy Gasteria ox tongue succulents from South Africa. Low-light tolerant, spotted and textured leaves; stomach-shaped orange flowers. Easy indoor succulents.",
-      "meta_keywords": "Gasteria for sale, ox tongue plant, Gasteria bicolor, spotted succulent, low-light succulent",
-      "native_range": "South Africa (Cape region)",
-      "care_level": "Beginner",
-      "tc_suitability": "Moderate",
-      "conservation_status": "varies by species",
+      "genus": "Haworthia",
+      "common_name": "Haworthias",
+      "description": "~80 species of small rosette succulents native to South Africa. Famous for translucent 'windows' in leaf tips allowing light to reach inner chlorophyll.",
       "species": [
         {
-          "full_name": "Gasteria bicolor",
-          "common_name": "Lawyer's Tongue",
-          "description": "<em>Gasteria bicolor</em> is a variable species from the Eastern Cape with tongue-shaped, white-spotted dark green leaves arranged in a fan-like (distichous) pattern. Produces tubular orange-pink flowers. One of the easier and more adaptable Gasteria species; tolerates low light and irregular watering.",
-          "meta_title": "Gasteria bicolor — Lawyer's Tongue Succulent",
-          "meta_description": "Buy Gasteria bicolor, the lawyer's tongue. White-spotted dark green tongue leaves; tolerates low light; orange-pink flowers. Easy indoor succulent.",
-          "meta_keywords": "Gasteria bicolor, lawyer's tongue, spotted succulent, low-light Gasteria, East Cape succulent",
-          "native_range": "Eastern Cape, South Africa",
-          "conservation_status": "LC",
-          "notes": "Very low-light tolerant. Distichous (fan-like) leaf arrangement. Reliable indoor succulent.",
+          "full_name": "Haworthia cymbiformis",
+          "common_name": "Window Haworthia",
+          "conservation_status": "least_concern",
           "cultivars": []
         },
         {
-          "full_name": "Gasteria armstrongii",
-          "common_name": "Armstrong's Gasteria",
-          "description": "<em>Gasteria armstrongii</em> is one of the most sought-after collector Gasterias, with short, wide, very warty, almost black-green leaves stacked in a tight distichous arrangement. Extremely slow-growing and compact. A premium collector piece for enthusiasts.",
-          "meta_title": "Gasteria armstrongii — Armstrong's Collector Gasteria",
-          "meta_description": "Buy Gasteria armstrongii, the collector gasteria. Short wide warty near-black leaves in tight arrangement; extremely slow-growing Cape species.",
-          "meta_keywords": "Gasteria armstrongii, Armstrong's gasteria, collector succulent, dark gasteria, rare Gasteria",
-          "native_range": "Eastern Cape, South Africa",
-          "conservation_status": "NT",
-          "notes": "Very slow-growing collector piece. Extremely compact. Avoid overwatering.",
+          "full_name": "Haworthia cooperi",
+          "common_name": "Cooper's Haworthia",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            "Obtusa",
+            "Pilifera",
+            "Truncata",
+            "Venusta"
+          ]
+        },
+        {
+          "full_name": "Haworthia truncata",
+          "common_name": "Horse's Teeth",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Haworthia maughanii",
+          "common_name": "Maughan's Haworthia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Haworthia retusa",
+          "common_name": "Windowed Haworthia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Haworthia emelyae",
+          "common_name": "Emely's Haworthia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Haworthia bolusii",
+          "common_name": "Bolus' Haworthia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Haworthia tessellata",
+          "common_name": "Tessellated Haworthia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Haworthia floribunda",
+          "common_name": "Free-flowering Haworthia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Haworthia limifolia",
+          "common_name": "Fairies' Washboard",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Haworthia marxii",
+          "common_name": "Marx's Haworthia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Haworthia mirabilis",
+          "common_name": "Wonderful Haworthia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Haworthia mucronata",
+          "common_name": "Mucronated Haworthia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Haworthia magnifica",
+          "common_name": "Magnificent Haworthia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Haworthia springbokvlakensis",
+          "common_name": "Springbok Plain Haworthia",
+          "conservation_status": "least_concern",
           "cultivars": []
         }
       ]
     },
     {
       "genus": "Haworthiopsis",
-      "common_name": "Haworthiopsis",
-      "description": "<em>Haworthiopsis</em> was segregated from <em>Haworthia</em> in 2013 and contains about 30 species of the harder-leaved, more xeric-adapted forms — what were formerly called section Hexangulares within the old genus. Species typically have firm, upright, often white-striped or windowed leaves. Popular windowsill succulents requiring slightly more light than <em>Haworthia</em> in the strict sense.",
-      "meta_title": "Haworthiopsis — South African Rosette Succulents",
-      "meta_description": "Buy Haworthiopsis succulents from South Africa. Firm-leaved rosette succulents with white-striped or zebra-patterned foliage; excellent windowsill plants.",
-      "meta_keywords": "Haworthiopsis for sale, Haworthiopsis attenuata, zebra plant succulent, South African succulent, windowsill succulent",
-      "native_range": "South Africa (Cape region)",
-      "care_level": "Beginner",
-      "tc_suitability": "Moderate",
-      "conservation_status": "varies by species",
+      "common_name": "Zebra Plants",
+      "description": "Former Haworthia species, now a separate genus. Characterized by rough white tubercle markings on leaves.",
       "species": [
         {
           "full_name": "Haworthiopsis attenuata",
           "common_name": "Zebra Plant",
-          "description": "<em>Haworthiopsis attenuata</em> — the zebra plant — forms upright rosettes of dark green leaves covered with raised white tubercles arranged in irregular horizontal bands resembling a zebra stripe pattern. One of the most commonly sold succulents worldwide; extremely easy to grow and offset freely.",
-          "meta_title": "Haworthiopsis attenuata — Zebra Plant Succulent",
-          "meta_description": "Buy Haworthiopsis attenuata, the zebra plant. Upright dark green leaves with raised white zebra bands; offsetting, easy, popular windowsill succulent.",
-          "meta_keywords": "Haworthiopsis attenuata, zebra plant, zebra cactus, white-banded succulent, easy succulent",
-          "native_range": "Eastern Cape, South Africa",
-          "conservation_status": "LC",
-          "notes": "Very easy; tolerates low light. Offsets freely. White tubercle bands most visible on leaf undersides.",
+          "conservation_status": "least_concern",
           "cultivars": [
-            { "cultivar": "Variegata", "description": "Yellow to cream longitudinal variegation on the green and white-banded leaves; uncommonly available." }
+            "Big Band",
+            "Concolor",
+            "Brittoniae"
           ]
         },
         {
           "full_name": "Haworthiopsis fasciata",
-          "common_name": "Zebra Haworthia",
-          "description": "<em>Haworthiopsis fasciata</em> is similar to <em>H. attenuata</em> but with smoother upper leaf surfaces — the white tubercle bands are confined to the outer (abaxial) face only. The clean upper surface and white-banded underside make it a distinctive and elegant succulent. Frequently mislabelled in the trade.",
-          "meta_title": "Haworthiopsis fasciata — True Zebra Haworthia",
-          "meta_description": "Buy Haworthiopsis fasciata, the true zebra haworthia. Smooth upper leaf surface with white bands only on underside; compact windowsill succulent.",
-          "meta_keywords": "Haworthiopsis fasciata, zebra haworthia, banded succulent, compact succulent, South African haworthia",
-          "native_range": "Eastern Cape, South Africa",
-          "conservation_status": "LC",
-          "notes": "Smooth upper surface distinguishes from H. attenuata. Often mislabelled in trade.",
+          "common_name": "True Zebra Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Haworthiopsis coarctata",
+          "common_name": "Coarctate Haworthiopsis",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Haworthiopsis reinwardtii",
+          "common_name": "Reinwardt's Haworthiopsis",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Haworthiopsis viscosa",
+          "common_name": "Sticky Haworthiopsis",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Haworthiopsis limifolia",
+          "common_name": "Lime-lined Haworthiopsis",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Gasteria",
+      "common_name": "Ox Tongues",
+      "description": "23 species of South African succulents. Tongue-shaped leaves often with white bumps. Very tolerant of low light.",
+      "species": [
+        {
+          "full_name": "Gasteria bicolor",
+          "common_name": "Two-coloured Ox Tongue",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gasteria armstrongii",
+          "common_name": "Armstrong's Ox Tongue",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gasteria batesiana",
+          "common_name": "Bates' Ox Tongue",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gasteria carinata",
+          "common_name": "Keel Ox Tongue",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gasteria croucheri",
+          "common_name": "Crouch's Ox Tongue",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gasteria disticha",
+          "common_name": "Two-rowed Ox Tongue",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gasteria excelsa",
+          "common_name": "Tall Ox Tongue",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gasteria glomerata",
+          "common_name": "Clustered Ox Tongue",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gasteria nitida",
+          "common_name": "Shining Ox Tongue",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gasteria obliqua",
+          "common_name": "Oblique Ox Tongue",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gasteria pillansii",
+          "common_name": "Pillans' Ox Tongue",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gasteria rawlinsonii",
+          "common_name": "Rawlinson's Ox Tongue",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gasteria acinacifolia",
+          "common_name": "Sabre-leaved Ox Tongue",
+          "conservation_status": "least_concern",
           "cultivars": []
         }
       ]

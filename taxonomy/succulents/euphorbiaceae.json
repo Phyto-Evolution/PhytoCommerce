@@ -2,78 +2,213 @@
   "pack_id": "euphorbiaceae",
   "schema_version": "1.1",
   "family": "Euphorbiaceae",
-  "common_name": "Spurge Family",
-  "description": "Euphorbiaceae is a large and diverse family of flowering plants comprising about 300 genera and over 7500 species. The family includes trees, shrubs, herbs, and a remarkable convergent radiation of succulent stem-succulents that closely mimic cacti. The succulent <em>Euphorbia</em> species represent one of evolution's most striking examples of convergent adaptation, having independently developed the same columnar, ribbed, and spiny body forms as American cacti despite being entirely unrelated. All Euphorbia contain milky, often toxic latex.",
-  "meta_title": "Spurge Family — Euphorbiaceae | PhytoCommerce",
-  "meta_description": "Shop succulent Euphorbia plants — African stem succulents mimicking cacti. Columnar, globular, and branching forms with TC provenance. Handle with care — toxic latex.",
-  "meta_keywords": "Euphorbiaceae, Euphorbia, succulent Euphorbia, African succulent, spurge family, buy Euphorbia",
+  "common_name": "Spurges & Succulent Euphorbias",
+  "description": "Large family. Succulent Euphorbias mimic cacti in form. All produce toxic milky latex. E. milii (Crown of Thorns / Kranton) is one of India's most common flowering succulents.",
+  "meta_title": "Euphorbiaceae Taxonomy Pack — Succulent Euphorbias",
+  "meta_description": "Succulent Euphorbia species list with Indian common names and conservation status.",
+  "meta_keywords": "Euphorbia, Crown of Thorns, Kranton, Nagphani, spurge, succulent",
   "genera": [
     {
       "genus": "Euphorbia",
-      "common_name": "Spurges",
-      "description": "<em>Euphorbia</em> is one of the largest flowering plant genera, containing over 2000 species ranging from weedy annuals to tropical trees to spectacular cactus-mimicking stem succulents. The succulent Euphorbia species are native primarily to Africa and Madagascar, and have evolved ribbed, spiny, and columnar stems storing water in a manner strikingly similar to American cacti. All species contain caustic milky latex that is toxic and irritating — handle with gloves. The tiny flowers (cyathia) are inconspicuous compared to the vegetative body.",
-      "meta_title": "Euphorbia — African and Madagascan Stem Succulents",
-      "meta_description": "Buy rare succulent Euphorbia plants. African and Madagascan cactus-mimics with ribbed, spiny stems. Columnar, globular, and branching forms — toxic latex, handle carefully.",
-      "meta_keywords": "Euphorbia for sale, succulent Euphorbia, Euphorbia obesa, Euphorbia trigona, African cactus-mimic",
-      "native_range": "Africa, Madagascar, Arabian Peninsula, India (succulent species); worldwide (weedy species)",
-      "care_level": "Beginner–Intermediate",
-      "tc_suitability": "Moderate",
-      "conservation_status": "varies by species",
+      "common_name": "Euphorbias / Spurges",
+      "description": "2000+ species. Succulent species mimic cacti. E. milii (Kranton/Crown of Thorns) and E. tirucalli (Sehund) are widely grown in India.",
       "species": [
         {
           "full_name": "Euphorbia obesa",
           "common_name": "Baseball Plant",
-          "description": "<em>Euphorbia obesa</em> is a globular, almost perfectly spherical spineless euphorbia from the Great Karoo of South Africa. The grey-green body is marked with subtle banding and a symmetrical pattern of 8 ribs. Dioecious — male and female plants are separate. One of the most perfectly geometric succulent forms. CITES Appendix II.",
-          "meta_title": "Euphorbia obesa — Baseball Plant",
-          "meta_description": "Buy Euphorbia obesa, the baseball plant from the Karoo. Perfectly spherical 8-ribbed spineless succulent; dioecious CITES II species with subtle geometric patterning.",
-          "meta_keywords": "Euphorbia obesa, baseball plant, round euphorbia, geometric succulent, CITES euphorbia",
-          "native_range": "Great Karoo, Eastern Cape, South Africa",
-          "conservation_status": "VU",
-          "notes": "CITES II. Dioecious; need both sexes for seed. Grows very slowly. No spines — spineless euphorbia.",
+          "conservation_status": "vulnerable",
           "cultivars": []
         },
         {
           "full_name": "Euphorbia trigona",
           "common_name": "African Milk Tree",
-          "description": "<em>Euphorbia trigona</em> is a popular tall-growing columnar succulent with three-angled stems bearing small deciduous leaves and pairs of spines along the ridges. Native to Central Africa. Grows vigorously to 1.5–3 m indoors; an excellent architectural plant. Available in green and a deep red-burgundy form ('Rubra').",
-          "meta_title": "Euphorbia trigona — African Milk Tree",
-          "meta_description": "Buy Euphorbia trigona, the African milk tree. Tall columnar three-ribbed succulent to 3 m; vigorous and architectural — green and Rubra burgundy forms.",
-          "meta_keywords": "Euphorbia trigona, African milk tree, columnar euphorbia, tall succulent, Euphorbia Rubra",
-          "native_range": "Central Africa",
-          "conservation_status": "LC",
-          "notes": "Fast-growing tall columnar. Toxic latex. Rubra form has vivid red-burgundy stems and leaves.",
+          "conservation_status": "least_concern",
           "cultivars": [
-            { "cultivar": "Rubra", "description": "Deep red-burgundy stems and small leaves; one of the most striking architectural succulent colour forms." }
+            "Royal Red",
+            "Purpurea"
           ]
         },
         {
           "full_name": "Euphorbia milii",
-          "common_name": "Crown of Thorns",
-          "description": "<em>Euphorbia milii</em> is a thorny succulent shrub from Madagascar with slender, heavily spined stems and small deciduous leaves. The tiny flowers are surrounded by brightly coloured bracts (red, pink, yellow, white) produced almost year-round in warm conditions. Enormously popular houseplant and warm-climate garden subject. Hundreds of cultivars from Thai breeding programs.",
-          "meta_title": "Euphorbia milii — Crown of Thorns",
-          "meta_description": "Buy Euphorbia milii crown of thorns. Spiny Madagascan succulent shrub with year-round coloured bracts in red, pink, yellow, white. Hundreds of Thai cultivars.",
-          "meta_keywords": "Euphorbia milii, crown of thorns, Christ plant, Thai Euphorbia, flowering succulent",
-          "native_range": "Madagascar",
-          "conservation_status": "LC",
-          "notes": "Nearly year-round bloomer in warmth. Sharp spines; toxic latex. Extremely drought-tolerant.",
+          "common_name": "Crown of Thorns / Kranton",
+          "conservation_status": "least_concern",
           "cultivars": [
-            { "cultivar": "Thai Giant Red", "description": "Large red bracts selected from Thai breeding programs; much bigger flowers than species." },
-            { "cultivar": "Thai Giant Yellow", "description": "Large bright yellow bracts; Thai breeding line with improved flower size and brightness." }
+            "Grandiflora",
+            "Yellow",
+            "Pink",
+            "Compact"
           ]
         },
         {
           "full_name": "Euphorbia lactea",
           "common_name": "Mottled Spurge",
-          "description": "<em>Euphorbia lactea</em> is a tall, branched, candelabra-like spurge from India and Southeast Asia. The three to four-angled stems have white mottling along the central band, giving a decorative appearance. Widely used as a grafting stock for other Euphorbia, and as the base for the crested 'Coral Cactus' forms when a crested form is grafted on top.",
-          "meta_title": "Euphorbia lactea — Mottled Spurge",
-          "meta_description": "Buy Euphorbia lactea, the mottled spurge from India. Candelabra succulent with white-mottled stems; popular grafting stock and parent of Coral Cactus.",
-          "meta_keywords": "Euphorbia lactea, mottled spurge, coral cactus euphorbia, crested euphorbia, candelabra spurge",
-          "native_range": "India, Sri Lanka, Southeast Asia",
-          "conservation_status": "LC",
-          "notes": "Common grafting stock. Crested forms grafted on E. neriifolia known as coral cactus. Toxic latex.",
+          "conservation_status": "least_concern",
           "cultivars": [
-            { "cultivar": "Cristata (Coral Cactus)", "description": "Crested (fasciated) fan-shaped growth, usually grafted onto E. neriifolia stock; bizarre and popular collector form." }
+            "Cristata (Brain Cactus)",
+            "White Ghost"
           ]
+        },
+        {
+          "full_name": "Euphorbia tirucalli",
+          "common_name": "Pencil Cactus / Sehund",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            "Sticks on Fire",
+            "Rosea"
+          ]
+        },
+        {
+          "full_name": "Euphorbia caput-medusae",
+          "common_name": "Medusa's Head",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia meloformis",
+          "common_name": "Melon Spurge",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pulvinata",
+          "common_name": "Cushion Spurge",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia mammillaris",
+          "common_name": "Corn Cob Euphorbia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia flanaganii",
+          "common_name": "Green Crown",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia horrida",
+          "common_name": "African Milk Barrel",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            "Striata",
+            "Noorsveldensis"
+          ]
+        },
+        {
+          "full_name": "Euphorbia resinifera",
+          "common_name": "Resin Spurge",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia canariensis",
+          "common_name": "Canary Island Spurge",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia coerulescens",
+          "common_name": "Blue Euphorbia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia cooperi",
+          "common_name": "Cooper's Tree Euphorbia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia enopla",
+          "common_name": "Pincushion Euphorbia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia ferox",
+          "common_name": "Fierce Euphorbia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia globosa",
+          "common_name": "Globe Euphorbia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia grandicornis",
+          "common_name": "Big Horn Euphorbia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia ingens",
+          "common_name": "Common Tree Euphorbia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia ledienii",
+          "common_name": "Ledien's Euphorbia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia mauritanica",
+          "common_name": "Leafy Pencil Bush",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pseudocactus",
+          "common_name": "False Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia stellata",
+          "common_name": "Star Euphorbia",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia susannae",
+          "common_name": "Susanna's Euphorbia",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia tithymaloides",
+          "common_name": "Redbird Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia characias",
+          "common_name": "Mediterranean Spurge",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia polychroma",
+          "common_name": "Cushion Spurge",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia myrsinites",
+          "common_name": "Myrtle Spurge",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia neriifolia",
+          "common_name": "Indian Spurge Tree / Sehund",
+          "conservation_status": "least_concern",
+          "cultivars": []
         }
       ]
     }

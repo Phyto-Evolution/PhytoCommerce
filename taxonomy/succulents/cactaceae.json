@@ -3,155 +3,322 @@
   "schema_version": "1.1",
   "family": "Cactaceae",
   "common_name": "Cacti",
-  "description": "Cactaceae is a family of flowering plants in the order Caryophyllales, comprising about 175 genera and 1750 species. Almost all cacti are native to the Americas. The family is defined by the areole — a specialised pad from which spines, flowers, and new stems arise. Cacti have evolved extreme drought adaptations including CAM photosynthesis, water-storing stems, and reduced or absent leaves replaced by spines.",
-  "meta_title": "Cacti — Cactaceae | PhytoCommerce",
-  "meta_description": "Shop rare and collectible cacti — Astrophytum, Gymnocalycium, Mammillaria, Ariocarpus. TC-grown with provenance. Species and cultivar selection.",
-  "meta_keywords": "cacti, Cactaceae, rare cactus, Astrophytum, Mammillaria, Ariocarpus, buy cacti online",
+  "description": "2000+ species native to the Americas (except one Rhipsalis species in Africa). Adapted to arid conditions with succulent stems and reduced/absent leaves. India: Nagphani (Opuntia) widely naturalized.",
+  "meta_title": "Cactaceae Taxonomy Pack — Mammillaria, Gymnocalycium, Astrophytum, Opuntia",
+  "meta_description": "Complete cactus species list with conservation status, cultivars, and Indian common names.",
+  "meta_keywords": "cactus, Mammillaria, Gymnocalycium, Astrophytum, Opuntia, Nagphani, succulent",
   "genera": [
     {
-      "genus": "Astrophytum",
-      "common_name": "Star Cacti",
-      "description": "<em>Astrophytum</em> comprises four species of globular to columnar cacti from Mexico and southern USA. Known as star cacti for their star-shaped cross-section, they are characterised by white trichome flecks on the surface, prominent ribs, and large showy yellow flowers. Among the most highly bred cacti, with hundreds of named cultivars recognised in Japan and internationally.",
-      "meta_title": "Astrophytum — Star Cacti",
-      "meta_description": "Buy Astrophytum star cacti — myriostigma, asterias, ornatum, and hybrids. TC-grown species and cultivars with provenance from Japanese and Mexican breeding lines.",
-      "meta_keywords": "Astrophytum for sale, star cactus, Astrophytum myriostigma, Astrophytum asterias, sand dollar cactus",
-      "native_range": "Mexico (Chihuahuan and Tamaulipan deserts), Southern Texas",
-      "care_level": "Beginner–Intermediate",
-      "tc_suitability": "Moderate",
-      "conservation_status": "varies by species",
+      "genus": "Mammillaria",
+      "common_name": "Pincushion Cacti",
+      "description": "200+ species of globose to cylindric cacti from Mexico. Most popular genus for beginners.",
       "species": [
         {
-          "full_name": "Astrophytum myriostigma",
-          "common_name": "Bishop's Cap Cactus",
-          "description": "<em>Astrophytum myriostigma</em> is the classic spineless star cactus with 3–7 prominent ribs and a body covered in dense white trichome flecks. Large yellow flowers emerge from the crown. Native to the Chihuahuan Desert. Extensively bred in Japan for body form, rib number, and fleck density.",
-          "meta_title": "Astrophytum myriostigma — Bishop's Cap Star Cactus",
-          "meta_description": "Buy Astrophytum myriostigma, the bishop's cap cactus. Spineless star cactus with white flecks and yellow flowers; Japanese breeding lines and species forms available.",
-          "meta_keywords": "Astrophytum myriostigma, bishop's cap, star cactus, spineless cactus, Japanese cactus",
-          "native_range": "Mexico (Chihuahuan Desert)",
-          "conservation_status": "LC",
-          "notes": "Spineless. Excellent drainage essential; tolerates cold if dry. Many Japanese cultivars.",
+          "full_name": "Mammillaria hahniana",
+          "common_name": "Old Lady Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mammillaria elongata",
+          "common_name": "Ladyfinger Cactus",
+          "conservation_status": "least_concern",
           "cultivars": [
-            { "cultivar": "Quadricostatum", "description": "Four-ribbed form; a natural variant and highly sought collector piece." },
-            { "cultivar": "Nudum", "description": "Fleckless green body; smooth dark surface without white trichomes — striking minimal form." },
-            { "cultivar": "Fukuryu", "description": "Heavily crestated or dimpled surface; a Japanese-selected sculptural form." }
+            "Copper King",
+            "Rubra"
           ]
         },
         {
-          "full_name": "Astrophytum asterias",
-          "common_name": "Sand Dollar Cactus",
-          "description": "<em>Astrophytum asterias</em> is a flat, disc-shaped spineless cactus from the Rio Grande region of Texas and Tamaulipas, Mexico. It grows flush with the soil surface in the wild, camouflaged among pebbles. CITES Appendix I due to wild collection pressure. Produces bright yellow flowers with red centres. One of the most heavily bred species in Japan.",
-          "meta_title": "Astrophytum asterias — Sand Dollar Cactus",
-          "meta_description": "Buy Astrophytum asterias, the sand dollar cactus. Flat spineless disc-cactus; CITES I protected. Yellow-red flowers; Japanese Super Kabuto and cultivar forms.",
-          "meta_keywords": "Astrophytum asterias, sand dollar cactus, sea urchin cactus, Super Kabuto, CITES cactus",
-          "native_range": "Rio Grande region — Texas, USA and Tamaulipas, Mexico",
-          "conservation_status": "EN",
-          "notes": "CITES Appendix I. Flat and disc-shaped. Needs gritty, near-neutral substrate. Spectacular cultivars.",
+          "full_name": "Mammillaria plumosa",
+          "common_name": "Feather Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mammillaria gracilis",
+          "common_name": "Thimble Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mammillaria spinosissima",
+          "common_name": "Spiny Pincushion",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mammillaria bocasana",
+          "common_name": "Powder Puff Cactus",
+          "conservation_status": "least_concern",
           "cultivars": [
-            { "cultivar": "Super Kabuto", "description": "Dense white trichome clusters forming a regular pattern across the entire surface; premium Japanese selection." },
-            { "cultivar": "Hanazono", "description": "Flower garden form; selected for extra-large and abundantly produced flowers." }
+            "Fred",
+            "Roseiflora"
           ]
+        },
+        {
+          "full_name": "Mammillaria zeilmanniana",
+          "common_name": "Rose Pincushion",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mammillaria prolifera",
+          "common_name": "Silver Cluster Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mammillaria schiedeana",
+          "common_name": "Schied's Pincushion",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mammillaria geminispina",
+          "common_name": "Twin-spined Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mammillaria karwinskiana",
+          "common_name": "Karwinski's Pincushion",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mammillaria nejapensis",
+          "common_name": "Nejapa Pincushion",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mammillaria hernandezii",
+          "common_name": "Hernandez's Pincushion",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mammillaria perbella",
+          "common_name": "Pretty Pincushion",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mammillaria surculosa",
+          "common_name": "Stoloniferous Pincushion",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mammillaria luethyi",
+          "common_name": "Luethy's Pincushion",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mammillaria saboae",
+          "common_name": "Sabo's Pincushion",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mammillaria laui",
+          "common_name": "Lau's Pincushion",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mammillaria schwarzii",
+          "common_name": "Schwarz's Pincushion",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mammillaria albilanata",
+          "common_name": "White-woolly Pincushion",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mammillaria camptotricha",
+          "common_name": "Twisted-spine Pincushion",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mammillaria decipiens",
+          "common_name": "Deceptive Pincushion",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mammillaria duwei",
+          "common_name": "Duwe's Pincushion",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mammillaria perezdelarosae",
+          "common_name": "Perez's Pincushion",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mammillaria candida",
+          "common_name": "Snowball Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
         }
       ]
     },
     {
       "genus": "Gymnocalycium",
       "common_name": "Chin Cacti",
-      "description": "<em>Gymnocalycium</em> (chin cacti) comprises about 70 species of South American cacti characterised by a 'chin' — a protruding tubercle below each areole. The genus includes many easy-growing species that tolerate lower light than most cacti, making them popular windowsill subjects. Flowers are typically white, pink, or red, and produced reliably even in moderate light.",
-      "meta_title": "Gymnocalycium — South American Chin Cacti",
-      "meta_description": "Buy Gymnocalycium chin cacti from South America. Tolerates lower light than most cacti; white, pink or red flowers. Species and colour forms available.",
-      "meta_keywords": "Gymnocalycium for sale, chin cactus, Gymnocalycium mihanovichii, moon cactus, low-light cactus",
-      "native_range": "South America (Argentina, Bolivia, Paraguay, Brazil, Uruguay)",
-      "care_level": "Beginner",
-      "tc_suitability": "Moderate",
-      "conservation_status": "varies by species",
+      "description": "70+ species from South America. Smooth ribs with no spines between tubercles (chin-like). G. mihanovichii mutants are grafted as colourful Moon Cacti.",
       "species": [
         {
           "full_name": "Gymnocalycium mihanovichii",
-          "common_name": "Chin Cactus",
-          "description": "<em>Gymnocalycium mihanovichii</em> is the species from which the famous coloured 'moon cactus' mutants are derived. The chlorophyll-free red, yellow, orange, and pink forms require grafting onto a green stock to survive. The species itself is small, grey-green with banded ribs and pink flowers.",
-          "meta_title": "Gymnocalycium mihanovichii — Chin Cactus and Moon Cactus",
-          "meta_description": "Buy Gymnocalycium mihanovichii species and grafted moon cactus forms. Pink-flowered species and coloured chlorophyll-free mutants grafted on Hylocereus.",
-          "meta_keywords": "Gymnocalycium mihanovichii, moon cactus, chin cactus, grafted cactus, red cactus",
-          "native_range": "Paraguay, Bolivia, Argentina",
-          "conservation_status": "LC",
-          "notes": "Species prefers shade; moon cactus mutants are always grafted. Easy and rewarding.",
+          "common_name": "Moon Cactus",
+          "conservation_status": "least_concern",
           "cultivars": [
-            { "cultivar": "Hibotan (Red)", "description": "Chlorophyll-free vivid red mutant; grafted onto Hylocereus stock." },
-            { "cultivar": "Hibotan (Yellow)", "description": "Chlorophyll-free bright yellow mutant; always sold grafted." }
+            "Hibotan Red",
+            "Hibotan Yellow",
+            "Hibotan Orange",
+            "Fukuryu"
           ]
         },
         {
           "full_name": "Gymnocalycium baldianum",
-          "common_name": "Dwarf Chin Cactus",
-          "description": "<em>Gymnocalycium baldianum</em> is a compact, freely flowering species from Argentina. Unusual among cacti for its reliably deep red to carmine flowers produced in summer. Small flat body; tolerate partial shade. One of the most popular Gymnocalycium in cultivation.",
-          "meta_title": "Gymnocalycium baldianum — Red-flowered Chin Cactus",
-          "meta_description": "Buy Gymnocalycium baldianum, the red-flowered chin cactus from Argentina. Deep red to carmine summer flowers on a compact flat body; easy grower.",
-          "meta_keywords": "Gymnocalycium baldianum, red flower cactus, dwarf chin cactus, Argentina cactus",
-          "native_range": "Catamarca, Argentina",
-          "conservation_status": "LC",
-          "notes": "One of few cacti with deep red flowers. Tolerates partial shade. Compact and easy.",
+          "common_name": "Bald Chin Cactus",
+          "conservation_status": "least_concern",
           "cultivars": []
         },
         {
           "full_name": "Gymnocalycium saglionis",
-          "common_name": "Giant Chin Cactus",
-          "description": "<em>Gymnocalycium saglionis</em> is the largest species in the genus, developing a wide, flattened globe up to 30 cm in diameter. Strong curved spines and white to pale pink flowers. A long-lived specimen plant from northwestern Argentina.",
-          "meta_title": "Gymnocalycium saglionis — Giant Chin Cactus",
-          "meta_description": "Buy Gymnocalycium saglionis, the giant chin cactus. Large flattened globe to 30 cm; strong curved spines and pale pink flowers from NW Argentina.",
-          "meta_keywords": "Gymnocalycium saglionis, giant chin cactus, large Gymnocalycium, specimen cactus",
-          "native_range": "Northwestern Argentina",
-          "conservation_status": "LC",
-          "notes": "Grows large over time. Excellent specimen plant; long-lived and robust.",
+          "common_name": "Large Chin Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gymnocalycium andreae",
+          "common_name": "Andre's Chin Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gymnocalycium damsii",
+          "common_name": "Dams' Chin Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gymnocalycium horridispinum",
+          "common_name": "Spiny Chin Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gymnocalycium mostii",
+          "common_name": "Most's Chin Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gymnocalycium pflantzii",
+          "common_name": "Pflanz's Chin Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gymnocalycium quehlianum",
+          "common_name": "Quehl's Chin Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gymnocalycium schickendantzii",
+          "common_name": "Schickendanz's Chin Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gymnocalycium stellatum",
+          "common_name": "Star Chin Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gymnocalycium triacanthum",
+          "common_name": "Three-spined Chin Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gymnocalycium vatteri",
+          "common_name": "Vatter's Chin Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gymnocalycium bruchii",
+          "common_name": "Bruch's Chin Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Gymnocalycium capillaense",
+          "common_name": "Capilla Chin Cactus",
+          "conservation_status": "least_concern",
           "cultivars": []
         }
       ]
     },
     {
-      "genus": "Mammillaria",
-      "common_name": "Pincushion Cacti",
-      "description": "<em>Mammillaria</em> is the largest genus in Cactaceae with over 200 species, all from Mexico and the surrounding region. Characterised by spirally arranged tubercles (not ribs) bearing areoles at the tips. Small flowers are produced in a ring or crown around the top of the plant, often followed by attractive red club-shaped fruit. The most popular cactus genus for collectors.",
-      "meta_title": "Mammillaria — Pincushion Cacti",
-      "meta_description": "Buy Mammillaria pincushion cacti — 200+ species from Mexico. Crown of small flowers, hooked spines, red fruit. Easy windowsill cacti for beginners and collectors.",
-      "meta_keywords": "Mammillaria for sale, pincushion cactus, Mammillaria hahniana, Mammillaria elongata, Mexican cactus",
-      "native_range": "Mexico, southwest USA, Caribbean, Central America",
-      "care_level": "Beginner",
-      "tc_suitability": "Moderate",
-      "conservation_status": "varies by species",
+      "genus": "Astrophytum",
+      "common_name": "Star Cacti",
+      "description": "5 species from Mexico/Texas. Distinctive ribbed, spineless to spiny spheres covered in white flecks. All are CITES II.",
       "species": [
         {
-          "full_name": "Mammillaria hahniana",
-          "common_name": "Old Lady Cactus",
-          "description": "<em>Mammillaria hahniana</em> is densely covered in long white hair-like spines giving it a woolly, soft appearance. Produces a ring of small carmine-pink flowers around the crown in spring, followed by tiny red fruit. One of the most beloved and easy Mammillaria species for beginners.",
-          "meta_title": "Mammillaria hahniana — Old Lady Cactus",
-          "meta_description": "Buy Mammillaria hahniana, the old lady cactus. Dense white woolly spines with a ring of pink spring flowers; classic easy beginner cactus.",
-          "meta_keywords": "Mammillaria hahniana, old lady cactus, woolly cactus, pink-flowered cactus, beginner cactus",
-          "native_range": "Guanajuato, Querétaro, Mexico",
-          "conservation_status": "LC",
-          "notes": "Excellent beginner cactus. Dense white spines; pink flower crown in spring.",
+          "full_name": "Astrophytum myriostigma",
+          "common_name": "Bishop's Cap",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": [
+            "Quadricostatum",
+            "Nudum",
+            "Columnare",
+            "Tricostatum"
+          ]
+        },
+        {
+          "full_name": "Astrophytum asterias",
+          "common_name": "Sand Dollar Cactus",
+          "conservation_status": "endangered",
+          "cultivars": [
+            "Super Kabuto",
+            "Miracle",
+            "Onzuka",
+            "Kabuto"
+          ]
+        },
+        {
+          "full_name": "Astrophytum coahuilense",
+          "common_name": "Coahuila Star Cactus",
+          "conservation_status": "cites_appendix_ii",
           "cultivars": []
         },
         {
-          "full_name": "Mammillaria elongata",
-          "common_name": "Gold Lace Cactus",
-          "description": "<em>Mammillaria elongata</em> is a clustering species forming mounds of cylindrical stems covered in golden to reddish radial spines arranged in star patterns. Small cream to pale yellow flowers. Highly variable spine colour across its range. Very easy and fast-growing.",
-          "meta_title": "Mammillaria elongata — Gold Lace Cactus",
-          "meta_description": "Buy Mammillaria elongata, the gold lace cactus. Clustering cylindrical stems with star-pattern golden spines; fast-growing and easy for beginners.",
-          "meta_keywords": "Mammillaria elongata, gold lace cactus, clustering cactus, easy cactus, Mexican Mammillaria",
-          "native_range": "Hidalgo, Mexico",
-          "conservation_status": "LC",
-          "notes": "Very easy and fast-growing. Clusters freely; variable spine colour from gold to red-brown.",
-          "cultivars": []
+          "full_name": "Astrophytum capricorne",
+          "common_name": "Goat's Horn Cactus",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": [
+            "Niveum",
+            "Crassispinum"
+          ]
         },
         {
-          "full_name": "Mammillaria plumosa",
-          "common_name": "Feather Cactus",
-          "description": "<em>Mammillaria plumosa</em> produces clusters of soft, feathery white plume-like spines that are completely soft to the touch — unlike virtually every other cactus. Produces small white to pale pink flowers with a delicate scent. Native to Nuevo León, Mexico.",
-          "meta_title": "Mammillaria plumosa — Feather Cactus",
-          "meta_description": "Buy Mammillaria plumosa, the feather cactus. Soft plume-like white spines; completely spineless to touch. Fragrant white flowers. Unusual and safe cacti.",
-          "meta_keywords": "Mammillaria plumosa, feather cactus, soft spine cactus, child-safe cactus, fluffy cactus",
-          "native_range": "Nuevo León, Mexico",
-          "conservation_status": "NT",
-          "notes": "Unique among cacti — spines are soft and feathery. Safe for children. Fragrant flowers.",
+          "full_name": "Astrophytum ornatum",
+          "common_name": "Monk's Hood Cactus",
+          "conservation_status": "cites_appendix_ii",
           "cultivars": []
         }
       ]
@@ -159,37 +326,347 @@
     {
       "genus": "Ariocarpus",
       "common_name": "Living Rocks",
-      "description": "<em>Ariocarpus</em> comprises six species of extremely slow-growing Mexican cacti known as living rocks. The plants are deeply embedded in the soil, showing only a flat rosette of fleshy, wrinkled or tuberculate areoles that mimic the surrounding rocks. CITES Appendix I. Among the most sought-after and difficult collector cacti, requiring perfect drainage, full sun, and patience.",
-      "meta_title": "Ariocarpus — Living Rock Cacti",
-      "meta_description": "Buy Ariocarpus living rock cacti from Mexico. Extremely slow-growing CITES I species that mimic surrounding rocks. TC-grown with full provenance.",
-      "meta_keywords": "Ariocarpus for sale, living rock cactus, Ariocarpus retusus, CITES cactus, rare Mexican cactus",
-      "native_range": "Mexico (Chihuahuan Desert and surrounding areas)",
-      "care_level": "Expert",
-      "tc_suitability": "Low",
-      "conservation_status": "CITES Appendix I (most species)",
+      "description": "8 species of extremely slow-growing Mexican cacti. All CITES Appendix I. Resemble rocks and are nearly invisible in habitat.",
       "species": [
         {
           "full_name": "Ariocarpus retusus",
-          "common_name": "Seven Stars Living Rock",
-          "description": "<em>Ariocarpus retusus</em> is the most widespread living rock cactus, found across a wide range of limestone habitats in northern Mexico. The flat rosette of truncate, greyish tubercles blends perfectly with surrounding rocks and soil. White to pale pink flowers emerge from the woolly centre in autumn. CITES Appendix I.",
-          "meta_title": "Ariocarpus retusus — Seven Stars Living Rock Cactus",
-          "meta_description": "Buy Ariocarpus retusus, the seven stars living rock. Flat grey tubercle rosette mimics surrounding rock; autumn-flowering CITES I collector species.",
-          "meta_keywords": "Ariocarpus retusus, seven stars living rock, CITES cactus, flat cactus, rock-mimicking cactus",
-          "native_range": "Northern Mexico (Coahuila, Nuevo León, Tamaulipas, San Luis Potosí)",
-          "conservation_status": "LC (wild), CITES I (trade)",
-          "notes": "CITES I. Extremely slow; years to reach flowering size. Perfect drainage and full sun essential.",
+          "common_name": "Blunt-pointed Living Rock",
+          "conservation_status": "cites_appendix_i",
           "cultivars": []
         },
         {
           "full_name": "Ariocarpus fissuratus",
-          "common_name": "Chautle Living Rock",
-          "description": "<em>Ariocarpus fissuratus</em> is a critically important living rock cactus with flat, deeply fissured, star-shaped tubercles. The deeply cracked grey-brown surface creates exceptional camouflage among desert gravel. Pink to magenta flowers. Known as peyote cimarrón due to mescaline content. CITES Appendix I.",
-          "meta_title": "Ariocarpus fissuratus — Chautle Living Rock",
-          "meta_description": "Buy Ariocarpus fissuratus, the chautle living rock. Deeply fissured star-shaped tubercles; extraordinary rock camouflage. CITES I, TC-grown stock only.",
-          "meta_keywords": "Ariocarpus fissuratus, chautle living rock, fissured cactus, CITES I cactus, rock cactus Texas",
-          "native_range": "Texas (USA), Chihuahua, Coahuila, Mexico",
-          "conservation_status": "VU",
-          "notes": "CITES I. Among slowest-growing cacti. Contains mescaline. Requires perfect drainage and intense light.",
+          "common_name": "Fissured Living Rock",
+          "conservation_status": "cites_appendix_i",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ariocarpus trigonus",
+          "common_name": "Triangular Living Rock",
+          "conservation_status": "cites_appendix_i",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ariocarpus kotschoubeyanus",
+          "common_name": "Kotschoubey's Living Rock",
+          "conservation_status": "cites_appendix_i",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ariocarpus agavoides",
+          "common_name": "Agave-like Living Rock",
+          "conservation_status": "cites_appendix_i",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ariocarpus scapharostrus",
+          "common_name": "Boat-beaked Living Rock",
+          "conservation_status": "cites_appendix_i",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ariocarpus bravoanus",
+          "common_name": "Bravo's Living Rock",
+          "conservation_status": "cites_appendix_i",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ariocarpus lloydii",
+          "common_name": "Lloyd's Living Rock",
+          "conservation_status": "cites_appendix_i",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Opuntia",
+      "common_name": "Prickly Pear / Nagphani",
+      "description": "150+ species of flat-padded or cylindric cacti. O. ficus-indica (Nagphani/Chapati Cactus) is widely naturalized in India and used for hedging and fruits. Indian: Nagphani.",
+      "species": [
+        {
+          "full_name": "Opuntia ficus-indica",
+          "common_name": "Prickly Pear / Nagphani",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            "Algerian",
+            "Spanish",
+            "Castilla"
+          ]
+        },
+        {
+          "full_name": "Opuntia microdasys",
+          "common_name": "Bunny Ears Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            "Albata",
+            "Rufida"
+          ]
+        },
+        {
+          "full_name": "Opuntia humifusa",
+          "common_name": "Devil's Tongue",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Opuntia engelmannii",
+          "common_name": "Engelmann's Prickly Pear",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Opuntia stricta",
+          "common_name": "Erect Prickly Pear",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Opuntia robusta",
+          "common_name": "Wheel Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Opuntia monacantha",
+          "common_name": "Drooping Prickly Pear",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Opuntia cochenillifera",
+          "common_name": "Nopal",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Opuntia dillenii",
+          "common_name": "Devil's Tongue",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Ferocactus",
+      "common_name": "Barrel Cacti",
+      "description": "30+ species of barrel-shaped cacti from North America. Long curved spines.",
+      "species": [
+        {
+          "full_name": "Ferocactus wislizenii",
+          "common_name": "Fishhook Barrel",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ferocactus cylindraceus",
+          "common_name": "Compass Barrel",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ferocactus pilosus",
+          "common_name": "Mexican Fire Barrel",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ferocactus glaucescens",
+          "common_name": "Blue Barrel",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ferocactus latispinus",
+          "common_name": "Devil's Tongue Barrel",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ferocactus emoryi",
+          "common_name": "Emory's Barrel",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ferocactus hamatacanthus",
+          "common_name": "Texas Barrel",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ferocactus acanthodes",
+          "common_name": "California Barrel",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Echinocactus",
+      "common_name": "Golden Barrel & Hedgehog Cacti",
+      "description": "6 species of spherical to barrel-shaped cacti from Mexico and SW USA.",
+      "species": [
+        {
+          "full_name": "Echinocactus grusonii",
+          "common_name": "Golden Barrel Cactus",
+          "conservation_status": "endangered",
+          "cultivars": []
+        },
+        {
+          "full_name": "Echinocactus platyacanthus",
+          "common_name": "Giant Barrel",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Echinocactus polycephalus",
+          "common_name": "Cottontop Barrel",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Echinocactus texensis",
+          "common_name": "Horse Crippler",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Echinocactus horizonthalonius",
+          "common_name": "Blue Barrel",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Echinocactus parryi",
+          "common_name": "Parry's Barrel",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Epiphyllum",
+      "common_name": "Orchid Cacti / Brahma Kamal",
+      "description": "19 epiphytic cactus species. E. oxypetalum (Brahma Kamal/Queen of the Night) is sacred in India, blooming one night per year. Indian: Brahma Kamal, Raat ki Rani.",
+      "species": [
+        {
+          "full_name": "Epiphyllum oxypetalum",
+          "common_name": "Brahma Kamal / Queen of the Night",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Epiphyllum anguliger",
+          "common_name": "Fishbone Orchid Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Epiphyllum phyllanthus",
+          "common_name": "Climbing Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Epiphyllum guatemalense",
+          "common_name": "Guatemala Orchid Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Epiphyllum hookeri",
+          "common_name": "Hooker's Orchid Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Schlumbergera",
+      "common_name": "Christmas Cactus",
+      "description": "6 epiphytic Brazilian cacti. Popular holiday plants blooming in late autumn.",
+      "species": [
+        {
+          "full_name": "Schlumbergera truncata",
+          "common_name": "Thanksgiving Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            "White Christmas",
+            "Twilight Tangerine",
+            "Lavender Doll"
+          ]
+        },
+        {
+          "full_name": "Schlumbergera x buckleyi",
+          "common_name": "Christmas Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Schlumbergera opuntioides",
+          "common_name": "Opuntia-like Christmas Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Schlumbergera microsphaerica",
+          "common_name": "Small Christmas Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Rhipsalis",
+      "common_name": "Mistletoe Cacti",
+      "description": "35 epiphytic cacti native to Americas; one species in Africa. Pendant stems popular in hanging baskets.",
+      "species": [
+        {
+          "full_name": "Rhipsalis baccifera",
+          "common_name": "Mistletoe Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Rhipsalis cereuscula",
+          "common_name": "Coral Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Rhipsalis paradoxa",
+          "common_name": "Chain Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Rhipsalis pilocarpa",
+          "common_name": "Hairy-fruited Mistletoe Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Rhipsalis floccosa",
+          "common_name": "Wooly Mistletoe Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Rhipsalis oblonga",
+          "common_name": "Oblong Mistletoe Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Rhipsalis teres",
+          "common_name": "Round Mistletoe Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Rhipsalis mesembryanthemoides",
+          "common_name": "Ice Plant Cactus",
+          "conservation_status": "least_concern",
           "cultivars": []
         }
       ]
