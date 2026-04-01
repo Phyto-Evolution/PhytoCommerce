@@ -376,7 +376,10 @@ class AdminPhytoQuickAddController extends ModuleAdminController {
                 // Prefix bare filename with category path so importPack()
                 // builds the correct GitHub URL:
                 // "nepenthaceae.json" → "carnivorous/nepenthaceae.json"
-                $pack['file']        = $category['id'] . '/' . $pack['file'];
+                // Skip prefix if path already includes the category directory.
+                if (strpos($pack['file'], '/') === false) {
+                    $pack['file'] = $category['id'] . '/' . $pack['file'];
+                }
                 $pack['category_id'] = $category['id'];
                 $pack['category']    = $category['name'];
                 $pack['imported']    = isset($imported[$pack['file']]);

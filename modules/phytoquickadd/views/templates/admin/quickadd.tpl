@@ -573,7 +573,7 @@ function renderPacks(data) {
             html += '<div class="panel-body">';
             html += '<h5 style="margin-top:0;">' + pack.display_name + ' ' + badge + '</h5>';
             html += '<p style="font-size:12px;color:#666;">' + pack.description + '</p>';
-            html += '<p style="font-size:11px;"><strong>Genera:</strong> ' + pack.genera.join(', ') + '</p>';
+            html += '<p style="font-size:11px;"><strong>Genera:</strong> ' + (Array.isArray(pack.genera) ? pack.genera.join(', ') : '—') + '</p>';
             html += '<p style="font-size:11px;"><strong>Difficulty:</strong> ' + pack.difficulty_range + '</p>';
             html += importedInfo;
             html += '<div style="margin-top:10px;">';

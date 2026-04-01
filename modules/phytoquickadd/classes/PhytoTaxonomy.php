@@ -113,7 +113,7 @@ class PhytoTaxonomy {
                         $imported++;
                         if (!empty($species['cultivars'])) {
                             foreach ($species['cultivars'] as $cultivar) {
-                                $cultivar_name = $species['full_name'] . " '" . $cultivar['cultivar'] . "'";
+                                $cultivar_name = $species['full_name'] . " '" . ($cultivar['name'] ?? $cultivar['cultivar'] ?? '') . "'";
                                 $cultivar_meta = [
                                     'meta_description' => $cultivar['description'] ?? '',
                                 ];

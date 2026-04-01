@@ -1,8 +1,55 @@
 {
-  "pack_id": "palms", "schema_version": "1.1",
-  "description": "Palm family packs — economic and ornamental Arecaceae with Indian common names",
+  "category": "palms",
+  "name": "Palms",
   "packs": [
-    { "id": "arecaceae_economic", "file": "palms/arecaceae_economic.json", "name": "Economic Palms" },
-    { "id": "arecaceae_ornamental", "file": "palms/arecaceae_ornamental.json", "name": "Ornamental Palms" }
+    {
+      "id": "arecaceae_economic",
+      "name": "Economic Palms",
+      "file": "palms/arecaceae_economic.json",
+      "genera": [
+        "Cocos",
+        "Elaeis",
+        "Phoenix",
+        "Borassus",
+        "Nypa",
+        "Metroxylon",
+        "Calamus",
+        "Areca",
+        "Caryota",
+        "Roystonea",
+        "Livistona",
+        "Daemonorops",
+        "Sabal",
+        "Trachycarpus"
+      ],
+      "description": "Commercially important palms: coconut, date, oil palm, sago, rattan, betel nut, palmyra, windmill palms with Indian varieties",
+      "display_name": "Economic Palms",
+      "difficulty_range": "Beginner\u2013Advanced"
+    },
+    {
+      "id": "arecaceae_ornamental",
+      "name": "Ornamental Palms",
+      "file": "palms/arecaceae_ornamental.json",
+      "genera": [
+        "Chamaedorea",
+        "Dypsis",
+        "Rhapis",
+        "Archontophoenix",
+        "Wodyetia",
+        "Bismarckia",
+        "Washingtonia",
+        "Syagrus",
+        "Butia",
+        "Hyophorbe",
+        "Brahea",
+        "Jubaea",
+        "Lodoicea",
+        "Pritchardia",
+        "Latania"
+      ],
+      "description": "Ornamental palms for gardens and interiors: parlour palms, areca/butterfly palm, foxtail, bangalow, bismarck, lady palms and more",
+      "display_name": "Ornamental Palms",
+      "difficulty_range": "Beginner\u2013Intermediate"
+    }
   ]
 }

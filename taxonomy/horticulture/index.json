@@ -1,10 +1,92 @@
 {
-  "pack_id": "horticulture", "schema_version": "1.1",
-  "description": "Horticultural crop packs with Indian common names",
+  "category": "horticulture",
+  "name": "Horticulture Crops",
   "packs": [
-    { "id": "fruits", "file": "horticulture/fruits.json", "name": "Fruits" },
-    { "id": "vegetables", "file": "horticulture/vegetables.json", "name": "Vegetables" },
-    { "id": "pulses", "file": "horticulture/pulses.json", "name": "Pulses & Dal Crops" },
-    { "id": "cashcrops", "file": "horticulture/cashcrops.json", "name": "Cash & Field Crops" }
+    {
+      "id": "fruits",
+      "name": "Fruits",
+      "file": "horticulture/fruits.json",
+      "genera": [
+        "Mangifera",
+        "Citrus",
+        "Psidium",
+        "Carica",
+        "Annona",
+        "Punica",
+        "Artocarpus",
+        "Syzygium",
+        "Averrhoa",
+        "Vitis",
+        "Ziziphus",
+        "Garcinia"
+      ],
+      "description": "Tropical and subtropical fruits: mango, citrus, guava, papaya, jackfruit, jamun, custard apple, pomegranate with Indian cultivars",
+      "display_name": "Fruits",
+      "difficulty_range": "Beginner\u2013Advanced"
+    },
+    {
+      "id": "vegetables",
+      "name": "Vegetables",
+      "file": "horticulture/vegetables.json",
+      "genera": [
+        "Solanum",
+        "Capsicum",
+        "Cucumis",
+        "Cucurbita",
+        "Brassica",
+        "Allium",
+        "Daucus",
+        "Raphanus",
+        "Spinacia",
+        "Abelmoschus",
+        "Trichosanthes",
+        "Beta"
+      ],
+      "description": "Vegetable crops: tomato, brinjal, chilli, cucumber, cabbage, onion, garlic, carrot, okra with Indian varieties",
+      "display_name": "Vegetables",
+      "difficulty_range": "Beginner\u2013Intermediate"
+    },
+    {
+      "id": "pulses",
+      "name": "Pulses & Dal Crops",
+      "file": "horticulture/pulses.json",
+      "genera": [
+        "Cicer",
+        "Lens",
+        "Pisum",
+        "Vigna",
+        "Phaseolus",
+        "Cajanus",
+        "Macrotyloma",
+        "Lablab",
+        "Glycine",
+        "Arachis",
+        "Vicia"
+      ],
+      "description": "Pulse crops: chickpea, lentil, pea, mung, urad, tur dal, soybean, groundnut \u2014 critical to Indian agriculture and diet",
+      "display_name": "Pulses & Dal Crops",
+      "difficulty_range": "Beginner"
+    },
+    {
+      "id": "cashcrops",
+      "name": "Cash & Field Crops",
+      "file": "horticulture/cashcrops.json",
+      "genera": [
+        "Coffea",
+        "Camellia",
+        "Theobroma",
+        "Saccharum",
+        "Gossypium",
+        "Nicotiana",
+        "Hevea",
+        "Cannabis",
+        "Vanilla",
+        "Piper",
+        "Elettaria"
+      ],
+      "description": "Cash crops: coffee, tea, cacao, sugarcane, cotton, tobacco, rubber, vanilla, black pepper, cardamom",
+      "display_name": "Cash & Field Crops",
+      "difficulty_range": "Intermediate\u2013Advanced"
+    }
   ]
 }
