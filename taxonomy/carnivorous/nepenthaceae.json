@@ -963,6 +963,84 @@
           "common_name": "Argent's Pitcher Plant",
           "conservation_status": "critically_endangered",
           "cultivars": []
+        },
+        {
+          "full_name": "Nepenthes abalata",
+          "common_name": "",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Nepenthes appendiculata",
+          "common_name": "Appendaged Pitcher Plant",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Nepenthes batakiana",
+          "common_name": "Batak Pitcher Plant",
+          "conservation_status": "critically_endangered",
+          "cultivars": []
+        },
+        {
+          "full_name": "Nepenthes curtisii",
+          "common_name": "Curtis' Pitcher Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Nepenthes elongata",
+          "common_name": "Elongated Pitcher Plant",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Nepenthes glandulifera",
+          "common_name": "Glandular Pitcher Plant",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Nepenthes gronowii",
+          "common_name": "Gronow's Pitcher Plant",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Nepenthes kinabaluensis",
+          "common_name": "Kinabalu Pitcher Plant",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Nepenthes palembangensis",
+          "common_name": "Palembang Pitcher Plant",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Nepenthes rhombicaulis",
+          "common_name": "Diamond-stemmed Pitcher Plant",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Nepenthes barcelonae",
+          "common_name": "Barcelona's Pitcher Plant",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Nepenthes cornuta",
+          "common_name": "Horned Pitcher Plant",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Nepenthes caballeroi",
+          "common_name": "Caballero's Pitcher Plant",
+          "conservation_status": "not_evaluated",
+          "cultivars": []
         }
       ]
     }
