@@ -1,64 +1,319 @@
 {
   "pack_id": "fruits",
   "schema_version": "1.1",
-  "family": "Rosaceae / Anacardiaceae / Rutaceae (mixed)",
-  "common_name": "Indian Fruits",
-  "description": "India is one of the world's largest producers of tropical and subtropical fruits. This pack covers the principal fruit genera cultivated across the country, from the iconic mango to regional specialties such as amla and tamarind. Each entry includes major cultivars with Indian market names and regional common names.",
-  "meta_title": "Indian Fruits — Horticulture Taxonomy | PhytoCommerce",
-  "meta_description": "Comprehensive botanical taxonomy of Indian fruits — mango, papaya, guava, pomegranate, citrus, jackfruit, lychee, amla, cashew, grape and more with Indian cultivar names.",
-  "meta_keywords": "Indian fruits taxonomy, mango cultivars, papaya guava pomegranate India, Indian horticulture, fruit botany India",
+  "family": "Mixed Families",
+  "common_name": "Tropical & Subtropical Fruits",
+  "description": "Commercially important fruit-bearing plants grown across India and the tropics. Covers mango, citrus, guava, papaya, jackfruit, banana relatives, custard apple, pomegranate, jamun, and many more fruits central to Indian horticulture, cuisine, and export trade.",
+  "meta_title": "Fruit Crops Taxonomy Pack — Tropical & Subtropical Horticulture",
+  "meta_description": "Complete taxonomy of cultivated fruit crops with Indian common names and commercial cultivars.",
+  "meta_keywords": [
+    "mango",
+    "citrus",
+    "guava",
+    "papaya",
+    "jackfruit",
+    "tropical fruit",
+    "Indian horticulture",
+    "fruits"
+  ],
   "genera": [
     {
       "genus": "Mangifera",
-      "common_name": "Mango / Aam",
-      "description": "<em>Mangifera</em> is a genus of about 69 species in the cashew family Anacardiaceae, native to South and Southeast Asia. <em>Mangifera indica</em>, the mango, is the National Fruit of India and is known as the King of Fruits. India leads global mango production, with hundreds of cultivars developed over centuries of cultivation. The Sanskrit name Amra-phal became Aam in Hindi.",
+      "common_name": "Mangoes / Aam",
+      "description": "70+ species of tropical trees in the cashew family. Mangifera indica — the mango — is the national fruit of India, Bangladesh, and Pakistan. India produces 40% of the world's mangoes. Called Aam in Hindi.",
       "species": [
         {
           "full_name": "Mangifera indica",
           "common_name": "Mango / Aam",
-          "description": "<em>Mangifera indica</em> is a large evergreen tree reaching 35–40 m, cultivated pan-tropically but with its greatest diversity and cultural depth in India. Major producing states include Uttar Pradesh, Andhra Pradesh, Maharashtra, and Gujarat. The GI-tagged Alphonso (Hapus) of Ratnagiri is among the most prized mangoes globally. Other commercially important cultivars include Dasheri (Lucknow), Langra (Varanasi), Kesar (Junagadh), Himsagar (Bengal), and Neelam (South India).",
-          "meta_title": "Mangifera indica — Mango / Aam",
-          "meta_description": "Botanical profile of Mangifera indica (Mango/Aam). India's national fruit; leading cultivars Alphonso (Hapus), Dasheri, Langra, Kesar, Banganapalli with GI tag information.",
-          "meta_keywords": "Mangifera indica, mango, Aam, Alphonso Hapus, Dasheri mango, Langra mango, Indian mango cultivars, Kesar mango",
-          "native_range": "South and Southeast Asia (origin: NE India, Bangladesh, Myanmar)",
-          "conservation_status": "LC",
-          "notes": "National Fruit of India. GI-tagged cultivars include Alphonso, Dasheri, Langra, Kesar, Banganapalli, Himsagar.",
+          "conservation_status": "least_concern",
           "cultivars": [
-            "Alphonso (Hapus)",
-            "Dasheri",
-            "Langra",
-            "Kesar",
-            "Totapuri",
-            "Banganapalli (Benishan)",
-            "Himsagar",
-            "Neelam",
-            "Chausa",
-            "Mallika",
-            "Amrapali"
+            {
+              "name": "Alphonso"
+            },
+            {
+              "name": "Kesar"
+            },
+            {
+              "name": "Dasheri"
+            },
+            {
+              "name": "Langra"
+            },
+            {
+              "name": "Hapus"
+            },
+            {
+              "name": "Totapuri"
+            },
+            {
+              "name": "Banganapalli"
+            },
+            {
+              "name": "Himsagar"
+            },
+            {
+              "name": "Chausa"
+            },
+            {
+              "name": "Amrapali"
+            },
+            {
+              "name": "Malgoa"
+            },
+            {
+              "name": "Neelam"
+            },
+            {
+              "name": "Sindhu"
+            },
+            {
+              "name": "Rajapuri"
+            },
+            {
+              "name": "Payiri"
+            },
+            {
+              "name": "Rumani"
+            },
+            {
+              "name": "Fazli"
+            },
+            {
+              "name": "Mallika"
+            },
+            {
+              "name": "Safeda"
+            },
+            {
+              "name": "Lakshmanbhog"
+            }
           ]
+        },
+        {
+          "full_name": "Mangifera foetida",
+          "common_name": "Horse Mango / Bacang",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mangifera odorata",
+          "common_name": "Kuweni Mango / Fragrant Mango",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mangifera caesia",
+          "common_name": "Jack Mango / Binjai",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mangifera pajang",
+          "common_name": "Bambangan",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mangifera laurina",
+          "common_name": "Wild Mango",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mangifera sylvatica",
+          "common_name": "Sylvan Mango",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mangifera altissima",
+          "common_name": "Pajo / Filipino Wild Mango",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mangifera kemanga",
+          "common_name": "Kemang Mango",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Mangifera griffithii",
+          "common_name": "Griffith's Mango",
+          "conservation_status": "least_concern",
+          "cultivars": []
         }
       ]
     },
     {
-      "genus": "Carica",
-      "common_name": "Papaya / Papita",
-      "description": "<em>Carica</em> is a genus of three species of large herbaceous plants in the family Caricaceae, native to tropical America. <em>Carica papaya</em> is a major fruit crop in India, cultivated year-round in tropical states. India is one of the world's largest papaya producers. The enzyme papain, derived from raw papaya, is an important industrial and pharmaceutical product.",
+      "genus": "Citrus",
+      "common_name": "Citrus Fruits / Nimbu",
+      "description": "The most commercially important fruit genus globally. Includes oranges, lemons, limes, grapefruits, mandarins, and pomelos. Called Nimbu (lemon/lime), Santra/Narangi (orange), Chakotra (pomelo) in Hindi. India is among the top producers.",
       "species": [
         {
-          "full_name": "Carica papaya",
-          "common_name": "Papaya / Papita",
-          "description": "<em>Carica papaya</em> is a fast-growing, short-lived, large herbaceous plant reaching 3–10 m. The large, sweet, orange-fleshed fruit is rich in vitamins A and C and the enzyme papain. In India, papaya is cultivated extensively in Andhra Pradesh, Karnataka, Gujarat, and Maharashtra. Dioecious or hermaphroditic forms occur; hermaphroditic 'bisexual' plants are preferred for fruit production.",
-          "meta_title": "Carica papaya — Papaya / Papita",
-          "meta_description": "Botanical profile of Carica papaya (Papaya/Papita). Major Indian fruit crop; Pusa Dwarf, Red Lady cultivars; papain enzyme source.",
-          "meta_keywords": "Carica papaya, papaya, Papita, Indian papaya cultivars, Pusa Dwarf, Red Lady papaya, papain",
-          "native_range": "Tropical America (Mexico, Central America)",
-          "conservation_status": "LC",
-          "notes": "Fast-growing, semi-perennial. Papain from green fruit has industrial uses. Bisexual cultivars preferred commercially.",
+          "full_name": "Citrus × sinensis",
+          "common_name": "Sweet Orange / Santra / Narangi",
+          "conservation_status": "least_concern",
           "cultivars": [
-            "Pusa Dwarf",
-            "Pusa Delicious",
-            "Coorg Honey Dew",
-            "Red Lady"
+            {
+              "name": "Valencia"
+            },
+            {
+              "name": "Navel"
+            },
+            {
+              "name": "Blood Orange"
+            },
+            {
+              "name": "Hamlin"
+            },
+            {
+              "name": "Nagpur Santra"
+            },
+            {
+              "name": "Coorg Mandarin"
+            }
+          ]
+        },
+        {
+          "full_name": "Citrus limon",
+          "common_name": "Lemon / Nimbu",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Eureka"
+            },
+            {
+              "name": "Lisbon"
+            },
+            {
+              "name": "Pant Lemon"
+            },
+            {
+              "name": "Vikram"
+            }
+          ]
+        },
+        {
+          "full_name": "Citrus aurantiifolia",
+          "common_name": "Lime / Kagzi Nimbu / Acid Lime",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "IIHR Selection-1"
+            },
+            {
+              "name": "Pramalini"
+            }
+          ]
+        },
+        {
+          "full_name": "Citrus reticulata",
+          "common_name": "Mandarin / Tangerine / Kinnow",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Kinnow"
+            },
+            {
+              "name": "Khasi Mandarin"
+            },
+            {
+              "name": "Nagpur Mandarin"
+            },
+            {
+              "name": "Coorg Mandarin"
+            },
+            {
+              "name": "Dancy"
+            }
+          ]
+        },
+        {
+          "full_name": "Citrus maxima",
+          "common_name": "Pomelo / Chakotra / Batabi Lebu",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Citrus × paradisi",
+          "common_name": "Grapefruit",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Ruby Red"
+            },
+            {
+              "name": "Duncan"
+            },
+            {
+              "name": "Marsh"
+            }
+          ]
+        },
+        {
+          "full_name": "Citrus medica",
+          "common_name": "Citron / Bijora / Mahacitron",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Fingered Citron"
+            },
+            {
+              "name": "Etrog"
+            }
+          ]
+        },
+        {
+          "full_name": "Citrus grandis",
+          "common_name": "Shaddock / Giant Pomelo",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Citrus × aurantium",
+          "common_name": "Bitter Orange / Seville Orange",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Citrus × tangelo",
+          "common_name": "Tangelo",
+          "conservation_status": "not_evaluated",
+          "cultivars": []
+        },
+        {
+          "full_name": "Citrus × limonia",
+          "common_name": "Rangpur Lime / Rangpur / Citrange",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Citrus hystrix",
+          "common_name": "Kaffir Lime / Makrut Lime / Kaffir Nimbu",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Citrus × microcarpa",
+          "common_name": "Calamondin / Philippine Lime",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Citrus japonica",
+          "common_name": "Kumquat",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Nagami"
+            },
+            {
+              "name": "Marumi"
+            },
+            {
+              "name": "Meiwa"
+            }
           ]
         }
       ]
@@ -66,255 +321,816 @@
     {
       "genus": "Psidium",
       "common_name": "Guava / Amrood",
-      "description": "<em>Psidium</em> is a genus of about 100 species in the family Myrtaceae, native to the Americas. <em>Psidium guajava</em>, the common guava, is one of the most widely grown fruit crops in India and is often called the 'Apple of the Tropics'. Introduced to India by the Portuguese in the 17th century, guava is now naturalized and commercially important for fresh fruit, juice, and jam.",
+      "description": "Guavas — tropical American fruit trees, now widely cultivated across tropical Asia. Called Amrood in Hindi, Koyyapandu in Telugu, Peru in Tamil. India is the world's largest guava producer.",
       "species": [
         {
           "full_name": "Psidium guajava",
-          "common_name": "Guava / Amrood",
-          "description": "<em>Psidium guajava</em> is a small, hardy evergreen tree to 10 m. The fruit is rich in vitamin C (higher than citrus) and is eaten fresh or processed into juices, jellies, and dried guava. India is the world's largest producer of guava. Major cultivars include Allahabad Safeda (the gold standard), Lucknow 49, and improved varieties like Lalit and Apple Colour. Uttar Pradesh is the leading producer.",
-          "meta_title": "Psidium guajava — Guava / Amrood",
-          "meta_description": "Botanical profile of Psidium guajava (Guava/Amrood). India's largest guava producing cultivars — Allahabad Safeda, Lucknow 49, Lalit.",
-          "meta_keywords": "Psidium guajava, guava, Amrood, Allahabad Safeda, Lucknow 49, Indian guava cultivars",
-          "native_range": "Tropical America (Mexico to South America)",
-          "conservation_status": "LC",
-          "notes": "India world's largest producer. High vitamin C. Allahabad Safeda is most-prized cultivar.",
+          "common_name": "Guava / Amrood / Peru",
+          "conservation_status": "least_concern",
           "cultivars": [
-            "Allahabad Safeda",
-            "Lucknow 49",
-            "Apple Colour",
-            "Lalit"
+            {
+              "name": "Allahabad Safeda"
+            },
+            {
+              "name": "Lucknow-49"
+            },
+            {
+              "name": "Apple Colour"
+            },
+            {
+              "name": "Lalit"
+            },
+            {
+              "name": "Sardar"
+            },
+            {
+              "name": "Pant Prabhat"
+            },
+            {
+              "name": "Arka Mridula"
+            },
+            {
+              "name": "Arka Amulya"
+            },
+            {
+              "name": "Harijha"
+            },
+            {
+              "name": "Chittidar"
+            },
+            {
+              "name": "Hafsi"
+            }
           ]
+        },
+        {
+          "full_name": "Psidium cattleianum",
+          "common_name": "Strawberry Guava / Cherry Guava",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Psidium friedrichsthalianum",
+          "common_name": "Costa Rican Guava / Cas Guava",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Psidium × durbanense",
+          "common_name": "Durban Guava",
+          "conservation_status": "not_evaluated",
+          "cultivars": []
+        },
+        {
+          "full_name": "Psidium brownianum",
+          "common_name": "Mountain Guava",
+          "conservation_status": "least_concern",
+          "cultivars": []
         }
       ]
     },
     {
-      "genus": "Punica",
-      "common_name": "Pomegranate / Anar",
-      "description": "<em>Punica</em> is a genus of two species in the family Lythraceae. <em>Punica granatum</em>, the pomegranate, is an ancient fruit with cultivation records spanning thousands of years in India. India is a leading global producer and exporter of pomegranates, with Maharashtra being the dominant producing state. The fruit is prized for its arils (juice sacs), which are rich in antioxidants, vitamins, and polyphenols.",
+      "genus": "Carica",
+      "common_name": "Papaya / Papita",
+      "description": "Papayas — fast-growing tropical fruit trees native to southern Mexico. Called Papita in Hindi, Pappali in Tamil. India is the world's largest papaya producer. The latex contains papain enzyme used in meat tenderizers.",
       "species": [
         {
-          "full_name": "Punica granatum",
-          "common_name": "Pomegranate / Anar",
-          "description": "<em>Punica granatum</em> is a drought-tolerant, deciduous to semi-evergreen shrub or small tree to 10 m. In India it is extensively cultivated in Maharashtra, Karnataka, Gujarat, Andhra Pradesh, and Rajasthan. The variety Bhagwa (saffron-coloured aril) is the dominant commercial cultivar for export. Ganesh is an older popular variety. The fruit is high in antioxidants, vitamin C, and potassium.",
-          "meta_title": "Punica granatum — Pomegranate / Anar",
-          "meta_description": "Botanical profile of Punica granatum (Pomegranate/Anar). India's export-oriented production; Bhagwa, Ganesh, Ruby, Mridula cultivar profiles.",
-          "meta_keywords": "Punica granatum, pomegranate, Anar, Bhagwa pomegranate, Ganesh pomegranate, Indian pomegranate cultivars",
-          "native_range": "Iran to northern India (Himalayas)",
-          "conservation_status": "LC",
-          "notes": "Drought tolerant. Bhagwa is the leading export cultivar. Maharashtra dominant producer.",
+          "full_name": "Carica papaya",
+          "common_name": "Papaya / Papita / Pappali",
+          "conservation_status": "least_concern",
           "cultivars": [
-            "Bhagwa",
-            "Ganesh",
-            "Ruby",
-            "Mridula",
-            "Kandhari"
+            {
+              "name": "Red Lady"
+            },
+            {
+              "name": "CO-2"
+            },
+            {
+              "name": "CO-3"
+            },
+            {
+              "name": "CO-5"
+            },
+            {
+              "name": "CO-6"
+            },
+            {
+              "name": "CO-7"
+            },
+            {
+              "name": "Pusa Delicious"
+            },
+            {
+              "name": "Pusa Majesty"
+            },
+            {
+              "name": "Pusa Giant"
+            },
+            {
+              "name": "Pusa Nanha"
+            },
+            {
+              "name": "Solo"
+            },
+            {
+              "name": "Taiwan 786"
+            },
+            {
+              "name": "Washington"
+            },
+            {
+              "name": "Coorg Honey Dew"
+            },
+            {
+              "name": "Arka Prabhath"
+            },
+            {
+              "name": "Arka Surya"
+            }
           ]
-        }
-      ]
-    },
-    {
-      "genus": "Citrus",
-      "common_name": "Citrus / Nimbu-Santra",
-      "description": "<em>Citrus</em> is a genus of flowering trees and shrubs in the family Rutaceae, native to South and Southeast Asia. Citrus fruits are among India's most important horticultural crops, cultivated across diverse climatic zones — from lime and lemon in the tropics to mandarin in the hills. India is a major producer of mandarins (Nagpur Santra), limes, and lemons.",
-      "species": [
+        },
         {
-          "full_name": "Citrus limon",
-          "common_name": "Lemon / Nimbu",
-          "description": "<em>Citrus limon</em>, the lemon, is ubiquitous in Indian kitchens and horticulture. It is grown across India, primarily for fresh use, juice, and pickle. The Kagzi Nimbu variety (also classified as <em>C. aurantifolia</em>) is the most commercially significant lime/lemon type in India.",
-          "meta_title": "Citrus limon — Lemon / Nimbu",
-          "meta_description": "Botanical profile of Citrus limon (Lemon/Nimbu). Indian cultivation across tropical and subtropical zones; kitchen and commercial use.",
-          "meta_keywords": "Citrus limon, lemon, Nimbu, Indian lemon cultivation, Kagzi Nimbu",
-          "native_range": "Northeast India (origin disputed; likely hybrid)",
-          "conservation_status": "LC",
-          "notes": "Grown across India. Widely used in cuisine, beverages, and pickling.",
+          "full_name": "Carica monoica",
+          "common_name": "Monoecious Papaya",
+          "conservation_status": "least_concern",
           "cultivars": []
         },
         {
-          "full_name": "Citrus sinensis",
-          "common_name": "Sweet Orange / Santra",
-          "description": "<em>Citrus sinensis</em>, the sweet orange, is grown primarily in Maharashtra (Nagpur), Karnataka, Andhra Pradesh, and Rajasthan. Nagpur Orange (Nagpur Santra) is a GI-tagged product and one of India's most famous citrus products. Consumed fresh, juiced, and processed.",
-          "meta_title": "Citrus sinensis — Sweet Orange / Santra",
-          "meta_description": "Botanical profile of Citrus sinensis (Sweet Orange/Santra). Nagpur Santra GI tag; major producing zones in Maharashtra and Karnataka.",
-          "meta_keywords": "Citrus sinensis, sweet orange, Santra, Nagpur Santra, Indian orange cultivation, GI-tagged orange",
-          "native_range": "China, Southeast Asia",
-          "conservation_status": "LC",
-          "notes": "Nagpur Santra is GI-tagged. Maharashtra (Nagpur) is the primary producing region.",
-          "cultivars": []
-        },
-        {
-          "full_name": "Citrus aurantifolia",
-          "common_name": "Kagzi Nimbu / Acid Lime",
-          "description": "<em>Citrus aurantifolia</em>, the acid lime or Kagzi Nimbu (paper-thin-skinned lime), is the most commonly used lime in Indian cooking. It is smaller and more acidic than lemon. India is a major global producer. Grown across tropical India, particularly in Maharashtra, Tamil Nadu, and Rajasthan.",
-          "meta_title": "Citrus aurantifolia — Kagzi Nimbu / Acid Lime",
-          "meta_description": "Botanical profile of Citrus aurantifolia (Kagzi Nimbu/Acid Lime). Most-used lime in Indian cooking; major producer pan-tropical India.",
-          "meta_keywords": "Citrus aurantifolia, Kagzi Nimbu, acid lime, Indian lime, Nimbu pani",
-          "native_range": "Southeast Asia (cultivated)",
-          "conservation_status": "LC",
-          "notes": "Kagzi means 'paper-thin' in Hindi. Preferred over lemon in most Indian culinary applications.",
-          "cultivars": []
-        },
-        {
-          "full_name": "Citrus reticulata",
-          "common_name": "Mandarin / Nagpur Santra / Kinnow",
-          "description": "<em>Citrus reticulata</em>, the mandarin orange, encompasses both the Nagpur orange and the Kinnow mandarin. The Kinnow (a mandarin hybrid) dominates in Punjab and Himachal Pradesh. Nagpur Santra from Vidarbha, Maharashtra is a GI-tagged product with pan-India recognition. Easy-peel, sweet, and aromatic.",
-          "meta_title": "Citrus reticulata — Mandarin / Nagpur Santra / Kinnow",
-          "meta_description": "Botanical profile of Citrus reticulata (Mandarin/Nagpur Santra/Kinnow). GI-tagged Nagpur Santra; Kinnow from Punjab; easy-peel Indian mandarins.",
-          "meta_keywords": "Citrus reticulata, mandarin, Nagpur Santra, Kinnow, GI-tagged citrus India, mandarin orange India",
-          "native_range": "Southeast Asia, southern China",
-          "conservation_status": "LC",
-          "notes": "Nagpur Santra is GI-tagged. Kinnow is a King × Willow Leaf hybrid dominant in North India.",
+          "full_name": "Carica glandulosa",
+          "common_name": "Glandular Wild Papaya",
+          "conservation_status": "least_concern",
           "cultivars": []
         }
       ]
     },
     {
       "genus": "Artocarpus",
-      "common_name": "Jackfruit / Kathal",
-      "description": "<em>Artocarpus</em> is a genus of about 70 species in the mulberry family Moraceae, native to South and Southeast Asia. <em>Artocarpus heterophyllus</em>, jackfruit, is the world's largest tree-borne fruit and the National Fruit of Bangladesh. India is the largest producer of jackfruit, with Kerala, Tamil Nadu, West Bengal, and Karnataka as major states. Jackfruit is also gaining global recognition as a meat substitute.",
+      "common_name": "Jackfruit, Breadfruit & Relatives / Kathal",
+      "description": "Tropical tree genus of Southeast Asian origin. Artocarpus heterophyllus (jackfruit) is the world's largest tree-borne fruit and the national fruit of Bangladesh. Called Kathal in Hindi. India produces large quantities.",
       "species": [
         {
           "full_name": "Artocarpus heterophyllus",
-          "common_name": "Jackfruit / Kathal",
-          "description": "<em>Artocarpus heterophyllus</em> is a large evergreen tree to 20 m. The compound syncarp can weigh up to 55 kg — the world's largest tree-borne fruit. Young jackfruit (Kathal) is cooked as a vegetable (subzi) and is an important meat substitute. Ripe arils are sweet and fibrous. Seeds are boiled or roasted. Jackfruit wood is prized for furniture. Kerala declared jackfruit its official fruit.",
-          "meta_title": "Artocarpus heterophyllus — Jackfruit / Kathal",
-          "meta_description": "Botanical profile of Artocarpus heterophyllus (Jackfruit/Kathal). World's largest tree-borne fruit; vegan meat substitute; Kerala state fruit of India.",
-          "meta_keywords": "Artocarpus heterophyllus, jackfruit, Kathal, Kerala jackfruit, vegan meat jackfruit, Indian tropical fruit",
-          "native_range": "Western Ghats, India (Western Ghats to Bangladesh)",
-          "conservation_status": "LC",
-          "notes": "World's largest tree-borne fruit. Unripe used as vegetable; ripe arils sweet. Kerala's official state fruit.",
-          "cultivars": []
+          "common_name": "Jackfruit / Kathal / Chakka",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Hazari"
+            },
+            {
+              "name": "Singapore"
+            },
+            {
+              "name": "Rudrakshi"
+            },
+            {
+              "name": "Khaja"
+            },
+            {
+              "name": "Buwa Shahi"
+            },
+            {
+              "name": "Arka Suprabha"
+            },
+            {
+              "name": "Arka Vikas"
+            }
+          ]
         },
         {
           "full_name": "Artocarpus altilis",
-          "common_name": "Breadfruit / Vilaiti Kathal",
-          "description": "<em>Artocarpus altilis</em>, breadfruit, is a large compound-fruited tree cultivated in tropical coastal India, particularly in the Andaman Islands, Kerala, and Goa. The starchy fruit, when roasted or boiled, has a bread-like texture — hence the name. Known as Vilaiti Kathal (foreign jackfruit) in Hindi. It is of growing nutritional interest as a food security crop.",
-          "meta_title": "Artocarpus altilis — Breadfruit / Vilaiti Kathal",
-          "meta_description": "Botanical profile of Artocarpus altilis (Breadfruit/Vilaiti Kathal). Starchy tropical fruit grown in coastal India; food security crop with bread-like texture.",
-          "meta_keywords": "Artocarpus altilis, breadfruit, Vilaiti Kathal, tropical starchy fruit India, Andaman breadfruit",
-          "native_range": "New Guinea, Indo-Pacific (cultivated pan-tropically)",
-          "conservation_status": "LC",
-          "notes": "Starchy fruit; boiled, roasted or baked. Important food security crop in Pacific; gaining traction in India.",
+          "common_name": "Breadfruit",
+          "conservation_status": "least_concern",
           "cultivars": []
-        }
-      ]
-    },
-    {
-      "genus": "Litchi",
-      "common_name": "Lychee / Litchi",
-      "description": "<em>Litchi</em> is a monotypic genus in the soapberry family Sapindaceae. <em>Litchi chinensis</em> is the only species, native to southern China and introduced to India centuries ago. India is the world's second-largest producer of lychee, with Bihar (Muzaffarpur) and West Bengal as the primary producing states. The sweet, translucent arils are consumed fresh, dried, or canned.",
-      "species": [
+        },
         {
-          "full_name": "Litchi chinensis",
-          "common_name": "Lychee / Litchi",
-          "description": "<em>Litchi chinensis</em> is a medium evergreen tree to 15 m. The fruit has a rough red-pink skin, sweet translucent aril, and a large brown seed. Muzaffarpur (Bihar) Shahi lychee is a GI-tagged product. The season is short (May–June in India), making fresh lychee a prized seasonal luxury. Lychee wine, juice, and dried lychee (longan-like) are commercial products.",
-          "meta_title": "Litchi chinensis — Lychee / Litchi",
-          "meta_description": "Botanical profile of Litchi chinensis (Lychee/Litchi). GI-tagged Shahi litchi from Muzaffarpur, Bihar; India's leading cultivars and seasonal production.",
-          "meta_keywords": "Litchi chinensis, lychee, litchi, Shahi litchi, Muzaffarpur litchi, GI-tagged lychee India",
-          "native_range": "Southern China, Southeast Asia",
-          "conservation_status": "LC",
-          "notes": "GI-tagged: Muzaffarpur Shahi Litchi (Bihar). Short season (May–June). Bihar and West Bengal dominant producers.",
-          "cultivars": [
-            "Shahi",
-            "Rose Scented",
-            "China",
-            "Early Bedana"
-          ]
-        }
-      ]
-    },
-    {
-      "genus": "Phyllanthus",
-      "common_name": "Amla / Indian Gooseberry / Aanvla",
-      "description": "<em>Phyllanthus emblica</em> (syn. <em>Emblica officinalis</em>), Indian gooseberry or amla, is one of the most revered fruits in Ayurvedic medicine, considered a powerful rasayana (rejuvenating herb). It is the richest natural source of vitamin C and is central to Chyawanprash, Triphala, and other traditional formulations. India cultivates amla as a commercial horticultural crop primarily in Uttar Pradesh.",
-      "species": [
+          "full_name": "Artocarpus integer",
+          "common_name": "Cempedak",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
         {
-          "full_name": "Phyllanthus emblica",
-          "common_name": "Amla / Indian Gooseberry / Aanvla",
-          "description": "<em>Phyllanthus emblica</em> is a medium deciduous tree to 18 m. The small, spherical, ribbed fruit is extremely sour and astringent when fresh but rich in vitamin C (445–1800 mg/100g). Major uses include Chyawanprash, murabba (sweet preserve), dried amla candies, hair oil (Amla oil), and juice. Major cultivars were developed at CISH Lucknow. Uttar Pradesh dominates Indian amla production.",
-          "meta_title": "Phyllanthus emblica — Amla / Indian Gooseberry / Aanvla",
-          "meta_description": "Botanical profile of Phyllanthus emblica (Amla/Indian Gooseberry). Richest natural vitamin C source; Chyawanprash ingredient; NA-4, NA-7 cultivars from CISH Lucknow.",
-          "meta_keywords": "Phyllanthus emblica, Emblica officinalis, amla, Indian gooseberry, Aanvla, Chyawanprash, vitamin C fruit India, NA-4 NA-7 amla",
-          "native_range": "India, Sri Lanka, Southeast Asia",
-          "conservation_status": "LC",
-          "notes": "Highest vitamin C of any Indian fruit. Key Ayurvedic rasayana. NA-4 and NA-7 are improved CISH selections.",
-          "cultivars": [
-            "Kanchan",
-            "Krishna",
-            "NA-4",
-            "NA-7"
-          ]
-        }
-      ]
-    },
-    {
-      "genus": "Tamarindus",
-      "common_name": "Tamarind / Imli / Chinch",
-      "description": "<em>Tamarindus</em> is a monotypic genus in the legume family Fabaceae. <em>Tamarindus indica</em>, the tamarind, is a large long-lived tropical tree native to tropical Africa but naturalised and deeply integrated into Indian cuisine and culture for millennia. The sour pulp is an essential souring agent in South Indian, Gujarati, and Bengali cooking. India is a major global producer.",
-      "species": [
+          "full_name": "Artocarpus odoratissimus",
+          "common_name": "Marang / Johey Oak",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
         {
-          "full_name": "Tamarindus indica",
-          "common_name": "Tamarind / Imli / Chinch",
-          "description": "<em>Tamarindus indica</em> is a long-lived (up to 200 years) tropical tree to 30 m with spreading canopy. The pod pulp is intensely sour-sweet, rich in tartaric acid, potassium, and B vitamins. Used in rasam, sambar, chutneys, tamarind rice (Puliyodarai), pani puri water, and Worcestershire sauce. Known as Imli (Hindi), Chinch (Marathi), Puli (Tamil/Telugu). Andhra Pradesh and Tamil Nadu are leading producers.",
-          "meta_title": "Tamarindus indica — Tamarind / Imli / Chinch",
-          "meta_description": "Botanical profile of Tamarindus indica (Tamarind/Imli). South India's essential souring agent; sambar, rasam, puliyodarai and chutney base.",
-          "meta_keywords": "Tamarindus indica, tamarind, Imli, Chinch, Puli, Indian souring agent, sambar tamarind",
-          "native_range": "Tropical Africa; naturalised in South Asia",
-          "conservation_status": "LC",
-          "notes": "Imli (Hindi), Chinch (Marathi), Puli (Tamil/Telugu/Kannada). Long-lived tree. Essential in South Indian and Gujarati cooking.",
+          "full_name": "Artocarpus lakoocha",
+          "common_name": "Monkey Jack / Lakoocha",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Artocarpus chama",
+          "common_name": "Chamaedorea / Chamagachha",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Artocarpus nitidus",
+          "common_name": "Glossy Artocarpus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Artocarpus sericicarpus",
+          "common_name": "Pedalai",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Artocarpus treculianus",
+          "common_name": "Trecul Artocarpus",
+          "conservation_status": "least_concern",
           "cultivars": []
         }
       ]
     },
     {
       "genus": "Annona",
-      "common_name": "Custard Apple / Sitaphal",
-      "description": "<em>Annona</em> is a genus of about 166 species in the family Annonaceae, native to tropical America and sub-Saharan Africa. <em>Annona squamosa</em> (custard apple/Sitaphal) is widely cultivated across India for its sweet, creamy flesh. <em>Annona muricata</em> (soursop/Laxman Phal) is gaining popularity for its health benefits and cancer-research interest.",
+      "common_name": "Custard Apple, Soursop & Relatives / Sitaphal",
+      "description": "Tropical fruit trees producing knobby fruits with creamy, sweet flesh. Annona squamosa (custard apple/Sitaphal) and A. muricata (soursop/graviola) are important in Indian horticulture and traditional medicine.",
       "species": [
         {
           "full_name": "Annona squamosa",
-          "common_name": "Custard Apple / Sitaphal / Sharifa",
-          "description": "<em>Annona squamosa</em>, the custard apple, is a small deciduous tree to 8 m cultivated widely in Gujarat, Madhya Pradesh, Andhra Pradesh, and Tamil Nadu. The heart-shaped fruit has a segmented green-grey skin and sweet creamy white flesh. Called Sitaphal (Sita's fruit) in Hindi, Sharifa in some northern regions. Rich in vitamin C, potassium, and fibre.",
-          "meta_title": "Annona squamosa — Custard Apple / Sitaphal / Sharifa",
-          "meta_description": "Botanical profile of Annona squamosa (Custard Apple/Sitaphal). Sweet creamy tropical fruit; cultivation in Gujarat, MP, Andhra Pradesh.",
-          "meta_keywords": "Annona squamosa, custard apple, Sitaphal, Sharifa, Indian custard apple, tropical fruit India",
-          "native_range": "Tropical America; naturalised pan-tropically",
-          "conservation_status": "LC",
-          "notes": "Sitaphal (Hindi), Sharifa. Heat-loving; drought tolerant. Major states: Gujarat, MP, Andhra.",
-          "cultivars": []
+          "common_name": "Custard Apple / Sitaphal / Sugar Apple",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Balanagar"
+            },
+            {
+              "name": "Arka Sahan"
+            },
+            {
+              "name": "Mammoth"
+            },
+            {
+              "name": "Natgolu"
+            },
+            {
+              "name": "British Guinea"
+            },
+            {
+              "name": "Barbados Seedling"
+            },
+            {
+              "name": "Red Sitaphal"
+            }
+          ]
         },
         {
           "full_name": "Annona muricata",
-          "common_name": "Soursop / Laxman Phal",
-          "description": "<em>Annona muricata</em>, soursop or Laxman Phal, is a large, prickly-skinned fruit with white fibrous pulp that is sour-sweet. Grown in coastal South India (Kerala, Tamil Nadu, Karnataka) and Andaman Islands. Soursop juice and pulp are high in vitamin C and B vitamins. It has attracted research attention for its acetogenin compounds. Called Mullu Sitaphal (Spiny Sitaphal) in some regions.",
-          "meta_title": "Annona muricata — Soursop / Laxman Phal",
-          "meta_description": "Botanical profile of Annona muricata (Soursop/Laxman Phal). Tropical coastal India cultivation; sour-sweet fruit rich in vitamin C; health research interest.",
-          "meta_keywords": "Annona muricata, soursop, Laxman Phal, Mullu Sitaphal, tropical fruit Kerala, Indian soursop",
-          "native_range": "Tropical America; cultivated in tropical Asia",
-          "conservation_status": "LC",
-          "notes": "Laxman Phal (Hindi), Mullu Sitaphal. Coastal tropics. Juice, pulp, and health supplements.",
+          "common_name": "Soursop / Graviola / Laxman Phal",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Annona reticulata",
+          "common_name": "Bullock's Heart / Ramphal",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Annona cherimola",
+          "common_name": "Cherimoya / Serimoya",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Fino de Jete"
+            },
+            {
+              "name": "White"
+            },
+            {
+              "name": "Spain"
+            }
+          ]
+        },
+        {
+          "full_name": "Annona diversifolia",
+          "common_name": "Ilama",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Annona glabra",
+          "common_name": "Pond Apple / Monkey Apple",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Annona × atemoya",
+          "common_name": "Atemoya / Sitaphal × Cherimoya",
+          "conservation_status": "not_evaluated",
+          "cultivars": [
+            {
+              "name": "African Pride"
+            },
+            {
+              "name": "Bradley"
+            },
+            {
+              "name": "Gefner"
+            }
+          ]
+        },
+        {
+          "full_name": "Annona senegalensis",
+          "common_name": "Wild Soursop / African Custard Apple",
+          "conservation_status": "least_concern",
           "cultivars": []
         }
       ]
     },
     {
-      "genus": "Anacardium",
-      "common_name": "Cashew / Kaju",
-      "description": "<em>Anacardium</em> is a genus of about 11 species in the family Anacardiaceae, native to tropical America. <em>Anacardium occidentale</em>, the cashew, was introduced to India by the Portuguese in the 16th century and has become a major cash crop, particularly in coastal Maharashtra (Konkan), Goa, Kerala, and Karnataka. India is the world's second-largest cashew producer and a major processor and exporter.",
+      "genus": "Punica",
+      "common_name": "Pomegranate / Anar",
+      "description": "Pomegranate — one of the oldest cultivated fruits, known since ancient times. Called Anar in Hindi, Dalimb in Marathi. India (especially Maharashtra, Gujarat, Karnataka, Rajasthan) is the world's largest pomegranate producer.",
       "species": [
         {
-          "full_name": "Anacardium occidentale",
-          "common_name": "Cashew / Kaju",
-          "description": "<em>Anacardium occidentale</em> is a medium-sized tropical evergreen tree to 12 m. The kidney-shaped nut hangs below the swollen fleshy 'cashew apple' (false fruit). Raw cashews contain urushiol (caustic); industrial processing extracts and roasts the edible kernel. India is the world's second-largest cashew producer. Major producing states are Maharashtra, Goa, Kerala, Karnataka, and Andhra Pradesh. The cashew apple is consumed locally as juice and feni (Goan spirit).",
-          "meta_title": "Anacardium occidentale — Cashew / Kaju",
-          "meta_description": "Botanical profile of Anacardium occidentale (Cashew/Kaju). India second-largest producer; Vengurla cultivars from Maharashtra; cashew apple feni.",
-          "meta_keywords": "Anacardium occidentale, cashew, Kaju, Indian cashew, Vengurla-4, Vengurla-7, Konkan cashew, BPP-5",
-          "native_range": "Northeastern Brazil",
-          "conservation_status": "LC",
-          "notes": "Raw shell contains urushiol — industrial processing required. Cashew apple is fermented into Goan feni. Major export crop.",
+          "full_name": "Punica granatum",
+          "common_name": "Pomegranate / Anar / Dalimb",
+          "conservation_status": "least_concern",
           "cultivars": [
-            "Vengurla-4",
-            "Vengurla-7",
-            "BPP-5"
+            {
+              "name": "Bhagwa"
+            },
+            {
+              "name": "Ganesh"
+            },
+            {
+              "name": "Mridula"
+            },
+            {
+              "name": "Ruby"
+            },
+            {
+              "name": "Jyoti"
+            },
+            {
+              "name": "Arakta"
+            },
+            {
+              "name": "Kandhari"
+            },
+            {
+              "name": "Dholka"
+            },
+            {
+              "name": "Spanish Ruby"
+            },
+            {
+              "name": "Wonderful"
+            },
+            {
+              "name": "Phule Bhagwa"
+            },
+            {
+              "name": "Phule Sinduri"
+            }
+          ]
+        },
+        {
+          "full_name": "Punica protopunica",
+          "common_name": "Socotra Pomegranate",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Syzygium",
+      "common_name": "Jamun, Rose Apple & Clove / Jamun",
+      "description": "Large genus of 1200+ species in the myrtle family. Syzygium cumini (Jamun/Java Plum) is one of India's most important traditional fruits. S. aromaticum is clove. S. aqueum and S. jambos are rose apples.",
+      "species": [
+        {
+          "full_name": "Syzygium cumini",
+          "common_name": "Jamun / Java Plum / Black Plum",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Ra-5"
+            },
+            {
+              "name": "Konkan Bahadoli"
+            },
+            {
+              "name": "Co-1"
+            },
+            {
+              "name": "Arka Rachan"
+            }
+          ]
+        },
+        {
+          "full_name": "Syzygium aromaticum",
+          "common_name": "Clove / Laung",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Zanzibar"
+            },
+            {
+              "name": "Siputeh"
+            },
+            {
+              "name": "Afo"
+            }
+          ]
+        },
+        {
+          "full_name": "Syzygium jambos",
+          "common_name": "Rose Apple / Gulab Jamun Tree",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Syzygium aqueum",
+          "common_name": "Water Apple / Watery Rose Apple",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Syzygium samarangense",
+          "common_name": "Wax Apple / Java Apple",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Black Pearl"
+            },
+            {
+              "name": "Jumbo"
+            },
+            {
+              "name": "Pink"
+            }
+          ]
+        },
+        {
+          "full_name": "Syzygium malaccense",
+          "common_name": "Malay Apple / Pomerac",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Syzygium nervosum",
+          "common_name": "Indian Powderpuff Tree",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Syzygium fruticosum",
+          "common_name": "Shrubby Eugenia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Syzygium polyanthum",
+          "common_name": "Indonesian Bay Leaf / Salam Leaf",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Averrhoa",
+      "common_name": "Star Fruit & Bilimbi / Kamrakh",
+      "description": "Tropical trees producing distinctive fruits. Averrhoa carambola (star fruit/Kamrakh) produces a star-shaped cross-section. A. bilimbi (bilimbi/cucumber tree) is used in pickles and curries in India.",
+      "species": [
+        {
+          "full_name": "Averrhoa carambola",
+          "common_name": "Star Fruit / Carambola / Kamrakh",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Arkin"
+            },
+            {
+              "name": "Golden Star"
+            },
+            {
+              "name": "Fwang Tung"
+            },
+            {
+              "name": "B-17"
+            },
+            {
+              "name": "Maha"
+            }
+          ]
+        },
+        {
+          "full_name": "Averrhoa bilimbi",
+          "common_name": "Bilimbi / Cucumber Tree / Bilingbing",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Phyllanthus",
+      "common_name": "Amla / Indian Gooseberry",
+      "description": "Large genus including Phyllanthus emblica (Indian Gooseberry/Amla), one of Ayurveda's most sacred plants. Amla is among India's most important medicinal fruits, extremely rich in Vitamin C. Called Amla/Amlaki in Hindi.",
+      "species": [
+        {
+          "full_name": "Phyllanthus emblica",
+          "common_name": "Indian Gooseberry / Amla / Amlaki",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Kanchan"
+            },
+            {
+              "name": "Chakraiya"
+            },
+            {
+              "name": "Banarasi"
+            },
+            {
+              "name": "Francis"
+            },
+            {
+              "name": "Krishna"
+            },
+            {
+              "name": "BSR-1"
+            },
+            {
+              "name": "NA-4"
+            },
+            {
+              "name": "NA-5"
+            },
+            {
+              "name": "NA-6"
+            },
+            {
+              "name": "NA-7"
+            },
+            {
+              "name": "Anand-1"
+            }
+          ]
+        },
+        {
+          "full_name": "Phyllanthus acidus",
+          "common_name": "Otaheite Gooseberry / Harfarauri",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phyllanthus urinaria",
+          "common_name": "Chamber Bitter / Hazardana",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Ziziphus",
+      "common_name": "Ber / Jujube / Indian Plum",
+      "description": "Drought-tolerant fruit trees important in arid and semi-arid India. Ziziphus mauritiana (Indian Jujube/Ber) is widely cultivated across Rajasthan, Gujarat, Haryana. Called Ber in Hindi, Ilanthai in Tamil.",
+      "species": [
+        {
+          "full_name": "Ziziphus mauritiana",
+          "common_name": "Indian Jujube / Ber / Ilanthai",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Umran"
+            },
+            {
+              "name": "Sanaur-2"
+            },
+            {
+              "name": "Gola"
+            },
+            {
+              "name": "Kaithli"
+            },
+            {
+              "name": "Banarasi Pewandi"
+            },
+            {
+              "name": "Dandan"
+            },
+            {
+              "name": "Thornless"
+            },
+            {
+              "name": "NB-5"
+            },
+            {
+              "name": "NB-9"
+            },
+            {
+              "name": "Mundia"
+            }
+          ]
+        },
+        {
+          "full_name": "Ziziphus jujuba",
+          "common_name": "Chinese Jujube / Chinese Date",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Li"
+            },
+            {
+              "name": "Lang"
+            },
+            {
+              "name": "Shanxi Li"
+            }
+          ]
+        },
+        {
+          "full_name": "Ziziphus nummularia",
+          "common_name": "Wild Ber / Jharberi",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ziziphus spina-christi",
+          "common_name": "Christ's Thorn Jujube / Sidr",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ziziphus lotus",
+          "common_name": "Lotus Jujube",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Garcinia",
+      "common_name": "Mangosteen, Gamboge & Kokum",
+      "description": "400+ species of tropical trees producing edible fruits. Garcinia mangostana (mangosteen) is the 'Queen of Fruits'. G. indica (Kokum) is vital in Konkan/Goan cuisine and Ayurveda. G. cambogia used in weight-loss supplements.",
+      "species": [
+        {
+          "full_name": "Garcinia mangostana",
+          "common_name": "Mangosteen",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Garcinia indica",
+          "common_name": "Kokum / Konkan Butter Tree",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Konkan Amruta"
+            },
+            {
+              "name": "Konkan Hatis"
+            },
+            {
+              "name": "Konkan Rekha"
+            }
+          ]
+        },
+        {
+          "full_name": "Garcinia cambogia",
+          "common_name": "Gamboge / Kudampuli / Malabar Tamarind",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Garcinia xanthochymus",
+          "common_name": "Egg Plum / Gamboge Tree",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Garcinia pedunculata",
+          "common_name": "Thaikol / Bor Thekera",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Garcinia morella",
+          "common_name": "Gamboge / Malabar Gambooge",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Garcinia livingstonei",
+          "common_name": "African Mangosteen",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Garcinia dulcis",
+          "common_name": "Mundu",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Aegle",
+      "common_name": "Bael / Bengal Quince",
+      "description": "Sacred Bael tree (Aegle marmelos) is one of the most important medicinal trees in India, sacred to Lord Shiva. The fruit is used in Ayurveda. Called Bel/Bael in Hindi, Bilwa in Sanskrit.",
+      "species": [
+        {
+          "full_name": "Aegle marmelos",
+          "common_name": "Bael / Bengal Quince / Bilwa / Bel",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Pant Aparna"
+            },
+            {
+              "name": "Pant Sujata"
+            },
+            {
+              "name": "Pant Urvashi"
+            },
+            {
+              "name": "NB-5"
+            },
+            {
+              "name": "Goma Yashi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Tamarindus",
+      "common_name": "Tamarind / Imli",
+      "description": "Monotypic genus — the tamarind tree. Tamarindus indica is native to tropical Africa but has been cultivated in India for millennia. Imli is essential to South Indian cooking, chutneys, and Worcestershire sauce.",
+      "species": [
+        {
+          "full_name": "Tamarindus indica",
+          "common_name": "Tamarind / Imli / Puli",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Pratisthan"
+            },
+            {
+              "name": "Urikal"
+            },
+            {
+              "name": "PKM-1"
+            },
+            {
+              "name": "DTS-1"
+            },
+            {
+              "name": "Yogeshwari"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Litchi",
+      "common_name": "Lychee / Litchi",
+      "description": "Litchi chinensis is a prized subtropical fruit native to southern China, extensively cultivated in Bihar, West Bengal, Uttar Pradesh. Bihar produces 70%+ of India's litchi. Called Litchi in Hindi.",
+      "species": [
+        {
+          "full_name": "Litchi chinensis",
+          "common_name": "Lychee / Litchi",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Shahi"
+            },
+            {
+              "name": "Rose Scented"
+            },
+            {
+              "name": "Early Bedana"
+            },
+            {
+              "name": "Late Bedana"
+            },
+            {
+              "name": "Kasba"
+            },
+            {
+              "name": "Dehradun"
+            },
+            {
+              "name": "Purbi"
+            },
+            {
+              "name": "Muzaffarpur"
+            },
+            {
+              "name": "China"
+            },
+            {
+              "name": "Calcuttia"
+            },
+            {
+              "name": "Green"
+            }
           ]
         }
       ]
@@ -322,24 +1138,72 @@
     {
       "genus": "Vitis",
       "common_name": "Grape / Angoor",
-      "description": "<em>Vitis</em> is a genus of about 79 species of climbing vines in the family Vitaceae. <em>Vitis vinifera</em>, the common grape, is cultivated in India primarily in Maharashtra (Nashik — India's 'Wine Capital'), Karnataka (Bijapur), Andhra Pradesh, and Tamil Nadu. India produces seedless grapes for fresh consumption and an emerging wine industry. The green Thompson Seedless (sold as Kishmish when dried) is the dominant variety.",
+      "description": "Grape vines — one of the oldest cultivated plants. Called Angoor in Hindi. India's grape-growing regions are primarily Maharashtra (Nashik/Pune), Karnataka, Andhra Pradesh, Tamil Nadu.",
       "species": [
         {
           "full_name": "Vitis vinifera",
           "common_name": "Grape / Angoor",
-          "description": "<em>Vitis vinifera</em> is a woody perennial deciduous vine. In India, grapes are grown under drip irrigation in semi-arid conditions. Nashik (Maharashtra) is India's premier grape and wine production region. Thompson Seedless (Kishmish when dried) is the dominant table and raisin grape. Sonaka (white seedless) and Tas-A-Ganesh (large white seedless) are other major Indian cultivars. India's wine industry uses varieties like Cabernet Sauvignon, Syrah, and Sauvignon Blanc in addition to table varieties.",
-          "meta_title": "Vitis vinifera — Grape / Angoor",
-          "meta_description": "Botanical profile of Vitis vinifera (Grape/Angoor). Nashik India's wine capital; Thompson Seedless, Sonaka, Tas-A-Ganesh cultivars; Indian wine grapes.",
-          "meta_keywords": "Vitis vinifera, grape, Angoor, Thompson Seedless, Kishmish, Nashik grapes, Indian wine, Sonaka grape",
-          "native_range": "Central Asia, Caucasus; cultivated globally",
-          "conservation_status": "LC",
-          "notes": "Nashik: India's wine and grape capital. Thompson Seedless (Kishmish when dried) is dominant cultivar. Drip irrigation essential.",
+          "conservation_status": "least_concern",
           "cultivars": [
-            "Thompson Seedless (Kishmish)",
-            "Sonaka",
-            "Tas-A-Ganesh",
-            "Crimson Seedless"
+            {
+              "name": "Thompson Seedless"
+            },
+            {
+              "name": "Tas-A-Ganesh"
+            },
+            {
+              "name": "Sonaka"
+            },
+            {
+              "name": "Anab-e-Shahi"
+            },
+            {
+              "name": "Bangalore Blue"
+            },
+            {
+              "name": "Gulabi"
+            },
+            {
+              "name": "Perlette"
+            },
+            {
+              "name": "Khandari"
+            },
+            {
+              "name": "Sharad Seedless"
+            },
+            {
+              "name": "Flame Seedless"
+            },
+            {
+              "name": "Cabernet Sauvignon"
+            },
+            {
+              "name": "Chenin Blanc"
+            }
           ]
+        },
+        {
+          "full_name": "Vitis labrusca",
+          "common_name": "Fox Grape / Concord Grape",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Concord"
+            },
+            {
+              "name": "Niagara"
+            },
+            {
+              "name": "Catawba"
+            }
+          ]
+        },
+        {
+          "full_name": "Vitis rotundifolia",
+          "common_name": "Muscadine Grape",
+          "conservation_status": "least_concern",
+          "cultivars": []
         }
       ]
     }
