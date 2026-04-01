@@ -2,194 +2,905 @@
   "pack_id": "pulses",
   "schema_version": "1.1",
   "family": "Fabaceae",
-  "common_name": "Indian Pulses & Dal Crops",
-  "description": "Pulses (dal crops) are the dried edible seeds of leguminous plants and form the protein backbone of the Indian vegetarian diet. India is both the world's largest producer and consumer of pulses. This pack covers the major genera — from Vigna and Cajanus to Cicer and Lens — with Indian market names, regional common names, and key cultivars.",
-  "meta_title": "Indian Pulses & Dal Crops — Horticulture Taxonomy | PhytoCommerce",
-  "meta_description": "Botanical taxonomy of Indian pulses — Moong Dal, Urad Dal, Toor Dal, Chana Dal, Masoor, Rajma, Kulthi and more with regional Indian names, cultivars and production data.",
-  "meta_keywords": "Indian pulses taxonomy, dal crops India, Moong Dal, Urad Dal, Toor Dal, Chana Dal, Masoor Dal, Rajma botany",
+  "common_name": "Pulses & Dal Crops",
+  "description": "Pulses (dried legume seeds) are a cornerstone of Indian agriculture, nutrition, and cuisine. India is the world's largest producer and consumer of pulses. Covers chickpea (chana), lentil (masoor), pigeon pea (tur/arhar), mung bean (moong), black gram (urad), kidney bean (rajma), soybean, groundnut, and all major Indian dal crops.",
+  "meta_title": "Pulses & Dal Crops Taxonomy Pack — Fabaceae",
+  "meta_description": "Complete taxonomy of Indian and global pulse crops: chickpea, lentil, mung, urad, tur dal, rajma, soybean, groundnut with cultivars.",
+  "meta_keywords": [
+    "pulse",
+    "dal",
+    "chickpea",
+    "lentil",
+    "mung",
+    "urad",
+    "pigeon pea",
+    "soybean",
+    "groundnut",
+    "legume"
+  ],
   "genera": [
     {
-      "genus": "Vigna",
-      "common_name": "Vigna Pulses — Moong / Urad / Cowpea / Moth",
-      "description": "<em>Vigna</em> is a large genus of legumes in the family Fabaceae, native to tropical Africa and Asia, with approximately 100 species. In India, four <em>Vigna</em> species are economically critical pulse crops: mung bean (Moong Dal), black gram (Urad Dal), cowpea (Lobia), and moth bean (Matki). All are nitrogen-fixing crops that improve soil fertility.",
-      "species": [
-        {
-          "full_name": "Vigna radiata",
-          "common_name": "Mung Bean / Moong Dal",
-          "description": "<em>Vigna radiata</em>, mung bean, is one of India's most versatile legumes — consumed as whole green (Sabut Moong), split with husk (Chilka Moong), and split dehusked (Yellow Moong Dal). It is quick-cooking, easily digestible, and used in dal, khichdi, sprouts, and the festive dish Panchmel Dal. India is the world's largest mung bean producer. Rajasthan, Maharashtra, and Andhra Pradesh are major producers.",
-          "meta_title": "Vigna radiata — Mung Bean / Moong Dal",
-          "meta_description": "Botanical profile of Vigna radiata (Mung Bean/Moong Dal). India world's largest producer; Sabut Moong, Chilka Moong, Yellow Moong Dal; Pusa Baishakhi cultivar.",
-          "meta_keywords": "Vigna radiata, mung bean, Moong Dal, Sabut Moong, Yellow Moong Dal, Indian pulse production, Pusa Baishakhi",
-          "native_range": "Indian subcontinent",
-          "conservation_status": "LC",
-          "notes": "India world's largest mung bean producer. Three commercial forms: Sabut (whole), Chilka (split with husk), Yellow Dal (dehusked). Quick cooking, easily digestible.",
-          "cultivars": [
-            "Pusa Baishakhi"
-          ]
-        },
-        {
-          "full_name": "Vigna mungo",
-          "common_name": "Black Gram / Urad Dal",
-          "description": "<em>Vigna mungo</em>, black gram, is a crucial ingredient in South Indian and North Indian cuisines. Urad Dal (split dehusked) is used in dal makhni, dal bukhara, idli, dosa, medu vada, and papad. Sabut Urad (whole black gram) makes dal makhni its characteristic black appearance. India is the world's largest producer. Andhra Pradesh, Madhya Pradesh, and Tamil Nadu are leading producers.",
-          "meta_title": "Vigna mungo — Black Gram / Urad Dal",
-          "meta_description": "Botanical profile of Vigna mungo (Black Gram/Urad Dal). Idli, dosa, dal makhni base; India world's largest producer; T-9 cultivar profile.",
-          "meta_keywords": "Vigna mungo, black gram, Urad Dal, dal makhni, idli dosa urad, Indian black gram, T-9 cultivar",
-          "native_range": "Indian subcontinent",
-          "conservation_status": "LC",
-          "notes": "Urad Dal (Hindi), Ulundu (Tamil), Minumulu (Telugu). Idli/dosa batter (fermented) requires urad. Dal makhni uses Sabut Urad (whole). T-9 is classic cultivar.",
-          "cultivars": [
-            "T-9"
-          ]
-        },
-        {
-          "full_name": "Vigna unguiculata",
-          "common_name": "Cowpea / Lobia / Chavli",
-          "description": "<em>Vigna unguiculata</em>, cowpea, is a drought-tolerant multipurpose legume grown across India for both grain (Lobia in Hindi, Chavli in Marathi) and green vegetable pods. It is especially important in the dry regions of Rajasthan, Gujarat, and Karnataka. Cowpea is used in curries, rice dishes (Lobia chawal), and as cattle fodder. It is among the most heat- and drought-tolerant food legumes.",
-          "meta_title": "Vigna unguiculata — Cowpea / Lobia / Chavli",
-          "meta_description": "Botanical profile of Vigna unguiculata (Cowpea/Lobia). Drought-tolerant pulse; Lobia chawal; fodder and grain use in arid India.",
-          "meta_keywords": "Vigna unguiculata, cowpea, Lobia, Chavli, Indian cowpea, drought tolerant pulse, Lobia chawal",
-          "native_range": "West Africa (origin); pan-tropical cultivation",
-          "conservation_status": "LC",
-          "notes": "Lobia (Hindi), Chavli (Marathi), Alasande (Kannada). Drought and heat tolerant. Grain and green pod uses. Nitrogen fixing.",
-          "cultivars": []
-        },
-        {
-          "full_name": "Vigna aconitifolia",
-          "common_name": "Moth Bean / Matki",
-          "description": "<em>Vigna aconitifolia</em>, moth bean, is among the most drought-tolerant pulses in the world and is a critical crop in the arid and semi-arid regions of Rajasthan, Gujarat, and Haryana. Known as Matki in Marathi (the Maharashtrian dish Misal Pav uses sprouted matki). The small, brown-yellowish seeds are nutritious and quick-sprouting. Rajasthan is the dominant Indian producer.",
-          "meta_title": "Vigna aconitifolia — Moth Bean / Matki",
-          "meta_description": "Botanical profile of Vigna aconitifolia (Moth Bean/Matki). Most drought-tolerant Indian pulse; Misal Pav base; Rajasthan dominant producer.",
-          "meta_keywords": "Vigna aconitifolia, moth bean, Matki, Misal Pav, Rajasthan pulse, drought tolerant legume India",
-          "native_range": "India (arid regions)",
-          "conservation_status": "LC",
-          "notes": "Matki (Marathi) — key Misal Pav ingredient. Most drought-tolerant Indian pulse. Rajasthan: dominant producer.",
-          "cultivars": []
-        }
-      ]
-    },
-    {
-      "genus": "Cajanus",
-      "common_name": "Pigeon Pea / Toor Dal / Arhar",
-      "description": "<em>Cajanus</em> is a genus of about 32 species of woody herbs and shrubs in the family Fabaceae, with <em>Cajanus cajan</em> being the only cultivated food crop species. Pigeon pea, known as Toor Dal or Arhar Dal, is the second most important pulse crop in India after chickpea. It is the primary ingredient in dal tadka, sambar, rasam, and countless regional dals. India accounts for approximately 70% of world pigeon pea production.",
-      "species": [
-        {
-          "full_name": "Cajanus cajan",
-          "common_name": "Pigeon Pea / Toor Dal / Arhar",
-          "description": "<em>Cajanus cajan</em> is a perennial woody shrub grown as an annual crop, reaching 1–3 m. Pigeon pea is the dominant dal of West and South India. Dal tadka (tempered toor dal) is India's most consumed dal. Maharashtra, Karnataka, Madhya Pradesh, and Uttar Pradesh are major producers. Regional names: Toor (Hindi), Thuvaram Paruppu (Tamil), Kandi Pappu (Telugu), Togari Bele (Kannada). ICRISAT developed the hybrid ICPH-2671.",
-          "meta_title": "Cajanus cajan — Pigeon Pea / Toor Dal / Arhar",
-          "meta_description": "Botanical profile of Cajanus cajan (Pigeon Pea/Toor Dal). India 70% world production; dal tadka, sambar base; ICPH-2671 hybrid; regional Indian names.",
-          "meta_keywords": "Cajanus cajan, pigeon pea, Toor Dal, Arhar Dal, dal tadka, sambar base, Thuvaram Paruppu, Kandi Pappu, ICPH-2671",
-          "native_range": "Indian subcontinent (origin: India or East Africa)",
-          "conservation_status": "LC",
-          "notes": "Toor (Hindi), Thuvaram Paruppu (Tamil), Kandi Pappu (Telugu), Togari Bele (Kannada). India ~70% world production. ICPH-2671 is ICRISAT hybrid. Perennial, grown as annual.",
-          "cultivars": [
-            "ICPH-2671",
-            "Maruti"
-          ]
-        }
-      ]
-    },
-    {
       "genus": "Cicer",
-      "common_name": "Chickpea / Chana",
-      "description": "<em>Cicer</em> is a genus of nine annual and six perennial species in the Fabaceae. <em>Cicer arietinum</em>, chickpea, is India's most important pulse crop by both area and production. India is the world's largest producer (accounting for ~65% of global output). Two main types: Desi (small, dark, angular) and Kabuli (large, cream-coloured, round). Used as Chana Dal, whole Kabuli Chana (chole), Kala Chana, besan (chickpea flour), and roasted chana.",
+      "common_name": "Chickpea / Chana / Bengal Gram",
+      "description": "43 species. Cicer arietinum is the chickpea, one of India's most important food crops. Called Chana (whole)/Chana Dal (split) in Hindi. India produces ~70% of world's chickpeas. Kabuli (large) and Desi (small dark) types.",
       "species": [
         {
           "full_name": "Cicer arietinum",
-          "common_name": "Chickpea / Chana — Desi & Kabuli",
-          "description": "<em>Cicer arietinum</em> is India's most important pulse crop. Desi chickpea: small, dark, wrinkled, split into Chana Dal (ubiquitous in Indian cooking). Kabuli chickpea: large, cream-coloured — makes Punjabi Chole, Chole Bhature. Kala Chana (black chickpea) is a popular whole Desi type. Besan (chickpea flour) is essential for pakoras, kadhi, and mithai. Madhya Pradesh, Rajasthan, Maharashtra, and Uttar Pradesh are major producers.",
-          "meta_title": "Cicer arietinum — Chickpea / Chana (Desi & Kabuli)",
-          "meta_description": "Botanical profile of Cicer arietinum (Chickpea/Chana). India 65% world production; Desi Chana Dal, Kabuli Chole, Kala Chana, Besan; Pusa-256 and Pusa-1003 cultivars.",
-          "meta_keywords": "Cicer arietinum, chickpea, Chana Dal, Kabuli Chana, Kala Chana, Chole Bhature, Besan, India chickpea production, Pusa-256",
-          "native_range": "Turkey, Syria (Fertile Crescent origin)",
-          "conservation_status": "LC",
-          "notes": "Chana Dal (split Desi), Kabuli Chana (Chole), Kala Chana (dark whole), Besan (flour). India ~65% world production. Pusa-256 (Desi), Pusa-1003 (Kabuli).",
+          "common_name": "Chickpea / Chana / Bengal Gram / Gram",
+          "conservation_status": "least_concern",
           "cultivars": [
-            "Pusa-256 (Desi)",
-            "Pusa-1003 (Kabuli)"
+            {
+              "name": "JG-11"
+            },
+            {
+              "name": "JG-16"
+            },
+            {
+              "name": "JG-63"
+            },
+            {
+              "name": "JAKI-9218"
+            },
+            {
+              "name": "Pusa 256"
+            },
+            {
+              "name": "KAK-2"
+            },
+            {
+              "name": "Vihar"
+            },
+            {
+              "name": "RSG-888"
+            },
+            {
+              "name": "RSG-963"
+            },
+            {
+              "name": "GNG-1958"
+            },
+            {
+              "name": "Pusa 1053"
+            },
+            {
+              "name": "ICCC-37"
+            },
+            {
+              "name": "Annigeri-1"
+            },
+            {
+              "name": "ICRISAT Annigeri"
+            },
+            {
+              "name": "Phule G 12105"
+            }
           ]
+        },
+        {
+          "full_name": "Cicer bijugum",
+          "common_name": "Wild Chickpea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cicer chorassanicum",
+          "common_name": "Chorassan Wild Chickpea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cicer cuneatum",
+          "common_name": "Wedge-shaped Wild Chickpea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cicer echinospermum",
+          "common_name": "Echino Wild Chickpea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cicer judaicum",
+          "common_name": "Judean Wild Chickpea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cicer microphyllum",
+          "common_name": "Himalayan Wild Chickpea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cicer pinnatifidum",
+          "common_name": "Pinnate-leaved Wild Chickpea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cicer reticulatum",
+          "common_name": "Reticulate Wild Chickpea / Progenitor Chickpea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cicer yamashitae",
+          "common_name": "Yamashita's Wild Chickpea",
+          "conservation_status": "least_concern",
+          "cultivars": []
         }
       ]
     },
     {
       "genus": "Lens",
       "common_name": "Lentil / Masoor Dal",
-      "description": "<em>Lens</em> is a genus of four species of annual legumes, with <em>Lens culinaris</em> being the only cultivated species. Masoor Dal (red/pink split lentil) is one of the most widely consumed dals in India, prized for its quick cooking time (no soaking needed) and delicate flavour. India is a major lentil producer, with Madhya Pradesh and Uttar Pradesh as the leading states.",
+      "description": "6 species. Lens culinaris is the lentil/masoor, one of the world's oldest cultivated crops. Called Masoor/Masur Dal in Hindi. India is a major producer; Madhya Pradesh and Uttar Pradesh are leading states.",
       "species": [
         {
           "full_name": "Lens culinaris",
           "common_name": "Lentil / Masoor Dal",
-          "description": "<em>Lens culinaris</em>, lentil, is consumed in India as both Sabut Masoor (whole brown lentil) and Masoor Dal (split pink/orange lentil). Masoor Dal is one of the quickest-cooking pulses (20 minutes, no soaking) and is used in daily dals, soups, and khichdi. Rich in protein, iron, and folate. Madhya Pradesh and Uttar Pradesh lead Indian lentil production. Pusa Masoor-1 and Malika are IARI-released cultivars.",
-          "meta_title": "Lens culinaris — Lentil / Masoor Dal",
-          "meta_description": "Botanical profile of Lens culinaris (Lentil/Masoor Dal). Quick-cooking Indian dal; Sabut Masoor and split Masoor Dal; Pusa Masoor-1 and Malika cultivars.",
-          "meta_keywords": "Lens culinaris, lentil, Masoor Dal, Sabut Masoor, Pusa Masoor-1, Malika lentil, Indian lentil production",
-          "native_range": "Fertile Crescent (Near East origin)",
-          "conservation_status": "LC",
-          "notes": "Masoor Dal (Hindi) — split pink/orange form. Quickest cooking major Indian pulse. No soaking needed. Pusa Masoor-1, Malika are IARI releases.",
+          "conservation_status": "least_concern",
           "cultivars": [
-            "Pusa Masoor-1",
-            "Malika"
+            {
+              "name": "Pant L-406"
+            },
+            {
+              "name": "DPL-62"
+            },
+            {
+              "name": "DPL-15"
+            },
+            {
+              "name": "Malika"
+            },
+            {
+              "name": "K-75"
+            },
+            {
+              "name": "Sehore 74-3"
+            },
+            {
+              "name": "Noori"
+            },
+            {
+              "name": "HUL-57"
+            },
+            {
+              "name": "Mysore Masur"
+            }
           ]
+        },
+        {
+          "full_name": "Lens ervoides",
+          "common_name": "Wild Lentil",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Lens lamottei",
+          "common_name": "Lamotte's Wild Lentil",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Lens nigricans",
+          "common_name": "Black-seeded Wild Lentil",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Lens odemensis",
+          "common_name": "Odem Wild Lentil",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Lens orientalis",
+          "common_name": "Eastern Wild Lentil",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Vigna",
+      "common_name": "Mung, Urad, Cowpea & Relatives",
+      "description": "100+ species. Includes mung bean (V. radiata / Moong Dal), black gram (V. mungo / Urad Dal), cowpea (V. unguiculata / Lobia), and moth bean (V. aconitifolia / Moth Dal). All critical to Indian diet and agriculture.",
+      "species": [
+        {
+          "full_name": "Vigna radiata",
+          "common_name": "Mung Bean / Green Gram / Moong Dal",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Pusa Vishal"
+            },
+            {
+              "name": "PDM-54"
+            },
+            {
+              "name": "PDM-84"
+            },
+            {
+              "name": "Samrat"
+            },
+            {
+              "name": "KM-2"
+            },
+            {
+              "name": "IPM-2-3"
+            },
+            {
+              "name": "MH-421"
+            },
+            {
+              "name": "CO-4"
+            },
+            {
+              "name": "Pant Moong-1"
+            }
+          ]
+        },
+        {
+          "full_name": "Vigna mungo",
+          "common_name": "Black Gram / Urad Dal / Mash Dal",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Pant U-30"
+            },
+            {
+              "name": "PDU-1"
+            },
+            {
+              "name": "Shekhar-2"
+            },
+            {
+              "name": "KU-300"
+            },
+            {
+              "name": "Pant U-19"
+            },
+            {
+              "name": "Uttara"
+            },
+            {
+              "name": "LBG-17"
+            },
+            {
+              "name": "T-9"
+            }
+          ]
+        },
+        {
+          "full_name": "Vigna unguiculata",
+          "common_name": "Cowpea / Lobia / Black-eyed Pea / Chawli",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Pusa Komal"
+            },
+            {
+              "name": "Pusa Sukomal"
+            },
+            {
+              "name": "Arka Garima"
+            },
+            {
+              "name": "V-16"
+            },
+            {
+              "name": "GC-3"
+            },
+            {
+              "name": "Gomati"
+            }
+          ]
+        },
+        {
+          "full_name": "Vigna aconitifolia",
+          "common_name": "Moth Bean / Matki / Moth Dal",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "RMO-40"
+            },
+            {
+              "name": "RMO-225"
+            },
+            {
+              "name": "Jadia"
+            },
+            {
+              "name": "HM-1"
+            }
+          ]
+        },
+        {
+          "full_name": "Vigna umbellata",
+          "common_name": "Rice Bean / Ricebean",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vigna angularis",
+          "common_name": "Adzuki Bean / Azuki",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vigna subterranea",
+          "common_name": "Bambara Groundnut",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vigna acontifolia",
+          "common_name": "Moth Bean Variant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vigna trilobata",
+          "common_name": "Three-lobed Wild Bean",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vigna vexillata",
+          "common_name": "Wild Cowpea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Cajanus",
+      "common_name": "Pigeon Pea / Tur Dal / Arhar",
+      "description": "32 species. Cajanus cajan is pigeon pea / tur dal / arhar dal, one of India's most important pulses. India produces 90% of the world's pigeon pea. Maharashtra, Uttar Pradesh, Karnataka are major producing states.",
+      "species": [
+        {
+          "full_name": "Cajanus cajan",
+          "common_name": "Pigeon Pea / Tur Dal / Arhar Dal",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "ICPL-87119 (Maruti)"
+            },
+            {
+              "name": "Pusa 992"
+            },
+            {
+              "name": "Pusa Ageti"
+            },
+            {
+              "name": "Asha"
+            },
+            {
+              "name": "ICPL-88039"
+            },
+            {
+              "name": "Prabhat"
+            },
+            {
+              "name": "Bahar"
+            },
+            {
+              "name": "BDN-2"
+            },
+            {
+              "name": "WRP-1"
+            },
+            {
+              "name": "Pragati"
+            }
+          ]
+        },
+        {
+          "full_name": "Cajanus scarabaeoides",
+          "common_name": "Wild Pigeon Pea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cajanus platycarpus",
+          "common_name": "Flat-podded Pigeon Pea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cajanus acutifolius",
+          "common_name": "Sharp-leaved Pigeon Pea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cajanus albicans",
+          "common_name": "White Cajanus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cajanus cajanifolius",
+          "common_name": "Cajanus-leaved Cajanus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cajanus lanceolatus",
+          "common_name": "Lance-leaved Cajanus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cajanus lineatus",
+          "common_name": "Lined Cajanus",
+          "conservation_status": "least_concern",
+          "cultivars": []
         }
       ]
     },
     {
       "genus": "Phaseolus",
-      "common_name": "Kidney Bean / Rajma — French Bean",
-      "description": "<em>Phaseolus</em> is a genus of about 70 species of New World origin in the Fabaceae. <em>Phaseolus vulgaris</em> encompasses both the kidney bean (Rajma) used in the iconic North Indian curry Rajma Chawal, and French bean (Frasbi/French Beans) grown as a green vegetable. Rajma is most extensively grown in Jammu & Kashmir and Himachal Pradesh.",
+      "common_name": "Kidney Bean, French Bean & Relatives / Rajma, Sem",
+      "description": "60+ species of beans native to the Americas. Phaseolus vulgaris (kidney bean/Rajma) is hugely popular in North India. P. lunatus (Lima bean) and P. coccineus (runner bean) are also cultivated.",
       "species": [
         {
           "full_name": "Phaseolus vulgaris",
-          "common_name": "Kidney Bean / Rajma — French Bean / Frasbi",
-          "description": "<em>Phaseolus vulgaris</em>, common bean, in India manifests primarily as Rajma (dried kidney beans) and Frasbi/French Bean (green snap bean). Rajma Chawal (kidney bean curry with rice) is the quintessential comfort food of Punjab, Himachal Pradesh, and Jammu & Kashmir. Jammu Rajma (small, dark red) and Chitra Rajma (speckled) are regionally prized varieties. French beans are a significant vegetable crop in Himachal Pradesh and Uttarakhand hills.",
-          "meta_title": "Phaseolus vulgaris — Kidney Bean / Rajma & French Bean / Frasbi",
-          "meta_description": "Botanical profile of Phaseolus vulgaris (Rajma/Kidney Bean, Frasbi/French Bean). Rajma Chawal, Jammu Rajma and Chitra Rajma; hill vegetable French bean.",
-          "meta_keywords": "Phaseolus vulgaris, kidney bean, Rajma, Rajma Chawal, Jammu Rajma, Chitra Rajma, French Bean, Frasbi India",
-          "native_range": "Central America, Mexico",
-          "conservation_status": "LC",
-          "notes": "Rajma (dried kidney bean) and Frasbi (French/snap bean) are the two Indian forms. Jammu Rajma GI-tagged. Himalayan hills dominant region.",
+          "common_name": "Kidney Bean / French Bean / Rajma",
+          "conservation_status": "least_concern",
           "cultivars": [
-            "Jammu Rajma",
-            "Chitra Rajma",
-            "French Bean (Frasbi)"
+            {
+              "name": "Pusa Parvati"
+            },
+            {
+              "name": "Arka Komal"
+            },
+            {
+              "name": "Arka Suvidha"
+            },
+            {
+              "name": "Contender"
+            },
+            {
+              "name": "Jampa"
+            },
+            {
+              "name": "Selection-9"
+            },
+            {
+              "name": "VL Boni-1"
+            },
+            {
+              "name": "HUR-15"
+            }
           ]
+        },
+        {
+          "full_name": "Phaseolus lunatus",
+          "common_name": "Lima Bean / Butter Bean",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phaseolus coccineus",
+          "common_name": "Runner Bean / Scarlet Runner Bean",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phaseolus acutifolius",
+          "common_name": "Tepary Bean",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phaseolus angustissimus",
+          "common_name": "Narrow-seeded Wild Bean",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phaseolus filiformis",
+          "common_name": "Thread-podded Wild Bean",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phaseolus maculatus",
+          "common_name": "Spotted Wild Bean",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Phaseolus ritensis",
+          "common_name": "Rites Wild Bean",
+          "conservation_status": "least_concern",
+          "cultivars": []
         }
       ]
     },
     {
-      "genus": "Macrotyloma",
-      "common_name": "Horse Gram / Kulthi / Ulavalu",
-      "description": "<em>Macrotyloma</em> is a genus of about 25 species in the Fabaceae, native to Africa and Asia. <em>Macrotyloma uniflorum</em>, horse gram, is one of the hardiest legumes — requiring minimal water and growing on poor soils. It is a climate-resilient 'orphan crop' of great importance to rainfed subsistence farmers in South India, Jharkhand, Chhattisgarh, and the Deccan Plateau.",
+      "genus": "Glycine",
+      "common_name": "Soybean / Bhatmas",
+      "description": "18 species. Glycine max (soybean) is the world's most important oilseed legume. Called Bhatmas/Soya in Hindi. India is a significant producer; Madhya Pradesh, Maharashtra, and Rajasthan are main growing states.",
       "species": [
         {
-          "full_name": "Macrotyloma uniflorum",
-          "common_name": "Horse Gram / Kulthi / Ulavalu",
-          "description": "<em>Macrotyloma uniflorum</em>, horse gram, is traditionally used as cattle fodder ('horse gram') but is also a nutritious human food crop. In South India it is a staple: Kollu Rasam (Tamil), Ulavacharu (Telugu horse gram stew), and sprouted horse gram salad. Rich in protein, calcium, and iron. Ayurvedic texts prescribe it for kidney stones and urinary disorders. Andhra Pradesh, Karnataka, and Tamil Nadu are major producers.",
-          "meta_title": "Macrotyloma uniflorum — Horse Gram / Kulthi / Ulavalu",
-          "meta_description": "Botanical profile of Macrotyloma uniflorum (Horse Gram/Kulthi). Climate-resilient rainfed pulse; Kollu Rasam, Ulavacharu South Indian dishes; kidney stone traditional remedy.",
-          "meta_keywords": "Macrotyloma uniflorum, horse gram, Kulthi, Ulavalu, Kollu, Ulavacharu, rainfed pulse India, South India horse gram",
-          "native_range": "Indian subcontinent",
-          "conservation_status": "LC",
-          "notes": "Kulthi (Hindi), Kollu (Tamil), Ulavalu (Telugu), Hurali (Kannada). Drought tolerant. Ayurvedic: kidney stone prevention. Climate-resilient crop.",
+          "full_name": "Glycine max",
+          "common_name": "Soybean / Bhatmas / Soya",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "JS-335"
+            },
+            {
+              "name": "JS-9305"
+            },
+            {
+              "name": "NRC-7"
+            },
+            {
+              "name": "Ahilya-1"
+            },
+            {
+              "name": "Ahilya-2"
+            },
+            {
+              "name": "Ahilya-3"
+            },
+            {
+              "name": "VLS-47"
+            },
+            {
+              "name": "MACS-450"
+            },
+            {
+              "name": "Pusa-16"
+            },
+            {
+              "name": "Bragg"
+            }
+          ]
+        },
+        {
+          "full_name": "Glycine soja",
+          "common_name": "Wild Soybean",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Glycine tomentella",
+          "common_name": "Hairy-leaved Wild Soybean",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Glycine tabacina",
+          "common_name": "Tobacco-leaved Wild Soybean",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Glycine canescens",
+          "common_name": "Grey Wild Soybean",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Glycine clandestina",
+          "common_name": "Twining Glycine",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Glycine falcata",
+          "common_name": "Sickle-shaped Glycine",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Arachis",
+      "common_name": "Groundnut / Peanut / Mungphali",
+      "description": "80+ species. Arachis hypogaea (groundnut/peanut) is one of India's most important oilseed crops. Called Mungphali in Hindi, Shenga in Marathi. India is the world's second-largest groundnut producer after China.",
+      "species": [
+        {
+          "full_name": "Arachis hypogaea",
+          "common_name": "Groundnut / Peanut / Mungphali",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "TAG-24"
+            },
+            {
+              "name": "GG-2"
+            },
+            {
+              "name": "JL-24"
+            },
+            {
+              "name": "GG-20"
+            },
+            {
+              "name": "TG-37A"
+            },
+            {
+              "name": "TMV-2"
+            },
+            {
+              "name": "TMV-7"
+            },
+            {
+              "name": "K-6"
+            },
+            {
+              "name": "Girnar-1"
+            },
+            {
+              "name": "Kadiri-3"
+            },
+            {
+              "name": "SB-11"
+            },
+            {
+              "name": "ICGS-44"
+            }
+          ]
+        },
+        {
+          "full_name": "Arachis duranensis",
+          "common_name": "Wild Peanut Progenitor A-genome",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Arachis ipaensis",
+          "common_name": "Wild Peanut Progenitor B-genome",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Arachis batizocoi",
+          "common_name": "Batizoco Wild Peanut",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Arachis stenosperma",
+          "common_name": "Narrow-seeded Wild Peanut",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Arachis villosa",
+          "common_name": "Hairy Wild Peanut",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Arachis glabrata",
+          "common_name": "Perennial Peanut / Forage Peanut",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Arachis pintoi",
+          "common_name": "Perennial Ground Cover Peanut",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Vicia",
+      "common_name": "Fava Bean, Vetches & Horse Gram / Baqla",
+      "description": "200+ species of legumes. Vicia faba (fava/broad bean/Baqla) is an ancient crop. V. sativa (common vetch) is used as a cover crop and fodder. Horsegram (Macrotyloma uniflorum) is a closely related Indian pulse.",
+      "species": [
+        {
+          "full_name": "Vicia faba",
+          "common_name": "Fava Bean / Broad Bean / Field Bean / Baqla",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Pusa Sumit"
+            },
+            {
+              "name": "Pusa Udit"
+            },
+            {
+              "name": "Vikrant"
+            },
+            {
+              "name": "Samrat"
+            },
+            {
+              "name": "Babu"
+            }
+          ]
+        },
+        {
+          "full_name": "Vicia sativa",
+          "common_name": "Common Vetch / Spring Vetch",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vicia villosa",
+          "common_name": "Hairy Vetch",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vicia narbonensis",
+          "common_name": "Narbon Bean / Narbon Vetch",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vicia ervilia",
+          "common_name": "Bitter Vetch",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vicia hirsuta",
+          "common_name": "Hairy Tare",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vicia cracca",
+          "common_name": "Tufted Vetch / Bird Vetch",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vicia benghalensis",
+          "common_name": "Purple Vetch / Indian Vetch",
+          "conservation_status": "least_concern",
           "cultivars": []
         }
       ]
     },
     {
       "genus": "Lablab",
-      "common_name": "Hyacinth Bean / Sem / Avarekalu",
-      "description": "<em>Lablab</em> is a monotypic genus containing only <em>Lablab purpureus</em>, hyacinth bean, native to Africa and widely cultivated across tropical Asia. In India it is used as both a pulse (dried seeds) and a green vegetable (pods). Known as Sem (Hindi), Avarekalu (Kannada), Mochai (Tamil), and Papdi (Marathi). The Avarekai festival in Bengaluru celebrates the winter harvest of this beloved Karnataka crop.",
+      "common_name": "Hyacinth Bean / Sem / Dolichos",
+      "description": "Monotypic genus. Lablab purpureus (sem/hyacinth bean/Dolichos) is grown as a vegetable, pulse, and fodder crop in India. Called Sem in Hindi, Avare in Kannada, Mochai in Tamil. Both pods (green) and seeds (dried) are eaten.",
       "species": [
         {
           "full_name": "Lablab purpureus",
-          "common_name": "Hyacinth Bean / Sem / Avarekalu",
-          "description": "<em>Lablab purpureus</em> is a fast-growing twining vine with attractive purple or white flowers and flat pods containing colourful seeds. In Karnataka, Avarekalu (field beans) is such an important crop that Bangalore holds an Avarekai Mela (festival fair) each winter. The seeds are used in upma, pulao, and saaru (Karnataka thin soup). The dried seeds are mildly toxic if uncooked — soaking and boiling is required to remove cyanogenic glycosides.",
-          "meta_title": "Lablab purpureus — Hyacinth Bean / Sem / Avarekalu",
-          "meta_description": "Botanical profile of Lablab purpureus (Hyacinth Bean/Sem/Avarekalu). Bangalore's Avarekai Mela winter crop; Karnataka and Tamil Nadu pulse and vegetable.",
-          "meta_keywords": "Lablab purpureus, hyacinth bean, Sem, Avarekalu, Avarekai, Mochai, Papdi, Karnataka bean, Indian field bean",
-          "native_range": "Tropical Africa; cultivated pan-tropically",
-          "conservation_status": "LC",
-          "notes": "Sem (Hindi), Avarekalu (Kannada), Mochai (Tamil), Papdi (Marathi). Bangalore's Avarekai Mela celebrates winter harvest. Must be boiled before eating.",
+          "common_name": "Hyacinth Bean / Sem / Avare / Mochai",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "HA-3"
+            },
+            {
+              "name": "Pusa Early Prolific"
+            },
+            {
+              "name": "CO-2"
+            },
+            {
+              "name": "HA-4"
+            },
+            {
+              "name": "Purple Podded"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "genus": "Macrotyloma",
+      "common_name": "Horse Gram / Kulthi Dal",
+      "description": "25+ species. Macrotyloma uniflorum (horse gram) is an underutilized but important drought-tolerant pulse in South India. Called Kulthi/Gahat Dal in Hindi, Kollu in Tamil, Ulavalu in Telugu.",
+      "species": [
+        {
+          "full_name": "Macrotyloma uniflorum",
+          "common_name": "Horse Gram / Kulthi Dal / Kollu",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "HPK-4"
+            },
+            {
+              "name": "PHK-4"
+            },
+            {
+              "name": "VZM-2"
+            },
+            {
+              "name": "PAIYUR-1"
+            },
+            {
+              "name": "CO-1"
+            },
+            {
+              "name": "Birsa Kulthi-1"
+            }
+          ]
+        },
+        {
+          "full_name": "Macrotyloma axillare",
+          "common_name": "Axillary Horse Gram",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Macrotyloma dalei",
+          "common_name": "Dale's Horse Gram",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Macrotyloma geocarpum",
+          "common_name": "Geocarpa Bean / Ground Bean",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Pisum",
+      "common_name": "Pea / Matar",
+      "description": "6 species. Pisum sativum (garden pea/Matar) is widely grown in India during the rabi season. Called Matar in Hindi. Uttar Pradesh and Madhya Pradesh are leading pea-producing states. Both fresh and dried forms are consumed.",
+      "species": [
+        {
+          "full_name": "Pisum sativum",
+          "common_name": "Garden Pea / Matar",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Arkel"
+            },
+            {
+              "name": "Pusa Pragati"
+            },
+            {
+              "name": "Pusa Mukta"
+            },
+            {
+              "name": "Bonneville"
+            },
+            {
+              "name": "Asauji"
+            },
+            {
+              "name": "AP-3"
+            },
+            {
+              "name": "Rachna"
+            },
+            {
+              "name": "Kashi Nandini"
+            },
+            {
+              "name": "Kashi Udai"
+            },
+            {
+              "name": "VRP-6"
+            }
+          ]
+        },
+        {
+          "full_name": "Pisum fulvum",
+          "common_name": "Fawn Pea / Wild Pea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pisum elatius",
+          "common_name": "Wild Pea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Pisum abyssinicum",
+          "common_name": "Abyssinian Pea",
+          "conservation_status": "least_concern",
           "cultivars": []
         }
       ]
