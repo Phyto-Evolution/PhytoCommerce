@@ -2,73 +2,331 @@
   "pack_id": "bromeliaceae",
   "schema_version": "1.1",
   "family": "Bromeliaceae",
-  "common_name": "Bromeliads",
-  "description": "Bromeliaceae is a Neotropical monocot family comprising about 75 genera and over 3700 species. Bromeliads are native almost exclusively to the Americas, from the southern United States to Patagonia, with one species in West Africa. The family is extraordinarily diverse in form: from drought-adapted atmospheric tillandsias to water-tank epiphytes, terrestrial species, and ornamental flowering types. Many bromeliads form a central cup or tank that collects water and nutrients; others are xerophytic with absorbent trichomes.",
-  "meta_title": "Bromeliads — Bromeliaceae | PhytoCommerce",
-  "meta_description": "Shop rare and classic bromeliads — Tillandsia, Neoregelia, Vriesea, Aechmea. TC-grown Neotropical epiphytes and ornamentals with cultivar provenance.",
-  "meta_keywords": "bromeliads, Bromeliaceae, Tillandsia, Neoregelia, Vriesea, Aechmea, air plants, buy bromeliads",
+  "common_name": "Bromeliads & Air Plants",
+  "description": "Bromeliaceae contains ~75 genera and 3500+ species. Native almost entirely to the Americas (except one African Pitcairnia). Includes the commercially important pineapple (Ananas comosus) and hundreds of popular ornamental air plants (Tillandsia). India cultivates pineapple extensively in Kerala and Northeast states.",
+  "meta_title": "Bromeliaceae Taxonomy Pack — Tillandsia, Neoregelia, Aechmea, Guzmania",
+  "meta_description": "Comprehensive bromeliad species list: air plants, tank bromeliads, earth stars, pineapple.",
+  "meta_keywords": "bromeliad, Tillandsia, air plant, Neoregelia, Aechmea, Vriesea, Guzmania, pineapple",
   "genera": [
     {
       "genus": "Tillandsia",
       "common_name": "Air Plants",
-      "description": "<em>Tillandsia</em> is the largest genus in Bromeliaceae, with over 650 species. The genus ranges from the large tank bromeliads to the iconic atmospheric air plants — rootless epiphytes that absorb moisture and nutrients entirely through specialised trichomes on their leaves. Air plants are native from the southern USA through Central and South America. They require no soil, merely bright light, air movement, and regular misting or soaking.",
-      "meta_title": "Tillandsia — Air Plants",
-      "meta_description": "Buy Tillandsia air plants — rootless atmospheric epiphytes needing no soil. From compact ionantha to giant xerographica; species and cultivars with care guides.",
-      "meta_keywords": "Tillandsia for sale, air plants, Tillandsia xerographica, Tillandsia ionantha, rootless bromeliad",
-      "native_range": "Southern USA to South America",
-      "care_level": "Beginner–Intermediate",
-      "tc_suitability": "Moderate",
-      "conservation_status": "varies by species",
+      "description": "650+ species — the largest bromeliad genus. Most are epiphytes requiring no soil. Extremely popular in terrariums and mounted displays. All CITES Appendix II.",
       "species": [
         {
           "full_name": "Tillandsia xerographica",
           "common_name": "King of Air Plants",
-          "description": "<em>Tillandsia xerographica</em> is the largest and most dramatic atmospheric Tillandsia, forming a symmetrical, silvery sphere of long, curling, strap-like leaves up to 90 cm across. Native to dry forests of Guatemala, El Salvador, Honduras, and southern Mexico. Produces a spectacular red, yellow, and violet inflorescence when mature. Slow-growing and long-lived; CITES II.",
-          "meta_title": "Tillandsia xerographica — King of Air Plants",
-          "meta_description": "Buy Tillandsia xerographica, the king of air plants. Giant silvery curling rosette to 90 cm; spectacular inflorescence, CITES II. Slow-growing dry-climate epiphyte.",
-          "meta_keywords": "Tillandsia xerographica, king of air plants, giant air plant, silver tillandsia, CITES bromeliad",
-          "native_range": "Guatemala, El Salvador, Honduras, southern Mexico (dry forest)",
-          "conservation_status": "NT",
-          "notes": "CITES II. Large, slow-growing. Water sparingly; needs excellent air circulation and very bright light.",
+          "conservation_status": "cites_appendix_ii",
           "cultivars": []
         },
         {
           "full_name": "Tillandsia ionantha",
           "common_name": "Sky Plant",
-          "description": "<em>Tillandsia ionantha</em> is one of the most popular air plants, forming small clustering rosettes of silvery-green leaves that blush brilliant red to violet at the centre when approaching bloom. Produces vivid purple flowers. Native to Mexico and Central America. Extremely adaptable and ideal for beginners. Many selected and named forms.",
-          "meta_title": "Tillandsia ionantha — Sky Plant Air Plant",
-          "meta_description": "Buy Tillandsia ionantha sky plants. Small clustering air plants that blush red when blooming; purple flowers, easy care, ideal beginners' Tillandsia.",
-          "meta_keywords": "Tillandsia ionantha, sky plant, small air plant, beginner tillandsia, blushing air plant",
-          "native_range": "Mexico, Guatemala, El Salvador, Honduras, Nicaragua",
-          "conservation_status": "LC",
-          "notes": "Best beginner air plant. Mist 2–3 times per week. Blushes red at bloom time.",
+          "conservation_status": "cites_appendix_ii",
           "cultivars": [
-            { "cultivar": "Fuego", "description": "Deeply saturated red blushing with purple flowers; compact, vibrant selection." },
-            { "cultivar": "Rubra", "description": "Silvery leaves with intense violet-red colouring; smaller and more colourful than the straight species." }
+            "Fuego",
+            "Rubra",
+            "Druid",
+            "Huamelula",
+            "Guatemala"
           ]
         },
         {
           "full_name": "Tillandsia cyanea",
-          "common_name": "Pink Quill Plant",
-          "description": "<em>Tillandsia cyanea</em> is a terrestrial or epiphytic species from Ecuador prized for its striking fan-shaped pink-red flower bract from which vivid blue-violet flowers emerge sequentially. One of the most ornamental bromeliads; commonly sold as a gift plant. Grows in a pot unlike most air plants.",
-          "meta_title": "Tillandsia cyanea — Pink Quill Bromeliad",
-          "meta_description": "Buy Tillandsia cyanea, the pink quill plant from Ecuador. Fan-shaped pink bract with violet flowers; pot-grown ornamental bromeliad for indoor display.",
-          "meta_keywords": "Tillandsia cyanea, pink quill plant, pink bromeliad, ornamental tillandsia, gift plant",
-          "native_range": "Ecuador",
-          "conservation_status": "LC",
-          "notes": "Grows in a pot; not a true atmospheric air plant. Striking pink quill inflorescence.",
+          "common_name": "Pink Quill",
+          "conservation_status": "cites_appendix_ii",
           "cultivars": []
         },
         {
           "full_name": "Tillandsia usneoides",
           "common_name": "Spanish Moss",
-          "description": "<em>Tillandsia usneoides</em> — Spanish moss — is the iconic draping grey-green Tillandsia that festoons trees across the American South. It has no roots and absorbs all nutrients through dense trichomes. Produces tiny fragrant lime-green flowers. One of the most widely distributed bromeliads, ranging from Virginia to Argentina.",
-          "meta_title": "Tillandsia usneoides — Spanish Moss",
-          "meta_description": "Buy Tillandsia usneoides Spanish moss. Draping rootless bromeliad with fragrant flowers; absorbs all nutrients through trichomes. From Virginia to Argentina.",
-          "meta_keywords": "Tillandsia usneoides, Spanish moss, draping air plant, rootless bromeliad, southern USA plant",
-          "native_range": "Virginia, USA to Argentina",
-          "conservation_status": "LC",
-          "notes": "Completely rootless. Mist regularly. Ideal for hanging displays; prefers filtered bright light.",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia tectorum",
+          "common_name": "Snowball Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia seleriana",
+          "common_name": "Seler's Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia butzii",
+          "common_name": "Butz's Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia caput-medusae",
+          "common_name": "Medusa's Head",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia stricta",
+          "common_name": "Upright Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": [
+            "Hard Leaf",
+            "Soft Leaf",
+            "Black"
+          ]
+        },
+        {
+          "full_name": "Tillandsia recurvata",
+          "common_name": "Ball Moss",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia fasciculata",
+          "common_name": "Quill-leaf Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia juncea",
+          "common_name": "Rush Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia bulbosa",
+          "common_name": "Bulbous Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia brachycaulos",
+          "common_name": "Short-stemmed Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": [
+            "Multiflora",
+            "Abdita"
+          ]
+        },
+        {
+          "full_name": "Tillandsia capitata",
+          "common_name": "Capitata Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": [
+            "Peach",
+            "Yellow",
+            "Red",
+            "Domingensis"
+          ]
+        },
+        {
+          "full_name": "Tillandsia andreana",
+          "common_name": "Andrea's Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia argentina",
+          "common_name": "Argentine Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia bandensis",
+          "common_name": "Banda's Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia bergeri",
+          "common_name": "Berger's Air Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia duratii",
+          "common_name": "Durat's Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia fuchsii",
+          "common_name": "Fuch's Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": [
+            "Gracilis"
+          ]
+        },
+        {
+          "full_name": "Tillandsia gardneri",
+          "common_name": "Gardner's Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia intermedia",
+          "common_name": "Intermediate Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia magnusiana",
+          "common_name": "Magnus's Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia paleacea",
+          "common_name": "Chaffy Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia streptophylla",
+          "common_name": "Shirley Temple Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia tricolor",
+          "common_name": "Three-coloured Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": [
+            "Melanocrater"
+          ]
+        },
+        {
+          "full_name": "Tillandsia velickiana",
+          "common_name": "Velick's Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia flabellata",
+          "common_name": "Fan Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia funckiana",
+          "common_name": "Funck's Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia harrisii",
+          "common_name": "Harris' Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia hildae",
+          "common_name": "Hilde's Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia latifolia",
+          "common_name": "Broad-leaved Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia leiboldiana",
+          "common_name": "Leibold's Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia lindenii",
+          "common_name": "Linden's Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia multicaulis",
+          "common_name": "Many-stemmed Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia myosura",
+          "common_name": "Mouse-tail Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia paucifolia",
+          "common_name": "Few-leaved Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia polystachia",
+          "common_name": "Many-spiked Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia pruinosa",
+          "common_name": "Frosty Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia recurvifolia",
+          "common_name": "Recurved Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia setacea",
+          "common_name": "Bristle Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia simulata",
+          "common_name": "Simulated Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia sprengeliana",
+          "common_name": "Sprengel's Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia streptocarpa",
+          "common_name": "Twisted-fruited Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia utriculata",
+          "common_name": "Giant Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia variabilis",
+          "common_name": "Variable Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia viridiflora",
+          "common_name": "Green-flowered Air Plant",
+          "conservation_status": "cites_appendix_ii",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia wagneriana",
+          "common_name": "Wagner's Air Plant",
+          "conservation_status": "cites_appendix_ii",
           "cultivars": []
         }
       ]
@@ -76,154 +334,983 @@
     {
       "genus": "Neoregelia",
       "common_name": "Neoregelia Bromeliads",
-      "description": "<em>Neoregelia</em> comprises about 115 species of tank bromeliads from South America, primarily Brazil. The genus is prized for its intensely coloured, often spotted, striped, or banded foliage and for the dramatic blushing of the central cup leaves at bloom time. The flowers themselves are small and nested inside the water-filled cup, but the surrounding leaf colouration can last for months. Thousands of cultivars exist from Florida and Australian hybridisers.",
-      "meta_title": "Neoregelia — Tank Bromeliads",
-      "meta_description": "Buy Neoregelia bromeliads from South America. Vivid blushing and spotted foliage with water-tank cups; species and cultivars from Florida and Brazilian breeding.",
-      "meta_keywords": "Neoregelia for sale, tank bromeliad, Neoregelia carolinae, spotted bromeliad, colourful bromeliad",
-      "native_range": "South America (primarily Brazil)",
-      "care_level": "Beginner–Intermediate",
-      "tc_suitability": "High",
-      "conservation_status": "varies by species",
+      "description": "100+ species of flat, open-rosette bromeliads. Leaves colour brilliantly at flowering. Popular in tropical gardens and as houseplants.",
       "species": [
         {
           "full_name": "Neoregelia carolinae",
           "common_name": "Blushing Bromeliad",
-          "description": "<em>Neoregelia carolinae</em> is the most widely grown Neoregelia species, producing flat rosettes of strap-shaped green leaves that blush brilliant scarlet at the centre just before and during flowering. The small violet flowers open at the base of the central cup. The red colouring persists for many months. The 'Tricolor' variegated form is one of the most popular bromeliads in the world.",
-          "meta_title": "Neoregelia carolinae — Blushing Bromeliad",
-          "meta_description": "Buy Neoregelia carolinae, the blushing bromeliad. Flat green rosette turning scarlet at centre before bloom; Tricolor variegated form also available.",
-          "meta_keywords": "Neoregelia carolinae, blushing bromeliad, red-centre bromeliad, Neoregelia Tricolor, tank bromeliad",
-          "native_range": "Brazil (Bahia, Espírito Santo, Rio de Janeiro)",
-          "conservation_status": "LC",
-          "notes": "Keep cup filled with clean water. Dramatic red blush lasts months. Easy and rewarding.",
+          "conservation_status": "least_concern",
           "cultivars": [
-            { "cultivar": "Tricolor", "description": "Cream and green longitudinal striped leaves with bright red central cup flush; one of the most popular bromeliads worldwide." },
-            { "cultivar": "Meyendorffii", "description": "Larger form with olive-green leaves and deeper red blushing; subspecies often treated as a separate cultivar." }
+            "Tricolor",
+            "Flandria",
+            "Perfecta",
+            "Meyendorffii"
           ]
         },
         {
           "full_name": "Neoregelia concentrica",
-          "common_name": "Giant Neoregelia",
-          "description": "<em>Neoregelia concentrica</em> forms large, spreading flat rosettes with broad leaves marked by irregular purple spots and bands. The central leaves blush deep purple-violet at bloom time. Among the largest Neoregelia species in cultivation. Parent of many large-bodied hybrids.",
-          "meta_title": "Neoregelia concentrica — Giant Purple-spotted Bromeliad",
-          "meta_description": "Buy Neoregelia concentrica, the giant bromeliad. Large flat rosette with purple-spotted broad leaves and violet blushing centre; hybrid parent for large-form neoregelias.",
-          "meta_keywords": "Neoregelia concentrica, giant bromeliad, purple spotted bromeliad, large Neoregelia",
-          "native_range": "Brazil",
-          "conservation_status": "LC",
-          "notes": "Large species; needs more space than carolinae. Keep cup filled. Purple spots intensify in bright light.",
+          "common_name": "Purple Star",
+          "conservation_status": "least_concern",
           "cultivars": []
         },
         {
           "full_name": "Neoregelia ampullacea",
           "common_name": "Tube Neoregelia",
-          "description": "<em>Neoregelia ampullacea</em> is a miniature to compact species forming upright tubular rosettes rather than flat plates. Bright red and green banding. Highly collectible; pups freely and creates a dense clump over time. Popular parent for miniature hybrid breeding.",
-          "meta_title": "Neoregelia ampullacea — Miniature Tube Bromeliad",
-          "meta_description": "Buy Neoregelia ampullacea, the tube neoregelia. Compact upright tubular rosettes with red-green banding; free-pupping miniature bromeliad.",
-          "meta_keywords": "Neoregelia ampullacea, miniature bromeliad, tube neoregelia, compact bromeliad, red-green bromeliad",
-          "native_range": "Brazil",
-          "conservation_status": "LC",
-          "notes": "Miniature and free-pupping. Upright tubular rosette is distinct from flat-plate Neoregelia growth habit.",
-          "cultivars": []
-        }
-      ]
-    },
-    {
-      "genus": "Vriesea",
-      "common_name": "Flaming Sword Bromeliads",
-      "description": "<em>Vriesea</em> comprises about 250 species of mostly epiphytic tank bromeliads from Central and South America. The genus is prized for its highly ornamental flat paddle-shaped flower spikes, often vividly coloured in red, yellow, or orange, from which small tubular flowers emerge. The 'flaming sword' inflorescence of <em>V. splendens</em> is iconic. Many species have attractively banded or mottled foliage.",
-      "meta_title": "Vriesea — Flaming Sword Bromeliads",
-      "meta_description": "Buy Vriesea bromeliads — flaming sword and tank bromeliads. Spectacular flat paddle-shaped red-yellow inflorescences with banded or mottled foliage.",
-      "meta_keywords": "Vriesea for sale, flaming sword bromeliad, Vriesea splendens, Vriesea hieroglyphica, ornamental bromeliad",
-      "native_range": "Central and South America",
-      "care_level": "Beginner–Intermediate",
-      "tc_suitability": "Moderate",
-      "conservation_status": "varies by species",
-      "species": [
-        {
-          "full_name": "Vriesea splendens",
-          "common_name": "Flaming Sword",
-          "description": "<em>Vriesea splendens</em> is the quintessential flaming sword bromeliad. The flat, sword-shaped inflorescence is brilliant scarlet or orange-red with small yellow flowers. Leaves are dark green with irregular transverse purple-black banding, creating an ornate appearance even when not in flower. One of the most recognisable and widely grown bromeliads globally.",
-          "meta_title": "Vriesea splendens — Flaming Sword Bromeliad",
-          "meta_description": "Buy Vriesea splendens, the flaming sword bromeliad. Scarlet sword-shaped flower spike above dark banded foliage; iconic ornamental bromeliad.",
-          "meta_keywords": "Vriesea splendens, flaming sword, scarlet bromeliad, banded bromeliad, ornamental bromeliad",
-          "native_range": "Venezuela, Guiana, Trinidad",
-          "conservation_status": "LC",
-          "notes": "Keep central tank filled with clean water. Indirect bright light. Dramatic inflorescence lasts months.",
+          "conservation_status": "least_concern",
           "cultivars": []
         },
         {
-          "full_name": "Vriesea hieroglyphica",
-          "common_name": "King of Bromeliads",
-          "description": "<em>Vriesea hieroglyphica</em> — the king of bromeliads — forms enormous, dramatic rosettes of broad, arching leaves covered in complex dark green hieroglyphic-like banding patterns on a lighter background. Grown primarily as a foliage specimen; the flowers are less spectacular than the leaves. Requires larger spaces than most bromeliads.",
-          "meta_title": "Vriesea hieroglyphica — King of Bromeliads",
-          "meta_description": "Buy Vriesea hieroglyphica, the king of bromeliads. Enormous rosette of broad leaves with dramatic dark hieroglyphic-pattern banding; statement foliage specimen.",
-          "meta_keywords": "Vriesea hieroglyphica, king of bromeliads, patterned bromeliad, large bromeliad, foliage bromeliad",
-          "native_range": "Southeast Brazil",
-          "conservation_status": "NT",
-          "notes": "Large specimen plant; needs space. Keep tank filled. Grown for dramatic patterned foliage.",
+          "full_name": "Neoregelia cruenta",
+          "common_name": "Bloody Neoregelia",
+          "conservation_status": "least_concern",
           "cultivars": []
         },
         {
-          "full_name": "Vriesea carinata",
-          "common_name": "Lobster Claw Bromeliad",
-          "description": "<em>Vriesea carinata</em> produces a distinctive flat-paddle inflorescence of alternating yellow and red bracts resembling a lobster claw or Christmas decoration. Compact in size; an excellent tabletop or windowsill bromeliad. Flowers emerge from yellow bracts at the tip.",
-          "meta_title": "Vriesea carinata — Lobster Claw Bromeliad",
-          "meta_description": "Buy Vriesea carinata, the lobster claw bromeliad. Compact with red and yellow alternating bract inflorescence; excellent tabletop bromeliad.",
-          "meta_keywords": "Vriesea carinata, lobster claw bromeliad, compact vriesea, red yellow bromeliad",
-          "native_range": "Brazil (Bahia, Minas Gerais, Rio de Janeiro, São Paulo)",
-          "conservation_status": "LC",
-          "notes": "Compact and ideal for windowsill display. Alternating red-yellow bracts are very decorative.",
+          "full_name": "Neoregelia farinosa",
+          "common_name": "Mealy Neoregelia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia marmorata",
+          "common_name": "Marble Neoregelia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia olens",
+          "common_name": "Fragrant Neoregelia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia pauciflora",
+          "common_name": "Few-flowered Neoregelia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia pendula",
+          "common_name": "Hanging Neoregelia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia pineliana",
+          "common_name": "Pineli's Neoregelia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia sarmentosa",
+          "common_name": "Stoloniferous Neoregelia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia spectabilis",
+          "common_name": "Fingernail Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia tigrina",
+          "common_name": "Tigrina Neoregelia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia wurdackii",
+          "common_name": "Wurdack's Neoregelia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia zonata",
+          "common_name": "Zoned Neoregelia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia johannis",
+          "common_name": "Johann's Neoregelia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia bahiana",
+          "common_name": "Bahia Neoregelia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia carcharodon",
+          "common_name": "Shark-toothed Neoregelia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia chlorosticta",
+          "common_name": "Green-spotted Neoregelia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia eleutheropetala",
+          "common_name": "Free-petalled Neoregelia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia fosteriana",
+          "common_name": "Foster's Neoregelia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia hyalina",
+          "common_name": "Transparent Neoregelia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia laevis",
+          "common_name": "Smooth Neoregelia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia leviana",
+          "common_name": "Levian Neoregelia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia melanodonta",
+          "common_name": "Black-toothed Neoregelia",
+          "conservation_status": "least_concern",
           "cultivars": []
         }
       ]
     },
     {
       "genus": "Aechmea",
-      "common_name": "Urn Plants",
-      "description": "<em>Aechmea</em> comprises about 250 species of mostly epiphytic tank bromeliads from Central and South America. The genus is defined by toothed leaf margins and spiny-bracted inflorescences that often persist for months. <em>Aechmea fasciata</em> — the urn plant — is one of the most popular bromeliads in the world. The genus ranges from compact to very large specimens and includes forms with attractive banded, silver, or multicoloured foliage.",
-      "meta_title": "Aechmea — Urn Plants and Tank Bromeliads",
-      "meta_description": "Buy Aechmea urn plants and tank bromeliads. Spiny-bracted inflorescences lasting months above banded or silver foliage. Popular indoor and tropical garden bromeliads.",
-      "meta_keywords": "Aechmea for sale, urn plant, Aechmea fasciata, silver vase bromeliad, tank bromeliad",
-      "native_range": "Central and South America",
-      "care_level": "Beginner",
-      "tc_suitability": "Moderate",
-      "conservation_status": "varies by species",
+      "common_name": "Aechmea Bromeliads",
+      "description": "250+ species of urn bromeliads from Central and South America. Long-lasting inflorescences. Widely grown as houseplants and in tropical landscaping.",
       "species": [
         {
           "full_name": "Aechmea fasciata",
-          "common_name": "Silver Vase Plant",
-          "description": "<em>Aechmea fasciata</em> — the silver vase plant or urn plant — is one of the world's most popular bromeliads. The broad grey-green leaves are attractively cross-banded with silver scurf. The inflorescence is a spectacular persistent pink pyramid studded with small blue flowers that age to red. Flowers once then produces pups. Keeps for months as a display plant.",
-          "meta_title": "Aechmea fasciata — Silver Vase Urn Plant",
-          "meta_description": "Buy Aechmea fasciata, the silver vase urn plant. Silver cross-banded leaves; persistent pink-blue inflorescence lasting months. Most popular bromeliad worldwide.",
-          "meta_keywords": "Aechmea fasciata, silver vase plant, urn plant, pink bromeliad, popular bromeliad",
-          "native_range": "Brazil (Bahia to Santa Catarina)",
-          "conservation_status": "LC",
-          "notes": "Keep central tank filled with clean water. Inflorescence lasts 3–6 months. Pups after flowering.",
+          "common_name": "Silver Vase",
+          "conservation_status": "least_concern",
           "cultivars": [
-            { "cultivar": "Primera", "description": "Selected for consistency of flower colour and inflorescence size; widely sold commercial form." }
+            "Primera",
+            "Morgan's Pride"
           ]
         },
         {
           "full_name": "Aechmea chantinii",
           "common_name": "Amazonian Zebra Plant",
-          "description": "<em>Aechmea chantinii</em> forms dramatic rosettes of dark green leaves with bold silvery-white transverse banding — hence the name zebra plant. The inflorescence bears orange-red bracts and yellow-tipped red flowers. One of the most ornamental Aechmea species for foliage alone. Large specimen plant.",
-          "meta_title": "Aechmea chantinii — Amazonian Zebra Plant",
-          "meta_description": "Buy Aechmea chantinii, the Amazonian zebra plant. Dark green leaves with bold silver banding; dramatic orange-red inflorescence. Large ornamental bromeliad.",
-          "meta_keywords": "Aechmea chantinii, zebra bromeliad, banded Aechmea, Amazonian bromeliad, large bromeliad",
-          "native_range": "Brazil, Peru, Colombia, Ecuador (Amazon basin)",
-          "conservation_status": "LC",
-          "notes": "Large and dramatic. Bold silver banding very effective even without inflorescence. Keep tank filled.",
+          "conservation_status": "least_concern",
           "cultivars": []
         },
         {
           "full_name": "Aechmea gamosepala",
-          "common_name": "Matchstick Bromeliad",
-          "description": "<em>Aechmea gamosepala</em> produces erect, slender inflorescences of small pink and blue matchstick-like flowers. More compact than <em>A. fasciata</em>; excellent for smaller spaces. The flowers are followed by persistent pink-purple berries that remain attractive long after flowering. Cold-tolerant for a bromeliad.",
-          "meta_title": "Aechmea gamosepala — Matchstick Bromeliad",
-          "meta_description": "Buy Aechmea gamosepala, the matchstick bromeliad. Slender pink-blue inflorescences followed by decorative berries; compact and cold-tolerant Aechmea.",
-          "meta_keywords": "Aechmea gamosepala, matchstick bromeliad, compact Aechmea, cold-tolerant bromeliad",
-          "native_range": "Brazil (South and Southeast)",
-          "conservation_status": "LC",
-          "notes": "Compact; more cold-tolerant than most Aechmea. Persistent berries extend ornamental value.",
+          "common_name": "Matchstick Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea blanchetiana",
+          "common_name": "Orange Bromeliad",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            "Orange",
+            "Red"
+          ]
+        },
+        {
+          "full_name": "Aechmea bromeliifolia",
+          "common_name": "Bromeliad-leaved Aechmea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea calyculata",
+          "common_name": "Cup-shaped Aechmea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea coelestis",
+          "common_name": "Sky-blue Aechmea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea distichantha",
+          "common_name": "Two-ranked Aechmea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea fosteriana",
+          "common_name": "Foster's Aechmea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea fulgens",
+          "common_name": "Coral Berry",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            "Discolor"
+          ]
+        },
+        {
+          "full_name": "Aechmea lueddemanniana",
+          "common_name": "Lueddemann's Aechmea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea mariae-reginae",
+          "common_name": "Queen Aechmea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea melinonii",
+          "common_name": "Melinon's Aechmea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea miniata",
+          "common_name": "Miniature Aechmea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea nudicaulis",
+          "common_name": "Bare-stemmed Aechmea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea orlandiana",
+          "common_name": "Orlando's Aechmea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea pineliana",
+          "common_name": "Pineli's Aechmea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea recurvata",
+          "common_name": "Recurved Aechmea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea woronowii",
+          "common_name": "Woronow's Aechmea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea bracteata",
+          "common_name": "Bracted Aechmea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea magdalenae",
+          "common_name": "Magdalena Aechmea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea mexicana",
+          "common_name": "Mexican Aechmea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea weilbachii",
+          "common_name": "Weilbach's Aechmea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Vriesea",
+      "common_name": "Vriesea Bromeliads",
+      "description": "230+ species. Known for flat, sword-like flower spikes. V. splendens (Flaming Sword) is among the most popular indoor bromeliads.",
+      "species": [
+        {
+          "full_name": "Vriesea splendens",
+          "common_name": "Flaming Sword",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            "Major",
+            "Fire",
+            "Intenso"
+          ]
+        },
+        {
+          "full_name": "Vriesea hieroglyphica",
+          "common_name": "King of Bromeliads",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea carinata",
+          "common_name": "Lobster Claw",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea fenestralis",
+          "common_name": "Netted Vriesea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea gigantea",
+          "common_name": "Giant Vriesea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea glutinosa",
+          "common_name": "Sticky Vriesea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea imperialis",
+          "common_name": "Imperial Vriesea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea psittacina",
+          "common_name": "Parrot's Feather",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea saundersii",
+          "common_name": "Saunders' Vriesea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea schwackeana",
+          "common_name": "Schwacke's Vriesea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea ospinae",
+          "common_name": "Ospina's Vriesea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea platynema",
+          "common_name": "Flat-threaded Vriesea",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            "Variegata"
+          ]
+        },
+        {
+          "full_name": "Vriesea rodigasiana",
+          "common_name": "Rodigas' Vriesea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea phillipo-coburgii",
+          "common_name": "Phillip of Coburg's Vriesea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea bituminosa",
+          "common_name": "Sticky-bracts Vriesea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea duvaliana",
+          "common_name": "Duval's Vriesea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea erecta",
+          "common_name": "Erect Vriesea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea incurvata",
+          "common_name": "Incurved Vriesea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea jonghei",
+          "common_name": "De Jonghe's Vriesea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea scalaris",
+          "common_name": "Ladder Vriesea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Guzmania",
+      "common_name": "Guzmania Bromeliads",
+      "description": "210+ species of epiphytic bromeliads from tropical Americas. Long-lasting bracts in red, orange, yellow, pink. G. lingulata is one of the most widely sold bromeliads.",
+      "species": [
+        {
+          "full_name": "Guzmania lingulata",
+          "common_name": "Scarlet Star",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            "Orange",
+            "Yellow",
+            "Red",
+            "Memoria",
+            "Minor",
+            "Major"
+          ]
+        },
+        {
+          "full_name": "Guzmania monostachia",
+          "common_name": "One-spiked Guzmania",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania musaica",
+          "common_name": "Mosaic Vase Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania sanguinea",
+          "common_name": "Blood-red Guzmania",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania berteroniana",
+          "common_name": "Bertero's Guzmania",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania conifera",
+          "common_name": "Cone-bearing Guzmania",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania dissitiflora",
+          "common_name": "Loose-flowered Guzmania",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania nicaraguensis",
+          "common_name": "Nicaraguan Guzmania",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania wittmackii",
+          "common_name": "Wittmack's Guzmania",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania zahnii",
+          "common_name": "Zahn's Guzmania",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania donnell-smithii",
+          "common_name": "Donnell Smith's Guzmania",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania erythrolepis",
+          "common_name": "Red-scaled Guzmania",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania glomerata",
+          "common_name": "Clustered Guzmania",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania melinonis",
+          "common_name": "Melinon's Guzmania",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania multiflora",
+          "common_name": "Many-flowered Guzmania",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania nicaraguensis",
+          "common_name": "Nicaraguan Guzmania",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania patula",
+          "common_name": "Spreading Guzmania",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Cryptanthus",
+      "common_name": "Earth Stars",
+      "description": "60+ species of terrestrial bromeliads from Brazil. Flat star-shaped rosettes with beautifully striped leaves. Popular terrarium plants.",
+      "species": [
+        {
+          "full_name": "Cryptanthus bivittatus",
+          "common_name": "Red Star Earth Star",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            "Pink Starlite"
+          ]
+        },
+        {
+          "full_name": "Cryptanthus bromelioides",
+          "common_name": "Rainbow Star",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus zonatus",
+          "common_name": "Zebra Plant Earth Star",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus acaulis",
+          "common_name": "Little Star",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus bahianus",
+          "common_name": "Bahia Earth Star",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus beuckeri",
+          "common_name": "Beucker's Earth Star",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus sinuosus",
+          "common_name": "Wavy Earth Star",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus warasii",
+          "common_name": "Waras' Earth Star",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus lacerdae",
+          "common_name": "Lacerda's Earth Star",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus osyanus",
+          "common_name": "Osyan's Earth Star",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus fosterianus",
+          "common_name": "Foster's Earth Star",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus microglazioui",
+          "common_name": "Micro Earth Star",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Billbergia",
+      "common_name": "Queen's Tears",
+      "description": "60+ species of tube-forming bromeliads from the Americas. B. nutans (Queen's Tears) is the easiest bromeliad to grow.",
+      "species": [
+        {
+          "full_name": "Billbergia nutans",
+          "common_name": "Queen's Tears",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia pyramidalis",
+          "common_name": "Foolproof Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia zebrina",
+          "common_name": "Zebra Urn Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia venezuelana",
+          "common_name": "Venezuelan Billbergia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia porteana",
+          "common_name": "Porter's Billbergia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia buchholtzii",
+          "common_name": "Buchholtz's Billbergia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia elegans",
+          "common_name": "Elegant Billbergia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia horrida",
+          "common_name": "Spiny Billbergia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia vittata",
+          "common_name": "Striped Billbergia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia windii",
+          "common_name": "Wind's Billbergia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia distachia",
+          "common_name": "Two-spiked Billbergia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia leptopoda",
+          "common_name": "Slender-stemmed Billbergia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia meyeri",
+          "common_name": "Meyer's Billbergia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Dyckia",
+      "common_name": "Dyckia Bromeliads",
+      "description": "200+ species of terrestrial bromeliads from South America. Stiff, spine-edged leaves. Drought-tolerant.",
+      "species": [
+        {
+          "full_name": "Dyckia brevifolia",
+          "common_name": "Short-leaved Dyckia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dyckia fosteriana",
+          "common_name": "Foster's Dyckia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dyckia marnier-lapostollei",
+          "common_name": "Marnier's Dyckia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dyckia platyphylla",
+          "common_name": "Flat-leaved Dyckia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dyckia reitzii",
+          "common_name": "Reitz's Dyckia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dyckia sulphurea",
+          "common_name": "Yellow Dyckia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dyckia leptostachya",
+          "common_name": "Slender-spiked Dyckia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dyckia hebdingii",
+          "common_name": "Hebding's Dyckia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dyckia goehringii",
+          "common_name": "Goehring's Dyckia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dyckia rariflora",
+          "common_name": "Rare-flowered Dyckia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Puya",
+      "common_name": "Puya Bromeliads",
+      "description": "230+ species, the largest bromeliad genus by plant size. Some reach 10m tall. P. raimondii is the world's largest bromeliad — blooms once then dies.",
+      "species": [
+        {
+          "full_name": "Puya alpestris",
+          "common_name": "Sapphire Tower",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Puya berteroniana",
+          "common_name": "Bertero's Puya",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Puya chilensis",
+          "common_name": "Chilean Puya",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Puya coerulea",
+          "common_name": "Blue Puya",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Puya mirabilis",
+          "common_name": "Wonderful Puya",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Puya raimondii",
+          "common_name": "Queen of the Andes",
+          "conservation_status": "endangered",
+          "cultivars": []
+        },
+        {
+          "full_name": "Puya venusta",
+          "common_name": "Handsome Puya",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Puya spathacea",
+          "common_name": "Spathed Puya",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Puya laxa",
+          "common_name": "Loose Puya",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Puya whytei",
+          "common_name": "Whyte's Puya",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Ananas",
+      "common_name": "Pineapple / Ananas",
+      "description": "5 species including A. comosus, the world's most commercially important bromeliad. India: Ananas, cultivated extensively in Northeast India and Kerala.",
+      "species": [
+        {
+          "full_name": "Ananas comosus",
+          "common_name": "Pineapple / Ananas",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            "Smooth Cayenne",
+            "MD2 (Del Monte Gold)",
+            "Queen",
+            "Red Spanish",
+            "Kew",
+            "Sugarloaf",
+            "Mauritius",
+            "Kufri"
+          ]
+        },
+        {
+          "full_name": "Ananas bracteatus",
+          "common_name": "Red Pineapple",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ananas lucidus",
+          "common_name": "Curaua",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ananas ananassoides",
+          "common_name": "Wild Pineapple",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Ananas nanus",
+          "common_name": "Dwarf Pineapple",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Hechtia",
+      "common_name": "Hechtia (Terrestrial)",
+      "description": "70+ species of xerophytic bromeliads from Mexico. Dioecious — separate male and female plants.",
+      "species": [
+        {
+          "full_name": "Hechtia argentea",
+          "common_name": "Silver Hechtia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Hechtia glomerata",
+          "common_name": "Clustered Hechtia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Hechtia texensis",
+          "common_name": "Texas Hechtia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Hechtia podantha",
+          "common_name": "Stalked Hechtia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Hechtia stenopetala",
+          "common_name": "Narrow-petalled Hechtia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Hechtia montana",
+          "common_name": "Mountain Hechtia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Alcantarea",
+      "common_name": "Alcantarea Giant Bromeliads",
+      "description": "35 species of giant terrestrial/epilithic bromeliads from Brazil's rocky outcrops.",
+      "species": [
+        {
+          "full_name": "Alcantarea imperialis",
+          "common_name": "Imperial Bromeliad",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alcantarea odorata",
+          "common_name": "Fragrant Alcantarea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alcantarea nahoumii",
+          "common_name": "Nahoum's Alcantarea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alcantarea extensa",
+          "common_name": "Extended Alcantarea",
+          "conservation_status": "least_concern",
           "cultivars": []
         }
       ]
