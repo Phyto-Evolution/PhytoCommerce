@@ -1153,319 +1153,378 @@ footer {
 .nav-toggle.is-open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .nav-toggle.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ── TAXONOMY PAGE ───────────────────────────────── */
+/* ══════════════════════ TAXONOMY PAGE ══════════════════════ */
 
 /* Hero */
 .taxo-hero {
-  background: linear-gradient(135deg, var(--forest) 0%, #1f4d35 60%, #2d6645 100%);
-  padding: 3rem 2rem 2.5rem;
+  background: linear-gradient(160deg, #0c2218 0%, #183d28 55%, #0f2d1c 100%);
+  padding: 4rem 2rem 3rem;
 }
-.taxo-hero-inner {
+.taxo-hero-wrap {
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 2.5rem;
   flex-wrap: wrap;
 }
-.taxo-hero-text h1 {
-  font-size: clamp(1.6rem,4vw,2.4rem);
-  font-weight: 800;
-  color: #ffffff;
-  margin: 0 0 .6rem;
-  letter-spacing: -.02em;
+.taxo-hero-copy { flex: 1 1 320px; }
+.taxo-hero-h1 {
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.12;
+  letter-spacing: -.035em;
+  margin: 0 0 1rem;
 }
-.taxo-hero-text p {
-  font-size: 1rem;
-  color: rgba(255,255,255,.75);
-  max-width: 520px;
-  line-height: 1.6;
+.taxo-hero-sub {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,.6);
+  max-width: 480px;
+  line-height: 1.75;
   margin: 0;
-}
-.taxo-hero-text code {
-  background: rgba(255,255,255,.15);
-  color: #b8e8c8;
-  padding: .1rem .4rem;
-  border-radius: 4px;
-  font-size: .9em;
 }
 .taxo-hero-stats {
   display: flex;
-  gap: 1rem;
+  gap: .75rem;
   flex-wrap: wrap;
-  margin-top: .5rem;
+  align-items: flex-start;
+  flex-shrink: 0;
 }
 .taxo-stat {
-  background: rgba(255,255,255,.1);
-  border: 1px solid rgba(255,255,255,.2);
-  border-radius: 10px;
-  padding: .75rem 1.25rem;
-  text-align: center;
-  min-width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 12px;
+  padding: 1rem 1.35rem;
+  min-width: 88px;
 }
-.taxo-stat-num  { font-size: 1.7rem; font-weight: 800; color: #9febb5; line-height: 1; }
-.taxo-stat-label { font-size: .7rem; color: rgba(255,255,255,.6); text-transform: uppercase; letter-spacing: .1em; margin-top: .3rem; }
-
-/* Two-column layout */
-.taxo-layout {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 2rem;
-  align-items: start;
+.taxo-stat-n {
+  font-size: 1.9rem;
+  font-weight: 900;
+  color: #6ee7a0;
+  line-height: 1;
+  letter-spacing: -.04em;
 }
-
-/* Main content column */
-.taxo-main { min-width: 0; }
-
-/* Sticky sidebar */
-.taxo-sidebar { position: sticky; top: 5rem; }
-.taxo-sidebar-inner {
-  background: var(--white);
-  border: 1px solid var(--cream-dark);
-  border-radius: var(--radius);
-  padding: 1rem 0;
-  box-shadow: var(--shadow);
-}
-.taxo-sidebar-title {
-  font-size: .7rem;
-  font-weight: 800;
+.taxo-stat-l {
+  font-size: .67rem;
+  color: rgba(255,255,255,.45);
   text-transform: uppercase;
   letter-spacing: .1em;
-  color: var(--muted);
-  padding: 0 1.1rem .65rem;
-  border-bottom: 1px solid var(--cream-dark);
-  margin-bottom: .4rem;
+  margin-top: .4rem;
+  white-space: nowrap;
 }
-.taxo-side-link {
+
+/* Sticky nav strip */
+.taxo-nav-strip {
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 1px 4px rgba(0,0,0,.07);
+}
+.taxo-nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: .6rem 1.5rem;
   display: flex;
   align-items: center;
-  gap: .5rem;
-  padding: .45rem 1.1rem;
-  font-size: .88rem;
-  font-weight: 600;
-  color: var(--forest-mid);
-  text-decoration: none;
-  transition: background .12s, color .12s;
+  gap: 1rem;
 }
-.taxo-side-link:hover { background: var(--sage-pale); color: var(--forest); }
-
-/* Top pill bar (mobile) */
-.taxo-pills-bar {
-  display: none;
-  flex-wrap: wrap;
-  gap: .4rem;
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--cream-dark);
+.taxo-nav-pills {
+  display: flex;
+  gap: .35rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  flex: 1;
+  min-width: 0;
 }
-.taxo-pill-nav {
+.taxo-nav-pills::-webkit-scrollbar { display: none; }
+.taxo-nav-pill {
   display: inline-flex;
   align-items: center;
-  gap: .3rem;
-  padding: .38rem .85rem;
+  gap: .28rem;
+  white-space: nowrap;
+  padding: .32rem .78rem;
   border-radius: 20px;
-  background: var(--cream);
-  border: 1px solid #c5d8ca;
-  font-size: .82rem;
+  font-size: .79rem;
   font-weight: 700;
-  color: var(--forest);
+  color: var(--cat-c, #374151);
+  border: 1.5px solid var(--cat-c, #374151);
   text-decoration: none;
-  transition: background .12s;
+  opacity: .65;
+  transition: background .14s, opacity .14s, color .14s;
 }
-.taxo-pill-nav:hover { background: var(--sage-pale); }
+.taxo-nav-pill:hover { background: var(--cat-c, #374151); color: #fff; opacity: 1; }
+.taxo-pill-skel {
+  display: inline-block;
+  width: 88px;
+  height: 28px;
+  border-radius: 20px;
+  background: #e5e7eb;
+  flex-shrink: 0;
+  animation: taxo-shimmer 1.4s ease-in-out infinite;
+}
 
-.taxo-loading-msg {
+/* Search input */
+.taxo-search-wrap { position: relative; flex-shrink: 0; }
+.taxo-search-ico {
+  position: absolute;
+  left: .6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  color: #9ca3af;
+  pointer-events: none;
+}
+.taxo-search {
+  padding: .38rem .75rem .38rem 2rem;
+  font-size: .84rem;
+  font-family: inherit;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  width: 210px;
+  outline: none;
+  color: #111827;
+  background: #f9fafb;
+  transition: border-color .15s;
+}
+.taxo-search:focus { border-color: #1a3c2b; background: #fff; }
+
+/* Page body */
+.taxo-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 5rem;
+}
+
+/* Loading skeleton */
+.taxo-skeleton { display: flex; flex-direction: column; gap: 2.5rem; }
+.taxo-skel-section {}
+.taxo-skel-hdr {
+  height: 46px;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(90deg, #d1d5db 0%, #e5e7eb 50%, #d1d5db 100%);
+  background-size: 200% 100%;
+  animation: taxo-shimmer 1.4s ease-in-out infinite;
+}
+.taxo-skel-card {
+  height: 100px;
+  background: linear-gradient(90deg, #f3f4f6 0%, #e9ebee 50%, #f3f4f6 100%);
+  background-size: 200% 100%;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+  margin-bottom: .5rem;
+  animation: taxo-shimmer 1.4s ease-in-out infinite;
+}
+.taxo-skel-card:last-child { border-radius: 0 0 10px 10px; margin-bottom: 0; }
+
+@keyframes taxo-shimmer {
+  0%   { background-position: 200% 0; opacity: 1; }
+  50%  { background-position: 0% 0;   opacity: .7; }
+  100% { background-position: 200% 0; opacity: 1; }
+}
+
+.taxo-error {
   text-align: center;
   padding: 4rem 2rem;
-  color: var(--muted);
+  color: #6b7280;
   font-size: 1rem;
+  line-height: 1.8;
 }
+.taxo-error a { color: var(--forest); font-weight: 600; }
 
-/* Category section */
-.taxo-cat-section { margin-bottom: 3rem; scroll-margin-top: 5.5rem; }
-.taxo-cat-header {
+/* ── Category section ── */
+.tx-cat { margin-bottom: 3.5rem; scroll-margin-top: 58px; }
+.tx-cat-hdr {
   display: flex;
   align-items: center;
-  gap: .75rem;
-  padding: .85rem 1.2rem;
-  background: var(--forest);
-  border-radius: var(--radius) var(--radius) 0 0;
-  margin-bottom: 0;
+  gap: .8rem;
+  padding: .9rem 1.2rem;
+  border-radius: 10px 10px 0 0;
 }
-.taxo-cat-emoji { font-size: 1.3rem; line-height: 1; }
-.taxo-cat-name  { font-size: 1.1rem; font-weight: 800; color: #ffffff; flex: 1; }
-.taxo-cat-badge {
-  font-size: .72rem;
+.tx-cat-icon { font-size: 1.35rem; line-height: 1; }
+.tx-cat-name { font-size: 1.08rem; font-weight: 800; color: #fff; flex: 1; letter-spacing: -.01em; }
+.tx-cat-badge {
+  font-size: .7rem;
   font-weight: 700;
-  color: rgba(255,255,255,.7);
-  background: rgba(255,255,255,.12);
-  border: 1px solid rgba(255,255,255,.2);
-  padding: .2rem .65rem;
+  color: rgba(255,255,255,.65);
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.18);
+  padding: .18rem .6rem;
   border-radius: 20px;
 }
 
-/* Pack card */
-.taxo-pack-card {
-  background: var(--white);
-  border: 1px solid #ccd9ce;
+/* ── Pack cards ── */
+.tx-packs {
+  border: 1px solid #e5e7eb;
   border-top: none;
-  margin-bottom: 1px;
+  border-radius: 0 0 10px 10px;
   overflow: hidden;
+  background: #fff;
 }
-.taxo-cat-section > .taxo-pack-card:last-child {
-  border-radius: 0 0 var(--radius) var(--radius);
-  margin-bottom: 0;
-}
-.taxo-pack-head {
+.tx-pack { border-bottom: 1px solid #f0f0f0; }
+.tx-pack:last-child { border-bottom: none; }
+.tx-pack-hd {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
   flex-wrap: wrap;
-  padding: 1rem 1.25rem .85rem;
-  background: #f4f8f5;
-  border-bottom: 1px solid #d5e3d8;
+  padding: 1rem 1.2rem .9rem;
+  background: #fafafa;
+  border-bottom: 1px solid #f0f0f0;
+  border-left: 4px solid;
 }
-.taxo-pack-family {
-  font-family: 'Fira Mono', 'Courier New', monospace;
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--forest);
+.tx-pack-meta { flex: 1 1 auto; min-width: 0; }
+.tx-pack-fam {
+  font-family: 'Georgia', 'Times New Roman', serif;
   font-style: italic;
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.3;
 }
-.taxo-pack-common {
+.tx-pack-com {
   font-size: .88rem;
-  color: #3d5445;
-  font-weight: 600;
+  color: #6b7280;
   margin-top: .2rem;
 }
-.taxo-pack-counts { display: flex; gap: .35rem; flex-wrap: wrap; align-items: center; }
-
-/* Pill badges */
-.taxo-pill {
-  display: inline-block;
-  font-size: .68rem;
-  font-weight: 700;
-  padding: .15rem .5rem;
+.tx-pack-pills { display: flex; gap: .35rem; flex-wrap: wrap; align-items: center; flex-shrink: 0; }
+.tx-pill {
+  font-size: .67rem;
+  font-weight: 800;
+  padding: .16rem .52rem;
   border-radius: 20px;
   text-transform: uppercase;
   letter-spacing: .04em;
+  border: 1px solid;
+  white-space: nowrap;
 }
-.taxo-pill--green  { color: #166534; background: #dcfce7; border: 1px solid #86efac; }
-.taxo-pill--blue   { color: #1e40af; background: #dbeafe; border: 1px solid #93c5fd; }
-.taxo-pill--purple { color: #6b21a8; background: #f3e8ff; border: 1px solid #d8b4fe; }
+.tx-pill--g { color: #166534; background: #dcfce7; border-color: #86efac; }
+.tx-pill--b { color: #1d4ed8; background: #dbeafe; border-color: #93c5fd; }
+.tx-pill--p { color: #6b21a8; background: #f3e8ff; border-color: #d8b4fe; }
 
-.taxo-pack-desc {
-  font-size: .9rem;
-  color: #253d2d;
-  line-height: 1.7;
-  padding: .85rem 1.25rem;
+.tx-pack-desc {
+  font-size: .91rem;
+  color: #4b5563;
+  line-height: 1.75;
+  padding: .85rem 1.2rem;
   margin: 0;
-  border-bottom: 1px solid #dce8de;
+  border-bottom: 1px solid #f5f5f5;
+  border-left: 4px solid transparent;
 }
 
-/* Genera wrapper */
-.taxo-genera-wrap { padding: .65rem .9rem .8rem; }
-
-/* Genus accordion block */
-.taxo-genus-block {
-  border: 1px solid #d0ddd2;
-  border-radius: 6px;
-  margin-bottom: .4rem;
+/* ── Genera ── */
+.tx-genera {
+  padding: .55rem .7rem .7rem;
+  display: flex;
+  flex-direction: column;
+  gap: .28rem;
+  background: #fdfefe;
+}
+.tx-genus {
+  border: 1px solid #e5e7eb;
+  border-radius: 7px;
   overflow: hidden;
 }
-.taxo-genus-toggle {
+.tx-genus-btn {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: .65rem .95rem;
-  cursor: pointer;
-  background: #f0f5f1;
+  gap: .55rem;
+  padding: .58rem .85rem;
+  background: #f9fafb;
   border: none;
-  text-align: left;
+  cursor: pointer;
   font-family: inherit;
+  text-align: left;
   transition: background .12s;
 }
-.taxo-genus-toggle:hover { background: #e6f0e9; }
-.taxo-genus-label { display: flex; align-items: baseline; gap: .6rem; flex: 1; min-width: 0; }
-.taxo-genus-sci {
+.tx-genus-btn:hover { background: #f3f4f6; }
+.tx-genus.open .tx-genus-btn { background: #f0f2f4; }
+.tx-genus-sci {
   font-style: italic;
-  font-weight: 800;
-  font-size: .98rem;
-  color: var(--forest);
+  font-weight: 700;
+  font-size: .95rem;
+  color: #111827;
   white-space: nowrap;
+  flex-shrink: 0;
 }
-.taxo-genus-com {
+.tx-genus-com {
   font-size: .82rem;
-  color: #4a6350;
-  font-weight: 500;
+  color: #9ca3af;
+  flex: 1;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.taxo-genus-meta { display: flex; align-items: center; gap: .5rem; flex-shrink: 0; }
-.taxo-genus-count {
-  font-size: .73rem;
-  font-weight: 700;
-  color: var(--forest-mid);
-  background: white;
-  border: 1px solid #a8c4ac;
+.tx-genus-cnt {
+  font-size: .71rem;
+  font-weight: 800;
   padding: .1rem .45rem;
   border-radius: 20px;
-}
-.taxo-chevron-icon {
-  width: 16px; height: 16px;
-  color: var(--sage);
-  transition: transform .2s;
   flex-shrink: 0;
 }
-.taxo-genus-block.open .taxo-chevron-icon { transform: rotate(180deg); }
-.taxo-genus-block.open .taxo-genus-toggle { background: #e6f0e9; }
+.tx-chev {
+  width: 15px;
+  height: 15px;
+  color: #9ca3af;
+  transition: transform .22s ease;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+.tx-genus.open .tx-chev { transform: rotate(180deg); }
 
-/* Species list */
-.taxo-sp-list {
-  display: none;
+/* Species list — smooth height accordion */
+.tx-sp-list {
   list-style: none;
   margin: 0;
-  padding: .4rem .95rem .7rem 1.2rem;
-  background: #ffffff;
-  border-top: 1px solid #d0ddd2;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .3s ease;
+  background: #fff;
+  border-top: 0 solid #e5e7eb;
 }
-.taxo-genus-block.open .taxo-sp-list { display: block; }
-.taxo-sp {
+.tx-genus.open .tx-sp-list {
+  max-height: 9999px;
+  border-top-width: 1px;
+}
+.tx-sp {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
-  gap: .35rem;
-  padding: .32rem 0;
-  border-bottom: 1px solid #edf2ee;
+  gap: .28rem;
+  padding: .3rem .9rem .3rem 1.05rem;
+  border-bottom: 1px solid #f9fafb;
+  font-size: .87rem;
 }
-.taxo-sp:last-child { border-bottom: none; }
-.taxo-sp::before { content: ''; display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: var(--sage); margin-right: .2rem; flex-shrink: 0; align-self: center; }
-.taxo-sp-name   { font-style: italic; font-weight: 600; font-size: .93rem; color: #17402a; }
-.taxo-sp-common { font-size: .82rem; color: #3d5642; }
-.taxo-cv-pill {
+.tx-sp:last-child { border-bottom: none; }
+.tx-sp-sci { font-style: italic; font-weight: 600; color: #1f2937; }
+.tx-sp-com { color: #6b7280; font-size: .83rem; }
+.tx-sp-cvs {
   font-size: .7rem;
   font-weight: 700;
-  color: #6b21a8;
-  background: #f3e8ff;
+  color: #6d28d9;
+  background: #f5f3ff;
   border: 1px solid #c4b5fd;
-  padding: .05rem .38rem;
+  padding: .04rem .38rem;
   border-radius: 20px;
 }
-.taxo-status-badge {
-  font-size: .68rem;
-  font-weight: 700;
+.tx-status {
+  font-size: .64rem;
+  font-weight: 800;
   padding: .05rem .38rem;
   border-radius: 20px;
   border: 1px solid;
   text-transform: uppercase;
-  letter-spacing: .04em;
+  letter-spacing: .05em;
 }
 
 /* ── RESPONSIVE ──────────────────────────────────── */
@@ -1482,10 +1541,14 @@ footer {
   .footer-grid        { grid-template-columns: 1fr 1fr; gap: 2rem; }
   .footer-seg--brand  { grid-column: 1 / -1; }
   .module-hero h1     { font-size: 1.4rem; }
-  /* taxonomy sidebar collapses */
-  .taxo-layout        { grid-template-columns: 1fr; padding: 1.5rem 1.25rem; }
-  .taxo-sidebar       { display: none; }
-  .taxo-pills-bar     { display: flex; }
+  /* taxonomy responsive */
+  .taxo-hero          { padding: 2.5rem 1.25rem 2rem; }
+  .taxo-hero-wrap     { gap: 1.75rem; }
+  .taxo-nav-inner     { flex-wrap: wrap; }
+  .taxo-search-wrap   { width: 100%; }
+  .taxo-search        { width: 100%; }
+  .taxo-page          { padding: 1.75rem 1.25rem 3rem; }
+  .tx-pack-hd         { flex-direction: column; gap: .6rem; }
 }
 
 /* Mobile — 640px */
