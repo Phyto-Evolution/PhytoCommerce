@@ -228,7 +228,7 @@ class Phyto_Care_Card extends Module
             'phyto_care_ajax_url' => $ajaxUrl,
             'phyto_care_id_product' => $idProduct,
             'phyto_care_pdf_preview_url' => $pdfPreviewUrl,
-            'phyto_care_csrf_token' => Tools::getToken(false),
+            'phyto_care_csrf_token' => Tools::getAdminTokenLite('AdminPhytoCareCard'),
             'phyto_light_options' => [
                 '' => $this->l('-- Select --'),
                 'Full sun' => $this->l('Full sun'),

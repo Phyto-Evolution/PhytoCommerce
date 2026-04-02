@@ -148,73 +148,112 @@ jQuery(function ($) {
 		$btn.prop('disabled', true);
 		status.text('Fetching taxonomy index from GitHub…');
 		$.ajax({
-			url:     ajaxurl,
-			type:    'POST',
-			timeout: 90000,
-			data:    { action: 'phyto_qa_fetch_taxonomy', nonce: nonce },
+			url:      ajaxurl,
+			type:     'POST',
+			dataType: 'json',
+			timeout:  90000,
+			data:     { action: 'phyto_qa_fetch_taxonomy', nonce: nonce },
 			success: function (r) {
 				$btn.prop('disabled', false);
-				if ( ! r.success ) { status.text('Error: ' + r.data); return; }
-				var total = r.data.total_packs || 0;
-				var cats  = (r.data.categories || []).length;
+				if ( ! r || ! r.success ) {
+					status.text('Error: ' + ( r && r.data ? r.data : 'Unexpected server response' ));
+					return;
+				}
+				var index = r.data;
+				if ( ! index || typeof index !== 'object' ) {
+					status.text('Error: response data is not an object.');
+					return;
+				}
+				var total = index.total_packs || 0;
+				var cats  = Array.isArray(index.categories) ? index.categories.length : 0;
 				status.text('Loaded ' + total + ' packs across ' + cats + ' categories.');
-				renderPackGrid(r.data);
+				try {
+					renderPackGrid(index);
+				} catch (e) {
+					status.text('Render error: ' + e.message);
+				}
 			},
-			error: function (xhr, type) {
+			error: function (xhr, type, err) {
 				$btn.prop('disabled', false);
-				status.text(type === 'timeout' ? 'Timed out — check your server can reach GitHub.' : 'Request failed.');
+				if ( type === 'timeout' ) {
+					status.text('Timed out — check your server can reach GitHub.');
+				} else if ( type === 'parsererror' ) {
+					status.text('JSON parse error — your server may be outputting PHP notices. Enable WP_DEBUG_LOG and disable WP_DEBUG_DISPLAY.');
+				} else {
+					status.text('Request failed: ' + ( err || type ));
+				}
 			},
 		});
 	});
 
 	function renderPackGrid(index) {
-		var $grid = $('#qa-taxonomy-packs').empty();
-		if ( ! index.categories || ! index.categories.length ) {
+		var $grid     = $('#qa-taxonomy-packs').empty();
+		var $warnings = $grid.prev('.phyto-qa-warnings');
+		if ( $warnings.length ) { $warnings.remove(); }
+
+		var categories = Array.isArray(index.categories) ? index.categories : [];
+		if ( ! categories.length ) {
 			$grid.text('No categories found.');
 			return;
 		}
-		if ( index.warnings && index.warnings.length ) {
-			$grid.before('<p style="color:#c00">Warning: ' + escHtml(index.warnings.join('; ')) + '</p>');
+
+		if ( Array.isArray(index.warnings) && index.warnings.length ) {
+			$('<p class="phyto-qa-warnings" style="color:#c00">Warning: ' + escHtml(index.warnings.join('; ')) + '</p>')
+				.insertBefore($grid);
 		}
-		index.categories.forEach(function (cat) {
-			if ( ! cat.packs || ! cat.packs.length ) return;
 
-			var $heading = $('<h4 style="width:100%;margin:12px 0 4px;color:#2d7a54">').text(cat.name);
-			$grid.append($heading);
+		categories.forEach(function (cat) {
+			var packs = Array.isArray(cat.packs) ? cat.packs : [];
+			if ( ! packs.length ) return;
 
-			cat.packs.forEach(function (pack) {
-				var $card = $('<div class="phyto-qa-pack-card">');
-				$card.append('<h4>' + escHtml(pack.name || pack.id) + '</h4>');
-				var meta = cat.name;
-				if (pack.genera_count) { meta += ' · ' + pack.genera_count + ' genera'; }
+			$grid.append(
+				$('<h4 style="width:100%;margin:12px 0 4px;color:#2d7a54">').text(cat.name || cat.id || 'Category')
+			);
+
+			packs.forEach(function (pack) {
+				var $card   = $('<div class="phyto-qa-pack-card">');
+				var $result = $('<div>');
+				var packFile = pack.file || '';
+				var packName = pack.name || pack.id || 'Unknown pack';
+				var meta     = (cat.name || '') + (pack.genera_count ? ' · ' + pack.genera_count + ' genera' : '');
+
+				$card.append('<h4>' + escHtml(packName) + '</h4>');
 				$card.append('<div class="pack-meta">' + escHtml(meta) + '</div>');
 
-				var $btn = $('<button class="button button-secondary">Import as WC Categories</button>');
-				var $result = $('<div>');
-				$btn.on('click', function () {
-					$btn.prop('disabled', true).text('Importing…');
+				var $importBtn = $('<button class="button button-secondary">Import as WC Categories</button>');
+				$importBtn.on('click', function () {
+					$importBtn.prop('disabled', true).text('Importing…');
 					$result.removeClass('pack-result pack-error').text('');
-					$.post(ajaxurl, {
-						action: 'phyto_qa_import_pack',
-						nonce:  nonce,
-						path:   pack.file || '',
-					}, function (r) {
-						$btn.prop('disabled', false).text('Import as WC Categories');
-						if (r.success) {
-							$result.addClass('pack-result').text(
-								'✓ ' + r.data.imported + ' genera imported' +
-								(r.data.skipped ? ', ' + r.data.skipped + ' skipped' : '') +
-								(r.data.errors && r.data.errors.length ? ' (' + r.data.errors.length + ' errors)' : '')
-							);
-						} else {
-							$result.addClass('pack-error').text('Error: ' + escHtml(r.data));
-						}
-					}).fail(function () {
-						$btn.prop('disabled', false).text('Import as WC Categories');
-						$result.addClass('pack-error').text('Request failed.');
+					$.ajax({
+						url:      ajaxurl,
+						type:     'POST',
+						dataType: 'json',
+						data: {
+							action: 'phyto_qa_import_pack',
+							nonce:  nonce,
+							path:   packFile,
+						},
+						success: function (r) {
+							$importBtn.prop('disabled', false).text('Import as WC Categories');
+							if ( r && r.success ) {
+								var d       = r.data || {};
+								var errs    = Array.isArray(d.errors) ? d.errors.length : 0;
+								$result.addClass('pack-result').text(
+									'✓ ' + (d.imported || 0) + ' genera imported' +
+									(d.skipped ? ', ' + d.skipped + ' skipped' : '') +
+									(errs ? ' (' + errs + ' errors)' : '')
+								);
+							} else {
+								$result.addClass('pack-error').text('Error: ' + escHtml( r && r.data ? String(r.data) : 'Unknown error' ));
+							}
+						},
+						error: function (xhr, type, err) {
+							$importBtn.prop('disabled', false).text('Import as WC Categories');
+							$result.addClass('pack-error').text('Request failed: ' + (err || type));
+						},
 					});
 				});
-				$card.append($btn).append($result);
+				$card.append($importBtn).append($result);
 				$grid.append($card);
 			});
 		});
