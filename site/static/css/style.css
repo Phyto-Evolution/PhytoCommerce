@@ -711,7 +711,6 @@ footer {
   margin-bottom: 3rem;
 }
 .origin-story-avatar {
-  font-size: 3rem;
   flex-shrink: 0;
   width: 64px;
   height: 64px;
@@ -721,6 +720,14 @@ footer {
   align-items: center;
   justify-content: center;
   line-height: 1;
+  overflow: hidden;
+}
+.origin-story-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
 }
 .origin-story-heading {
   font-size: 1.1rem;
@@ -748,7 +755,7 @@ footer {
 .origin-story-sig a:hover { color: var(--amber); }
 @media (max-width: 640px) {
   .origin-story { flex-direction: column; gap: 1.25rem; padding: 1.5rem 1.25rem; }
-  .origin-story-avatar { width: 48px; height: 48px; font-size: 2rem; }
+  .origin-story-avatar { width: 48px; height: 48px; }
 }
 
 /* ── WHAT IS PHYTOCOMMERCE SECTION ──────────────────── */
