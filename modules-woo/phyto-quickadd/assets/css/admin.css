@@ -1,0 +1,24 @@
+.phyto-qa-wrap { max-width: 1200px; }
+.phyto-qa-tab-content { padding: 20px 0; }
+.phyto-qa-table td input.regular-text,
+.phyto-qa-table td textarea.large-text { width: 100%; max-width: 600px; }
+.phyto-qa-table th { width: 180px; vertical-align: top; padding-top: 12px; }
+.phyto-qa-actions { margin-top: 20px; display: flex; align-items: center; gap: 10px; }
+.phyto-qa-actions .description { color: #555; }
+
+/* Image preview */
+.phyto-qa-image-preview { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.phyto-qa-image-preview img { width: 80px; height: 80px; object-fit: cover; border-radius: 4px; border: 2px solid #ddd; cursor: pointer; }
+.phyto-qa-image-preview img:hover { border-color: #c00; }
+
+/* AI settings */
+.phyto-qa-ai-settings table.form-table th { width: 180px; }
+
+/* Taxonomy pack grid */
+.phyto-qa-pack-grid { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 16px; }
+.phyto-qa-pack-card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 14px 18px; min-width: 220px; max-width: 260px; flex: 1; }
+.phyto-qa-pack-card h4 { margin: 0 0 6px; font-size: .95em; }
+.phyto-qa-pack-card .pack-meta { color: #777; font-size: .82em; margin-bottom: 10px; }
+.phyto-qa-pack-card button { width: 100%; }
+.phyto-qa-pack-card .pack-result { font-size: .82em; margin-top: 6px; color: #2d7a54; }
+.phyto-qa-pack-card .pack-error { color: #c00; font-size: .82em; margin-top: 6px; }

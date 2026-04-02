@@ -1,0 +1,13 @@
+.phyto-tc-wrap { display:flex; gap:24px; align-items:flex-start; }
+.phyto-tc-calc-panel { flex:0 0 480px; background:#fff; border:1px solid #ddd; border-radius:6px; padding:20px; }
+.phyto-tc-saved-panel { flex:1; }
+.phyto-tc-field { margin-bottom:12px; }
+.phyto-tc-field label { display:block; font-weight:600; margin-bottom:4px; }
+.phyto-tc-field input[type="number"],
+.phyto-tc-field input[type="text"] { width:100%; max-width:320px; }
+.phyto-tc-field input[type="range"] { width:100%; max-width:320px; vertical-align:middle; }
+.phyto-tc-results { width:100%; border-collapse:collapse; margin-top:8px; }
+.phyto-tc-results th { text-align:left; padding:5px 8px; font-weight:400; color:#555; width:60%; }
+.phyto-tc-results td { padding:5px 8px; font-weight:600; }
+.phyto-tc-total th, .phyto-tc-total td { background:#f0f0f0; font-weight:700; }
+.phyto-tc-target td { color:#2d7a54; font-size:1.1em; }

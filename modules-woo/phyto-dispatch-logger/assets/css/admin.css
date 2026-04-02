@@ -1,0 +1,11 @@
+.phyto-dl-metabox { padding: 4px 0; }
+.phyto-dl-row { margin-bottom: 12px; }
+.phyto-dl-row label { display: block; font-weight: 600; margin-bottom: 4px; color: #1d2327; }
+.phyto-dl-row input[type="text"],
+.phyto-dl-row input[type="number"],
+.phyto-dl-row input[type="date"],
+.phyto-dl-row textarea { width: 100%; max-width: 480px; }
+.phyto-dl-row--two { display: flex; gap: 16px; }
+.phyto-dl-row--two > div { flex: 1; }
+.phyto-dl-row--checks { display: flex; gap: 24px; }
+.phyto-dl-row--checks label { display: flex; align-items: center; gap: 6px; font-weight: 400; cursor: pointer; }

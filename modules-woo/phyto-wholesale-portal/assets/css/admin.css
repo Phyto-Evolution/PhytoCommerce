@@ -1,0 +1,6 @@
+.phyto-ws-table th { font-weight: 600; }
+.phyto-ws-status-pending  { color: #e6a817; font-weight: 600; }
+.phyto-ws-status-approved { color: #2d7a54; font-weight: 600; }
+.phyto-ws-status-rejected { color: #c00;    font-weight: 600; }
+.phyto-ws-notes-row td { font-style: italic; color: #666; padding-top: 0 !important; }
+.phyto-ws-table .button { margin-right: 4px; }

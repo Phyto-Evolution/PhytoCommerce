@@ -1,0 +1,7 @@
+.phyto-dl-card { border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px 24px; margin: 24px 0; background: #fafafa; }
+.phyto-dl-card__title { font-size: 1.1em; margin: 0 0 14px; padding: 0; border: none; }
+.phyto-dl-card__table { width: 100%; border-collapse: collapse; }
+.phyto-dl-card__table th { text-align: left; font-weight: 600; padding: 6px 12px 6px 0; width: 40%; color: #555; vertical-align: top; }
+.phyto-dl-card__table td { padding: 6px 0; color: #1d2327; }
+.phyto-dl-card__photo { margin-top: 14px; }
+.phyto-dl-card__photo img { max-width: 280px; border-radius: 6px; border: 1px solid #ddd; }

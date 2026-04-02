@@ -2,7 +2,7 @@
 
 A PrestaShop 8 module suite for specialty plant e-commerce — designed around the operational needs of tissue-culture producers, nurseries, and rare plant retailers. Covers TC batch provenance, phytosanitary compliance, wholesale portals, recurring subscriptions, scientific taxonomy, customer grow journals, image protection, and more.
 
-> **Last updated:** 2026-03-31 (phyto_invoice_customizer · phyto_restock_alert · phyto_bundle_builder · phyto_loyalty · phyto-grex-registry · phyto-growth-stage · phyto-source-badge · phyto-seasonal-availability · phyto-care-card · phyto-tc-batch-tracker · phyto-climate-zone · phyto-loyalty [WooCommerce — 10/10 complete])
+> **Last updated:** 2026-04-02 (WooCommerce suite complete — 19 plugins: phyto-dispatch-logger · phyto-invoice-customizer · phyto-seo-booster · phyto-collection-widget · phyto-tc-cost-calculator · phyto-acclimation-bundler · phyto-quickadd · phyto-wholesale-portal · phyto-bundle-builder)
 > Session logs: [`docs/CHECKPOINT.md`](docs/CHECKPOINT.md) · [`docs/ACTIVITY_LOG.md`](docs/ACTIVITY_LOG.md)
 
 ---
@@ -710,7 +710,7 @@ docker cp modules/phyto_grex_registry ps-test:/var/www/html/modules/
 
 WooCommerce ports of the PhytoCommerce module suite. Same plant-specialised features, built for WordPress/WooCommerce stores.
 
-> **WooCommerce Plugins Built: 10 — all WooCommerce ports complete**
+> **WooCommerce Plugins Built: 19 — full suite complete**
 
 ### Plant Science
 
@@ -723,24 +723,38 @@ WooCommerce ports of the PhytoCommerce module suite. Same plant-specialised feat
 | [`phyto-tc-batch-tracker`](modules-woo/phyto-tc-batch-tracker/) | Link WooCommerce products to tissue-culture batch records — track batch code, donor clone, agar medium, deflask date, and lab operator; displays a "Batch Provenance" tab on the product page with colour-coded status badges. | 1.0.0 |
 | [`phyto-climate-zone`](modules-woo/phyto-climate-zone/) | Tag products with India climate-zone suitability (7 zones from coastal humid to temperate north) — suitability pill badges on shop listings and a dedicated "Climate Suitability" tab on single product pages. | 1.0.0 |
 | [`phyto-live-arrival`](modules-woo/phyto-live-arrival/) | Per-product Live Arrival Guarantee system — configurable claim window, replacement/refund/store-credit policy, required checkout opt-in, admin claim logging with resolution status, and automatic email policy reminders. | 1.0.0 |
+| [`phyto-acclimation-bundler`](modules-woo/phyto-acclimation-bundler/) | Dismissable cart widget auto-suggesting acclimation accessories when a tissue-culture or deflasked plant is in the cart — configurable trigger tags/growth-stages, kit products, optional bundle discount applied as a cart fee. | 1.0.0 |
 
 ### Notifications
 
 | Plugin | Description | Version |
 |--------|-------------|---------|
 | [`phyto-restock-alert`](modules-woo/phyto-restock-alert/) | "Notify me when available" subscriber system for out-of-stock products — email subscribe form on the product page, auto-notification on stock restore or re-publish, admin meta box with bulk notify, individual delete, and CSV export. | 1.0.0 |
+| [`phyto-dispatch-logger`](modules-woo/phyto-dispatch-logger/) | Per-order dispatch record — temperature, humidity, live-plant conditions, packing photos; displayed as a card on the customer order page and managed via an admin meta box with CSV export. | 1.0.0 |
 
 ### Customer & Community
 
 | Plugin | Description | Version |
 |--------|-------------|---------|
 | [`phyto-source-badge`](modules-woo/phyto-source-badge/) | Create sourcing-origin badges (Tissue Culture, Wild Collected, Conservation Propagation, etc.) and display them on WooCommerce product listings and product pages. | 1.0.0 |
+| [`phyto-collection-widget`](modules-woo/phyto-collection-widget/) | Auto-builds a per-customer plant collection on order completion; My Account "My Collection" tab with care notes, acquisition date, and public/private sharing toggle; admin overview list. | 1.0.0 |
 
 ### Commerce
 
 | Plugin | Description | Version |
 |--------|-------------|---------|
 | [`phyto-loyalty`](modules-woo/phyto-loyalty/) | Points-based loyalty programme — customers earn Green Points on completed purchases and redeem them as cart discounts; full ledger per customer, admin manual adjustments, configurable earn/redeem rates. | 1.0.0 |
+| [`phyto-invoice-customizer`](modules-woo/phyto-invoice-customizer/) | Branded order confirmation emails with Live Arrival Guarantee clause, TC batch provenance reference, and phytosanitary certificate number; customisable footer note. | 1.0.0 |
+| [`phyto-wholesale-portal`](modules-woo/phyto-wholesale-portal/) | B2B wholesale application flow with admin approval, `phyto_wholesale` user role, per-product MOQ and tiered pricing, and a My Account Wholesale tab. Shortcode: `[phyto_wholesale_apply]`. | 1.0.0 |
+| [`phyto-bundle-builder`](modules-woo/phyto-bundle-builder/) | Named bundle templates with configurable slots; customer-facing builder page with live pricing and real-time search; automatic bundle discount fee at checkout. Shortcode: `[phyto_bundle id="N"]`. | 1.0.0 |
+
+### Admin & Operations
+
+| Plugin | Description | Version |
+|--------|-------------|---------|
+| [`phyto-seo-booster`](modules-woo/phyto-seo-booster/) | JSON-LD Product schema injection on product pages; AI-powered meta title/description generation (Claude); per-product SEO audit scoring six criteria; bulk audit runner from Tools. | 1.0.0 |
+| [`phyto-tc-cost-calculator`](modules-woo/phyto-tc-cost-calculator/) | Admin tissue-culture cost estimator — substrate, overhead, and labour inputs yield cost-per-plant and retail pricing at configurable margins; save/load/export named estimates. | 1.0.0 |
+| [`phyto-quickadd`](modules-woo/phyto-quickadd/) | Rapid product creation form with AI description generation (Claude/OpenAI/Gemini/Mistral/Cohere), multi-provider API settings, and one-click PhytoCommerce taxonomy pack importer from GitHub. | 1.0.0 |
 
 ---
 
