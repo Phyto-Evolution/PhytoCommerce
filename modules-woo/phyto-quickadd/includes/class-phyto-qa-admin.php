@@ -337,6 +337,9 @@ class Phyto_QA_Admin {
 			wp_send_json_error( 'Permission denied.' );
 		}
 
+		// Fetching the index requires N+1 HTTP requests (1 top + 1 per category).
+		@set_time_limit( 120 );
+
 		$index = Phyto_QA_Taxonomy::fetch_index();
 		if ( is_wp_error( $index ) ) {
 			wp_send_json_error( $index->get_error_message() );

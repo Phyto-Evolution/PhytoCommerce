@@ -9,49 +9,103 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 class Phyto_QA_Taxonomy {
 
-	const INDEX_URL = 'https://raw.githubusercontent.com/kshivaramakrishnan/PhytoCommerce/main/taxonomy/index.json';
+	const BASE_RAW = 'https://raw.githubusercontent.com/Phyto-Evolution/PhytoCommerce/main/';
+	const INDEX_PATH = 'taxonomy/index.json';
 
 	/**
-	 * Fetch the taxonomy index from GitHub.
+	 * Fetch the full taxonomy index from GitHub, expanding each category to
+	 * include its pack list by fetching the per-category sub-index.
+	 *
+	 * Returns an array shaped like:
+	 *   [
+	 *     'categories' => [
+	 *       [ 'id', 'name', 'packs' => [ [ 'id', 'name', 'file', 'genera_count' ], ... ] ],
+	 *       ...
+	 *     ],
+	 *     'total_packs' => int,
+	 *   ]
 	 *
 	 * @return array|WP_Error
 	 */
 	public static function fetch_index() {
-		$response = wp_remote_get( self::INDEX_URL, array( 'timeout' => 20 ) );
-		if ( is_wp_error( $response ) ) { return $response; }
+		// Step 1: top-level taxonomy/index.json
+		$top = self::fetch_raw( self::INDEX_PATH );
+		if ( is_wp_error( $top ) ) { return $top; }
 
-		$code = wp_remote_retrieve_response_code( $response );
-		if ( $code !== 200 ) {
-			return new WP_Error( 'fetch_failed', "HTTP {$code}" );
+		if ( empty( $top['categories'] ) ) {
+			return new WP_Error( 'parse_failed', 'No categories found in taxonomy index.' );
 		}
 
-		$data = json_decode( wp_remote_retrieve_body( $response ), true );
-		if ( ! $data ) {
-			return new WP_Error( 'parse_failed', 'Could not parse taxonomy index JSON.' );
+		$result      = array( 'categories' => array(), 'total_packs' => 0 );
+		$errors      = array();
+
+		// Step 2: fetch per-category sub-index for each category
+		foreach ( $top['categories'] as $cat ) {
+			$cat_index_path = 'taxonomy/' . ltrim( $cat['index'] ?? '', '/' );
+			$cat_data       = self::fetch_raw( $cat_index_path );
+
+			if ( is_wp_error( $cat_data ) ) {
+				$errors[] = $cat['name'] . ': ' . $cat_data->get_error_message();
+				continue;
+			}
+
+			$packs = array();
+			foreach ( (array) ( $cat_data['packs'] ?? array() ) as $pack ) {
+				$packs[] = array(
+					'id'          => $pack['id']   ?? '',
+					'name'        => $pack['name']  ?? $pack['id'],
+					'file'        => 'taxonomy/' . ltrim( $pack['file'] ?? '', '/' ),
+					'genera_count' => count( (array) ( $pack['genera'] ?? array() ) ),
+				);
+			}
+
+			$result['categories'][] = array(
+				'id'    => $cat['id']   ?? '',
+				'name'  => $cat['name'] ?? '',
+				'packs' => $packs,
+			);
+			$result['total_packs'] += count( $packs );
 		}
-		return $data;
+
+		if ( ! empty( $errors ) ) {
+			$result['warnings'] = $errors;
+		}
+
+		return $result;
 	}
 
 	/**
 	 * Fetch a specific pack JSON from GitHub.
 	 *
-	 * @param string $path Relative path, e.g. "taxonomy/cacti/cactaceae.json"
+	 * @param string $path Relative path from repo root, e.g. "taxonomy/carnivorous/nepenthaceae.json"
 	 * @return array|WP_Error
 	 */
 	public static function fetch_pack( $path ) {
-		$base_url = 'https://raw.githubusercontent.com/kshivaramakrishnan/PhytoCommerce/main/';
-		$response = wp_remote_get( $base_url . ltrim( $path, '/' ), array( 'timeout' => 30 ) );
+		return self::fetch_raw( ltrim( $path, '/' ) );
+	}
+
+	/**
+	 * Fetch and JSON-decode a file from the GitHub repo.
+	 *
+	 * @param string $path Path relative to repo root.
+	 * @return array|WP_Error
+	 */
+	private static function fetch_raw( $path ) {
+		$url      = self::BASE_RAW . ltrim( $path, '/' );
+		$response = wp_remote_get( $url, array( 'timeout' => 20 ) );
+
 		if ( is_wp_error( $response ) ) { return $response; }
 
 		$code = wp_remote_retrieve_response_code( $response );
 		if ( $code !== 200 ) {
-			return new WP_Error( 'fetch_failed', "HTTP {$code} for {$path}" );
+			return new WP_Error( 'fetch_failed', "HTTP {$code} fetching {$path}" );
 		}
 
 		$data = json_decode( wp_remote_retrieve_body( $response ), true );
-		if ( ! $data ) {
+		if ( ! is_array( $data ) ) {
 			return new WP_Error( 'parse_failed', "Could not parse JSON for {$path}" );
 		}
+
 		return $data;
 	}
 

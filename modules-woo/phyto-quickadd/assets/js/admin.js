@@ -146,41 +146,75 @@ jQuery(function ($) {
 		var $btn = $(this);
 		var status = $('#qa-taxonomy-status');
 		$btn.prop('disabled', true);
-		status.text('Fetching…');
-		$.post(ajaxurl, { action: 'phyto_qa_fetch_taxonomy', nonce: nonce }, function (r) {
-			$btn.prop('disabled', false);
-			if ( ! r.success ) { status.text('Error: ' + r.data); return; }
-			status.text('Loaded ' + (r.data.total_packs || 0) + ' packs.');
-			renderPackGrid(r.data);
-		}).fail(function () { $btn.prop('disabled', false); status.text('Request failed.'); });
+		status.text('Fetching taxonomy index from GitHub…');
+		$.ajax({
+			url:     ajaxurl,
+			type:    'POST',
+			timeout: 90000,
+			data:    { action: 'phyto_qa_fetch_taxonomy', nonce: nonce },
+			success: function (r) {
+				$btn.prop('disabled', false);
+				if ( ! r.success ) { status.text('Error: ' + r.data); return; }
+				var total = r.data.total_packs || 0;
+				var cats  = (r.data.categories || []).length;
+				status.text('Loaded ' + total + ' packs across ' + cats + ' categories.');
+				renderPackGrid(r.data);
+			},
+			error: function (xhr, type) {
+				$btn.prop('disabled', false);
+				status.text(type === 'timeout' ? 'Timed out — check your server can reach GitHub.' : 'Request failed.');
+			},
+		});
 	});
 
 	function renderPackGrid(index) {
 		var $grid = $('#qa-taxonomy-packs').empty();
-		if ( ! index.categories ) { $grid.text('No categories found.'); return; }
+		if ( ! index.categories || ! index.categories.length ) {
+			$grid.text('No categories found.');
+			return;
+		}
+		if ( index.warnings && index.warnings.length ) {
+			$grid.before('<p style="color:#c00">Warning: ' + escHtml(index.warnings.join('; ')) + '</p>');
+		}
 		index.categories.forEach(function (cat) {
-			if ( ! cat.packs ) return;
+			if ( ! cat.packs || ! cat.packs.length ) return;
+
+			var $heading = $('<h4 style="width:100%;margin:12px 0 4px;color:#2d7a54">').text(cat.name);
+			$grid.append($heading);
+
 			cat.packs.forEach(function (pack) {
 				var $card = $('<div class="phyto-qa-pack-card">');
-				$card.append('<h4>' + escHtml(pack.name || pack.pack_id) + '</h4>');
-				$card.append('<div class="pack-meta">' + escHtml(cat.name) + ' · ' + (pack.species_count || 0) + ' spp</div>');
-				var $btn = $('<button class="button button-secondary">Import</button>');
+				$card.append('<h4>' + escHtml(pack.name || pack.id) + '</h4>');
+				var meta = cat.name;
+				if (pack.genera_count) { meta += ' · ' + pack.genera_count + ' genera'; }
+				$card.append('<div class="pack-meta">' + escHtml(meta) + '</div>');
+
+				var $btn = $('<button class="button button-secondary">Import as WC Categories</button>');
+				var $result = $('<div>');
 				$btn.on('click', function () {
 					$btn.prop('disabled', true).text('Importing…');
+					$result.removeClass('pack-result pack-error').text('');
 					$.post(ajaxurl, {
 						action: 'phyto_qa_import_pack',
 						nonce:  nonce,
 						path:   pack.file || '',
 					}, function (r) {
-						$btn.prop('disabled', false).text('Import');
+						$btn.prop('disabled', false).text('Import as WC Categories');
 						if (r.success) {
-							$card.append('<div class="pack-result">✓ Imported ' + r.data.imported + ', skipped ' + r.data.skipped + '</div>');
+							$result.addClass('pack-result').text(
+								'✓ ' + r.data.imported + ' genera imported' +
+								(r.data.skipped ? ', ' + r.data.skipped + ' skipped' : '') +
+								(r.data.errors && r.data.errors.length ? ' (' + r.data.errors.length + ' errors)' : '')
+							);
 						} else {
-							$card.append('<div class="pack-error">Error: ' + escHtml(r.data) + '</div>');
+							$result.addClass('pack-error').text('Error: ' + escHtml(r.data));
 						}
-					}).fail(function () { $btn.prop('disabled', false).text('Import'); });
+					}).fail(function () {
+						$btn.prop('disabled', false).text('Import as WC Categories');
+						$result.addClass('pack-error').text('Request failed.');
+					});
 				});
-				$card.append($btn);
+				$card.append($btn).append($result);
 				$grid.append($card);
 			});
 		});
