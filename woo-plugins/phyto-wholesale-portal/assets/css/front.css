@@ -1,0 +1,5 @@
+.phyto-ws-moq-notice { color: #856404; background: #fff3cd; border: 1px solid #ffc107; padding: .4em .8em; border-radius: 3px; display: inline-block; margin: .5em 0; font-size: .9em; }
+#phyto-ws-apply-form { max-width: 560px; }
+#phyto-ws-apply-form label { display: block; margin-bottom: .75em; font-weight: 500; }
+#phyto-ws-apply-form .input-text, #phyto-ws-apply-form textarea { width: 100%; }
+#phyto-ws-message { margin-top: .75em; font-weight: 500; }
