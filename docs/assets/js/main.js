@@ -80,3 +80,30 @@
       .replace(/"/g, '&quot;');
   }
 })();
+
+/* ── News ticker ──────────────────────────────────────────────────────────── */
+(function () {
+  var NEWS = [
+    { icon: '🌱', text: '<strong>New:</strong> Aroids category added — 265 species, 15 genera including Monstera, Philodendron, Anthurium' },
+    { icon: '🌵', text: '<strong>New:</strong> Succulents &amp; Cacti — 705 species across Cactaceae, Aloe, Haworthia, Echeveria, Euphorbia' },
+    { icon: '🪴', text: '<strong>New:</strong> Bromeliads — 278 species, 8 genera including Tillandsia, Vriesea, Aechmea, Guzmania' },
+    { icon: '📊', text: '<strong>Taxonomy database:</strong> 2,415 verified species · 85 genera · 17 family packs · 6 plant categories' },
+    { icon: '🌿', text: '<strong>Carnivorous plants expanded:</strong> 750+ species — Nepenthes 167 sp, Utricularia 221 sp, Pinguicula 90 sp' },
+    { icon: '🌸', text: '<strong>Orchids expanded:</strong> 210+ species across 32 genera including Phalaenopsis, Cattleya, Vanilla, Dracula' },
+    { icon: '🍌', text: '<strong>Banana &amp; Relatives:</strong> Musa 62 sp + Ensete 8 sp + 124 Zingiberaceae — Zingiber, Curcuma, Alpinia' },
+    { icon: '🔓', text: '<strong>Open source:</strong> Full taxonomy database on GitHub — free to use, fork, and contribute' },
+    { icon: '🏪', text: '<strong>PhytoLabs Beta:</strong> Now live — every store ships with the complete species database pre-loaded' },
+  ];
+
+  var el = document.getElementById('ticker-inner');
+  if (!el) return;
+
+  function makeItems() {
+    return NEWS.map(function (n) {
+      return '<span class="news-ticker__item"><span class="dot"></span>' + n.icon + ' ' + n.text + '</span>';
+    }).join('');
+  }
+
+  // Duplicate for seamless loop
+  el.innerHTML = makeItems() + makeItems();
+})();

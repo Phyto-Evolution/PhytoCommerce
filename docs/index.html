@@ -42,12 +42,27 @@
         <span class="text-2xl leading-none">🌿</span>
         <span>PhytoLabs</span>
       </a>
+      <div class="hidden sm:flex items-center gap-6 text-sm text-forest/60 font-medium">
+        <a href="#features" class="hover:text-forest transition-colors">Features</a>
+        <a href="#taxonomy" class="hover:text-forest transition-colors">Taxonomy</a>
+        <a href="#pricing" class="hover:text-forest transition-colors">Pricing</a>
+      </div>
       <a href="#signup"
          class="text-sm font-medium text-forest bg-sage-light/60 hover:bg-sage-light px-4 py-1.5 rounded-full transition-colors">
-        Get Early Access &darr;
+        Get Beta Access &darr;
       </a>
     </div>
   </nav>
+
+  <!-- ─── NEWS TICKER ─────────────────────────────────────────────────────── -->
+  <div class="news-ticker" role="marquee" aria-label="Latest updates">
+    <span class="news-ticker__label">Updates</span>
+    <div class="news-ticker__track">
+      <div class="news-ticker__inner" id="ticker-inner">
+        <!-- items injected twice for seamless loop -->
+      </div>
+    </div>
+  </div>
 
   <!-- ─── HERO ──────────────────────────────────────────────────────────────── -->
   <section class="relative overflow-hidden bg-forest text-cream pt-20 pb-24 px-4">
@@ -57,7 +72,7 @@
 
     <div class="relative max-w-3xl mx-auto text-center">
       <span class="inline-block text-xs font-semibold tracking-widest uppercase text-amber mb-4 px-3 py-1 bg-amber/10 rounded-full border border-amber/30">
-        Launching April 5, 2026
+        Now in Beta &mdash; June 2026
       </span>
 
       <h1 class="text-4xl sm:text-5xl md:text-6xl font-light leading-tight mb-6">
@@ -214,6 +229,62 @@
           Reserve Your Early Bird Spot &rarr;
         </a>
       </div>
+    </div>
+  </section>
+
+  <!-- ─── TAXONOMY DATABASE ───────────────────────────────────────────────── -->
+  <section class="py-20 px-4 bg-cream" id="taxonomy">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="inline-block text-xs font-semibold tracking-widest uppercase text-sage mb-4 px-3 py-1 bg-sage/10 rounded-full border border-sage/25">
+          Open Source
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-light mb-3">
+          Botanical taxonomy —<br />
+          <span class="font-semibold">built into every store</span>
+        </h2>
+        <p class="text-forest/60 max-w-xl mx-auto text-base leading-relaxed">
+          PhytoCommerce ships with a curated, open-source species database spanning 6 plant families.
+          Every product you add is matched against verified species names — no typos, no guesswork.
+        </p>
+      </div>
+
+      <!-- Stats row -->
+      <div class="tax-stat-grid mb-12">
+        <div class="tax-stat-card">
+          <div class="tax-stat-num">2,415</div>
+          <div class="tax-stat-label">Species</div>
+        </div>
+        <div class="tax-stat-card">
+          <div class="tax-stat-num">85</div>
+          <div class="tax-stat-label">Genera</div>
+        </div>
+        <div class="tax-stat-card">
+          <div class="tax-stat-num">17</div>
+          <div class="tax-stat-label">Family Packs</div>
+        </div>
+        <div class="tax-stat-card">
+          <div class="tax-stat-num">6</div>
+          <div class="tax-stat-label">Categories</div>
+        </div>
+      </div>
+
+      <!-- Category pills -->
+      <div class="flex flex-wrap justify-center gap-3">
+        <span class="tax-category-pill">🌿 Carnivorous Plants <span class="pill-count">750+ sp</span></span>
+        <span class="tax-category-pill">🌸 Orchids <span class="pill-count">210+ sp</span></span>
+        <span class="tax-category-pill">🍌 Banana &amp; Relatives <span class="pill-count">194 sp</span></span>
+        <span class="tax-category-pill">🌱 Aroids <span class="pill-count">265 sp</span></span>
+        <span class="tax-category-pill">🌵 Succulents &amp; Cacti <span class="pill-count">705 sp</span></span>
+        <span class="tax-category-pill">🪴 Bromeliads <span class="pill-count">278 sp</span></span>
+      </div>
+
+      <p class="text-center mt-8 text-sm text-forest/40">
+        Sourced from <em>llifle.com</em> Encyclopedia of Living Forms &mdash;
+        <a href="https://github.com/Phyto-Evolution/PhytoCommerce/tree/main/taxonomy"
+           class="text-sage hover:text-forest transition-colors underline underline-offset-2"
+           target="_blank" rel="noopener">view on GitHub &rarr;</a>
+      </p>
     </div>
   </section>
 
