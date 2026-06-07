@@ -31,10 +31,22 @@
           "conservation_status": "LC",
           "notes": "Tolerates moderate light but fenestrates best in bright indirect light. Water when top 2 cm dry.",
           "cultivars": [
-            { "cultivar": "Albo Variegata", "description": "Stable white sectoral variegation on leaves and petioles; highly sought collector form." },
-            { "cultivar": "Thai Constellation", "description": "Creamy yellow-white speckled variegation produced via TC; more stable than albo." },
-            { "cultivar": "Aurea", "description": "Golden-yellow variegation; rarer than albo forms with striking yellow sectors." },
-            { "cultivar": "Mint", "description": "Minty-green marbled variegation; pastel tones make it one of the most unusual colour forms." }
+            {
+              "cultivar": "Albo Variegata",
+              "description": "Stable white sectoral variegation on leaves and petioles; highly sought collector form."
+            },
+            {
+              "cultivar": "Thai Constellation",
+              "description": "Creamy yellow-white speckled variegation produced via TC; more stable than albo."
+            },
+            {
+              "cultivar": "Aurea",
+              "description": "Golden-yellow variegation; rarer than albo forms with striking yellow sectors."
+            },
+            {
+              "cultivar": "Mint",
+              "description": "Minty-green marbled variegation; pastel tones make it one of the most unusual colour forms."
+            }
           ]
         },
         {
@@ -48,7 +60,10 @@
           "conservation_status": "LC",
           "notes": "Fast grower; tolerates lower light than M. deliciosa. Two forms: wide and narrow leaf.",
           "cultivars": [
-            { "cultivar": "Variegata", "description": "White sectoral variegation; rarer than M. deliciosa albo but similarly prized by collectors." }
+            {
+              "cultivar": "Variegata",
+              "description": "White sectoral variegation; rarer than M. deliciosa albo but similarly prized by collectors."
+            }
           ]
         },
         {
@@ -74,9 +89,243 @@
           "conservation_status": "LC",
           "notes": "Compact climber; no fenestrations. Variegated forms highly collectible.",
           "cultivars": [
-            { "cultivar": "Albo Variegata", "description": "Bold white streaks and sectors across the dark green leaves." },
-            { "cultivar": "Aurea", "description": "Golden-yellow variegation giving a warm, tropical appearance." }
+            {
+              "cultivar": "Albo Variegata",
+              "description": "Bold white streaks and sectors across the dark green leaves."
+            },
+            {
+              "cultivar": "Aurea",
+              "description": "Golden-yellow variegation giving a warm, tropical appearance."
+            }
           ]
+        },
+        {
+          "full_name": "Monstera acuminata",
+          "common_name": "Shingle Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera alagoensis",
+          "common_name": "Alagoas Monstera",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera alcalae",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera anomala",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera antioquiensis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera arifolia",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera croatii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera dissecta",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera dubia",
+          "common_name": "Shingle Monstera",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera epipremnoides",
+          "common_name": "Esqueleto",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera esqueleto",
+          "common_name": "Esqueleto Monstera",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera florescanoana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera gracilis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera grantii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera hastifolia",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera hondurensis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera imitans",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera implicata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera lechleriana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera lentii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera longisvaginata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera mariae",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera membranacea",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera minima",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera orbifolia",
+          "common_name": "Round-leaf Monstera",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera oreophila",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera palustris",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera pinnatipartita",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera punctulata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera siltepecana",
+          "common_name": "Silver Monstera",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera spruceana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera subpinnata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera tenuis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera tuberculata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera xanthospatha",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera xanthospathoides",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera venezuelensis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Monstera acacoyaguensis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
         }
       ]
     },
@@ -103,7 +352,10 @@
           "conservation_status": "NT",
           "notes": "Terrestrial; grows horizontally. Needs high humidity and well-draining chunky mix.",
           "cultivars": [
-            { "cultivar": "Round Form", "description": "Rounder leaf shape with more prominent primary veination; selected collector clone." }
+            {
+              "cultivar": "Round Form",
+              "description": "Rounder leaf shape with more prominent primary veination; selected collector clone."
+            }
           ]
         },
         {
@@ -129,7 +381,10 @@
           "conservation_status": "LC",
           "notes": "Vigorous climber. Juvenile and mature leaf forms differ dramatically in lobing.",
           "cultivars": [
-            { "cultivar": "Aurea", "description": "Golden-yellow foliage phase; striking and uncommon in the trade." }
+            {
+              "cultivar": "Aurea",
+              "description": "Golden-yellow foliage phase; striking and uncommon in the trade."
+            }
           ]
         },
         {
@@ -154,6 +409,336 @@
           "native_range": "Brazil",
           "conservation_status": "LC",
           "notes": "Self-heading; stays compact. Great for pots. Tolerates drier conditions than climbing species.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron adamantinum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron adhatons",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron atabapoense",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron auriculatum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron barrosoanum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron bipinnatifidum",
+          "common_name": "Lacy Tree Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron billietiae",
+          "common_name": "Billiet's Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron brandtianum",
+          "common_name": "Silver Leaf Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron burle-marxii",
+          "common_name": "Burle Marx Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron camposportoanum",
+          "common_name": "Camposporto's Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron carajaense",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron chinchamayense",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron cordatum",
+          "common_name": "Heart-leaf Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron deflexum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron domesticum",
+          "common_name": "Elephant Ear Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron elegans",
+          "common_name": "Elegant Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron erubescens",
+          "common_name": "Blushing Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron esmeraldense",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron flavizonatum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron gigas",
+          "common_name": "Giant Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron hastatum",
+          "common_name": "Elephant Ear Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron hederaceum",
+          "common_name": "Heartleaf Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron imbe",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron insigne",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron joepii",
+          "common_name": "Joe's Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron laciniatum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron lynamii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron mamei",
+          "common_name": "Silver Cloud Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron martianum",
+          "common_name": "Fat Boy Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron melinonii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron mexicanum",
+          "common_name": "Mexican Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron micans",
+          "common_name": "Velvet Leaf Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron ornatum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron panduriforme",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron pastazanum",
+          "common_name": "Pastaza Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron patriciae",
+          "common_name": "Patricia's Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron pedatum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron plowmanii",
+          "common_name": "Plowman's Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron polypodioides",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron puteolatum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron radiatum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron rugosum",
+          "common_name": "Pigskin Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron sagittifolium",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron scandens",
+          "common_name": "Scandens Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron squamiferum",
+          "common_name": "Hairy Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron stenolobum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron subincisum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron surinamense",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron ternatum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron tortum",
+          "common_name": "Tortum Philodendron",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron tripartitum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron trisectum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron warszewiczii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron wilsonii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Philodendron yunasense",
+          "common_name": "",
+          "conservation_status": "least_concern",
           "cultivars": []
         }
       ]
@@ -205,8 +790,14 @@
           "conservation_status": "LC",
           "notes": "Flowering type. Long-lasting spathes; prefers bright indirect light. Very rewarding houseplant.",
           "cultivars": [
-            { "cultivar": "Pink Champion", "description": "Consistent soft pink spathes; popular cut flower and potted plant." },
-            { "cultivar": "White Gemini", "description": "Pure white spathe with cream-yellow spadix; elegant and long-lasting." }
+            {
+              "cultivar": "Pink Champion",
+              "description": "Consistent soft pink spathes; popular cut flower and potted plant."
+            },
+            {
+              "cultivar": "White Gemini",
+              "description": "Pure white spathe with cream-yellow spadix; elegant and long-lasting."
+            }
           ]
         },
         {
@@ -219,6 +810,258 @@
           "native_range": "Colombia (cloud forests, 500–1500 m)",
           "conservation_status": "VU",
           "notes": "Pendant growth habit; leaves grow very long. Needs consistent high humidity and perfect drainage.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium bakeri",
+          "common_name": "Baker's Anthurium",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium bonplandii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium brownii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium clarinervium",
+          "common_name": "Velvet Cardboard Anthurium",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium cordatum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium coriaceum",
+          "common_name": "Leathery Anthurium",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium cutucuense",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium decurrens",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium faustomirandae",
+          "common_name": "Giant Anthurium",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium forgetii",
+          "common_name": "Forget's Anthurium",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium gracile",
+          "common_name": "Graceful Anthurium",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium hookeri",
+          "common_name": "Hooker's Anthurium",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium huixtlense",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium jenmanii",
+          "common_name": "Jenman's Anthurium",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium kunthii",
+          "common_name": "Kunth's Anthurium",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium leuconeurum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium marmoratum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium metallicum",
+          "common_name": "Metallic Anthurium",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium moodeanum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium nymphaefolium",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium obtusum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium ochranthum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium pallidiflorum",
+          "common_name": "Strap Leaf Anthurium",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium papillilaminum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium pedatoradiatum",
+          "common_name": "Fingers Anthurium",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium pentaphyllum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium plowmanii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium polyschides",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium radicans",
+          "common_name": "Creeping Anthurium",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium regale",
+          "common_name": "Regal Anthurium",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium salviniae",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium scandens",
+          "common_name": "Climbing Anthurium",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium schlechtendalii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium scherzerianum",
+          "common_name": "Pigtail Anthurium",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium silvigaudens",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium splendidum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium superbum",
+          "common_name": "Bird's Nest Anthurium",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium ternatum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium veitchii",
+          "common_name": "King Anthurium",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium vittarifolium",
+          "common_name": "Strap Leaf Anthurium",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium wendlingeri",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Anthurium willifordii",
+          "common_name": "",
+          "conservation_status": "least_concern",
           "cultivars": []
         }
       ]
@@ -258,7 +1101,10 @@
           "conservation_status": "NT",
           "notes": "Compact jewel form. High humidity essential. Avoid overwatering; prone to root rot.",
           "cultivars": [
-            { "cultivar": "Black Velvet", "description": "The classic cultivar with near-black leaves and crystalline silver veination." }
+            {
+              "cultivar": "Black Velvet",
+              "description": "The classic cultivar with near-black leaves and crystalline silver veination."
+            }
           ]
         },
         {
@@ -272,8 +1118,778 @@
           "conservation_status": "LC",
           "notes": "Tropical giant; needs full sun or bright light, warmth, and ample water. Edible with preparation.",
           "cultivars": [
-            { "cultivar": "Variegata", "description": "Irregular white and green variegation on the large leaves; rare and striking." }
+            {
+              "cultivar": "Variegata",
+              "description": "Irregular white and green variegation on the large leaves; rare and striking."
+            }
           ]
+        },
+        {
+          "full_name": "Alocasia amazonica",
+          "common_name": "African Mask Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia brisbanensis",
+          "common_name": "Cunjevoi",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia brancifolia",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia clypeolata",
+          "common_name": "Green Shield Alocasia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia cucullata",
+          "common_name": "Chinese Taro",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia cuprea",
+          "common_name": "Mirror Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia decipiens",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia dragon scale",
+          "common_name": "Dragon Scale Alocasia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia eburnea",
+          "common_name": "Ivory Alocasia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia gageana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia hypnosa",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia infernalis",
+          "common_name": "Black Magic Alocasia",
+          "conservation_status": "endangered",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia jacksonii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia lauterbachiana",
+          "common_name": "Purple Sword Alocasia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia longiloba",
+          "common_name": "Long-lobed Alocasia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia lowii",
+          "common_name": "Low's Alocasia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia melo",
+          "common_name": "Jewel Alocasia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia micholitziana",
+          "common_name": "Green Velvet Alocasia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia navicularis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia nebula",
+          "common_name": "Alocasia Nebula",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia nicobarica",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia odora",
+          "common_name": "Night-scented Lily",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia platyphylla",
+          "common_name": "Broad-leaved Alocasia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia portei",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia princeps",
+          "common_name": "Rajah Alocasia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia pseudocoronaria",
+          "common_name": "Borneo Giant Alocasia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia reversa",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia robusta",
+          "common_name": "Sarawak Giant Alocasia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia rugosa",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia sanderiana",
+          "common_name": "Kris Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia scalprum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia sinuata",
+          "common_name": "Quilted Dreams Alocasia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia stingray",
+          "common_name": "Stingray Alocasia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia sulawesii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia tigrina",
+          "common_name": "Zebra Alocasia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia utilis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia venusta",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia virgula",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Alocasia wentii",
+          "common_name": "Hardy Elephant Ear",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Colocasia",
+      "common_name": "Taros",
+      "species": [
+        {
+          "full_name": "Colocasia affinis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Colocasia antiquorum",
+          "common_name": "Old Taro",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Colocasia esculenta",
+          "common_name": "Taro",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Black Magic"
+            },
+            {
+              "name": "Hilo Beauty"
+            },
+            {
+              "name": "Imperial Taro"
+            },
+            {
+              "name": "Mojito"
+            }
+          ]
+        },
+        {
+          "full_name": "Colocasia fallax",
+          "common_name": "Silver Taro",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Colocasia fontanesii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Colocasia gigantea",
+          "common_name": "Giant Taro",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Colocasia indica",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Caladium",
+      "common_name": "Fancy-leaf Caladiums",
+      "species": [
+        {
+          "full_name": "Caladium bicolor",
+          "common_name": "Fancy-leaf Caladium",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caladium humboldtii",
+          "common_name": "Mini Caladium",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caladium lindenii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caladium picturatum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Caladium steudneriifolium",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Epipremnum",
+      "common_name": "Pothos",
+      "species": [
+        {
+          "full_name": "Epipremnum amplissimum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Epipremnum aureum",
+          "common_name": "Golden Pothos",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Epipremnum falcifolium",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Epipremnum giganteum",
+          "common_name": "Giant Pothos",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Epipremnum pinnatum",
+          "common_name": "Dragon Tail Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Epipremnum silvaticum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Scindapsus",
+      "common_name": "Silver Pothos",
+      "species": [
+        {
+          "full_name": "Scindapsus aureus",
+          "common_name": "Golden Pothos",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Scindapsus pictus",
+          "common_name": "Satin Pothos",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Scindapsus treubii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Zamioculcas",
+      "common_name": "ZZ Plant",
+      "species": [
+        {
+          "full_name": "Zamioculcas zamiifolia",
+          "common_name": "ZZ Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Aglaonema",
+      "common_name": "Chinese Evergreens",
+      "species": [
+        {
+          "full_name": "Aglaonema commutatum",
+          "common_name": "Chinese Evergreen",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aglaonema costatum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aglaonema crispum",
+          "common_name": "Painted Drop-tongue",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aglaonema hookerianum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aglaonema modestum",
+          "common_name": "Chinese Evergreen",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aglaonema nitidum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aglaonema pictum",
+          "common_name": "Tricolor Aglaonema",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aglaonema rotundum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aglaonema simplex",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aglaonema treubii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Syngonium",
+      "common_name": "Arrowhead Plants",
+      "species": [
+        {
+          "full_name": "Syngonium angustatum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Syngonium auritum",
+          "common_name": "Five Fingers",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Syngonium erythrophyllum",
+          "common_name": "Llano-Carti Road",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Syngonium hastifolium",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Syngonium macrophyllum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Syngonium neglectum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Syngonium podophyllum",
+          "common_name": "Arrowhead Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Syngonium rayii",
+          "common_name": "Ray's Syngonium",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Syngonium steyermarkii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Syngonium triphyllum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Syngonium vellozianum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Syngonium wendlandii",
+          "common_name": "Velvet Arrowhead",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Xanthosoma",
+      "common_name": "Yautia",
+      "species": [
+        {
+          "full_name": "Xanthosoma atrovirens",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Xanthosoma belophyllum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Xanthosoma mafaffa",
+          "common_name": "Cocoyam",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Xanthosoma roseum",
+          "common_name": "Pink Taro",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Xanthosoma sagittifolium",
+          "common_name": "Yautia",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            {
+              "name": "Violaceum"
+            }
+          ]
+        },
+        {
+          "full_name": "Xanthosoma undipes",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Dieffenbachia",
+      "common_name": "Dumb Canes",
+      "species": [
+        {
+          "full_name": "Dieffenbachia bausei",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dieffenbachia bowmannii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dieffenbachia costata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dieffenbachia daguensis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dieffenbachia longispatha",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dieffenbachia maculata",
+          "common_name": "Dumb Cane",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dieffenbachia oerstedii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dieffenbachia parlatorei",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dieffenbachia pittieri",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dieffenbachia seguine",
+          "common_name": "Mother Dumb Cane",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Dieffenbachia tonduzii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Rhaphidophora",
+      "common_name": "Mini Monstera",
+      "species": [
+        {
+          "full_name": "Rhaphidophora cryptantha",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Rhaphidophora decursiva",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Rhaphidophora hayi",
+          "common_name": "Shingle Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Rhaphidophora korthalsii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Rhaphidophora latevaginata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Rhaphidophora monstera",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Rhaphidophora pertusa",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Rhaphidophora tetrasperma",
+          "common_name": "Mini Monstera",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Amorphophallus",
+      "common_name": "Voodoo Lilies",
+      "species": [
+        {
+          "full_name": "Amorphophallus bulbifer",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Amorphophallus campanulatus",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Amorphophallus konjac",
+          "common_name": "Konjac",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Amorphophallus mossambicensis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Amorphophallus paeoniifolius",
+          "common_name": "Elephant Foot Yam",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Amorphophallus titanum",
+          "common_name": "Titan Arum",
+          "conservation_status": "vulnerable",
+          "cultivars": []
         }
       ]
     }

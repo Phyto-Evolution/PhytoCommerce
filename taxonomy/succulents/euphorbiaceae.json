@@ -43,7 +43,10 @@
           "conservation_status": "LC",
           "notes": "Fast-growing tall columnar. Toxic latex. Rubra form has vivid red-burgundy stems and leaves.",
           "cultivars": [
-            { "cultivar": "Rubra", "description": "Deep red-burgundy stems and small leaves; one of the most striking architectural succulent colour forms." }
+            {
+              "cultivar": "Rubra",
+              "description": "Deep red-burgundy stems and small leaves; one of the most striking architectural succulent colour forms."
+            }
           ]
         },
         {
@@ -57,8 +60,14 @@
           "conservation_status": "LC",
           "notes": "Nearly year-round bloomer in warmth. Sharp spines; toxic latex. Extremely drought-tolerant.",
           "cultivars": [
-            { "cultivar": "Thai Giant Red", "description": "Large red bracts selected from Thai breeding programs; much bigger flowers than species." },
-            { "cultivar": "Thai Giant Yellow", "description": "Large bright yellow bracts; Thai breeding line with improved flower size and brightness." }
+            {
+              "cultivar": "Thai Giant Red",
+              "description": "Large red bracts selected from Thai breeding programs; much bigger flowers than species."
+            },
+            {
+              "cultivar": "Thai Giant Yellow",
+              "description": "Large bright yellow bracts; Thai breeding line with improved flower size and brightness."
+            }
           ]
         },
         {
@@ -72,8 +81,347 @@
           "conservation_status": "LC",
           "notes": "Common grafting stock. Crested forms grafted on E. neriifolia known as coral cactus. Toxic latex.",
           "cultivars": [
-            { "cultivar": "Cristata (Coral Cactus)", "description": "Crested (fasciated) fan-shaped growth, usually grafted onto E. neriifolia stock; bizarre and popular collector form." }
+            {
+              "cultivar": "Cristata (Coral Cactus)",
+              "description": "Crested (fasciated) fan-shaped growth, usually grafted onto E. neriifolia stock; bizarre and popular collector form."
+            }
           ]
+        },
+        {
+          "full_name": "Euphorbia abyssinica",
+          "common_name": "Ethiopian Candelabra Tree",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia aeruginosa",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia ammak",
+          "common_name": "Hadhramaut Candelabra Tree",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia antisyphilitica",
+          "common_name": "Candelilla",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia bupleurifolia",
+          "common_name": "Pinecone Euphorbia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia caerulescens",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia canariensis",
+          "common_name": "Canary Island Spurge",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia caput-medusae",
+          "common_name": "Medusa's Head",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia clandestina",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia columnaris",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia cooperi",
+          "common_name": "Transvaal Candelabra Tree",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia coerulescens",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia cylindrifolia",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia decaryi",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia enopla",
+          "common_name": "Pincushion Euphorbia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia erosa",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia fasciculata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia ferox",
+          "common_name": "Fierce Euphorbia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia flanaganii",
+          "common_name": "Medusa Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia gorgonis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia grandicornis",
+          "common_name": "Cowhorn Euphorbia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia groenewaldii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia horrida",
+          "common_name": "African Milk Barrel",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia ingens",
+          "common_name": "Common Tree Euphorbia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia knuthii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia leuconeura",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia lophogona",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia mammillaris",
+          "common_name": "Corn Cob Cactus",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia mauritanica",
+          "common_name": "Pencil Milkbush",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia misera",
+          "common_name": "Cliff Spurge",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia monstrose",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia neriifolia",
+          "common_name": "Indian Spurge Tree",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia officinarum",
+          "common_name": "Maghreb Spurge",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia paralias",
+          "common_name": "Sea Spurge",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia persistens",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia platyclada",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia poissonii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia polygona",
+          "common_name": "Snowflake Euphorbia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pseudocactus",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia pulvinata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia resinifera",
+          "common_name": "Moroccan Mound Euphorbia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia ritchiei",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia royleana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia septentrionalis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia stellata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia stenoclada",
+          "common_name": "Silver Thicket",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia submammillaris",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia symmetrica",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia tirucalli",
+          "common_name": "Pencil Tree",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia tithymaloides",
+          "common_name": "Devil's Backbone",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia tortirama",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia triangularis",
+          "common_name": "River Euphorbia",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia tubiglans",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia valida",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia viguieri",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Euphorbia virosa",
+          "common_name": "Gifboom",
+          "conservation_status": "least_concern",
+          "cultivars": []
         }
       ]
     }

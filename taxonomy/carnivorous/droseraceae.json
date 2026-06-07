@@ -21,25 +21,100 @@
       "conservation_status": "varies_by_species",
       "species": [
         {
-          "full_name": "Drosera capensis",
-          "common_name": "Cape Sundew",
-          "description": "<em>Drosera capensis</em> is widely regarded as the best starter carnivorous plant. Native to the Cape region of South Africa, it produces strap-like leaves covered in red, glistening tentacles and is almost impossible to kill in suitable conditions. It self-seeds prolifically and flowers throughout the growing season.",
-          "meta_title": "Drosera capensis — Cape Sundew",
-          "meta_description": "The perfect beginners carnivorous plant. Drosera capensis is vigorous, easy, and flowers freely. Available in typical, red, and alba forms.",
-          "meta_keywords": "Drosera capensis, Cape sundew, easy sundew, beginner carnivorous plant",
-          "native_range": "South Africa — Western Cape (coastal fynbos)",
+          "full_name": "Drosera aberrans",
+          "common_name": "Aberrant Tuberous Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera acaulis",
+          "common_name": "Stemless Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera adelae",
+          "common_name": "Lance-leaved Sundew",
+          "description": "<em>Drosera adelae</em> is one of the Three Sisters from Queensland's tropical rainforest belt. It tolerates lower light than most sundews, making it ideal for growing alongside shade-loving plants. Produces long strap-like leaves with red glands and propagates readily from root cuttings.",
+          "meta_title": "Drosera adelae — Shade-tolerant Queensland Sundew",
+          "meta_description": "Shade-tolerant Drosera adelae from Queensland. One of the easiest tropical sundews; suitable for windowsill culture without supplemental lighting.",
+          "meta_keywords": "Drosera adelae, Queensland sundew, shade sundew, tropical sundew",
+          "native_range": "Australia — north Queensland (near Cairns, tropical rainforest margins)",
           "conservation_status": "LC",
-          "notes": "Evergreen; does not require dormancy. Keep in tray of distilled or rainwater. Excellent for beginners.",
-          "cultivars": [
-            {
-              "cultivar": "Alba",
-              "description": "White-flowered, green-leaved form lacking red pigmentation in the tentacles."
-            },
-            {
-              "cultivar": "Red",
-              "description": "Entirely red-pigmented form with deeper colouration under high light; striking in contrast to typical form."
-            }
-          ]
+          "notes": "Prefers filtered light; direct sun can bleach leaves. Tropical; no dormancy needed. Propagates by root cuttings.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera admirabilis",
+          "common_name": "Admirable Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera aff. petiolaris",
+          "common_name": "Petiolaris Affinity Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera affinis",
+          "common_name": "Related Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera aliciae",
+          "common_name": "Alice's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera androsacea",
+          "common_name": "Androsace Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera anglica",
+          "common_name": "English/Great Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera arenicola",
+          "common_name": "Sand-dwelling Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera auriculata",
+          "common_name": "Eared Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera banksii",
+          "common_name": "Banks' Petiolaris Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera barbigera",
+          "common_name": "Bearded Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera basifolia",
+          "common_name": "Base-leaved Tuberous Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera biflora",
+          "common_name": "Two-flowered Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
         },
         {
           "full_name": "Drosera binata",
@@ -63,63 +138,724 @@
           ]
         },
         {
-          "full_name": "Drosera adelae",
-          "common_name": "Lance-leaved Sundew",
-          "description": "<em>Drosera adelae</em> is one of the Three Sisters from Queensland's tropical rainforest belt. It tolerates lower light than most sundews, making it ideal for growing alongside shade-loving plants. Produces long strap-like leaves with red glands and propagates readily from root cuttings.",
-          "meta_title": "Drosera adelae — Shade-tolerant Queensland Sundew",
-          "meta_description": "Shade-tolerant Drosera adelae from Queensland. One of the easiest tropical sundews; suitable for windowsill culture without supplemental lighting.",
-          "meta_keywords": "Drosera adelae, Queensland sundew, shade sundew, tropical sundew",
-          "native_range": "Australia — north Queensland (near Cairns, tropical rainforest margins)",
+          "full_name": "Drosera brevicornis",
+          "common_name": "Short-horned Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera brevifolia",
+          "common_name": "Dwarf Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera broomensis",
+          "common_name": "Broome Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera browniana",
+          "common_name": "Brown's Tuberous Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera bulbosa",
+          "common_name": "Bulbous Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera burkeana",
+          "common_name": "Burke's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera burmannii",
+          "common_name": "Burmann's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera caduca",
+          "common_name": "Deciduous Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera callistos",
+          "common_name": "Most Beautiful Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera camporupestris",
+          "common_name": "Rocky Field Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera capensis",
+          "common_name": "Cape Sundew",
+          "description": "<em>Drosera capensis</em> is widely regarded as the best starter carnivorous plant. Native to the Cape region of South Africa, it produces strap-like leaves covered in red, glistening tentacles and is almost impossible to kill in suitable conditions. It self-seeds prolifically and flowers throughout the growing season.",
+          "meta_title": "Drosera capensis — Cape Sundew",
+          "meta_description": "The perfect beginners carnivorous plant. Drosera capensis is vigorous, easy, and flowers freely. Available in typical, red, and alba forms.",
+          "meta_keywords": "Drosera capensis, Cape sundew, easy sundew, beginner carnivorous plant",
+          "native_range": "South Africa — Western Cape (coastal fynbos)",
           "conservation_status": "LC",
-          "notes": "Prefers filtered light; direct sun can bleach leaves. Tropical; no dormancy needed. Propagates by root cuttings.",
+          "notes": "Evergreen; does not require dormancy. Keep in tray of distilled or rainwater. Excellent for beginners.",
+          "cultivars": [
+            {
+              "cultivar": "Alba",
+              "description": "White-flowered, green-leaved form lacking red pigmentation in the tentacles."
+            },
+            {
+              "cultivar": "Red",
+              "description": "Entirely red-pigmented form with deeper colouration under high light; striking in contrast to typical form."
+            }
+          ]
+        },
+        {
+          "full_name": "Drosera capillaris",
+          "common_name": "Pink Sundew",
+          "conservation_status": "least_concern",
           "cultivars": []
         },
         {
-          "full_name": "Drosera regia",
-          "common_name": "King Sundew",
-          "description": "<em>Drosera regia</em> is the largest sundew in the world, producing strap-like leaves that can exceed 70 cm in length. Endemic to a single valley in the Bainskloof mountains of South Africa's Western Cape. Vulnerable in the wild; all cultivated stock is TC-grown or propagated from existing cultivated plants.",
-          "meta_title": "Drosera regia — King Sundew, World's Largest",
-          "meta_description": "Drosera regia — the world's largest sundew. Up to 70 cm leaves. Vulnerable species from South Africa, available as TC-grown plants only.",
-          "meta_keywords": "Drosera regia, king sundew, largest sundew, rare sundew, South Africa sundew",
-          "native_range": "South Africa — Bainskloof mountains, Western Cape (single valley population)",
-          "conservation_status": "VU",
-          "notes": "Highland/temperate; cool winters with reduced watering. Extremely rare in the wild — TC propagation only. Rewarding for intermediate growers.",
+          "full_name": "Drosera cayennensis",
+          "common_name": "Cayenne Sundew",
+          "conservation_status": "least_concern",
           "cultivars": []
         },
         {
-          "full_name": "Drosera rotundifolia",
-          "common_name": "Round-leaved Sundew",
-          "description": "<em>Drosera rotundifolia</em> is the archetypal sundew of the Northern Hemisphere, growing in sphagnum bogs and wet heathland across Europe, North America, and northern Asia. A small, flat-rosette plant with round, red-tentacled leaves. Requires a cold winter dormancy.",
-          "meta_title": "Drosera rotundifolia — Common Round-leaved Sundew",
-          "meta_description": "Classic Northern Hemisphere sundew from European bogs. Drosera rotundifolia requires cold dormancy; perfect for outdoor bog gardens in temperate climates.",
-          "meta_keywords": "Drosera rotundifolia, round leaved sundew, temperate sundew, bog garden sundew",
-          "native_range": "Europe, North America, northern Asia (boreal bogs and wet heathland)",
+          "full_name": "Drosera cendeensis",
+          "common_name": "Cende Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera chrysolepis",
+          "common_name": "Golden-scaled Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera cistiflora",
+          "common_name": "Cistus-flowered Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera closterostigma",
+          "common_name": "Closed-stigma Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera collinsiae",
+          "common_name": "Collins' Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera communis",
+          "common_name": "Common Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera cuneifolia",
+          "common_name": "Wedge-leaved Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera curvipes",
+          "common_name": "Curved-stalked Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera curviscapa",
+          "common_name": "Curved-scape Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera darwinensis",
+          "common_name": "Darwin Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera derbyensis",
+          "common_name": "Derby Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera dichrosepala",
+          "common_name": "Two-coloured Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera dielsiana",
+          "common_name": "Diels' Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera dilatato-petiolaris",
+          "common_name": "Dilated Petiolaris Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera drummondii",
+          "common_name": "Drummond's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera echinoblastus",
+          "common_name": "Spiny-bud Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera eneabba",
+          "common_name": "Eneabba Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera erythrorhiza",
+          "common_name": "Red Root Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera esmeraldae",
+          "common_name": "Esmeralda Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera esterhuyseniae",
+          "common_name": "Esterhuysenia's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera falconeri",
+          "common_name": "Falconer's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera felix",
+          "common_name": "Happy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera filiformis",
+          "common_name": "Thread-leaved Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": [
+            "Florida Red",
+            "Florida All Green",
+            "Typical"
+          ]
+        },
+        {
+          "full_name": "Drosera fimbriata",
+          "common_name": "Fringed Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera fulva",
+          "common_name": "Tawny Petiolaris Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera gigantea",
+          "common_name": "Giant Tuberous Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera glabripes",
+          "common_name": "Smooth-stemmed Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera glanduligera",
+          "common_name": "Catapult Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera graminifolia",
+          "common_name": "Grass-leaved Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera graniticola",
+          "common_name": "Granite Tuberous Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera grantsaui",
+          "common_name": "Grantsau's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera graomogolensis",
+          "common_name": "Grão Mogol Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera grievei",
+          "common_name": "Grieve's Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera hamiltonii",
+          "common_name": "Hamilton's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera hartmeyerorum",
+          "common_name": "Hartmeyer's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera helodes",
+          "common_name": "Marsh Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera heterophylla",
+          "common_name": "Variable-leaved Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera hilaris",
+          "common_name": "Cheerful Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera hirtella",
+          "common_name": "Slightly Hairy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera hookeri",
+          "common_name": "Hooker's Tuberous Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera huegelii",
+          "common_name": "Huegel's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera hyperostigma",
+          "common_name": "Prominent-stigma Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera indica",
+          "common_name": "Indian Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera indumenta",
+          "common_name": "Downy Petiolaris Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera intermedia",
+          "common_name": "Oblong-leaved Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera kaieteurensis",
+          "common_name": "Kaieteur Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera katangensis",
+          "common_name": "Katanga Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera kenneallyi",
+          "common_name": "Kenneally's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera lanata",
+          "common_name": "Woolly Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera lasiantha",
+          "common_name": "Woolly-flowered Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera latifolia",
+          "common_name": "Broad-leaved Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera leioblastus",
+          "common_name": "Smooth-budded Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera leucoblasta",
+          "common_name": "White-budded Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera linearis",
+          "common_name": "Linear-leaved Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera lovellae",
+          "common_name": "Lovell's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera lowriei",
+          "common_name": "Lowrie's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera lunata",
+          "common_name": "Moon Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera macadenni",
+          "common_name": "MacAdenn's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera macrantha",
+          "common_name": "Large-flowered Tuberous Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera macrophylla",
+          "common_name": "Large-leaved Tuberous Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera madagascariensis",
+          "common_name": "Madagascar Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera magnifica",
+          "common_name": "Magnificent Sundew",
+          "conservation_status": "vulnerable",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera major",
+          "common_name": "Major Tuberous Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera mannii",
+          "common_name": "Mann's Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera marchantii",
+          "common_name": "Marchant's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera menziesii",
+          "common_name": "Menzies' Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera meristocaulis",
+          "common_name": "Branching-stem Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera micrantha",
+          "common_name": "Small-flowered Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera miniata",
+          "common_name": "Miniature Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera modesta",
+          "common_name": "Modest Tuberous Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera montana",
+          "common_name": "Mountain Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera murfetii",
+          "common_name": "Murfet's Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera muricola",
+          "common_name": "Wall Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera myriantha",
+          "common_name": "Many-flowered Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera natalensis",
+          "common_name": "Natal Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera neocaledonica",
+          "common_name": "New Caledonian Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera nidiformis",
+          "common_name": "Nest-forming Sundew",
+          "description": "<em>Drosera nidiformis</em> produces compact flat rosettes of wide, spatulate leaves. Native to South Africa; one of the neater compact sundews for windowsill culture. Easy to grow and maintains a tidy form throughout the growing season.",
+          "meta_title": "Drosera nidiformis — Compact South African Sundew",
+          "meta_description": "Neat compact rosette sundew from South Africa. Easy windowsill plant; good for mixed carnivorous plant collections.",
+          "meta_keywords": "Drosera nidiformis, compact sundew, South Africa sundew, nest sundew",
+          "native_range": "South Africa — KwaZulu-Natal, Eastern Cape",
           "conservation_status": "LC",
-          "notes": "Requires 3–4 month cold dormancy (2–7 °C). Small plant; up to 10 cm diameter rosette. Good for outdoor bog containers in temperate gardens.",
+          "notes": "Evergreen in warm conditions. Tray watering; full to partial sun. Very compact; ideal for small spaces.",
           "cultivars": []
         },
         {
-          "full_name": "Drosera spatulata",
-          "common_name": "Spoon-leaved Sundew",
-          "description": "<em>Drosera spatulata</em> is one of the most widespread Drosera species, found across East Asia to Australia and New Zealand. A small, compact rosette with spatulate leaves; highly variable across its range. Very easy to grow and one of the most reliable self-seeders in cultivation.",
-          "meta_title": "Drosera spatulata — Spoon-leaved Sundew",
-          "meta_description": "Easy, compact Drosera spatulata. Cosmopolitan species from Asia and Australasia. Self-seeds freely; ideal windowsill sundew.",
-          "meta_keywords": "Drosera spatulata, spoon leaved sundew, Asian sundew, compact sundew",
-          "native_range": "East Asia, South-East Asia, Australia, New Zealand (lowland bogs and wet rocks)",
-          "conservation_status": "LC",
-          "notes": "Tropical to subtropical. No dormancy required in most forms. Self-seeds. Good companion plant in bog trays.",
+          "full_name": "Drosera nitidula",
+          "common_name": "Shining Pygmy Sundew",
+          "conservation_status": "least_concern",
           "cultivars": []
         },
         {
-          "full_name": "Drosera schizandra",
-          "common_name": "Notch-leaved Sundew",
-          "description": "<em>Drosera schizandra</em> is a rare Queensland species from the Three Sisters group. It grows in deep shade in moss-covered rainforest gullies near Cairns. Its leaves have a distinctive notch at the apex. One of the most challenging sundews to cultivate due to its specific humidity and shade requirements.",
-          "meta_title": "Drosera schizandra — Notch-leaved Rainforest Sundew",
-          "meta_description": "Rare Drosera schizandra from Queensland rainforest. Shade-growing species for advanced collectors. Near-threatened in the wild.",
-          "meta_keywords": "Drosera schizandra, notch leaved sundew, Queensland rainforest sundew, rare sundew",
-          "native_range": "Australia — north Queensland (rainforest gullies near Cairns)",
-          "conservation_status": "VU",
-          "notes": "Deep shade and consistently high humidity essential. Does not tolerate direct sun. Advanced growers; sensitive to environmental changes.",
+          "full_name": "Drosera oblanceolata",
+          "common_name": "Oblanceolate Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera obtusa",
+          "common_name": "Blunt Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera obtusifolia",
+          "common_name": "Blunt-leaved Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera occidentalis",
+          "common_name": "Western Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera omissa",
+          "common_name": "Overlooked Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera orbiculata",
+          "common_name": "Round Tuberous Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera ordensis",
+          "common_name": "Ord River Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera oreopodion",
+          "common_name": "Mountain-foot Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera paleacea",
+          "common_name": "Chaff-like Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera pallida",
+          "common_name": "Pale Tuberous Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera paradoxa",
+          "common_name": "Paradox Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera parvula",
+          "common_name": "Small Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera patens",
+          "common_name": "Spreading Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera pauciflora",
+          "common_name": "Few-flowered Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera pedicellaris",
+          "common_name": "Stalked Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera pedicellata",
+          "common_name": "Stalked Indian Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera peltata",
+          "common_name": "Shield Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera peruensis",
+          "common_name": "Peruvian Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera petiolaris",
+          "common_name": "Stalked Woolly Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera pilosa",
+          "common_name": "Hairy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera planchonii",
+          "common_name": "Planchon's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera platystigma",
+          "common_name": "Flat-stigmaed Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera polyneura",
+          "common_name": "Many-veined Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera porrecta",
+          "common_name": "Spreading Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera praefolia",
+          "common_name": "Early-leaved Sundew",
+          "conservation_status": "least_concern",
           "cultivars": []
         },
         {
@@ -135,6 +871,174 @@
           "cultivars": []
         },
         {
+          "full_name": "Drosera prostrata",
+          "common_name": "Prostrate Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera pulchella",
+          "common_name": "Pretty Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera pygmaea",
+          "common_name": "Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera quartzicola",
+          "common_name": "Quartz-dwelling Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera radicans",
+          "common_name": "Rooting Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera ramellosa",
+          "common_name": "Branching Tuberous Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera ramentacea",
+          "common_name": "Branched Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera rechingeri",
+          "common_name": "Rechinger's Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera regia",
+          "common_name": "King Sundew",
+          "description": "<em>Drosera regia</em> is the largest sundew in the world, producing strap-like leaves that can exceed 70 cm in length. Endemic to a single valley in the Bainskloof mountains of South Africa's Western Cape. Vulnerable in the wild; all cultivated stock is TC-grown or propagated from existing cultivated plants.",
+          "meta_title": "Drosera regia — King Sundew, World's Largest",
+          "meta_description": "Drosera regia — the world's largest sundew. Up to 70 cm leaves. Vulnerable species from South Africa, available as TC-grown plants only.",
+          "meta_keywords": "Drosera regia, king sundew, largest sundew, rare sundew, South Africa sundew",
+          "native_range": "South Africa — Bainskloof mountains, Western Cape (single valley population)",
+          "conservation_status": "VU",
+          "notes": "Highland/temperate; cool winters with reduced watering. Extremely rare in the wild — TC propagation only. Rewarding for intermediate growers.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera riparia",
+          "common_name": "Riverside Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera robinsoniana",
+          "common_name": "Robinson's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera roraimae",
+          "common_name": "Roraima Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera roseana",
+          "common_name": "Rose Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera rosulata",
+          "common_name": "Rosette Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera rotundifolia",
+          "common_name": "Round-leaved Sundew",
+          "description": "<em>Drosera rotundifolia</em> is the archetypal sundew of the Northern Hemisphere, growing in sphagnum bogs and wet heathland across Europe, North America, and northern Asia. A small, flat-rosette plant with round, red-tentacled leaves. Requires a cold winter dormancy.",
+          "meta_title": "Drosera rotundifolia — Common Round-leaved Sundew",
+          "meta_description": "Classic Northern Hemisphere sundew from European bogs. Drosera rotundifolia requires cold dormancy; perfect for outdoor bog gardens in temperate climates.",
+          "meta_keywords": "Drosera rotundifolia, round leaved sundew, temperate sundew, bog garden sundew",
+          "native_range": "Europe, North America, northern Asia (boreal bogs and wet heathland)",
+          "conservation_status": "LC",
+          "notes": "Requires 3–4 month cold dormancy (2–7 °C). Small plant; up to 10 cm diameter rosette. Good for outdoor bog containers in temperate gardens.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera rubrifolia",
+          "common_name": "Red-leaved Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera rupicola",
+          "common_name": "Rock Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera salina",
+          "common_name": "Salt Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera sargentii",
+          "common_name": "Sargent's Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera schizandra",
+          "common_name": "Notch-leaved Sundew",
+          "description": "<em>Drosera schizandra</em> is a rare Queensland species from the Three Sisters group. It grows in deep shade in moss-covered rainforest gullies near Cairns. Its leaves have a distinctive notch at the apex. One of the most challenging sundews to cultivate due to its specific humidity and shade requirements.",
+          "meta_title": "Drosera schizandra — Notch-leaved Rainforest Sundew",
+          "meta_description": "Rare Drosera schizandra from Queensland rainforest. Shade-growing species for advanced collectors. Near-threatened in the wild.",
+          "meta_keywords": "Drosera schizandra, notch leaved sundew, Queensland rainforest sundew, rare sundew",
+          "native_range": "Australia — north Queensland (rainforest gullies near Cairns)",
+          "conservation_status": "VU",
+          "notes": "Deep shade and consistently high humidity essential. Does not tolerate direct sun. Advanced growers; sensitive to environmental changes.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera schwackei",
+          "common_name": "Schwacke's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera scorpioides",
+          "common_name": "Scorpion Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera sessilifolia",
+          "common_name": "Sessile-leaved Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera sewelliae",
+          "common_name": "Sewell's Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera silvicola",
+          "common_name": "Forest Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
           "full_name": "Drosera slackii",
           "common_name": "Slack's Sundew",
           "description": "<em>Drosera slackii</em> is a large South African sundew from the fynbos and renosterveld biomes. It produces firm, erect leaves with robust red tentacles and is considerably larger than D. capensis. Named in honour of British carnivorous plant authority Adrian Slack.",
@@ -147,15 +1051,177 @@
           "cultivars": []
         },
         {
-          "full_name": "Drosera nidiformis",
-          "common_name": "Nest-forming Sundew",
-          "description": "<em>Drosera nidiformis</em> produces compact flat rosettes of wide, spatulate leaves. Native to South Africa; one of the neater compact sundews for windowsill culture. Easy to grow and maintains a tidy form throughout the growing season.",
-          "meta_title": "Drosera nidiformis — Compact South African Sundew",
-          "meta_description": "Neat compact rosette sundew from South Africa. Easy windowsill plant; good for mixed carnivorous plant collections.",
-          "meta_keywords": "Drosera nidiformis, compact sundew, South Africa sundew, nest sundew",
-          "native_range": "South Africa — KwaZulu-Natal, Eastern Cape",
+          "full_name": "Drosera solaris",
+          "common_name": "Sun Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera spatulata",
+          "common_name": "Spoon-leaved Sundew",
+          "description": "<em>Drosera spatulata</em> is one of the most widespread Drosera species, found across East Asia to Australia and New Zealand. A small, compact rosette with spatulate leaves; highly variable across its range. Very easy to grow and one of the most reliable self-seeders in cultivation.",
+          "meta_title": "Drosera spatulata — Spoon-leaved Sundew",
+          "meta_description": "Easy, compact Drosera spatulata. Cosmopolitan species from Asia and Australasia. Self-seeds freely; ideal windowsill sundew.",
+          "meta_keywords": "Drosera spatulata, spoon leaved sundew, Asian sundew, compact sundew",
+          "native_range": "East Asia, South-East Asia, Australia, New Zealand (lowland bogs and wet rocks)",
           "conservation_status": "LC",
-          "notes": "Evergreen in warm conditions. Tray watering; full to partial sun. Very compact; ideal for small spaces.",
+          "notes": "Tropical to subtropical. No dormancy required in most forms. Self-seeds. Good companion plant in bog trays.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera spiralis",
+          "common_name": "Spiral Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera spirocalyx",
+          "common_name": "Spiral-calyx Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera stelliflora",
+          "common_name": "Star-flowered Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera stenopetala",
+          "common_name": "Narrow-petalled Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera steyermarkii",
+          "common_name": "Steyermark's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera stolonifera",
+          "common_name": "Stoloniferous Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera stricticaulis",
+          "common_name": "Erect-stemmed Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera subhirtella",
+          "common_name": "Slightly Hairy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera tentaculata",
+          "common_name": "Tentacled Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera tokaiensis",
+          "common_name": "Tokai Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera tomentosa",
+          "common_name": "Woolly Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera tracyi",
+          "common_name": "Tracy's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera trinervia",
+          "common_name": "Three-veined Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera tubaestylis",
+          "common_name": "Tube-styled Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera ultramafica",
+          "common_name": "Ultramafic Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera venusta",
+          "common_name": "Beautiful Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera villosa",
+          "common_name": "Hairy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera viridis",
+          "common_name": "Green Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera walyunga",
+          "common_name": "Walyunga Pygmy Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera whittakeri",
+          "common_name": "Whittaker's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera wrayii",
+          "common_name": "Wray's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera xerophila",
+          "common_name": "Dry-habitat Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera zeyheri",
+          "common_name": "Zeyher's Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera zigzagia",
+          "common_name": "Zigzag Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera zonaria",
+          "common_name": "Banded Sundew",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Drosera zuluensis",
+          "common_name": "Zulu Sundew",
+          "conservation_status": "least_concern",
           "cultivars": []
         }
       ]

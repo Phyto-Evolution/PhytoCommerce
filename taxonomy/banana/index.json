@@ -1,0 +1,19 @@
+{
+  "category_id": "banana",
+  "name": "Banana & Relatives",
+  "description": "Musaceae and Zingiberaceae — bananas, gingers, cardamom, turmeric and relatives",
+  "packs": [
+    {
+      "pack_id": "musaceae",
+      "family": "Musaceae",
+      "common_name": "Banana Family",
+      "file": "musaceae.json"
+    },
+    {
+      "pack_id": "zingiberaceae",
+      "family": "Zingiberaceae",
+      "common_name": "Ginger Family",
+      "file": "zingiberaceae.json"
+    }
+  ]
+}

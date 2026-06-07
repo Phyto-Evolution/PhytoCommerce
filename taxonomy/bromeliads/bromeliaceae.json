@@ -43,8 +43,14 @@
           "conservation_status": "LC",
           "notes": "Best beginner air plant. Mist 2–3 times per week. Blushes red at bloom time.",
           "cultivars": [
-            { "cultivar": "Fuego", "description": "Deeply saturated red blushing with purple flowers; compact, vibrant selection." },
-            { "cultivar": "Rubra", "description": "Silvery leaves with intense violet-red colouring; smaller and more colourful than the straight species." }
+            {
+              "cultivar": "Fuego",
+              "description": "Deeply saturated red blushing with purple flowers; compact, vibrant selection."
+            },
+            {
+              "cultivar": "Rubra",
+              "description": "Silvery leaves with intense violet-red colouring; smaller and more colourful than the straight species."
+            }
           ]
         },
         {
@@ -69,6 +75,474 @@
           "native_range": "Virginia, USA to Argentina",
           "conservation_status": "LC",
           "notes": "Completely rootless. Mist regularly. Ideal for hanging displays; prefers filtered bright light.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia abdita",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia aeranthos",
+          "common_name": "Sky Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia albertiana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia albida",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia araujei",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia arhiza",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia atroviridipetala",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia baileyi",
+          "common_name": "Bailey's Ball Moss",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia balbisiana",
+          "common_name": "Northern Needleleaf",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia bartramii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia bergeri",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia bourgaei",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia brachycaulos",
+          "common_name": "Scarlet Star Air Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia butzii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia cacticola",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia caput-medusae",
+          "common_name": "Medusa Air Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia capitata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia chiapensis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia circinnata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia crocata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia dyeriana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia duratii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia edithiae",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia fasciculata",
+          "common_name": "Wild Pine",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia filifolia",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia flabellata",
+          "common_name": "Red Bromeliad",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia flexuosa",
+          "common_name": "Twisted Air Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia funckiana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia gardneri",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia geminiflora",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia guatemalensis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia harrisonii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia hildae",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia hondurensis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia ignesiae",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia juncea",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia juncifolia",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia kolbii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia latifolia",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia loliacea",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia mallemontii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia meridionalis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia montana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia monticola",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia multicaulis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia myosura",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia nidus",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia oaxacana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia paleacea",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia paucifolia",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia plagiotropica",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia plumosa",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia polystachia",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia prodigiosa",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia pseudobaileyi",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia punctulata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia recurvata",
+          "common_name": "Ball Moss",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia reichenbachii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia retorta",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia rothii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia rubella",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia schiedeana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia setacea",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia sprengeliana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia straminea",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia streptophylla",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia stricta",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia tectorum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia tenuifolia",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia tricolor",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia velutina",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia vernicosa",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia vicentina",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia violacea",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia viridiflora",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia wagneriana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia xiphioides",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Tillandsia zecheri",
+          "common_name": "",
+          "conservation_status": "least_concern",
           "cultivars": []
         }
       ]
@@ -96,8 +570,14 @@
           "conservation_status": "LC",
           "notes": "Keep cup filled with clean water. Dramatic red blush lasts months. Easy and rewarding.",
           "cultivars": [
-            { "cultivar": "Tricolor", "description": "Cream and green longitudinal striped leaves with bright red central cup flush; one of the most popular bromeliads worldwide." },
-            { "cultivar": "Meyendorffii", "description": "Larger form with olive-green leaves and deeper red blushing; subspecies often treated as a separate cultivar." }
+            {
+              "cultivar": "Tricolor",
+              "description": "Cream and green longitudinal striped leaves with bright red central cup flush; one of the most popular bromeliads worldwide."
+            },
+            {
+              "cultivar": "Meyendorffii",
+              "description": "Larger form with olive-green leaves and deeper red blushing; subspecies often treated as a separate cultivar."
+            }
           ]
         },
         {
@@ -122,6 +602,204 @@
           "native_range": "Brazil",
           "conservation_status": "LC",
           "notes": "Miniature and free-pupping. Upright tubular rosette is distinct from flat-plate Neoregelia growth habit.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia bahiana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia bicolor",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia brachyphylla",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia burle-marxii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia chlorosticta",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia compacta",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia coriacea",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia cruenta",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia farinosa",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia fosteriana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia guttata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia hybrid",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia johannis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia kautskyi",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia laevis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia leviana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia liliputan",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia macwilliamsii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia marmorata",
+          "common_name": "Marbled Bromeliad",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia melanodonta",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia mooreana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia mucronata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia olens",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia pascoaliana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia pauciflora",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia petropolitana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia pineliana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia punctatissima",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia rosea",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia sarmentosa",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia spectabilis",
+          "common_name": "Fingernail Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia tristis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Neoregelia wurdackii",
+          "common_name": "",
+          "conservation_status": "least_concern",
           "cultivars": []
         }
       ]
@@ -173,6 +851,210 @@
           "conservation_status": "LC",
           "notes": "Compact and ideal for windowsill display. Alternating red-yellow bracts are very decorative.",
           "cultivars": []
+        },
+        {
+          "full_name": "Vriesea bituminosa",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea brachystachys",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea corcovadensis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea duvaliana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea ensiformis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea erythrodactylon",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea espinosae",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea fenestralis",
+          "common_name": "Net-leaved Vriesea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea flammea",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea flava",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea guttata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea heliconioides",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea imperialis",
+          "common_name": "Imperial Vriesea",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea incurvata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea jonghei",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea longicaulis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea lubbersii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea malzinei",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea pauperrima",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea petropolitana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea philippo-coburgii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea platynema",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea poelmanii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea psittacina",
+          "common_name": "Painted Feather",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea racinae",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea rodigasiana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea saundersii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea scalaris",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea schwackeana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea sceptrum",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea simplex",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea vagans",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea viminalis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Vriesea warmingii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
         }
       ]
     },
@@ -199,7 +1081,10 @@
           "conservation_status": "LC",
           "notes": "Keep central tank filled with clean water. Inflorescence lasts 3–6 months. Pups after flowering.",
           "cultivars": [
-            { "cultivar": "Primera", "description": "Selected for consistency of flower colour and inflorescence size; widely sold commercial form." }
+            {
+              "cultivar": "Primera",
+              "description": "Selected for consistency of flower colour and inflorescence size; widely sold commercial form."
+            }
           ]
         },
         {
@@ -224,6 +1109,750 @@
           "native_range": "Brazil (South and Southeast)",
           "conservation_status": "LC",
           "notes": "Compact; more cold-tolerant than most Aechmea. Persistent berries extend ornamental value.",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea apocalyptica",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea aquilega",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea beeriana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea blanchetiana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea bracteata",
+          "common_name": "Silver Vase",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea bromeliifolia",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea caesia",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea caudata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea comata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea contracta",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea cylindrata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea distichantha",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea filicaulis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea fulgens",
+          "common_name": "Coral Berry",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea gamolepis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea haltonii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea hoppii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea huebneri",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea kertesziae",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea lacertosa",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea lamarchei",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea lasseri",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea lindenii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea lueddemanniana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea magdalenae",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea mariae-reginae",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea miniata",
+          "common_name": "Coral Berry",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea mertensii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea mulfordii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea nallyi",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea nudicaulis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea orlandiana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea pectinata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea pineliana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea racinae",
+          "common_name": "Christmas Jewels",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea recurvata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea setigera",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea spectabilis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea strobilacea",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea tayoensis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea tessmannii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea tillandsioides",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea tocantina",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea weilbachii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Aechmea woronowii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Guzmania",
+      "common_name": "Scarlet Stars",
+      "species": [
+        {
+          "full_name": "Guzmania berteroniana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania calypso",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania conifera",
+          "common_name": "Cone Guzmania",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania cristata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania danielii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania dissitiflora",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania donnell-smithii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania fuerstenbergiana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania glomerata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania lingulata",
+          "common_name": "Scarlet Star",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania melinonis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania minor",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania monostachia",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania musaica",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania nicaraguensis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania patula",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania picta",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania sanguinea",
+          "common_name": "Blood-red Guzmania",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania scherzeriana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania sprucei",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania squarrosa",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania tricolor",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania wittmackii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Guzmania zahnii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Billbergia",
+      "common_name": "Queen's Tears",
+      "species": [
+        {
+          "full_name": "Billbergia amoena",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia brasiliensis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia buchholtzii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia decora",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia distachia",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia euphemiae",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia horrida",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia iridifolia",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia leptopoda",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia lietzei",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia macrocalyx",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia meyeri",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia morelii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia nutans",
+          "common_name": "Queen's Tears",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia porteana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia pyramidalis",
+          "common_name": "Foolproof Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia rosea",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia saundersii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia speciosa",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia thyrsoidea",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia venezuelana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia vittata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia windii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Billbergia zebrina",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Cryptanthus",
+      "common_name": "Earth Stars",
+      "species": [
+        {
+          "full_name": "Cryptanthus acaulis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus beuckeri",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus bivittatus",
+          "common_name": "Two-banded Earth Star",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus bromelioides",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus fosterianus",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus lacerdae",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus leopoldo-horstii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus microglaziovii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus praetextus",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus scardamolius",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus sinuosus",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus traverse",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus tricolor",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus warasii",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Cryptanthus zonatus",
+          "common_name": "Zebra Plant",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        }
+      ]
+    },
+    {
+      "genus": "Puya",
+      "common_name": "Puyas",
+      "species": [
+        {
+          "full_name": "Puya alpestris",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Puya berteroniana",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Puya chilensis",
+          "common_name": "Chagual",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Puya coerulea",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Puya dasylirioides",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Puya ferruginea",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Puya hamata",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Puya laxa",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Puya mirabilis",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Puya raimondii",
+          "common_name": "Queen of the Andes",
+          "conservation_status": "endangered",
+          "cultivars": []
+        },
+        {
+          "full_name": "Puya spathacea",
+          "common_name": "",
+          "conservation_status": "least_concern",
+          "cultivars": []
+        },
+        {
+          "full_name": "Puya venusta",
+          "common_name": "",
+          "conservation_status": "least_concern",
           "cultivars": []
         }
       ]
